@@ -1,0 +1,246 @@
+{
+  "id": "vet-muc-lang-dong-ho",
+  "no": 12,
+  "status": "available",
+  "title": "Vết mực làng Đông Hồ",
+  "tagline": "Khuôn gỗ bản khắc quý giá nhất của nghệ nhân tranh Tết bị đập gãy, nhưng dấu vết để lại chỉ là giọt phẩm điệp đỏ son.",
+  "difficulty": 1,
+  "players": "1–4",
+  "duration": "30–45 phút",
+  "setting": "Làng tranh dân gian Đông Hồ, Thuận Thành, Bắc Ninh (hư cấu)",
+  "tags": [
+    "Phá hoại tài sản",
+    "Tranh dân gian",
+    "Bắc Ninh",
+    "Nhẹ nhàng"
+  ],
+  "cover": "images/cover.webp",
+  "synopsis": "Đêm 28 tháng Chạp năm Canh Thìn (2000), trong khi cả làng Đông Hồ đang rộn rã đón Tết, xưởng tranh của nghệ nhân lão thành Nguyễn Đăng Thao bị kẻ gian đột nhập. Bản khắc gỗ thị cổ hơn 150 năm vẽ bức 'Đám cưới chuột' gia truyền bị đập gãy đôi ngay trước đợt in tranh phục vụ hội xuân Kinh Bắc. Dấu vết kẻ thủ ác để lại là giọt phẩm điệp đỏ son và vệt bùn phù sa ven đê sông Đuống.",
+  "intro": "Công an xã Song Hồ phối hợp người dân khám nghiệm xưởng tranh cổ truyền. Kẻ gian không lấy đi một đồng tiền hay tài sản nào, chỉ nhắm vào độc bản khuôn gỗ truyền đời của gia đình. Một nghi phạm chìa ra lời khai xem chiếu bóng cả buổi tối ở sân đình, nhưng liệu màu phẩm đỏ son gia truyền có để kẻ phá hoại dễ dàng chối cãi?",
+  "documents": [
+    {
+      "id": "d01",
+      "stage": 1,
+      "type": "newspaper",
+      "title": "Bản tin Văn hóa Bắc Ninh - Bản khắc tranh cổ Đông Hồ bị hủy hoại",
+      "date": "29 tháng Chạp năm Canh Thìn (23/01/2001)",
+      "content": "**HỦY HOẠI BẢO VẬT TRANH DÂN GIAN NGAY TRƯỚC THỀM NĂM MỚI**\n\nĐêm qua 28 Tết, xưởng tranh dân gian của nghệ nhân Nguyễn Đăng Thao tại làng Đông Hồ (Thuận Thành) đã xảy ra một vụ việc đau lòng. Bản khắc gỗ thị cổ 'Đám cưới chuột' có niên đại từ thời Tự Đức - báu vật gia truyền 4 đời của dòng họ Nguyễn Đăng - đã bị đập gãy làm đôi.\n\nĐây là bản khắc chính dùng để in mảng nét đen và nét son cho hội chợ Tết Kinh Bắc. Sự việc đang được công an địa phương khẩn trương thụ lý để tìm lại công bằng cho nghệ nhân làng nghề."
+    },
+    {
+      "id": "d02",
+      "stage": 1,
+      "type": "report",
+      "title": "Biên bản hiện trường xưởng tranh cụ Thao",
+      "date": "22h30 ngày 22/01/2001",
+      "content": "**BIÊN BẢN KHÁM NGHIỆM HIỆN TRƯỜNG**\n\n- **Địa điểm**: Gian xới mực và in tranh của cụ Nguyễn Đăng Thao, xóm Đông, làng Đông Hồ.\n- **Hiện trạng vật chứng**: Tấm bản khắc gỗ thị kích thước 30x40cm bị đập gãy làm hai khúc trên mặt bàn in. Cạnh đó là chiếc chày đá giã điệp dính phẩm màu đỏ tươi và vài mẩu dăm gỗ thị vụn vương vãi trên sàn gạch.\n- **Dấu vết tại chỗ**: Trên nền gạch và bậu cửa sổ gian xưởng có dấu vết bùn đất đỏ phù sa ướt và một giọt phẩm màu son đỏ rơi rớt còn mới."
+    },
+    {
+      "id": "d03",
+      "stage": 1,
+      "type": "photo",
+      "title": "Ảnh chụp bản khắc gỗ thị bị đập gãy đôi",
+      "date": "23h00 ngày 22/01/2001",
+      "image": "images/d03-ban-khac.webp",
+      "content": "Ảnh chụp cận cảnh bản khắc cổ 'Đám cưới chuột': Ván gỗ thị vàng sẫm bị gãy toác chính giữa. Nét khắc chuột rước dâu tinh xảo bị mẻ một góc lọng che. Trên mép gãy của thớ gỗ dính giọt phẩm màu đỏ son tươi rói pha từ sỏi son tự nhiên."
+    },
+    {
+      "id": "d04",
+      "stage": 1,
+      "type": "report",
+      "title": "Sơ đồ làng tranh Đông Hồ và lối đi bờ sông Đuống",
+      "date": "23h30 ngày 22/01/2001",
+      "content": "**SƠ ĐỒ KHU VỰC LÀNG ĐÔNG HỒ**\n\n- **Sân đình làng**: Nơi tổ chức chiếu bóng lưu động cho bà con trong xã tối 28 Tết, cách xưởng tranh cụ Thao khoảng 800 mét đường chim bay.\n- **Đường cái lớn**: Rải đá dăm khô ráo, đi mất khoảng 15 phút.\n- **Lối ngõ tắt ven đê sông Đuống**: Lối mòn đất thịt bùn đỏ phù sa trơn trượt nối thẳng từ sau đình làng về cổng sau xưởng tranh cụ Thao, chỉ mất 5 phút đi bộ nhanh."
+    },
+    {
+      "id": "d05",
+      "stage": 2,
+      "type": "testimony",
+      "title": "Lời khai của con trai thứ Nguyễn Đăng Khiêm",
+      "date": "08h00 ngày 23/01/2001",
+      "lines": [
+        {
+          "n": 1,
+          "text": "Tôi không thích theo nghề làm tranh vì thu nhập bấp bênh, bụi vỏ sò làm đau phổi."
+        },
+        {
+          "n": 2,
+          "text": "Tôi xin bố tiền vốn lên phố buôn xe máy Dream nhưng bố mắng tôi là đứa bất hiếu."
+        },
+        {
+          "n": 3,
+          "text": "Tối qua từ đúng 19h30 đến 22h00 tôi ngồi ở sân đình làng xem đội chiếu bóng chiếu bộ phim ca nhạc Tết, có cả làng làm chứng, không hề rời sân đình nửa bước."
+        },
+        {
+          "n": 4,
+          "text": "Bản khắc gỗ của bố bị đập tôi cũng xót xa chứ làm sao tôi nỡ phá hoại gia tài tổ tiên?"
+        }
+      ]
+    },
+    {
+      "id": "d06",
+      "stage": 2,
+      "type": "testimony",
+      "title": "Lời khai của chủ xưởng in Trần Khắc Vĩnh",
+      "date": "08h45 ngày 23/01/2001",
+      "lines": [
+        {
+          "n": 1,
+          "text": "Xưởng tôi in tranh lịch lụa bằng máy công nghiệp, khách đặt hàng ầm ầm cần gì phải ghen tị với mấy bức tranh khắc tay của cụ Thao."
+        },
+        {
+          "n": 2,
+          "text": "Tối qua tôi ngồi uống rượu tất niên với các lái buôn Hà Nội ở quán thịt chó đầu cầu Hồ từ 18h đến 23h đêm."
+        }
+      ]
+    },
+    {
+      "id": "d07",
+      "stage": 2,
+      "type": "testimony",
+      "title": "Lời khai của thợ phụ Lê Văn Hùng",
+      "date": "09h15 ngày 23/01/2001",
+      "lines": [
+        {
+          "n": 1,
+          "text": "Hôm trước cụ Thao mắng em vì làm đổ chậu hồ nếp quét giấy điệp, nhưng cụ cho em tiền về quê ăn Tết rồi."
+        },
+        {
+          "n": 2,
+          "text": "Tối qua em đã đón xe khách về quê ở Tiên Du từ lúc 16h chiều, có vé xe đò chứng minh."
+        }
+      ]
+    },
+    {
+      "id": "d08",
+      "stage": 2,
+      "type": "testimony",
+      "title": "Lời khai của anh cán bộ đội chiếu bóng lưu động",
+      "date": "09h45 ngày 23/01/2001",
+      "lines": [
+        {
+          "n": 1,
+          "text": "Đội chiếu bóng của huyện chiếu phục vụ bà con ở sân đình tối 28 Tết."
+        },
+        {
+          "n": 2,
+          "text": "Khoảng 20h15 máy chiếu bị đứt dây curoa và hết cuộn phim thứ nhất, chúng tôi phải tạm dừng chiếu mất 30 phút để sửa chữa và lắp cuộn phim mới."
+        },
+        {
+          "n": 3,
+          "text": "Trong lúc chờ đợi đèn sân đình tắt ngắt, thanh niên trong làng chạy đi vệ sinh và tản mát ra ngoài rất nhiều, đến 20h45 mới tập trung lại đông đủ."
+        }
+      ]
+    },
+    {
+      "id": "d09",
+      "stage": 3,
+      "type": "report",
+      "title": "Bản đối chiếu vết màu phẩm son và bùn đỏ sông Đuống",
+      "date": "10h30 ngày 23/01/2001",
+      "content": "**KẾT QUẢ PHÂN TÍCH HÓA CHẤT PHẨM MÀU VÀ MẪU ĐẤT**\n\n1. **Phẩm màu đỏ son trên cổ tay áo len của Khiêm**: Trùng khớp 100% với mẫu phẩm son tại xưởng cụ Thao (pha chế từ sỏi son núi Thần Đinh nghiền mịn dầm nước tro nếp bí truyền). Không có xưởng tranh nào khác trong vùng sử dụng loại màu son này.\n2. **Bùn đất trên đế dép tổ ong của Khiêm**: Là bùn đỏ phù sa mịn bão hòa nước đặc trưng của mép đê sông Đuống (lối đi tắt từ sân đình về xưởng tranh), hoàn toàn khác với đá dăm khô ráo của đường làng."
+    },
+    {
+      "id": "d10",
+      "stage": 3,
+      "type": "photo",
+      "title": "Ảnh dăm gỗ thị hình chóp lọng thu trong túi áo của Khiêm",
+      "date": "11h00 ngày 23/01/2001",
+      "image": "images/d10-dam-go.webp",
+      "content": "Ảnh chụp vật chứng: Mảnh dăm gỗ thị nhỏ hình chóp lọng rước dâu dài 2cm dính phẩm đỏ son thu trong túi áo khoác của Nguyễn Đăng Khiêm. Khi ghép thử vào vết vỡ của bản khắc gỗ cổ (d03) thì khớp hoàn hảo từng đường vân thớ gỗ."
+    },
+    {
+      "id": "d11",
+      "stage": 3,
+      "type": "note",
+      "title": "Bản tường trình của mẹ Khiêm về chuyện vốn liếng buôn xe",
+      "date": "11h30 ngày 23/01/2001",
+      "content": "**LỜI KỂ CỦA GIA ĐÌNH**\n\n'Mấy tuần nay thằng Khiêm cứ nằng nặc đòi bố nó bán bớt gỗ thị tích trữ hoặc dẹp xưởng tranh để chia cho nó 10 triệu lên Hà Nội chung vốn với bạn buôn xe máy Dream. Bố nó không chịu, bảo nghề tổ tiên không bỏ được chừng nào ông còn cầm bản khắc gỗ này...'"
+    },
+    {
+      "id": "d12",
+      "stage": 3,
+      "type": "report",
+      "title": "Bản tự thú của Nguyễn Đăng Khiêm",
+      "date": "14h00 ngày 23/01/2001",
+      "content": "**LỜI THÚ NHẬN CỦA NGUYỄN ĐĂNG KHIÊM**\n\n'Tôi nghĩ bố tôi bảo thủ quá, cứ khư khư ôm lấy mấy tờ tranh giấy điệp kiếm bạc cắc trong khi bạn bè buôn xe máy kiếm tiền triệu mỗi ngày. Tôi nghĩ nếu bản khắc gỗ quý nhất bị phá hủy thì bố tôi sẽ nản lòng đóng xưởng tranh và cho tôi tiền làm ăn. Tối qua lúc bãi chiếu bóng tạm ngừng đổi cuộn phim, tôi chạy tắt lối bờ sông Đuống về nhà lấy chày đá nện gãy bản khắc rồi chạy vội lại sân đình...'"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "stage": 1,
+      "type": "evidence",
+      "title": "Vật chứng bản khắc bị phá hoại và phẩm màu son độc quyền",
+      "intro": "Bản khắc gỗ cổ bị đập vỡ để lại dấu vết phẩm màu độc đáo tại hiện trường.",
+      "prompt": "Ghim 2 tài liệu chỉ ra tình trạng bản khắc gỗ thị bị đập gãy bằng chày đá và dấu vết phẩm son đỏ tươi gia truyền rơi rớt.",
+      "need": 2,
+      "answer": [
+        "d02",
+        "d03"
+      ],
+      "hints": [
+        "Biên bản khám nghiệm hiện trường gian xới mực mô tả chiếc chày đá và giọt phẩm son đỏ.",
+        "Ảnh chụp cận cảnh bản khắc cổ bị gãy đôi dính vết phẩm son tươi rói trên mép vỡ."
+      ],
+      "explanation": [
+        "Tài liệu d02 mô tả bản khắc gỗ thị bị chày đá đập gãy đôi và vết phẩm son đỏ tươi rơi rớt trên bậu cửa.",
+        "Tài liệu d03 (ảnh chụp bản khắc) thể hiện nét khắc 'Đám cưới chuột' bị mẻ góc lọng che và dính phẩm son đỏ sỏi núi."
+      ],
+      "nudges": [
+        {
+          "picks": [
+            "d01",
+            "d04"
+          ],
+          "message": "Bản tin và sơ đồ địa lý chưa miêu tả chi tiết kỹ thuật cơ học đập vỡ bản khắc và giọt phẩm son tại hiện trường."
+        }
+      ]
+    },
+    {
+      "id": "q2",
+      "stage": 2,
+      "type": "line",
+      "title": "Bằng chứng ngoại phạm của Nguyễn Đăng Khiêm",
+      "intro": "Nguyễn Đăng Khiêm đưa ra lời khai khẳng định mình ngồi xem phim liên tục suốt buổi tối ở sân đình.",
+      "prompt": "Hãy chọn một dòng trong lời khai của Nguyễn Đăng Khiêm (d05) khẳng định y ngồi xem phim từ đúng 19h30 đến 22h00 không hề rời sân đình nửa bước.",
+      "answer": [
+        "d05:003"
+      ],
+      "hints": [
+        "Tìm dòng lời khai nói về việc Khiêm xem chiếu bóng ở sân đình từ 19h30 đến 22h00.",
+        "Đối chiếu mốc thời gian và hành vi của người khai với các nhân chứng xung quanh."
+      ],
+      "explanation": [
+        "Tại dòng d05:003, Khiêm khai: 'Tối qua từ đúng 19h30 đến 22h00 tôi ngồi ở sân đình làng xem đội chiếu bóng chiếu bộ phim ca nhạc Tết, có cả làng làm chứng, không hề rời sân đình nửa bước'."
+      ]
+    },
+    {
+      "id": "q3",
+      "stage": 3,
+      "type": "choice",
+      "title": "Kẻ đập gãy bản khắc cổ Đông Hồ",
+      "intro": "Phẩm son đỏ trên tay áo, bùn phù sa sông Đuống và mảnh dăm gỗ thị trong túi áo đã phơi bày toàn bộ sự thật.",
+      "prompt": "Dựa vào toàn bộ tài liệu hồ sơ, ai là người đã đập gãy bản khắc cổ 'Đám cưới chuột'?",
+      "options": [
+        "Con trai thứ Nguyễn Đăng Khiêm",
+        "Chủ xưởng in Trần Khắc Vĩnh",
+        "Thợ phụ Lê Văn Hùng",
+        "Cán bộ đội chiếu bóng lưu động"
+      ],
+      "answer": [
+        0
+      ],
+      "hints": [
+        "Ai có động cơ muốn bố dẹp xưởng tranh chia tiền buôn xe máy, dính phẩm son độc quyền trên áo và giấu mảnh dăm gỗ thị trong túi?",
+        "Xem xét kỹ các bằng chứng vật chất và báo cáo kỹ thuật hình sự."
+      ],
+      "explanation": [
+        "Nguyễn Đăng Khiêm là thủ phạm. Y lợi dụng lúc chiếu bóng ngừng đổi phim (d08) chạy tắt lối đê sông Đuống về xưởng đập bản khắc (d04, d12), dính bùn phù sa và phẩm son độc quyền của bố (d09), và bị bắt quả tang mảnh dăm gỗ thị trong túi áo khoác (d10)."
+      ]
+    }
+  ],
+  "finale": {
+    "culprit": "Nguyễn Đăng Khiêm",
+    "text": "Trước mảnh dăm gỗ thị hình chóp lọng khớp khít vào vết vỡ của bản khắc cổ và vết phẩm son đỏ trên tay áo, Nguyễn Đăng Khiêm đã phải cúi đầu hối hận thú nhận hành vi nông nổi của mình. Dù bản khắc cổ bị thương tổn, nghệ nhân Nguyễn Đăng Thao đã tha thứ cho đứa con trai lầm lạc và kiên trì dùng sáp ong gắn gắn lại từng thớ gỗ thị. Tết năm ấy, những bức tranh 'Đám cưới chuột' vẫn kịp ra đời trên nền giấy điệp óng ánh, giữ trọn hồn quê Kinh Bắc ngàn năm."
+  }
+}

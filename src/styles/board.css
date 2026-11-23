@@ -458,3 +458,9 @@ body.is-board { overflow: hidden; height: 100vh; height: 100dvh; overscroll-beha
 .feed time { margin-left: auto; font: 400 11px/1 var(--font-mono); color: var(--faint); }
 .avatar { display: inline-grid; place-items: center; flex: none; border-radius: 50%; color: #fff; font-weight: 700; }
 .avatar.is-away { filter: grayscale(0.8); opacity: 0.55; }
+
+/* cloud save indicator */
+.cloud { display: inline-grid; place-items: center; width: 32px; height: 32px; color: var(--faint); }
+.cloud--saved { color: #8fc283; }
+.cloud--saving { color: var(--amber); animation: pulse 1.2s ease-in-out infinite; }
+.cloud--error { color: var(--red-2); }

@@ -18,7 +18,7 @@ export function AccountChip() {
   if (!session) return <Link className="nav__account" to="/dang-nhap">Đăng nhập</Link>;
   const name = profile?.display_name || session.user.email || 'Tài khoản';
   return (
-    <Link className="nav__account" to="/dang-nhap" title="Tài khoản">
+    <Link className="nav__account" to="/tai-khoan" title="Tài khoản">
       <span className="avatar" style={{ background: profile?.color || '#d9452f' }}>{name.slice(0, 1).toUpperCase()}</span>
       <span className="nav__account-name">{name}</span>
     </Link>

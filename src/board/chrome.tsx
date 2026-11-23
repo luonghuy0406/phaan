@@ -10,6 +10,14 @@ import { caseNo, pad2 } from '../lib/data';
 import { typeLabel } from './papers';
 import { Avatar } from '../components/auth';
 import { useRoom, addRoomNote } from '../multiplayer/room';
+import { useCloud } from '../lib/cloud';
+
+const CLOUD_TEXT = { saving: 'Đang lưu…', saved: 'Đã lưu trên cloud', error: 'Chưa lưu được lên cloud', off: '' } as const;
+function CloudBadge() {
+  const status = useCloud((s) => s.status);
+  if (status === 'off') return null;
+  return <span className={`cloud cloud--${status}`} title={CLOUD_TEXT[status]} aria-label={CLOUD_TEXT[status]}><Icon name="cloud" /></span>;
+}
 
 /* ── top bar ── */
 function RoomPeople() {
@@ -42,6 +50,7 @@ export function Topbar() {
       </div>
       <div className="topbar__actions">
         {room && <RoomPeople />}
+        <CloudBadge />
         <span className="topbar__progress">{done}/{c.questions.length} trọng điểm</span>
         <button type="button" className={`tb-btn${indexOpen ? ' is-on' : ''}`} onClick={() => set({ indexOpen: !indexOpen })}><Icon name="list" /><span>Tài liệu</span></button>
         <button type="button" className={`tb-btn${panel === 'notebook' ? ' is-on' : ''}`} onClick={() => toggle('notebook')}><Icon name="book" /><span>Sổ tay</span></button>

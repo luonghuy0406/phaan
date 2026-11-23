@@ -52,7 +52,20 @@ Email mặc định của Supabase chỉ gửi được vài thư mỗi giờ.
 - [ ] Authentication → **SMTP Settings** → bật Custom SMTP, điền host, cổng, tài khoản, mật khẩu do dịch vụ đó cấp.
 - [ ] Authentication → **Rate Limits**: nâng giới hạn gửi email cho phù hợp.
 
-### B3. Đổi khoá secret
+### B3. Đăng nhập bằng Google (SSO), tuỳ chọn
+Nút "Tiếp tục với Google" tự hiện trên trang đăng nhập khi Google được bật. Apple, Facebook, Microsoft, GitHub, Discord cũng làm tương tự.
+- [ ] Google Cloud Console → **APIs & Services → OAuth consent screen**: tạo ứng dụng (External), đặt tên "Hồ Sơ Mật", email hỗ trợ, rồi Publish.
+- [ ] **Credentials → Create credentials → OAuth client ID** → loại *Web application*:
+  - Authorized JavaScript origins: `https://phaan-i9bz.vercel.app`, `http://localhost:5173`
+  - Authorized redirect URIs: `https://ridpypfdsqgxnswrzfrf.supabase.co/auth/v1/callback`
+- [ ] Sao chép **Client ID** và **Client secret**.
+- [ ] Supabase → Authentication → **Sign In / Providers → Google**: bật, dán Client ID và Client secret, rồi Save.
+- [ ] Mở trang `/dang-nhap`: thấy nút "Tiếp tục với Google".
+
+> **Apple** cần tài khoản Apple Developer (99 USD/năm). **SSO doanh nghiệp (SAML: Okta, Azure AD…)** cần gói Supabase Pro
+> và cấu hình bằng Supabase CLI; báo Claude nếu cần.
+
+### B4. Đổi khoá secret
 Khoá secret hiện tại đã bị dán vào khung chat, cần thay.
 - [ ] Settings → **API Keys** → tạo secret key mới, rồi xoá khoá cũ (`sb_secret_oZ9S…`).
 - [ ] Mở `.env.local`, thay giá trị `SUPABASE_SECRET_KEY` bằng khoá mới.
@@ -128,7 +141,9 @@ Dùng 2 thiết bị (ví dụ máy tính + iPad), hoặc 2 trình duyệt khác
 - [ ] Trang chủ hiện đủ 3 hồ sơ, có ảnh bìa.
 - [ ] Mở `https://<tên-miền>/phong/abc` rồi tải lại trang: không bị lỗi 404.
 - [ ] **Chơi một mình:** vào một hồ sơ, giải được vòng 1, tải lại trang vẫn giữ tiến trình.
-- [ ] **Đăng nhập:** nhận được email, nhập mã 6 số thì vào được. Thử cả bấm liên kết trong email.
+- [ ] **Đăng nhập:** nhận được email, nhập mã 6 số thì vào được. Thử cả bấm liên kết trong email, và nút Google (nếu đã bật).
+- [ ] **Lưu cloud:** đăng nhập, chơi một mình tới giữa hồ sơ (biểu tượng đám mây trên thanh trên chuyển xanh). Mở cùng hồ sơ trên thiết bị khác, đăng nhập cùng tài khoản: tiếp tục đúng chỗ, kể cả nét bút và sổ tay.
+- [ ] **Trang Tài khoản** (`/tai-khoan`): thấy hồ sơ đang chơi và các phòng đã tham gia; bấm "Vào phòng" thì vào lại đúng phòng.
 - [ ] **Tạo phòng (thiết bị 1):** trang hồ sơ → "Chơi nhóm", sảnh chờ hiện mã 6 số, đồng hồ đếm ngược và mã QR.
 - [ ] **Tham gia (thiết bị 2):** quét QR bằng camera, đăng nhập, rồi vào thẳng sảnh chờ. Thiết bị 1 thấy người mới, có chấm "Đang online".
 - [ ] Chủ phòng bấm "Bắt đầu điều tra": cả hai thiết bị cùng vào bàn.

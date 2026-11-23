@@ -6,6 +6,7 @@ import { SITE } from '../lib/config';
 import type { CaseData } from '../lib/types';
 import { getBoardStore, type BoardStore } from '../board/store';
 import { Board } from '../board/Board';
+import { useCloudReady } from '../lib/cloud';
 import { useRoom, useRoomConnection } from '../multiplayer/room';
 import '../styles/board.css';
 
@@ -20,6 +21,7 @@ export default function RoomPlayPage() {
   const [store, setStore] = useState<BoardStore | null>(null);
   const [hydrated, setHydrated] = useState(false);
   const caseId = room?.case_id;
+  const cloudReady = useCloudReady(store, c, roomId, hydrated);
 
   useEffect(() => {
     document.body.classList.add('is-board');
@@ -50,6 +52,6 @@ export default function RoomPlayPage() {
     );
   }
   if (room?.status === 'lobby') return <Navigate to={`/phong/${roomId}`} replace />;
-  if (!c || !store || !hydrated || !me || !room) return <div className="board-loading">Đang vào phòng điều tra…</div>;
+  if (!c || !store || !hydrated || !cloudReady || !me || !room) return <div className="board-loading">Đang vào phòng điều tra…</div>;
   return <Board key={`${c.id}:${roomId}`} c={c} store={store} room={{ id: roomId, me }} />;
 }

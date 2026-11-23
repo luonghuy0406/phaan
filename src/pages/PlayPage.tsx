@@ -4,6 +4,7 @@ import { loadCase, useAsync } from '../lib/data';
 import { SITE } from '../lib/config';
 import { getBoardStore, type BoardStore } from '../board/store';
 import { Board } from '../board/Board';
+import { useCloudReady } from '../lib/cloud';
 import '../styles/board.css';
 
 function useHydrated(store: BoardStore | null) {
@@ -22,6 +23,7 @@ export default function PlayPage() {
   const { data: c, error } = useAsync(() => loadCase(id), [id]);
   const store = c ? getBoardStore(c) : null;
   const hydrated = useHydrated(store);
+  const cloudReady = useCloudReady(store, c ?? null, '', hydrated);
 
   useEffect(() => {
     document.body.classList.add('is-board');
@@ -39,6 +41,6 @@ export default function PlayPage() {
     );
   }
   if (c && c.status !== 'available') return <Navigate to={`/ho-so/${c.id}`} replace />;
-  if (!c || !store || !hydrated) return <div className="board-loading">Đang mở hồ sơ…</div>;
+  if (!c || !store || !hydrated || !cloudReady) return <div className="board-loading">Đang mở hồ sơ…</div>;
   return <Board key={c.id} c={c} store={store} />;
 }

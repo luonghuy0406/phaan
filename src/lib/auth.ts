@@ -33,7 +33,7 @@ export async function sendLoginCode(email: string, displayName: string, next: st
     email,
     options: {
       shouldCreateUser: true,
-      emailRedirectTo: `${window.location.origin}/dang-nhap?tu-email=1&next=${encodeURIComponent(next)}`,
+      emailRedirectTo: `${window.location.origin}/dang-nhap?xong=1&next=${encodeURIComponent(next)}`,
       data: displayName ? { display_name: displayName } : undefined,
     },
   });
@@ -53,6 +53,38 @@ export async function saveDisplayName(name: string) {
   const { error } = await supabase.from('profiles').update({ display_name }).eq('id', id);
   if (error) throw error;
   await loadProfile(id);
+}
+
+export type OAuthProvider = 'google' | 'apple' | 'facebook' | 'azure' | 'github' | 'discord';
+export const OAUTH_PROVIDERS: { id: OAuthProvider; label: string }[] = [
+  { id: 'google', label: 'Google' },
+  { id: 'apple', label: 'Apple' },
+  { id: 'facebook', label: 'Facebook' },
+  { id: 'azure', label: 'Microsoft' },
+  { id: 'github', label: 'GitHub' },
+  { id: 'discord', label: 'Discord' },
+];
+
+// Which SSO buttons to show: whatever is switched on in Supabase → Authentication → Sign In / Providers.
+let providersCache: Promise<OAuthProvider[]> | null = null;
+export function enabledProviders(): Promise<OAuthProvider[]> {
+  if (!providersCache) {
+    const url = import.meta.env.VITE_SUPABASE_URL as string;
+    const key = import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY as string;
+    providersCache = fetch(`${url}/auth/v1/settings`, { headers: { apikey: key } })
+      .then((r) => r.json())
+      .then((j: { external?: Record<string, boolean> }) => OAUTH_PROVIDERS.map((p) => p.id).filter((id) => j.external?.[id]))
+      .catch(() => { providersCache = null; return []; });
+  }
+  return providersCache;
+}
+
+export async function signInWithProvider(provider: OAuthProvider, next: string) {
+  const { error } = await supabase.auth.signInWithOAuth({
+    provider,
+    options: { redirectTo: `${window.location.origin}/dang-nhap?xong=1&next=${encodeURIComponent(next)}` },
+  });
+  if (error) throw error;
 }
 
 export async function signOut() {

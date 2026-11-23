@@ -1,0 +1,328 @@
+{
+  "id": "hoi-chuong-chua-thay",
+  "no": 11,
+  "status": "available",
+  "title": "Hồi chuông núi Sài Sơn",
+  "tagline": "Tiếng chuông u minh điểm đúng 12 giờ trưa, nhưng sư trụ trì đã viên tịch trong am thất đóng kín tự bao giờ.",
+  "difficulty": 4,
+  "players": "2–5",
+  "duration": "100–120 phút",
+  "setting": "Chùa Cổ Sơn, núi Sài Sơn, Quốc Oai, Hà Tây cũ (hư cấu)",
+  "tags": [
+    "Án mạng",
+    "Chùa cổ",
+    "Bẫy cơ học",
+    "Thủy lực"
+  ],
+  "cover": "images/cover.webp",
+  "synopsis": "Đúng 12h00 trưa ngày mùng một tháng Tư năm 2004, tiếng đại hồng chung trên gác chuông chùa Cổ Sơn ngân vang 3 nhịp u minh thanh thoát báo hiệu giờ ngọ. Nhưng khi tăng chúng lên am thiền thỉnh sư trụ trì Thích Tâm Viên dùng cơm chay, cửa tịnh thất bị khóa chốt từ bên trong và vị cao tăng đã viên tịch tự bao giờ bên án thư. Ai đã thỉnh hồi chuông ngọ giữa thanh thiên bạch nhật?",
+  "intro": "Đội Điều tra Trọng án Công an tỉnh Hà Tây vượt hàng trăm bậc đá lên đỉnh núi Sài Sơn phong tỏa hiện trường. Kết quả khám nghiệm pháp y xác định nạn nhân bị siết cổ chết từ trước giờ ngọ gần hai tiếng đồng hồ. Tiếng chuông vang lên đúng 12h00 trưa thực chất là một mắt xích cơ học ma quái nhằm tạo ra bằng chứng ngoại phạm hoàn hảo cho kẻ thủ ác.",
+  "documents": [
+    {
+      "id": "d01",
+      "stage": 1,
+      "type": "newspaper",
+      "title": "Báo Hà Tây - Vụ án mạng chấn động chốn thiền môn núi Sài Sơn",
+      "date": "03/04/2004",
+      "content": "**SỰ VIỆC ĐAU LÒNG TẠI CHÙA CỔ SƠN: SƯ TRỤ TRÌ BỊ SÁT HẠI TRONG TỊNH THẤT**\n\nTrưa 01/04, tại chùa Cổ Sơn trên đỉnh núi Sài Sơn (Quốc Oai), Đại đức Thích Tâm Viên (72 tuổi) được phát hiện đã viên tịch bất thường trong tịnh thất am thiền.\n\nVụ việc gây chấn động dư luận bởi tịnh thất của sư trụ trì nằm biệt lập trên đỉnh vách đá, cửa chốt trong kiên cố. Đặc biệt, đúng 12h00 trưa toàn thể tăng ni phật tử dưới chân núi vẫn nghe thấy 3 tiếng chuông ngọ ngân vang do chính tay sư trụ trì thường ngày vẫn thỉnh. Cơ quan công an đang điều tra làm rõ nguyên nhân cái chết."
+    },
+    {
+      "id": "d02",
+      "stage": 1,
+      "type": "report",
+      "title": "Biên bản khám nghiệm hiện trường tịnh thất am thiền",
+      "date": "13h30 ngày 01/04/2004",
+      "content": "**BIÊN BẢN KHÁM NGHIỆM HIỆN TRƯỜNG**\n\n- **Địa điểm**: Tịnh thất am thiền Đại đức Thích Tâm Viên, đỉnh núi Sài Sơn.\n- **Tình trạng cửa**: Cửa liếp gỗ hai cánh chốt then gỗ bên trong. Tăng chúng phải dùng búa đập vỡ chốt then mới mở được cửa vào lúc 12h30 trưa.\n- **Tình trạng nạn nhân**: Nằm gục bên án thư gỗ gụ. Cổ có rãnh hằn sâu dạng dây thừng bện, tụ máu thâm tím bầm. Án thư có chén trà nguội và một xấp tài liệu kiểm kê công đức bị xé rách bìa.\n- **Dấu vết trên cánh cửa**: Ở khe bậu cửa gỗ phía dưới then cài có vết ma sát mài bóng của sợi cước mảnh luồn qua."
+    },
+    {
+      "id": "d03",
+      "stage": 1,
+      "type": "report",
+      "title": "Kết quả giám định tử thi Đại đức Thích Tâm Viên",
+      "date": "15h00 ngày 01/04/2004",
+      "content": "**KẾT QUẢ GIÁM ĐỊNH PHÁP Y**\n\n1. **Nguyên nhân tử vong**: Ngạt cơ học do siết cổ bằng dây thừng gai sợi thô, gãy sụn nhẫn và rách tĩnh mạch cảnh.\n2. **Tình trạng dạ dày**: Hoàn toàn rỗng, chỉ có khoảng 5ml dịch vị trong suốt, chứng tỏ nạn nhân chưa hề ăn bữa ngọ trai trưa.\n3. **Thời điểm tử vong chính xác**: Căn cứ vết hoen tử thi và độ hạ thân nhiệt, nạn nhân đã tử vong vào khoảng **09h45 đến 10h15 sáng** ngày 01/04/2004. Nạn nhân tuyệt đối không thể tự mình thỉnh chuông vào lúc 12h00 trưa!"
+    },
+    {
+      "id": "d04",
+      "stage": 1,
+      "type": "report",
+      "title": "Sơ đồ quần thể chùa Cổ Sơn trên núi Sài Sơn",
+      "date": "15h30 ngày 01/04/2004",
+      "content": "**SƠ ĐỒ QUẦN THỂ CHÙA CỔ SƠN**\n\n- **Chân núi**: Nhà khách, nhà bếp chay và cổng tam quan. Nơi phật tử tề tựu thụ lộc lúc trưa.\n- **Lưng chừng núi**: Chính điện và tăng xá của các đệ tử.\n- **Đỉnh núi (cách chân núi 300 bậc đá)**: Gồm gác chuông cổ hai tầng mái (chứa đại hồng chung đúc từ thời Hậu Lê) và tịnh thất am thiền của sư trụ trì, cách nhau 15 mét."
+    },
+    {
+      "id": "d05",
+      "stage": 1,
+      "type": "photo",
+      "title": "Ảnh chụp gác chuông và hệ thống chày gỗ giộng chuông",
+      "date": "14h15 ngày 01/04/2004",
+      "image": "images/d05-gac-chuong.webp",
+      "content": "Ảnh chụp tầng 2 gác chuông cổ: Quả đại hồng chung bằng đồng đen. Chày gỗ lim giộng chuông treo trên xà nhà có buộc một đoạn dây dù xanh lá cây dẫn lên xà mái. Trên mặt sàn gỗ lim phía dưới vành chuông đọng một vũng nước rỉ giọt còn ẩm ướt."
+    },
+    {
+      "id": "d06",
+      "stage": 2,
+      "type": "testimony",
+      "title": "Lời khai của đệ tử trưởng Thích Quảng Chân",
+      "date": "16h00 ngày 01/04/2004",
+      "lines": [
+        {
+          "n": 1,
+          "text": "Tôi được thầy giao phụ trách quản lý tài chính và tiếp đón phật tử mười năm nay."
+        },
+        {
+          "n": 2,
+          "text": "Sáng nay tôi ở dưới chân núi chuẩn bị lễ cúng mùng một đầu tháng."
+        },
+        {
+          "n": 3,
+          "text": "Từ đúng 11h15 đến 12h30 trưa, tôi ngồi liên tục tại nhà khách dưới chân núi cùng ăn cơm chay thụ lộc và thuyết pháp cho hơn 20 phật tử thập phương, không hề bước chân lên núi nửa bước."
+        },
+        {
+          "n": 4,
+          "text": "Đúng 12h00 trưa, tất cả mọi người ở nhà khách đều nghe rõ mồn một 3 tiếng chuông ngọ do thầy thỉnh ngân vang trên đỉnh núi."
+        },
+        {
+          "n": 5,
+          "text": "Nếu thầy bị giết trước 10h sáng thì ai là người gõ chuông lúc 12h00? Chẳng lẽ có thần thông biến hóa?"
+        }
+      ]
+    },
+    {
+      "id": "d07",
+      "stage": 2,
+      "type": "testimony",
+      "title": "Lời khai của thợ đúc đồng Bùi Văn Lực",
+      "date": "16h45 ngày 01/04/2004",
+      "lines": [
+        {
+          "n": 1,
+          "text": "Tôi được nhà chùa thuê tu sửa quai đồng đại hồng chung tuần trước."
+        },
+        {
+          "n": 2,
+          "text": "Sáng nay tôi mang đồ nghề lên gác chuông kiểm tra độ cân bằng của chày gỗ từ 08h30 đến 09h30 thì xuống núi về xưởng ở làng Ngũ Xã."
+        },
+        {
+          "n": 3,
+          "text": "Lúc tôi về sư thầy Tâm Viên vẫn đang ngồi tụng kinh trong am thất."
+        }
+      ]
+    },
+    {
+      "id": "d08",
+      "stage": 2,
+      "type": "testimony",
+      "title": "Lời khai của phật tử làm bếp Hoàng Thị Nga",
+      "date": "17h15 ngày 01/04/2004",
+      "lines": [
+        {
+          "n": 1,
+          "text": "Tôi làm bếp dưới chân núi từ 07h sáng."
+        },
+        {
+          "n": 2,
+          "text": "Khoảng 10h15 tôi thấy thầy Quảng Chân từ trên núi đi xuống, mồ hôi ướt đẫm áo nâu, tay cầm nải chuối bảo mang xuống thắp hương ban Phật bà."
+        },
+        {
+          "n": 3,
+          "text": "Sau đó từ 11h15 thầy Quảng Chân ngồi ở nhà khách ăn cơm cùng đoàn phật tử Hà Nội."
+        }
+      ]
+    },
+    {
+      "id": "d09",
+      "stage": 2,
+      "type": "testimony",
+      "title": "Biên bản xác nhận của đại diện đoàn phật tử Hà Nội",
+      "date": "17h45 ngày 01/04/2004",
+      "lines": [
+        {
+          "n": 1,
+          "text": "Đoàn chúng tôi gồm 22 người từ Hà Nội về lễ chùa Cổ Sơn sáng nay."
+        },
+        {
+          "n": 2,
+          "text": "Thầy Quảng Chân ngồi cùng bàn ăn chay với chúng tôi tại nhà khách từ 11h15 đến hơn 12h30."
+        },
+        {
+          "n": 3,
+          "text": "Đúng 12h00 trưa, tiếng chuông chùa trên đỉnh núi điểm 3 tiếng rất to và vang, thầy Quảng Chân còn chắp tay niệm Phật chúc phúc cho cả đoàn."
+        }
+      ]
+    },
+    {
+      "id": "d10",
+      "stage": 3,
+      "type": "report",
+      "title": "Bản giám định cơ học đòn bẩy và máng nước trên gác chuông",
+      "date": "08h30 ngày 02/04/2004",
+      "content": "**KẾT QUẢ GIÁM ĐỊNH KỸ THUẬT HÌNH SỰ GÁC CHUÔNG**\n\n1. Trên xà nóc phía trên chày gỗ giộng chuông phát hiện vết ố nước tròn đường kính 30cm (kích thước đáy xô nhựa) và hai chốt đinh sắt mới đóng dùng để néo dây thừng.\n2. **Cơ chế bẫy gõ chuông thủy lực**:\n   - Kẻ gây án đặt một xô nước có châm kim tạo lỗ rỉ nhỏ giọt đều đặn trên xà nóc.\n   - Nước rỉ giọt chảy vào một ống bương tre buộc ở đầu đòn bẩy đối trọng nối với chày gỗ giộng chuông.\n   - Khi lượng nước rỉ tích lũy sau đúng 105 phút (từ 10h15 đến 12h00 trưa) đạt trọng lượng khoảng 3kg, sức nặng của nước đã kéo sập lẫy hãm cơ học, kích hoạt chày gỗ giộng mạnh 3 nhịp liên tiếp vào vành đại hồng chung nhờ phản lực của lò xo kéo!\n   - Sau khi giộng xong 3 nhịp, theo quán tính đòn bẩy, ống bương tre tự lật úp trút sạch nước xuống máng xối ngầm rồi quay về vị trí ban đầu!"
+    },
+    {
+      "id": "d11",
+      "stage": 3,
+      "type": "photo",
+      "title": "Ảnh tang vật ống bương tre trục xoay tìm thấy sau tượng Hộ Pháp",
+      "date": "09h00 ngày 02/04/2004",
+      "image": "images/d11-ong-tre.webp",
+      "content": "Ảnh chụp tang vật: Ống bương tre già dài 40cm được cưa vát miệng, có khoan trục xoay gỗ xuyên tâm để làm bập bênh lật nước. Vết cưa tre còn rỉ nhựa mủ trắng sữa mới tinh. Cạnh đó là đoạn dây dù xanh cùng loại với dây buộc trên chày chuông."
+    },
+    {
+      "id": "d12",
+      "stage": 3,
+      "type": "report",
+      "title": "Biên bản kiểm tra vết xơ tre trong túi áo Thích Quảng Chân",
+      "date": "09h45 ngày 02/04/2004",
+      "content": "**KẾT QUẢ GIÁM ĐỊNH DẤU VẾT VI THỂ TRÊN Y PHỤC**\n\nKiểm tra túi áo nâu sồng của Thích Quảng Chân thu được:\n- Nhiều dăm tre và mùn cưa tre tươi dính nhựa mủ có cấu trúc tế bào thực vật trùng khớp 100% với giống tre bương trong bụi tre sau am thiền.\n- Một lưỡi cưa tay mini gấp khúc dài 15cm chuôi bọc nhựa xanh dính mùn tre."
+    },
+    {
+      "id": "d13",
+      "stage": 3,
+      "type": "report",
+      "title": "Biên bản thực nghiệm cơ chế nhỏ giọt nước gõ chuông",
+      "date": "10h30 ngày 02/04/2004",
+      "content": "**KẾT QUẢ THỰC NGHIỆM ĐIỀU TRA**\n\nCơ quan điều tra tái lập lại chiếc bẫy nước trên gác chuông với dung tích xô nước và ống bương tre tang vật: Thời gian nhỏ giọt từ lúc kích hoạt đến khi ống bương đủ nặng kéo chày giộng chuông là 104 phút 45 giây (chênh lệch chưa đầy 1 phút so với thời điểm 12h00 trưa)!"
+    },
+    {
+      "id": "d14",
+      "stage": 4,
+      "type": "report",
+      "title": "Biên bản khám xét phòng riêng của Thích Quảng Chân",
+      "date": "11h30 ngày 02/04/2004",
+      "content": "**THU GIỮ TÀI LIỆU VÀ TIỀN THAM Ô**\n\nKhám xét căn phòng phía đông tăng xá của Quảng Chân, công an phát hiện dưới đệm thiền tọa:\n- Trang bìa và 3 trang tài liệu bị xé khỏi sổ quỹ của sư trụ trì, ghi lại kết quả thanh tra số tiền 60 triệu đồng công đức trùng tu tượng Phật bị Quảng Chân chiếm đoạt.\n- 45 triệu đồng tiền mặt bọc trong khăn vải điều màu đỏ."
+    },
+    {
+      "id": "d15",
+      "stage": 4,
+      "type": "report",
+      "title": "Kết quả giám định sợi dây thừng siết cổ",
+      "date": "14h00 ngày 02/04/2004",
+      "content": "**GIÁM ĐỊNH HUNG KHÍ SIẾT CỔ**\n\nSợi dây thừng gai sợi thô dùng để siết cổ sư trụ trì thu được dưới kẽ nứt đá sau am thiền hoàn toàn đồng chất với cuộn dây thừng buộc chuông dự phòng để trong rương đồ đạc của Quảng Chân."
+    },
+    {
+      "id": "d16",
+      "stage": 4,
+      "type": "report",
+      "title": "Bản thú tội của Thích Quảng Chân",
+      "date": "15h30 ngày 02/04/2004",
+      "content": "**LỜI THÚ NHẬN TỘI LỖI CỦA THÍCH QUẢNG CHÂN**\n\n'Tôi lỡ tham ô 60 triệu tiền công đức để gửi về quê cho người nhà xây nhà. Sáng hôm đó thầy gọi tôi lên am thất chìa sổ quỹ ra răn dạy và tuyên bố chiều mùng một sẽ họp tăng chúng tước áo cà sa đuổi tôi khỏi chùa. Tôi hoảng loạn van xin không được nên siết cổ thầy lúc 09h45. Tôi biết chỉ có thầy mới đích thân gõ chuông ngọ, nên tôi chế ống bương tre tích nước nhỏ giọt hẹn giờ 12h00 gõ chuông để tạo bằng chứng ngoại phạm ăn cơm chay dưới chân núi...'"
+    },
+    {
+      "id": "d17",
+      "stage": 4,
+      "type": "report",
+      "title": "Kết luận điều tra vụ án Chùa Cổ Sơn",
+      "date": "16h30 ngày 02/04/2004",
+      "content": "**KẾT LUẬN ĐIỀU TRA**\n\nThích Quảng Chân bị khởi tố về tội Giết người và Tham ô tài sản. Bẫy cơ học nước chảy tinh vi đã bị lật tẩy hoàn toàn bởi các dấu vết dăm tre và cơ chế thực nghiệm khoa học."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "stage": 1,
+      "type": "evidence",
+      "title": "Giờ chết thực tế của sư trụ trì và dấu vết gác chuông",
+      "intro": "Tiếng chuông ngân vang lúc 12h00 trưa đánh lừa mọi người rằng sư trụ trì vẫn còn sống. Nhưng giám định y khoa và dấu vết ẩm ướt trên gác chuông đã phơi bày sự mâu thuẫn.",
+      "prompt": "Ghim 2 tài liệu chứng minh sư trụ trì đã viên tịch từ trước 10h15 sáng và dấu vết dây dù cùng vũng nước bất thường trên gác chuông.",
+      "need": 2,
+      "answer": [
+        "d03",
+        "d05"
+      ],
+      "hints": [
+        "Kiểm tra kết quả giám định tử thi về thời điểm tử vong 09h45 - 10h15 sáng.",
+        "Xem ảnh chụp gác chuông thể hiện dây dù buộc chày giộng chuông và vũng nước đọng dưới sàn."
+      ],
+      "explanation": [
+        "Tài liệu d03 xác nhận nạn nhân đã chết do ngạt siết cổ lúc 09h45 - 10h15 sáng, dạ dày rỗng không thể gõ chuông lúc 12h00.",
+        "Tài liệu d05 (ảnh chụp gác chuông) ghi lại dây dù xanh buộc chày chuông và vũng nước đọng rỉ giọt trên sàn gỗ lim."
+      ],
+      "nudges": [
+        {
+          "picks": [
+            "d01",
+            "d02"
+          ],
+          "message": "Bản tin và biên bản tịnh thất chưa nêu kết luận giám định y pháp về giờ tử vong chính xác và dấu vết trên gác chuông."
+        }
+      ]
+    },
+    {
+      "id": "q2",
+      "stage": 2,
+      "type": "line",
+      "title": "Bằng chứng ngoại phạm của Thích Quảng Chân",
+      "intro": "Thích Quảng Chân đưa ra lời khai khẳng định mình ngồi ăn cơm chay với hơn 20 phật tử dưới chân núi suốt giờ trưa.",
+      "prompt": "Hãy chọn một dòng trong lời khai của Thích Quảng Chân (d06) khẳng định y ngồi liên tục tại nhà khách dưới chân núi ăn cơm chay và thuyết pháp từ đúng 11h15 đến 12h30 không lên núi nửa bước.",
+      "answer": [
+        "d06:003"
+      ],
+      "hints": [
+        "Tìm dòng lời khai nói về việc Quảng Chân ngồi ở nhà khách ăn cơm chay từ 11h15 đến 12h30.",
+        "Đối chiếu mốc thời gian và hành vi của người khai với các nhân chứng xung quanh."
+      ],
+      "explanation": [
+        "Tại dòng d06:003, Quảng Chân khai: 'Từ đúng 11h15 đến 12h30 trưa, tôi ngồi liên tục tại nhà khách dưới chân núi cùng ăn cơm chay thụ lộc và thuyết pháp cho hơn 20 phật tử thập phương, không hề bước chân lên núi nửa bước'."
+      ]
+    },
+    {
+      "id": "q3",
+      "stage": 3,
+      "type": "evidence",
+      "title": "Vạch trần cơ chế bẫy nước nhỏ giọt gõ chuông",
+      "intro": "Bí ẩn về tiếng chuông lúc 12h00 trưa được giải mã bằng nguyên lý thủy lực học nhỏ giọt tích nước.",
+      "prompt": "Ghim 2 tài liệu phân tích kỹ thuật về cơ chế nhỏ giọt nước 105 phút kích hoạt chày chuông và hình ảnh ống bương tre đối trọng tang vật.",
+      "need": 2,
+      "answer": [
+        "d10",
+        "d11"
+      ],
+      "hints": [
+        "Báo cáo giám định kỹ thuật cơ học về cơ chế nhỏ giọt nước làm sập lẫy hãm gõ 3 tiếng chuông sau 105 phút.",
+        "Ảnh chụp tang vật ống bương tre có trục xoay lật nước giấu sau tượng Hộ Pháp."
+      ],
+      "explanation": [
+        "Tài liệu d10 làm rõ cơ chế nước nhỏ giọt vào ống bương tre trong 105 phút làm sập lẫy giộng chuông lúc 12h00.",
+        "Tài liệu d11 (ảnh tang vật) chụp ống bương tre khoan trục xoay và cuộn dây dù màu xanh dính mủ tre tươi."
+      ],
+      "nudges": [
+        {
+          "picks": [
+            "d12",
+            "d13"
+          ],
+          "message": "d12 và d13 là kiểm tra túi áo và thực nghiệm thời gian; hãy chọn báo cáo cơ chế kỹ thuật d10 và hình ảnh vật chứng d11."
+        }
+      ]
+    },
+    {
+      "id": "q4",
+      "stage": 4,
+      "type": "choice",
+      "title": "Kẻ sát hại sư trụ trì Chùa Cổ Sơn",
+      "intro": "Trang sổ quỹ bị xé, tiền mặt giấu dưới đệm thiền và dăm tre trong túi áo đã chỉ đích danh kẻ sát nhân phản thầy.",
+      "prompt": "Dựa vào toàn bộ tài liệu hồ sơ, ai là kẻ đã sát hại Đại đức Thích Tâm Viên?",
+      "options": [
+        "Đệ tử trưởng Thích Quảng Chân",
+        "Thợ đúc đồng Bùi Văn Lực",
+        "Phật tử làm bếp Hoàng Thị Nga",
+        "Khách hành hương từ Hà Nội"
+      ],
+      "answer": [
+        0
+      ],
+      "hints": [
+        "Ai có động cơ sợ bị đuổi khỏi chùa vì tham ô 60 triệu tiền trùng tu, cưa ống bương tre làm bẫy nước gõ chuông hẹn giờ?",
+        "Xem xét kỹ các bằng chứng vật chất và báo cáo kỹ thuật hình sự."
+      ],
+      "explanation": [
+        "Thích Quảng Chân là kẻ thủ ác. Y siết cổ sư trụ trì lúc 09h45 (d03, d15), cài đặt bẫy nước nhỏ giọt gõ chuông lúc 12h00 (d10, d11, d13), có dăm tre trong túi áo (d12) và giấu sổ quỹ cùng tiền tham ô dưới đệm thiền (d14, d16)."
+      ]
+    }
+  ],
+  "finale": {
+    "culprit": "Thích Quảng Chân",
+    "text": "Trước chiếc cưa tay dính mùn tre và ống bương tre tang vật bẫy thủy lực gõ chuông không thể chối cãi, Thích Quảng Chân đã phải sụp quỳ nhận tội trước hương linh người thầy tôn kính. Lòng tham lam và tâm ma đen tối đã hủy hoại phẩm hạnh người đệ tử tu hành mười mấy năm chốn cửa Phật. Hồi chuông u minh trên đỉnh Sài Sơn lại ngân vang thanh tịnh, gột rửa đi vết nhơ tội ác chốn thiền môn."
+  }
+}

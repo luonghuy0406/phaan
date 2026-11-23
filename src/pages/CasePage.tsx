@@ -3,6 +3,7 @@ import { Link, useNavigate, useParams } from 'react-router-dom';
 import { useAuth } from '../lib/auth';
 import { supabaseReady } from '../lib/supabase';
 import { createRoom } from '../multiplayer/room';
+import { useMyActivity, roomLink, ROOM_STATUS } from '../components/progress';
 import { CaseCard, Cover, Difficulty, Footer, Nav } from '../components/site';
 import { caseNo, loadCase, loadCatalog, useAsync } from '../lib/data';
 import { Paras } from '../lib/text';
@@ -27,6 +28,9 @@ export default function CasePage() {
   const navigate = useNavigate();
   const session = useAuth((s) => s.session);
   const [busy, setBusy] = useState(false);
+  const mine = useMyActivity();
+  const myRoom = mine.rooms.find((r) => r.case_id === id && r.status !== 'finished');
+  const mySave = mine.saved.find((s) => s.case_id === id);
   const [err, setErr] = useState('');
   const playTogether = async () => {
     if (!session) { navigate(`/dang-nhap?next=${encodeURIComponent(`/ho-so/${id}`)}`); return; }
@@ -69,7 +73,8 @@ export default function CasePage() {
                   <div className="case-actions">
                     {open ? (
                       <>
-                        <Link className="btn btn--primary" to={`/choi/${c.id}`}>Chơi một mình</Link>
+                        {myRoom && <Link className="btn btn--primary" to={roomLink(myRoom)}>Vào lại phòng ({ROOM_STATUS[myRoom.status].toLowerCase()})</Link>}
+                        <Link className={`btn ${myRoom ? 'btn--ghost' : 'btn--primary'}`} to={`/choi/${c.id}`}>{mySave ? `Tiếp tục một mình (${mySave.solved}/${mySave.total})` : 'Chơi một mình'}</Link>
                         {supabaseReady && <button type="button" className="btn btn--primary btn--alt" disabled={busy} onClick={playTogether}>{busy ? 'Đang tạo phòng…' : 'Chơi nhóm'}</button>}
                         {supabaseReady && <Link className="btn btn--ghost" to="/tham-gia">Có mã phòng?</Link>}
                       </>

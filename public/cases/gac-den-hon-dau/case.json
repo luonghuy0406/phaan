@@ -65,13 +65,34 @@
       "title": "Lời khai của Phó trạm trưởng Vũ Văn Thắng",
       "date": "20h00 ngày 25/09/1998",
       "lines": [
-        { "n": 1, "text": "Tôi phụ trách kỹ thuật điện và máy nổ của trạm hải đăng." },
-        { "n": 2, "text": "Đêm bão biển gầm rú dữ dội, máy nổ phải chạy hết công suất để vừa cấp điện đèn biển vừa chạy bơm nước chống ngập." },
-        { "n": 3, "text": "Từ lúc 23h00 đêm qua tôi túc trực liên tục dưới tầng hầm máy nổ theo dõi áp suất dầu bôi trơn, không hề bước chân lên các tầng trên nửa bước cho tới tận sáng." },
-        { "n": 4, "text": "Đúng 23h43 cầu chì tổng bỗng nổ tung tóe lửa, trạm tối om." },
-        { "n": 5, "text": "Vừa lúc đó cậu Tùng từ trên tháp đèn hớt hải chạy xuống tầng hầm tìm tôi." },
-        { "n": 6, "text": "Cậu Tùng và tôi cùng nhau tháo cầu chì cháy và giật nổ máy phát phụ đến đúng 00h00 mới cấp lại điện cho tháp đèn." },
-        { "n": 7, "text": "Cậu Tùng chứng kiến tôi ở dưới hầm máy suốt thời gian đó, tôi làm sao giết anh Quyết được!" }
+        {
+          "n": 1,
+          "text": "Tôi phụ trách kỹ thuật điện và máy nổ của trạm hải đăng."
+        },
+        {
+          "n": 2,
+          "text": "Đêm bão biển gầm rú dữ dội, máy nổ phải chạy hết công suất để vừa cấp điện đèn biển vừa chạy bơm nước chống ngập."
+        },
+        {
+          "n": 3,
+          "text": "Từ lúc 23h00 đêm qua tôi túc trực liên tục dưới tầng hầm máy nổ theo dõi áp suất dầu bôi trơn, không hề bước chân lên các tầng trên nửa bước cho tới tận sáng."
+        },
+        {
+          "n": 4,
+          "text": "Đúng 23h43 cầu chì tổng bỗng nổ tung tóe lửa, trạm tối om."
+        },
+        {
+          "n": 5,
+          "text": "Vừa lúc đó cậu Tùng từ trên tháp đèn hớt hải chạy xuống tầng hầm tìm tôi."
+        },
+        {
+          "n": 6,
+          "text": "Cậu Tùng và tôi cùng nhau tháo cầu chì cháy và giật nổ máy phát phụ đến đúng 00h00 mới cấp lại điện cho tháp đèn."
+        },
+        {
+          "n": 7,
+          "text": "Cậu Tùng chứng kiến tôi ở dưới hầm máy suốt thời gian đó, tôi làm sao giết anh Quyết được!"
+        }
       ]
     },
     {
@@ -81,12 +102,30 @@
       "title": "Lời khai của công nhân vận hành tháp đèn Bùi Xuân Tùng",
       "date": "20h45 ngày 25/09/1998",
       "lines": [
-        { "n": 1, "text": "Tôi được phân công trực đài quang trên đỉnh tháp đèn suốt ca đêm từ 20h đến 04h sáng." },
-        { "n": 2, "text": "Gió bão cấp 11 quất rung chuyển cả ngọn tháp, tôi sợ thấu kính bị nứt nên phải liên tục dùng giẻ lau kiểm tra." },
-        { "n": 3, "text": "Đúng 23h43 bóng đèn cao áp phụt tắt tối đen như mực." },
-        { "n": 4, "text": "Tôi bật đèn pin chạy thục mạng xuống cầu thang xoắn ốc xuống thẳng tầng hầm tìm anh Thắng." },
-        { "n": 5, "text": "Khoảng 23h46 tôi xuống tới tầng hầm thì thấy anh Thắng đang cầm kìm đứng trước tủ điện khói bốc nghi ngút." },
-        { "n": 6, "text": "Hai anh em tôi hì hục sửa và quay tay quay máy phụ đến đúng 00h00 thì đèn sáng lại." }
+        {
+          "n": 1,
+          "text": "Tôi được phân công trực đài quang trên đỉnh tháp đèn suốt ca đêm từ 20h đến 04h sáng."
+        },
+        {
+          "n": 2,
+          "text": "Gió bão cấp 11 quất rung chuyển cả ngọn tháp, tôi sợ thấu kính bị nứt nên phải liên tục dùng giẻ lau kiểm tra."
+        },
+        {
+          "n": 3,
+          "text": "Đúng 23h43 bóng đèn cao áp phụt tắt tối đen như mực."
+        },
+        {
+          "n": 4,
+          "text": "Tôi bật đèn pin chạy thục mạng xuống cầu thang xoắn ốc xuống thẳng tầng hầm tìm anh Thắng."
+        },
+        {
+          "n": 5,
+          "text": "Khoảng 23h46 tôi xuống tới tầng hầm thì thấy anh Thắng đang cầm kìm đứng trước tủ điện khói bốc nghi ngút."
+        },
+        {
+          "n": 6,
+          "text": "Hai anh em tôi hì hục sửa và quay tay quay máy phụ đến đúng 00h00 thì đèn sáng lại."
+        }
       ]
     },
     {
@@ -96,9 +135,18 @@
       "title": "Lời khai của nhân viên vô tuyến Hoàng Đức Nghĩa",
       "date": "21h30 ngày 25/09/1998",
       "lines": [
-        { "n": 1, "text": "Tôi trực máy bộ đàm ICOM ở tầng 3 để liên lạc với Cảng vụ Hải Phòng." },
-        { "n": 2, "text": "Máy bộ đàm của tôi chạy bằng bình ắc-quy 24V riêng biệt nên khi trạm mất điện lúc 23h43 máy vẫn phát sóng được." },
-        { "n": 3, "text": "Lúc 23h45 tôi có dùng bộ đàm nội bộ gọi xuống phòng anh Quyết ở tầng 2 báo cáo sự cố mất điện nhưng không thấy anh Quyết nhấc máy." }
+        {
+          "n": 1,
+          "text": "Tôi trực máy bộ đàm ICOM ở tầng 3 để liên lạc với Cảng vụ Hải Phòng."
+        },
+        {
+          "n": 2,
+          "text": "Máy bộ đàm của tôi chạy bằng bình ắc-quy 24V riêng biệt nên khi trạm mất điện lúc 23h43 máy vẫn phát sóng được."
+        },
+        {
+          "n": 3,
+          "text": "Lúc 23h45 tôi có dùng bộ đàm nội bộ gọi xuống phòng anh Quyết ở tầng 2 báo cáo sự cố mất điện nhưng không thấy anh Quyết nhấc máy."
+        }
       ]
     },
     {
@@ -133,9 +181,18 @@
       "title": "Lời khai bổ sung của Bùi Xuân Tùng về tủ sấy quần áo",
       "date": "09h45 ngày 26/09/1998",
       "lines": [
-        { "n": 1, "text": "Chiều hôm 24/09 trước khi bão vào, chiếc tủ sấy quần áo bảo hộ ở tầng 1 bị hỏng rơ-le ngắt nhiệt." },
-        { "n": 2, "text": "Anh Thắng có mang hộp đồ nghề tháo tung bộ rơ-le nhiệt của tủ sấy ra bảo đem xuống hầm kiểm tra." },
-        { "n": 3, "text": "Bộ rơ-le nhiệt tủ sấy đó của Liên Xô cũ, có gắn thanh lưỡng kim dập chữ T-85 hệt như thanh kim loại công an vừa tìm thấy!" }
+        {
+          "n": 1,
+          "text": "Chiều hôm 24/09 trước khi bão vào, chiếc tủ sấy quần áo bảo hộ ở tầng 1 bị hỏng rơ-le ngắt nhiệt."
+        },
+        {
+          "n": 2,
+          "text": "Anh Thắng có mang hộp đồ nghề tháo tung bộ rơ-le nhiệt của tủ sấy ra bảo đem xuống hầm kiểm tra."
+        },
+        {
+          "n": 3,
+          "text": "Bộ rơ-le nhiệt tủ sấy đó của Liên Xô cũ, có gắn thanh lưỡng kim dập chữ T-85 hệt như thanh kim loại công an vừa tìm thấy!"
+        }
       ]
     },
     {
@@ -213,7 +270,10 @@
       "intro": "Cái chết của Trạm trưởng Quyết thoạt nhìn như tai nạn trượt chân trong đêm bão. Nhưng giám định pháp y và nhật ký trạm cho thấy một sự thật hoàn toàn khác.",
       "prompt": "Ghim 2 tài liệu chứng minh nạn nhân đã bị đâm từ phía sau trước khi rơi xuống vực và thời gian ngọn hải đăng bị tắt gián đoạn bất thường.",
       "need": 2,
-      "answer": ["d03", "d05"],
+      "answer": [
+        "d03",
+        "d05"
+      ],
       "hints": [
         "Kiểm tra kết quả giám định tử thi về vết thương do dao găm thấu ngực.",
         "Xem nhật ký vận hành kỹ thuật đèn biển ghi nhận thời gian ngọn đèn bị tắt ngấm."
@@ -224,7 +284,10 @@
       ],
       "nudges": [
         {
-          "picks": ["d01", "d02"],
+          "picks": [
+            "d01",
+            "d02"
+          ],
           "message": "Bản tin và biên bản hiện trường chân vách đá chưa kết luận nguyên nhân tử vong do dao đâm và số phút mất điện cụ thể."
         }
       ]
@@ -236,9 +299,12 @@
       "title": "Bằng chứng ngoại phạm của Vũ Văn Thắng",
       "intro": "Vũ Văn Thắng khai rằng y luôn ở tầng hầm máy nổ suốt cả đêm và có nhân viên Tùng làm chứng.",
       "prompt": "Hãy chọn một dòng trong lời khai của Vũ Văn Thắng (d06) khẳng định y túc trực liên tục dưới tầng hầm máy nổ từ 23h00 không hề bước lên các tầng trên nửa bước cho tới sáng.",
-      "answer": ["d06:003"],
+      "answer": [
+        "d06:003"
+      ],
       "hints": [
-        "Tìm dòng lời khai mà Thắng khẳng định mình ở tầng hầm máy nổ từ 23h00 không lên tầng trên."
+        "Tìm dòng lời khai mà Thắng khẳng định mình ở tầng hầm máy nổ từ 23h00 không lên tầng trên.",
+        "Đối chiếu mốc thời gian và hành vi của người khai với các nhân chứng xung quanh."
       ],
       "explanation": [
         "Tại dòng d06:003, Thắng khai: 'Từ lúc 23h00 đêm qua tôi túc trực liên tục dưới tầng hầm máy nổ theo dõi áp suất dầu bôi trơn, không hề bước chân lên các tầng trên nửa bước cho tới tận sáng'."
@@ -252,7 +318,10 @@
       "intro": "Sự cố nổ cầu chì lúc 23h43 không phải do quá tải ngẫu nhiên mà là một cái bẫy kỹ thuật được tính toán trước.",
       "prompt": "Ghim 2 tài liệu chứng minh sự cố chập nổ cầu chì là hành vi phá hoại có chủ đích bằng thanh lưỡng kim nhiệt gắn lén vào cuộn stato máy phát.",
       "need": 2,
-      "answer": ["d10", "d11"],
+      "answer": [
+        "d10",
+        "d11"
+      ],
       "hints": [
         "Báo cáo giám định kỹ thuật điện về thanh lưỡng kim nhiệt và sợi chì bị gọt mỏng.",
         "Ảnh chụp cận cảnh thanh lưỡng kim dập mã hiệu T-85 kẹp sát stato máy phát nổ."
@@ -263,7 +332,10 @@
       ],
       "nudges": [
         {
-          "picks": ["d12", "d13"],
+          "picks": [
+            "d12",
+            "d13"
+          ],
           "message": "d12 và d13 là lời khai về tủ sấy và sơ đồ lý thuyết, nhưng d10 và d11 mới trực tiếp phân tích vật chứng tại khối máy phát."
         }
       ]
@@ -276,7 +348,10 @@
       "intro": "Khám xét phòng máy nổ đã hé lộ tang vật và bản báo cáo kiểm kê bị tiêu hủy vội vã.",
       "prompt": "Ghim 2 tài liệu chỉ ra vật chứng chiếc áo mưa dính máu nạn nhân và nội dung bản nhật ký tố cáo hành vi tham ô dầu diesel của thủ phạm.",
       "need": 2,
-      "answer": ["d15", "d17"],
+      "answer": [
+        "d15",
+        "d17"
+      ],
       "hints": [
         "Ảnh chụp chiếc áo mưa vàng dính máu và trang nhật ký giấu trong bầu lọc gió.",
         "Bản khôi phục trang nhật ký của Trạm trưởng Quyết hoặc biên bản đứt nút áo xô xát lan can."
@@ -287,7 +362,10 @@
       ],
       "nudges": [
         {
-          "picks": ["d14", "d16"],
+          "picks": [
+            "d14",
+            "d16"
+          ],
           "message": "d14 là kìm bấm và dao găm; hãy chọn tài liệu ảnh tang vật d15 và chứng cứ xô xát tầng 2 d17."
         }
       ]
@@ -305,9 +383,12 @@
         "Nhân viên vô tuyến Hoàng Đức Nghĩa",
         "Thuyền viên tàu cá lạ cập bờ lánh nạn"
       ],
-      "answer": [0],
+      "answer": [
+        0
+      ],
       "hints": [
-        "Ai có chuyên môn cơ điện chế tạo bẫy nhiệt ngắn mạch, sở hữu dao găm thợ lặn dính máu và động cơ sợ bị thanh tra tham ô 3 tấn dầu?"
+        "Ai có chuyên môn cơ điện chế tạo bẫy nhiệt ngắn mạch, sở hữu dao găm thợ lặn dính máu và động cơ sợ bị thanh tra tham ô 3 tấn dầu?",
+        "Xem xét kỹ các bằng chứng vật chất và báo cáo kỹ thuật hình sự."
       ],
       "explanation": [
         "Vũ Văn Thắng là kẻ thủ ác. Y đâm nạn nhân lúc 23h25 (d03, d17), dùng thanh lưỡng kim hẹn giờ nổ cầu chì lúc 23h43 để kéo Tùng xuống làm nhân chứng ngoại phạm giả (d10, d11, d19) và cất giấu dao găm cùng trang nhật ký tố cáo bán dầu lậu trong bầu gió máy nổ phụ (d14, d15, d16, d18)."

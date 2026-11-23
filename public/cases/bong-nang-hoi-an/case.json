@@ -66,11 +66,26 @@
       "title": "Lời khai của cháu đích tôn Lương Gia Bảo",
       "date": "15h45 ngày 19/08/2005",
       "lines": [
-        { "n": 1, "text": "Trưa nay tôi không đi lễ chùa Cầu với gia đình vì bận hẹn bạn bè ăn trưa." },
-        { "n": 2, "text": "Tôi đi bộ từ nhà lúc 11h15 sang quán cơm gà trên phố Phan Chu Trinh." },
-        { "n": 3, "text": "Tôi ngồi ăn cơm gà, uống bia với ba người bạn từ đúng 11h30 đến tận 13h30 chiều mới đứng dậy." },
-        { "n": 4, "text": "Lúc ăn cơm, bạn tôi còn dùng máy ảnh kỹ thuật số chụp lại cảnh tôi ngồi ăn, trên tường có đồng hồ chỉ 12h15 rõ ràng." },
-        { "n": 5, "text": "Tôi hoàn toàn có bằng chứng ngoại phạm không thể chối cãi, bác đừng vu khống tôi vì món nợ cá độ!" }
+        {
+          "n": 1,
+          "text": "Trưa nay tôi không đi lễ chùa Cầu với gia đình vì bận hẹn bạn bè ăn trưa."
+        },
+        {
+          "n": 2,
+          "text": "Tôi đi bộ từ nhà lúc 11h15 sang quán cơm gà trên phố Phan Chu Trinh."
+        },
+        {
+          "n": 3,
+          "text": "Tôi ngồi ăn cơm gà, uống bia với ba người bạn từ đúng 11h30 đến tận 13h30 chiều mới đứng dậy."
+        },
+        {
+          "n": 4,
+          "text": "Lúc ăn cơm, bạn tôi còn dùng máy ảnh kỹ thuật số chụp lại cảnh tôi ngồi ăn, trên tường có đồng hồ chỉ 12h15 rõ ràng."
+        },
+        {
+          "n": 5,
+          "text": "Tôi hoàn toàn có bằng chứng ngoại phạm không thể chối cãi, bác đừng vu khống tôi vì món nợ cá độ!"
+        }
       ]
     },
     {
@@ -89,10 +104,22 @@
       "title": "Lời khai của thợ mộc Nguyễn Văn Trực",
       "date": "16h30 ngày 19/08/2005",
       "lines": [
-        { "n": 1, "text": "Tôi được cụ Hòa thuê tu bổ vì kèo từ đường suốt một tuần nay." },
-        { "n": 2, "text": "Trưa nay 11h30 tôi thu dọn đồ nghề rồi khóa cửa sau ra quán nước mía đầu phố ngồi uống nước đến 13h." },
-        { "n": 3, "text": "Chìa khóa cửa sau chỉ có cụ Hòa, tôi và cậu Bảo giữ một chiếc." },
-        { "n": 4, "text": "Tôi là thợ mộc chân chính, bao nhiêu đời gia đình tôi ở Hội An này ai cũng biết, tôi không bao giờ thèm lấy trộm đồ của chủ nhà." }
+        {
+          "n": 1,
+          "text": "Tôi được cụ Hòa thuê tu bổ vì kèo từ đường suốt một tuần nay."
+        },
+        {
+          "n": 2,
+          "text": "Trưa nay 11h30 tôi thu dọn đồ nghề rồi khóa cửa sau ra quán nước mía đầu phố ngồi uống nước đến 13h."
+        },
+        {
+          "n": 3,
+          "text": "Chìa khóa cửa sau chỉ có cụ Hòa, tôi và cậu Bảo giữ một chiếc."
+        },
+        {
+          "n": 4,
+          "text": "Tôi là thợ mộc chân chính, bao nhiêu đời gia đình tôi ở Hội An này ai cũng biết, tôi không bao giờ thèm lấy trộm đồ của chủ nhà."
+        }
       ]
     },
     {
@@ -102,9 +129,18 @@
       "title": "Lời khai của thương lái đồ cổ Trần Khắc Định",
       "date": "17h00 ngày 19/08/2005",
       "lines": [
-        { "n": 1, "text": "Hôm qua tôi có đến xem bức tranh và trả giá 300 triệu thật, nhưng cụ Hòa không bán thì thôi chứ tôi trộm làm gì." },
-        { "n": 2, "text": "Trưa nay từ 11h đến 14h tôi ngồi tiếp khách đối tác tại sảnh khách sạn Hội An Riverside." },
-        { "n": 3, "text": "Camera an ninh và lễ tân khách sạn đều có thể làm chứng cho tôi." }
+        {
+          "n": 1,
+          "text": "Hôm qua tôi có đến xem bức tranh và trả giá 300 triệu thật, nhưng cụ Hòa không bán thì thôi chứ tôi trộm làm gì."
+        },
+        {
+          "n": 2,
+          "text": "Trưa nay từ 11h đến 14h tôi ngồi tiếp khách đối tác tại sảnh khách sạn Hội An Riverside."
+        },
+        {
+          "n": 3,
+          "text": "Camera an ninh và lễ tân khách sạn đều có thể làm chứng cho tôi."
+        }
       ]
     },
     {
@@ -146,10 +182,22 @@
       "title": "Lời khai của chủ quán cơm gà phố Phan Chu Trinh",
       "date": "19h00 ngày 19/08/2005",
       "lines": [
-        { "n": 1, "text": "Trưa nay quán tôi đông khách lắm, mãi đến hơn 14h khách mới vãn bớt." },
-        { "n": 2, "text": "Lúc hơn 14h tôi thấy cậu Bảo cùng mấy người bạn mới vào quán gọi cơm." },
-        { "n": 3, "text": "Lúc tôi bưng đĩa gà lên thì thấy cậu Bảo đang đứng trên ghế loay hoay sờ vào chiếc đồng hồ quả lắc treo tường, bảo là đồng hồ chạy chậm." },
-        { "n": 4, "text": "Sau đó tôi thấy bạn cậu ấy giơ máy ảnh ra chụp lia lịa rồi cậu ấy lại trèo lên chỉnh lại đồng hồ như cũ." }
+        {
+          "n": 1,
+          "text": "Trưa nay quán tôi đông khách lắm, mãi đến hơn 14h khách mới vãn bớt."
+        },
+        {
+          "n": 2,
+          "text": "Lúc hơn 14h tôi thấy cậu Bảo cùng mấy người bạn mới vào quán gọi cơm."
+        },
+        {
+          "n": 3,
+          "text": "Lúc tôi bưng đĩa gà lên thì thấy cậu Bảo đang đứng trên ghế loay hoay sờ vào chiếc đồng hồ quả lắc treo tường, bảo là đồng hồ chạy chậm."
+        },
+        {
+          "n": 4,
+          "text": "Sau đó tôi thấy bạn cậu ấy giơ máy ảnh ra chụp lia lịa rồi cậu ấy lại trèo lên chỉnh lại đồng hồ như cũ."
+        }
       ]
     },
     {
@@ -170,7 +218,10 @@
       "intro": "Bức tranh bị lấy cắp mà cửa trước không bị phá. Hãy xem xét các dấu vết vật lý chứng tỏ kẻ gian tẩu tán tài sản theo lối cửa sau ra khu vực giếng cổ Bá Lễ.",
       "prompt": "Ghim 2 tài liệu chỉ ra lối thoát hiểm phía sau từ đường và dấu vết khả nghi dính bùn rêu bên bờ giếng cổ.",
       "need": 2,
-      "answer": ["d02", "d03"],
+      "answer": [
+        "d02",
+        "d03"
+      ],
       "hints": [
         "Biên bản khám nghiệm hiện trường cửa sau từ đường mở bằng chìa khóa.",
         "Ảnh chụp cận cảnh phiến đá bậc giếng Bá Lễ dính vệt bùn vàng và sợi cước đen."
@@ -181,7 +232,10 @@
       ],
       "nudges": [
         {
-          "picks": ["d01", "d04"],
+          "picks": [
+            "d01",
+            "d04"
+          ],
           "message": "Bản tin và sơ đồ chỉ thể hiện vị trí địa lý chung, chưa đặc tả dấu vết bùn rêu và cước đen tại chỗ."
         }
       ]
@@ -193,9 +247,12 @@
       "title": "Lời khai ngoại phạm của Lương Gia Bảo",
       "intro": "Lương Gia Bảo đưa ra lời khai khẳng định mình ngồi ăn cơm gà suốt từ 11h30 đến 13h30 trưa.",
       "prompt": "Hãy chọn một dòng trong lời khai của Lương Gia Bảo (d06) khẳng định y ngồi ăn cơm gà và uống bia từ đúng 11h30 đến tận 13h30 chiều.",
-      "answer": ["d06:003"],
+      "answer": [
+        "d06:003"
+      ],
       "hints": [
-        "Tìm dòng lời khai mà Bảo nói về khung giờ ngồi ăn cơm gà với bạn bè."
+        "Tìm dòng lời khai mà Bảo nói về khung giờ ngồi ăn cơm gà với bạn bè.",
+        "Đối chiếu mốc thời gian và hành vi của người khai với các nhân chứng xung quanh."
       ],
       "explanation": [
         "Tại dòng d06:003, Bảo khai: 'Tôi ngồi ăn cơm gà, uống bia với ba người bạn từ đúng 11h30 đến tận 13h30 chiều mới đứng dậy'."
@@ -214,7 +271,9 @@
         "Thương lái đồ cổ Trần Khắc Định",
         "Chủ quán cơm gà phố Phan Chu Trinh"
       ],
-      "answer": [0],
+      "answer": [
+        0
+      ],
       "hints": [
         "Ai có chìa khóa cửa sau, có hóa đơn mua ống nhựa PVC phi 90 chống nước và vặn lùi đồng hồ quán cơm gà?",
         "Ai có động cơ nợ nần cá độ 200 triệu đồng?"

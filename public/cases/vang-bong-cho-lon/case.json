@@ -1,0 +1,320 @@
+{
+  "id": "vang-bong-cho-lon",
+  "no": 9,
+  "status": "available",
+  "title": "Vàng bóng Chợ Lớn",
+  "tagline": "Két sắt tiệm vàng Vạn Thành mở toang không một vết cạy, nhưng chủ tiệm lại gục chết bên tách cà phê vợt.",
+  "difficulty": 3,
+  "players": "2–5",
+  "duration": "75–90 phút",
+  "setting": "Tiệm vàng Vạn Thành, Quận 5, Chợ Lớn, TP. Hồ Chí Minh (hư cấu)",
+  "tags": [
+    "Án mạng",
+    "Trộm két sắt",
+    "Chợ Lớn",
+    "Mật mã số"
+  ],
+  "cover": "images/cover.webp",
+  "synopsis": "Sáng sớm ngày 18/05/1995, người làm công tại tiệm vàng Vạn Thành trên đường Hải Thượng Lãn Ông kinh hoàng phát hiện ông chủ Lâm Vạn Thành gục chết trên ghế tựa bên tách cà phê vợt nguội ngắt. Chiếc két sắt sắt đúc nặng nửa tấn mở toang không một vết cạy phá, 50 lượng vàng 24K và 100 triệu đồng tiền mặt biến mất sạch trơn.",
+  "intro": "Đội Cảnh sát Hình sự Công an Quận 5 tiếp nhận hiện trường một vụ trộm tiệm vàng chấn động phố người Hoa. Nạn nhân là người duy nhất nắm giữ mật mã xoay cơ học 4 số cực kỳ phức tạp. Bằng thủ pháp nào kẻ gian đã mở được cánh cửa sắt kiên cố và tẩu tán kho vàng trong đêm tối?",
+  "documents": [
+    {
+      "id": "d01",
+      "stage": 1,
+      "type": "newspaper",
+      "title": "Báo Sài Gòn Giải Phóng - Vụ cướp tiệm vàng chấn động Chợ Lớn",
+      "date": "19/05/1995",
+      "content": "**ÁNH VÀNG VẠN THÀNH TẮT LỊM: CHỦ TIỆM TỬ VONG, 50 LƯỢNG VÀNG BIẾN MẤT**\n\nRạng sáng 18/05, tại tiệm vàng Vạn Thành (số 62 đường Hải Thượng Lãn Ông, Phường 10, Quận 5), ông Lâm Vạn Thành (60 tuổi) đã qua đời bất thường trong phòng làm việc. Chiếc két sắt nhập khẩu hiệu Chubb bị mở toang, toàn bộ vàng dự trữ và tiền mặt đã không cánh mà bay.\n\nBảo vệ tiệm vàng được tìm thấy trong tình trạng hôn mê sâu ở góc hành lang. Công an TP. Hồ Chí Minh đang tập trung lực lượng điều tra làm rõ các mối quan hệ làm ăn của gia đình nạn nhân."
+    },
+    {
+      "id": "d02",
+      "stage": 1,
+      "type": "report",
+      "title": "Biên bản khám nghiệm hiện trường tiệm vàng Vạn Thành",
+      "date": "07h30 ngày 18/05/1995",
+      "content": "**BIÊN BẢN KHÁM NGHIỆM HIỆN TRƯỜNG**\n\n- **Địa điểm**: Tầng trệt tiệm vàng Vạn Thành, số 62 Hải Thượng Lãn Ông, Quận 5.\n- **Tình trạng nạn nhân**: Nằm gục trên bàn làm việc bằng gỗ cẩm lai. Trên bàn có một tách cà phê vợt đã cạn một nửa và chiếc phin nhôm. Khóe miệng nạn nhân có vệt nước dãi sùi bọt nhẹ, đồng tử giãn to.\n- **Tình trạng két sắt**: Két sắt hiệu Chubb cỡ lớn đặt sát tường sau quầy. Cánh cửa sắt dày 15cm đang mở hé một góc 45 độ. Khóa chìa phụ cắm sẵn trên ổ, núm xoay mật mã cơ học 100 vạch không có bất kỳ vết khoan cắt hay nạy phá nào."
+    },
+    {
+      "id": "d03",
+      "stage": 1,
+      "type": "report",
+      "title": "Kết quả giám định pháp y tử thi ông Lâm Vạn Thành",
+      "date": "09h00 ngày 18/05/1995",
+      "content": "**KẾT QUẢ KHÁM NGHIỆM TỬ THI**\n\n1. **Nguyên nhân tử vong**: Suy hô hấp cấp tính dẫn đến ngừng tim do ngộ độc cloral hydrat (một loại thuốc ức chế thần kinh trung ương và gây ngủ cực mạnh) với liều lượng vượt quá mức điều trị y khoa gấp 6 lần.\n2. **Dạ dày và tách cà phê**: Tìm thấy nồng độ cloral hydrat đậm đặc trong mẫu cặn đáy tách cà phê vợt trên bàn làm việc và trong dịch dạ dày của nạn nhân.\n3. **Thời điểm tử vong ước tính**: Khoảng 21h30 đến 22h00 đêm ngày 17/05/1995."
+    },
+    {
+      "id": "d04",
+      "stage": 1,
+      "type": "report",
+      "title": "Sơ đồ mặt bằng tiệm vàng Vạn Thành",
+      "date": "09h30 ngày 18/05/1995",
+      "content": "**SƠ ĐỒ TỔNG THỂ NHÀ PHỐ**\n\n- **Tầng trệt**: Phía trước là quầy trưng bày vàng và két sắt. Phía sau là bàn làm việc của ông Thành và phòng xưởng chế tác kim hoàn.\n- **Cửa sau**: Mở ra con hẻm nhỏ thông sang đường Triệu Quang Phục, khóa bằng khóa chốt trong nhưng buổi sáng phát hiện chốt đã bị mở sang chế độ tự do.\n- **Lầu 1 & 2**: Phòng ngủ của vợ bé Lý Diễm My và các phòng sinh hoạt gia đình."
+    },
+    {
+      "id": "d05",
+      "stage": 1,
+      "type": "photo",
+      "title": "Ảnh chụp cận cảnh núm xoay két sắt dính bụi phấn lạ",
+      "date": "08h15 ngày 18/05/1995",
+      "image": "images/d05-num-ket.webp",
+      "content": "Ảnh chụp macro núm xoay két sắt Chubb: Trên bề mặt núm xoay kim loại có phủ một lớp màng bột phấn khoáng màu trắng ngà. Đáng chú ý, có 4 vạch số cụ thể là 18, 42, 65, 89 đã bị đầu ngón tay lau sạch bụi phấn để lộ vành kim loại sáng bóng."
+    },
+    {
+      "id": "d06",
+      "stage": 2,
+      "type": "testimony",
+      "title": "Lời khai của thợ kim hoàn Trương Chấn Hào",
+      "date": "10h15 ngày 18/05/1995",
+      "lines": [
+        {
+          "n": 1,
+          "text": "Tôi là cháu họ của dượng Thành, làm thợ bạc ở đây được 5 năm."
+        },
+        {
+          "n": 2,
+          "text": "Chiều qua 18h00 tôi bàn giao xong mẻ nhẫn cưới rồi xin phép dượng ra về."
+        },
+        {
+          "n": 3,
+          "text": "Tối qua từ 21h00 đến tận 23h30 tôi mua vé vào rạp Hào Huê xem chương trình ca nhạc tạp kỹ Sài Gòn Đêm Trắng, không hề rời rạp nửa bước."
+        },
+        {
+          "n": 4,
+          "text": "Tôi còn giữ nguyên cuống vé xem ca nhạc của rạp Hào Huê đây để làm bằng chứng ngoại phạm!"
+        },
+        {
+          "n": 5,
+          "text": "Két sắt của dượng Thành chỉ có một mình dượng biết mật mã, đến vợ dượng còn không biết thì làm sao tôi mở được?"
+        }
+      ]
+    },
+    {
+      "id": "d07",
+      "stage": 2,
+      "type": "testimony",
+      "title": "Lời khai của vợ bé Lý Diễm My",
+      "date": "11h00 ngày 18/05/1995",
+      "lines": [
+        {
+          "n": 1,
+          "text": "Tôi đi hát phụ diễn ở đoàn cải lương quận đến 22h45 mới đón xe ôm về nhà."
+        },
+        {
+          "n": 2,
+          "text": "Về đến nơi thấy cửa sắt khóa ngoài, tôi bấm chuông thì thấy anh Hào thợ bạc ra mở cửa bảo ông Thành đang bận tính sổ trong phòng làm việc."
+        },
+        {
+          "n": 3,
+          "text": "Tôi mệt quá nên đi thẳng lên lầu 2 tắm rửa rồi đi ngủ, không xuống tầng trệt nữa."
+        }
+      ]
+    },
+    {
+      "id": "d08",
+      "stage": 2,
+      "type": "testimony",
+      "title": "Lời khai của bảo vệ Quách Bửu",
+      "date": "14h00 ngày 18/05/1995",
+      "lines": [
+        {
+          "n": 1,
+          "text": "Tôi trực bảo vệ ban đêm cho tiệm vàng 3 năm nay."
+        },
+        {
+          "n": 2,
+          "text": "Khoảng 21h00 tối qua, cậu Hào thợ bạc có pha một ly trà atiso mang ra bốt gác cho tôi bảo uống cho mát gan."
+        },
+        {
+          "n": 3,
+          "text": "Tôi uống xong chừng 15 phút thì mắt díp lại, đầu óc mê man ngủ thiếp đi lúc nào không biết cho đến khi bác sĩ cấp cứu lay dậy ở bệnh viện Chợ Rẫy."
+        }
+      ]
+    },
+    {
+      "id": "d09",
+      "stage": 2,
+      "type": "receipt",
+      "title": "Cuống vé ca nhạc rạp Hào Huê của Trương Chấn Hào",
+      "date": "21h00 ngày 17/05/1995",
+      "content": "**CUỐNG VÉ RẠP HÀO HUÊ - ĐÊM DIỄN 17/05/1995**\n\n- Ghế: Hàng D số 14.\n- Giờ diễn: 20h30 - 23h00.\n- Tình trạng: Cuống vé xé góc cửa kiểm soát, trên mặt vé có dấu mộc đỏ của rạp Hào Huê."
+    },
+    {
+      "id": "d10",
+      "stage": 3,
+      "type": "photo",
+      "title": "Ảnh mảnh giấy ghi 24 hoán vị tìm thấy dưới chân bàn trà",
+      "date": "15h00 ngày 18/05/1995",
+      "image": "images/d10-manh-giay.webp",
+      "content": "Ảnh chụp mẩu giấy xé từ bao thuốc lá hoa cúc: Liệt kê danh sách 24 tổ hợp hoán vị của 4 con số 18, 42, 65, 89. Có 11 hàng số đầu tiên bị gạch chéo bằng bút bi đỏ, riêng hàng số thứ 12 '42 - 18 - 89 - 65' được khoanh một vòng tròn bút bi xanh rất đậm."
+    },
+    {
+      "id": "d11",
+      "stage": 3,
+      "type": "report",
+      "title": "Kết quả giám định chữ viết tay trên mảnh giấy hoán vị",
+      "date": "15h30 ngày 18/05/1995",
+      "content": "**KẾT LUẬN GIÁM ĐỊNH TÀI LIỆU CHỮ VIẾT**\n\nNét chữ viết tay các con số hoán vị trên mảnh giấy bao thuốc lá hoàn toàn trùng khớp với chữ viết mẫu của nghi phạm Trương Chấn Hào trong sổ xuất kho tiệm vàng. Mực bút bi xanh cùng loại với cây bút bi Bến Nghé thu giữ trong túi áo của Hào."
+    },
+    {
+      "id": "d12",
+      "stage": 3,
+      "type": "testimony",
+      "title": "Lời khai của nhân viên soát vé rạp Hào Huê",
+      "date": "16h00 ngày 18/05/1995",
+      "lines": [
+        {
+          "n": 1,
+          "text": "Tối qua tôi trực cửa rạp Hào Huê."
+        },
+        {
+          "n": 2,
+          "text": "Tôi nhớ anh Hào có đến rạp lúc 20h40 đưa vé cho tôi xé cuống, nhưng vừa vào ghế ngồi được chừng 10 phút thì anh ấy lẻn ra cửa thoát hiểm phía sau rạp đi đâu mất."
+        },
+        {
+          "n": 3,
+          "text": "Mãi đến gần 23h30 khi buổi diễn kết thúc, anh ấy mới quay lại cửa rạp nhập vào dòng người đi ra!"
+        }
+      ]
+    },
+    {
+      "id": "d13",
+      "stage": 3,
+      "type": "report",
+      "title": "Kết quả phân tích thành phần bột phấn trên núm xoay két sắt",
+      "date": "16h30 ngày 18/05/1995",
+      "content": "**KẾT QUẢ GIÁM ĐỊNH HÓA SINH BỤI PHẤN**\n\nMẫu bột trắng bám trên núm xoay két sắt và kẽ móng tay của Trương Chấn Hào là phấn nén khoáng chất hiệu Bông Lúa (loại phấn trang điểm truyền thống rẻ tiền của phụ nữ Chợ Lớn). Khám xét bàn thợ của Hào thu được một hộp phấn Bông Lúa đã bị cạo mòn một góc."
+    },
+    {
+      "id": "d14",
+      "stage": 4,
+      "type": "report",
+      "title": "Biên bản khám xét khẩn cấp nhà Trương Chấn Hào tại Quận 11",
+      "date": "17h30 ngày 18/05/1995",
+      "content": "**TÌM THẤY TÒAN BỘ TANG VẬT VÀNG BỊ CƯỚP**\n\nKiểm tra khoảng sân sau nhà Trương Chấn Hào (đường Lạc Long Quân, Quận 11), lực lượng công an đào bới chậu cây mai chiếu thủy và phát hiện một bọc ni-lông đen chứa:\n- 50 lượng vàng lá bốn số 9 (SJC 24K) dập mộc nổi hiệu 'Vạn Thành'.\n- 100 triệu đồng tiền mặt mệnh giá 50.000 đồng bọc dây chun ngân hàng."
+    },
+    {
+      "id": "d15",
+      "stage": 4,
+      "type": "report",
+      "title": "Kết quả giám định lọ thuốc ngủ cloral hydrat",
+      "date": "18h00 ngày 18/05/1995",
+      "content": "**VẬT CHỨNG ĐẦU ĐỘC**\n\nTrong túi da treo trên xe máy của Hào thu được một lọ thủy tinh màu nâu chứa dung dịch cloral hydrat 20% dung tích 50ml, đã bị dùng mất một nửa, thành phần hóa học trùng khớp 100% với độc chất trong tách cà phê của nạn nhân."
+    },
+    {
+      "id": "d16",
+      "stage": 4,
+      "type": "report",
+      "title": "Bản thú tội của Trương Chấn Hào",
+      "date": "19h00 ngày 18/05/1995",
+      "content": "**LỜI THÚ TỘI CỦA TRƯƠNG CHẤN HÀO**\n\n'Tôi nợ cá độ đá gà 80 triệu bị giang hồ xiết nợ đòi chặt tay. Tôi biết dượng Thành cất 50 cây vàng trong két sắt nhưng không biết mã. Chiều hôm đó tôi lấy phấn bông lúa xoa lên núm két, khi dượng mở két cất tiền thì 4 số 18, 42, 65, 89 lộ ra. Tôi ghi sẵn 24 hoán vị ra giấy bao thuốc lá. Tối đó tôi bỏ thuốc ngủ vào ly cà phê của dượng và ly trà của bác Bửu, rồi chạy ra rạp Hào Huê xé vé tạo bằng chứng ngoại phạm trước khi quay về tiệm vặn thử từng hoán vị. Đến số thứ 12 thì két bung mở...'"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "stage": 1,
+      "type": "evidence",
+      "title": "Đầu độc bằng tách cà phê và dấu vết trên núm két sắt",
+      "intro": "Hiện trường tiệm vàng cho thấy nạn nhân đột tử bên bàn làm việc và chiếc két sắt mở hé lộ ra manh mối kỹ thuật đặc biệt.",
+      "prompt": "Ghim 2 tài liệu chứng minh nạn nhân bị đầu độc bằng thuốc ức chế thần kinh trong tách cà phê và dấu vết phấn lạ vạch trần 4 con số mật mã két sắt.",
+      "need": 2,
+      "answer": [
+        "d03",
+        "d05"
+      ],
+      "hints": [
+        "Kiểm tra kết quả giám định pháp y về chất cloral hydrat trong dạ dày và đáy tách cà phê.",
+        "Xem ảnh chụp macro núm xoay két sắt dính bụi phấn làm lộ ra 4 vạch số."
+      ],
+      "explanation": [
+        "Tài liệu d03 xác nhận nạn nhân tử vong do ngộ độc cloral hydrat nồng độ cao trong tách cà phê vợt.",
+        "Tài liệu d05 (ảnh chụp núm xoay két) thể hiện lớp phấn trang điểm bị ngón tay quẹt lộ 4 con số 18, 42, 65, 89."
+      ],
+      "nudges": [
+        {
+          "picks": [
+            "d01",
+            "d02"
+          ],
+          "message": "Bản tin và biên bản hiện trường ban đầu chưa nêu tên hoạt chất độc tố và phân tích chi tiết 4 con số trên vành xoay két."
+        }
+      ]
+    },
+    {
+      "id": "q2",
+      "stage": 2,
+      "type": "line",
+      "title": "Bằng chứng ngoại phạm của Trương Chấn Hào",
+      "intro": "Trương Chấn Hào đưa ra cuống vé ca nhạc khẳng định mình ngồi trong rạp Hào Huê suốt buổi tối.",
+      "prompt": "Hãy chọn một dòng trong lời khai của Trương Chấn Hào (d06) khẳng định y ngồi xem ca nhạc từ 21h00 đến 23h30 không hề rời rạp nửa bước.",
+      "answer": [
+        "d06:003"
+      ],
+      "hints": [
+        "Tìm dòng lời khai nói về việc Hào xem ca nhạc tại rạp Hào Huê từ 21h00 đến 23h30.",
+        "Đối chiếu mốc thời gian và hành vi của người khai với các nhân chứng xung quanh."
+      ],
+      "explanation": [
+        "Tại dòng d06:003, Hào khai: 'Tối qua từ 21h00 đến tận 23h30 tôi mua vé vào rạp Hào Huê xem chương trình ca nhạc tạp kỹ Sài Gòn Đêm Trắng, không hề rời rạp nửa bước'."
+      ]
+    },
+    {
+      "id": "q3",
+      "stage": 3,
+      "type": "evidence",
+      "title": "Bảng hoán vị mật số của kẻ trộm",
+      "intro": "Nhân viên rạp hát đã lật tẩy việc Hào trốn ra ngoài qua cửa thoát hiểm. Khám nghiệm hiện trường phát hiện mảnh giấy then chốt về phương pháp mở két.",
+      "prompt": "Ghim 2 tài liệu chỉ ra mảnh giấy ghi 24 hoán vị mật mã két sắt có chữ viết tay của Trương Chấn Hào.",
+      "need": 2,
+      "answer": [
+        "d10",
+        "d11"
+      ],
+      "hints": [
+        "Ảnh chụp mảnh giấy bao thuốc lá ghi 24 hoán vị mật số tìm thấy dưới gầm bàn trà.",
+        "Báo cáo giám định chữ viết tay trên mảnh giấy trùng khớp với Trương Chấn Hào."
+      ],
+      "explanation": [
+        "Tài liệu d10 (ảnh vật chứng) chụp mảnh giấy ghi 24 hoán vị có khoanh tròn mật mã số 12.",
+        "Tài liệu d11 kết luận chữ viết trên mảnh giấy trùng khớp hoàn toàn với mẫu chữ của Trương Chấn Hào."
+      ],
+      "nudges": [
+        {
+          "picks": [
+            "d12",
+            "d13"
+          ],
+          "message": "d12 và d13 là lời khai nhân viên soát vé và bột phấn, nhưng d10 và d11 mới trực tiếp thể hiện mảnh giấy hoán vị mật mã."
+        }
+      ]
+    },
+    {
+      "id": "q4",
+      "stage": 4,
+      "type": "choice",
+      "title": "Thủ phạm vụ án tiệm vàng Vạn Thành",
+      "intro": "Kho vàng 50 lượng và lọ thuốc độc cloral hydrat thu được tại nhà riêng đã hoàn toàn vạch trần tên trộm giết người.",
+      "prompt": "Dựa vào toàn bộ tài liệu hồ sơ, ai là thủ phạm đã sát hại ông Lâm Vạn Thành và trộm két sắt?",
+      "options": [
+        "Thợ kim hoàn Trương Chấn Hào",
+        "Vợ bé Lý Diễm My",
+        "Bảo vệ Quách Bửu",
+        "Nhân viên soát vé rạp Hào Huê"
+      ],
+      "answer": [
+        0
+      ],
+      "hints": [
+        "Ai bôi phấn bông lúa lên két, pha thuốc an thần vào cà phê và cất giấu 50 lượng vàng dưới chậu mai chiếu thủy?",
+        "Xem xét kỹ các bằng chứng vật chất và báo cáo kỹ thuật hình sự."
+      ],
+      "explanation": [
+        "Trương Chấn Hào là thủ phạm. Y đầu độc nạn nhân bằng cloral hydrat (d03, d15), dùng phấn dò 4 số mật mã két rồi thử hoán vị (d05, d10, d11), lẻn khỏi rạp hát để gây án (d12) và giấu 50 cây vàng sau nhà mình (d14, d16)."
+      ]
+    }
+  ],
+  "finale": {
+    "culprit": "Trương Chấn Hào",
+    "text": "Trước 50 lượng vàng lá tang vật đào lên từ chậu kiểng và mảnh giấy hoán vị mật số không thể chối cãi, Trương Chấn Hào đã cúi đầu nhận tội. Lòng tham lam và cơn khát tiền bài bạc đã đẩy người thợ kim hoàn vào con đường tội ác giết hại chính người dượng ruột thịt cưu mang mình. Vụ án tiệm vàng Vạn Thành khép lại, trả lại sự bình yên cho khu phố kim hoàn Chợ Lớn."
+  }
+}

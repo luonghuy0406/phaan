@@ -66,11 +66,26 @@
       "title": "Lời khai của Lâm Tuyết Mai (con gái nạn nhân)",
       "date": "10h15 ngày 15/12/2003",
       "lines": [
-        { "n": 1, "text": "Chiều qua ba tôi và tôi cãi nhau to về việc tôi muốn lấy anh giáo viên dạy nhạc ở thị xã." },
-        { "n": 2, "text": "Ba tôi bực tức bỏ xuống khu lò sấy kiểm tra kỹ thuật lúc khoảng 18h00." },
-        { "n": 3, "text": "Từ 19h30 tôi ở lì trong phòng ngủ trên lầu hai nghe nhạc và gọi điện thoại bàn cho bạn bè." },
-        { "n": 4, "text": "Hóa đơn bưu điện có thể chứng minh tôi gọi liên tục từ 20h đến 22h30 đêm qua." },
-        { "n": 5, "text": "Đến sáng dậy không thấy ba về phòng ngủ mới hoảng hốt đi tìm thì hay tin dữ." }
+        {
+          "n": 1,
+          "text": "Chiều qua ba tôi và tôi cãi nhau to về việc tôi muốn lấy anh giáo viên dạy nhạc ở thị xã."
+        },
+        {
+          "n": 2,
+          "text": "Ba tôi bực tức bỏ xuống khu lò sấy kiểm tra kỹ thuật lúc khoảng 18h00."
+        },
+        {
+          "n": 3,
+          "text": "Từ 19h30 tôi ở lì trong phòng ngủ trên lầu hai nghe nhạc và gọi điện thoại bàn cho bạn bè."
+        },
+        {
+          "n": 4,
+          "text": "Hóa đơn bưu điện có thể chứng minh tôi gọi liên tục từ 20h đến 22h30 đêm qua."
+        },
+        {
+          "n": 5,
+          "text": "Đến sáng dậy không thấy ba về phòng ngủ mới hoảng hốt đi tìm thì hay tin dữ."
+        }
       ]
     },
     {
@@ -80,13 +95,34 @@
       "title": "Lời khai của kỹ sư quản lý Hoàng Văn Duẩn",
       "date": "11h00 ngày 15/12/2003",
       "lines": [
-        { "n": 1, "text": "Tôi chịu trách nhiệm kỹ thuật cho lò sấy và hai kho lạnh của trang trại." },
-        { "n": 2, "text": "Khoảng 18h15 chiều qua ông Khải có xuống văn phòng kho cự cãi với tôi về tiền thưởng giống hồng nhung." },
-        { "n": 3, "text": "Đến 18h30 ông ấy hầm hầm bỏ đi đâu tôi không rõ." },
-        { "n": 4, "text": "Tôi làm việc lau chùi máy móc đến 19h45 rồi tắt đèn về phòng thay đồ." },
-        { "n": 5, "text": "Tôi khẳng định từ sau 17h chiều hôm qua tôi không hề bước chân vào kho lạnh số 2 vì mẻ cúc xuất khẩu đã đóng thùng xong từ trưa." },
-        { "n": 6, "text": "Từ 20h15 tối qua, tôi đi bộ sang trạm khí tượng Trại Mát cách đây 1 cây số." },
-        { "n": 7, "text": "Tôi ngồi đánh cờ tướng và uống trà atiso với bác Thao trưởng trạm từ lúc 20h30 đến tận 23h45 mới về phòng ngủ tập thể của trang trại." }
+        {
+          "n": 1,
+          "text": "Tôi chịu trách nhiệm kỹ thuật cho lò sấy và hai kho lạnh của trang trại."
+        },
+        {
+          "n": 2,
+          "text": "Khoảng 18h15 chiều qua ông Khải có xuống văn phòng kho cự cãi với tôi về tiền thưởng giống hồng nhung."
+        },
+        {
+          "n": 3,
+          "text": "Đến 18h30 ông ấy hầm hầm bỏ đi đâu tôi không rõ."
+        },
+        {
+          "n": 4,
+          "text": "Tôi làm việc lau chùi máy móc đến 19h45 rồi tắt đèn về phòng thay đồ."
+        },
+        {
+          "n": 5,
+          "text": "Tôi khẳng định từ sau 17h chiều hôm qua tôi không hề bước chân vào kho lạnh số 2 vì mẻ cúc xuất khẩu đã đóng thùng xong từ trưa."
+        },
+        {
+          "n": 6,
+          "text": "Từ 20h15 tối qua, tôi đi bộ sang trạm khí tượng Trại Mát cách đây 1 cây số."
+        },
+        {
+          "n": 7,
+          "text": "Tôi ngồi đánh cờ tướng và uống trà atiso với bác Thao trưởng trạm từ lúc 20h30 đến tận 23h45 mới về phòng ngủ tập thể của trang trại."
+        }
       ]
     },
     {
@@ -96,11 +132,26 @@
       "title": "Lời khai của ông Bùi Văn Thao (Trưởng trạm khí tượng Trại Mát)",
       "date": "13h30 ngày 15/12/2003",
       "lines": [
-        { "n": 1, "text": "Chú Duẩn sang trạm của tôi từ lúc khoảng 20h20 tối qua." },
-        { "n": 2, "text": "Hai anh em tôi ngồi pha ấm trà atiso, bày bàn cờ tướng ra đánh liền tù tì năm ván." },
-        { "n": 3, "text": "Tôi nhớ rất rõ vì lúc 21h15 đài truyền hình có phát bản tin thời tiết đêm, chú ấy còn chỉ vào màn hình bàn tán về đợt không khí lạnh tăng cường." },
-        { "n": 4, "text": "Đến đúng 23h45 tôi dọn bàn cờ để chuẩn bị ca ghi số liệu lúc nửa đêm, chú Duẩn mới khoác áo mưa đứng dậy đi về." },
-        { "n": 5, "text": "Suốt thời gian đó chú ấy không hề rời khỏi phòng trực của trạm lấy nửa bước." }
+        {
+          "n": 1,
+          "text": "Chú Duẩn sang trạm của tôi từ lúc khoảng 20h20 tối qua."
+        },
+        {
+          "n": 2,
+          "text": "Hai anh em tôi ngồi pha ấm trà atiso, bày bàn cờ tướng ra đánh liền tù tì năm ván."
+        },
+        {
+          "n": 3,
+          "text": "Tôi nhớ rất rõ vì lúc 21h15 đài truyền hình có phát bản tin thời tiết đêm, chú ấy còn chỉ vào màn hình bàn tán về đợt không khí lạnh tăng cường."
+        },
+        {
+          "n": 4,
+          "text": "Đến đúng 23h45 tôi dọn bàn cờ để chuẩn bị ca ghi số liệu lúc nửa đêm, chú Duẩn mới khoác áo mưa đứng dậy đi về."
+        },
+        {
+          "n": 5,
+          "text": "Suốt thời gian đó chú ấy không hề rời khỏi phòng trực của trạm lấy nửa bước."
+        }
       ]
     },
     {
@@ -110,9 +161,18 @@
       "title": "Lời khai của lái buôn Trần Đại",
       "date": "14h15 ngày 15/12/2003",
       "lines": [
-        { "n": 1, "text": "Tôi có nợ ông Khải tiền cọc hoa cúc Tết thật, nhưng tôi hẹn cuối tháng trả đủ." },
-        { "n": 2, "text": "Tối qua từ 19h xe tải của tôi bị hỏng lốp ở khu vực đèo D'Ran, tôi ngồi đợi thợ vá xe đến 23h đêm." },
-        { "n": 3, "text": "Chủ tiệm sửa xe và hai phụ xe của tôi đều có thể làm chứng, tôi không có mặt ở Trại Mát tối qua." }
+        {
+          "n": 1,
+          "text": "Tôi có nợ ông Khải tiền cọc hoa cúc Tết thật, nhưng tôi hẹn cuối tháng trả đủ."
+        },
+        {
+          "n": 2,
+          "text": "Tối qua từ 19h xe tải của tôi bị hỏng lốp ở khu vực đèo D'Ran, tôi ngồi đợi thợ vá xe đến 23h đêm."
+        },
+        {
+          "n": 3,
+          "text": "Chủ tiệm sửa xe và hai phụ xe của tôi đều có thể làm chứng, tôi không có mặt ở Trại Mát tối qua."
+        }
       ]
     },
     {
@@ -190,7 +250,10 @@
       "intro": "Hiện trường ban đầu là triền dốc thông tự nhiên đất đỏ bazan. Hãy tìm ra các dấu hiệu vật lý chứng tỏ hiện trường này có sự can thiệp nhân tạo và vật thể lạ từ nơi khác mang tới.",
       "prompt": "Ghim 2 tài liệu chỉ ra vật chất lạ dính trên người nạn nhân không thuộc tự nhiên đồi thông và phương tiện vận chuyển thi thể.",
       "need": 2,
-      "answer": ["d02", "d05"],
+      "answer": [
+        "d02",
+        "d05"
+      ],
       "hints": [
         "Kiểm tra vật chất dính ở đế dép nạn nhân trong biên bản khám nghiệm hiện trường.",
         "Xem xét dấu vết di chuyển cơ học được ghi lại bằng hình ảnh trên triền dốc."
@@ -201,7 +264,10 @@
       ],
       "nudges": [
         {
-          "picks": ["d01", "d04"],
+          "picks": [
+            "d01",
+            "d04"
+          ],
           "message": "Báo chí và giám định pháp y tử thi chưa mô tả dấu vết cơ học ngoài mặt đất hiện trường."
         }
       ]
@@ -213,9 +279,12 @@
       "title": "Lời khai dối trá về kho lạnh số 2",
       "intro": "Kỹ sư Hoàng Văn Duẩn đưa ra lời khai khẳng định mình không hề dính dáng gì đến kho lạnh số 2 sau giờ làm việc buổi chiều.",
       "prompt": "Hãy chọn dòng lời khai trong biên bản hỏi cung Hoàng Văn Duẩn (d07) khẳng định y hoàn toàn không bước chân vào kho lạnh số 2 từ sau 17h00 chiều.",
-      "answer": ["d07:005"],
+      "answer": [
+        "d07:005"
+      ],
       "hints": [
-        "Tìm dòng lời khai mà Duẩn nói về thời gian và việc không bước chân vào kho lạnh số 2."
+        "Tìm dòng lời khai mà Duẩn nói về thời gian và việc không bước chân vào kho lạnh số 2.",
+        "Đối chiếu mốc thời gian và hành vi của người khai với các nhân chứng xung quanh."
       ],
       "explanation": [
         "Tại dòng d07:005, Duẩn khai: 'Tôi khẳng định từ sau 17h chiều hôm qua tôi không hề bước chân vào kho lạnh số 2 vì mẻ cúc xuất khẩu đã đóng thùng xong từ trưa'."
@@ -229,7 +298,10 @@
       "intro": "Để bác bỏ bằng chứng ngoại phạm đánh cờ của Duẩn, điều tra viên cần chứng minh thi thể nạn nhân từng nằm trong kho lạnh số 2 trước khi bị vứt ra đồi thông.",
       "prompt": "Ghim 2 tài liệu chứng minh thi thể ông Lâm Khải đã ở trong kho lạnh số 2 thông qua mẫu sinh học vi thể và dữ liệu nhiệt độ kho lạnh đêm xảy ra án mạng.",
       "need": 2,
-      "answer": ["d10", "d11"],
+      "answer": [
+        "d10",
+        "d11"
+      ],
       "hints": [
         "Một tài liệu phân tích phấn hoa đặc thù chỉ có trong kho lạnh số 2 dính trên áo nạn nhân.",
         "Một tài liệu ghi nhận biến động công suất và cửa kho lạnh số 2 bị mở bất thường vào ban đêm."
@@ -240,7 +312,10 @@
       ],
       "nudges": [
         {
-          "picks": ["d12", "d13"],
+          "picks": [
+            "d12",
+            "d13"
+          ],
           "message": "d12 và d13 là vật chứng bổ sung, nhưng d10 (phấn hoa) và d11 (dữ liệu nhiệt độ giờ mở cửa) mới trực tiếp chứng minh thi thể đã nằm trong kho suốt thời gian đó."
         }
       ]
@@ -258,7 +333,9 @@
         "Lái buôn Trần Đại",
         "Trưởng trạm khí tượng Bùi Văn Thao"
       ],
-      "answer": [1],
+      "answer": [
+        1
+      ],
       "hints": [
         "Ai là người có chìa khóa kho lạnh, để lại tàn thuốc lá Bastos đỏ và xe cút kít dính dấu vân tay?",
         "Ai có động cơ bị cướp đoạt bản quyền giống hoa hồng lai Pháp?"

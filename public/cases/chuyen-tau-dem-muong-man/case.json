@@ -66,12 +66,30 @@
       "title": "Lời khai của thư ký Bùi Bích Thảo",
       "date": "08h15 ngày 13/10/2008",
       "lines": [
-        { "n": 1, "text": "Tôi cùng sếp Vinh đi tàu vào Phan Thiết để ký hợp đồng đấu thầu khai thác mỏ cát sa khoáng." },
-        { "n": 2, "text": "Trong cặp của sếp có hồ sơ mật và 200 triệu tiền mặt mệnh giá 500.000 đồng mới rút ở ngân hàng." },
-        { "n": 3, "text": "Khoảng 00h15 đêm qua tôi khó ngủ nên đi sang toa căng-tin số 4 uống cà phê và ngồi đọc sách báo." },
-        { "n": 4, "text": "Đến khoảng 03h00 sáng tôi quay về toa 6, thấy cửa khoang 4 khóa chặt chốt trong." },
-        { "n": 5, "text": "Tôi nghĩ sếp đã ngủ say và gài chốt riêng tư nên tôi không dám gõ cửa làm phiền, liền sang khoang số 6 ngủ nhờ với một chị phụ nữ quen." },
-        { "n": 6, "text": "Đến sáng khi tiếp viên gọi cửa thì mới phát hiện ra cơ sự đau lòng này." }
+        {
+          "n": 1,
+          "text": "Tôi cùng sếp Vinh đi tàu vào Phan Thiết để ký hợp đồng đấu thầu khai thác mỏ cát sa khoáng."
+        },
+        {
+          "n": 2,
+          "text": "Trong cặp của sếp có hồ sơ mật và 200 triệu tiền mặt mệnh giá 500.000 đồng mới rút ở ngân hàng."
+        },
+        {
+          "n": 3,
+          "text": "Khoảng 00h15 đêm qua tôi khó ngủ nên đi sang toa căng-tin số 4 uống cà phê và ngồi đọc sách báo."
+        },
+        {
+          "n": 4,
+          "text": "Đến khoảng 03h00 sáng tôi quay về toa 6, thấy cửa khoang 4 khóa chặt chốt trong."
+        },
+        {
+          "n": 5,
+          "text": "Tôi nghĩ sếp đã ngủ say và gài chốt riêng tư nên tôi không dám gõ cửa làm phiền, liền sang khoang số 6 ngủ nhờ với một chị phụ nữ quen."
+        },
+        {
+          "n": 6,
+          "text": "Đến sáng khi tiếp viên gọi cửa thì mới phát hiện ra cơ sự đau lòng này."
+        }
       ]
     },
     {
@@ -81,11 +99,26 @@
       "title": "Lời khai của nhân viên phụ trách toa Trần Văn Hữu",
       "date": "08h45 ngày 13/10/2008",
       "lines": [
-        { "n": 1, "text": "Tôi phụ trách trực đêm toa số 6 từ 22h đêm đến 06h sáng hôm sau." },
-        { "n": 2, "text": "Suốt ca trực tôi chủ yếu ngồi ở ghế trực đầu toa kiểm tra vé và bảo vệ hành lý." },
-        { "n": 3, "text": "Đêm qua tàu lắc mạnh đoạn qua đèo Cà Ná, hành lang hầu như không có ai đi lại trừ cô Thảo ra căng-tin lúc nửa đêm." },
-        { "n": 4, "text": "Lúc 05h15 sáng, cô Thảo gọi tôi đến mở cửa khoang 4 vì gọi mãi không thấy ông Vinh trả lời." },
-        { "n": 5, "text": "Tôi dùng chìa sắt phụ lách nạy mạnh thì lẫy khóa bên trong mới nảy lên để trượt cửa ra." }
+        {
+          "n": 1,
+          "text": "Tôi phụ trách trực đêm toa số 6 từ 22h đêm đến 06h sáng hôm sau."
+        },
+        {
+          "n": 2,
+          "text": "Suốt ca trực tôi chủ yếu ngồi ở ghế trực đầu toa kiểm tra vé và bảo vệ hành lý."
+        },
+        {
+          "n": 3,
+          "text": "Đêm qua tàu lắc mạnh đoạn qua đèo Cà Ná, hành lang hầu như không có ai đi lại trừ cô Thảo ra căng-tin lúc nửa đêm."
+        },
+        {
+          "n": 4,
+          "text": "Lúc 05h15 sáng, cô Thảo gọi tôi đến mở cửa khoang 4 vì gọi mãi không thấy ông Vinh trả lời."
+        },
+        {
+          "n": 5,
+          "text": "Tôi dùng chìa sắt phụ lách nạy mạnh thì lẫy khóa bên trong mới nảy lên để trượt cửa ra."
+        }
       ]
     },
     {
@@ -95,11 +128,26 @@
       "title": "Lời khai của Nguyễn Hoàng Long (khoang số 2)",
       "date": "09h30 ngày 13/10/2008",
       "lines": [
-        { "n": 1, "text": "Tôi đi công tác Phan Thiết giải quyết việc cá nhân, tình cờ đi cùng chuyến tàu với ông Vinh." },
-        { "n": 2, "text": "Trước đây chúng tôi từng có tranh chấp làm ăn nhưng việc đó đã giải quyết xong từ năm ngoái." },
-        { "n": 3, "text": "Lúc lên tàu tôi có gặp ông Vinh ngoài hành lang chào hỏi xã giao vài câu rồi ai về khoang nấy." },
-        { "n": 4, "text": "Từ lúc 23h30 đêm qua tôi đã uống thuốc an thần và trùm chăn ngủ say như chết trên giường khoang số 2 suốt cả đêm, hoàn toàn không hề rời khỏi giường nửa bước." },
-        { "n": 5, "text": "Khoang số 4 khóa trong thì làm sao người ở khoang khác như tôi có thể vào được mà nghi ngờ tôi?" }
+        {
+          "n": 1,
+          "text": "Tôi đi công tác Phan Thiết giải quyết việc cá nhân, tình cờ đi cùng chuyến tàu với ông Vinh."
+        },
+        {
+          "n": 2,
+          "text": "Trước đây chúng tôi từng có tranh chấp làm ăn nhưng việc đó đã giải quyết xong từ năm ngoái."
+        },
+        {
+          "n": 3,
+          "text": "Lúc lên tàu tôi có gặp ông Vinh ngoài hành lang chào hỏi xã giao vài câu rồi ai về khoang nấy."
+        },
+        {
+          "n": 4,
+          "text": "Từ lúc 23h30 đêm qua tôi đã uống thuốc an thần và trùm chăn ngủ say như chết trên giường khoang số 2 suốt cả đêm, hoàn toàn không hề rời khỏi giường nửa bước."
+        },
+        {
+          "n": 5,
+          "text": "Khoang số 4 khóa trong thì làm sao người ở khoang khác như tôi có thể vào được mà nghi ngờ tôi?"
+        }
       ]
     },
     {
@@ -142,9 +190,18 @@
       "title": "Lời khai của nhân viên phục vụ toa căng-tin số 4",
       "date": "11h45 ngày 13/10/2008",
       "lines": [
-        { "n": 1, "text": "Tôi xác nhận cô Bùi Bích Thảo có mặt tại quầy căng-tin từ lúc 00h20 đêm qua." },
-        { "n": 2, "text": "Cô ấy gọi một ly cà phê sữa đá và một gói hạt hướng dương rồi ngồi đọc cuốn tiểu thuyết đến tận 03h sáng." },
-        { "n": 3, "text": "Suốt thời gian đó cô ấy không rời khỏi toa căng-tin lần nào." }
+        {
+          "n": 1,
+          "text": "Tôi xác nhận cô Bùi Bích Thảo có mặt tại quầy căng-tin từ lúc 00h20 đêm qua."
+        },
+        {
+          "n": 2,
+          "text": "Cô ấy gọi một ly cà phê sữa đá và một gói hạt hướng dương rồi ngồi đọc cuốn tiểu thuyết đến tận 03h sáng."
+        },
+        {
+          "n": 3,
+          "text": "Suốt thời gian đó cô ấy không rời khỏi toa căng-tin lần nào."
+        }
       ]
     },
     {
@@ -197,7 +254,10 @@
       "intro": "Khoang số 4 được ghi nhận khóa chốt từ bên trong khiến việc tiếp cận hiện trường gặp khó khăn. Hãy tìm ra các dấu hiệu vật lý trên cánh cửa chứng tỏ có cơ chế tác động bất thường.",
       "prompt": "Ghim 2 tài liệu phản ánh tình trạng chốt khóa bên trong của khoang số 4 và dấu vết ma sát mài mòn lạ trên khe nẹp cửa trượt.",
       "need": 2,
-      "answer": ["d02", "d05"],
+      "answer": [
+        "d02",
+        "d05"
+      ],
       "hints": [
         "Kiểm tra biên bản hiện trường khi nhân viên phá chốt khóa để vào phòng.",
         "Xem ảnh chụp cận cảnh góc trên của cửa trượt ghi lại dấu vết ma sát trên gioăng nẹp cao su."
@@ -208,7 +268,10 @@
       ],
       "nudges": [
         {
-          "picks": ["d01", "d04"],
+          "picks": [
+            "d01",
+            "d04"
+          ],
           "message": "Báo chí và giám định tử thi chưa cung cấp đặc tả dấu vết kỹ thuật trên cánh cửa khoang tàu."
         }
       ]
@@ -220,9 +283,12 @@
       "title": "Bằng chứng ngoại phạm của Nguyễn Hoàng Long",
       "intro": "Nguyễn Hoàng Long ở khoang số 2 đưa ra lời khai nhằm loại trừ hoàn toàn sự liên quan của mình với cái chết của ông Vinh.",
       "prompt": "Hãy chọn một dòng trong lời khai của Nguyễn Hoàng Long (d08) khẳng định y uống thuốc an thần và ngủ say trên giường suốt cả đêm không hề rời nửa bước.",
-      "answer": ["d08:004"],
+      "answer": [
+        "d08:004"
+      ],
       "hints": [
-        "Tìm dòng lời khai nói về việc Long trùm chăn ngủ say và không rời giường khoang số 2."
+        "Tìm dòng lời khai nói về việc Long trùm chăn ngủ say và không rời giường khoang số 2.",
+        "Đối chiếu mốc thời gian và hành vi của người khai với các nhân chứng xung quanh."
       ],
       "explanation": [
         "Tại dòng d08:004, Long khai: 'Từ lúc 23h30 đêm qua tôi đã uống thuốc an thần và trùm chăn ngủ say như chết trên giường khoang số 2 suốt cả đêm, hoàn toàn không hề rời khỏi giường nửa bước'."
@@ -236,7 +302,10 @@
       "intro": "Lời khai của nhân chứng đã chứng minh thư ký Thảo có mặt tại căng-tin. Cơ quan điều tra cần xâu chuỗi tang vật tìm thấy để giải mã bí ẩn căn phòng kín.",
       "prompt": "Ghim 2 tài liệu chứng minh cơ chế khóa chốt từ bên ngoài bằng sợi polymer và hung khí kim loại được phát hiện trong hành lý nghi phạm.",
       "need": 2,
-      "answer": ["d10", "d12"],
+      "answer": [
+        "d10",
+        "d12"
+      ],
       "hints": [
         "Tài liệu giám định kỹ thuật hình sự về cơ chế khóa cửa bằng sợi polymer luồn qua khe đỉnh cửa.",
         "Tài liệu hình ảnh tang vật cuộn cước câu cá bị cắt đoạn và chiếc dùi sắt dính máu."
@@ -247,7 +316,10 @@
       ],
       "nudges": [
         {
-          "picks": ["d11", "d13"],
+          "picks": [
+            "d11",
+            "d13"
+          ],
           "message": "d13 chỉ là bằng chứng ngoại phạm của Thảo; hãy chọn báo cáo cơ chế kỹ thuật d10 cùng hình ảnh tang vật d12."
         }
       ]
@@ -265,7 +337,9 @@
         "Nhân viên phụ trách toa Trần Văn Hữu",
         "Khách lạ lẻn lên từ ga Tháp Chàm"
       ],
-      "answer": [1],
+      "answer": [
+        1
+      ],
       "hints": [
         "Ai có mối thù hằn tranh chấp mỏ titan, sở hữu cuộn cước câu cá dính mỡ cửa trượt và chiếc dùi sắt dính máu nạn nhân?",
         "Ai giấu chiếc cặp da đựng 200 triệu trên nóc điều hòa khoang số 2?"

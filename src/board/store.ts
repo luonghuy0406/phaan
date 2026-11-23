@@ -27,6 +27,7 @@ export interface BoardData {
   cam: (Cam & { w: number; h: number }) | null;
   seenIntro: boolean;
   startedAt: number;
+  savedAt: number; // last real change (not camera moves); newer side wins when syncing with the cloud
 }
 
 type InkOp = { add?: Stroke[]; remove?: Stroke[] };
@@ -123,7 +124,7 @@ export const evidenceNeed = (q: Question) => q.need || (q.answer || []).length |
 function emptyData(c: CaseData): BoardData {
   const q: Record<string, QState> = {};
   c.questions.forEach((x) => { q[x.id] = { solved: false, hints: 0, tries: 0, line: '', pick: [] }; });
-  return { docs: {}, notes: [], strings: [], hl: [], ink: [], pins: [], q, notebook: [], cam: null, seenIntro: false, startedAt: Date.now() };
+  return { docs: {}, notes: [], strings: [], hl: [], ink: [], pins: [], q, notebook: [], cam: null, seenIntro: false, startedAt: Date.now(), savedAt: 0 };
 }
 
 // Saved boards come from storage, so treat them as untrusted input.
@@ -184,10 +185,16 @@ export function sanitize(raw: unknown, c: CaseData): BoardData {
     : null;
   out.seenIntro = Boolean(src.seenIntro);
   out.startedAt = num(src.startedAt) || Date.now();
+  out.savedAt = Math.max(0, num(src.savedAt));
   return out;
 }
 
-const DATA_KEYS: (keyof BoardData)[] = ['docs', 'notes', 'strings', 'hl', 'ink', 'pins', 'q', 'notebook', 'cam', 'seenIntro', 'startedAt'];
+const DATA_KEYS: (keyof BoardData)[] = ['docs', 'notes', 'strings', 'hl', 'ink', 'pins', 'q', 'notebook', 'cam', 'seenIntro', 'startedAt', 'savedAt'];
+// changes that count as progress (camera moves do not)
+const PROGRESS_KEYS: (keyof BoardData)[] = ['docs', 'notes', 'strings', 'hl', 'ink', 'pins', 'q', 'notebook', 'seenIntro'];
+
+export const snapshot = (s: BoardData): BoardData => Object.fromEntries(DATA_KEYS.map((k) => [k, s[k]])) as unknown as BoardData;
+export const solvedCount = (c: CaseData, s: BoardData) => c.questions.filter((q) => isSolved(s, q)).length;
 
 export type BoardStore = StoreApi<BoardState> & { persist: { hasHydrated: () => boolean; onFinishHydration: (fn: () => void) => () => void; clearStorage: () => void } };
 
@@ -372,6 +379,10 @@ export function getBoardStore(c: CaseData, scope = ''): BoardStore {
     partialize: (s) => Object.fromEntries(DATA_KEYS.map((k) => [k, s[k]])) as unknown as BoardState,
     merge: (persisted, current) => ({ ...current, ...sanitize(persisted, c) }),
   })) as BoardStore;
+  store.subscribe((s, prev) => {
+    if (s.savedAt !== prev.savedAt) return; // hydration or a cloud copy being applied
+    if (PROGRESS_KEYS.some((k) => s[k] !== prev[k])) store.setState({ savedAt: Date.now() });
+  });
   stores.set(cacheKey, store);
   return store;
 }

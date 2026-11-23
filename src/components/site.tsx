@@ -3,6 +3,7 @@ import { SITE } from '../lib/config';
 import { caseBase, caseNo } from '../lib/data';
 import type { CaseSummary } from '../lib/types';
 import { AccountChip } from './auth';
+import { useCanInstall, openInstall } from './install';
 
 export function Brand() {
   return <Link className="brand" to="/"><span className="brand__mark" aria-hidden="true" /><span>{SITE.name}</span></Link>;
@@ -27,11 +28,13 @@ export function Nav({ cta = { to: '/#catalog', label: 'Chơi ngay' } }: { cta?: 
 }
 
 export function Footer() {
+  const canInstall = useCanInstall();
   return (
     <footer className="footer">
       <div className="wrap footer__inner">
         <Brand />
         <p>Mọi nhân vật và sự kiện trong các hồ sơ đều là hư cấu.</p>
+        {canInstall && <button type="button" className="link-btn" onClick={openInstall}>Cài ứng dụng lên màn hình chính</button>}
         <p>© {new Date().getFullYear()} {SITE.name}</p>
       </div>
     </footer>

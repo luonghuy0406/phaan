@@ -31,13 +31,40 @@ Lệnh `dev` mở sẵn cho mạng nội bộ: trên iPad cùng Wi-Fi, mở đ�
 - Mời người chơi qua mạng LAN khi chủ phòng mở trang bằng `localhost`: đặt `VITE_PUBLIC_URL=http://<ip-máy>:5173` trong `.env.local` để mã QR trỏ đúng.
 - Bật `requireLoginForSolo` trong `src/lib/config.ts` nếu muốn bắt đăng nhập cả khi chơi một mình.
 
+## Tài khoản & lưu tiến độ
+- Đăng nhập bằng mã email, hoặc SSO (Google, Apple, Facebook, Microsoft, GitHub, Discord). Nút SSO tự hiện khi nhà cung cấp được bật trong Supabase.
+- Đã đăng nhập: tiến độ, cách bày bàn, nét bút, giấy ghi chú, sổ tay **tự lưu lên cloud** (bảng `user_progress`) và mở tiếp được trên thiết bị khác.
+  Bản nào mới hơn thì thắng. Chưa đăng nhập thì vẫn lưu trên máy như trước.
+- Trang `/tai-khoan`: hồ sơ đang chơi, phòng đang tham gia (vào lại / rời phòng), phòng đã phá án, đổi tên hiển thị.
+  Trang chủ có mục "Tiếp tục điều tra", trang hồ sơ có nút "Vào lại phòng" / "Tiếp tục một mình (x/y)".
+
+## Trang chủ, PWA & cài lên màn hình chính
+- Trang chủ dùng **GSAP + ScrollTrigger** (`src/pages/Home.tsx`, `src/styles/home.css`):
+  - mở đầu: chữ hiện theo từng từ, ảnh tang vật bay vào, dây đỏ tự kéo, bàn nghiêng theo chuột;
+  - dải chữ chạy, kho hồ sơ hiện dần khi cuộn;
+  - "Cách chơi" ghim màn hình trên máy lớn, xếp dọc trên điện thoại;
+  - tính năng có nét bút tự vẽ và thông báo đồng đội.
+
+  Người dùng bật "giảm chuyển động" sẽ thấy bản tĩnh.
+- Ảnh trang chủ ở `public/site/`. Bộ ảnh riêng chờ tạo bằng FLUX: `authoring/site/image-prompts.md`.
+- **PWA** (`vite-plugin-pwa`): lưu sẵn khung ứng dụng; hồ sơ và ảnh đã mở dùng được khi mất mạng. Supabase không bị lưu tạm.
+  Mỗi lần deploy, bản mới tự cập nhật ở lần mở sau.
+- **Gợi ý cài đặt** (`src/components/install.tsx`):
+  - Android/Chrome: hiện nút "Cài đặt" thật;
+  - iPhone/iPad: hướng dẫn qua nút Chia sẻ (nhận cả iPad đang báo mình là Mac);
+  - Zalo/Facebook/Instagram: hướng dẫn mở bằng trình duyệt trước.
+
+  Tự hiện sau 12 giây hoặc khi cuộn quá 1 màn hình. Không hiện khi đã cài hay đang chơi. Bấm "Để sau" thì ẩn 14 ngày.
+  Chân trang luôn có link "Cài ứng dụng lên màn hình chính".
+
 ## Trang
 | Đường dẫn | Nội dung |
 |---|---|
 | `/` | Trang chủ: giới thiệu, kho hồ sơ, cách chơi, hỏi đáp |
 | `/ho-so/:id` | Chi tiết một hồ sơ |
 | `/choi/:id` | Bàn điều tra (một mình) |
-| `/dang-nhap` | Đăng nhập bằng mã email |
+| `/dang-nhap` | Đăng nhập bằng mã email hoặc SSO |
+| `/tai-khoan` | Tài khoản, hồ sơ đang chơi, phòng đã tham gia |
 | `/tham-gia?ma=` | Nhập mã mời 6 số / mở từ QR |
 | `/phong/:roomId` | Sảnh chờ: mã mời, QR, thành viên |
 | `/phong/:roomId/choi` | Bàn điều tra của nhóm |

@@ -12,6 +12,7 @@ import { Dialogs, Tour } from './dialogs';
 import { setDocNumbers } from '../lib/text';
 import { allSolved } from './store';
 import { useRoomBoardSync } from '../multiplayer/sync';
+import { useCloudSave } from '../lib/cloud';
 
 export function Board({ c, store, room }: { c: CaseData; store: BoardStore; room?: { id: string; me: string } }) {
   const cam = useMemo(() => new Camera(), []);
@@ -61,6 +62,7 @@ export function Board({ c, store, room }: { c: CaseData; store: BoardStore; room
 
   const ctx = useMemo<BoardCtx>(() => ({ c, store, cam, reg, focusDoc, fitAll, room }), [c, store, cam, reg, focusDoc, fitAll, room?.id, room?.me]); // eslint-disable-line react-hooks/exhaustive-deps
   useRoomBoardSync(store, c, room?.id, room?.me);
+  useCloudSave(store, c, room?.id ?? '');
 
   // fresh UI for each case; panel open by default on wide screens
   useEffect(() => {

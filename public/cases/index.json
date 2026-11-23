@@ -50,6 +50,186 @@
         "Bao cấp"
       ],
       "cover": "images/cover.webp"
+    },
+    {
+      "id": "tieng-dan-day-pho-hien",
+      "no": 3,
+      "status": "available",
+      "title": "Tiếng đàn đáy Phố Hiến",
+      "tagline": "Đêm rằm tế tổ phường chèo, tiếng đàn đáy bỗng đứt ngang giữa lúc mưa giông quất rát mặt đầm sen.",
+      "difficulty": 2,
+      "players": "1–4",
+      "duration": "45–60 phút",
+      "setting": "Đình cổ ven hồ Bán Nguyệt, thị xã Phố Hiến (hư cấu)",
+      "tags": [
+        "Án mạng",
+        "Đầu độc",
+        "Phường chèo",
+        "Thập niên 90"
+      ],
+      "cover": "images/cover.webp"
+    },
+    {
+      "id": "suong-mu-trai-trai",
+      "no": 4,
+      "status": "available",
+      "title": "Sương mù Trại Mát",
+      "tagline": "Lò sấy hoa hồng rực lửa thâu đêm, nhưng sáng sớm người chủ vườn đã đông cứng ngoài bìa thông.",
+      "difficulty": 3,
+      "players": "2–5",
+      "duration": "75–90 phút",
+      "setting": "Trang trại hoa Lâm Viên, Trại Mát, Đà Lạt (hư cấu)",
+      "tags": [
+        "Án mạng",
+        "Bằng chứng ngoại phạm",
+        "Kho lạnh",
+        "Đà Lạt 2003"
+      ],
+      "cover": "images/cover.webp"
+    },
+    {
+      "id": "chuyen-tau-dem-muong-man",
+      "no": 5,
+      "status": "available",
+      "title": "Chuyến tàu đêm Mường Mán",
+      "tagline": "Khoang giường nằm số 4 khoá trái từ bên trong khi đoàn tàu Bắc Nam vượt qua đèo Cà Ná lúc nửa đêm.",
+      "difficulty": 4,
+      "players": "2–5",
+      "duration": "100–120 phút",
+      "setting": "Toa 6 tàu Thống Nhất SE3, cung đường ray Bình Thuận (hư cấu)",
+      "tags": [
+        "Án mạng",
+        "Phòng kín",
+        "Tàu hỏa",
+        "Cơ học"
+      ],
+      "cover": "images/cover.webp"
+    },
+    {
+      "id": "bong-nang-hoi-an",
+      "no": 6,
+      "status": "available",
+      "title": "Bóng nắng giếng Bá Lễ",
+      "tagline": "Bức tranh lụa cổ trăm năm biến mất khỏi từ đường, chỉ còn vệt bùn vàng nơi giếng cổ.",
+      "difficulty": 2,
+      "players": "1–4",
+      "duration": "45–60 phút",
+      "setting": "Từ đường họ Lương, Phố cổ Hội An, Quảng Nam (hư cấu)",
+      "tags": [
+        "Trộm cắp",
+        "Cổ vật",
+        "Phố cổ Hội An",
+        "Ngoại phạm"
+      ],
+      "cover": "images/cover.webp"
+    },
+    {
+      "id": "lua-than-tay-nguyen",
+      "no": 7,
+      "status": "available",
+      "title": "Đêm lửa tàn Buôn Ea Kral",
+      "tagline": "Kho thóc nhà rông bốc cháy giữa mùa lễ cúng bến nước, chiếc xà gạc truyền đời vùi trong tro than.",
+      "difficulty": 3,
+      "players": "2–5",
+      "duration": "75–90 phút",
+      "setting": "Buôn Ea Kral, Đắk Lắk (hư cấu)",
+      "tags": [
+        "Án mạng",
+        "Phóng hỏa",
+        "Tây Nguyên",
+        "Bẫy hẹn giờ"
+      ],
+      "cover": "images/cover.webp"
+    },
+    {
+      "id": "gac-den-hon-dau",
+      "no": 8,
+      "status": "available",
+      "title": "Gác đèn Hòn Dáu",
+      "tagline": "Bão số 5 ập vào vịnh Bắc Bộ, ngọn hải đăng vụt tắt 17 phút — đúng khoảng thời gian một sinh mạng rơi xuống chân vách đá.",
+      "difficulty": 5,
+      "players": "2–6",
+      "duration": "130–150 phút",
+      "setting": "Trạm hải đăng Hòn Dáu, Hải Phòng (hư cấu)",
+      "tags": [
+        "Án mạng",
+        "Cô lập đảo bão",
+        "Phá hoại lưới điện",
+        "Hải đăng"
+      ],
+      "cover": "images/cover.webp"
+    },
+    {
+      "id": "vang-bong-cho-lon",
+      "no": 9,
+      "status": "available",
+      "title": "Vàng bóng Chợ Lớn",
+      "tagline": "Két sắt tiệm vàng Vạn Thành mở toang không một vết cạy, nhưng chủ tiệm lại gục chết bên tách cà phê vợt.",
+      "difficulty": 3,
+      "players": "2–5",
+      "duration": "75–90 phút",
+      "setting": "Tiệm vàng Vạn Thành, Quận 5, Chợ Lớn, TP. Hồ Chí Minh (hư cấu)",
+      "tags": [
+        "Án mạng",
+        "Trộm két sắt",
+        "Chợ Lớn",
+        "Mật mã số"
+      ],
+      "cover": "images/cover.webp"
+    },
+    {
+      "id": "tieng-huan-van-don",
+      "no": 10,
+      "status": "available",
+      "title": "Tiếng hú cảng Vân Đồn",
+      "tagline": "Thuyền cá cập bến sớm mang theo một thi thể chết ngạt trong khoang lạnh ướp muối, nhiệt kế khoang vẫn chỉ 0 độ.",
+      "difficulty": 4,
+      "players": "2–5",
+      "duration": "100–110 phút",
+      "setting": "Tàu cá viễn dương QN-9288-TS, Cảng Cái Rồng, Vân Đồn, Quảng Ninh (hư cấu)",
+      "tags": [
+        "Án mạng",
+        "Tàu cá",
+        "Khoang lạnh",
+        "Đá khô CO2"
+      ],
+      "cover": "images/cover.webp"
+    },
+    {
+      "id": "hoi-chuong-chua-thay",
+      "no": 11,
+      "status": "available",
+      "title": "Hồi chuông núi Sài Sơn",
+      "tagline": "Tiếng chuông u minh điểm đúng 12 giờ trưa, nhưng sư trụ trì đã viên tịch trong am thất đóng kín tự bao giờ.",
+      "difficulty": 4,
+      "players": "2–5",
+      "duration": "100–120 phút",
+      "setting": "Chùa Cổ Sơn, núi Sài Sơn, Quốc Oai, Hà Tây cũ (hư cấu)",
+      "tags": [
+        "Án mạng",
+        "Chùa cổ",
+        "Bẫy cơ học",
+        "Thủy lực"
+      ],
+      "cover": "images/cover.webp"
+    },
+    {
+      "id": "vet-muc-lang-dong-ho",
+      "no": 12,
+      "status": "available",
+      "title": "Vết mực làng Đông Hồ",
+      "tagline": "Khuôn gỗ bản khắc quý giá nhất của nghệ nhân tranh Tết bị đập gãy, nhưng dấu vết để lại chỉ là giọt phẩm điệp đỏ son.",
+      "difficulty": 1,
+      "players": "1–4",
+      "duration": "30–45 phút",
+      "setting": "Làng tranh dân gian Đông Hồ, Thuận Thành, Bắc Ninh (hư cấu)",
+      "tags": [
+        "Phá hoại tài sản",
+        "Tranh dân gian",
+        "Bắc Ninh",
+        "Nhẹ nhàng"
+      ],
+      "cover": "images/cover.webp"
     }
   ]
 }

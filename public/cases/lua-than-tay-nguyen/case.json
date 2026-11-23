@@ -66,11 +66,26 @@
       "title": "Lời khai của con nuôi Y Bang",
       "date": "10h00 ngày 10/04/2001",
       "lines": [
-        { "n": 1, "text": "Tôi là con nuôi của già làng, được cha nuôi cho ăn học và mở tiệm thu mua cà phê." },
-        { "n": 2, "text": "Dạo này giá cà phê tụt dốc tôi có thiếu nợ thật, nhưng tôi chưa bao giờ có ý định ăn cắp của buôn." },
-        { "n": 3, "text": "Khoảng 19h15 tối qua tôi có qua nhà rông chuẩn bị ché rượu cần." },
-        { "n": 4, "text": "Từ đúng 20h10 đến tận 21h10 khi có tiếng hô hoán cháy kho thóc, tôi ngồi liên tục ở gian giữa nhà rông uống rượu cần và đánh chiêng cùng đoàn cán bộ huyện, không hề bước chân ra ngoài nửa bước." },
-        { "n": 5, "text": "Hàng chục người trong buôn đều thấy tôi ở nhà rông, tôi làm sao mà giết cha và đốt kho được?" }
+        {
+          "n": 1,
+          "text": "Tôi là con nuôi của già làng, được cha nuôi cho ăn học và mở tiệm thu mua cà phê."
+        },
+        {
+          "n": 2,
+          "text": "Dạo này giá cà phê tụt dốc tôi có thiếu nợ thật, nhưng tôi chưa bao giờ có ý định ăn cắp của buôn."
+        },
+        {
+          "n": 3,
+          "text": "Khoảng 19h15 tối qua tôi có qua nhà rông chuẩn bị ché rượu cần."
+        },
+        {
+          "n": 4,
+          "text": "Từ đúng 20h10 đến tận 21h10 khi có tiếng hô hoán cháy kho thóc, tôi ngồi liên tục ở gian giữa nhà rông uống rượu cần và đánh chiêng cùng đoàn cán bộ huyện, không hề bước chân ra ngoài nửa bước."
+        },
+        {
+          "n": 5,
+          "text": "Hàng chục người trong buôn đều thấy tôi ở nhà rông, tôi làm sao mà giết cha và đốt kho được?"
+        }
       ]
     },
     {
@@ -80,10 +95,22 @@
       "title": "Lời khai của thủ kho H'Nhi",
       "date": "10h45 ngày 10/04/2001",
       "lines": [
-        { "n": 1, "text": "Tôi được giao giữ chìa khóa ổ khóa sắt của kho thóc." },
-        { "n": 2, "text": "Khoảng 18h30 chiều qua tôi khóa cửa kho cẩn thận rồi về nhà tắm rửa đi lễ." },
-        { "n": 3, "text": "Nhưng già làng Ama Thuật cũng có một chìa khóa riêng luôn đeo bên người để vào thắp hương thần lúa." },
-        { "n": 4, "text": "Lúc 20h30 tôi cùng các chị em trong buôn mang bầu nước ra suối Ea Kral lấy nước cúng, đến 21h15 quay về thì thấy lửa đã cháy rực trời." }
+        {
+          "n": 1,
+          "text": "Tôi được giao giữ chìa khóa ổ khóa sắt của kho thóc."
+        },
+        {
+          "n": 2,
+          "text": "Khoảng 18h30 chiều qua tôi khóa cửa kho cẩn thận rồi về nhà tắm rửa đi lễ."
+        },
+        {
+          "n": 3,
+          "text": "Nhưng già làng Ama Thuật cũng có một chìa khóa riêng luôn đeo bên người để vào thắp hương thần lúa."
+        },
+        {
+          "n": 4,
+          "text": "Lúc 20h30 tôi cùng các chị em trong buôn mang bầu nước ra suối Ea Kral lấy nước cúng, đến 21h15 quay về thì thấy lửa đã cháy rực trời."
+        }
       ]
     },
     {
@@ -93,9 +120,18 @@
       "title": "Lời khai của thợ săn Y Ksor",
       "date": "11h15 ngày 10/04/2001",
       "lines": [
-        { "n": 1, "text": "Trước đây già làng có phạt vạ tôi vì chặt cây gỗ rẫy, tôi phục già làng chứ không oán hận." },
-        { "n": 2, "text": "Tối qua tôi không lên nhà rông mà ngồi uống rượu ở chòi rẫy ngô cách buôn 1 cây số." },
-        { "n": 3, "text": "Tôi nghe tiếng còi báo động mới chạy về giúp dập lửa." }
+        {
+          "n": 1,
+          "text": "Trước đây già làng có phạt vạ tôi vì chặt cây gỗ rẫy, tôi phục già làng chứ không oán hận."
+        },
+        {
+          "n": 2,
+          "text": "Tối qua tôi không lên nhà rông mà ngồi uống rượu ở chòi rẫy ngô cách buôn 1 cây số."
+        },
+        {
+          "n": 3,
+          "text": "Tôi nghe tiếng còi báo động mới chạy về giúp dập lửa."
+        }
       ]
     },
     {
@@ -105,9 +141,18 @@
       "title": "Xác nhận của ông Lê Minh Tuấn (Cán bộ Phòng Nông nghiệp huyện)",
       "date": "11h45 ngày 10/04/2001",
       "lines": [
-        { "n": 1, "text": "Tôi dẫn đoàn cán bộ huyện về dự lễ cúng bến nước của buôn Ea Kral tối qua." },
-        { "n": 2, "text": "Tôi xác nhận anh Y Bang có ngồi uống rượu cần và mời rượu chúng tôi ở gian chính nhà rông từ khoảng 20h15." },
-        { "n": 3, "text": "Đến khoảng 21h05, khi mọi người đang say sưa múa xoang thì người dân bên ngoài gào thét báo cháy kho thóc, anh Y Bang cũng lao ra hô hào dập lửa." }
+        {
+          "n": 1,
+          "text": "Tôi dẫn đoàn cán bộ huyện về dự lễ cúng bến nước của buôn Ea Kral tối qua."
+        },
+        {
+          "n": 2,
+          "text": "Tôi xác nhận anh Y Bang có ngồi uống rượu cần và mời rượu chúng tôi ở gian chính nhà rông từ khoảng 20h15."
+        },
+        {
+          "n": 3,
+          "text": "Đến khoảng 21h05, khi mọi người đang say sưa múa xoang thì người dân bên ngoài gào thét báo cháy kho thóc, anh Y Bang cũng lao ra hô hào dập lửa."
+        }
       ]
     },
     {
@@ -142,8 +187,14 @@
       "title": "Lời khai của thợ rèn buôn Ma Thuật",
       "date": "15h00 ngày 10/04/2001",
       "lines": [
-        { "n": 1, "text": "Chiếc xà gạc thu dưới tro kho thóc (d05) chính tay tôi rèn cho anh Y Bang năm ngoái." },
-        { "n": 2, "text": "Chính anh Bang nhờ tôi khắc chữ 'B' (viết tắt tên Bang) lên chuôi gỗ mun để không lẫn với xà gạc của người khác trong buôn." }
+        {
+          "n": 1,
+          "text": "Chiếc xà gạc thu dưới tro kho thóc (d05) chính tay tôi rèn cho anh Y Bang năm ngoái."
+        },
+        {
+          "n": 2,
+          "text": "Chính anh Bang nhờ tôi khắc chữ 'B' (viết tắt tên Bang) lên chuôi gỗ mun để không lẫn với xà gạc của người khác trong buôn."
+        }
       ]
     },
     {
@@ -180,7 +231,10 @@
       "intro": "Đám cháy thiêu rụi kho thóc tưởng chừng là tai nạn khiến già làng thiệt mạng do ngạt khói. Nhưng chứng cứ pháp y và vật chứng tại hiện trường đã vạch trần một vụ án mạng man rợ.",
       "prompt": "Ghim 2 tài liệu chứng minh già làng Ama Thuật đã tử vong từ trước khi có lửa khói và hung khí để lại dấu vết cá nhân rõ ràng.",
       "need": 2,
-      "answer": ["d03", "d05"],
+      "answer": [
+        "d03",
+        "d05"
+      ],
       "hints": [
         "Kiểm tra kết quả giám định tử thi về khí quản và nguyên nhân vỡ lún hộp sọ.",
         "Xem ảnh chụp chiếc xà gạc dính máu khắc chữ cái trên chuôi gỗ."
@@ -191,7 +245,10 @@
       ],
       "nudges": [
         {
-          "picks": ["d01", "d02"],
+          "picks": [
+            "d01",
+            "d02"
+          ],
           "message": "Bản tin và biên bản hiện trường chưa cung cấp kết luận y khoa về đường thở và chi tiết hung khí."
         }
       ]
@@ -203,9 +260,12 @@
       "title": "Bằng chứng ngoại phạm của Y Bang",
       "intro": "Y Bang khẳng định y có mặt liên tục ở nhà rông lớn suốt thời gian ngọn lửa bùng phát.",
       "prompt": "Hãy chọn một dòng trong lời khai của Y Bang (d06) khẳng định y ngồi liên tục ở gian giữa nhà rông uống rượu cần từ đúng 20h10 đến 21h10 không rời nửa bước.",
-      "answer": ["d06:004"],
+      "answer": [
+        "d06:004"
+      ],
       "hints": [
-        "Tìm dòng lời khai nói về việc Y Bang ngồi uống rượu cần và đánh chiêng cùng đoàn cán bộ từ 20h10 đến 21h10."
+        "Tìm dòng lời khai nói về việc Y Bang ngồi uống rượu cần và đánh chiêng cùng đoàn cán bộ từ 20h10 đến 21h10.",
+        "Đối chiếu mốc thời gian và hành vi của người khai với các nhân chứng xung quanh."
       ],
       "explanation": [
         "Tại dòng d06:004, Y Bang khai: 'Từ đúng 20h10 đến tận 21h10 khi có tiếng hô hoán cháy kho thóc, tôi ngồi liên tục ở gian giữa nhà rông uống rượu cần và đánh chiêng cùng đoàn cán bộ huyện, không hề bước chân ra ngoài nửa bước'."
@@ -219,7 +279,10 @@
       "intro": "Bằng chứng ngoại phạm của Y Bang thực chất được tạo ra bởi một bẫy nhiệt kích hoạt chậm.",
       "prompt": "Ghim 2 tài liệu chỉ ra cơ chế phát hỏa hẹn giờ bằng bóng đèn 100W kết hợp rơ-le máy ấp trứng tại tâm cháy.",
       "need": 2,
-      "answer": ["d10", "d11"],
+      "answer": [
+        "d10",
+        "d11"
+      ],
       "hints": [
         "Tài liệu giám định kỹ thuật PCCC về cơ chế sinh nhiệt và rơ-le hẹn giờ 60 phút.",
         "Ảnh chụp đui đèn vỡ và bánh răng rơ-le thu tại hiện trường tâm cháy."
@@ -230,7 +293,10 @@
       ],
       "nudges": [
         {
-          "picks": ["d12", "d13"],
+          "picks": [
+            "d12",
+            "d13"
+          ],
           "message": "d12 và d13 là kiểm tra xưởng và xác nhận thợ rèn, nhưng d10 và d11 mới trực tiếp phân tích cơ chế bẫy nhiệt tại tâm cháy."
         }
       ]
@@ -248,9 +314,12 @@
         "Thợ săn Y Ksor",
         "Cán bộ khuyến nông Lê Minh Tuấn"
       ],
-      "answer": [0],
+      "answer": [
+        0
+      ],
       "hints": [
-        "Ai sở hữu chiếc xà gạc khắc chữ 'B', tháo rơ-le máy ấp trứng tạo bẫy nhiệt và giấu tiền quỹ cùng chiêng cổ sau nhà?"
+        "Ai sở hữu chiếc xà gạc khắc chữ 'B', tháo rơ-le máy ấp trứng tạo bẫy nhiệt và giấu tiền quỹ cùng chiêng cổ sau nhà?",
+        "Xem xét kỹ các bằng chứng vật chất và báo cáo kỹ thuật hình sự."
       ],
       "explanation": [
         "Y Bang là kẻ thủ ác. Y dùng xà gạc khắc chữ B (d05, d13) sát hại cha nuôi lúc 19h45 (d03), dùng rơ-le máy ấp trứng (d10, d11, d12) hẹn giờ đốt kho rồi ra nhà rông tạo ngoại phạm, sau đó giấu tiền quỹ và chiêng cổ ở chuồng heo nhà mình (d14, d15, d16)."

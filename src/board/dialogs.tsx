@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { useBoard, useBoardState } from './context';
 import { useUi, saveSettings } from './ui';
 import { resetBoard } from './store';
+import { deleteCloud } from '../lib/cloud';
 import { caseNo } from '../lib/data';
 import { useNavigate } from 'react-router-dom';
 import { leaveRoom } from '../multiplayer/room';
@@ -125,7 +126,7 @@ function Settings({ onClose }: { onClose: () => void }) {
         <button type="button" className="btn btn--ghost" onClick={() => { store.getState().relayout(reg.defaults); setTimeout(() => fitAll(), 50); onClose(); }}>Xếp lại bàn</button>
         <button type="button" className="btn btn--danger" onClick={async () => {
           if (!armed) { setArmed(true); return; }
-          await resetBoard(c, room?.id);
+          await Promise.all([resetBoard(c, room?.id), deleteCloud(c, room?.id ?? '').catch(() => {})]);
           window.location.reload();
         }}>{armed ? 'Bấm lần nữa để xoá' : room ? 'Xoá ghi chép cá nhân' : 'Chơi lại từ đầu'}</button>
         {room && (
