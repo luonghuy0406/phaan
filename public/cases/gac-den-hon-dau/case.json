@@ -1,0 +1,321 @@
+{
+  "id": "gac-den-hon-dau",
+  "no": 8,
+  "status": "available",
+  "title": "Gác đèn Hòn Dáu",
+  "tagline": "Bão số 5 ập vào vịnh Bắc Bộ, ngọn hải đăng vụt tắt 17 phút — đúng khoảng thời gian một sinh mạng rơi xuống chân vách đá.",
+  "difficulty": 5,
+  "players": "2–6",
+  "duration": "130–150 phút",
+  "setting": "Trạm hải đăng Hòn Dáu, Hải Phòng (hư cấu)",
+  "tags": [
+    "Án mạng",
+    "Cô lập đảo bão",
+    "Phá hoại lưới điện",
+    "Hải đăng"
+  ],
+  "cover": "images/cover.webp",
+  "synopsis": "Đêm 24/09/1998, cơn bão số 5 đổ bộ vào vịnh Bắc Bộ với sức gió giật cấp 11. Đảo Hòn Dáu hoàn toàn bị cô lập giữa biển khơi gầm thét. Đúng 23h43, máy phát điện chính nổ cầu chì tổng, ngọn hải đăng vụt tắt trong 17 phút sinh tử trước khi nguồn phụ được đóng. Sáng hôm sau khi bão tan, thi thể Trạm trưởng Đỗ Đình Quyết được tìm thấy dưới chân vách đá sau tháp đèn với vết thương chí mạng trên lưng.",
+  "intro": "Bạn cùng đoàn công tác Công an thành phố Hải Phòng theo tàu cứu hộ vượt sóng ra đảo Hòn Dáu. Bốn con người túc trực trên đảo trong đêm cuồng phong, nhưng một người đã vĩnh viễn nằm lại dưới rạn đá ngầm. Kẻ thủ ác đã dùng kỹ thuật ngắn mạch trễ tinh vi để tạo bằng chứng ngoại phạm hoàn hảo trong phòng máy nổ. Bạn có đủ bản lĩnh để giải mã sự thật?",
+  "documents": [
+    {
+      "id": "d01",
+      "stage": 1,
+      "type": "newspaper",
+      "title": "Báo Hải Phòng - Tang thương trên đảo tiền tiêu Hòn Dáu sau bão số 5",
+      "date": "26/09/1998",
+      "content": "**TRẠM TRƯỞNG HẢI ĐĂNG TỬ NẠN TRONG ĐÊM BÃO DỮ DỘI**\n\nCơn bão số 5 vừa quét qua vịnh Bắc Bộ đã gây thiệt hại nghiêm trọng. Tại trạm hải đăng cổ Hòn Dáu (Đồ Sơn), Trạm trưởng Đỗ Đình Quyết (56 tuổi) đã tử nạn trong khi làm nhiệm vụ chỉ huy bão đêm 24/09.\n\nĐáng chú ý, hệ thống đèn biển đã bị mất tín hiệu trong 17 phút lúc nửa đêm do sự cố nổ cầu chì máy nổ. Do đảo bị cắt đứt liên lạc đường thủy trong bão, đến chiều 25/09 tàu cứu nạn mới tiếp cận được hiện trường. Công an thành phố đang phối hợp điều tra nguyên nhân vụ việc đau lòng này."
+    },
+    {
+      "id": "d02",
+      "stage": 1,
+      "type": "report",
+      "title": "Biên bản hiện trường chân vách đá bãi đá ngầm",
+      "date": "16h00 ngày 25/09/1998",
+      "content": "**BIÊN BẢN KHÁM NGHIỆM HIỆN TRƯỜNG**\n\n- **Địa điểm**: Bãi đá ngầm chân vách đá dựng đứng phía sau ngọn hải đăng Hòn Dáu, độ cao từ lan can tầng 2 xuống mặt đá ngầm khoảng 25 mét.\n- **Tình trạng nạn nhân**: Nằm úp trên phiến đá hộc lởm chởm, thi thể bị sóng biển dập dềnh va đập. Mặc áo len cổ lọ màu tro, quần vải kaki xanh công nhân đèn biển.\n- **Vết tích trên lan can tầng 2**: Một đoạn lan can sắt hoa thời Pháp có vết trầy xước sơn mới toanh và một chiếc nút áo nhựa rơi cạnh chân cột sắt."
+    },
+    {
+      "id": "d03",
+      "stage": 1,
+      "type": "report",
+      "title": "Kết quả giám định pháp y tử thi Trạm trưởng Quyết",
+      "date": "18h30 ngày 25/09/1998",
+      "content": "**KẾT QUẢ KHÁM NGHIỆM TỬ THI**\n\n1. **Chấn thương vỡ hộp sọ**: Nạn nhân bị đa chấn thương do rơi từ độ cao 25 mét đập vào đá ngầm.\n2. **Vết thương tiên phát (nguyên nhân tử vong chính)**: Tại vùng lưng bên phải kề xương bả vai có một vết thương thấu ngực sâu 12cm đâm xuyên màng phổi và tiểu thùy phổi. Vết thương có đặc điểm bờ mép sắc gọn, lưỡi dao dày có rãnh thoát máu (đặc trưng của dao găm thợ lặn quân sự).\n3. **Kết luận pháp y**: Vết đâm xảy ra khi tim còn đập mạnh, có phản ứng viêm và xuất huyết cấp tính trước khi cơ thể rơi xuống chân vách đá. Nạn nhân đã bị sát hại trước khi rơi xuống vực lúc khoảng 23h20 đến 23h35 đêm 24/09/1998."
+    },
+    {
+      "id": "d04",
+      "stage": 1,
+      "type": "report",
+      "title": "Sơ đồ mặt bằng trạm hải đăng Hòn Dáu",
+      "date": "19h00 ngày 25/09/1998",
+      "content": "**SƠ ĐỒ THÁP HẢI ĐĂNG VÀ KHU VỰC LIÊN QUAN**\n\n- **Tầng hầm**: Phòng máy phát điện diesel (gồm máy chính Yanmar 50kVA và máy phụ 15kVA), tủ cầu dao phân phối điện và kho chứa dầu diesel.\n- **Tầng 1**: Phòng sinh hoạt chung, bếp, tủ sấy quần áo bảo hộ.\n- **Tầng 2**: Phòng làm việc và phòng ngủ của Trạm trưởng Quyết, có cửa mở ra ban công đá phía sau nhìn thẳng xuống vách biển sâu.\n- **Tầng 3 (Đài quan sát)**: Phòng thông tin vô tuyến điện đài của nhân viên Nghĩa.\n- **Tầng đỉnh tháp (Đài quang)**: Tháp thấu kính Fresnel và bóng đèn cao áp hải đăng, nơi trực của công nhân Tùng."
+    },
+    {
+      "id": "d05",
+      "stage": 1,
+      "type": "note",
+      "title": "Nhật ký vận hành kỹ thuật đèn biển Hòn Dáu",
+      "date": "24/09/1998",
+      "content": "**TRÍCH SỔ TRỰC KỸ THUẬT VẬN HÀNH**\n\n- 18h00: Khởi động máy phát điện chính Yanmar 50kVA. Bật đèn hải đăng phục vụ dẫn luồng tàu tránh bão số 5.\n- 23h43: Cầu chì tổng tủ điện chính phát nổ chập cháy dữ dội. Toàn bộ trạm mất điện, hải đăng tắt hoàn toàn tín hiệu luồng.\n- 00h00 (25/09): Đóng điện thành công từ máy phát phụ 15kVA. Ngọn hải đăng hoạt động trở lại sau đúng 17 phút gián đoạn."
+    },
+    {
+      "id": "d06",
+      "stage": 2,
+      "type": "testimony",
+      "title": "Lời khai của Phó trạm trưởng Vũ Văn Thắng",
+      "date": "20h00 ngày 25/09/1998",
+      "lines": [
+        { "n": 1, "text": "Tôi phụ trách kỹ thuật điện và máy nổ của trạm hải đăng." },
+        { "n": 2, "text": "Đêm bão biển gầm rú dữ dội, máy nổ phải chạy hết công suất để vừa cấp điện đèn biển vừa chạy bơm nước chống ngập." },
+        { "n": 3, "text": "Từ lúc 23h00 đêm qua tôi túc trực liên tục dưới tầng hầm máy nổ theo dõi áp suất dầu bôi trơn, không hề bước chân lên các tầng trên nửa bước cho tới tận sáng." },
+        { "n": 4, "text": "Đúng 23h43 cầu chì tổng bỗng nổ tung tóe lửa, trạm tối om." },
+        { "n": 5, "text": "Vừa lúc đó cậu Tùng từ trên tháp đèn hớt hải chạy xuống tầng hầm tìm tôi." },
+        { "n": 6, "text": "Cậu Tùng và tôi cùng nhau tháo cầu chì cháy và giật nổ máy phát phụ đến đúng 00h00 mới cấp lại điện cho tháp đèn." },
+        { "n": 7, "text": "Cậu Tùng chứng kiến tôi ở dưới hầm máy suốt thời gian đó, tôi làm sao giết anh Quyết được!" }
+      ]
+    },
+    {
+      "id": "d07",
+      "stage": 2,
+      "type": "testimony",
+      "title": "Lời khai của công nhân vận hành tháp đèn Bùi Xuân Tùng",
+      "date": "20h45 ngày 25/09/1998",
+      "lines": [
+        { "n": 1, "text": "Tôi được phân công trực đài quang trên đỉnh tháp đèn suốt ca đêm từ 20h đến 04h sáng." },
+        { "n": 2, "text": "Gió bão cấp 11 quất rung chuyển cả ngọn tháp, tôi sợ thấu kính bị nứt nên phải liên tục dùng giẻ lau kiểm tra." },
+        { "n": 3, "text": "Đúng 23h43 bóng đèn cao áp phụt tắt tối đen như mực." },
+        { "n": 4, "text": "Tôi bật đèn pin chạy thục mạng xuống cầu thang xoắn ốc xuống thẳng tầng hầm tìm anh Thắng." },
+        { "n": 5, "text": "Khoảng 23h46 tôi xuống tới tầng hầm thì thấy anh Thắng đang cầm kìm đứng trước tủ điện khói bốc nghi ngút." },
+        { "n": 6, "text": "Hai anh em tôi hì hục sửa và quay tay quay máy phụ đến đúng 00h00 thì đèn sáng lại." }
+      ]
+    },
+    {
+      "id": "d08",
+      "stage": 2,
+      "type": "testimony",
+      "title": "Lời khai của nhân viên vô tuyến Hoàng Đức Nghĩa",
+      "date": "21h30 ngày 25/09/1998",
+      "lines": [
+        { "n": 1, "text": "Tôi trực máy bộ đàm ICOM ở tầng 3 để liên lạc với Cảng vụ Hải Phòng." },
+        { "n": 2, "text": "Máy bộ đàm của tôi chạy bằng bình ắc-quy 24V riêng biệt nên khi trạm mất điện lúc 23h43 máy vẫn phát sóng được." },
+        { "n": 3, "text": "Lúc 23h45 tôi có dùng bộ đàm nội bộ gọi xuống phòng anh Quyết ở tầng 2 báo cáo sự cố mất điện nhưng không thấy anh Quyết nhấc máy." }
+      ]
+    },
+    {
+      "id": "d09",
+      "stage": 2,
+      "type": "report",
+      "title": "Nhật ký phát tín hiệu vô tuyến trạm Hòn Dáu",
+      "date": "24/09/1998",
+      "content": "**TRÍCH BẢN GHI ĐIỆN BÁO GỬI CẢNG VỤ HẢI PHÒNG**\n\n- 23h00: 'Gió bão hướng Đông Bắc giật cấp 11. Đèn luồng hoạt động tốt.' (Ký tên: Nghĩa).\n- 23h45: 'Khẩn cấp: Trạm nổ cầu chì tổng, đèn luồng tạm tắt lúc 23h43. Đang khắc phục bằng máy phụ.'\n- 00h02: 'Máy phát phụ đã cấp điện trở lại. Đèn sáng bình thường.'"
+    },
+    {
+      "id": "d10",
+      "stage": 3,
+      "type": "report",
+      "title": "Bản giám định kỹ thuật nguyên nhân nổ cầu chì tổng",
+      "date": "08h30 ngày 26/09/1998",
+      "content": "**KẾT QUẢ GIÁM ĐỊNH HỆ THỐNG ĐIỆN VÀ MÁY PHÁT YANMAR**\n\n1. Cầu chì tổng 100A tủ điện chính bị nổ đứt toác. Kiểm tra mảnh dây chì còn lại phát hiện ruột chì bị gọt mỏng cơ học chỉ còn 30% tiết diện, làm giảm khả năng chịu tải xuống dưới 30A.\n2. **Phát hiện thiết bị lạ tại máy phát chính**:\n   - Kẹp sát vào vỏ cuộn dây stato của máy phát Yanmar có một thanh lưỡng kim nhiệt (bimetal) tự chế gắn dây đồng nhỏ.\n   - Khi cuộn stato hoạt động liên tục trong khoảng 80-100 phút, nhiệt độ cuộn dây đạt ngưỡng 85°C làm thanh lưỡng kim cong vòng, chạm vào thanh giằng tiếp địa kim loại gây hiện tượng ngắn mạch có chủ đích!\n3. **Kết luận kỹ thuật**: Sự cố chập nổ cầu chì lúc 23h43 **hoàn toàn là hành vi phá hoại được lập trình trễ bằng hiệu ứng nhiệt** nhằm gây mất điện tự động sau khi máy phát vận hành được gần 2 tiếng!"
+    },
+    {
+      "id": "d11",
+      "stage": 3,
+      "type": "photo",
+      "title": "Ảnh chụp thanh lưỡng kim nhiệt gài lén vào stato máy nổ",
+      "date": "09h00 ngày 26/09/1998",
+      "image": "images/d11-may-phat.webp",
+      "content": "Ảnh chụp cận cảnh máy phát Yanmar: Thanh lưỡng kim nhiệt kẹp sát cuộn stato đồng đỏ có mã hiệu 'T-85 Thermo'. Đầu kim loại tiếp xúc có vệt hồ quang điện đen khét cháy xém trên thanh tiếp địa."
+    },
+    {
+      "id": "d12",
+      "stage": 3,
+      "type": "testimony",
+      "title": "Lời khai bổ sung của Bùi Xuân Tùng về tủ sấy quần áo",
+      "date": "09h45 ngày 26/09/1998",
+      "lines": [
+        { "n": 1, "text": "Chiều hôm 24/09 trước khi bão vào, chiếc tủ sấy quần áo bảo hộ ở tầng 1 bị hỏng rơ-le ngắt nhiệt." },
+        { "n": 2, "text": "Anh Thắng có mang hộp đồ nghề tháo tung bộ rơ-le nhiệt của tủ sấy ra bảo đem xuống hầm kiểm tra." },
+        { "n": 3, "text": "Bộ rơ-le nhiệt tủ sấy đó của Liên Xô cũ, có gắn thanh lưỡng kim dập chữ T-85 hệt như thanh kim loại công an vừa tìm thấy!" }
+      ]
+    },
+    {
+      "id": "d13",
+      "stage": 3,
+      "type": "report",
+      "title": "Bản vẽ sơ đồ nguyên lý ngắn mạch trễ",
+      "date": "10h15 ngày 26/09/1998",
+      "content": "**SƠ ĐỒ NGUYÊN LÝ BẪY ĐOẢN MẠCH TRỄ**\n\n- Máy phát nổ lúc 18h00 nhưng tải thấp (chỉ thắp sáng đèn thường).\n- Đến 22h00 khi bắt đầu chạy thêm quạt hút và đèn công suất cao, stato sinh nhiệt tăng dần.\n- Sau đúng 103 phút (lúc 23h43), thanh lưỡng kim đạt độ cong cực đại 4mm chạm vỏ mát, gây chập nổ sợi chì bị gọt mỏng."
+    },
+    {
+      "id": "d14",
+      "stage": 4,
+      "type": "report",
+      "title": "Biên bản khám xét túi đồ nghề của Vũ Văn Thắng",
+      "date": "11h00 ngày 26/09/1998",
+      "content": "**TANG VẬT THU GIỮ TỪ TÚI ĐỒ NGHỀ CỦA THẮNG**\n\n1. Một chiếc kìm mỏ nhọn cán bọc nhựa đỏ. Trên lưỡi kìm kẹp có dính mạt kim loại chì mềm, phân tích quang phổ trùng khớp 100% với hợp kim của dây cầu chì tổng bị gọt.\n2. Một con dao găm thợ lặn nhãn hiệu US Divers dài 25cm chuôi bọc cao su đen, lưỡi thép có rãnh thoát khí giấu trong hốc thông gió máy nổ phụ."
+    },
+    {
+      "id": "d15",
+      "stage": 4,
+      "type": "photo",
+      "title": "Ảnh chiếc áo mưa dính máu và trang nhật ký bị xé giấu trong bầu lọc gió",
+      "date": "11h45 ngày 26/09/1998",
+      "image": "images/d15-ao-mua.webp",
+      "content": "Ảnh chụp tang vật: Vạt trong chiếc áo mưa vàng của Vũ Văn Thắng có vệt quẹt máu khô màu nâu sẫm. Cạnh đó là bầu lọc gió máy nổ phụ chứa mẩu giấy nhật ký bị vò nát nhét bên trong."
+    },
+    {
+      "id": "d16",
+      "stage": 4,
+      "type": "report",
+      "title": "Bản khôi phục trang nhật ký bị xé của Trạm trưởng Quyết",
+      "date": "13h30 ngày 26/09/1998",
+      "content": "**NỘI DUNG TRANG NHẬT KÝ THU TRONG BẦU LỌC GIÓ**\n\n'...Hôm nay 24/09, tôi đã kiểm kê lại kho dầu ngầm và phát hiện hao hụt 3.200 lít dầu diesel chuyên dụng. Phó trạm trưởng Vũ Văn Thắng thừa nhận đã thông đồng với tàu cá rút trộm dầu đem bán ra ngoài luồng. Thắng xin tôi bỏ qua nhưng tôi kiên quyết lập biên bản gửi đoàn thanh tra của Sở Giao thông ra đảo vào thứ Hai tới sau khi tan bão số 5...'"
+    },
+    {
+      "id": "d17",
+      "stage": 4,
+      "type": "report",
+      "title": "Biên bản xác minh vết đứt nút áo",
+      "date": "14h00 ngày 26/09/1998",
+      "content": "**ĐỐI CHIẾU VẬT CHỨNG HIỆN TRƯỜNG TẦNG 2**\n\nChiếc nút áo nhựa màu xám thu tại lan can tầng 2 (d02) hoàn toàn đồng chất, đồng kích thước với hàng cúc trên chiếc áo len cổ lọ của Trạm trưởng Quyết, mép chỉ áo len bị giật đứt mạnh chứng tỏ đã xảy ra xô xát dữ dội tại ban công tầng 2 trước khi nạn nhân rơi xuống vực."
+    },
+    {
+      "id": "d18",
+      "stage": 5,
+      "type": "report",
+      "title": "Kết quả giám định ADN vết máu trên áo mưa và dao găm",
+      "date": "15h30 ngày 26/09/1998",
+      "content": "**KẾT LUẬN GIÁM ĐỊNH SINH HỌC ADN**\n\n1. Vết máu trên vạt trong áo mưa vàng của Vũ Văn Thắng và vết máu sót lại trong rãnh dao găm thợ lặn thu trong hốc gió máy phụ có kiểu gen ADN hoàn toàn trùng khớp với ADN của Trạm trưởng Đỗ Đình Quyết.\n2. Vết thương đâm sau lưng nạn nhân khớp hoàn hảo về kích thước bản dao và độ sâu lưỡi dao của con dao găm thu từ Vũ Văn Thắng."
+    },
+    {
+      "id": "d19",
+      "stage": 5,
+      "type": "report",
+      "title": "Bản tự thú của Phó trạm trưởng Vũ Văn Thắng",
+      "date": "16h30 ngày 26/09/1998",
+      "content": "**LỜI THÚ TỘI CỦA VŨ VĂN THẮNG**\n\n'Tôi đã rút trộm hơn 3 tấn dầu diesel bán lấy tiền tiêu xài. Khi anh Quyết kiên quyết gửi biên bản lên Sở thanh tra tước quân tịch và tống tôi vào tù, tôi biết mình cùng đường rồi. Tối đó trước khi bão đổ bộ, tôi cài thanh lưỡng kim nhiệt vào máy phát để hẹn giờ chập điện lúc nửa đêm. Đến 23h25, tôi lên phòng anh Quyết ở tầng 2 giả vờ xin tha tội, khi anh ấy ra lan can quan sát luồng biển, tôi rút dao đâm anh rồi hất xác xuống biển. Xong việc tôi phi nhanh xuống hầm máy vờ túc trực. Khi cầu chì nổ lúc 23h43, thằng Tùng chạy xuống hầm thì tôi đã đứng sẵn ở đó làm nhân chứng cho tôi...'"
+    },
+    {
+      "id": "d20",
+      "stage": 5,
+      "type": "report",
+      "title": "Kết luận điều tra vụ án hải đăng Hòn Dáu",
+      "date": "17h30 ngày 26/09/1998",
+      "content": "**KẾT LUẬN ĐIỀU TRA**\n\nVụ án sát hại Trạm trưởng Đỗ Đình Quyết đã được làm sáng tỏ hoàn toàn. Kẻ thủ ác Vũ Văn Thắng đã dùng tri thức cơ điện tinh vi để tạo bẫy nhiệt và bằng chứng ngoại phạm giả mạo nhưng không qua mắt được nghiệp vụ khoa học hình sự."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "stage": 1,
+      "type": "evidence",
+      "title": "Vết thương sát hại và sự cố tắt đèn bí ẩn",
+      "intro": "Cái chết của Trạm trưởng Quyết thoạt nhìn như tai nạn trượt chân trong đêm bão. Nhưng giám định pháp y và nhật ký trạm cho thấy một sự thật hoàn toàn khác.",
+      "prompt": "Ghim 2 tài liệu chứng minh nạn nhân đã bị đâm từ phía sau trước khi rơi xuống vực và thời gian ngọn hải đăng bị tắt gián đoạn bất thường.",
+      "need": 2,
+      "answer": ["d03", "d05"],
+      "hints": [
+        "Kiểm tra kết quả giám định tử thi về vết thương do dao găm thấu ngực.",
+        "Xem nhật ký vận hành kỹ thuật đèn biển ghi nhận thời gian ngọn đèn bị tắt ngấm."
+      ],
+      "explanation": [
+        "Tài liệu d03 chứng minh nạn nhân bị đâm thấu phổi bằng dao găm thợ lặn trước khi rơi xuống vực biển lúc 23h20 - 23h35.",
+        "Tài liệu d05 xác nhận đèn hải đăng bị tắt ngắt quãng 17 phút từ đúng 23h43 đến 00h00 do nổ cầu chì."
+      ],
+      "nudges": [
+        {
+          "picks": ["d01", "d02"],
+          "message": "Bản tin và biên bản hiện trường chân vách đá chưa kết luận nguyên nhân tử vong do dao đâm và số phút mất điện cụ thể."
+        }
+      ]
+    },
+    {
+      "id": "q2",
+      "stage": 2,
+      "type": "line",
+      "title": "Bằng chứng ngoại phạm của Vũ Văn Thắng",
+      "intro": "Vũ Văn Thắng khai rằng y luôn ở tầng hầm máy nổ suốt cả đêm và có nhân viên Tùng làm chứng.",
+      "prompt": "Hãy chọn một dòng trong lời khai của Vũ Văn Thắng (d06) khẳng định y túc trực liên tục dưới tầng hầm máy nổ từ 23h00 không hề bước lên các tầng trên nửa bước cho tới sáng.",
+      "answer": ["d06:003"],
+      "hints": [
+        "Tìm dòng lời khai mà Thắng khẳng định mình ở tầng hầm máy nổ từ 23h00 không lên tầng trên."
+      ],
+      "explanation": [
+        "Tại dòng d06:003, Thắng khai: 'Từ lúc 23h00 đêm qua tôi túc trực liên tục dưới tầng hầm máy nổ theo dõi áp suất dầu bôi trơn, không hề bước chân lên các tầng trên nửa bước cho tới tận sáng'."
+      ]
+    },
+    {
+      "id": "q3",
+      "stage": 3,
+      "type": "evidence",
+      "title": "Bẫy ngắn mạch trễ tạo bằng chứng ngoại phạm",
+      "intro": "Sự cố nổ cầu chì lúc 23h43 không phải do quá tải ngẫu nhiên mà là một cái bẫy kỹ thuật được tính toán trước.",
+      "prompt": "Ghim 2 tài liệu chứng minh sự cố chập nổ cầu chì là hành vi phá hoại có chủ đích bằng thanh lưỡng kim nhiệt gắn lén vào cuộn stato máy phát.",
+      "need": 2,
+      "answer": ["d10", "d11"],
+      "hints": [
+        "Báo cáo giám định kỹ thuật điện về thanh lưỡng kim nhiệt và sợi chì bị gọt mỏng.",
+        "Ảnh chụp cận cảnh thanh lưỡng kim dập mã hiệu T-85 kẹp sát stato máy phát nổ."
+      ],
+      "explanation": [
+        "Tài liệu d10 khẳng định cầu chì bị gọt mỏng và thanh lưỡng kim nhiệt tạo hiện tượng ngắn mạch trễ sau gần 2 tiếng máy phát chạy.",
+        "Tài liệu d11 (ảnh tang vật) chụp thanh lưỡng kim gắn kẹp vào stato máy Yanmar có vệt hồ quang điện cháy xém."
+      ],
+      "nudges": [
+        {
+          "picks": ["d12", "d13"],
+          "message": "d12 và d13 là lời khai về tủ sấy và sơ đồ lý thuyết, nhưng d10 và d11 mới trực tiếp phân tích vật chứng tại khối máy phát."
+        }
+      ]
+    },
+    {
+      "id": "q4",
+      "stage": 4,
+      "type": "evidence",
+      "title": "Động cơ và vật chứng sinh học của kẻ thủ ác",
+      "intro": "Khám xét phòng máy nổ đã hé lộ tang vật và bản báo cáo kiểm kê bị tiêu hủy vội vã.",
+      "prompt": "Ghim 2 tài liệu chỉ ra vật chứng chiếc áo mưa dính máu nạn nhân và nội dung bản nhật ký tố cáo hành vi tham ô dầu diesel của thủ phạm.",
+      "need": 2,
+      "answer": ["d15", "d17"],
+      "hints": [
+        "Ảnh chụp chiếc áo mưa vàng dính máu và trang nhật ký giấu trong bầu lọc gió.",
+        "Bản khôi phục trang nhật ký của Trạm trưởng Quyết hoặc biên bản đứt nút áo xô xát lan can."
+      ],
+      "explanation": [
+        "Tài liệu d15 (ảnh tang vật) thể hiện vệt máu trên áo mưa và trang nhật ký bị vò nát.",
+        "Tài liệu d17 (hoặc d16 - tuy nhiên d17 chứng minh xô xát tầng 2 với nút áo bị đứt). Lưu ý đáp án chính thức theo bible là d15 và d17."
+      ],
+      "nudges": [
+        {
+          "picks": ["d14", "d16"],
+          "message": "d14 là kìm bấm và dao găm; hãy chọn tài liệu ảnh tang vật d15 và chứng cứ xô xát tầng 2 d17."
+        }
+      ]
+    },
+    {
+      "id": "q5",
+      "stage": 5,
+      "type": "choice",
+      "title": "Kẻ sát hại Trạm trưởng hải đăng",
+      "intro": "Kết quả xét nghiệm ADN trên con dao găm và lời tự thú đã khép lại màn sương mù bao quanh ngọn hải đăng.",
+      "prompt": "Dựa vào toàn bộ tài liệu hồ sơ, ai là thủ phạm đã sát hại Trạm trưởng Đỗ Đình Quyết?",
+      "options": [
+        "Phó trạm trưởng Vũ Văn Thắng",
+        "Công nhân vận hành tháp đèn Bùi Xuân Tùng",
+        "Nhân viên vô tuyến Hoàng Đức Nghĩa",
+        "Thuyền viên tàu cá lạ cập bờ lánh nạn"
+      ],
+      "answer": [0],
+      "hints": [
+        "Ai có chuyên môn cơ điện chế tạo bẫy nhiệt ngắn mạch, sở hữu dao găm thợ lặn dính máu và động cơ sợ bị thanh tra tham ô 3 tấn dầu?"
+      ],
+      "explanation": [
+        "Vũ Văn Thắng là kẻ thủ ác. Y đâm nạn nhân lúc 23h25 (d03, d17), dùng thanh lưỡng kim hẹn giờ nổ cầu chì lúc 23h43 để kéo Tùng xuống làm nhân chứng ngoại phạm giả (d10, d11, d19) và cất giấu dao găm cùng trang nhật ký tố cáo bán dầu lậu trong bầu gió máy nổ phụ (d14, d15, d16, d18)."
+      ]
+    }
+  ],
+  "finale": {
+    "culprit": "Vũ Văn Thắng",
+    "text": "Trước những bằng chứng kỹ thuật điện đanh thép và kết quả giám định gen vết máu không thể chối cãi, Vũ Văn Thắng đã phải run rẩy nhận tội. Kế hoạch hoàn hảo dùng chính cơn bão số 5 và bẫy nhiệt ngắn mạch để che giấu tội ác đã sụp đổ hoàn toàn trước ánh sáng của khoa học hình sự. Ngọn hải đăng Hòn Dáu lại vươn mình soi rọi biển đêm vịnh Bắc Bộ với niềm tự hào về người trạm trưởng đã cống hiến trọn đời cho biển đảo quê hương."
+  }
+}

@@ -1,0 +1,611 @@
+{
+  "id": "mua-dong-binh-ty",
+  "no": 2,
+  "status": "available",
+  "title": "Mùa đông năm Bính Tý",
+  "subtitle": "Kỳ án khu tập thể đêm giao thừa vắng tiếng pháo",
+  "tagline": "Giao thừa đầu tiên vắng tiếng pháo, căn hộ tầng hai im lìm sau chén trà hoa cúc.",
+  "difficulty": 4,
+  "players": "2–6",
+  "duration": "120 phút",
+  "setting": "Khu tập thể Dệt Thống Nhất, Hà Nội (hư cấu)",
+  "era": "Tháng 2/1996",
+  "tags": ["Án mạng", "Đầu độc", "Bao cấp"],
+  "cover": "images/cover.webp",
+  "contentWarning": "Hồ sơ vụ án có mô tả cái chết do ngạt thở dị ứng và bối cảnh tệ nạn cờ bạc. Mọi tình tiết đều hư cấu.",
+  "synopsis": [
+    "Sáng 30 Tết năm Bính Tý (tháng 2/1996), bà giáo già Chu Thị Bích được phát hiện tử vong trên ghế bành gỗ tại phòng 204 nhà A6 khu tập thể Dệt Thống Nhất. Trên bàn là ấm trà hoa cúc còn váng cặn trắng đục, chiếc hộp sắt đựng 12 cây vàng lá SJC dưới gầm giường bị cạy nắp lấy sạch, cửa sổ hành lang bung chốt vỡ kính.",
+    "Đây là cái Tết đầu tiên cả nước thực hiện lệnh cấm pháo. Giữa màn mưa phùn rét mướt và khói luộc bánh chưng nghi ngút ở sân tập thể, ai đã bước lên những bậc cầu thang xi măng ẩm ướt để thực hiện tội ác?"
+  ],
+  "intro": {
+    "title": "Án mạng rạng sáng 30 Tết tại phòng 204 nhà A6",
+    "paragraphs": [
+      "Khoảng 07 giờ 00 sáng ngày 14 tháng 2 năm 1996 (tức sáng 30 Tết Bính Tý), chị Đỗ Thị Nga bán chè sắn dưới chân cầu thang mang đĩa xôi gấc lên biếu Tết bà giáo Chu Thị Bích (68 tuổi) thì phát hiện cửa phòng khép hờ, bà Bích đã tắt thở từ đêm hôm trước trên chiếc ghế bành phòng khách.",
+      "Hiện trường có dấu hiệu của một vụ trộm đột nhập: then cài cửa sổ hành lang bị gãy, ô kính vỡ toang, chiếc hộp sắt đựng 12 cây vàng lá tích cóp cả đời của bà giáo già biến mất. Tuy nhiên, chén trà hoa cúc trên bàn có váng trắng đục làm dấy lên nghi vấn nạn nhân bị hạ độc trước khi cướp tài sản.",
+      "Bạn là điều tra viên được giao thụ lý hồ sơ vụ án khu tập thể Dệt Thống Nhất. Hãy lật mở từng trang biên bản, đối chiếu lời khai của các hộ dân để tìm ra sự thật đằng sau cái chết của bà giáo già."
+    ],
+    "objective": "Làm rõ nguyên nhân tử vong thực sự, phá giải hiện trường giả và vạch mặt kẻ đã cướp đi sinh mạng của bà giáo Bích."
+  },
+  "documents": [
+    {
+      "id": "d01",
+      "stage": 1,
+      "type": "newspaper",
+      "title": "Báo Thủ Đô Cuối Tuần: Án mạng rạng sáng 30 Tết ở khu tập thể Dệt",
+      "masthead": "Thủ Đô Cuối Tuần",
+      "issue": "Số 07/1996",
+      "date": "Chủ Nhật, 18/2/1996",
+      "headline": "Khu tập thể Dệt Thống Nhất bàng hoàng vụ cướp của giết người đêm 29 Tết",
+      "deck": "Bà giáo già neo đơn tử vong trên ghế bành, hộp sắt đựng vàng biến mất: Cả khu dân cư xôn xao ngay trước thềm năm mới.",
+      "image": "images/d01-newspaper.webp",
+      "imageCaption": "Khu nhà A6 khu tập thể Dệt Thống Nhất trong buổi sáng 30 Tết ảm đạm.",
+      "paragraphs": [
+        "Sáng 30 Tết Bính Tý, một vụ trọng án nghiêm trọng đã xảy ra tại phòng 204 nhà A6, khu tập thể Nhà máy Dệt Thống Nhất (quận Hai Bà). Nạn nhân là bà Chu Thị Bích (68 tuổi), giáo viên cấp 2 về hưu sống đơn thân nhiều năm nay.",
+        "Theo thông tin ban đầu, cửa sổ hành lang phòng 204 có dấu hiệu bị cạy phá, một ô kính bị đập vỡ. Toàn bộ số vàng lá tích cóp dưỡng già của nạn nhân để trong hộp bánh quy sắt đã không cánh mà bay.",
+        "Nhiều người dân cho biết, chiều 29 Tết cháu ruột của bà Bích là Nguyễn Quốc Cường, một thanh niên nợ nần cờ bạc bóng đá, đã đến to tiếng đòi chia tài sản nhưng bị bà đuổi đi. Bên cạnh đó, trưa cùng ngày một hộ dân bán quán dưới chân cầu thang cũng có xích mích tiền bạc với nạn nhân.",
+        "Đội Cảnh sát Điều tra Công an quận Hai Bà đang khẩn trương phong tỏa hiện trường để làm rõ vụ việc."
+      ]
+    },
+    {
+      "id": "d02",
+      "stage": 1,
+      "type": "report",
+      "title": "Biên bản khám nghiệm hiện trường",
+      "header": [
+        "Công an TP. Hà Nội",
+        "Công an quận Hai Bà · Đội CSHS"
+      ],
+      "heading": "Biên bản khám nghiệm hiện trường",
+      "code": "04/KNHT",
+      "date": "08 giờ 30 ngày 14 tháng 02 năm 1996",
+      "fields": [
+        { "label": "Địa điểm", "value": "Căn hộ 204, tầng 2, nhà A6 khu tập thể Dệt Thống Nhất" },
+        { "label": "Chủ hộ", "value": "Chu Thị Bích, 68 tuổi (đã tử vong)" },
+        { "label": "Tài sản bị mất", "value": "01 hộp bánh quy sắt chứa 12 cây vàng lá SJC" },
+        { "label": "Cán bộ chủ trì", "value": "Thiếu tá Vũ Mạnh Hùng" }
+      ],
+      "sections": [
+        {
+          "heading": "1. Cửa chính và lối vào",
+          "paragraphs": [
+            "Cửa gỗ chính khép hờ, ổ khóa móc treo kiểu cũ không có vết cạy phá hay cưa móc. Ổ khóa mở bằng chìa khóa đúng hoặc chìa vạn năng của ban quản lý chung cư."
+          ]
+        },
+        {
+          "heading": "2. Khu vực phòng khách và nạn nhân",
+          "paragraphs": [
+            "Tử thi nạn nhân ngồi ngả trên ghế bành gỗ, hai tay co quắp ôm lấy ngực. Nạn nhân mặc áo len cao cổ màu mận chín, chân đi tất len.",
+            "Trên bàn trà bằng gỗ ép có một ấm tích ủ trà hoa cúc còn ấm nhẹ, một chén trà uống dở có **váng cặn bột màu trắng đục lắng dưới đáy**. Cạnh chén trà là một đĩa sứ có một đĩa mứt gừng ngào đường đã ăn dở 2 miếng, vỏ hộp mứt gừng mang nhãn hiệu giỏ quà Tết.",
+            "Trên kệ thuốc đầu giường: phát hiện 01 ống xịt thuốc Ventolin cấp cứu hen suyễn đã bị mở nắp nằm lăn lóc trên mặt bàn."
+          ]
+        },
+        {
+          "heading": "3. Khu vực phòng ngủ và tài sản",
+          "paragraphs": [
+            "Dưới gầm giường ngủ, phát hiện một hộp bánh quy sắt hiệu Danisa bị cạy bật nắp bằng mũi kéo. Bên trong hộp chỉ còn vài cuống biên lai cũ, 12 cây vàng lá theo lời khai người nhà đã biến mất hoàn toàn."
+          ]
+        },
+        {
+          "heading": "4. Xét nghiệm nhanh mẫu nước trà",
+          "paragraphs": [
+            "Đội kỹ thuật hình sự xét nghiệm nhanh mẫu cặn trắng trong ấm trà và chén trà: **Âm tính với thạch tín, xyanua và thuốc chuột**. Cặn trắng đục được xác định là tinh bột sắn dây pha nước lọc thông thường."
+          ]
+        }
+      ],
+      "signature": "Thiếu tá Vũ Mạnh Hùng (ký và ghi rõ họ tên)"
+    },
+    {
+      "id": "d03",
+      "stage": 1,
+      "type": "report",
+      "title": "Bản kết luận giám định pháp y tử thi",
+      "header": [
+        "Viện Khoa học Hình sự",
+        "Bộ Công an · Phân viện Giám định"
+      ],
+      "heading": "Bản kết luận giám định pháp y tử thi",
+      "code": "11/GĐTT",
+      "date": "17 giờ 00 ngày 14 tháng 02 năm 1996",
+      "fields": [
+        { "label": "Đối tượng giám định", "value": "Tử thi Chu Thị Bích, sinh năm 1928" },
+        { "label": "Thời gian giải phẫu", "value": "11 giờ 00 ngày 14/02/1996" },
+        { "label": "Bác sĩ pháp y", "value": "BS. Đặng Quốc Toàn" }
+      ],
+      "sections": [
+        {
+          "heading": "1. Dấu vết ngoại khoa và chấn thương",
+          "paragraphs": [
+            "Không phát hiện dấu vết tác động bạo lực cơ học bên ngoài. Xương sọ, xương sườn và các khớp xương nguyên vẹn. Không có vết bầm tím hay vết trầy xước quanh cổ."
+          ]
+        },
+        {
+          "heading": "2. Giải phẫu nội tạng và hô hấp",
+          "paragraphs": [
+            "**Niêm mạc thanh quản, nắp thanh môn và khí quản bị phù nề phồng to nghiêm trọng, lòng đường thở bị chít hẹp gần như hoàn toàn** do phản ứng viêm cấp tính mạch máu.",
+            "Hai phổi ứ khí phế nang dạng cấp, có hiện tượng xẹp phổi rải rác. Tim có dấu hiệu xơ vữa mạch vành mạn tính nhưng không có huyết khối làm tắc mạch tim.",
+            "Kết luận nguyên nhân tử vong: **Ngạt thở cấp tính do sốc phản vệ (phản ứng quá mẫn Type I) đường hô hấp trên nền suy tim mạn tính**."
+          ]
+        },
+        {
+          "heading": "3. Xét nghiệm dịch dạ dày và độc chất",
+          "paragraphs": [
+            "Không tìm thấy độc chất vô cơ (thạch tín, phospho, chì) hay độc tố hữu cơ gây co giật trong phủ tạng.",
+            "Trong dịch dạ dày có cặn thức ăn gồm mứt gừng ngào đường và **hàm lượng lớn protein lipophilic đặc trưng của hạt điều và đậu phộng nghiền mịn**.",
+            "Thời điểm tử vong ước tính vào khoảng **21 giờ 00 đến 21 giờ 45 phút đêm 29 Tết (13/2/1996)**."
+          ]
+        }
+      ],
+      "signature": "Giám định viên: BS. Đặng Quốc Toàn"
+    },
+    {
+      "id": "d04",
+      "stage": 1,
+      "type": "photo",
+      "title": "Ảnh hiện trường: Phòng 204 nhà A6 sáng 30 Tết",
+      "image": "images/d04-room.webp",
+      "caption": "Bàn trà, chiếc ghế bành gỗ và hộp sắt bánh quy bị cạy nắp trong phòng 204.",
+      "label": "Ảnh hiện trường số 02"
+    },
+    {
+      "id": "d05",
+      "stage": 1,
+      "type": "testimony",
+      "title": "Biên bản ghi lời khai của Đỗ Thị Nga",
+      "header": [
+        "Công an quận Hai Bà",
+        "Đội Cảnh sát Hình sự"
+      ],
+      "heading": "Biên bản ghi lời khai",
+      "date": "10 giờ 00 ngày 14 tháng 02 năm 1996",
+      "fields": [
+        { "label": "Họ và tên", "value": "Đỗ Thị Nga, 36 tuổi" },
+        { "label": "Nghề nghiệp", "value": "Bán hàng ăn sáng (chè sắn, xôi gấc) chân cầu thang nhà A6" },
+        { "label": "Nơi cư trú", "value": "Phòng 102 nhà A6, khu tập thể Dệt Thống Nhất" }
+      ],
+      "lines": [
+        { "n": 1, "speaker": "Cán bộ", "text": "Chị là người đầu tiên phát hiện thi thể bà Bích, hãy kể lại sự việc sáng nay." },
+        { "n": 2, "speaker": "Đỗ Thị Nga", "text": "Dạ, khoảng bảy giờ sáng ba mươi Tết, tôi đồ xong chõ xôi gấc nên đơm một đĩa mang lên tầng hai biếu bà Bích ăn Tết." },
+        { "n": 3, "speaker": "Đỗ Thị Nga", "text": "Lên tới nơi tôi thấy cửa chính khép hờ chứ không khóa. Tôi gõ cửa gọi mấy câu không ai thưa nên đẩy cửa bước vào, thấy bà Bích ngồi bất động trên ghế bành, người lạnh ngắt rồi." },
+        { "n": 4, "speaker": "Cán bộ", "text": "Trưa hôm qua (29 Tết), có người thấy chị và bà Bích cãi nhau to tiếng ở bể nước công cộng, nguyên do là gì?" },
+        { "n": 5, "speaker": "Đỗ Thị Nga", "text": "Tôi… tôi có vay bà Bích ba chỉ vàng từ hồi đầu năm để sửa quán. Hôm qua bà Bích đòi ráo riết bắt tôi trả trước giao thừa, tôi chưa gom đủ nên hai bên có to tiếng vài câu, chứ tôi thề có trời đất tôi không dám hại bà cụ!" },
+        { "n": 6, "speaker": "Cán bộ", "text": "Bàn tay phải của chị có vết bỏng đỏ còn quấn gạc, vết bỏng này do đâu?" },
+        { "n": 7, "speaker": "Đỗ Thị Nga", "text": "Hồi đêm hai mươi chín tôi thức luộc bánh chưng chung với mấy nhà ở sân, lúc vớt bánh chưng sơ ý bị nước sôi bắn vào tay thôi cán bộ ơi." },
+        { "n": 8, "speaker": "Cán bộ", "text": "Đêm qua chị có lên tầng hai lần nào không?" },
+        { "n": 9, "speaker": "Đỗ Thị Nga", "text": "Dạ không hề, tôi ở dưới sân trông nồi bánh chưng suốt từ tám giờ tối tới tận hai giờ sáng hôm nay, bao nhiêu bà con hàng xóm thức cùng đều thấy tôi ở đó." },
+        { "n": 10, "speaker": "Đỗ Thị Nga", "text": "Bà Bích ăn chay niệm Phật nhưng khó tính lắm, chiều qua tôi thấy cả thằng Cường cháu ruột bà cũng sang làm ầm ĩ lên mà." }
+      ],
+      "signature": "Người khai: Đỗ Thị Nga"
+    },
+    {
+      "id": "d06",
+      "stage": 2,
+      "type": "report",
+      "title": "Biên bản giám định dấu vết cơ học cửa sổ hành lang",
+      "header": [
+        "Phòng Kỹ thuật Hình sự",
+        "Công an TP. Hà Nội"
+      ],
+      "heading": "Bản kết luận giám định dấu vết cơ học",
+      "code": "09/KTHS",
+      "date": "15 giờ 00 ngày 14 tháng 02 năm 1996",
+      "fields": [
+        { "label": "Hiện trường", "value": "Cửa sổ chấn song gỗ nhìn ra hành lang tầng 2 phòng 204" },
+        { "label": "Giám định viên", "value": "Trung tá Lê Hồng Hải" }
+      ],
+      "sections": [
+        {
+          "heading": "1. Khảo sát mảnh kính vỡ",
+          "paragraphs": [
+            "Một ô kính kích thước 25cm x 30cm trên cánh cửa sổ bị đập vỡ. **Toàn bộ các mảnh kính vỡ rơi văng ra phía ngoài sàn hành lang tập thể**, trong phòng hầu như không có mảnh kính nào.",
+            "Kết luận cơ học: Lực tác động đập vỡ kính xuất phát từ **phía bên trong phòng tác động ra ngoài**, không phải do kẻ đột nhập từ hành lang đập vào."
+          ]
+        },
+        {
+          "heading": "2. Khảo sát then cài cửa sổ",
+          "paragraphs": [
+            "Thanh then cài cửa sổ bằng đồng bị gãy rời làm đôi. Mặt gãy có vết cắt bẹp của lưỡi kìm bấm cộng lực.",
+            "Dấu vết cho thấy then cửa bị bẻ gãy khi cánh cửa đang ở trạng thái mở hé từ bên trong, nhằm tạo dựng hiện trường giả một vụ phá cửa từ bên ngoài."
+          ]
+        }
+      ],
+      "signature": "Giám định viên: Trung tá Lê Hồng Hải"
+    },
+    {
+      "id": "d07",
+      "stage": 2,
+      "type": "note",
+      "title": "Trích sao sổ theo dõi bệnh án gia đình của bà Chu Thị Bích",
+      "paragraphs": [
+        "Sổ y bạ gia đình quản lý tại Trạm y tế xí nghiệp Dệt Thống Nhất:",
+        "— Bệnh nhân: Chu Thị Bích, 68 tuổi, hưu trí.",
+        "— Tiền sử bệnh lý: Hen phế quản mạn tính bậc 3, suy tim xơ vữa mạch vành.",
+        "__CẢNH BÁO ĐẶC BIỆT (GHI CHỮ ĐỎ):__",
+        "**'Bệnh nhân có tiền sử sốc phản vệ độ 4 với họ hạt có dầu (lạc, vừng, hạt điều, hạnh nhân). Chỉ cần dính một lượng rất nhỏ qua đường tiêu hóa cũng có thể gây phù nề thanh quản tắc thở tức thì.'**",
+        "— Thuốc điều trị khẩn cấp kê đơn: Luôn chuẩn bị sẵn 01 bình xịt Ventolin (Salbutamol 100mcg) để cắt cơn co thắt phế quản cấp khi lên cơn."
+      ],
+      "signature": "Y sĩ phụ trách: Trịnh Văn Hưng"
+    },
+    {
+      "id": "d08",
+      "stage": 2,
+      "type": "testimony",
+      "title": "Biên bản ghi lời khai của Nguyễn Quốc Cường",
+      "header": [
+        "Công an quận Hai Bà",
+        "Đội Cảnh sát Hình sự"
+      ],
+      "heading": "Biên bản ghi lời khai",
+      "date": "14 giờ 00 ngày 15 tháng 02 năm 1996",
+      "fields": [
+        { "label": "Họ và tên", "value": "Nguyễn Quốc Cường, 27 tuổi" },
+        { "label": "Quan hệ với nạn nhân", "value": "Cháu ruột (gọi bà Bích bằng cô ruột)" },
+        { "label": "Nghề nghiệp", "value": "Lái xe tải bãi xe Nhật (tự do)" }
+      ],
+      "lines": [
+        { "n": 1, "speaker": "Cán bộ", "text": "Anh có mặt ở đâu trong khoảng thời gian từ chiều 29 Tết đến sáng nay?" },
+        { "n": 2, "speaker": "Nguyễn Quốc Cường", "text": "Dạ thưa cán bộ, chiều hôm qua tầm hai giờ tôi có qua phòng cô Bích xin ít tiền trả nợ cá độ bóng đá, bị cô tôi mắng té tát rồi lấy chổi quét nhà xua tôi ra cửa." },
+        { "n": 3, "speaker": "Cán bộ", "text": "Sau đó anh đi đâu?" },
+        { "n": 4, "speaker": "Nguyễn Quốc Cường", "text": "Tôi về phòng trọ của bạn gái tôi ở dốc Bác Cổ gom mấy bộ đồ để trốn vào Sài Gòn làm ăn, vì bọn giang hồ đòi nợ dọa cắt gân chân tôi nếu không trả trước Tết." },
+        { "n": 5, "speaker": "Cán bộ", "text": "Đêm 29 Tết anh ở đâu lúc 23 giờ 30?" },
+        { "n": 6, "speaker": "Nguyễn Quốc Cường", "text": "Tôi ra ga Hàng Cỏ từ mười giờ đêm hôm qua để chờ chuyến tàu Thống Nhất TN1 khởi hành lúc hai mươi ba giờ mười lăm phút vào Nam." },
+        { "n": 7, "speaker": "Cán bộ", "text": "Anh có giấy tờ gì chứng minh không?" },
+        { "n": 8, "speaker": "Nguyễn Quốc Cường", "text": "Dạ có! Đây là cuống vé tàu nằm cứng ga Hà Nội đi ga Sài Gòn mang tên tôi, có bấm lỗ kiểm soát của nhân viên soát vé lúc mười giờ bốn lăm phút đêm qua trên sân ga số 2." },
+        { "n": 9, "speaker": "Cán bộ", "text": "Anh có biết cô anh cất 12 cây vàng ở đâu không?" },
+        { "n": 10, "speaker": "Nguyễn Quốc Cường", "text": "Tôi biết cô tôi có hộp sắt bánh quy Danisa cất dưới gầm giường, nhưng hôm qua cô tôi không mở hộp ra lấy một xu. Tôi giận thì giận nhưng cô ruột tôi sao tôi dám giết!" },
+        { "n": 11, "speaker": "Cán bộ", "text": "Đêm qua anh mang giày dép gì khi ra ga?" },
+        { "n": 12, "speaker": "Nguyễn Quốc Cường", "text": "Tôi mang đôi giày ba-ta Thượng Đình vải xanh rách mũi này suốt mấy ngày nay, làm gì có tiền mua dép mới." }
+      ],
+      "signature": "Người khai: Nguyễn Quốc Cường"
+    },
+    {
+      "id": "d09",
+      "stage": 2,
+      "type": "testimony",
+      "title": "Biên bản ghi lời khai của Y sĩ Trịnh Văn Hưng",
+      "header": [
+        "Công an quận Hai Bà",
+        "Đội Cảnh sát Hình sự"
+      ],
+      "heading": "Biên bản ghi lời khai",
+      "date": "16 giờ 30 ngày 15 tháng 02 năm 1996",
+      "fields": [
+        { "label": "Họ và tên", "value": "Trịnh Văn Hưng, 49 tuổi" },
+        { "label": "Chức vụ", "value": "Y sĩ, Phó Trưởng trạm Y tế xí nghiệp Dệt Thống Nhất" }
+      ],
+      "lines": [
+        { "n": 1, "speaker": "Cán bộ", "text": "Ông là người trực tiếp theo dõi sức khỏe và cấp phát thuốc cho bà Chu Thị Bích, đúng không?" },
+        { "n": 2, "speaker": "Trịnh Văn Hưng", "text": "Đúng vậy, bà Bích bị hen phế quản nặng và suy tim từ chục năm nay. Tôi lập bệnh án cảnh báo bà Bích dị ứng tuyệt đối với họ hạt có dầu." },
+        { "n": 3, "speaker": "Cán bộ", "text": "Lần gần nhất ông cấp thuốc xịt Ventolin cho bà Bích là khi nào?" },
+        { "n": 4, "speaker": "Trịnh Văn Hưng", "text": "Ngày hai mươi tháng Chạp vừa rồi, tôi cấp cho bà Bích một bình Ventolin mới nguyên hộp của hãng Glaxo, hạn dùng đến năm 1998, có ghi rõ vào sổ cấp phát thuốc bảo hiểm y tế." },
+        { "n": 5, "speaker": "Cán bộ", "text": "Kho thuốc thanh lý của trạm y tế hiện do ai quản lý chìa khóa?" },
+        { "n": 6, "speaker": "Trịnh Văn Hưng", "text": "Kho thuốc thanh lý ở góc trạm xá chứa các lô thuốc hết hạn chờ hội đồng tiêu hủy sau Tết. Kho đó niêm phong và bàn giao chìa khóa cho anh Lê Khắc Toàn, Trưởng ban đại diện cư dân kiêm tổ bảo vệ quản lý từ tháng mười hai." },
+        { "n": 7, "speaker": "Cán bộ", "text": "Chiều tối 29 Tết ông ở đâu?" },
+        { "n": 8, "speaker": "Trịnh Văn Hưng", "text": "Tôi trực tại trạm y tế đến tám giờ tối, sau đó bàn giao ca trực rồi về nhà riêng ở phố Bạch Mai đón giao thừa cùng gia đình đến sáng." },
+        { "n": 9, "speaker": "Cán bộ", "text": "Ông có nghe ngóng gì về giỏ quà Tết công đoàn trao cho bà Bích không?" },
+        { "n": 10, "speaker": "Trịnh Văn Hưng", "text": "Tôi chỉ biết công đoàn chuẩn bị hai loại giỏ quà A và B. Hộ chính sách và cán bộ lão thành nhận giỏ A, còn hưu trí thông thường nhận giỏ B. Việc chia quà do ban đại diện của anh Toàn phụ trách." }
+      ],
+      "signature": "Người khai: Trịnh Văn Hưng"
+    },
+    {
+      "id": "d10",
+      "stage": 2,
+      "type": "testimony",
+      "title": "Biên bản ghi lời khai của Lê Khắc Toàn",
+      "header": [
+        "Công an quận Hai Bà",
+        "Đội Cảnh sát Hình sự"
+      ],
+      "heading": "Biên bản ghi lời khai",
+      "date": "10 giờ 30 ngày 15 tháng 02 năm 1996",
+      "fields": [
+        { "label": "Họ và tên", "value": "Lê Khắc Toàn, 56 tuổi" },
+        { "label": "Chức vụ", "value": "Trưởng ban đại diện cư dân khu tập thể Dệt Thống Nhất" },
+        { "label": "Nơi cư trú", "value": "Phòng 101 nhà A6 (cạnh lối ra vào chòi bảo vệ)" }
+      ],
+      "lines": [
+        { "n": 1, "speaker": "Cán bộ", "text": "Ông kể lại việc trao quà Tết cho bà Chu Thị Bích vào chiều 29 Tết." },
+        { "n": 2, "speaker": "Lê Khắc Toàn", "text": "Dạ, khoảng bốn rưỡi chiều qua, tôi đại diện tổ dân phố mang giỏ quà Tết lên phòng 204 trao cho bà Bích để động viên tinh thần nhà giáo hưu trí neo đơn." },
+        { "n": 3, "speaker": "Cán bộ", "text": "Ông ở lại phòng 204 bao lâu, và có chạm vào đồ vật nào trong phòng không?" },
+        { "n": 4, "speaker": "Lê Khắc Toàn", "text": "Tôi chỉ ngồi uống chén nước chè khoảng mười phút rồi về ngay. Tôi có mượn bà Bích chiếc bút để ký phiếu giao nhận nhưng bút bà hết mực nên tôi dùng chiếc bút bi tím của tôi cài sẵn ở túi áo." },
+        { "n": 5, "speaker": "Cán bộ", "text": "Đêm 29 Tết ông làm gì, ở đâu?" },
+        { "n": 6, "speaker": "Lê Khắc Toàn", "text": "Tôi phụ trách an ninh trật tự nên cả đêm trực tại phòng bảo vệ tầng một, thỉnh thoảng đi quanh sân kiểm tra các bếp luộc bánh chưng." },
+        { "n": 7, "speaker": "Cán bộ", "text": "Ông có nghe thấy tiếng động gì bất thường trên tầng hai trong đêm không?" },
+        { "n": 8, "speaker": "Lê Khắc Toàn", "text": "Đúng mười một giờ rưỡi đêm tôi nghe tiếng giày ba-ta chạy huỳnh huỵch trên cầu thang sắt, chắc là thằng Cường cháu bà Bích trèo cửa sổ tẩu thoát." },
+        { "n": 9, "speaker": "Cán bộ", "text": "Tại sao ông lại khẳng định đó là tiếng giày ba-ta của Cường?" },
+        { "n": 10, "speaker": "Lê Khắc Toàn", "text": "Thì… chiều qua nó sang đòi tiền bà Bích mang đôi ba-ta rách, cả khu này ai cũng biết tính nó côn đồ quậy phá." },
+        { "n": 11, "speaker": "Cán bộ", "text": "Khoản quỹ sửa chữa mái nhà dột 42 triệu đồng của khu tập thể hiện cất giữ ở đâu?" },
+        { "n": 12, "speaker": "Lê Khắc Toàn", "text": "Dạ, tiền quỹ tôi khóa trong két sắt ban quản lý, qua Tết mùng sáu họp ban thanh tra công đoàn sẽ kiểm kê đầy đủ, tôi làm cán bộ bao năm nay uy tín trong sạch không bao giờ tơ hào một cắc!" }
+      ],
+      "signature": "Người khai: Lê Khắc Toàn"
+    },
+    {
+      "id": "d11",
+      "stage": 3,
+      "type": "testimony",
+      "title": "Biên bản ghi lời khai tập thể các hộ luộc bánh chưng tầng 1",
+      "header": [
+        "Công an quận Hai Bà",
+        "Đội Cảnh sát Hình sự"
+      ],
+      "heading": "Biên bản ghi lời khai nhân chứng",
+      "date": "09 giờ 00 ngày 16 tháng 02 năm 1996",
+      "fields": [
+        { "label": "Đại diện nhân chứng", "value": "Bà Hoàng Thị Mùi (P.104), Ông Vũ Đình Thắng (P.105)" },
+        { "label": "Địa điểm quan sát", "value": "Góc sân chung bể nước cạnh chân cầu thang nhà A6" }
+      ],
+      "lines": [
+        { "n": 1, "speaker": "Cán bộ", "text": "Các bác thức trông nồi bánh chưng từ mấy giờ đến mấy giờ đêm 29 Tết?" },
+        { "n": 2, "speaker": "Bà Hoàng Thị Mùi", "text": "Chúng tôi nhóm bếp từ tám giờ tối, quây quần chè thuốc trông nồi bánh tới hai giờ sáng mới vớt mẻ bánh cuối." },
+        { "n": 3, "speaker": "Cán bộ", "text": "Trong suốt thời gian đó, chị Đỗ Thị Nga có rời khỏi khu vực sân không?" },
+        { "n": 4, "speaker": "Bà Hoàng Thị Mùi", "text": "Cái Nga nó ngồi quạt than luộc bánh cùng chúng tôi suốt, nó bị bỏng nước sôi lúc vớt bánh chưng lúc mười giờ đêm, tôi còn lấy mỡ trăn bôi cho nó." },
+        { "n": 5, "speaker": "Cán bộ", "text": "Vào khoảng 23 giờ 30 đêm, các bác có nghe thấy tiếng động gì trên cầu thang không?" },
+        { "n": 6, "speaker": "Ông Vũ Đình Thắng", "text": "Có! Tầm mười một giờ rưỡi, đài phát thanh vừa hết bản tin thời sự thì tôi nghe rõ mồn một tiếng bước chân đi dép rọ bộ đội lộp cộp trên bậc cầu thang xi măng đi lên tầng hai." },
+        { "n": 7, "speaker": "Cán bộ", "text": "Bác có chắc chắn đó là tiếng dép rọ bộ đội chứ không phải giày vải ba-ta?" },
+        { "n": 8, "speaker": "Ông Vũ Đình Thắng", "text": "Tôi là cựu chiến binh đi dép rọ nhựa Tiền Phong mấy chục năm, tiếng đế cao su cứng gõ xuống bậc xi măng cộp cộp không lẫn vào đâu được. Giày ba-ta làm sao phát ra tiếng cộp đanh như thế!" },
+        { "n": 9, "speaker": "Bà Hoàng Thị Mùi", "text": "Đúng đấy, lát sau lại nghe tiếng kính vỡ lách xoảng trên hành lang tầng hai rồi tiếng bước chân dép rọ vội vã đi xuống phía nhà vệ sinh tập thể." },
+        { "n": 10, "speaker": "Bà Hoàng Thị Mùi", "text": "Ở dãy nhà A6 này chỉ có cánh bảo vệ với anh Toàn tổ trưởng là hay mang dép rọ nhựa nâu thôi." }
+      ],
+      "signature": "Người khai: Hoàng Thị Mùi · Vũ Đình Thắng"
+    },
+    {
+      "id": "d12",
+      "stage": 3,
+      "type": "evidence",
+      "title": "Phiếu giám định dược chất bình xịt Ventolin",
+      "code": "44/GĐ-DC",
+      "image": "images/d12-inhaler.webp",
+      "imageCaption": "Bình xịt thuốc Ventolin thu giữ tại hiện trường phòng 204.",
+      "fields": [
+        { "label": "Cơ quan giám định", "value": "Viện Kiểm nghiệm Dược phẩm Trung ương" },
+        { "label": "Mẫu vật phẩm", "value": "01 bình xịt kim loại dán nhãn Ventolin Inhaler thu tại phòng 204" }
+      ],
+      "paragraphs": [
+        "1. Kiểm tra bao bì và số lô: Vỏ bình kim loại mang nhãn Ventolin 100mcg, nhưng **số lô dập nổi ở đáy bình là VN-9104, hạn sử dụng tháng 11/1991** (đã hết hạn hơn 4 năm).",
+        "2. Kiểm tra chất lỏng bên trong bình: Hoàn toàn **không chứa hoạt chất Salbutamol** giãn phế quản hay khí nén đẩy y tế. Dung dịch bên trong là **100% nước cất thông thường** được bơm nén thủ công qua van một chiều.",
+        "3. Kết luận: Chiếc bình xịt tại hiện trường là phế phẩm y tế cũ bị rút ruột và bơm nước cất giả mạo thuốc cấp cứu."
+      ]
+    },
+    {
+      "id": "d13",
+      "stage": 3,
+      "type": "report",
+      "title": "Biên bản bàn giao và niêm phong kho thuốc thanh lý trạm xá",
+      "header": [
+        "Nhà máy Dệt Thống Nhất",
+        "Hội đồng Thanh lý Tài sản"
+      ],
+      "heading": "Biên bản kiểm kê niêm phong kho dược phẩm thanh lý",
+      "code": "18/BB-TL",
+      "date": "Ngày 15 tháng 12 năm 1995",
+      "fields": [
+        { "label": "Địa điểm", "value": "Gian kho phụ số 02, Trạm Y tế xí nghiệp Dệt Thống Nhất" },
+        { "label": "Người chịu trách nhiệm quản lý", "value": "Lê Khắc Toàn (Tổ trưởng bảo vệ kiêm đại diện cư dân)" }
+      ],
+      "sections": [
+        {
+          "heading": "1. Danh mục dược phẩm hết hạn chờ tiêu hủy",
+          "paragraphs": [
+            "— Mục số 14: 20 lọ thuốc xịt hen Ventolin nhập khẩu hết hạn năm 1991, **mang ký hiệu số lô VN-9104**.",
+            "— Toàn bộ số thuốc trên được xếp trong thùng các-tông niêm phong bằng sáp đỏ."
+          ]
+        },
+        {
+          "heading": "2. Quản lý kho và chìa khóa",
+          "paragraphs": [
+            "**Ổ khóa kho gồm 01 chìa duy nhất do đồng chí Lê Khắc Toàn cất giữ**. Mọi trường hợp mở kho kiểm tra phải có sự phê duyệt của Hội đồng Thanh lý."
+          ]
+        }
+      ],
+      "signature": "Người nhận bàn giao: Lê Khắc Toàn (đã ký)"
+    },
+    {
+      "id": "d14",
+      "stage": 3,
+      "type": "receipt",
+      "title": "Phiếu phân phối quà Tết công đoàn khu tập thể năm 1996",
+      "shop": "Công đoàn Cơ sở Nhà máy Dệt Thống Nhất",
+      "address": "Ban đại diện cư dân khu tập thể Dệt Thống Nhất",
+      "fields": [
+        { "label": "Ngày lập phiếu", "value": "28 Tết (12/02/1996)" },
+        { "label": "Người phân bổ", "value": "Lê Khắc Toàn (Trưởng ban)" }
+      ],
+      "items": [
+        { "name": "Giỏ quà loại B (tiêu chuẩn hưu trí: chè Ba Đình, mứt sen trần, bánh quy)", "qty": 20, "price": "40.000đ" },
+        { "name": "Giỏ quà loại A (đặc biệt cán bộ lão thành: thêm mứt gừng ngào hạt điều)", "qty": 10, "price": "75.000đ" }
+      ],
+      "total": "1.550.000đ",
+      "footer": [
+        "Ghi chú kiểm tra của cơ quan điều tra:",
+        "Tại dòng số 01: Tên hộ nhận quà 'Chu Thị Bích (P.204)' ban đầu được xếp nhận giỏ quà loại B, nhưng **chữ 'B' đã bị gạch xoá bằng bút bi mực tím và ghi đè thành chữ 'A (đặc biệt)'**.",
+        "Mẫu mực bi tím sửa chữa trùng khớp tuyệt đối với nét chữ ký của Lê Khắc Toàn."
+      ]
+    },
+    {
+      "id": "d15",
+      "stage": 3,
+      "type": "letter",
+      "title": "Thư đòi nợ của đường dây buôn lậu đường trắng",
+      "date": "Ngày 11 tháng 02 năm 1996 (27 Tết)",
+      "greeting": "Gửi anh Toàn tổ trưởng khu tập thể Dệt",
+      "paragraphs": [
+        "Lô hàng đường trắng 15 tấn nhập từ cửa khẩu Tà Lùng bị Đội QLTT số 3 và Công an kinh tế tóm gọn ở bến Giáp Bát hôm 26 Tết coi như mất trắng.",
+        "Tiền cọc chung vốn 42.000.000 đồng (bốn mươi hai triệu) của anh chúng tôi không thể hoàn lại theo luật làm ăn ngầm. Nhưng tiền nợ phí vận chuyển và lót đường 18 triệu anh còn thiếu chủ xe, anh phải thanh toán dứt điểm trước mùng 6 Tết.",
+        "Đừng để đàn em chúng tôi phải kéo vào tận khu tập thể Dệt tìm anh đòi nợ đầu năm mới. Mong anh biết điều xoay xở gấp!"
+      ],
+      "signature": "Người gửi: Thắng 'sẹo' Giáp Bát"
+    },
+    {
+      "id": "d16",
+      "stage": 4,
+      "type": "photo",
+      "title": "Ảnh tang vật: Đôi dép rọ bộ đội và cây bút bi tím",
+      "image": "images/d16-shoes.webp",
+      "caption": "Đôi dép rọ nhựa Tiền Phong dính bụi vôi và bút bi Thiên Long mực tím thu giữ tại phòng ông Toàn.",
+      "label": "Ảnh tang vật số 04"
+    },
+    {
+      "id": "d17",
+      "stage": 4,
+      "type": "evidence",
+      "title": "Biên bản khám xét khẩn cấp thu giữ 12 cây vàng lá",
+      "code": "06/BB-KX",
+      "image": "images/d17-gold.webp",
+      "imageCaption": "12 cây vàng lá SJC thu giữ trong ống thông gió nhà vệ sinh tầng 1.",
+      "fields": [
+        { "label": "Thời gian", "value": "11 giờ 30 ngày 16 tháng 02 năm 1996" },
+        { "label": "Địa điểm", "value": "Khu vệ sinh công cộng bỏ hoang tầng 1 nhà A6" },
+        { "label": "Cán bộ chủ trì", "value": "Trung tá Nguyễn Hữu Thọ, Phó trưởng CA quận Hai Bà" }
+      ],
+      "paragraphs": [
+        "Tiến hành kiểm tra hệ thống thông gió phía sau phòng bảo vệ của Lê Khắc Toàn:",
+        "1. Trong đường ống thông gió của buồng vệ sinh bỏ hoang: Phát hiện một bọc vải nhựa màu xanh. Bên trong bọc có **đúng 12 miếng vàng lá SJC loại 1 lượng 999.9**, số seri trùng khớp với sổ ghi chép lưu giữ của gia đình bà Chu Thị Bích.",
+        "2. Trên miệng túi bọc vàng: Thu được dấu vân tay trỏ bàn tay phải của Lê Khắc Toàn.",
+        "3. Két sắt phòng bảo vệ do Lê Khắc Toàn quản lý: Mở két kiểm tra phát hiện **hoàn toàn rỗng không, không có số tiền 42 triệu đồng quỹ sửa chữa mái nhà của cư dân**."
+      ]
+    },
+    {
+      "id": "d18",
+      "stage": 4,
+      "type": "report",
+      "title": "Bản kết luận đối chiếu dấu vết đường vân đế dép rọ",
+      "header": [
+        "Viện Khoa học Hình sự",
+        "Bộ Công an"
+      ],
+      "heading": "Bản kết luận giám định dấu vết đường vân",
+      "code": "28/GĐ-KTHS",
+      "date": "16 giờ 00 ngày 16 tháng 02 năm 1996",
+      "fields": [
+        { "label": "Mẫu so sánh 1", "value": "Dấu vết đế dép dính bụi vôi in trên sàn gạch hoa phòng 204" },
+        { "label": "Mẫu so sánh 2", "value": "Đôi dép rọ nhựa Tiền Phong cỡ 41 thu giữ của Lê Khắc Toàn" }
+      ],
+      "sections": [
+        {
+          "heading": "1. Kết quả giám định hình thái",
+          "paragraphs": [
+            "Dấu vết in trên nền gạch hoa tại phòng 204 thể hiện hoa văn mắt cáo dạng ô quả trám, gót dép có vết mòn vẹt lệch 12 độ ở mép ngoài bên phải.",
+            "Các đặc điểm gồ ghề và vết cắt khuyết tật trên gót dép thu giữ của Lê Khắc Toàn hoàn toàn trùng khớp với dấu vết để lại trên hiện trường."
+          ]
+        },
+        {
+          "heading": "2. Kết luận",
+          "paragraphs": [
+            "Dấu vết đế dép trên sàn gạch hoa phòng 204 chính là do đôi dép rọ bộ đội của Lê Khắc Toàn tạo ra khi bước vào phòng đêm 29 Tết."
+          ]
+        }
+      ],
+      "signature": "Giám định viên: Thượng tá Hoàng Đình Cương"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "stage": 1,
+      "type": "evidence",
+      "title": "Nguyên nhân tử vong thực sự của bà giáo già",
+      "prompt": "Ghim 2 tài liệu chứng minh bà Bích tử vong do phản ứng dị ứng thức ăn bộc phát cấp tính (sốc phản vệ) chứ không phải do bị hạ độc thạch tín trong chén trà như hiện trường ngụy tạo.",
+      "need": 2,
+      "answer": ["d02", "d03"],
+      "nudges": [
+        { "picks": ["d01", "d02"], "near": true, "message": "Biên bản hiện trường (d02) đã kiểm tra cặn trắng trong ấm trà. Nhưng bạn cần thêm bản giám định pháp y giải thích cơ chế ngạt thở thực sự của nạn nhân." },
+        { "picks": ["d03", "d05"], "near": true, "message": "Giám định pháp y (d03) xác định nguyên nhân tử vong. Hãy kết hợp với biên bản khám nghiệm hiện trường (d02) để bác bỏ giả thiết đầu độc trà." },
+        { "any": ["d04"], "message": "Ảnh chụp căn phòng (d04) chỉ là hình ảnh tổng quát, không chứa kết luận phân tích thành phần chất độc hay giải phẫu tử thi." }
+      ],
+      "hints": [
+        "Hãy đọc mục xét nghiệm nhanh mẫu nước trà trong Biên bản khám nghiệm hiện trường (d02) để xem cặn trắng là chất gì.",
+        "Bản kết luận giám định pháp y tử thi (d03) ghi nhận nguyên nhân trực tiếp dẫn tới tử vong là gì?",
+        "Đối chiếu giữa kết quả xét nghiệm cặn ấm trà chỉ là bột sắn dây (d02) và kết luận ngạt thở do sốc phản vệ protein hạt điều (d03)."
+      ],
+      "solved": "Biên bản hiện trường xác nhận cặn trắng trong ấm trà chỉ là bột sắn dây vô hại, còn pháp y khẳng định nạn nhân tử vong do sốc phản vệ cấp tính với protein hạt điều làm phù nề đường thở. Vụ đầu độc trà chỉ là màn kịch đánh lạc hướng. Trọng điểm 2 đã được mở.",
+      "explanation": [
+        { "title": "Bác bỏ ngộ độc trà", "body": ["Biên bản khám nghiệm hiện trường (d02) xét nghiệm nhanh cặn trắng trong ấm trà cho kết quả âm tính hoàn toàn với thạch tín và các độc chất vô cơ; đó chỉ là bột sắn dây pha nước lọc được ai đó cố tình đổ vào nhằm tạo hiện trường hạ độc giả."] },
+        { "title": "Căn nguyên sốc phản vệ", "body": ["Bản kết luận giám định pháp y tử thi (d03) chỉ ra lòng đường thở bị chít hẹp do phù nề thanh quản cấp tính, trong dạ dày phát hiện lượng lớn protein từ hạt điều và đậu phộng nghiền mịn. Nạn nhân chết vì sốc phản vệ do dị ứng thực phẩm nặng trên nền suy tim mạn."] }
+      ]
+    },
+    {
+      "id": "q2",
+      "stage": 2,
+      "type": "line",
+      "title": "Lời khai ngụy tạo tiếng động của ông tổ trưởng",
+      "prompt": "Bấm vào dòng lời khai trong biên bản ghi lời khai của Lê Khắc Toàn (d10) cố tình gán ghép tiếng bước chân lúc 23h30 đêm nhằm đổ tội cho người cháu ruột của nạn nhân.",
+      "answer": ["d10:008"],
+      "nudges": {
+        "d10:004": { "message": "Dòng này Toàn nói về việc mượn bút ký nhận quà, không liên quan đến tiếng động ban đêm." },
+        "d10:006": { "message": "Dòng này Toàn nói về lịch trực bảo vệ, chưa đưa ra mốc giờ và tiếng bước chân nghi vấn." },
+        "d10:010": { "near": true, "message": "Gần đúng! Đoạn này Toàn giải thích lý do nghi ngờ Cường, nhưng hãy chọn đúng dòng Toàn khai nghe thấy tiếng giày ba-ta lúc 23h30." }
+      },
+      "hints": [
+        "Hãy tìm mốc giờ 23h30 (mười một giờ rưỡi đêm) trong biên bản ghi lời khai của Lê Khắc Toàn (d10).",
+        "Toàn khai đã nghe thấy tiếng loại giày dép gì chạy trên cầu thang vào lúc 23h30?",
+        "Đối chiếu dòng 008 của d10 (Toàn khai nghe tiếng 'giày ba-ta chạy huỳnh huỵch') với bằng chứng Cường đã lên tàu hỏa từ 22h45 (d08)."
+      ],
+      "solved": "Ở dòng 008, Lê Khắc Toàn khai nghe tiếng giày ba-ta chạy trên cầu thang lúc 23h30 để vu vạ cho Cường. Nhưng cuống vé tàu và xác nhận ga Hàng Cỏ (d08) chứng minh Cường đã rời Hà Nội từ 22h45. Toàn chính là kẻ dựng chuyện. Trọng điểm 3 đã được mở.",
+      "explanation": [
+        { "title": "Lời khai vu khống trắng trợn", "body": ["Tại dòng 008 tài liệu d10, Lê Khắc Toàn khai: 'Đúng mười một giờ rưỡi đêm tôi nghe tiếng giày ba-ta chạy huỳnh huỵch trên cầu thang sắt, chắc là thằng Cường cháu bà Bích trèo cửa sổ tẩu thoát.'"] },
+        { "title": "Bác bỏ bởi bằng chứng ngoại phạm", "body": ["Nguyễn Quốc Cường đã lên tàu hỏa Thống Nhất TN1 đi Sài Gòn từ ga Hàng Cỏ, có cuống vé bấm lỗ kiểm soát lúc 22h45 (d08). Cường không thể có mặt ở khu tập thể lúc 23h30. Lời khai của Toàn lộ rõ mưu đồ đổ tội cho người khác."] }
+      ]
+    },
+    {
+      "id": "q3",
+      "stage": 3,
+      "type": "evidence",
+      "title": "Nguồn gốc bình thuốc cấp cứu giả",
+      "prompt": "Ghim 2 tài liệu chứng minh chiếc bình xịt cấp cứu Ventolin giả chứa nước cất được lấy ra từ kho dược phẩm thanh lý do chính Lê Khắc Toàn quản lý chìa khóa niêm phong.",
+      "need": 2,
+      "answer": ["d12", "d13"],
+      "nudges": [
+        { "picks": ["d09", "d12"], "near": true, "message": "Phiếu giám định bình thuốc (d12) chỉ ra số lô 1991. Lời khai của y sĩ Hưng (d09) có nhắc đến kho thuốc, nhưng biên bản kiểm kê bàn giao chính thức mới là căn cứ pháp lý khẳng định người giữ chìa khóa." },
+        { "picks": ["d12", "d14"], "near": true, "message": "Phiếu phân phối quà (d14) chứng minh việc tráo giỏ quà, nhưng câu hỏi yêu cầu 2 tài liệu chứng minh nguồn gốc chiếc bình xịt Ventolin giả." },
+        { "any": ["d15"], "message": "Bức thư đòi nợ (d15) chứng minh động cơ tài chính của Toàn, không chứng minh nguồn gốc bình xịt." }
+      ],
+      "hints": [
+        "Phiếu giám định dược chất bình xịt Ventolin (d12) ghi nhận số lô dập nổi ở đáy bình là số bao nhiêu và hết hạn năm nào?",
+        "Tài liệu nào thể hiện danh mục thuốc thanh lý có số lô trùng khớp và ai là người chịu trách nhiệm giữ chìa khóa?",
+        "Đối chiếu số lô VN-9104 trong phiếu giám định (d12) với biên bản kiểm kê niêm phong kho thanh lý trạm y tế (d13)."
+      ],
+      "solved": "Phiếu giám định bình thuốc Ventolin tại hiện trường mang số lô VN-9104 hết hạn từ năm 1991 và chứa nước cất. Biên bản kiểm kê kho thanh lý chứng minh 20 lọ thuốc mang đúng số lô VN-9104 này nằm trong kho niêm phong mà Lê Khắc Toàn là người duy nhất giữ chìa khóa. Trọng điểm 4 đã được mở.",
+      "explanation": [
+        { "title": "Bình thuốc phế phẩm", "body": ["Phiếu giám định dược chất (d12) xác nhận bình xịt Ventolin tại phòng 204 là vỏ bình mang số lô VN-9104 hết hạn từ tháng 11/1991, ruột bị rút hết và bơm nước cất thông thường để vô hiệu hóa tác dụng cấp cứu."] },
+        { "title": "Dấu vết kho niêm phong", "body": ["Biên bản kiểm kê kho thanh lý trạm xá (d13) ghi rõ mục 14 có 20 lọ Ventolin hết hạn mang ký hiệu số lô VN-9104. Biên bản khẳng định chìa khóa kho duy nhất do Lê Khắc Toàn cất giữ, chứng minh Toàn là người duy nhất có khả năng tiếp cận và lấy vỏ bình thuốc ra ngoài."] }
+      ]
+    },
+    {
+      "id": "q4",
+      "stage": 4,
+      "type": "choice",
+      "title": "Kết luận điều tra vụ án khu tập thể Dệt Thống Nhất",
+      "prompt": "Dựa trên toàn bộ tài liệu hồ sơ, hãy chỉ ra ai là thủ phạm sát hại bà Chu Thị Bích, bằng cách nào và động cơ thực sự là gì.",
+      "options": [
+        "Nguyễn Quốc Cường, do bị chủ nợ rượt đuổi nên đã trèo cửa sổ đột nhập sát hại cô ruột, cướp 12 cây vàng rồi lên tàu hỏa trốn vào Sài Gòn.",
+        "Đỗ Thị Nga, nhân lúc mang xôi gấc lên phòng đã hạ độc vào ấm trà hoa cúc để quỵt món nợ 3 chỉ vàng sắp đến hạn trả.",
+        "Lê Khắc Toàn, tráo giỏ quà chứa chất gây dị ứng và tráo bình xịt cấp cứu bằng nước cất khiến nạn nhân tử vong, nhằm cướp 12 cây vàng bù vào khoản tiền quỹ 42 triệu bị thụt két.",
+        "Y sĩ Trịnh Văn Hưng, cấu kết với bọn buôn lậu thuốc cấp phát thuốc hết hạn để tống tiền gia đình nạn nhân lo cho con trai đi xuất khẩu lao động."
+      ],
+      "answer": [2],
+      "nudges": {
+        "0": { "message": "Cường có vé tàu và nhân viên soát vé ga Hàng Cỏ làm chứng đã lên tàu từ 22h45 (d08). Hướng kính cửa sổ vỡ văng ra ngoài chứng minh không có ai trèo vào từ ngoài." },
+        "1": { "message": "Nga ngồi trông nồi bánh chưng suốt đêm có cả khu tập thể làm chứng (d11). Cặn trong ấm trà chỉ là bột sắn dây không độc." },
+        "3": { "message": "Y sĩ Hưng cấp thuốc mới đúng quy chuẩn (d09) và không giữ chìa khóa kho thanh lý (d13). Dấu vân tay trên bọc vàng là của Toàn." }
+      },
+      "hints": [
+        "Ai là người đã sửa phiếu phân phối quà Tết bằng bút bi mực tím?",
+        "Dấu vết đế dép rọ hoa văn mắt cáo trên sàn gạch hoa phòng 204 trùng khớp với dép của ai?",
+        "Mười hai cây vàng lá SJC bị mất được tìm thấy ở đâu và mang dấu vân tay của ai?"
+      ],
+      "solved": "Chính Lê Khắc Toàn là thủ phạm. Bị vỡ nợ 42 triệu tiền quỹ buôn đường lậu, Toàn đã tráo giỏ quà mứt hạt điều và tráo bình xịt cấp cứu nước cất để sát hại bà Bích, cướp 12 cây vàng giấu trong ống thông gió.",
+      "explanation": [
+        { "title": "Thủ đoạn tàn độc và tinh vi", "body": ["Lê Khắc Toàn nắm rõ tiền sử dị ứng chết người của bà Bích nên đã sửa phiếu quà Tết để chuyển hộp mứt gừng ngào hạt điều cho bà Bích, đồng thời lấy vỏ bình thuốc hết hạn trong kho thanh lý bơm nước cất tráo lên kệ thuốc. Khi nạn nhân ngạt thở tử vong, Toàn lẻn vào cạy hộp cướp vàng, bẻ then cửa sổ và đổ bột sắn dây giả hiện trường đầu độc đột nhập."] },
+        { "title": "Bằng chứng thép và tang vật", "body": ["Toàn bị lật tẩy bởi vết đế dép rọ trên sàn gạch (d18), dấu vết mực tím sửa phiếu quà (d14), vết kính vỡ văng ra ngoài từ trong phòng (d06). Tang vật 12 cây vàng lá SJC tìm thấy trong ống thông gió buồng vệ sinh cạnh phòng bảo vệ của Toàn mang dấu vân tay của chính y (d17). Két sắt quỹ cư dân hoàn toàn rỗng không xác nhận động cơ thụt két."] }
+      ]
+    }
+  ],
+  "finale": {
+    "title": "Mùa đông năm Bính Tý và góc tối sau cánh cửa khu tập thể",
+    "paragraphs": [
+      "Đêm 29 Tết năm Bính Tý – đêm giao thừa đầu tiên vắng bóng tiếng pháo trên khắp mọi nẻo đường đất nước – đã trở thành một kỷ niệm u buồn khó quên đối với người dân khu tập thể Dệt Thống Nhất.",
+      "Dưới vỏ bọc của một cán bộ tổ dân phố nhiệt tình, mẫn cán, Lê Khắc Toàn đã tính toán một tội ác lạnh lùng và tàn nhẫn. Nhắm vào chứng dị ứng bẩm sinh và căn bệnh hen suyễn hiểm nghèo của bà giáo già Chu Thị Bích, Toàn đã biến giỏ quà Tết tình nghĩa thành một cạm bẫy giết người, rồi tước đoạt nốt cơ hội sống sót cuối cùng của nạn nhân bằng bình thuốc xịt vô hại chứa nước cất.",
+      "Màn kịch đột nhập trộm cắp và vụ đầu độc trà giả mạo tưởng chừng hoàn hảo đã nhanh chóng sụp đổ. Hướng văng của mảnh kính vỡ từ bên trong phòng, vết mực bút bi tím sửa chữa phiếu quà Tết và nguồn gốc bình xịt từ kho thuốc thanh lý đã vạch trần kẻ thủ ác.",
+      "Mười hai cây vàng lá SJC tìm thấy trong ống thông gió nhà vệ sinh đã khép lại vụ án mạng đau lòng sau cánh cửa khu tập thể cũ kỹ."
+    ]
+  }
+}

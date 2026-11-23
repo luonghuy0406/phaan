@@ -1,0 +1,282 @@
+{
+  "id": "chuyen-tau-dem-muong-man",
+  "no": 5,
+  "status": "available",
+  "title": "Chuyến tàu đêm Mường Mán",
+  "tagline": "Khoang giường nằm số 4 khoá trái từ bên trong khi đoàn tàu Bắc Nam vượt qua đèo Cà Ná lúc nửa đêm.",
+  "difficulty": 4,
+  "players": "2–5",
+  "duration": "100–120 phút",
+  "setting": "Toa 6 tàu Thống Nhất SE3, cung đường ray Bình Thuận (hư cấu)",
+  "tags": [
+    "Án mạng",
+    "Phòng kín",
+    "Tàu hỏa",
+    "Cơ học"
+  ],
+  "cover": "images/cover.webp",
+  "synopsis": "Đêm 12/10/2008, trên đoàn tàu SE3 xuôi Nam, khi tàu vừa vượt qua cung đường ven biển Bình Thuận trong đêm giông gió, cửa khoang giường nằm số 4 bỗng khóa chặt bất thường. Khi nhân viên đường sắt giật nảy chốt khóa dự phòng lúc rạng sáng, hành khách Đặng Quốc Vinh - giám đốc mỏ cát titan - đã nằm chết gục trên giường ngủ, chiếc cặp da đựng 200 triệu đồng và hồ sơ đấu thầu biến mất không dấu vết.",
+  "intro": "Đội Cảnh sát Hình sự Công an tỉnh Bình Thuận tiếp nhận vụ án khi đoàn tàu khẩn cấp dừng lại tại ga Mường Mán lúc 05h30 sáng. Cửa sổ khoang tàu cố định không thể mở, cửa ra vào hành lang có chốt lẫy gập khóa chặt từ bên trong. Bằng cách nào hung thủ có thể sát hại nạn nhân, đoạt lấy tài sản rồi biến mất khỏi căn phòng kín di động này?",
+  "documents": [
+    {
+      "id": "d01",
+      "stage": 1,
+      "type": "newspaper",
+      "title": "Báo Bình Thuận - Vụ án mạng kinh hoàng trên đoàn tàu SE3",
+      "date": "13/10/2008",
+      "content": "**ÁN MẠNG TRONG PHÒNG KHOÁ KÍN TRÊN ĐOÀN TÀU BẮC NAM**\n\nRạng sáng nay 13/10, đoàn tàu SE3 hành trình Hà Nội - Sài Gòn đã phải phong tỏa khẩn cấp một toa xe khi cập ga Mường Mán (Hàm Thuận Nam, Bình Thuận). Một hành khách khoang giường nằm cao cấp được phát hiện tử vong với vết thương chí mạng ở cổ.\n\nĐáng chú ý, cửa khoang tàu khi phát hiện vụ việc đang bị khóa trái chốt an toàn từ phía bên trong. Toàn bộ hành khách và tổ tiếp viên trên toa xe đang được giữ lại ga để phục vụ công tác điều tra phá án."
+    },
+    {
+      "id": "d02",
+      "stage": 1,
+      "type": "report",
+      "title": "Biên bản khám nghiệm hiện trường khoang số 4 toa 6",
+      "date": "06h15 ngày 13/10/2008",
+      "content": "**BIÊN BẢN KHÁM NGHIỆM HIỆN TRƯỜNG**\n\n- **Địa điểm**: Khoang số 4, toa số 6 (toa giường nằm 4 chỗ điều hòa) tàu SE3.\n- **Trạng thái khoang khi tiếp cận**: Cửa sổ kính chịu lực hai lớp niêm phong cao su nguyên vẹn, không có dấu hiệu cạy phá. Cửa chính là cửa trượt ngang. Nhân viên toa tàu phải dùng chìa kỹ thuật dự phòng lách qua khe hẹp giật mạnh mới bung được lẫy khóa chốt gập bên trong.\n- **Tình trạng nạn nhân**: Nằm ngửa trên nệm giường số 1 (tầng 1 bên dưới). Cổ áo dính nhiều máu đã khô thẫm. Nạn nhân là ông Đặng Quốc Vinh (58 tuổi).\n- **Đồ vật trong khoang**: Vali hành lý của nạn nhân trên giá để đồ bị xáo trộn, chiếc cặp da màu nâu đựng hợp đồng và tiền mặt mang theo người không còn tại hiện trường."
+    },
+    {
+      "id": "d03",
+      "stage": 1,
+      "type": "report",
+      "title": "Sơ đồ mặt bằng toa xe số 6",
+      "date": "06h45 ngày 13/10/2008",
+      "content": "**SƠ ĐỒ BỐ TRÍ TOA XE SỐ 6**\n\n- Toa gồm 7 khoang giường nằm (khoang 1 đến khoang 7) nối với nhau bằng một hành lang dài bên mạn phải toa xe.\n- Đầu toa là phòng trực của nhân viên phục vụ toa xe (ông Trần Văn Hữu) và khu vệ sinh.\n- Cuối toa là cửa thông sang toa số 7 (toa ghế mềm).\n- Nạn nhân nằm ở khoang 4 giường 1. Thư ký Bùi Bích Thảo đăng ký giường 2 (cùng khoang 4). Nghi phạm Nguyễn Hoàng Long đăng ký giường 5 ở khoang 2."
+    },
+    {
+      "id": "d04",
+      "stage": 1,
+      "type": "report",
+      "title": "Kết quả giám định pháp y sơ bộ nạn nhân",
+      "date": "07h30 ngày 13/10/2008",
+      "content": "**KẾT QUẢ GIÁM ĐỊNH TỬ THI**\n\n1. **Nguyên nhân tử vong**: Mất máu cấp do một vết thương đâm sâu khoảng 9cm vùng dưới xương đòn trái làm rách tĩnh mạch dưới đòn và đỉnh phổi. Vết thương do hung khí kim loại nhọn, thân tròn hình trụ đường kính khoảng 0.6–0.8cm gây ra.\n2. **Thời điểm tử vong ước tính**: Căn cứ tình trạng đông máu và độ co cứng khớp hàm, nạn nhân tử vong vào khoảng từ 01h30 đến 02h00 sáng ngày 13/10/2008, khi đoàn tàu đang chạy qua khu vực đèo Cà Ná giáp ranh Ninh Thuận - Bình Thuận."
+    },
+    {
+      "id": "d05",
+      "stage": 1,
+      "type": "photo",
+      "title": "Ảnh cận cảnh lẫy khóa trong và khe nẹp cửa trượt khoang 4",
+      "date": "07h00 ngày 13/10/2008",
+      "image": "images/d05-cua-truot.webp",
+      "content": "Ảnh chụp góc cận cảnh đỉnh cửa trượt khoang 4: Lẫy khóa gập bằng đồng mạ crom đang ở tư thế chốt khóa hướng xuống dưới. Trên dải cao su giảm chấn và mép nẹp nhôm phía trên có vết ma sát mài mòn dạng đường rãnh bóng loáng hằn sâu vào lớp mỡ bôi trơn ray trượt."
+    },
+    {
+      "id": "d06",
+      "stage": 2,
+      "type": "testimony",
+      "title": "Lời khai của thư ký Bùi Bích Thảo",
+      "date": "08h15 ngày 13/10/2008",
+      "lines": [
+        { "n": 1, "text": "Tôi cùng sếp Vinh đi tàu vào Phan Thiết để ký hợp đồng đấu thầu khai thác mỏ cát sa khoáng." },
+        { "n": 2, "text": "Trong cặp của sếp có hồ sơ mật và 200 triệu tiền mặt mệnh giá 500.000 đồng mới rút ở ngân hàng." },
+        { "n": 3, "text": "Khoảng 00h15 đêm qua tôi khó ngủ nên đi sang toa căng-tin số 4 uống cà phê và ngồi đọc sách báo." },
+        { "n": 4, "text": "Đến khoảng 03h00 sáng tôi quay về toa 6, thấy cửa khoang 4 khóa chặt chốt trong." },
+        { "n": 5, "text": "Tôi nghĩ sếp đã ngủ say và gài chốt riêng tư nên tôi không dám gõ cửa làm phiền, liền sang khoang số 6 ngủ nhờ với một chị phụ nữ quen." },
+        { "n": 6, "text": "Đến sáng khi tiếp viên gọi cửa thì mới phát hiện ra cơ sự đau lòng này." }
+      ]
+    },
+    {
+      "id": "d07",
+      "stage": 2,
+      "type": "testimony",
+      "title": "Lời khai của nhân viên phụ trách toa Trần Văn Hữu",
+      "date": "08h45 ngày 13/10/2008",
+      "lines": [
+        { "n": 1, "text": "Tôi phụ trách trực đêm toa số 6 từ 22h đêm đến 06h sáng hôm sau." },
+        { "n": 2, "text": "Suốt ca trực tôi chủ yếu ngồi ở ghế trực đầu toa kiểm tra vé và bảo vệ hành lý." },
+        { "n": 3, "text": "Đêm qua tàu lắc mạnh đoạn qua đèo Cà Ná, hành lang hầu như không có ai đi lại trừ cô Thảo ra căng-tin lúc nửa đêm." },
+        { "n": 4, "text": "Lúc 05h15 sáng, cô Thảo gọi tôi đến mở cửa khoang 4 vì gọi mãi không thấy ông Vinh trả lời." },
+        { "n": 5, "text": "Tôi dùng chìa sắt phụ lách nạy mạnh thì lẫy khóa bên trong mới nảy lên để trượt cửa ra." }
+      ]
+    },
+    {
+      "id": "d08",
+      "stage": 2,
+      "type": "testimony",
+      "title": "Lời khai của Nguyễn Hoàng Long (khoang số 2)",
+      "date": "09h30 ngày 13/10/2008",
+      "lines": [
+        { "n": 1, "text": "Tôi đi công tác Phan Thiết giải quyết việc cá nhân, tình cờ đi cùng chuyến tàu với ông Vinh." },
+        { "n": 2, "text": "Trước đây chúng tôi từng có tranh chấp làm ăn nhưng việc đó đã giải quyết xong từ năm ngoái." },
+        { "n": 3, "text": "Lúc lên tàu tôi có gặp ông Vinh ngoài hành lang chào hỏi xã giao vài câu rồi ai về khoang nấy." },
+        { "n": 4, "text": "Từ lúc 23h30 đêm qua tôi đã uống thuốc an thần và trùm chăn ngủ say như chết trên giường khoang số 2 suốt cả đêm, hoàn toàn không hề rời khỏi giường nửa bước." },
+        { "n": 5, "text": "Khoang số 4 khóa trong thì làm sao người ở khoang khác như tôi có thể vào được mà nghi ngờ tôi?" }
+      ]
+    },
+    {
+      "id": "d09",
+      "stage": 2,
+      "type": "receipt",
+      "title": "Bảng phân bổ hành khách và kiểm soát vé toa số 6",
+      "date": "22h00 ngày 12/10/2008",
+      "content": "**DANH SÁCH HÀNH KHÁCH TOA 6 (CHUYẾN TÀU SE3)**\n\n- Khoang 1: Trống (chờ đón khách ở ga Nha Trang nhưng khách bỏ vé).\n- Khoang 2: Giường 5 (Nguyễn Hoàng Long), các giường khác trống.\n- Khoang 3: Gia đình 4 người đi du lịch Mũi Né.\n- Khoang 4: Giường 1 (Đặng Quốc Vinh), Giường 2 (Bùi Bích Thảo), hai giường tầng trên trống.\n- Khoang 5 & 6: Khách du lịch đoàn."
+    },
+    {
+      "id": "d10",
+      "stage": 3,
+      "type": "report",
+      "title": "Bản giám định cơ học về dấu vết trên cửa khoang số 4",
+      "date": "10h30 ngày 13/10/2008",
+      "content": "**KẾT QUẢ GIÁM ĐỊNH KỸ THUẬT HÌNH SỰ VẾT MA SÁT**\n\n1. Vết xước mài mòn trên nẹp nhôm đỉnh cửa trượt khoang 4 được tạo thành do sự ma sát cọ xát với tốc độ cao của một sợi dây polymer tổng hợp chịu lực có đường kính khoảng 0.4–0.5mm.\n2. Thu giữ được một mẩu xơ nhựa nylon màu trắng trong suốt dài 2mm dính chặt trong khe nẹp cao su trên lẫy khóa.\n3. **Cơ chế hoạt động**: Khi đứng ở bên ngoài hành lang, người thao tác có thể dùng sợi dây mảnh luồn qua khe đỉnh cửa, quàng vào lẫy khóa bên trong, sau khi đóng cửa trượt từ bên ngoài thì giật sợi dây để chốt gập sập xuống, sau đó rút dây ra ngoài tạo thành hiện tượng phòng khóa trái!"
+    },
+    {
+      "id": "d11",
+      "stage": 3,
+      "type": "report",
+      "title": "Biên bản khám xét hành lý khoang số 2 của Nguyễn Hoàng Long",
+      "date": "11h00 ngày 13/10/2008",
+      "content": "**BIÊN BẢN KHÁM XÉT HÀNH LÝ NGHI PHẠM**\n\nKiểm tra chiếc ba lô du lịch hiệu Samsonite của Nguyễn Hoàng Long đặt dưới gối khoang 2 thu giữ được:\n1. Một cuộn cước câu cá biển chuyên dụng nhãn hiệu Pioneer (loại chịu lực tải 20kg, đường kính 0.45mm). Cuộn dây đã bị cắt đứt một đoạn khoảng 3 mét bằng vết cắt sắc nhọn còn rất mới.\n2. Một cây dùi sắt dùi niêm chì toa hàng dài 22cm chuôi bọc gỗ lim, đầu mũi nhọn hình trụ đường kính 0.7cm, trên thân kim loại có vết ố mờ màu nâu."
+    },
+    {
+      "id": "d12",
+      "stage": 3,
+      "type": "photo",
+      "title": "Ảnh tang vật cuộn cước và chiếc dùi sắt thu giữ",
+      "date": "11h30 ngày 13/10/2008",
+      "image": "images/d12-cuon-cuoc.webp",
+      "content": "Ảnh chụp tang vật thu trong ba lô Nguyễn Hoàng Long: Cuộn cước câu cá Pioneer và chiếc dùi sắt chuôi gỗ. Đầu sợi cước dính vệt dầu mỡ máy đen bóng trùng khớp hoàn toàn với mỡ ray trượt cửa khoang số 4."
+    },
+    {
+      "id": "d13",
+      "stage": 3,
+      "type": "testimony",
+      "title": "Lời khai của nhân viên phục vụ toa căng-tin số 4",
+      "date": "11h45 ngày 13/10/2008",
+      "lines": [
+        { "n": 1, "text": "Tôi xác nhận cô Bùi Bích Thảo có mặt tại quầy căng-tin từ lúc 00h20 đêm qua." },
+        { "n": 2, "text": "Cô ấy gọi một ly cà phê sữa đá và một gói hạt hướng dương rồi ngồi đọc cuốn tiểu thuyết đến tận 03h sáng." },
+        { "n": 3, "text": "Suốt thời gian đó cô ấy không rời khỏi toa căng-tin lần nào." }
+      ]
+    },
+    {
+      "id": "d14",
+      "stage": 4,
+      "type": "report",
+      "title": "Kết quả giám định vết máu trên giày và hung khí",
+      "date": "13h30 ngày 13/10/2008",
+      "content": "**KẾT QUẢ XÉT NGHIỆM GEN ADN**\n\n1. Vết ố nâu trên mũi chiếc dùi sắt thu từ ba lô của Nguyễn Hoàng Long chính là máu người, có ADN trùng khớp 100% với mẫu máu của nạn nhân Đặng Quốc Vinh.\n2. Kiểm tra đôi giày da của Nguyễn Hoàng Long phát hiện các tia máu nhỏ li ti bắn vào mép đế giày bên trái, nhóm máu O trùng với nhóm máu của nạn nhân."
+    },
+    {
+      "id": "d15",
+      "stage": 4,
+      "type": "report",
+      "title": "Biên bản thu giữ tang vật giấu trong khoang điều hòa số 2",
+      "date": "14h00 ngày 13/10/2008",
+      "content": "**TÌM THẤY TÀI SẢN BỊ CƯỚP**\n\nKhám xét kỹ khoang số 2, cán bộ điều tra cạy tấm lưới lọc cửa gió điều hòa trên trần khoang và phát hiện:\n- Một chiếc cặp da màu nâu của ông Đặng Quốc Vinh.\n- Bên trong chứa nguyên vẹn 4 cọc tiền mặt mệnh giá 500.000 đồng (tổng cộng 200 triệu đồng) và toàn bộ tập hồ sơ dự thầu mỏ sa khoáng titan Bình Thuận."
+    },
+    {
+      "id": "d16",
+      "stage": 4,
+      "type": "report",
+      "title": "Bản thực nghiệm hiện trường thủ pháp dây cước khóa cửa",
+      "date": "15h00 ngày 13/10/2008",
+      "content": "**KẾT QUẢ THỰC NGHIỆM ĐIỀU TRA**\n\nCơ quan điều tra thực hiện thực nghiệm cơ học trên cửa trượt khoang số 4 bằng đoạn dây cước câu cá tương tự:\n- Luồn sợi cước qua khe cao su đỉnh cửa, tạo một nút thắt lỏng quanh chốt gập bên trong.\n- Kéo cửa trượt đóng khít từ bên ngoài hành lang.\n- Dùng lực kéo giật mạnh sợi cước: Chốt gập bên trong lập tức rơi xuống vị trí khóa chốt an toàn thành công 10/10 lần thử nghiệm.\n- Sau khi khóa xong, giật tiếp một lực cực mạnh khiến nút thắt bung ra và thu hồi toàn bộ sợi cước qua khe nẹp nhôm chỉ mất 3 giây!"
+    },
+    {
+      "id": "d17",
+      "stage": 4,
+      "type": "report",
+      "title": "Bản tự thú của Nguyễn Hoàng Long",
+      "date": "16h00 ngày 13/10/2008",
+      "content": "**LỜI THÚ NHẬN CỦA NGUYỄN HOÀNG LONG**\n\n'Tôi căm hận Vinh đã lừa gạt tôi phá sản trong dự án mỏ titan trước đây. Khi biết Vinh mang theo 200 triệu và hồ sơ thầu đi chuyến tàu này, tôi đã mua vé theo dõi. Thấy cô thư ký ra căng-tin, tôi gõ cửa khoang 4 vờ nói chuyện hòa giải rồi dùng cây dùi sắt thủ sẵn đâm chết ông ta lúc tàu qua đèo Cà Ná. Tôi lấy cặp tiền giấu lên trần điều hòa khoang 2 rồi dùng cước câu cá khóa chốt cửa từ ngoài hành lang để tạo hiện trường phòng kín đánh lừa công an...'"
+    },
+    {
+      "id": "d18",
+      "stage": 4,
+      "type": "report",
+      "title": "Kết luận điều tra vụ án mạng ga Mường Mán",
+      "date": "17h00 ngày 13/10/2008",
+      "content": "**KẾT LUẬN ĐIỀU TRA**\n\nVụ án đã được phá thành công sau chưa đầy 12 giờ. Đối tượng Nguyễn Hoàng Long bị khởi tố về tội Giết người và Cướp tài sản theo quy định của Bộ luật Hình sự."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "stage": 1,
+      "type": "evidence",
+      "title": "Hiện trường phòng kín và dấu vết lạ",
+      "intro": "Khoang số 4 được ghi nhận khóa chốt từ bên trong khiến việc tiếp cận hiện trường gặp khó khăn. Hãy tìm ra các dấu hiệu vật lý trên cánh cửa chứng tỏ có cơ chế tác động bất thường.",
+      "prompt": "Ghim 2 tài liệu phản ánh tình trạng chốt khóa bên trong của khoang số 4 và dấu vết ma sát mài mòn lạ trên khe nẹp cửa trượt.",
+      "need": 2,
+      "answer": ["d02", "d05"],
+      "hints": [
+        "Kiểm tra biên bản hiện trường khi nhân viên phá chốt khóa để vào phòng.",
+        "Xem ảnh chụp cận cảnh góc trên của cửa trượt ghi lại dấu vết ma sát trên gioăng nẹp cao su."
+      ],
+      "explanation": [
+        "Tài liệu d02 ghi nhận cửa trượt bị chốt khóa từ bên trong, nhân viên phải dùng chìa kỹ thuật giật mạnh nảy chốt mới vào được.",
+        "Tài liệu d05 (ảnh chụp cận cảnh) ghi lại vết ma sát hằn rãnh bóng loáng trên gioăng nẹp đỉnh cửa do lực cọ xát của sợi dây mảnh."
+      ],
+      "nudges": [
+        {
+          "picks": ["d01", "d04"],
+          "message": "Báo chí và giám định tử thi chưa cung cấp đặc tả dấu vết kỹ thuật trên cánh cửa khoang tàu."
+        }
+      ]
+    },
+    {
+      "id": "q2",
+      "stage": 2,
+      "type": "line",
+      "title": "Bằng chứng ngoại phạm của Nguyễn Hoàng Long",
+      "intro": "Nguyễn Hoàng Long ở khoang số 2 đưa ra lời khai nhằm loại trừ hoàn toàn sự liên quan của mình với cái chết của ông Vinh.",
+      "prompt": "Hãy chọn một dòng trong lời khai của Nguyễn Hoàng Long (d08) khẳng định y uống thuốc an thần và ngủ say trên giường suốt cả đêm không hề rời nửa bước.",
+      "answer": ["d08:004"],
+      "hints": [
+        "Tìm dòng lời khai nói về việc Long trùm chăn ngủ say và không rời giường khoang số 2."
+      ],
+      "explanation": [
+        "Tại dòng d08:004, Long khai: 'Từ lúc 23h30 đêm qua tôi đã uống thuốc an thần và trùm chăn ngủ say như chết trên giường khoang số 2 suốt cả đêm, hoàn toàn không hề rời khỏi giường nửa bước'."
+      ]
+    },
+    {
+      "id": "q3",
+      "stage": 3,
+      "type": "evidence",
+      "title": "Vạch trần cơ chế phòng kín và hung khí",
+      "intro": "Lời khai của nhân chứng đã chứng minh thư ký Thảo có mặt tại căng-tin. Cơ quan điều tra cần xâu chuỗi tang vật tìm thấy để giải mã bí ẩn căn phòng kín.",
+      "prompt": "Ghim 2 tài liệu chứng minh cơ chế khóa chốt từ bên ngoài bằng sợi polymer và hung khí kim loại được phát hiện trong hành lý nghi phạm.",
+      "need": 2,
+      "answer": ["d10", "d12"],
+      "hints": [
+        "Tài liệu giám định kỹ thuật hình sự về cơ chế khóa cửa bằng sợi polymer luồn qua khe đỉnh cửa.",
+        "Tài liệu hình ảnh tang vật cuộn cước câu cá bị cắt đoạn và chiếc dùi sắt dính máu."
+      ],
+      "explanation": [
+        "Tài liệu d10 khẳng định cơ chế dùng sợi polymer luồn qua khe đỉnh cửa để giật chốt khóa từ bên ngoài.",
+        "Tài liệu d12 (ảnh tang vật) chụp cuộn cước Pioneer bị cắt nham nhở và chiếc dùi sắt dính máu thu trong ba lô Long."
+      ],
+      "nudges": [
+        {
+          "picks": ["d11", "d13"],
+          "message": "d13 chỉ là bằng chứng ngoại phạm của Thảo; hãy chọn báo cáo cơ chế kỹ thuật d10 cùng hình ảnh tang vật d12."
+        }
+      ]
+    },
+    {
+      "id": "q4",
+      "stage": 4,
+      "type": "choice",
+      "title": "Thủ phạm vụ án mạng tàu SE3",
+      "intro": "ADN nạn nhân trên chiếc dùi sắt và cọc tiền 200 triệu giấu trong hộc điều hòa đã vạch trần kẻ thủ ác.",
+      "prompt": "Dựa vào toàn bộ chứng cứ trong hồ sơ, ai là thủ phạm đã sát hại ông Đặng Quốc Vinh?",
+      "options": [
+        "Thư ký Bùi Bích Thảo",
+        "Nguyễn Hoàng Long (khoang số 2)",
+        "Nhân viên phụ trách toa Trần Văn Hữu",
+        "Khách lạ lẻn lên từ ga Tháp Chàm"
+      ],
+      "answer": [1],
+      "hints": [
+        "Ai có mối thù hằn tranh chấp mỏ titan, sở hữu cuộn cước câu cá dính mỡ cửa trượt và chiếc dùi sắt dính máu nạn nhân?",
+        "Ai giấu chiếc cặp da đựng 200 triệu trên nóc điều hòa khoang số 2?"
+      ],
+      "explanation": [
+        "Nguyễn Hoàng Long là thủ phạm duy nhất. Y đã dùng dùi sắt sát hại nạn nhân (d11, d14), dùng cước câu cá tạo phòng kín từ hành lang (d10, d16) và giấu tiền cướp được trên trần điều hòa khoang mình (d15, d17)."
+      ]
+    }
+  ],
+  "finale": {
+    "culprit": "Nguyễn Hoàng Long",
+    "text": "Nguyễn Hoàng Long đã phải cúi đầu trước những bằng chứng khoa học không thể chối cãi. Thủ đoạn tinh vi dùng dây cước giật khóa chốt nhằm tạo hiện trường phòng kín trên đoàn tàu cao tốc đã bị lật tẩy bởi vệt ma sát nhỏ nơi mép nẹp cửa. Chuyến tàu đêm vượt qua vùng cát Bình Thuận cuối cùng đã trả lại công lý cho người bị hại."
+  }
+}

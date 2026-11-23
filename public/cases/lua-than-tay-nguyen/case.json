@@ -1,0 +1,264 @@
+{
+  "id": "lua-than-tay-nguyen",
+  "no": 7,
+  "status": "available",
+  "title": "Đêm lửa tàn Buôn Ea Kral",
+  "tagline": "Kho thóc nhà rông bốc cháy giữa mùa lễ cúng bến nước, chiếc xà gạc truyền đời vùi trong tro than.",
+  "difficulty": 3,
+  "players": "2–5",
+  "duration": "75–90 phút",
+  "setting": "Buôn Ea Kral, Đắk Lắk (hư cấu)",
+  "tags": [
+    "Án mạng",
+    "Phóng hỏa",
+    "Tây Nguyên",
+    "Bẫy hẹn giờ"
+  ],
+  "cover": "images/cover.webp",
+  "synopsis": "Đêm rằm tháng Ba năm 2001, trong khi cả buôn Ea Kral đang rộn rã cồng chiêng trong lễ cúng bến nước tại nhà rông lớn, kho thóc nứa cổ truyền kề bên bỗng bốc cháy ngùn ngụt. Khi ngọn lửa được khống chế, thi thể già làng Ama Thuật được tìm thấy dưới đống than hồng. Nhưng pháp y phát hiện một sự thật rợn người: Già làng đã ngừng thở từ trước khi ngọn lửa đầu tiên bùng phát.",
+  "intro": "Đội Điều tra Trọng án Công an tỉnh Đắk Lắk có mặt tại hiện trường buôn Ea Kral giữa trưa nắng gắt. Đám cháy tưởng như tai nạn chập điện hay tàn đuốc mùa hanh khô thực chất là màn kịch che đậy vụ sát hại cướp đoạt báu vật buôn làng. Liệu các dấu vết cơ khí trong đống tro tàn có giúp vạch mặt kẻ nghịch tử?",
+  "documents": [
+    {
+      "id": "d01",
+      "stage": 1,
+      "type": "newspaper",
+      "title": "Báo Đắk Lắk - Hỏa hoạn thương tâm trong đêm hội buôn Ea Kral",
+      "date": "10/04/2001",
+      "content": "**CHÁY LỚN KHO THÓC CỘNG ĐỒNG: GIÀ LÀNG AMA THUẬT TỬ NẠN**\n\nKhoảng 21h00 đêm 09/04, một vụ cháy dữ dội đã bùng phát tại kho thóc cộng đồng buôn Ea Kral (xã Ea Kiết). Bất chấp nỗ lực dập lửa của thanh niên trong buôn, kho thóc bằng gỗ nứa chứa hơn 20 tấn lúa giống đã bị thiêu rụi hoàn toàn.\n\nĐau lòng hơn, già làng Ama Thuật (62 tuổi) đã thiệt mạng bên trong đống đổ nát. Lực lượng kỹ thuật hình sự đã phong tỏa hiện trường để làm rõ nghi vấn cháy nổ bất thường."
+    },
+    {
+      "id": "d02",
+      "stage": 1,
+      "type": "report",
+      "title": "Biên bản khám nghiệm hiện trường đống tro tàn kho thóc",
+      "date": "06h30 ngày 10/04/2001",
+      "content": "**BIÊN BẢN KHÁM NGHIỆM HIỆN TRƯỜNG**\n\n- **Địa điểm**: Nền đất kho thóc nhà sàn, cách nhà rông lớn buôn Ea Kral khoảng 50 mét.\n- **Tình trạng đổ nát**: Cột xà gỗ cà chít và vách nứa bị thiêu rụi hoàn toàn, mái ngói sụp đổ đè lên các thùng phuy và bồ thóc.\n- **Vị trí tử thi già làng**: Nằm sấp ở góc đông nam kho thóc (khu vực thường để hòm gỗ đựng quỹ buôn). Nửa người phía trên bị cháy xém mức độ 3, nửa thân dưới được bao trấu đè lên nên còn nguyên dạng quần áo thổ cẩm.\n- **Hiện trạng tài sản**: Chiếc hòm gỗ đựng quỹ buôn và bộ chiêng đồng đen cổ truyền của buôn đã biến mất khỏi góc kho."
+    },
+    {
+      "id": "d03",
+      "stage": 1,
+      "type": "report",
+      "title": "Kết quả giám định tử thi già làng Ama Thuật",
+      "date": "08h15 ngày 10/04/2001",
+      "content": "**KẾT QUẢ GIÁM ĐỊNH PHÁP Y TỬ THI**\n\n1. **Khí quản và phế nang**: Hoàn toàn sạch, không tìm thấy muội than hoặc bồ hóng; xét nghiệm máu cho thấy nồng độ khí độc CO bằng 0%. Điều này khẳng định 100% nạn nhân **đã ngừng thở trước khi đám cháy bùng phát**.\n2. **Nguyên nhân tử vong**: Vỡ lún xương hộp sọ vùng chẩm sau gáy kích thước 4x8cm kèm dập não. Vết thương do một vật kim loại có sống lưng dày, gồ ghề phang mạnh từ phía sau với lực cực lớn.\n3. **Thời điểm tử vong ước tính**: Khoảng từ 19h30 đến 20h00 tối ngày 09/04/2001."
+    },
+    {
+      "id": "d04",
+      "stage": 1,
+      "type": "report",
+      "title": "Sơ đồ mặt bằng buôn Ea Kral đêm lễ hội",
+      "date": "09h00 ngày 10/04/2001",
+      "content": "**SƠ ĐỒ KHU VỰC TRUNG TÂM BUÔN**\n\n- **Nhà rông lớn**: Nơi diễn ra lễ cúng bến nước, tập trung dân làng từ 19h30. Lễ uống rượu cần và tấu cồng chiêng chính thức bắt đầu từ 20h15.\n- **Kho thóc**: Cách nhà rông 50 mét, ngăn cách bởi hàng rào dâm bụt và bãi đất trống. Có một đường dây điện đơn dẫn từ cột điện hạ thế nhà rông sang phục vụ bóng đèn thắp sáng trong kho.\n- **Khu xưởng sửa máy nông nghiệp của Y Bang**: Cách kho thóc 120 mét về phía cuối buôn."
+    },
+    {
+      "id": "d05",
+      "stage": 1,
+      "type": "photo",
+      "title": "Ảnh chụp chiếc xà gạc dính máu vùi trong tro",
+      "date": "08h45 ngày 10/04/2001",
+      "image": "images/d05-xa-gac.webp",
+      "content": "Ảnh chụp vật chứng tại góc kho thóc: Chiếc xà gạc truyền thống nửa chìm trong tro trấu. Phần sống dao bằng thép dày có vệt máu khô sẫm và sợi tóc dính chặt. Trên chuôi cầm bằng gỗ tròn có khắc chìm ký hiệu chữ 'B' hoa cách điệu."
+    },
+    {
+      "id": "d06",
+      "stage": 2,
+      "type": "testimony",
+      "title": "Lời khai của con nuôi Y Bang",
+      "date": "10h00 ngày 10/04/2001",
+      "lines": [
+        { "n": 1, "text": "Tôi là con nuôi của già làng, được cha nuôi cho ăn học và mở tiệm thu mua cà phê." },
+        { "n": 2, "text": "Dạo này giá cà phê tụt dốc tôi có thiếu nợ thật, nhưng tôi chưa bao giờ có ý định ăn cắp của buôn." },
+        { "n": 3, "text": "Khoảng 19h15 tối qua tôi có qua nhà rông chuẩn bị ché rượu cần." },
+        { "n": 4, "text": "Từ đúng 20h10 đến tận 21h10 khi có tiếng hô hoán cháy kho thóc, tôi ngồi liên tục ở gian giữa nhà rông uống rượu cần và đánh chiêng cùng đoàn cán bộ huyện, không hề bước chân ra ngoài nửa bước." },
+        { "n": 5, "text": "Hàng chục người trong buôn đều thấy tôi ở nhà rông, tôi làm sao mà giết cha và đốt kho được?" }
+      ]
+    },
+    {
+      "id": "d07",
+      "stage": 2,
+      "type": "testimony",
+      "title": "Lời khai của thủ kho H'Nhi",
+      "date": "10h45 ngày 10/04/2001",
+      "lines": [
+        { "n": 1, "text": "Tôi được giao giữ chìa khóa ổ khóa sắt của kho thóc." },
+        { "n": 2, "text": "Khoảng 18h30 chiều qua tôi khóa cửa kho cẩn thận rồi về nhà tắm rửa đi lễ." },
+        { "n": 3, "text": "Nhưng già làng Ama Thuật cũng có một chìa khóa riêng luôn đeo bên người để vào thắp hương thần lúa." },
+        { "n": 4, "text": "Lúc 20h30 tôi cùng các chị em trong buôn mang bầu nước ra suối Ea Kral lấy nước cúng, đến 21h15 quay về thì thấy lửa đã cháy rực trời." }
+      ]
+    },
+    {
+      "id": "d08",
+      "stage": 2,
+      "type": "testimony",
+      "title": "Lời khai của thợ săn Y Ksor",
+      "date": "11h15 ngày 10/04/2001",
+      "lines": [
+        { "n": 1, "text": "Trước đây già làng có phạt vạ tôi vì chặt cây gỗ rẫy, tôi phục già làng chứ không oán hận." },
+        { "n": 2, "text": "Tối qua tôi không lên nhà rông mà ngồi uống rượu ở chòi rẫy ngô cách buôn 1 cây số." },
+        { "n": 3, "text": "Tôi nghe tiếng còi báo động mới chạy về giúp dập lửa." }
+      ]
+    },
+    {
+      "id": "d09",
+      "stage": 2,
+      "type": "testimony",
+      "title": "Xác nhận của ông Lê Minh Tuấn (Cán bộ Phòng Nông nghiệp huyện)",
+      "date": "11h45 ngày 10/04/2001",
+      "lines": [
+        { "n": 1, "text": "Tôi dẫn đoàn cán bộ huyện về dự lễ cúng bến nước của buôn Ea Kral tối qua." },
+        { "n": 2, "text": "Tôi xác nhận anh Y Bang có ngồi uống rượu cần và mời rượu chúng tôi ở gian chính nhà rông từ khoảng 20h15." },
+        { "n": 3, "text": "Đến khoảng 21h05, khi mọi người đang say sưa múa xoang thì người dân bên ngoài gào thét báo cháy kho thóc, anh Y Bang cũng lao ra hô hào dập lửa." }
+      ]
+    },
+    {
+      "id": "d10",
+      "stage": 3,
+      "type": "report",
+      "title": "Bản giám định nguyên nhân hỏa hoạn và bẫy nhiệt",
+      "date": "13h30 ngày 10/04/2001",
+      "content": "**KẾT QUẢ GIÁM ĐỊNH KỸ THUẬT PHÒNG CHÁY CHỮA CHÁY**\n\n1. **Điểm phát hỏa đầu tiên**: Nằm tại góc kho thóc, ngay sát ổ cắm điện treo tường phía trên đống trấu khô.\n2. **Vật chứng thu thập tại tâm cháy**:\n   - Mảnh vỡ của một bóng đèn sợi đốt công suất 100W (loại tỏa nhiệt lượng cực lớn khi thắp sáng).\n   - Tàn tro của lớp vải giẻ lau máy tẩm dầu nhờn và mùn cưa quấn quanh bóng đèn.\n   - Bộ phận rơ-le hẹn giờ cơ khí của máy ấp trứng gia cầm (có núm vặn điều chỉnh từ 10 đến 90 phút) được đấu nối tiếp vào nguồn điện thắp sáng.\n3. **Cơ chế bẫy nhiệt**: Kẻ gây án đã chỉnh rơ-le hẹn giờ 60 phút lúc 19h55. Đến đúng 20h55, rơ-le tự động đóng mạch, bóng đèn 100W phát sáng và sinh nhiệt cực độ đốt cháy mớ giẻ tẩm dầu rồi lan sang kho thóc, tạo hiện trường cháy chậm hoàn hảo!"
+    },
+    {
+      "id": "d11",
+      "stage": 3,
+      "type": "photo",
+      "title": "Ảnh tang vật bẫy nhiệt: Đui đèn và rơ-le máy ấp trứng",
+      "date": "14h00 ngày 10/04/2001",
+      "image": "images/d11-rui-dien.webp",
+      "content": "Ảnh chụp vật chứng tại tâm cháy: Đui đèn xoáy và các mảnh thủy tinh bóng đèn 100W bị nung nhiệt cao, kèm cụm bánh răng đồng thau của rơ-le cơ khí máy ấp trứng gia cầm."
+    },
+    {
+      "id": "d12",
+      "stage": 3,
+      "type": "report",
+      "title": "Biên bản kiểm tra xưởng cơ khí sửa máy của Y Bang",
+      "date": "14h30 ngày 10/04/2001",
+      "content": "**KIỂM TRA TẠI XƯỞNG SỬA CHỮA Y BANG**\n\nTại xưởng sửa máy nông nghiệp của Y Bang, công an thu được:\n1. Một chiếc máy ấp trứng gà tự chế hiệu 'Đại Lợi' bị tháo mất cụm rơ-le đồng hồ hẹn giờ. Dấu vết ốc vít vặn tháo còn rất mới.\n2. Hộp carton đựng bóng đèn sợi đốt Điện Quang 100W bị bóc mất 1 bóng, loại đui đồng trùng khớp 100% với đui đèn thu tại tâm cháy d11."
+    },
+    {
+      "id": "d13",
+      "stage": 3,
+      "type": "testimony",
+      "title": "Lời khai của thợ rèn buôn Ma Thuật",
+      "date": "15h00 ngày 10/04/2001",
+      "lines": [
+        { "n": 1, "text": "Chiếc xà gạc thu dưới tro kho thóc (d05) chính tay tôi rèn cho anh Y Bang năm ngoái." },
+        { "n": 2, "text": "Chính anh Bang nhờ tôi khắc chữ 'B' (viết tắt tên Bang) lên chuôi gỗ mun để không lẫn với xà gạc của người khác trong buôn." }
+      ]
+    },
+    {
+      "id": "d14",
+      "stage": 4,
+      "type": "report",
+      "title": "Biên bản khám xét khẩn cấp nhà riêng Y Bang",
+      "date": "16h00 ngày 10/04/2001",
+      "content": "**TÌM THẤY TÀI SẢN VÀ BÁU VẬT BUÔN LÀNG**\n\nKiểm tra khu vực chuồng heo phía sau nhà Y Bang, cán bộ điều tra phát hiện dưới hố chứa thức ăn phủ lá chuối khô:\n- Chiếc hòm gỗ của buôn chứa nguyên vẹn 80 triệu đồng tiền quỹ.\n- Bộ chiêng đồng đen 6 chiếc bọc vải thổ cẩm của buôn làng."
+    },
+    {
+      "id": "d15",
+      "stage": 4,
+      "type": "report",
+      "title": "Biên bản giám định vết bỏng trên người Y Bang",
+      "date": "16h30 ngày 10/04/2001",
+      "content": "**GIÁM ĐỊNH Y KHOA ĐỐI VỚI Y BANG**\n\nTrên mu bàn tay phải của Y Bang có một vết bỏng nhiệt độ 2 dạng tròn bằng đồng xu, vết thương còn rỉ dịch mới được quấn băng cá nhân. Qua phân tích vi lượng xác định trên vết bỏng có dính phân tử dầu dừa và muội than bóng đèn dây tóc."
+    },
+    {
+      "id": "d16",
+      "stage": 4,
+      "type": "report",
+      "title": "Bản thú tội của Y Bang",
+      "date": "17h00 ngày 10/04/2001",
+      "content": "**LỜI THÚ TỘI CỦA Y BANG**\n\n'Tôi nợ nần cà phê quá lớn, bị chủ nợ siết nhà nên quẫn trí. Tối qua tôi lẻn vào kho thóc định trộm hòm tiền và bộ chiêng cổ đem bán thì già làng Ama Thuật bất ngờ bước vào. Cha mắng tôi là đứa con phản phúc và định hô hoán dân làng, tôi hoảng quá lấy chiếc xà gạc đập vào gáy cha. Sau đó tôi tháo rơ-le máy ấp trứng nối vào bóng đèn 100W quấn giẻ dầu để hẹn giờ cháy 1 tiếng sau, rồi chạy sang nhà rông uống rượu tạo bằng chứng ngoại phạm...'"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "stage": 1,
+      "type": "evidence",
+      "title": "Già làng đã chết trước vụ cháy",
+      "intro": "Đám cháy thiêu rụi kho thóc tưởng chừng là tai nạn khiến già làng thiệt mạng do ngạt khói. Nhưng chứng cứ pháp y và vật chứng tại hiện trường đã vạch trần một vụ án mạng man rợ.",
+      "prompt": "Ghim 2 tài liệu chứng minh già làng Ama Thuật đã tử vong từ trước khi có lửa khói và hung khí để lại dấu vết cá nhân rõ ràng.",
+      "need": 2,
+      "answer": ["d03", "d05"],
+      "hints": [
+        "Kiểm tra kết quả giám định tử thi về khí quản và nguyên nhân vỡ lún hộp sọ.",
+        "Xem ảnh chụp chiếc xà gạc dính máu khắc chữ cái trên chuôi gỗ."
+      ],
+      "explanation": [
+        "Tài liệu d03 chứng minh khí quản già làng không có muội than, chết do vỡ lún hộp sọ từ trước khi cháy lúc 19h30 - 20h00.",
+        "Tài liệu d05 (ảnh chụp xà gạc) cho thấy sống dao dính máu và chuôi gỗ khắc chữ B hoa."
+      ],
+      "nudges": [
+        {
+          "picks": ["d01", "d02"],
+          "message": "Bản tin và biên bản hiện trường chưa cung cấp kết luận y khoa về đường thở và chi tiết hung khí."
+        }
+      ]
+    },
+    {
+      "id": "q2",
+      "stage": 2,
+      "type": "line",
+      "title": "Bằng chứng ngoại phạm của Y Bang",
+      "intro": "Y Bang khẳng định y có mặt liên tục ở nhà rông lớn suốt thời gian ngọn lửa bùng phát.",
+      "prompt": "Hãy chọn một dòng trong lời khai của Y Bang (d06) khẳng định y ngồi liên tục ở gian giữa nhà rông uống rượu cần từ đúng 20h10 đến 21h10 không rời nửa bước.",
+      "answer": ["d06:004"],
+      "hints": [
+        "Tìm dòng lời khai nói về việc Y Bang ngồi uống rượu cần và đánh chiêng cùng đoàn cán bộ từ 20h10 đến 21h10."
+      ],
+      "explanation": [
+        "Tại dòng d06:004, Y Bang khai: 'Từ đúng 20h10 đến tận 21h10 khi có tiếng hô hoán cháy kho thóc, tôi ngồi liên tục ở gian giữa nhà rông uống rượu cần và đánh chiêng cùng đoàn cán bộ huyện, không hề bước chân ra ngoài nửa bước'."
+      ]
+    },
+    {
+      "id": "q3",
+      "stage": 3,
+      "type": "evidence",
+      "title": "Cơ chế bẫy nhiệt hẹn giờ phóng hỏa",
+      "intro": "Bằng chứng ngoại phạm của Y Bang thực chất được tạo ra bởi một bẫy nhiệt kích hoạt chậm.",
+      "prompt": "Ghim 2 tài liệu chỉ ra cơ chế phát hỏa hẹn giờ bằng bóng đèn 100W kết hợp rơ-le máy ấp trứng tại tâm cháy.",
+      "need": 2,
+      "answer": ["d10", "d11"],
+      "hints": [
+        "Tài liệu giám định kỹ thuật PCCC về cơ chế sinh nhiệt và rơ-le hẹn giờ 60 phút.",
+        "Ảnh chụp đui đèn vỡ và bánh răng rơ-le thu tại hiện trường tâm cháy."
+      ],
+      "explanation": [
+        "Tài liệu d10 làm rõ thủ đoạn hẹn giờ phát hỏa 60 phút bằng bóng đèn 100W quấn giẻ dầu và rơ-le cơ khí.",
+        "Tài liệu d11 ghi nhận hình ảnh đui đèn xoáy và cụm bánh răng rơ-le máy ấp trứng thu được tại tâm đám cháy."
+      ],
+      "nudges": [
+        {
+          "picks": ["d12", "d13"],
+          "message": "d12 và d13 là kiểm tra xưởng và xác nhận thợ rèn, nhưng d10 và d11 mới trực tiếp phân tích cơ chế bẫy nhiệt tại tâm cháy."
+        }
+      ]
+    },
+    {
+      "id": "q4",
+      "stage": 4,
+      "type": "choice",
+      "title": "Thủ phạm sát hại già làng và phóng hỏa",
+      "intro": "Tang vật tiền quỹ, bộ chiêng đồng đen và vết bỏng trên tay đã khép lại vòng vây công lý đối với kẻ bất nhân.",
+      "prompt": "Dựa vào toàn bộ tài liệu hồ sơ, ai là kẻ đã sát hại già làng Ama Thuật và phóng hỏa đốt kho thóc?",
+      "options": [
+        "Con nuôi Y Bang",
+        "Thủ kho H'Nhi",
+        "Thợ săn Y Ksor",
+        "Cán bộ khuyến nông Lê Minh Tuấn"
+      ],
+      "answer": [0],
+      "hints": [
+        "Ai sở hữu chiếc xà gạc khắc chữ 'B', tháo rơ-le máy ấp trứng tạo bẫy nhiệt và giấu tiền quỹ cùng chiêng cổ sau nhà?"
+      ],
+      "explanation": [
+        "Y Bang là kẻ thủ ác. Y dùng xà gạc khắc chữ B (d05, d13) sát hại cha nuôi lúc 19h45 (d03), dùng rơ-le máy ấp trứng (d10, d11, d12) hẹn giờ đốt kho rồi ra nhà rông tạo ngoại phạm, sau đó giấu tiền quỹ và chiêng cổ ở chuồng heo nhà mình (d14, d15, d16)."
+      ]
+    }
+  ],
+  "finale": {
+    "culprit": "Y Bang",
+    "text": "Trước những mảnh vỡ của chiếc rơ-le hẹn giờ và bộ chiêng cổ tang vật thu giữ tại nhà riêng, Y Bang đã phải quỳ gối thú nhận toàn bộ tội ác tày trời. Đêm hội cúng bến nước buôn Ea Kral kết thúc trong nỗi bàng hoàng xót xa, nhưng ngọn lửa thiêng của công lý đã vạch trần kẻ bất nghĩa, trả lại sự thanh thản cho hương hồn già làng Ama Thuật."
+  }
+}

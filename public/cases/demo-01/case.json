@@ -1,0 +1,488 @@
+{
+  "id": "demo-01",
+  "no": 0,
+  "status": "available",
+  "title": "Chiếc đồng hồ ở ngõ Gác Chuông",
+  "subtitle": "Hồ sơ mẫu: dùng để chạy thử bàn điều tra",
+  "tagline": "Một đêm mất trộm, ba người trong nhà, một cánh cửa sổ vỡ.",
+  "difficulty": 1,
+  "players": "1–4",
+  "duration": "20–30 phút",
+  "setting": "Phố cổ, Hà Nội (hư cấu)",
+  "era": "Tháng 3/2024",
+  "tags": [
+    "Trộm cắp",
+    "Hồ sơ mẫu",
+    "Ngắn"
+  ],
+  "cover": "images/cover.webp",
+  "contentWarning": "Hồ sơ mẫu do đội phát triển viết để thử nghiệm. Hãy thay bằng hồ sơ thật của bạn.",
+  "synopsis": [
+    "Đêm 14/3, trong lúc nhà sưu tầm Trần Đức Hậu đi dự tiệc ở Hải Phòng, chiếc đồng hồ bỏ túi vỏ vàng quý nhất của ông biến mất khỏi két sắt.",
+    "Cửa sổ phòng làm việc bị đập vỡ, báo chí đồn đã có trộm đột nhập. Nhưng trong căn nhà ngõ Gác Chuông đêm ấy còn hai người khác."
+  ],
+  "intro": {
+    "title": "Chiếc đồng hồ ở ngõ Gác Chuông",
+    "paragraphs": [
+      "Sáng 15/3/2024, ông Trần Đức Hậu (68 tuổi) trở về từ Hải Phòng và phát hiện chiếc đồng hồ bỏ túi vỏ vàng, khắc chữ T.Đ.H, đã biến mất khỏi két sắt phòng làm việc.",
+      "Bạn là điều tra viên được giao hồ sơ. Trên bàn là những tài liệu đầu tiên thu thập được. Hãy đọc kỹ, đối chiếu và trả lời từng trọng điểm."
+    ],
+    "objective": "Tìm ra ai đã lấy chiếc đồng hồ, bằng cách nào và vì sao."
+  },
+  "documents": [
+    {
+      "id": "d01",
+      "stage": 1,
+      "type": "newspaper",
+      "title": "Báo Phố Cũ: Trộm đột nhập nhà nhà sưu tầm",
+      "masthead": "Phố Cũ",
+      "issue": "Số 1.204",
+      "date": "Thứ Sáu, 15/3/2024",
+      "headline": "Trộm đột nhập nhà sưu tầm, cuỗm đồng hồ cổ",
+      "deck": "Cửa sổ vỡ tan, chiếc két sắt mở toang: hàng xóm ngõ Gác Chuông bàng hoàng sau một đêm yên ả.",
+      "image": "images/d01-window.webp",
+      "imageCaption": "Cửa sổ phòng làm việc nhà số 17 sáng 15/3.",
+      "paragraphs": [
+        "Rạng sáng 15/3, ông Trần Đức Hậu, nhà sưu tầm đồ cổ có tiếng ở ngõ Gác Chuông, trình báo công an về việc chiếc đồng hồ bỏ túi vỏ vàng đời 1920 bị mất khỏi két sắt.",
+        "Theo một số hộ dân, khoảng 23 giờ đêm 14/3 họ nghe thấy tiếng kính vỡ phát ra từ phía sau nhà số 17. Nhiều người cho rằng kẻ gian đã trèo qua tường sau và phá cửa sổ để vào nhà.",
+        "Thời điểm xảy ra vụ việc, ông Hậu đang dự tiệc mừng thọ một người bạn ở Hải Phòng. Trong nhà khi đó có người giúp việc và cháu trai ông.",
+        "Chiếc đồng hồ được giới chơi đồ cổ định giá khoảng 300 triệu đồng. Cơ quan công an đang thu thập thêm thông tin."
+      ]
+    },
+    {
+      "id": "d02",
+      "stage": 1,
+      "type": "report",
+      "title": "Biên bản khám nghiệm hiện trường",
+      "header": [
+        "Công an quận Gác Chuông",
+        "Đội Cảnh sát Hình sự"
+      ],
+      "heading": "Biên bản khám nghiệm hiện trường",
+      "code": "17/KNHT",
+      "date": "08 giờ 30, ngày 15/3/2024",
+      "fields": [
+        {
+          "label": "Địa điểm",
+          "value": "Nhà số 17, ngõ Gác Chuông"
+        },
+        {
+          "label": "Chủ nhà",
+          "value": "Trần Đức Hậu, 68 tuổi"
+        },
+        {
+          "label": "Tài sản mất",
+          "value": "01 đồng hồ bỏ túi vỏ vàng, khắc chữ T.Đ.H"
+        }
+      ],
+      "sections": [
+        {
+          "heading": "1. Cửa chính và cổng",
+          "paragraphs": [
+            "Cửa chính khoá trong, ổ khoá nguyên vẹn, không có dấu vết cạy phá. Cổng sắt cài then bên trong."
+          ]
+        },
+        {
+          "heading": "2. Cửa sổ phòng làm việc",
+          "paragraphs": [
+            "Một ô kính cửa sổ phía sân sau bị vỡ. **Phần lớn mảnh kính văng ra ngoài sân sau**, rất ít mảnh rơi vào trong phòng.",
+            "Trên bậu cửa và mặt tường sân sau không có dấu chân hay vết bùn."
+          ]
+        },
+        {
+          "heading": "3. Két sắt",
+          "paragraphs": [
+            "Két sắt loại khoá số đặt dưới gầm bàn làm việc. Cửa két mở, **không có dấu vết cạy, khoan hay phá khoá**. Két được mở bằng mã số đúng."
+          ]
+        },
+        {
+          "heading": "4. Ghi nhận khác",
+          "paragraphs": [
+            "Sân trước có một con chó becgie được xích cạnh cổng."
+          ]
+        }
+      ],
+      "signature": "Điều tra viên: Đại uý Lương Minh Khải"
+    },
+    {
+      "id": "d03",
+      "stage": 1,
+      "type": "testimony",
+      "title": "Lời khai của bà Phạm Thị Tư (giúp việc)",
+      "header": [
+        "Công an quận Gác Chuông"
+      ],
+      "date": "10 giờ 00, ngày 15/3/2024",
+      "fields": [
+        {
+          "label": "Người khai",
+          "value": "Phạm Thị Tư, 59 tuổi"
+        },
+        {
+          "label": "Quan hệ",
+          "value": "Người giúp việc, ở cùng nhà 12 năm"
+        }
+      ],
+      "lines": [
+        {
+          "n": 1,
+          "text": "Tôi giúp việc cho ông Hậu đã mười hai năm nay."
+        },
+        {
+          "n": 2,
+          "text": "Tối 14/3 ông đi Hải Phòng, trong nhà chỉ còn tôi và cậu Minh, cháu ông."
+        },
+        {
+          "n": 3,
+          "text": "Khoảng 21 giờ 30, cậu Minh nói ra quán uống cà phê."
+        },
+        {
+          "n": 4,
+          "text": "22 giờ tôi khoá cửa chính, cài cổng rồi lên gác ngủ."
+        },
+        {
+          "n": 5,
+          "text": "Khoảng 23 giờ tôi nghe tiếng kính vỡ, nhưng sợ quá không dám xuống."
+        },
+        {
+          "n": 6,
+          "text": "Con Mực nhà này hễ thấy người lạ là sủa inh ỏi, vậy mà đêm đó nó im re."
+        },
+        {
+          "n": 7,
+          "text": "Mã két chỉ ông Hậu biết. Có điều tháng trước ông đọc mã cho cậu Minh mở két lấy giấy tờ giúp."
+        },
+        {
+          "n": 8,
+          "text": "Cậu Minh về lúc nào tôi không biết. Sáng ra đã thấy cậu ngủ trong phòng."
+        }
+      ],
+      "signature": "Người khai ký tên: Tư"
+    },
+    {
+      "id": "d04",
+      "stage": 1,
+      "type": "testimony",
+      "title": "Lời khai của Nguyễn Quang Minh (cháu trai)",
+      "header": [
+        "Công an quận Gác Chuông"
+      ],
+      "date": "10 giờ 45, ngày 15/3/2024",
+      "fields": [
+        {
+          "label": "Người khai",
+          "value": "Nguyễn Quang Minh, 27 tuổi"
+        },
+        {
+          "label": "Quan hệ",
+          "value": "Cháu gọi ông Hậu là chú, ở cùng nhà từ tháng 1/2024"
+        }
+      ],
+      "lines": [
+        {
+          "n": 1,
+          "text": "Tôi chuyển về ở với chú Hậu từ đầu năm."
+        },
+        {
+          "n": 2,
+          "text": "Tối hôm đó tôi ra quán Gác Nhỏ ở đầu ngõ ngồi một mình."
+        },
+        {
+          "n": 3,
+          "text": "Tôi đi bộ, quán cách nhà chừng năm phút."
+        },
+        {
+          "n": 4,
+          "text": "Tôi ngồi ở quán đến khoảng 23 giờ 30 mới về."
+        },
+        {
+          "n": 5,
+          "text": "Cổng cài then bên trong nên tôi trèo tường vào, thấy cửa sổ phòng chú vỡ nhưng tưởng do gió."
+        },
+        {
+          "n": 6,
+          "text": "Tôi không biết mã két. Chuyện tiền nong chú không bao giờ nói với tôi."
+        },
+        {
+          "n": 7,
+          "text": "Chắc chắn là trộm ở ngoài vào rồi."
+        }
+      ],
+      "signature": "Người khai ký tên: Minh"
+    },
+    {
+      "id": "d05",
+      "stage": 1,
+      "type": "testimony",
+      "title": "Lời khai của ông Lâm Văn Hoà (bạn làm ăn)",
+      "header": [
+        "Công an quận Gác Chuông"
+      ],
+      "date": "14 giờ 00, ngày 15/3/2024",
+      "fields": [
+        {
+          "label": "Người khai",
+          "value": "Lâm Văn Hoà, 61 tuổi"
+        },
+        {
+          "label": "Quan hệ",
+          "value": "Bạn làm ăn của ông Hậu gần 20 năm"
+        }
+      ],
+      "lines": [
+        {
+          "n": 1,
+          "text": "Tôi với anh Hậu buôn bán đồ cổ chung gần hai mươi năm."
+        },
+        {
+          "n": 2,
+          "text": "Đêm 14/3 tôi cùng anh ấy dự tiệc ở Hải Phòng, cả bàn tiệc làm chứng, sáng hôm sau hai anh em mới về."
+        },
+        {
+          "n": 3,
+          "text": "Chiếc đồng hồ đó tôi trả 300 triệu, anh Hậu chưa chịu bán."
+        },
+        {
+          "n": 4,
+          "text": "Tuần trước cậu Minh hỏi vay tôi 80 triệu, nói là nợ bạn bè đánh bài, phải trả gấp."
+        },
+        {
+          "n": 5,
+          "text": "Tôi không cho vay. Tôi biết tính cậu ấy."
+        }
+      ],
+      "signature": "Người khai ký tên: Hoà"
+    },
+    {
+      "id": "d06",
+      "stage": 2,
+      "type": "receipt",
+      "title": "Hoá đơn quán Cà phê Gác Nhỏ",
+      "shop": "Cà phê Gác Nhỏ",
+      "address": "Số 2, đầu ngõ Gác Chuông",
+      "fields": [
+        {
+          "label": "Ngày",
+          "value": "14/03/2024"
+        },
+        {
+          "label": "Bàn",
+          "value": "04"
+        },
+        {
+          "label": "Giờ in",
+          "value": "22:41"
+        }
+      ],
+      "items": [
+        {
+          "name": "Cà phê đen đá",
+          "qty": "1",
+          "price": "25.000"
+        },
+        {
+          "name": "Hướng dương",
+          "qty": "1",
+          "price": "15.000"
+        }
+      ],
+      "total": "40.000đ",
+      "footer": [
+        "Tiền mặt. Cảm ơn quý khách!",
+        "**Quán đóng cửa lúc 22:45 hằng ngày.**"
+      ]
+    },
+    {
+      "id": "d07",
+      "stage": 2,
+      "type": "photo",
+      "title": "Ảnh trích xuất camera tiệm tạp hoá đầu ngõ",
+      "image": "images/d07-camera.webp",
+      "caption": "22:53 – một người mặc áo hoodie xám đi bộ vào ngõ, hướng về nhà số 17.",
+      "label": "Camera tiệm tạp hoá Thanh Mai · 14/3/2024"
+    },
+    {
+      "id": "d08",
+      "stage": 3,
+      "type": "evidence",
+      "title": "Phiếu cầm đồ thu giữ tại tiệm Phát Đạt",
+      "code": "TV-03",
+      "image": "images/d08-watch.webp",
+      "imageCaption": "Chiếc đồng hồ bỏ túi thu giữ tại tiệm cầm đồ Phát Đạt ngày 16/3/2024.",
+      "fields": [
+        {
+          "label": "Tiệm",
+          "value": "Cầm đồ Phát Đạt, phố Hàng Rèn (hư cấu)"
+        },
+        {
+          "label": "Thời gian",
+          "value": "08 giờ 15, ngày 15/3/2024"
+        },
+        {
+          "label": "Tài sản cầm",
+          "value": "01 đồng hồ bỏ túi vỏ vàng, mặt sau khắc T.Đ.H"
+        },
+        {
+          "label": "Số tiền",
+          "value": "60.000.000đ"
+        },
+        {
+          "label": "Người cầm",
+          "value": "Ký tên: Minh. Kèm bản sao CCCD của Nguyễn Quang Minh"
+        }
+      ],
+      "paragraphs": [
+        "Chủ tiệm khai: người cầm đồ mặc áo hoodie xám, đến ngay khi tiệm vừa mở cửa và yêu cầu nhận tiền mặt."
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "stage": 1,
+      "type": "evidence",
+      "need": 2,
+      "title": "Kẻ lấy đồng hồ đột nhập từ ngoài vào, hay đã ở sẵn trong nhà?",
+      "prompt": "Ghim 2 tài liệu chứng minh vụ đột nhập chỉ là dàn dựng: kẻ lấy đồng hồ là người trong nhà.",
+      "answer": [
+        "d02",
+        "d03"
+      ],
+      "nudges": [
+        {
+          "picks": [
+            "d01",
+            "d02"
+          ],
+          "near": true,
+          "message": "Biên bản là một mảnh đúng. Nhưng bài báo chỉ thuật lại lời đồn của hàng xóm. Ai trong nhà biết về con chó và chiếc két?"
+        },
+        {
+          "any": [
+            "d05"
+          ],
+          "message": "Ông Lâm ở Hải Phòng cả đêm. Lời khai của ông không cho biết kẻ trộm vào nhà bằng cách nào."
+        },
+        {
+          "picks": [
+            "d02",
+            "d04"
+          ],
+          "near": true,
+          "message": "Biên bản là đúng. Nhưng Minh khẳng định là trộm ngoài vào: lời khai nào khác lại cho thấy điều ngược lại?"
+        }
+      ],
+      "hints": [
+        "Hãy đọc kỹ biên bản khám nghiệm: kính vỡ văng về phía nào?",
+        "Một tên trộm lạ sẽ phải vượt qua con chó và chiếc két khoá số. Ai nhắc tới hai thứ đó?",
+        "Biên bản khám nghiệm (kính văng ra ngoài, két mở bằng mã đúng) và lời khai bà Tư (con chó im lặng, Minh biết mã két)."
+      ],
+      "solved": "Kính bị đập từ bên trong, két mở bằng mã đúng, con chó không sủa: kẻ lấy đồng hồ là người quen trong nhà, và biết mã két. Hồ sơ trọng điểm 2 đã được mở.",
+      "explanation": [
+        {
+          "title": "Kính vỡ văng ra ngoài",
+          "body": [
+            "Nếu kẻ gian đập kính từ sân sau để vào, mảnh kính phải rơi vào trong phòng. Ở đây mảnh kính văng ra sân: cửa sổ bị đập từ bên trong để giả cảnh đột nhập."
+          ]
+        },
+        {
+          "title": "Con chó và chiếc két",
+          "body": [
+            "Con Mực sủa người lạ nhưng đêm đó im lặng. Két mở bằng mã đúng, và ngoài ông Hậu chỉ có Minh từng được đọc mã."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q2",
+      "stage": 2,
+      "type": "line",
+      "title": "Câu nào trong lời khai của Minh bị hoá đơn và camera bác bỏ?",
+      "prompt": "Bấm vào dòng khai man trong lời khai của Nguyễn Quang Minh.",
+      "answer": [
+        "d04:004"
+      ],
+      "nudges": {
+        "d04:006": {
+          "near": true,
+          "message": "Đúng là câu này khai man, lời khai của bà Tư đã cho thấy điều đó. Nhưng câu hỏi là câu mà hoá đơn và camera bác bỏ."
+        },
+        "d04:002": {
+          "message": "Minh có ra quán thật: hoá đơn bàn 04 cho thấy điều đó."
+        },
+        "d04:005": {
+          "near": true,
+          "message": "Gần rồi. Hãy để ý mốc giờ mà Minh tự khai."
+        }
+      },
+      "hints": [
+        "Hoá đơn được in lúc mấy giờ? Quán đóng cửa lúc mấy giờ?",
+        "Camera thấy người mặc hoodie xám đi vào ngõ lúc 22:53, tức là trước tiếng kính vỡ khoảng 23 giờ.",
+        "Minh nói ngồi ở quán đến 23 giờ 30, nhưng quán đã đóng cửa lúc 22:45. Đó là dòng 004."
+      ],
+      "solved": "Quán đóng cửa lúc 22:45, hoá đơn in lúc 22:41, camera ghi lại người mặc hoodie xám vào ngõ lúc 22:53. Minh về nhà trước tiếng kính vỡ chứ không phải sau. Hồ sơ trọng điểm 3 đã được mở.",
+      "explanation": [
+        {
+          "title": "Bằng chứng ngoại phạm sụp đổ",
+          "body": [
+            "Minh khai ngồi ở quán tới 23 giờ 30. Quán đóng cửa lúc 22:45, và 8 phút sau camera ghi được một người đi vào ngõ. Tiếng kính vỡ vang lên lúc khoảng 23 giờ, khi Minh đã ở nhà."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q3",
+      "stage": 3,
+      "type": "choice",
+      "title": "Ai đã lấy chiếc đồng hồ, và vì sao?",
+      "options": [
+        "Bà Phạm Thị Tư, vì bất mãn với chủ nhà",
+        "Nguyễn Quang Minh, để trả nợ cờ bạc",
+        "Ông Lâm Văn Hoà, vì ông Hậu không chịu bán chiếc đồng hồ",
+        "Một tên trộm lạ đột nhập qua cửa sổ sân sau"
+      ],
+      "answer": [
+        1
+      ],
+      "nudges": {
+        "0": {
+          "message": "Bà Tư là người nói ra việc Minh biết mã két. Không có tài liệu nào cho thấy bà có động cơ hay đi cầm đồng hồ."
+        },
+        "2": {
+          "message": "Ông Lâm có động cơ, nhưng cả bàn tiệc ở Hải Phòng làm chứng cho ông suốt đêm 14/3."
+        },
+        "3": {
+          "message": "Kính văng ra ngoài, con chó không sủa, két mở bằng mã đúng: không có kẻ lạ nào cả."
+        }
+      },
+      "hints": [
+        "Ai cần tiền gấp? Hãy đọc lại lời khai của ông Lâm.",
+        "Phiếu cầm đồ ghi tên ai, và người cầm đồ mặc gì?"
+      ],
+      "solved": "Nguyễn Quang Minh đã lấy chiếc đồng hồ để trả nợ cờ bạc.",
+      "explanation": [
+        {
+          "title": "Động cơ",
+          "body": [
+            "Một tuần trước, Minh hỏi vay ông Lâm 80 triệu để trả nợ cờ bạc và bị từ chối."
+          ]
+        },
+        {
+          "title": "Tang vật",
+          "body": [
+            "8 giờ 15 sáng 15/3, chiếc đồng hồ khắc T.Đ.H được cầm tại tiệm Phát Đạt lấy 60 triệu, người cầm ký tên Minh, kèm bản sao CCCD của Minh, mặc áo hoodie xám như trong camera."
+          ]
+        }
+      ]
+    }
+  ],
+  "finale": {
+    "title": "Người cháu và chiếc két khoá số",
+    "paragraphs": [
+      "Ôm khoản nợ cờ bạc 80 triệu và bị ông Lâm từ chối cho vay, Nguyễn Quang Minh quyết định lấy chiếc đồng hồ của chú.",
+      "Tối 14/3, Minh ra quán Gác Nhỏ để có người thấy mình ở ngoài. Quán đóng cửa lúc 22:45, Minh lặng lẽ về nhà lúc 22:53. Con Mực quen hơi nên không sủa.",
+      "Minh mở két bằng mã số được chú đọc cho tháng trước, rồi đập vỡ cửa sổ từ bên trong để giả cảnh trộm đột nhập. Sáng hôm sau, khi tiệm vừa mở cửa, Minh đem chiếc đồng hồ đi cầm lấy 60 triệu.",
+      "Lời khai ngồi quán tới 23 giờ 30 chính là sơ hở khiến Minh bị lật tẩy."
+    ]
+  }
+}

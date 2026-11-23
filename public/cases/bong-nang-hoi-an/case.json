@@ -1,0 +1,231 @@
+{
+  "id": "bong-nang-hoi-an",
+  "no": 6,
+  "status": "available",
+  "title": "Bóng nắng giếng Bá Lễ",
+  "tagline": "Bức tranh lụa cổ trăm năm biến mất khỏi từ đường, chỉ còn vệt bùn vàng nơi giếng cổ.",
+  "difficulty": 2,
+  "players": "1–4",
+  "duration": "45–60 phút",
+  "setting": "Từ đường họ Lương, Phố cổ Hội An, Quảng Nam (hư cấu)",
+  "tags": [
+    "Trộm cắp",
+    "Cổ vật",
+    "Phố cổ Hội An",
+    "Ngoại phạm"
+  ],
+  "cover": "images/cover.webp",
+  "synopsis": "Đúng trưa ngày rằm tháng Bảy năm 2005 (Lễ Vu Lan), khi cả gia tộc họ Lương đang tề tựu tại chùa Cầu hành lễ, bức tranh lụa cổ 'Thập mục ngưu đồ' dát chỉ vàng hơn 200 năm tuổi treo trong từ đường bỗng không cánh mà bay. Không có dấu vết cạy phá cửa, nhưng bậc đá giếng cổ Bá Lễ phía sau nhà lại in vệt bùn vàng và một sợi cước đen lạ kỳ.",
+  "intro": "Đội Cảnh sát Điều tra Công an thị xã Hội An nhận nhiệm vụ phá án trước khi bức tranh gia bảo bị tuồn ra nước ngoài. Một nghi phạm chìa ra bức ảnh chụp chính mình đang ngồi ăn cơm gà lúc 12h15 trưa với chiếc đồng hồ treo tường rõ mồn một. Nhưng liệu góc bóng nắng của vùng đất di sản có chấp nhận lời khai ấy?",
+  "documents": [
+    {
+      "id": "d01",
+      "stage": 1,
+      "type": "newspaper",
+      "title": "Bản tin An ninh Quảng Nam - Trộm cổ vật giữa ban ngày ở Hội An",
+      "date": "16/07 Âm lịch (20/08/2005)",
+      "content": "**MẤT TRỘM TRANH LỤA CỔ THỜI CHÚA NGUYỄN TẠI PHỐ CỔ HỘI AN**\n\nTrưa hôm qua, tại ngôi nhà cổ từ đường họ Lương trên đường Trần Phú (phường Minh An), kẻ gian đã đột nhập lấy đi bức tranh lụa quý 'Thập mục ngưu đồ' dát vàng có niên đại đầu thế kỷ 19.\n\nThời điểm xảy ra vụ trộm vào khoảng từ 11h45 đến 13h00 trưa khi gia đình đi dự đại lễ Vu Lan. Công an thị xã Hội An đã rà soát các lối xuất cảnh sân bay Đà Nẵng và các cảng biển nhằm phong tỏa đường tẩu tán của cổ vật."
+    },
+    {
+      "id": "d02",
+      "stage": 1,
+      "type": "report",
+      "title": "Biên bản khám nghiệm hiện trường từ đường họ Lương",
+      "date": "14h00 ngày 19/08/2005",
+      "content": "**BIÊN BẢN KHÁM NGHIỆM HIỆN TRƯỜNG**\n\n- **Địa điểm**: Gian chính từ đường họ Lương, số 48 đường Trần Phú, Hội An.\n- **Hiện trường vụ trộm**: Vị trí treo tranh trên vách gỗ kiền kiền chỉ còn lại hai chiếc móc đồng trống không. Cửa chính phía trước vẫn khóa chốt kiên cố. Cửa nách phía sau thông ra lối ngõ hẹp dẫn tới giếng cổ Bá Lễ khép hờ, ổ khóa bấm loại Việt Tiệp không hề có dấu hiệu cạy phá, chứng tỏ kẻ gian đã dùng chìa khóa để mở.\n- **Dấu vết để lại**: Trên bậu cửa gỗ phía sau dính một ít vụn đất sét vàng pha rêu ẩm ướt."
+    },
+    {
+      "id": "d03",
+      "stage": 1,
+      "type": "photo",
+      "title": "Ảnh chụp hiện trường quanh miệng giếng cổ Bá Lễ",
+      "date": "14h30 ngày 19/08/2005",
+      "image": "images/d03-gieng-ba-le.webp",
+      "content": "Ảnh chụp bậc đá và miệng giếng Bá Lễ (cách cửa sau từ đường 80m): Trên phiến đá xanh dẫn xuống giếng có vệt bùn vàng dẻo và hoa văn đế giày thể thao dẫm nát mảng rêu. Đáng chú ý, ở kẽ nứt gạch Chăm mép giếng có buộc một mấu dây cước đen chịu lực dẫn thẳng đứng xuống lòng nước giếng sâu."
+    },
+    {
+      "id": "d04",
+      "stage": 1,
+      "type": "report",
+      "title": "Sơ đồ lối đi từ từ đường ra giếng Bá Lễ",
+      "date": "15h00 ngày 19/08/2005",
+      "content": "**SƠ ĐỒ KHU VỰC HIỆN TRƯỜNG**\n\n- Từ cửa sau từ đường họ Lương có một ngõ nhỏ lát gạch thẻ dài khoảng 80 mét dẫn thông thẳng ra khu vực giếng cổ Bá Lễ.\n- Giếng Bá Lễ là giếng nước ngọt cổ nổi tiếng của Hội An, xung quanh có tường rào thấp và lùm cây râm mát, buổi trưa hè thường rất vắng người qua lại do thợ gánh nước chỉ làm việc vào sáng sớm và chiều muộn."
+    },
+    {
+      "id": "d05",
+      "stage": 1,
+      "type": "note",
+      "title": "Biên bản định giá và mô tả bức tranh cổ bị mất",
+      "date": "Hồ sơ di sản thị xã",
+      "content": "**MÔ TẢ BẢO VẬT GIA TỘC HỌ LƯƠNG**\n\nBức tranh 'Thập mục ngưu đồ' vẽ trên lụa tơ tằm cổ, kích thước 40cm x 120cm, bọc lụa điều, dát chỉ vàng ròng viền mép. Trục tranh làm bằng gỗ mun tiện tròn hai đầu bịt ngọc bích. Giá trị ước tính trên thị trường cổ vật quốc tế không dưới 30.000 USD (khoảng 500 triệu đồng thời điểm năm 2005)."
+    },
+    {
+      "id": "d06",
+      "stage": 2,
+      "type": "testimony",
+      "title": "Lời khai của cháu đích tôn Lương Gia Bảo",
+      "date": "15h45 ngày 19/08/2005",
+      "lines": [
+        { "n": 1, "text": "Trưa nay tôi không đi lễ chùa Cầu với gia đình vì bận hẹn bạn bè ăn trưa." },
+        { "n": 2, "text": "Tôi đi bộ từ nhà lúc 11h15 sang quán cơm gà trên phố Phan Chu Trinh." },
+        { "n": 3, "text": "Tôi ngồi ăn cơm gà, uống bia với ba người bạn từ đúng 11h30 đến tận 13h30 chiều mới đứng dậy." },
+        { "n": 4, "text": "Lúc ăn cơm, bạn tôi còn dùng máy ảnh kỹ thuật số chụp lại cảnh tôi ngồi ăn, trên tường có đồng hồ chỉ 12h15 rõ ràng." },
+        { "n": 5, "text": "Tôi hoàn toàn có bằng chứng ngoại phạm không thể chối cãi, bác đừng vu khống tôi vì món nợ cá độ!" }
+      ]
+    },
+    {
+      "id": "d07",
+      "stage": 2,
+      "type": "photo",
+      "title": "Bức ảnh bằng chứng ngoại phạm của Lương Gia Bảo",
+      "date": "16h00 ngày 19/08/2005",
+      "image": "images/d07-anh-com-ga.webp",
+      "content": "Bức ảnh kỹ thuật số Lương Gia Bảo cung cấp: Bảo ngồi bên bàn cơm gà, đồng hồ treo tường phía sau chỉ 12h15. Tuy nhiên, trên sàn nhà gỗ, bóng nắng đổ xiên qua song cửa sổ tạo góc dài khoảng 45 độ nghiêng về hướng đông bắc (bóng nắng xế chiều)."
+    },
+    {
+      "id": "d08",
+      "stage": 2,
+      "type": "testimony",
+      "title": "Lời khai của thợ mộc Nguyễn Văn Trực",
+      "date": "16h30 ngày 19/08/2005",
+      "lines": [
+        { "n": 1, "text": "Tôi được cụ Hòa thuê tu bổ vì kèo từ đường suốt một tuần nay." },
+        { "n": 2, "text": "Trưa nay 11h30 tôi thu dọn đồ nghề rồi khóa cửa sau ra quán nước mía đầu phố ngồi uống nước đến 13h." },
+        { "n": 3, "text": "Chìa khóa cửa sau chỉ có cụ Hòa, tôi và cậu Bảo giữ một chiếc." },
+        { "n": 4, "text": "Tôi là thợ mộc chân chính, bao nhiêu đời gia đình tôi ở Hội An này ai cũng biết, tôi không bao giờ thèm lấy trộm đồ của chủ nhà." }
+      ]
+    },
+    {
+      "id": "d09",
+      "stage": 2,
+      "type": "testimony",
+      "title": "Lời khai của thương lái đồ cổ Trần Khắc Định",
+      "date": "17h00 ngày 19/08/2005",
+      "lines": [
+        { "n": 1, "text": "Hôm qua tôi có đến xem bức tranh và trả giá 300 triệu thật, nhưng cụ Hòa không bán thì thôi chứ tôi trộm làm gì." },
+        { "n": 2, "text": "Trưa nay từ 11h đến 14h tôi ngồi tiếp khách đối tác tại sảnh khách sạn Hội An Riverside." },
+        { "n": 3, "text": "Camera an ninh và lễ tân khách sạn đều có thể làm chứng cho tôi." }
+      ]
+    },
+    {
+      "id": "d10",
+      "stage": 3,
+      "type": "report",
+      "title": "Bản phân tích quang học góc bóng nắng trên bức ảnh ngoại phạm",
+      "date": "17h45 ngày 19/08/2005",
+      "content": "**KẾT QUẢ GIÁM ĐỊNH QUANG HỌC VÀ THIÊN VĂN ĐỊA LÝ**\n\n1. Vào ngày rằm tháng 7 âm lịch (ngày 19/08 dương lịch) tại tọa độ Hội An (Quảng Nam), mặt trời đi qua thiên đỉnh vào khoảng 12h05 trưa. Vào thời điểm 12h15, bóng nắng của các vật thể dựng đứng gần như trùng với chân vật thể (góc bóng đổ dưới 5 độ).\n2. Trong bức ảnh d07: Vệt bóng nắng chiếu qua cửa sổ hướng Tây Nam tạo góc xiên 45 độ kéo dài về hướng Đông Bắc. Góc bóng đổ này chỉ xuất hiện khi mặt trời đã ngả về phía Tây, tương ứng thời điểm thực tế từ **14h20 đến 14h40 chiều**!\n3. **Kết luận**: Đồng hồ treo tường trong bức ảnh đã bị chỉnh lùi kim thủ công khoảng 2 tiếng đồng hồ trước khi chụp nhằm tạo chứng cứ ngoại phạm giả tạo."
+    },
+    {
+      "id": "d11",
+      "stage": 3,
+      "type": "receipt",
+      "title": "Hóa đơn mua vật tư tại tiệm điện nước phố Lê Lợi",
+      "date": "08h30 ngày 19/08/2005",
+      "content": "**HÓA ĐƠN BÁN LẺ - TIỆM KIM KHÍ ĐIỆN NƯỚC AN THÀNH**\n\n- Khách hàng: Lương Gia Bảo (ghi tên sổ nợ)\n- Hàng hóa:\n  1. Ống nhựa PVC đường kính 90mm, dài 60cm: 1 đoạn.\n  2. Nắp bịt ren cao su chống thấm PVC 90: 2 chiếc.\n  3. Keo dán ống nhựa Tiền Phong: 1 tuýp.\n  4. Dây cước dù đen chịu lực: 1 cuộn 10m."
+    },
+    {
+      "id": "d12",
+      "stage": 3,
+      "type": "report",
+      "title": "Biên bản trục vớt vật chứng dưới lòng giếng Bá Lễ",
+      "date": "18h15 ngày 19/08/2005",
+      "content": "**BIÊN BẢN TRỤC VỚT TANG VẬT**\n\nCán bộ điều tra kéo sợi dây cước đen buộc ở thành giếng Bá Lễ lên khỏi mặt nước:\n- Trục vớt được một ống nhựa PVC dài 60cm, hai đầu bịt kín bằng nắp ren cao su bôi keo dán chống thấm tuyệt đối.\n- Mở nắp ống nhựa: Bên trong chứa nguyên vẹn bức tranh lụa cổ 'Thập mục ngưu đồ' dát vàng của họ Lương, không hề bị thấm một giọt nước."
+    },
+    {
+      "id": "d13",
+      "stage": 3,
+      "type": "report",
+      "title": "Kết quả giám định bùn đất trên giày của Lương Gia Bảo",
+      "date": "18h45 ngày 19/08/2005",
+      "content": "**KẾT QUẢ ĐỐI CHIẾU MẪU ĐẤT RÊU**\n\nMẫu bùn vàng và rêu bám trên đế giày thể thao hiệu Biti's thu giữ từ phòng ngủ của Lương Gia Bảo hoàn toàn trùng khớp về tỷ lệ vi sinh vật và bùn sét phù sa với mẫu bùn trên bậc đá giếng Bá Lễ (d03)."
+    },
+    {
+      "id": "d14",
+      "stage": 3,
+      "type": "testimony",
+      "title": "Lời khai của chủ quán cơm gà phố Phan Chu Trinh",
+      "date": "19h00 ngày 19/08/2005",
+      "lines": [
+        { "n": 1, "text": "Trưa nay quán tôi đông khách lắm, mãi đến hơn 14h khách mới vãn bớt." },
+        { "n": 2, "text": "Lúc hơn 14h tôi thấy cậu Bảo cùng mấy người bạn mới vào quán gọi cơm." },
+        { "n": 3, "text": "Lúc tôi bưng đĩa gà lên thì thấy cậu Bảo đang đứng trên ghế loay hoay sờ vào chiếc đồng hồ quả lắc treo tường, bảo là đồng hồ chạy chậm." },
+        { "n": 4, "text": "Sau đó tôi thấy bạn cậu ấy giơ máy ảnh ra chụp lia lịa rồi cậu ấy lại trèo lên chỉnh lại đồng hồ như cũ." }
+      ]
+    },
+    {
+      "id": "d15",
+      "stage": 3,
+      "type": "report",
+      "title": "Bản tự thú của Lương Gia Bảo",
+      "date": "19h30 ngày 19/08/2005",
+      "content": "**LỜI THÚ NHẬN CỦA LƯƠNG GIA BẢO**\n\n'Tôi nợ cá độ bóng đá 200 triệu bị giang hồ đe dọa chặt ngón tay nếu không trả trước rằm. Tôi biết cả nhà đi chùa Cầu trưa nay nên mở cửa sau lấy bức tranh, cho vào ống nhựa chuẩn bị sẵn thả xuống giếng Bá Lễ để tránh công an kiểm tra đồ đạc khi rời phố cổ. Đến hơn 14h chiều tôi mới đến quán cơm gà vặn ngược đồng hồ lại 12h15 để chụp ảnh giả làm chứng cứ ngoại phạm...'"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "stage": 1,
+      "type": "evidence",
+      "title": "Dấu vết tại hiện trường và lối thoát",
+      "intro": "Bức tranh bị lấy cắp mà cửa trước không bị phá. Hãy xem xét các dấu vết vật lý chứng tỏ kẻ gian tẩu tán tài sản theo lối cửa sau ra khu vực giếng cổ Bá Lễ.",
+      "prompt": "Ghim 2 tài liệu chỉ ra lối thoát hiểm phía sau từ đường và dấu vết khả nghi dính bùn rêu bên bờ giếng cổ.",
+      "need": 2,
+      "answer": ["d02", "d03"],
+      "hints": [
+        "Biên bản khám nghiệm hiện trường cửa sau từ đường mở bằng chìa khóa.",
+        "Ảnh chụp cận cảnh phiến đá bậc giếng Bá Lễ dính vệt bùn vàng và sợi cước đen."
+      ],
+      "explanation": [
+        "Tài liệu d02 ghi nhận cửa nách phía sau mở bằng chìa khóa, bậu cửa dính đất sét vàng pha rêu ẩm.",
+        "Tài liệu d03 (ảnh hiện trường) cho thấy phiến đá giếng Bá Lễ dính bùn vàng và có một sợi cước đen buộc mép gạch thả xuống lòng giếng."
+      ],
+      "nudges": [
+        {
+          "picks": ["d01", "d04"],
+          "message": "Bản tin và sơ đồ chỉ thể hiện vị trí địa lý chung, chưa đặc tả dấu vết bùn rêu và cước đen tại chỗ."
+        }
+      ]
+    },
+    {
+      "id": "q2",
+      "stage": 2,
+      "type": "line",
+      "title": "Lời khai ngoại phạm của Lương Gia Bảo",
+      "intro": "Lương Gia Bảo đưa ra lời khai khẳng định mình ngồi ăn cơm gà suốt từ 11h30 đến 13h30 trưa.",
+      "prompt": "Hãy chọn một dòng trong lời khai của Lương Gia Bảo (d06) khẳng định y ngồi ăn cơm gà và uống bia từ đúng 11h30 đến tận 13h30 chiều.",
+      "answer": ["d06:003"],
+      "hints": [
+        "Tìm dòng lời khai mà Bảo nói về khung giờ ngồi ăn cơm gà với bạn bè."
+      ],
+      "explanation": [
+        "Tại dòng d06:003, Bảo khai: 'Tôi ngồi ăn cơm gà, uống bia với ba người bạn từ đúng 11h30 đến tận 13h30 chiều mới đứng dậy'."
+      ]
+    },
+    {
+      "id": "q3",
+      "stage": 3,
+      "type": "choice",
+      "title": "Kẻ trộm bức tranh lụa cổ",
+      "intro": "Bằng chứng quang học về góc bóng nắng và vật tư mua ống nhựa PVC đã lột trần thủ đoạn của kẻ trộm.",
+      "prompt": "Dựa vào toàn bộ hồ sơ vụ án, ai là kẻ đã lấy cắp bức tranh cổ 'Thập mục ngưu đồ' và giấu xuống giếng Bá Lễ?",
+      "options": [
+        "Cháu đích tôn Lương Gia Bảo",
+        "Thợ mộc Nguyễn Văn Trực",
+        "Thương lái đồ cổ Trần Khắc Định",
+        "Chủ quán cơm gà phố Phan Chu Trinh"
+      ],
+      "answer": [0],
+      "hints": [
+        "Ai có chìa khóa cửa sau, có hóa đơn mua ống nhựa PVC phi 90 chống nước và vặn lùi đồng hồ quán cơm gà?",
+        "Ai có động cơ nợ nần cá độ 200 triệu đồng?"
+      ],
+      "explanation": [
+        "Lương Gia Bảo là kẻ trộm. Y có chìa khóa cửa sau (d02, d08), mua ống nhựa dán chống nước để cất giấu tranh dưới đáy giếng (d11, d12) và chỉnh lùi kim đồng hồ lúc 14h20 để tạo bằng chứng ngoại phạm giả mạo đã bị góc bóng nắng vạch trần (d07, d10, d14, d15)."
+      ]
+    }
+  ],
+  "finale": {
+    "culprit": "Lương Gia Bảo",
+    "text": "Trước sự thật hiển nhiên từ góc bóng nắng thiên văn và tang vật ống tranh được trục vớt nguyên vẹn từ đáy giếng Bá Lễ, Lương Gia Bảo đã hoàn toàn suy sụp và thừa nhận tội lỗi. Bức tranh lụa vô giá của tiền nhân đã được trở về nguyên vẹn trên vách từ đường dòng họ giữa cái nắng vàng rực rỡ của phố cổ Hội An."
+  }
+}

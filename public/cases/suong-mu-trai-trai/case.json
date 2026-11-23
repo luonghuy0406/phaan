@@ -1,0 +1,275 @@
+{
+  "id": "suong-mu-trai-trai",
+  "no": 4,
+  "status": "available",
+  "title": "Sương mù Trại Mát",
+  "tagline": "Lò sấy hoa hồng rực lửa thâu đêm, nhưng sáng sớm người chủ vườn đã đông cứng ngoài bìa thông.",
+  "difficulty": 3,
+  "players": "2–5",
+  "duration": "75–90 phút",
+  "setting": "Trang trại hoa Lâm Viên, Trại Mát, Đà Lạt (hư cấu)",
+  "tags": [
+    "Án mạng",
+    "Bằng chứng ngoại phạm",
+    "Kho lạnh",
+    "Đà Lạt 2003"
+  ],
+  "cover": "images/cover.webp",
+  "synopsis": "Sáng sớm ngày 15/12/2003, giữa tiết trời sương muối giá buốt của vùng đồi Trại Mát, thi thể ông Lâm Khải - chủ trang trại hoa hồng Lâm Viên - được tìm thấy đông cứng dưới triền dốc bìa rừng thông. Bác sĩ pháp y nhận định nạn nhân qua đời khoảng 21h-22h đêm hôm trước. Nhưng vào khung giờ đó, tất cả nghi phạm đáng ngờ nhất đều có bằng chứng ngoại phạm vững như bàn thạch.",
+  "intro": "Đội Cảnh sát Điều tra Công an thành phố Đà Lạt nhận vụ án trong một buổi sáng mùa đông mịt mùng sương. Khám nghiệm tử thi cho thấy hiện tượng co cứng toàn thân diễn ra sớm bất thường so với thời gian nạn nhân rời nhà. Điều gì đã đánh lừa chiếc nhiệt kế pháp y giữa vùng cao nguyên lạnh giá này?",
+  "documents": [
+    {
+      "id": "d01",
+      "stage": 1,
+      "type": "newspaper",
+      "title": "Báo Lâm Đồng - Án mạng bí ẩn tại vùng hoa Trại Mát",
+      "date": "16/12/2003",
+      "content": "**PHÁT HIỆN THI THỂ CHỦ TRANG TRẠI HOA LÂM VIÊN DƯỚI DỐC THÔNG**\n\nSáng qua 15/12, một người dân đi hái nấm thông tại khu vực Trại Mát đã bàng hoàng phát hiện thi thể ông Lâm Khải (54 tuổi), chủ trang trại hoa hồng Lâm Viên nổi tiếng, nằm gục bên vệ đường đất dưới chân dốc.\n\nTheo thông tin ban đầu, tối 14/12 lò sấy hoa của trang trại vẫn hoạt động bình thường phục vụ đơn hàng hoa Tết. Nạn nhân rời khu lò sấy vào khoảng chập tối và mất tích suốt đêm. Vụ việc đang được cơ quan công an khẩn trương điều tra."
+    },
+    {
+      "id": "d02",
+      "stage": 1,
+      "type": "report",
+      "title": "Biên bản khám nghiệm hiện trường đồi thông",
+      "date": "07h15 ngày 15/12/2003",
+      "content": "**BIÊN BẢN KHÁM NGHIỆM HIỆN TRƯỜNG**\n\n- **Vị trí**: Rãnh thoát nước tự nhiên ven triền dốc thông ba lá, cách cổng sau trang trại hoa Lâm Viên khoảng 300 mét.\n- **Tình trạng nạn nhân**: Nằm co quắp trên nền đất đỏ bazan. Quần áo ẩm ướt do sương đêm. Đầu đội mũ len, mặc áo khoác len dày, chân đi dép xốp đi trong nhà.\n- **Dấu vết bất thường tại chỗ**:\n  1. Mặt đất xung quanh là đất thịt mùn lá thông khô, không có đá dăm sỏi nhỏ. Tuy nhiên kẽ rãnh dép xốp của nạn nhân lại dính những mẩu dăm băng đá vảy nhân tạo li ti chưa tan hết.\n  2. Bên cạnh hiện trường có một vệt bánh xe cút kít (xe rùa đơn) trượt dài từ mép đường bê tông đâm xuống triền cỏ."
+    },
+    {
+      "id": "d03",
+      "stage": 1,
+      "type": "report",
+      "title": "Sơ đồ mặt bằng trang trại hoa Lâm Viên",
+      "date": "08h00 ngày 15/12/2003",
+      "content": "**SƠ ĐỒ TRANG TRẠI VÀ CÁC KHU VỰC CHÍNH**\n\n- **Biệt thự trung tâm**: Nơi ở của ông Lâm Khải và con gái Lâm Tuyết Mai.\n- **Khu nhà sấy hoa hồng**: Lò sấy hơi nhiệt than đá, luôn duy trì nhiệt độ 45–50°C vào mùa đông để hong khô cánh hoa ướp hương.\n- **Khu kho lạnh bảo quản**: Gồm kho số 1 (chứa hoa hồng chờ đóng thùng) và kho số 2 (kho lạnh sâu nhiệt độ 0°C đến 2°C, có máy làm đá vảy tuyết để đóng hoa cúc vàng đại đóa xuất khẩu).\n- **Cổng sau và đường dốc bìa thông**: Dẫn ra con đường đất liên thôn vắng vẻ."
+    },
+    {
+      "id": "d04",
+      "stage": 1,
+      "type": "report",
+      "title": "Kết quả giám định tử thi sơ bộ",
+      "date": "09h30 ngày 15/12/2003",
+      "content": "**KẾT QUẢ GIÁM ĐỊNH PHÁP Y**\n\n1. **Nguyên nhân tử vong**: Ngạt cơ học do bị siết cổ bằng dây dù bện, kết hợp chấn thương tụ máu vùng chẩm sau gáy do vật cứng tù đập vào.\n2. **Thời gian tử vong ước tính**: Căn cứ nhiệt độ trực tràng đo lúc 07h30 sáng là 24.5°C (nhiệt độ môi trường ngoài trời đêm qua trung bình 11°C) và mức độ co cứng toàn thân tối đa (rigor mortis hoàn toàn), pháp y ước tính thời điểm tử vong nằm trong khoảng từ 21h00 đến 22h30 đêm 14/12/2003."
+    },
+    {
+      "id": "d05",
+      "stage": 1,
+      "type": "photo",
+      "title": "Ảnh hiện trường dốc bìa thông và vệt xe rùa",
+      "date": "07h45 ngày 15/12/2003",
+      "image": "images/d05-hien-truong.webp",
+      "content": "Ảnh hiện trường khu vực triền dốc thông: Vị trí khoanh phấn đánh dấu nơi phát hiện tử thi cạnh thân thông cổ thụ. Rõ nét vệt lún của bánh xe cút kít một bánh chở vật nặng từ đường bê tông trang trại trượt xuống rãnh đất ẩm."
+    },
+    {
+      "id": "d06",
+      "stage": 2,
+      "type": "testimony",
+      "title": "Lời khai của Lâm Tuyết Mai (con gái nạn nhân)",
+      "date": "10h15 ngày 15/12/2003",
+      "lines": [
+        { "n": 1, "text": "Chiều qua ba tôi và tôi cãi nhau to về việc tôi muốn lấy anh giáo viên dạy nhạc ở thị xã." },
+        { "n": 2, "text": "Ba tôi bực tức bỏ xuống khu lò sấy kiểm tra kỹ thuật lúc khoảng 18h00." },
+        { "n": 3, "text": "Từ 19h30 tôi ở lì trong phòng ngủ trên lầu hai nghe nhạc và gọi điện thoại bàn cho bạn bè." },
+        { "n": 4, "text": "Hóa đơn bưu điện có thể chứng minh tôi gọi liên tục từ 20h đến 22h30 đêm qua." },
+        { "n": 5, "text": "Đến sáng dậy không thấy ba về phòng ngủ mới hoảng hốt đi tìm thì hay tin dữ." }
+      ]
+    },
+    {
+      "id": "d07",
+      "stage": 2,
+      "type": "testimony",
+      "title": "Lời khai của kỹ sư quản lý Hoàng Văn Duẩn",
+      "date": "11h00 ngày 15/12/2003",
+      "lines": [
+        { "n": 1, "text": "Tôi chịu trách nhiệm kỹ thuật cho lò sấy và hai kho lạnh của trang trại." },
+        { "n": 2, "text": "Khoảng 18h15 chiều qua ông Khải có xuống văn phòng kho cự cãi với tôi về tiền thưởng giống hồng nhung." },
+        { "n": 3, "text": "Đến 18h30 ông ấy hầm hầm bỏ đi đâu tôi không rõ." },
+        { "n": 4, "text": "Tôi làm việc lau chùi máy móc đến 19h45 rồi tắt đèn về phòng thay đồ." },
+        { "n": 5, "text": "Tôi khẳng định từ sau 17h chiều hôm qua tôi không hề bước chân vào kho lạnh số 2 vì mẻ cúc xuất khẩu đã đóng thùng xong từ trưa." },
+        { "n": 6, "text": "Từ 20h15 tối qua, tôi đi bộ sang trạm khí tượng Trại Mát cách đây 1 cây số." },
+        { "n": 7, "text": "Tôi ngồi đánh cờ tướng và uống trà atiso với bác Thao trưởng trạm từ lúc 20h30 đến tận 23h45 mới về phòng ngủ tập thể của trang trại." }
+      ]
+    },
+    {
+      "id": "d08",
+      "stage": 2,
+      "type": "testimony",
+      "title": "Lời khai của ông Bùi Văn Thao (Trưởng trạm khí tượng Trại Mát)",
+      "date": "13h30 ngày 15/12/2003",
+      "lines": [
+        { "n": 1, "text": "Chú Duẩn sang trạm của tôi từ lúc khoảng 20h20 tối qua." },
+        { "n": 2, "text": "Hai anh em tôi ngồi pha ấm trà atiso, bày bàn cờ tướng ra đánh liền tù tì năm ván." },
+        { "n": 3, "text": "Tôi nhớ rất rõ vì lúc 21h15 đài truyền hình có phát bản tin thời tiết đêm, chú ấy còn chỉ vào màn hình bàn tán về đợt không khí lạnh tăng cường." },
+        { "n": 4, "text": "Đến đúng 23h45 tôi dọn bàn cờ để chuẩn bị ca ghi số liệu lúc nửa đêm, chú Duẩn mới khoác áo mưa đứng dậy đi về." },
+        { "n": 5, "text": "Suốt thời gian đó chú ấy không hề rời khỏi phòng trực của trạm lấy nửa bước." }
+      ]
+    },
+    {
+      "id": "d09",
+      "stage": 2,
+      "type": "testimony",
+      "title": "Lời khai của lái buôn Trần Đại",
+      "date": "14h15 ngày 15/12/2003",
+      "lines": [
+        { "n": 1, "text": "Tôi có nợ ông Khải tiền cọc hoa cúc Tết thật, nhưng tôi hẹn cuối tháng trả đủ." },
+        { "n": 2, "text": "Tối qua từ 19h xe tải của tôi bị hỏng lốp ở khu vực đèo D'Ran, tôi ngồi đợi thợ vá xe đến 23h đêm." },
+        { "n": 3, "text": "Chủ tiệm sửa xe và hai phụ xe của tôi đều có thể làm chứng, tôi không có mặt ở Trại Mát tối qua." }
+      ]
+    },
+    {
+      "id": "d10",
+      "stage": 3,
+      "type": "report",
+      "title": "Kết quả phân tích vi thể mẫu phấn hoa trên áo nạn nhân",
+      "date": "16h00 ngày 15/12/2003",
+      "content": "**KẾT QUẢ GIÁM ĐỊNH SINH HỌC VI THỂ**\n\nKiểm tra các mẫu dính trên mặt ngoài áo khoác len của ông Lâm Khải thu được:\n1. Không tìm thấy phấn hoa thông hay phấn hoa hồng ngoại lai.\n2. Phát hiện mật độ cực cao (hơn 1.200 hạt/cm²) của hạt phấn hoa cúc hoàng yến đại đóa.\n3. **Đặc điểm phân bố**: Loại hoa cúc này thu hoạch vụ đông và hiện chỉ được đóng thùng bảo quản duy nhất trong **Kho lạnh số 2** của trang trại để chuẩn bị xuất đi Đài Loan. Không có bất kỳ khóm cúc hoàng yến nào mọc ngoài đồi thông hay khu lò sấy."
+    },
+    {
+      "id": "d11",
+      "stage": 3,
+      "type": "report",
+      "title": "Trích xuất đồng hồ đo điện và nhiệt độ kho lạnh số 2",
+      "date": "17h00 ngày 15/12/2003",
+      "content": "**DỮ LIỆU TỰ ĐỘNG GHI NHẬN TẠI KHO LẠNH SỐ 2 (ĐÊM 14/12)**\n\n- Kho lạnh số 2 duy trì nhiệt độ cài đặt từ 0°C đến 1.5°C.\n- **Bất thường 1 (18h38 - 18h46)**: Cửa kho mở liên tục trong 8 phút. Công suất máy nén khí vọt lên 180% để bù nhiệt độ, cảm biến nhiệt độ kho tăng từ 1°C lên 6°C rồi giảm dần trở lại 0°C.\n- **Bất thường 2 (00h15 - 00h22 rạng sáng 15/12)**: Cửa kho tiếp tục mở lần thứ hai trong 7 phút, máy nén khí kích hoạt chu kỳ làm lạnh khẩn cấp."
+    },
+    {
+      "id": "d12",
+      "stage": 3,
+      "type": "photo",
+      "title": "Ảnh chụp kho lạnh số 2 và máy làm đá vảy",
+      "date": "17h30 ngày 15/12/2003",
+      "image": "images/d12-kho-lanh.webp",
+      "content": "Ảnh chụp thực nghiệm hiện trường tại Kho lạnh số 2: Các kệ cúc hoàng yến đóng thùng cacton. Dưới sàn pallet nhựa đọng các vảy đá dăm li ti rơi ra từ máy làm đá vảy tuyết trùng khớp hoàn toàn với mẫu dăm đá dính ở đế dép xốp của nạn nhân."
+    },
+    {
+      "id": "d13",
+      "stage": 3,
+      "type": "report",
+      "title": "Biên bản kiểm tra rãnh thoát nước kho lạnh số 2",
+      "date": "18h00 ngày 15/12/2003",
+      "content": "**THU THẦM VẬT CHỨNG TRONG KHO LẠNH SỐ 2**\n\nTại khe lưới lọc của rãnh thoát nước dưới chân kệ hoa cúc kho lạnh số 2, cán bộ kỹ thuật hình sự đã phát hiện:\n1. Một mẩu đầu lọc tàn thuốc lá Bastos vỏ đỏ bị ngâm nước băng.\n2. Vài sợi tơ len màu nâu sẫm vướng trên mép pallet nhựa, đồng chất với sợi len áo khoác của nạn nhân Lâm Khải."
+    },
+    {
+      "id": "d14",
+      "stage": 4,
+      "type": "report",
+      "title": "Bản phân tích y pháp về hiện tượng co cứng tử thi trong môi trường lạnh sâu",
+      "date": "20h00 ngày 15/12/2003",
+      "content": "**GIẢI MÃ SAI LỆCH THỜI GIAN TỬ VONG**\n\n- Trong điều kiện nhiệt độ phòng 20°C, co cứng tử thi hoàn toàn (rigor mortis) thường mất từ 10 đến 12 giờ sau khi chết.\n- Tuy nhiên, nếu tử thi được đặt ngay lập tức vào môi trường nhiệt độ cận 0°C (như kho lạnh số 2): Quá trình hạ thân nhiệt tăng tốc gấp 4 lần, các sợi cơ actin và myosin bị đông cứng cơ học nhanh chóng, khiến toàn bộ cơ bắp đông cứng hoàn toàn chỉ sau 2 đến 3 giờ!\n- **Kết luận pháp y đính chính**: Nạn nhân thực chất đã bị sát hại từ khoảng 18h30 chiều 14/12, sau đó thi thể bị giấu trong kho lạnh số 2 suốt 5 tiếng đồng hồ. Việc thi thể bị đưa ra ngoài trời lúc 00h20 sáng đã tạo ra hiện tượng 'giả mạo thời gian tử vong', khiến kết quả đo lúc sáng sớm bị nhầm là nạn nhân chết vào khoảng 21h-22h!"
+    },
+    {
+      "id": "d15",
+      "stage": 4,
+      "type": "report",
+      "title": "Biên bản thu giữ bao thuốc lá trên người Hoàng Văn Duẩn",
+      "date": "20h45 ngày 15/12/2003",
+      "content": "**TANG VẬT THU GIỮ TỪ HOÀNG VĂN DUẨN**\n\nKhám xét túi áo khoác của Hoàng Văn Duẩn thu được: Một bao thuốc lá Bastos đỏ hút dở còn 5 điếu. Trưởng trạm khí tượng Bùi Văn Thao xác nhận tối qua Duẩn chỉ hút duy nhất loại thuốc lá này khi ngồi đánh cờ."
+    },
+    {
+      "id": "d16",
+      "stage": 4,
+      "type": "report",
+      "title": "Bản đối chiếu dấu vết bánh xe cút kít",
+      "date": "21h15 ngày 15/12/2003",
+      "content": "**KẾT QUẢ ĐỐI CHIẾU DẤU VẾT CƠ HỌC**\n\nChiếc xe cút kít một bánh để sau kho lạnh số 2 có vết mòn lốp khuyết góc bên trái trùng khớp 100% với vệt lằn bánh xe trên dốc thông (d02, d05). Trên tay cầm xe rùa có dấu vân tay của Hoàng Văn Duẩn."
+    },
+    {
+      "id": "d17",
+      "stage": 4,
+      "type": "report",
+      "title": "Bản thú tội của Hoàng Văn Duẩn",
+      "date": "22h30 ngày 15/12/2003",
+      "content": "**LỜI THÚ NHẬN CỦA HOÀNG VĂN DUẨN**\n\n'Tôi đã đổ mồ hôi nước mắt 5 năm trời để tạo ra giống hồng nhung lai Pháp cho trang trại. Vậy mà chiều hôm qua ông Khải tuyên bố giống hoa đứng tên cá nhân ông ấy và định tống cổ tôi đi sau vụ Tết. Tôi mất hết tự chủ, vớ thanh sắt đánh gục ông ấy rồi siết cổ lúc 18h30. Tôi biết nếu để xác ở ngoài thì người ta sẽ biết ngay giờ chết lúc tôi còn ở trang trại, nên tôi tống xác vào kho lạnh số 2 đông đá rồi thong thả sang trạm khí tượng đánh cờ để tạo chứng cứ ngoại phạm...'"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "stage": 1,
+      "type": "evidence",
+      "title": "Dấu vết bất thường nơi đồi thông",
+      "intro": "Hiện trường ban đầu là triền dốc thông tự nhiên đất đỏ bazan. Hãy tìm ra các dấu hiệu vật lý chứng tỏ hiện trường này có sự can thiệp nhân tạo và vật thể lạ từ nơi khác mang tới.",
+      "prompt": "Ghim 2 tài liệu chỉ ra vật chất lạ dính trên người nạn nhân không thuộc tự nhiên đồi thông và phương tiện vận chuyển thi thể.",
+      "need": 2,
+      "answer": ["d02", "d05"],
+      "hints": [
+        "Kiểm tra vật chất dính ở đế dép nạn nhân trong biên bản khám nghiệm hiện trường.",
+        "Xem xét dấu vết di chuyển cơ học được ghi lại bằng hình ảnh trên triền dốc."
+      ],
+      "explanation": [
+        "Tài liệu d02 ghi nhận đế dép xốp của nạn nhân dính đá vảy nhân tạo li ti trong khi mặt đất xung quanh là đất thịt mùn thông.",
+        "Tài liệu d05 (và ảnh hiện trường) chỉ ra vệt bánh xe cút kít đơn chở vật nặng từ đường bê tông trượt xuống rãnh cỏ."
+      ],
+      "nudges": [
+        {
+          "picks": ["d01", "d04"],
+          "message": "Báo chí và giám định pháp y tử thi chưa mô tả dấu vết cơ học ngoài mặt đất hiện trường."
+        }
+      ]
+    },
+    {
+      "id": "q2",
+      "stage": 2,
+      "type": "line",
+      "title": "Lời khai dối trá về kho lạnh số 2",
+      "intro": "Kỹ sư Hoàng Văn Duẩn đưa ra lời khai khẳng định mình không hề dính dáng gì đến kho lạnh số 2 sau giờ làm việc buổi chiều.",
+      "prompt": "Hãy chọn dòng lời khai trong biên bản hỏi cung Hoàng Văn Duẩn (d07) khẳng định y hoàn toàn không bước chân vào kho lạnh số 2 từ sau 17h00 chiều.",
+      "answer": ["d07:005"],
+      "hints": [
+        "Tìm dòng lời khai mà Duẩn nói về thời gian và việc không bước chân vào kho lạnh số 2."
+      ],
+      "explanation": [
+        "Tại dòng d07:005, Duẩn khai: 'Tôi khẳng định từ sau 17h chiều hôm qua tôi không hề bước chân vào kho lạnh số 2 vì mẻ cúc xuất khẩu đã đóng thùng xong từ trưa'."
+      ]
+    },
+    {
+      "id": "q3",
+      "stage": 3,
+      "type": "evidence",
+      "title": "Bằng chứng thi thể bị lưu trữ trong kho lạnh",
+      "intro": "Để bác bỏ bằng chứng ngoại phạm đánh cờ của Duẩn, điều tra viên cần chứng minh thi thể nạn nhân từng nằm trong kho lạnh số 2 trước khi bị vứt ra đồi thông.",
+      "prompt": "Ghim 2 tài liệu chứng minh thi thể ông Lâm Khải đã ở trong kho lạnh số 2 thông qua mẫu sinh học vi thể và dữ liệu nhiệt độ kho lạnh đêm xảy ra án mạng.",
+      "need": 2,
+      "answer": ["d10", "d11"],
+      "hints": [
+        "Một tài liệu phân tích phấn hoa đặc thù chỉ có trong kho lạnh số 2 dính trên áo nạn nhân.",
+        "Một tài liệu ghi nhận biến động công suất và cửa kho lạnh số 2 bị mở bất thường vào ban đêm."
+      ],
+      "explanation": [
+        "Tài liệu d10 xác nhận áo khoác nạn nhân dính mật độ lớn phấn hoa cúc hoàng yến đại đóa - giống hoa chỉ có trong kho lạnh số 2.",
+        "Tài liệu d11 cho thấy kho lạnh số 2 bị mở cửa 2 lần bất thường lúc 18h38 (khi tống xác vào) và 00h15 (khi mang xác ra vứt)."
+      ],
+      "nudges": [
+        {
+          "picks": ["d12", "d13"],
+          "message": "d12 và d13 là vật chứng bổ sung, nhưng d10 (phấn hoa) và d11 (dữ liệu nhiệt độ giờ mở cửa) mới trực tiếp chứng minh thi thể đã nằm trong kho suốt thời gian đó."
+        }
+      ]
+    },
+    {
+      "id": "q4",
+      "stage": 4,
+      "type": "choice",
+      "title": "Thủ phạm và thủ pháp ngụy tạo thời gian tử vong",
+      "intro": "Khi thủ đoạn đông đá thi thể để đánh lừa chiếc nhiệt kế pháp y bị bóc trần, kẻ chủ mưu không còn đường chối cãi.",
+      "prompt": "Dựa vào toàn bộ chứng cứ trong hồ sơ, ai là kẻ đã sát hại ông Lâm Khải và ngụy tạo bằng chứng ngoại phạm bằng kho lạnh số 2?",
+      "options": [
+        "Con gái nạn nhân Lâm Tuyết Mai",
+        "Kỹ sư quản lý Hoàng Văn Duẩn",
+        "Lái buôn Trần Đại",
+        "Trưởng trạm khí tượng Bùi Văn Thao"
+      ],
+      "answer": [1],
+      "hints": [
+        "Ai là người có chìa khóa kho lạnh, để lại tàn thuốc lá Bastos đỏ và xe cút kít dính dấu vân tay?",
+        "Ai có động cơ bị cướp đoạt bản quyền giống hoa hồng lai Pháp?"
+      ],
+      "explanation": [
+        "Hoàng Văn Duẩn là người nắm rõ quy trình kho lạnh số 2, để lại mẩu thuốc Bastos đỏ (d13, d15), xe rùa dính dấu vân tay (d16) và đã sát hại nạn nhân lúc 18h30 rồi dùng kho lạnh làm đông cứng thi thể để tạo bằng chứng ngoại phạm đánh cờ (d14, d17)."
+      ]
+    }
+  ],
+  "finale": {
+    "culprit": "Hoàng Văn Duẩn",
+    "text": "Trước những bằng chứng khoa học hình sự sắc bén về phấn hoa cúc đại đóa, đá vảy tuyết và biểu đồ nhiệt độ tự động của kho lạnh số 2, Hoàng Văn Duẩn đã sụp đổ và khai nhận toàn bộ tội trạng. Lòng thù hận vì bị cướp mất thành quả lai tạo giống hoa đã biến người kỹ sư thành kẻ giết người máu lạnh. Tấm màn sương lạnh bao phủ đồi Trại Mát cuối cùng đã được vén lên."
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "cases": [
+    {
+      "id": "demo-01",
+      "no": 0,
+      "status": "available",
+      "title": "Chiếc đồng hồ ở ngõ Gác Chuông",
+      "tagline": "Một đêm mất trộm, ba người trong nhà, một cánh cửa sổ vỡ.",
+      "difficulty": 1,
+      "players": "1–4",
+      "duration": "20–30 phút",
+      "setting": "Phố cổ, Hà Nội (hư cấu)",
+      "tags": [
+        "Trộm cắp",
+        "Hồ sơ mẫu",
+        "Ngắn"
+      ],
+      "cover": "images/cover.webp"
+    },
+    {
+      "id": "con-nuoc-ram-thang-gieng",
+      "no": 1,
+      "status": "available",
+      "title": "Con nước Rằm tháng Giêng",
+      "tagline": "Cửa khoang then cài từ bên trong, nhưng nước sông Hàm Luông đã dâng ngập mặt người nằm mộng.",
+      "difficulty": 3,
+      "players": "2–6",
+      "duration": "90–120 phút",
+      "setting": "Xã Tân Mỹ, Bến Tre (hư cấu)",
+      "tags": [
+        "Án mạng",
+        "Phòng kín",
+        "Sông nước"
+      ],
+      "cover": "images/cover.webp"
+    },
+    {
+      "id": "mua-dong-binh-ty",
+      "no": 2,
+      "status": "available",
+      "title": "Mùa đông năm Bính Tý",
+      "tagline": "Giao thừa đầu tiên vắng tiếng pháo, căn hộ tầng hai im lìm sau chén trà hoa cúc.",
+      "difficulty": 4,
+      "players": "2–6",
+      "duration": "120 phút",
+      "setting": "Khu tập thể Dệt Thống Nhất, Hà Nội (hư cấu)",
+      "tags": [
+        "Án mạng",
+        "Đầu độc",
+        "Bao cấp"
+      ],
+      "cover": "images/cover.webp"
+    }
+  ]
+}

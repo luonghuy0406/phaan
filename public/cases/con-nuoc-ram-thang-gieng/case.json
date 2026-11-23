@@ -1,0 +1,1582 @@
+{
+  "id": "con-nuoc-ram-thang-gieng",
+  "no": 1,
+  "status": "available",
+  "title": "Con nước Rằm tháng Giêng",
+  "subtitle": "Kỳ án án mạng khoang ghe kín trên sông Hàm Luông",
+  "tagline": "Cửa khoang then cài từ bên trong, nhưng nước sông Hàm Luông đã dâng ngập mặt người nằm mộng.",
+  "difficulty": 3,
+  "players": "2–6",
+  "duration": "90–120 phút",
+  "setting": "Xã Tân Mỹ, huyện Tân Trúc, Bến Tre (hư cấu)",
+  "era": "Tháng 2/2006",
+  "tags": [
+    "Án mạng",
+    "Phòng kín",
+    "Sông nước"
+  ],
+  "cover": "images/cover.webp",
+  "contentWarning": "Hồ sơ vụ án có mô tả cái chết do ngạt nước và tranh chấp nợ nần. Mọi tình tiết và nhân vật đều hư cấu.",
+  "synopsis": [
+    "Sáng 13/2/2006, người làm công xưởng đóng ghe xã Tân Mỹ bàng hoàng phát hiện chủ xưởng Võ Văn Kiên tử vong bên trong khoang chiếc ghe chài Phước Hải 09 neo tại bến sau nhà. Khoang ghe ngập sâu trong nước sông, nhưng cánh cửa khoang bên trên vẫn cài then gỗ lim kiên cố từ bên trong.",
+    "Đêm Rằm tháng Giêng là đêm hội hoa đăng đông đúc nhất năm trên sông Hàm Luông. Giữa dòng triều cường cuồn cuộn đỏ ngầu phù sa, ai đã biến khoang ghe quen thuộc thành một nấm mồ không lối thoát?"
+  ],
+  "intro": {
+    "title": "Cái chết trong khoang ghe chài Phước Hải 09",
+    "paragraphs": [
+      "Vào lúc 06 giờ 15 phút sáng ngày 13 tháng 2 năm 2006 (tức sáng 16 tháng Giêng năm Bính Tuất), ông Võ Văn Kiên (63 tuổi, thường gọi Bảy Kiên) – chủ xưởng đóng ghe chài kiêm người cho vay cầm cố có tiếng tại xã Tân Mỹ – được phát hiện đã chết ngạt nước trong chiếc ghe chài Phước Hải 09 neo ở bến riêng sau nhà.",
+      "Kỳ lạ thay, cửa khoang ghe phía trên vẫn cài thanh then gỗ lim từ bên trong, không có dấu vết đục khoét hay cạy phá. Người dân đồn thổi nạn nhân bị ma da dìm chết, nhưng biên bản giám định hiện trường chỉ ra nhiều dấu hiệu bất thường.",
+      "Bạn là điều tra viên được phân công thụ lý hồ sơ. Hãy đối chiếu các tài liệu, biên bản và lời khai qua từng trọng điểm để tìm ra chân tướng sự việc."
+    ],
+    "objective": "Tìm ra ai đã sát hại ông Bảy Kiên, bằng thủ đoạn gì và vì động cơ nào."
+  },
+  "documents": [
+    {
+      "id": "d01",
+      "stage": 1,
+      "type": "newspaper",
+      "title": "Báo Đồng Khởi Mới: Cái chết bí ẩn trong khoang ghe cài then",
+      "masthead": "Đồng Khởi Mới",
+      "issue": "Số 412",
+      "date": "Thứ Ba, 14/2/2006",
+      "headline": "Bến sông Tân Mỹ xôn xao vụ chủ xưởng ghe chết ngạt trong khoang kín",
+      "deck": "Cửa khoang then cài kiên cố bên trong, nước sông dâng ngập nửa khoang thuyền: Người dân xóm rạch bàng hoàng sau đêm hội hoa đăng.",
+      "image": "images/d01-newspaper.webp",
+      "imageCaption": "Bến ghe sau xưởng mộc của ông Võ Văn Kiên sáng ngày 13/2.",
+      "paragraphs": [
+        "Sáng sớm 13/2 (tức ngày 16 tháng Giêng âm lịch), tại ấp Tân Lợi, xã Tân Mỹ, người làm công phát hiện ông Võ Văn Kiên (63 tuổi), chủ xưởng đóng ghe chài lớn nhất vùng, đã tử vong bất thường.",
+        "Nạn nhân được tìm thấy trong tư thế nằm trên sạp ván khoang ghe chài Phước Hải 09 neo sau nhà, toàn bộ khoang ghe ngập nước sâu hơn 1 mét. Đáng chú ý, nắp cửa khoang ghe vẫn gài then gỗ lim chắc chắn từ phía trong.",
+        "Đêm Rằm tháng Giêng là đêm hội hoa đăng, khúc sông Hàm Luông tấp nập thuyền bè qua lại viếng chùa Phước Quang. Bến đò ngang cách xưởng ghe hơn một trăm mét cũng hoạt động suốt đêm.",
+        "Được biết ông Kiên có xưởng ghe bề thế và chuyên cho vay cầm cố vườn dừa trong vùng. Hiện Cơ quan Cảnh sát điều tra Công an huyện Tân Trúc đang khẩn trương thu thập tài liệu để làm rõ nguyên nhân cái chết."
+      ]
+    },
+    {
+      "id": "d02",
+      "stage": 1,
+      "type": "report",
+      "title": "Biên bản khám nghiệm hiện trường",
+      "header": [
+        "Công an tỉnh Bến Tre",
+        "Công an huyện Tân Trúc · Đội CSHS"
+      ],
+      "heading": "Biên bản khám nghiệm hiện trường",
+      "code": "14/KNHT",
+      "date": "08 giờ 30 ngày 13 tháng 02 năm 2006",
+      "fields": [
+        {
+          "label": "Địa điểm",
+          "value": "Bến ghe sau nhà số 48 ấp Tân Lợi, xã Tân Mỹ"
+        },
+        {
+          "label": "Nạn nhân",
+          "value": "Võ Văn Kiên (63 tuổi, chủ hộ)"
+        },
+        {
+          "label": "Hiện trường chính",
+          "value": "Ghe chài vỏ gỗ sao Phước Hải 09 neo bến riêng"
+        },
+        {
+          "label": "Cán bộ lập biên bản",
+          "value": "Đại úy Lê Thành Danh"
+        }
+      ],
+      "sections": [
+        {
+          "heading": "1. Vị trí và tình trạng phương tiện",
+          "paragraphs": [
+            "Chiếc ghe chài Phước Hải 09 neo bằng hai dây thừng dừa vào hai cọc bần sau xưởng mộc. Dây neo còn nguyên vẹn, không có dấu hiệu bị tháo mở.",
+            "Thân ghe chìm mấp mé mép nước, khoang giữa ngập đầy nước sông phù sa màu vàng đục. Đáy ghe tựa trên bùn bãi bồi ven mép rạch."
+          ]
+        },
+        {
+          "heading": "2. Cửa khoang và lối ra vào",
+          "paragraphs": [
+            "Cửa nắp khoang chính bằng gỗ lim dày 4cm. **Thanh then gỗ lim cài ngang chốt sập bên trong khoang vẫn ở vị trí khóa chặt**. Lực lượng chức năng phải dùng cưa tay cắt chốt để mở cửa tiếp cận bên trong.",
+            "Không có vết cạy phá hay cưa đục trên bề mặt cửa nắp khoang từ phía bên ngoài."
+          ]
+        },
+        {
+          "heading": "3. Vật chứng thu lượm trong khoang",
+          "paragraphs": [
+            "Thi thể nạn nhân nằm ngửa trên sạp ván ngủ. Nạn nhân mặc áo bà ba nâu, không mang dép.",
+            "Trên chiếc bàn gỗ nhỏ cạnh vách khoang có một ve rượu thủy tinh 500ml màu nâu còn lại khoảng 100ml rượu thuốc, và một chiếc cốc sứ bị vỡ rơi dưới sàn nước.",
+            "Túi áo nạn nhân có một chùm chìa khóa xưởng, không có tiền mặt hay giấy nợ."
+          ]
+        },
+        {
+          "heading": "4. Ghi nhận khu vực phụ cận",
+          "paragraphs": [
+            "Bờ rạch từ cổng xưởng ra bến sau có một vệt bùn trơn trượt. Tủ gỗ văn phòng làm việc tại xưởng mộc có dấu vết cạy khóa ngăn kéo dưới cùng."
+          ]
+        }
+      ],
+      "signature": "Đại úy Lê Thành Danh (ký và ghi rõ họ tên)"
+    },
+    {
+      "id": "d03",
+      "type": "photo",
+      "title": "Ảnh hiện trường: Then cài mặt trong nắp khoang",
+      "image": "images/d03-then-cai.webp",
+      "caption": "Thanh then gỗ lim vẫn nằm gọn trong khấc khóa ở mặt trong nắp khoang. Vết cưa mới ở mép chốt là của tổ cứu hộ khi mở khoang.",
+      "label": "Ảnh chụp lưu hồ sơ số 02 · 13/2/2006",
+      "stage": 1
+    },
+    {
+      "id": "d04",
+      "stage": 1,
+      "type": "photo",
+      "title": "Ảnh hiện trường: Chiếc ghe Phước Hải 09 neo sau xưởng",
+      "image": "images/d04-boat.webp",
+      "caption": "Khoang chiếc ghe chài Phước Hải 09 neo sát mép bến sau xưởng mộc ông Kiên sáng ngày 13/2/2006.",
+      "label": "Ảnh chụp lưu hồ sơ số 01"
+    },
+    {
+      "id": "d05",
+      "stage": 1,
+      "type": "report",
+      "title": "Bản kết luận giám định pháp y tử thi",
+      "header": [
+        "Phòng Kỹ thuật Hình sự",
+        "Công an tỉnh Bến Tre"
+      ],
+      "heading": "Bản kết luận giám định pháp y tử thi",
+      "code": "08/GĐTT",
+      "date": "16 giờ 00 ngày 13 tháng 02 năm 2006",
+      "fields": [
+        {
+          "label": "Đối tượng giám định",
+          "value": "Tử thi Võ Văn Kiên, sinh năm 1943"
+        },
+        {
+          "label": "Thời gian giải phẫu",
+          "value": "10 giờ 30 ngày 13/02/2006"
+        },
+        {
+          "label": "Giám định viên",
+          "value": "Bác sĩ pháp y Trần Thanh Bình"
+        }
+      ],
+      "sections": [
+        {
+          "heading": "1. Dấu vết thương tích bên ngoài",
+          "paragraphs": [
+            "Không phát hiện dấu vết chấn thương sọ não, không có vết bầm tím do siết cổ hay tác động ngoại lực chèn ép vùng ngực, cổ.",
+            "Không có dấu hiệu nạn nhân giằng co hay vật lộn trước khi tử vong."
+          ]
+        },
+        {
+          "heading": "2. Dấu hiệu ngạt nước",
+          "paragraphs": [
+            "Có nấm bọt mịn màu hồng nhạt ở hai lỗ mũi và khóe miệng. Khí quản và hai phế quản chứa nhiều dịch nước màu nâu có lẫn bùn cặn phù sa sông Hàm Luông.",
+            "Hai phổi phù to, căng phồng ứ khí và nước, nhiều điểm xuất huyết dưới màng phổi. Kết luận nguyên nhân trực tiếp dẫn tới tử vong: **Ngạt nước ngọt cấp tính**."
+          ]
+        },
+        {
+          "heading": "3. Kết quả xét nghiệm độc chất",
+          "paragraphs": [
+            "Trong dịch dạ dày và mẫu máu phát hiện vết Strychnine chiết xuất từ rễ cây mã tiền (loại thảo mộc hoang dại).",
+            "Hàm lượng đo được ở mức thấp (dưới ngưỡng gây co giật tử vong), nhưng đủ tác dụng **ức chế dẫn truyền thần kinh vận động ngoại biên, làm tê liệt mềm cơ bắp tứ chi tạm thời** trong khoảng 1 đến 2 giờ.",
+            "Thời điểm nạn nhân bắt đầu uống rượu thuốc ước tính khoảng 21h00 đến 21h30 ngày 12/2. Thời điểm hít phải nước ngạt tử vong khoảng **23h00 đến 23h45 đêm 12/2/2006**."
+          ]
+        }
+      ],
+      "signature": "Giám định viên: BS. Trần Thanh Bình"
+    },
+    {
+      "id": "d06",
+      "type": "testimony",
+      "title": "Lời khai của Đoàn Văn Lợi (người phát hiện)",
+      "header": [
+        "Công an huyện Tân Trúc",
+        "Đội Cảnh sát điều tra"
+      ],
+      "date": "07 giờ 30 ngày 13 tháng 02 năm 2006",
+      "fields": [
+        {
+          "label": "Họ và tên",
+          "value": "Đoàn Văn Lợi (Tư Lợi), 41 tuổi"
+        },
+        {
+          "label": "Nghề nghiệp",
+          "value": "Thợ phụ xưởng đóng ghe Kiên Phát"
+        }
+      ],
+      "lines": [
+        {
+          "n": 1,
+          "speaker": "Cán bộ",
+          "text": "Anh kể lại lúc phát hiện sự việc."
+        },
+        {
+          "n": 2,
+          "speaker": "Đoàn Văn Lợi",
+          "text": "Sáu giờ sáng tôi ra bến sau lấy ván ép thì thấy chiếc Phước Hải 09 chìm gần sát mép nước, chỉ còn mui khoang nhô lên."
+        },
+        {
+          "n": 3,
+          "speaker": "Đoàn Văn Lợi",
+          "text": "Tôi kêu “Chú Bảy ơi” mấy lần không ai trả lời. Nắp khoang đóng kín, tôi giật mạnh mà không nhúc nhích, biết là then gài ở trong."
+        },
+        {
+          "n": 4,
+          "speaker": "Cán bộ",
+          "text": "Anh có thấy ai lảng vảng ở bến không?"
+        },
+        {
+          "n": 5,
+          "speaker": "Đoàn Văn Lợi",
+          "text": "Không có ai. Mặt sàn bến chỉ có dấu dép của tôi với chú Bảy từ chiều hôm qua, không thấy dấu chân lạ."
+        },
+        {
+          "n": 6,
+          "speaker": "Cán bộ",
+          "text": "Ông Kiên có hay uống rượu say không?"
+        },
+        {
+          "n": 7,
+          "speaker": "Đoàn Văn Lợi",
+          "text": "Chú Bảy uống rượu thuốc mỗi tối một cốc nhỏ cho đỡ nhức khớp thôi, tôi chưa khi nào thấy chú say."
+        },
+        {
+          "n": 8,
+          "speaker": "Đoàn Văn Lợi",
+          "text": "Chú ngủ nhạy lắm. Đêm nào ngủ ghe mà nghe động dưới nước là chú bật dậy cầm đèn pin ra soi liền."
+        },
+        {
+          "n": 9,
+          "speaker": "Cán bộ",
+          "text": "Theo anh, nếu nước vào khoang thì ông Kiên có thoát ra được không?"
+        },
+        {
+          "n": 10,
+          "speaker": "Đoàn Văn Lợi",
+          "text": "Dễ ợt. Then cài đẩy một cái là bật ra, sạp ngủ cách nắp khoang có hai bậc thang. Tôi không hiểu nổi sao chú lại nằm yên trong đó."
+        }
+      ],
+      "signature": "Người khai: Đoàn Văn Lợi",
+      "stage": 1
+    },
+    {
+      "id": "d07",
+      "stage": 1,
+      "type": "testimony",
+      "title": "Biên bản ghi lời khai của Nguyễn Thị Lành",
+      "header": [
+        "Công an huyện Tân Trúc",
+        "Đội Cảnh sát Điều tra"
+      ],
+      "heading": "Biên bản ghi lời khai",
+      "date": "14 giờ 00 ngày 13 tháng 02 năm 2006",
+      "fields": [
+        {
+          "label": "Họ và tên",
+          "value": "Nguyễn Thị Lành, 32 tuổi"
+        },
+        {
+          "label": "Quan hệ với nạn nhân",
+          "value": "Vợ kế (chung sống từ năm 2004)"
+        },
+        {
+          "label": "Nơi cư trú",
+          "value": "Ấp Tân Lợi, xã Tân Mỹ, Tân Trúc, Bến Tre"
+        }
+      ],
+      "lines": [
+        {
+          "n": 1,
+          "speaker": "Cán bộ",
+          "text": "Chị kể lại sinh hoạt của ông Kiên vào chiều tối ngày Rằm tháng Giêng (12/2) vừa qua."
+        },
+        {
+          "n": 2,
+          "speaker": "Nguyễn Thị Lành",
+          "text": "Dạ, chiều Rằm ổng đi qua xưởng kiểm gỗ rồi về ăn cơm lúc sáu giờ chiều."
+        },
+        {
+          "n": 3,
+          "speaker": "Nguyễn Thị Lành",
+          "text": "Tầm bảy giờ tối thằng Hưng con ổng sang xin tiền trả nợ đá gà, hai cha con cự cãi dữ lắm rồi thằng Hưng bực bội bỏ đi."
+        },
+        {
+          "n": 4,
+          "speaker": "Cán bộ",
+          "text": "Ông Kiên xuống ghe ngủ từ lúc nào, và ve rượu thuốc trên ghe do ai mang đến?"
+        },
+        {
+          "n": 5,
+          "speaker": "Nguyễn Thị Lành",
+          "text": "Khoảng chín giờ đêm ổng xách ve rượu thuốc xuống ghe Phước Hải ngủ. Ổng nói đêm Rằm trộm hay rình kéo gỗ bến sông nên ổng phải ngủ lại canh chừng."
+        },
+        {
+          "n": 6,
+          "speaker": "Nguyễn Thị Lành",
+          "text": "Ve rượu đó sáng Rằm tôi thấy bác Ba Thuyền lái đò xách sang biếu ổng, nói là rượu rễ nhàu rừng trị đau nhức xương khớp."
+        },
+        {
+          "n": 7,
+          "speaker": "Cán bộ",
+          "text": "Đêm đó chị ở đâu, làm gì?"
+        },
+        {
+          "n": 8,
+          "speaker": "Nguyễn Thị Lành",
+          "text": "Tôi ở trong nhà chính dọn dẹp bàn thờ rồi uống thuốc an thần đi ngủ từ chín rưỡi tối, cửa nhà khóa kỹ, ngủ một mạch tới sáng."
+        },
+        {
+          "n": 9,
+          "speaker": "Cán bộ",
+          "text": "Chị có nghe thấy tiếng đập cửa kêu cứu hay tiếng động cơ lạ ngoài bến sông không?"
+        },
+        {
+          "n": 10,
+          "speaker": "Nguyễn Thị Lành",
+          "text": "Dạ không hề, nhà cách bến sông một đoạn sân, đêm Rằm lại mưa dầm và máy đò ngang chạy xình xịch ngoài sông nên tôi không nghe gì lạ cả."
+        }
+      ],
+      "signature": "Người khai: Nguyễn Thị Lành"
+    },
+    {
+      "id": "d08",
+      "type": "note",
+      "title": "Sổ tay hiện trường: Ghi chép khúc sông Tân Mỹ",
+      "paragraphs": [
+        "Sổ tay của Đại úy Lê Thành Danh, sáng 13/2:",
+        "– Bến đò ngang Tân Mỹ (chòi canh của ông Trần Văn Thuyền) nằm phía **thượng nguồn**, cách bến ghe sau xưởng ông Kiên chừng 120 mét theo bờ kè đá.",
+        "– Khi nước lớn, dòng chảy đi từ phía bến đò xuôi về phía xưởng ghe.",
+        "– Cổng xưởng mộc nhìn chéo ra bến đò. Chùa Phước Quang ở bờ bên kia sông.",
+        "– Ghe Phước Hải 09 neo mũi quay ra lòng sông. Lúc nước lớn, đáy lườn ghe chìm sâu khoảng 1,2 mét.",
+        "– Cần hỏi: những ai biết ông Kiên ngủ lại ghe đêm Rằm?"
+      ],
+      "signature": "L.T.Danh",
+      "stage": 1
+    },
+    {
+      "id": "d09",
+      "stage": 2,
+      "type": "report",
+      "title": "Biên bản giám định kỹ thuật phương tiện thủy",
+      "header": [
+        "Phòng Cảnh sát Giao thông Đường thủy",
+        "Công an tỉnh Bến Tre"
+      ],
+      "heading": "Biên bản giám định kỹ thuật phương tiện",
+      "code": "03/GĐ-PTT",
+      "date": "10 giờ 00 ngày 14 tháng 02 năm 2006",
+      "fields": [
+        {
+          "label": "Đối tượng",
+          "value": "Ghe chài vỏ gỗ sao 'Phước Hải 09', tải trọng 12 tấn"
+        },
+        {
+          "label": "Chủ phương tiện",
+          "value": "Võ Văn Kiên (đã chết)"
+        },
+        {
+          "label": "Giám định viên",
+          "value": "Kỹ sư Huỳnh Văn Nghiệp"
+        }
+      ],
+      "sections": [
+        {
+          "heading": "1. Khảo sát thân vỏ và sàn ghe",
+          "paragraphs": [
+            "Vỏ lườn ghe đóng bằng gỗ sao dày 3,5cm, các đường xảm chai còn rất tốt, không có lỗ thủng hay nứt vỡ do va đập ngoại lực.",
+            "Cửa khoang phía trên cao hơn mực nước bình thường 0,8m. Cửa khoang đóng kín, không có khe hở cho nước mưa tràn vào với lưu lượng lớn."
+          ]
+        },
+        {
+          "heading": "2. Khảo sát hệ thống van xả đáy (van lù)",
+          "paragraphs": [
+            "Tại khoang đệm dưới đáy lườn ghe có lắp một **van lù phụ bằng đồng thau đường kính 80mm** dùng để xả bùn đáy khi kéo tàu lên đà sửa chữa.",
+            "Kiểm tra thực tế: **Chốt tán ren của van lù này đã bị tháo rời hoàn toàn và biến mất khỏi vị trí**. Lỗ van lù mở toang khiến nước sông tràn trực tiếp từ đáy lên khoang lót ván.",
+            "Trên đầu ren của cổ van bằng đồng thau có **các vết cào xước kim loại sắc nhọn theo hướng vặn ngược từ phía dưới lườn tàu (tức thao tác từ ngoài nước ngầm lên)**.",
+            "Người ở bên trong khoang ghe không thể với tay tháo chốt van này do bị che chắn bởi lớp ván sàn đệm cố định bằng đinh tán."
+          ]
+        }
+      ],
+      "signature": "Kỹ sư giám định: Huỳnh Văn Nghiệp"
+    },
+    {
+      "id": "d10",
+      "stage": 2,
+      "type": "report",
+      "title": "Bản tin thông số thủy văn trạm Tân Trúc (sông Hàm Luông)",
+      "header": [
+        "Đài Khí tượng Thủy văn tỉnh Bến Tre",
+        "Trạm Thủy văn Tân Trúc (sông Hàm Luông)"
+      ],
+      "heading": "Bảng diễn biến mực nước triều cường Rằm tháng Giêng",
+      "code": "TV-02/2006",
+      "date": "Ngày 13 tháng 02 năm 2006",
+      "fields": [
+        {
+          "label": "Vị trí đo đạc",
+          "value": "Bến phà Tân Trúc - Tân Mỹ, sông Hàm Luông"
+        },
+        {
+          "label": "Thời gian theo dõi",
+          "value": "Từ 12h00 ngày 12/2 đến 12h00 ngày 13/2/2006"
+        }
+      ],
+      "sections": [
+        {
+          "heading": "1. Diễn biến mực nước đêm 12 rạng sáng 13/2/2006",
+          "paragraphs": [
+            "18h00 ngày 12/2: Mực nước +0.45m (nước lớn bắt đầu lên).",
+            "21h00 ngày 12/2: Mực nước +1.10m (nước đang lên nhanh).",
+            "**22h40 đến 23h30 ngày 12/2: Đỉnh triều cường đạt mức cao nhất +1.85m** (nước mấp mé bờ bao các vườn dừa, dòng chảy xiết theo hướng từ thượng nguồn bến đò đổ về phía hạ lưu xưởng ghe).",
+            "00h30 ngày 13/2: Mực nước hạ xuống +1.20m.",
+            "**03h00 đến 05h00 ngày 13/2: Nước ròng kiệt sát đáy, mực nước -0.40m**."
+          ]
+        },
+        {
+          "heading": "2. Ghi chú kỹ thuật thủy triều",
+          "paragraphs": [
+            "Chỉ khi mực nước sông Hàm Luông vượt quá mốc +1.60m thì áp lực nước qua van lù đường kính 80mm mới đủ mạnh để làm ngập sàn ngủ khoang ghe Phước Hải 09 trong vòng 20 phút."
+          ]
+        }
+      ],
+      "signature": "Trạm trưởng trạm thủy văn: Nguyễn Văn Cường"
+    },
+    {
+      "id": "d11",
+      "stage": 2,
+      "type": "evidence",
+      "title": "Phiếu giám định dấu vết cơ học: Chốt van lù và sợi cước",
+      "code": "19/GĐ-KTHS",
+      "image": "images/d10-valve.webp",
+      "imageCaption": "Chốt ren tán van lù đồng số 24 và mẩu sợi cước xanh thu tại hiện trường.",
+      "fields": [
+        {
+          "label": "Cơ quan giám định",
+          "value": "Phòng Kỹ thuật Hình sự Công an tỉnh Bến Tre"
+        },
+        {
+          "label": "Vật phẩm gửi giám định",
+          "value": "Chốt tán ren đồng thu dưới đáy bùn; mẩu sợi cước thu tại cọc neo bến ghe"
+        }
+      ],
+      "paragraphs": [
+        "1. Chốt tán ren bằng đồng thau đường kính ngoài 80mm, kích cỡ giác ốc số 24. Trên các cạnh giác có dấu cọ xát cơ học còn mới nguyên, phù hợp với vết kẹp của miệng kìm mỏ quạ chuyên dụng dùng cho công tác cơ khí thủy công.",
+        "2. Mẩu sợi màu xanh dài 18cm thu tại khe then dây neo bến ghe: Là sợi cước bện nilon tổng hợp chịu mặn loại 3 ly. Đây là loại cước chuyên dùng đan bao chân thợ lặn sông sâu hoặc giằng dây dẫn khí ngậm lặn ngầm."
+      ]
+    },
+    {
+      "id": "d12",
+      "stage": 2,
+      "type": "testimony",
+      "title": "Biên bản ghi lời khai của Võ Quốc Hưng",
+      "header": [
+        "Công an huyện Tân Trúc",
+        "Đội Cảnh sát Điều tra"
+      ],
+      "heading": "Biên bản ghi lời khai",
+      "date": "16 giờ 30 ngày 13 tháng 02 năm 2006",
+      "fields": [
+        {
+          "label": "Họ và tên",
+          "value": "Võ Quốc Hưng, 38 tuổi"
+        },
+        {
+          "label": "Quan hệ với nạn nhân",
+          "value": "Con trai trưởng"
+        },
+        {
+          "label": "Nghề nghiệp",
+          "value": "Thợ cả xưởng đóng ghe Kiên Phát"
+        }
+      ],
+      "lines": [
+        {
+          "n": 1,
+          "speaker": "Cán bộ",
+          "text": "Anh có mặt ở đâu trong khoảng thời gian từ 20 giờ đêm 12/2 đến rạng sáng 13/2?"
+        },
+        {
+          "n": 2,
+          "speaker": "Võ Quốc Hưng",
+          "text": "Tối đó tôi cự cãi với ổng chuyện tiền bạc xong thì đón xe ôm qua cồn bãi xã Bình Khánh coi đá gà cựa sắt."
+        },
+        {
+          "n": 3,
+          "speaker": "Cán bộ",
+          "text": "Ai có thể làm chứng cho việc anh ở xã Bình Khánh suốt đêm?"
+        },
+        {
+          "n": 4,
+          "speaker": "Võ Quốc Hưng",
+          "text": "Trời ơi, nửa đêm công an huyện mấy anh ập vô hốt trọn ổ bạc mười mấy đứa tụi tôi mà! Tôi bị tạm giữ ở công an xã Bình Khánh từ nửa đêm tới sáng."
+        },
+        {
+          "n": 5,
+          "speaker": "Cán bộ",
+          "text": "Biên bản kiểm tra ngăn kéo bàn làm việc tại xưởng mộc của cha anh bị cạy khóa, anh biết gì về việc này?"
+        },
+        {
+          "n": 6,
+          "speaker": "Võ Quốc Hưng",
+          "text": "Tôi thú thật… lúc bảy rưỡi tối trước khi đi đá gà, tôi có lén cạy hộc bàn tìm cuốn sổ nợ với cái sổ đỏ xưởng mộc đặng đem đi cắm tạm, nhưng trong hộc chỉ có đống hóa đơn linh tinh, không có tiền."
+        },
+        {
+          "n": 7,
+          "speaker": "Cán bộ",
+          "text": "Anh có biết ai có thù oán lớn với cha anh không?"
+        },
+        {
+          "n": 8,
+          "speaker": "Võ Quốc Hưng",
+          "text": "Ổng cho vay gắt lắm, ai trễ nợ là ổng đè đầu xiết đất liền. Bác Ba Thuyền lái đò cắm miếng đất hương hỏa sắp tới hạn rằm, mấy bữa trước tôi thấy bác Ba qua năn nỉ quỳ lạy mà ổng không chịu gia hạn."
+        },
+        {
+          "n": 9,
+          "speaker": "Cán bộ",
+          "text": "Chiếc ghe Phước Hải 09 có van xả đáy, thợ trong xưởng ai biết mở van này?"
+        },
+        {
+          "n": 10,
+          "speaker": "Võ Quốc Hưng",
+          "text": "Van lù đó ren đồng số 24, chỉ khi nào ghe kéo lên đà sửa lườn mới dùng cờ-lê hoặc kìm mỏ quạ thợ lặn mở ra. Thợ mộc bình thường không ai chui xuống đáy mở được, chỉ có thợ lặn sông chuyên nghiệp mới lặn gỡ được dưới nước xiết."
+        },
+        {
+          "n": 11,
+          "speaker": "Cán bộ",
+          "text": "Quanh vùng này ai là thợ lặn rành khúc sông đó nhất?"
+        },
+        {
+          "n": 12,
+          "speaker": "Võ Quốc Hưng",
+          "text": "Thì bác Ba Thuyền chứ ai! Mấy chục năm nay ổng chuyên lặn vớt gỗ chìm, mò chân vịt ở bến đò Tân Mỹ này mà."
+        }
+      ],
+      "signature": "Người khai: Võ Quốc Hưng"
+    },
+    {
+      "id": "d13",
+      "type": "report",
+      "title": "Biên bản bắt quả tang tổ chức đá gà ăn tiền tại cồn Bình Khánh",
+      "header": [
+        "Công an huyện Tân Trúc",
+        "Đội Cảnh sát hình sự"
+      ],
+      "heading": "Biên bản bắt người phạm tội quả tang",
+      "code": "21/BB-QT",
+      "date": "00 giờ 30 ngày 13 tháng 02 năm 2006",
+      "fields": [
+        {
+          "label": "Địa điểm",
+          "value": "Bãi đất trống giữa cồn Bình Khánh, xã Bình Khánh"
+        },
+        {
+          "label": "Hành vi",
+          "value": "Tổ chức và tham gia đá gà ăn tiền"
+        },
+        {
+          "label": "Số đối tượng",
+          "value": "18 người"
+        }
+      ],
+      "sections": [
+        {
+          "heading": "1. Diễn biến",
+          "paragraphs": [
+            "Lúc 00 giờ 30, tổ công tác ập vào sới gà, bắt quả tang 18 đối tượng đang sát phạt.",
+            "Theo lời khai thống nhất của chủ sới và các con bạc, sới mở từ 20 giờ 30 ngày 12/2. Cồn chỉ có một đò máy của chủ sới đưa rước, đò này nằm ụ tại cồn suốt buổi tối."
+          ]
+        },
+        {
+          "heading": "2. Danh sách đối tượng (trích)",
+          "paragraphs": [
+            "… 07. **Võ Quốc Hưng**, 38 tuổi, ngụ ấp Tân Lợi, xã Tân Mỹ: có mặt từ 20 giờ 40, đặt cược liên tiếp 11 độ, thu giữ trên người 2.300.000 đồng."
+          ]
+        },
+        {
+          "heading": "3. Xử lý",
+          "paragraphs": [
+            "Tạm giữ hành chính toàn bộ đối tượng tại trụ sở Công an xã Bình Khánh đến 07 giờ sáng ngày 13/2/2006."
+          ]
+        }
+      ],
+      "signature": "Thiếu tá Nguyễn Hữu Phước",
+      "stage": 2
+    },
+    {
+      "id": "d14",
+      "type": "testimony",
+      "title": "Lời khai của Lê Văn Sáu (Sáu Cà Na)",
+      "header": [
+        "Công an huyện Tân Trúc"
+      ],
+      "date": "15 giờ 00 ngày 14 tháng 02 năm 2006",
+      "fields": [
+        {
+          "label": "Họ và tên",
+          "value": "Lê Văn Sáu (Sáu Cà Na), 46 tuổi"
+        },
+        {
+          "label": "Nghề nghiệp",
+          "value": "Thầu buôn gỗ căm xe"
+        }
+      ],
+      "lines": [
+        {
+          "n": 1,
+          "speaker": "Cán bộ",
+          "text": "Ông có mâu thuẫn gì với ông Võ Văn Kiên?"
+        },
+        {
+          "n": 2,
+          "speaker": "Lê Văn Sáu",
+          "text": "Thì chuyện lô gỗ căm xe tháng Chạp. Ổng nói gỗ mục, đòi trả hàng, còn dọa thưa tôi lên công an kinh tế."
+        },
+        {
+          "n": 3,
+          "speaker": "Lê Văn Sáu",
+          "text": "Nói thiệt, tôi tức ổng lắm, có chửi ổng giữa chợ. Nhưng chửi là một chuyện, giết người là chuyện khác."
+        },
+        {
+          "n": 4,
+          "speaker": "Cán bộ",
+          "text": "Đêm 12/2 ông ở đâu?"
+        },
+        {
+          "n": 5,
+          "speaker": "Lê Văn Sáu",
+          "text": "Tôi nhậu ở quán Năm Cua bên xã Phước An với mấy lái buôn từ bảy giờ tối tới gần mười hai giờ. Quán còn ghi sổ đó."
+        },
+        {
+          "n": 6,
+          "speaker": "Cán bộ",
+          "text": "Ông có biết bơi lặn không?"
+        },
+        {
+          "n": 7,
+          "speaker": "Lê Văn Sáu",
+          "text": "Tôi nặng gần chín chục ký, lội nước tới bụng là thở hồng hộc rồi, lặn gì nổi."
+        },
+        {
+          "n": 8,
+          "speaker": "Cán bộ",
+          "text": "Ông có biết ai hay lui tới chiếc ghe Phước Hải 09?"
+        },
+        {
+          "n": 9,
+          "speaker": "Lê Văn Sáu",
+          "text": "Ghe đó ổng giữ kỹ lắm. Đêm nào nước lớn ổng cũng xuống ngủ canh gỗ, ai trong xóm cũng biết."
+        }
+      ],
+      "signature": "Người khai: Lê Văn Sáu",
+      "stage": 2
+    },
+    {
+      "id": "d15",
+      "type": "receipt",
+      "title": "Phiếu tính tiền quán nhậu Năm Cua, bàn số 7",
+      "shop": "Quán nhậu Năm Cua",
+      "address": "Bến chợ xã Phước An",
+      "fields": [
+        {
+          "label": "Ngày",
+          "value": "12/02/2006"
+        },
+        {
+          "label": "Bàn",
+          "value": "Số 7 · anh Sáu Cà Na (ghi sổ)"
+        },
+        {
+          "label": "Giờ mở bàn",
+          "value": "19:05"
+        },
+        {
+          "label": "Giờ tính tiền",
+          "value": "23:40"
+        }
+      ],
+      "items": [
+        {
+          "name": "Lẩu cá linh bông điên điển",
+          "qty": "1",
+          "price": "180.000"
+        },
+        {
+          "name": "Cua rang me",
+          "qty": "2",
+          "price": "240.000"
+        },
+        {
+          "name": "Bia Sài Gòn (két)",
+          "qty": "2",
+          "price": "300.000"
+        }
+      ],
+      "total": "720.000đ",
+      "footer": [
+        "Ghi nợ, cuối tháng thu.",
+        "Chủ quán Năm Cua xác nhận: bàn 7 ngồi liền từ đầu tới cuối, không ai rời bàn quá mười phút."
+      ],
+      "stage": 2
+    },
+    {
+      "id": "d16",
+      "stage": 3,
+      "type": "testimony",
+      "title": "Biên bản ghi lời khai của Trần Văn Thuyền (Ba Thuyền)",
+      "header": [
+        "Công an huyện Tân Trúc",
+        "Đội Cảnh sát Điều tra"
+      ],
+      "heading": "Biên bản ghi lời khai",
+      "date": "09 giờ 00 ngày 14 tháng 02 năm 2006",
+      "fields": [
+        {
+          "label": "Họ và tên",
+          "value": "Trần Văn Thuyền, 58 tuổi (thường gọi Ba Thuyền)"
+        },
+        {
+          "label": "Nghề nghiệp",
+          "value": "Lái đò ngang Tân Mỹ, thợ lặn sông"
+        },
+        {
+          "label": "Địa chỉ",
+          "value": "Chòi canh bến đò ngang ấp Tân Lợi, xã Tân Mỹ"
+        }
+      ],
+      "lines": [
+        {
+          "n": 1,
+          "speaker": "Cán bộ",
+          "text": "Ông kể lại lịch trình chạy đò ngang qua sông Hàm Luông vào đêm Rằm tháng Giêng (12/2)."
+        },
+        {
+          "n": 2,
+          "speaker": "Trần Văn Thuyền",
+          "text": "Dạ, đêm Rằm người ta đi lễ chùa Phước Quang thả hoa đăng đông lắm, tôi chạy đò liên tục đưa khách qua lại hai bờ sông từ sáu giờ chiều tới nửa đêm."
+        },
+        {
+          "n": 3,
+          "speaker": "Cán bộ",
+          "text": "Suốt thời gian đó ông có rời khỏi bến đò hay dừng máy lần nào không?"
+        },
+        {
+          "n": 4,
+          "speaker": "Trần Văn Thuyền",
+          "text": "Tôi ở miết trên đò với cái chòi bến chứ đâu có đi đâu. Khách đi nườm nượp, đò cập bến bên này là bốc khách qua bên kia liền."
+        },
+        {
+          "n": 5,
+          "speaker": "Cán bộ",
+          "text": "Ông có dừng chuyến nào trong khoảng từ 22 giờ đến 23 giờ 30 không?"
+        },
+        {
+          "n": 6,
+          "speaker": "Trần Văn Thuyền",
+          "text": "À… có, có một lát ngắn thôi."
+        },
+        {
+          "n": 7,
+          "speaker": "Trần Văn Thuyền",
+          "text": "Tầm mười một giờ kém mười lăm, nước sông chảy xiết rác quấn nghẹt chân vịt, tôi phải tắt máy neo lại mé bến đợi nước ròng sát đáy mới lặn xuống gỡ được."
+        },
+        {
+          "n": 8,
+          "speaker": "Cán bộ",
+          "text": "Gỡ rác xong ông làm gì?"
+        },
+        {
+          "n": 9,
+          "speaker": "Trần Văn Thuyền",
+          "text": "Gỡ rác với thay cọng dây curoa máy dầu xong là khoảng mười một giờ rưỡi, tôi nổ máy đò chở chuyến khách trễ từ chùa bên kia về rồi dẹp đò nghỉ."
+        },
+        {
+          "n": 10,
+          "speaker": "Cán bộ",
+          "text": "Ve rượu thuốc ông đem biếu ông Kiên sáng Rằm là rượu gì?"
+        },
+        {
+          "n": 11,
+          "speaker": "Trần Văn Thuyền",
+          "text": "Dạ rượu rễ nhàu tôi tự ngâm uống đau lưng, thấy anh Bảy Kiên bạn lính năm xưa than nhức khớp nên tôi chiết nửa ve mang biếu ảnh uống bồi dưỡng thôi, thuốc nam lành tính mà."
+        },
+        {
+          "n": 12,
+          "speaker": "Trần Văn Thuyền",
+          "text": "Chuyện ảnh mất tôi rụng rời tay chân, bạn bè cùng chiến hào ai nỡ hại nhau bao giờ."
+        }
+      ],
+      "signature": "Người khai: Trần Văn Thuyền"
+    },
+    {
+      "id": "d17",
+      "stage": 3,
+      "type": "note",
+      "title": "Trích sao sổ nhật ký thu tiền đò ngang Tân Mỹ đêm 12/2/2006",
+      "paragraphs": [
+        "Trang sổ bìa da ghi tay của người phụ trách đò ngang (Trần Văn Thuyền):",
+        "— 21h30: Chuyến đò số 18, 14 khách qua chùa, thu 28.000đ.",
+        "— 22h00: Chuyến đò số 19, 16 khách qua chùa, thu 32.000đ.",
+        "— 22h30: Chuyến đò số 20, 10 khách về lại Tân Mỹ, thu 20.000đ.",
+        "__22h45: Đứt dây curoa máy dầu B64, rác quấn chân vịt. Nghỉ 45 phút sửa máy và chờ nước ròng.__",
+        "— 23h30: Nổ máy lại, chuyến đò số 21 (vét khách khuya), 8 khách về bờ, thu 16.000đ.",
+        "— 24h00: Nghỉ đò, cột dây chòi canh."
+      ],
+      "signature": "Người phụ trách bến: Ba Thuyền"
+    },
+    {
+      "id": "d18",
+      "type": "testimony",
+      "title": "Lời khai của Phan Thị Mến (người bán hàng ở bến đò)",
+      "header": [
+        "Công an huyện Tân Trúc"
+      ],
+      "date": "08 giờ 00 ngày 15 tháng 02 năm 2006",
+      "fields": [
+        {
+          "label": "Họ và tên",
+          "value": "Phan Thị Mến (Út Mến), 29 tuổi"
+        },
+        {
+          "label": "Nghề nghiệp",
+          "value": "Bán bánh tét, nhang đèn ở đầu bến đò Tân Mỹ"
+        }
+      ],
+      "lines": [
+        {
+          "n": 1,
+          "speaker": "Cán bộ",
+          "text": "Đêm Rằm chị ở đâu?"
+        },
+        {
+          "n": 2,
+          "speaker": "Phan Thị Mến",
+          "text": "Tôi ngồi sạp ở đầu bến đò từ chiều tới khuya, đêm Rằm khách qua chùa đông lắm."
+        },
+        {
+          "n": 3,
+          "speaker": "Cán bộ",
+          "text": "Khoảng 22 giờ 45 chị thấy gì?"
+        },
+        {
+          "n": 4,
+          "speaker": "Phan Thị Mến",
+          "text": "Chuyến đò về vừa cập bến thì bác Ba Thuyền nói máy hư, ai muốn qua chùa ráng đợi. Bác cột đò rồi đi vô phía sau chòi."
+        },
+        {
+          "n": 5,
+          "speaker": "Phan Thị Mến",
+          "text": "Tôi tưởng bác vô lấy đồ nghề, mà đèn trong chòi tắt ngúm, chờ hoài không thấy bác ra."
+        },
+        {
+          "n": 6,
+          "speaker": "Cán bộ",
+          "text": "Trong lúc đó có ai xuống đò sửa máy hay gỡ chân vịt không?"
+        },
+        {
+          "n": 7,
+          "speaker": "Phan Thị Mến",
+          "text": "Không ai hết. Chiếc đò nằm im ngay trước sạp tôi, tôi ngồi đó suốt, không thấy ai lại gần cái máy."
+        },
+        {
+          "n": 8,
+          "speaker": "Phan Thị Mến",
+          "text": "Gần mười một giờ rưỡi bác Ba mới từ mé bờ kè phía dưới đi lên, môi tím ngắt, run cầm cập."
+        },
+        {
+          "n": 9,
+          "speaker": "Phan Thị Mến",
+          "text": "Tôi để ý vì áo bác khô rang mà đầu tóc thì ướt sũng, nhỏ nước tong tong như người mới ngụp dưới sông lên."
+        },
+        {
+          "n": 10,
+          "speaker": "Phan Thị Mến",
+          "text": "Bác nói “xuống mé sông coi rác”, rồi giật máy một cái là máy nổ ngon lành, chạy luôn chuyến khuya."
+        }
+      ],
+      "signature": "Người khai: Phan Thị Mến",
+      "stage": 3
+    },
+    {
+      "id": "d19",
+      "stage": 3,
+      "type": "testimony",
+      "title": "Biên bản ghi lời khai của Huỳnh Ánh Nguyệt",
+      "header": [
+        "Công an huyện Tân Trúc",
+        "Đội Cảnh sát Điều tra"
+      ],
+      "heading": "Biên bản ghi lời khai",
+      "date": "11 giờ 00 ngày 14 tháng 02 năm 2006",
+      "fields": [
+        {
+          "label": "Họ và tên",
+          "value": "Huỳnh Ánh Nguyệt, 24 tuổi"
+        },
+        {
+          "label": "Nghề nghiệp",
+          "value": "Kế toán đại lý thu mua dừa Tân Lợi"
+        },
+        {
+          "label": "Địa chỉ",
+          "value": "Ấp Tân Lợi, xã Tân Mỹ"
+        }
+      ],
+      "lines": [
+        {
+          "n": 1,
+          "speaker": "Cán bộ",
+          "text": "Tối ngày Rằm (12/2), cô đi đâu và làm gì?"
+        },
+        {
+          "n": 2,
+          "speaker": "Huỳnh Ánh Nguyệt",
+          "text": "Tối Rằm tôi cùng mấy người bạn bên hội chữ thập đỏ qua chùa Phước Quang phụ sư cô phát đèn hoa đăng từ bảy giờ tối đến mười giờ đêm."
+        },
+        {
+          "n": 3,
+          "speaker": "Cán bộ",
+          "text": "Sau mười giờ đêm cô đi đâu?"
+        },
+        {
+          "n": 4,
+          "speaker": "Huỳnh Ánh Nguyệt",
+          "text": "Tôi đi đò ngang về lại ấp Tân Lợi lúc mười giờ mười lăm. Tôi có đi ngang cổng xưởng mộc ông Kiên."
+        },
+        {
+          "n": 5,
+          "speaker": "Cán bộ",
+          "text": "Có người thấy cô đứng trước cổng xưởng ông Kiên hồi lâu, cô đến đó làm gì?"
+        },
+        {
+          "n": 6,
+          "speaker": "Huỳnh Ánh Nguyệt",
+          "text": "Tôi thừa nhận tôi căm thù ông Kiên! Tháng trước cha tôi quẫn bách vì ổng ép siết nợ gốc lãi nên mới nhảy cầu Hàm Luông. Tối đó tôi định vô xưởng tìm đốt giấy nợ của gia đình tôi."
+        },
+        {
+          "n": 7,
+          "speaker": "Cán bộ",
+          "text": "Rồi cô có vào trong xưởng không?"
+        },
+        {
+          "n": 8,
+          "speaker": "Huỳnh Ánh Nguyệt",
+          "text": "Dạ không, xưởng khóa cổng sắt, bên trong tối om. Tôi đang đứng ngập ngừng thì thấy máy đò ngang bên bến tắt ngấm, rồi tôi thấy một bóng người mặc áo mưa trùm kín từ chòi đò đi xuống mé rạch lặn ngụp dưới nước."
+        },
+        {
+          "n": 9,
+          "speaker": "Huỳnh Ánh Nguyệt",
+          "text": "Trời mưa dầm lạnh ngắt mà người đó lặn xuống sông nên tôi hoảng hồn tưởng ma da, tôi cắm đầu chạy một mạch về nhà khóa cửa ngủ."
+        },
+        {
+          "n": 10,
+          "speaker": "Huỳnh Ánh Nguyệt",
+          "text": "Tôi là phụ nữ chân yếu tay mềm, bơi sông còn không biết thì làm sao dìm chết ai được!"
+        }
+      ],
+      "signature": "Người khai: Huỳnh Ánh Nguyệt"
+    },
+    {
+      "id": "d20",
+      "stage": 3,
+      "type": "receipt",
+      "title": "Vé xe khách đêm và phiếu gửi hành lý bến xe Mỏ Cày",
+      "shop": "Hợp tác xã Xe khách Liên tỉnh Tân Trúc - Mỏ Cày",
+      "address": "Bến xe thị trấn Mỏ Cày, Bến Tre",
+      "fields": [
+        {
+          "label": "Tuyến đường",
+          "value": "Mỏ Cày đi Bến xe Hùng Vương, Cần Thơ"
+        },
+        {
+          "label": "Tên hành khách",
+          "value": "Nguyễn Thị Lành"
+        },
+        {
+          "label": "Thời điểm xuất vé",
+          "value": "19 giờ 30 ngày 12/02/2006"
+        },
+        {
+          "label": "Chuyến xe khởi hành",
+          "value": "04 giờ 00 sáng ngày 13/02/2006"
+        }
+      ],
+      "items": [
+        {
+          "name": "Vé xe khách ghế ngồi (chuyến 04h00)",
+          "qty": 1,
+          "price": "45.000đ"
+        },
+        {
+          "name": "Cước gửi kèm 01 kiện vali hành lý lưu kho qua đêm",
+          "qty": 1,
+          "price": "15.000đ"
+        }
+      ],
+      "total": "60.000đ",
+      "footer": [
+        "Vé đã thanh toán cước lưu kho hành lý.",
+        "Nhân viên bán vé xác nhận: Hành khách gửi đồ lúc 19h30 tối 12/2 rồi đi xe ôm về lại xã Tân Mỹ."
+      ]
+    },
+    {
+      "id": "d21",
+      "stage": 4,
+      "type": "receipt",
+      "title": "Hóa đơn bán lẻ tiệm phụ tùng máy thủy Hai Nhựt",
+      "shop": "Cửa hàng Phụ tùng Máy thủy & Đồ lặn Hai Nhựt",
+      "address": "Chân cầu Tân Trúc, xã Tân Mỹ, Tân Trúc, Bến Tre",
+      "fields": [
+        {
+          "label": "Khách hàng",
+          "value": "Trần Văn Thuyền (Bác Ba Thuyền đò ngang)"
+        },
+        {
+          "label": "Ngày mua hàng",
+          "value": "11/02/2006 (09 giờ 15 phút)"
+        },
+        {
+          "label": "Hình thức",
+          "value": "Tiền mặt"
+        }
+      ],
+      "items": [
+        {
+          "name": "Dây curoa máy dầu hiệu Bando số hiệu B64",
+          "qty": 1,
+          "price": "65.000đ"
+        },
+        {
+          "name": "Tuýp keo dán ron thủy công chịu mặn",
+          "qty": 1,
+          "price": "25.000đ"
+        },
+        {
+          "name": "Cuộn sợi cước bện nilon 3 ly (màu xanh lá mạ)",
+          "qty": 1,
+          "price": "30.000đ"
+        }
+      ],
+      "total": "120.000đ",
+      "footer": [
+        "Hàng đã kiểm tra chất lượng, miễn đổi trả sau khi xuất hóa đơn.",
+        "Chủ tiệm Hai Nhựt ghi chú: Khách quen bến đò lấy dây curoa mới và cước lặn từ sáng ngày 11/2."
+      ]
+    },
+    {
+      "id": "d22",
+      "type": "testimony",
+      "title": "Lời khai của chủ tiệm Hai Nhựt (kiểm tra máy đò)",
+      "header": [
+        "Công an huyện Tân Trúc"
+      ],
+      "date": "14 giờ 00 ngày 15 tháng 02 năm 2006",
+      "fields": [
+        {
+          "label": "Họ và tên",
+          "value": "Nguyễn Văn Nhựt (Hai Nhựt), 52 tuổi"
+        },
+        {
+          "label": "Nghề nghiệp",
+          "value": "Chủ tiệm phụ tùng máy thủy, thợ máy lâu năm"
+        },
+        {
+          "label": "Nội dung",
+          "value": "Được mời giám định máy đò ngang của ông Trần Văn Thuyền"
+        }
+      ],
+      "lines": [
+        {
+          "n": 1,
+          "speaker": "Cán bộ",
+          "text": "Ông kiểm tra máy đò của ông Trần Văn Thuyền, ông thấy gì?"
+        },
+        {
+          "n": 2,
+          "speaker": "Hai Nhựt",
+          "text": "Máy dầu chạy êm. Dây curoa trên máy là dây Bando B64 mới tinh, còn mùi cao su, chữ in trên lưng dây chưa mòn chút nào."
+        },
+        {
+          "n": 3,
+          "speaker": "Cán bộ",
+          "text": "Ông có tìm thấy sợi dây cũ bị đứt không?"
+        },
+        {
+          "n": 4,
+          "speaker": "Hai Nhựt",
+          "text": "Tôi lục cả khoang máy lẫn chòi đò, không có sợi dây đứt nào. Dây đứt thì phải còn khúc, ai đi quăng xuống sông làm chi."
+        },
+        {
+          "n": 5,
+          "speaker": "Cán bộ",
+          "text": "Chân vịt thì sao?"
+        },
+        {
+          "n": 6,
+          "speaker": "Hai Nhựt",
+          "text": "Chân vịt sạch trơn, cánh không mẻ, trục không quấn một cọng rác nào."
+        },
+        {
+          "n": 7,
+          "speaker": "Cán bộ",
+          "text": "Sợi dây trên máy có phải dây do tiệm ông bán không?"
+        },
+        {
+          "n": 8,
+          "speaker": "Hai Nhựt",
+          "text": "Đúng dây tôi bán cho ổng sáng 11/2. Số lô in trên lưng dây trùng với lô hàng tôi mới nhập hôm mùng mười."
+        },
+        {
+          "n": 9,
+          "speaker": "Hai Nhựt",
+          "text": "Mà nói thiệt, máy dầu đứt curoa thì thợ quen tay thay mất năm phút, đâu cần nghỉ tới gần một tiếng."
+        }
+      ],
+      "signature": "Người khai: Nguyễn Văn Nhựt",
+      "stage": 4
+    },
+    {
+      "id": "d23",
+      "type": "report",
+      "title": "Kết luận giám định ve rượu thuốc thu trong khoang ghe",
+      "header": [
+        "Công an tỉnh Bến Tre",
+        "Phòng Kỹ thuật hình sự"
+      ],
+      "heading": "Kết luận giám định",
+      "code": "22/GĐ-HH",
+      "date": "Ngày 15 tháng 02 năm 2006",
+      "fields": [
+        {
+          "label": "Vật gửi giám định",
+          "value": "Ve thủy tinh 500ml thu trong khoang ghe Phước Hải 09 (còn khoảng 100ml)"
+        },
+        {
+          "label": "Yêu cầu",
+          "value": "Xác định thành phần rượu và dược liệu ngâm"
+        }
+      ],
+      "sections": [
+        {
+          "heading": "1. Thành phần",
+          "paragraphs": [
+            "Rượu nếp trắng ngâm các mẩu rễ cây đã sao vàng. Mẫu rễ **không phải rễ cây nhàu**, mà là rễ cây mã tiền (họ Strychnos), mọc hoang ven kênh rạch.",
+            "Nồng độ strychnine thấp: uống một cốc khoảng 50ml gây tê liệt mềm cơ tứ chi sau 30–60 phút, kéo dài 1–2 giờ, hiếm khi tự gây tử vong."
+          ]
+        },
+        {
+          "heading": "2. Dấu vết trên ve",
+          "paragraphs": [
+            "Nút lá chuối khô bịt miệng ve được buộc bằng một vòng **sợi cước nilon màu xanh lá mạ, loại 3 ly**."
+          ]
+        }
+      ],
+      "signature": "Giám định viên: Thượng úy Đặng Minh Trí",
+      "stage": 4
+    },
+    {
+      "id": "d24",
+      "stage": 5,
+      "type": "letter",
+      "title": "Giấy vay tiền thế chấp đất hương hỏa (thu tại két sắt xưởng ghe)",
+      "date": "Ngày 12 tháng 8 năm 2005",
+      "greeting": "Kính gửi anh Bảy Kiên (Võ Văn Kiên) - Chủ xưởng đóng ghe Tân Mỹ",
+      "paragraphs": [
+        "Tôi là Trần Văn Thuyền (Ba Thuyền), người lái đò ngang Tân Mỹ, có vay của anh Bảy Kiên số tiền 40.000.000 đồng (bốn mươi triệu đồng) để xoay xở đóng lại vỏ đò mới.",
+        "Tôi xin thế chấp bản chính Giấy chứng nhận quyền sử dụng đất số D-4192 gồm 3.200 mét vuông đất vườn dừa tại ấp Tân Lợi, nơi có phần mộ thân sinh họ Trần của tôi.",
+        "Thời hạn vay đúng sáu tháng, hạn chót thanh toán cả gốc lẫn lãi là ngày Rằm tháng Giêng năm Bính Tuất (tức 12/2/2006 dương lịch). Nếu đến hạn tôi không hoàn trả đủ, tôi đồng ý giao toàn bộ mảnh đất cho anh Bảy Kiên định đoạt.",
+        "__Ghi chú viết tay bằng mực đỏ của ông Võ Văn Kiên:__ **'Đúng tối Rằm không trả đủ 45 triệu cả gốc lẫn lời thì sáng 16 tháng Giêng tôi ký hợp đồng giao đứt bãi đất cho Ba Thầu cát làm bến bãi, đừng trách Bảy Kiên cạn tình!'**"
+      ],
+      "signature": "Người vay: Trần Văn Thuyền · Người cho vay: Võ Văn Kiên"
+    },
+    {
+      "id": "d25",
+      "type": "report",
+      "title": "Biên bản xác minh khu vườn ven rạch của Trần Văn Thuyền",
+      "header": [
+        "Công an huyện Tân Trúc",
+        "Đội Cảnh sát điều tra"
+      ],
+      "heading": "Biên bản xác minh",
+      "code": "09/BB-XM",
+      "date": "09 giờ 00 ngày 16 tháng 02 năm 2006",
+      "fields": [
+        {
+          "label": "Địa điểm",
+          "value": "Vườn tạp ven rạch Cái Bần, đất ở của ông Trần Văn Thuyền"
+        }
+      ],
+      "sections": [
+        {
+          "heading": "1. Hiện trạng",
+          "paragraphs": [
+            "Bụi cây mã tiền mọc hoang cuối vườn sát mé rạch có dấu đào bới mới, đất còn tơi xốp; nhiều đoạn rễ bị chặt bằng dao sắc.",
+            "Trong bếp chòi có một chảo gang còn bám vụn rễ cây cháy vàng, dấu hiệu đã sao rễ trên lửa.",
+            "Toàn bộ khu vườn **không có cây nhàu nào**."
+          ]
+        },
+        {
+          "heading": "2. Lời khai người làm chứng",
+          "paragraphs": [
+            "Bà Lê Thị Thơ (Năm Thơ), vườn kế bên, cho biết khoảng 14 giờ ngày 11/2 thấy ông Thuyền đào gốc bụi cây ven rạch. Khi được hỏi, ông Thuyền nói “đào rễ nhàu ngâm rượu”."
+          ]
+        }
+      ],
+      "signature": "Đại úy Lê Thành Danh",
+      "stage": 5
+    },
+    {
+      "id": "d26",
+      "stage": 5,
+      "type": "evidence",
+      "title": "Biên bản khám xét khẩn cấp chòi canh đò của Trần Văn Thuyền",
+      "code": "07/BB-KX",
+      "image": "images/d16-tools.webp",
+      "imageCaption": "Kìm mỏ quạ số 24 và tang vật thu giữ trong hốc vách chòi canh đò.",
+      "fields": [
+        {
+          "label": "Địa điểm khám xét",
+          "value": "Chòi lá canh bến đò ngang Tân Mỹ do Trần Văn Thuyền quản lý"
+        },
+        {
+          "label": "Thời gian",
+          "value": "15 giờ 00 ngày 14 tháng 02 năm 2006"
+        },
+        {
+          "label": "Chủ trì khám xét",
+          "value": "Trung tá Phan Văn Rạng, Phó trưởng Công an huyện Tân Trúc"
+        }
+      ],
+      "paragraphs": [
+        "Qua khám xét toàn bộ khu vực chòi canh đò, lực lượng điều tra đã phát hiện và niêm phong các đồ vật cất giấu sau:",
+        "1. Dưới đáy đống lưới rách sau chòi: 01 bộ quần áo lặn cao su còn ẩm ướt, dính nhiều bùn sình phù sa sông Hàm Luông.",
+        "2. Trong hốc vách lá củi đun: **01 kìm mỏ quạ cán bọc cao su khắc số 24**. Miệng kìm có dính các hạt mạt vụn kim loại đồng thau trùng khớp hoàn toàn với vết xước ren trên chốt van lù ghe Phước Hải 09.",
+        "3. 01 cuộn sợi cước bện nilon màu xanh lá mạ loại 3 ly đã bị cắt dở một đoạn ngắn, vết cắt và tiết diện sợi trùng khớp 100% với mẩu cước dính ở cọc neo bến ghe ông Kiên.",
+        "4. Kẹp dưới chiếu nằm của Trần Văn Thuyền: **01 tờ lịch bloc xé ngày Rằm tháng Giêng Bính Tuất**. Mặt sau có chữ viết tay bằng bút chì: “22g40 – nước đứng – 1th85”, “120 thước – xuôi”, “van 24”."
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "stage": 1,
+      "type": "choice",
+      "title": "Tai nạn hay án mạng?",
+      "prompt": "Người dân đồn ông Bảy Kiên say rượu rồi chết đuối khi ghe rò nước. Dựa vào hồ sơ trên bàn, bạn kết luận thế nào?",
+      "options": [
+        "Tai nạn: ông Kiên say rượu ngủ quên, không hay biết ghe rò nước cho tới khi quá muộn.",
+        "Án mạng: ông Kiên đã bị làm tê liệt từ trước, nên không thể tự mở then cài để thoát ra khi nước tràn vào."
+      ],
+      "answer": [
+        1
+      ],
+      "nudges": {
+        "0": {
+          "message": "Người làm công Tư Lợi cho biết ông Kiên chỉ uống một cốc nhỏ mỗi tối và rất nhạy ngủ. Vậy giám định tử thi tìm thấy gì trong dạ dày nạn nhân?"
+        }
+      },
+      "hints": [
+        "Đọc kỹ cách nạn nhân được tìm thấy: cửa khoang khóa thế nào, nạn nhân nằm ở đâu?",
+        "Một người nhạy ngủ, chỉ cách nắp khoang hai bậc thang, vì sao lại nằm yên khi nước dâng? Xem phần xét nghiệm độc chất.",
+        "Giám định tử thi: chất chiết từ rễ mã tiền làm tê liệt cơ tứ chi trong 1–2 giờ. Ông Kiên bị vô hiệu hóa trước khi nước tràn vào: đây là án mạng."
+      ],
+      "solved": "Đúng vậy. Ông Kiên bị đầu độc cho tê liệt rồi mới chết ngạt trong khoang khóa kín. Hồ sơ trọng điểm 2 đã được mở niêm phong.",
+      "explanation": [
+        {
+          "title": "Khoang khóa từ bên trong",
+          "body": [
+            "Biên bản khám nghiệm hiện trường và ảnh then cài cho thấy thanh then gỗ lim vẫn nằm trong khấc khóa: ông Kiên tự cài then trước khi ngủ, không ai vào hay ra khoang từ phía trên."
+          ]
+        },
+        {
+          "title": "Nạn nhân không thể cử động",
+          "body": [
+            "Giám định tử thi tìm thấy strychnine từ rễ mã tiền, đủ làm tê liệt mềm cơ tứ chi trong 1–2 giờ. Nạn nhân tỉnh nhưng không thể đẩy then thoát ra."
+          ]
+        },
+        {
+          "title": "Không phải say rượu",
+          "body": [
+            "Tư Lợi khai ông Kiên chỉ uống một cốc nhỏ mỗi tối và rất nhạy ngủ, then cài chỉ cần đẩy một cái là bật. Một người tỉnh táo không thể nằm yên chờ chết đuối."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q2",
+      "stage": 2,
+      "type": "evidence",
+      "need": 2,
+      "title": "Nước vào khoang bằng đường nào?",
+      "prompt": "Ghim 2 tài liệu cho thấy nước đã được cố ý cho tràn vào khoang từ dưới sông, và vì sao kẻ gây án buộc phải ra tay vào đúng một khung giờ trong đêm.",
+      "answer": [
+        "d09",
+        "d10"
+      ],
+      "nudges": [
+        {
+          "picks": [
+            "d09",
+            "d11"
+          ],
+          "near": true,
+          "message": "Biên bản giám định vỏ ghe là một mảnh đúng. Phiếu giám định chốt van cho biết dụng cụ, nhưng còn thời điểm: vì sao phải đúng khung giờ đó?"
+        },
+        {
+          "picks": [
+            "d10",
+            "d11"
+          ],
+          "near": true,
+          "message": "Bản tin thủy văn là một mảnh đúng. Tài liệu nào chứng minh van bị mở từ phía dưới nước, chứ không phải từ trong khoang?"
+        },
+        {
+          "any": [
+            "d12",
+            "d13",
+            "d14",
+            "d15"
+          ],
+          "message": "Tài liệu này nói về chứng cứ ngoại phạm của một nghi phạm, chưa trả lời nước vào khoang bằng cách nào."
+        }
+      ],
+      "hints": [
+        "Vỏ ghe không thủng, cửa khoang không có khe hở. Vậy nước vào từ đâu? Đọc biên bản giám định phương tiện thủy.",
+        "Van lù bị tháo từ phía dưới lườn ghe. Nhưng mở van lúc nào thì khoang mới ngập kịp? Đọc phần ghi chú kỹ thuật của trạm thủy văn.",
+        "Biên bản giám định phương tiện thủy (van lù bị tháo từ dưới nước) và bản tin thủy văn (chỉ khi nước vượt +1,60m khoang mới ngập trong 20 phút, tức đỉnh triều 22h40–23h30)."
+      ],
+      "solved": "Van lù đáy bị tháo từ dưới nước, và chỉ ở đỉnh triều cường 22h40–23h30 nước mới đủ mạnh để ngập khoang. Kẻ gây án phải lặn giỏi và rành con nước. Hồ sơ trọng điểm 3 đã được mở niêm phong.",
+      "explanation": [
+        {
+          "title": "Nước vào từ đáy ghe",
+          "body": [
+            "Vỏ ghe nguyên vẹn, nhưng chốt van lù 80mm dưới đáy bị tháo mất. Vết xước trên ren cho thấy van bị vặn từ phía dưới lườn tàu: người trong khoang không thể với tới vì có lớp ván sàn đóng đinh."
+          ]
+        },
+        {
+          "title": "Khung giờ duy nhất",
+          "body": [
+            "Theo trạm thủy văn, chỉ khi mực nước vượt +1,60m thì nước qua van lù mới đủ làm ngập sàn ngủ trong 20 phút. Đêm 12/2, điều đó chỉ xảy ra trong đỉnh triều 22h40–23h30, khớp với giờ tử vong 23h00–23h45."
+          ]
+        },
+        {
+          "title": "Ai làm được việc này?",
+          "body": [
+            "Chốt van có vết kìm mỏ quạ số 24, cạnh cọc neo có mẩu cước lặn. Hưng khai chỉ thợ lặn sông chuyên nghiệp mới mở được van dưới nước xiết. Hưng ở sới gà, Sáu Cà Na ở quán nhậu suốt buổi tối, và cả hai đều có người làm chứng."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q3",
+      "stage": 3,
+      "type": "line",
+      "title": "Lời khai trái với con nước",
+      "prompt": "Trong lời khai của Trần Văn Thuyền, chọn dòng đưa ra lý do dừng đò mâu thuẫn trực tiếp với diễn biến mực nước sông Hàm Luông đêm hôm đó.",
+      "answer": [
+        "d16:007"
+      ],
+      "nudges": {
+        "d16:004": {
+          "message": "Câu này là lời chối chung chung. Hãy tìm dòng ông Thuyền nêu lý do cụ thể khiến ông dừng đò."
+        },
+        "d16:006": {
+          "near": true,
+          "message": "Gần rồi! Ông Thuyền bắt đầu thừa nhận có dừng đò. Dòng ngay sau đó nêu lý do."
+        },
+        "d16:009": {
+          "near": true,
+          "message": "Chuyện thay dây curoa cũng đáng ngờ và sẽ được làm rõ sau. Câu hỏi này xoay quanh con nước."
+        },
+        "d16:011": {
+          "message": "Chuyện rễ nhàu sẽ được làm rõ sau. Câu hỏi này xoay quanh con nước đêm Rằm."
+        }
+      },
+      "hints": [
+        "Ông Thuyền nói đã dừng đò vì lý do gì? Đặt lời khai cạnh bản tin thủy văn.",
+        "Lúc 22h45 mực nước sông đang ở mức nào? Nước ròng xảy ra lúc mấy giờ?",
+        "Dòng 007: ông Thuyền nói “đợi nước ròng sát đáy” lúc 22h45, trong khi đó là đỉnh triều cường +1,85m. Nước ròng chỉ đến lúc 3–5 giờ sáng."
+      ],
+      "solved": "Lúc 22h45 sông Hàm Luông đang ở đỉnh triều cường, nước ròng chỉ đến lúc 3 giờ sáng. Lý do dừng đò là bịa đặt, và chị Út Mến cũng không thấy ai sửa máy. Hồ sơ trọng điểm 4 đã được mở niêm phong.",
+      "explanation": [
+        {
+          "title": "Con nước không thể ròng",
+          "body": [
+            "Ông Thuyền khai tắt máy lúc 22h45 để “đợi nước ròng sát đáy”. Bản tin thủy văn ghi đó là lúc nước lớn nhất (+1,85m); nước ròng kiệt chỉ đến lúc 03h00–05h00. Một người lái đò mấy chục năm không thể nhầm con nước."
+          ]
+        },
+        {
+          "title": "Không ai sửa máy",
+          "body": [
+            "Chị Út Mến ngồi ngay trước chiếc đò suốt thời gian đó: không ai lại gần cái máy. Gần 23h30 ông Thuyền đi lên từ mé bờ kè phía hạ lưu, tóc ướt sũng, và giật máy một cái là nổ ngay."
+          ]
+        },
+        {
+          "title": "Bóng người dưới rạch",
+          "body": [
+            "Ánh Nguyệt thấy máy đò tắt rồi một bóng người từ chòi đò xuống mé rạch lặn ngụp. Theo sổ tay hiện trường, dòng nước lớn chảy từ bến đò xuôi về xưởng ghe cách đó 120 mét."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q4",
+      "stage": 4,
+      "type": "evidence",
+      "need": 3,
+      "title": "Sợi dây curoa không hề đứt",
+      "prompt": "Ghim 3 tài liệu chứng minh câu chuyện “đứt dây curoa” mà ông Thuyền ghi trong sổ đò là bịa đặt và đã được chuẩn bị từ trước.",
+      "answer": [
+        "d17",
+        "d21",
+        "d22"
+      ],
+      "nudges": [
+        {
+          "picks": [
+            "d16",
+            "d17",
+            "d21"
+          ],
+          "near": true,
+          "message": "Lời khai của ông Thuyền chỉ lặp lại câu chuyện của chính ông. Ai đã tận tay kiểm tra chiếc máy đò?"
+        },
+        {
+          "picks": [
+            "d17",
+            "d21",
+            "d18"
+          ],
+          "near": true,
+          "message": "Chị Út Mến không thấy ai sửa máy, đúng hướng rồi. Nhưng câu hỏi xoay quanh chính sợi dây curoa: ai đã kiểm tra tận nơi?"
+        },
+        {
+          "any": [
+            "d23"
+          ],
+          "message": "Ve rượu là mảnh ghép của kết luận cuối, chưa liên quan đến chiếc máy đò."
+        }
+      ],
+      "hints": [
+        "Bắt đầu từ chỗ ông Thuyền tự ghi lại sự cố. Sự cố đó là gì, lúc mấy giờ?",
+        "Sợi dây curoa mới trên máy được mua khi nào? Có ai tìm thấy sợi dây bị đứt không?",
+        "Sổ nhật ký đò (ghi đứt dây lúc 22h45), hóa đơn tiệm Hai Nhựt (mua dây B64 từ sáng 11/2) và lời khai Hai Nhựt (không có dây đứt nào, chân vịt sạch, thay dây chỉ mất năm phút)."
+      ],
+      "solved": "Dây curoa được mua sẵn từ hôm trước, không có sợi dây đứt nào và chân vịt sạch trơn. “Sự cố” là màn kịch để ông Thuyền vắng mặt 45 phút. Hồ sơ trọng điểm 5 đã được mở niêm phong.",
+      "explanation": [
+        {
+          "title": "Sự cố được ghi sẵn",
+          "body": [
+            "Sổ đò ghi lúc 22h45 “đứt dây curoa máy dầu B64, rác quấn chân vịt, nghỉ 45 phút”, đúng lúc triều cường bắt đầu đạt đỉnh."
+          ]
+        },
+        {
+          "title": "Dây mới mua từ hôm trước",
+          "body": [
+            "Hóa đơn tiệm Hai Nhựt: sáng 11/2 ông Thuyền mua đúng một dây curoa B64, kèm cuộn cước xanh 3 ly, loại cước dùng cho thợ lặn."
+          ]
+        },
+        {
+          "title": "Không có gì để sửa",
+          "body": [
+            "Hai Nhựt kiểm tra máy: dây trên máy là dây mới cùng lô bán ngày 11/2, không có sợi dây đứt nào trong khoang máy hay chòi, chân vịt không vướng rác. Thay curoa chỉ mất năm phút chứ không phải 45 phút."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q5",
+      "stage": 5,
+      "type": "choice",
+      "title": "Kết luận điều tra vụ án bến sông Tân Mỹ",
+      "prompt": "Dựa trên toàn bộ hồ sơ, hãy chỉ ra ai đã sát hại ông Bảy Kiên, bằng cách nào và vì động cơ gì.",
+      "options": [
+        "Nguyễn Thị Lành, nhân lúc chồng say rượu thuốc đã lén tháo chốt van lù đáy khoang rồi lấy trộm tiền vàng bỏ trốn theo người tình sang Cần Thơ.",
+        "Võ Quốc Hưng, thuê thợ lặn tháo van lù đáy ghe dìm chết cha nhằm chiếm đoạt quyền thừa kế xưởng đóng ghe trước khi bị cha gạch tên khỏi di chúc.",
+        "Trần Văn Thuyền (Ba Thuyền), cho nạn nhân uống rượu ngâm mã tiền làm liệt cơ bắp, lợi dụng đỉnh triều cường lặn mở van lù đáy ghe dìm chết bạn để đoạt lại giấy đất mồ mả tổ tiên.",
+        "Huỳnh Ánh Nguyệt, do căm thù ông Kiên ép cha mình tự tử nên đã lén đổ thuốc trừ sâu vào ve rượu rồi đục thủng lườn ghe để trả thù cho gia đình."
+      ],
+      "answer": [
+        2
+      ],
+      "nudges": {
+        "0": {
+          "message": "Lành mua vé xe đò từ 19h30 để bỏ đi Cần Thơ lúc 4 giờ sáng, không biết lặn, và van lù bị tháo từ dưới nước. Chất độc là mã tiền chứ không phải thuốc an thần."
+        },
+        "1": {
+          "message": "Hưng ở sới gà giữa cồn Bình Khánh từ 20h40 cho đến khi bị bắt lúc 00h30, có mười mấy người làm chứng."
+        },
+        "3": {
+          "message": "Nguyệt rời chùa lúc 22h, không biết bơi. Chất độc là rễ mã tiền, không phải thuốc trừ sâu; lườn ghe không bị đục mà bị tháo van lù."
+        }
+      },
+      "hints": [
+        "Ai đã mang ve rượu sang biếu nạn nhân sáng Rằm, và trong ve thực sự ngâm rễ gì?",
+        "Ai vừa là thợ lặn rành khúc sông, vừa có kìm số 24 và cuộn cước xanh trùng với tang vật?",
+        "Đọc giấy vay tiền: hạn chót là đúng đêm Rằm, sáng 16 tháng Giêng đất hương hỏa sẽ bị bán. Rồi xem tờ lịch tìm thấy dưới chiếu trong chòi đò."
+      ],
+      "solved": "Trần Văn Thuyền (Ba Thuyền) là thủ phạm. Ông dùng rượu ngâm rễ mã tiền làm tê liệt ông Kiên, rồi lặn tháo van lù đáy ghe giữa đỉnh triều cường để dìm chết bạn mình, hòng giữ lại mảnh đất có mồ mả cha mẹ.",
+      "explanation": [
+        {
+          "title": "Chất độc",
+          "body": [
+            "Ve rượu ông Thuyền biếu sáng Rằm không ngâm rễ nhàu mà ngâm rễ mã tiền; nút ve buộc bằng cước xanh 3 ly. Vườn ông Thuyền không có cây nhàu, nhưng bụi mã tiền ven rạch vừa bị đào rễ chiều 11/2, chảo gang trong bếp còn vụn rễ sao vàng."
+          ]
+        },
+        {
+          "title": "Thủ đoạn",
+          "body": [
+            "Ông Thuyền dựng màn kịch đứt dây curoa để vắng mặt 45 phút, lặn theo dòng triều từ bến đò xuôi 120 mét tới ghe Phước Hải 09, dùng kìm mỏ quạ số 24 tháo chốt van lù. Tờ lịch dưới chiếu ghi sẵn “22g40 – nước đứng – 1th85”, “120 thước – xuôi”, “van 24”. Kìm dính mạt đồng, bộ đồ lặn còn ướt và cuộn cước bị cắt dở đều nằm trong chòi đò."
+          ]
+        },
+        {
+          "title": "Động cơ",
+          "body": [
+            "Giấy vay 40 triệu thế chấp 3.200m² đất vườn dừa có mồ mả họ Trần, hạn chót đúng đêm Rằm. Ông Kiên ghi bằng mực đỏ: không trả đủ thì sáng 16 tháng Giêng sẽ bán đứt cho thầu cát."
+          ]
+        }
+      ]
+    }
+  ],
+  "finale": {
+    "title": "Con nước Rằm tháng Giêng và bi kịch tình đồng đội",
+    "paragraphs": [
+      "Dòng sông Hàm Luông đêm Rằm tháng Giêng năm Bính Tuất đã chứng kiến một bi kịch đau lòng giữa hai người bạn từng chung một chiến hào thời trai trẻ.",
+      "Vì gánh nặng nợ nần và nỗi hoảng sợ tột cùng khi mảnh đất chôn cất cha mẹ sắp sửa bị san lấp làm bãi cát, Trần Văn Thuyền đã dùng chính kỹ năng lặn sông cả đời của mình để tước đoạt mạng sống của người đồng đội cũ. Ve rượu thuốc ngâm rễ mã tiền đã biến khoang chiếc ghe Phước Hải 09 thành nấm mồ không lối thoát cho ông Bảy Kiên, khi dòng nước triều cường cuồn cuộn dâng lên từ lỗ van lù đáy lườn thuyền.",
+      "Kẻ thủ ác đã tính toán tỉ mỉ từng con nước, từng chuyến đò đêm rằm và cả màn kịch đứt dây curoa ngụy tạo. Thế nhưng, sự dối trá về con nước ròng giữa đêm đỉnh triều cường và tờ hóa đơn mua dây curoa từ ngày hôm trước đã vạch trần toàn bộ âm mưu đen tối.",
+      "Tờ lịch xé ngày Rằm với những con số viết bằng bút chì, chiếc kìm mỏ quạ số 24 dính mạt đồng và cuộn cước xanh bị cắt dở trong chòi đò đã khép lại vụ án mạng gây xôn xao cả một vùng sông nước Bến Tre."
+    ]
+  },
+  "epilogue": [
+    {
+      "title": "Nguyễn Thị Lành",
+      "text": "Được xác minh không liên quan đến cái chết của chồng. Chuyến xe 4 giờ sáng hôm ấy rời bến mà không có cô."
+    },
+    {
+      "title": "Võ Quốc Hưng",
+      "text": "Bị xử phạt hành chính vì đánh bạc. Xưởng ghe Kiên Phát tạm đóng cửa chờ phân chia di sản."
+    },
+    {
+      "title": "Huỳnh Ánh Nguyệt",
+      "text": "Lời khai về bóng người lặn dưới rạch là một trong những mảnh ghép đầu tiên chỉ về phía bến đò."
+    },
+    {
+      "title": "Mảnh vườn dừa họ Trần",
+      "text": "Hợp đồng bán đất cho thầu cát không bao giờ được ký. Mồ mả cha mẹ Ba Thuyền vẫn nằm yên dưới tán dừa."
+    }
+  ],
+  "tour": [
+    {
+      "title": "Đọc hồ sơ",
+      "text": "Mỗi tờ giấy trên bàn là một tài liệu thật trong hồ sơ. Chạm vào một đoạn văn để tô dạ quang, trích vào sổ tay hoặc nối dây đỏ."
+    },
+    {
+      "title": "Di chuyển bàn",
+      "text": "Kéo nền để di chuyển, chụm hai ngón (hoặc cuộn chuột) để phóng to. Nút “Tài liệu” mở danh sách để tìm nhanh."
+    },
+    {
+      "title": "Ghi chép",
+      "text": "Dùng Bút, Dạ quang và Tẩy trên thanh công cụ. Trên iPad, Apple Pencil luôn viết, còn ngón tay để di chuyển."
+    },
+    {
+      "title": "Trả lời",
+      "text": "Mở “Kết luận” để trả lời từng trọng điểm. Trả lời đúng, hồ sơ của trọng điểm tiếp theo sẽ được mở niêm phong."
+    }
+  ]
+}

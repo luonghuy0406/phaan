@@ -1,0 +1,167 @@
+/* Design tokens + base styles shared by every page. Đổi màu / font toàn site tại đây. */
+:root {
+  --bg: #0e0d0b;
+  --bg-2: #15130f;
+  --bg-3: #1e1b15;
+  --bg-4: #2a261e;
+  --line: rgba(236, 227, 207, 0.12);
+  --line-2: rgba(236, 227, 207, 0.24);
+  --text: #ece3cf;
+  --muted: #a89d86;
+  --faint: #6f6655;
+
+  --paper: #f1e8d4;
+  --paper-2: #e6d9bc;
+  --paper-edge: #cdbd99;
+  --paper-ink: #2a241a;
+  --paper-muted: #6b5f49;
+  --manila: #c8a468;
+  --manila-2: #a98848;
+
+  --red: #b3261e;
+  --red-2: #d9452f;
+  --amber: #d4a24c;
+  --green: #6f9a62;
+
+  --font-body: 'Be Vietnam Pro', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-display: 'Playfair Display', Georgia, 'Times New Roman', serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, Menlo, monospace;
+  --font-hand: 'Patrick Hand', 'Comic Sans MS', cursive;
+
+  --radius: 6px;
+  --shadow-paper: 0 1px 0 rgba(0, 0, 0, 0.25), 0 14px 34px rgba(0, 0, 0, 0.5);
+  --wrap: 1180px;
+  --gutter: clamp(16px, 4vw, 40px);
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { color-scheme: dark; scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 16px/1.65 var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
+img { max-width: 100%; display: block; }
+a { color: inherit; }
+button, input, select, textarea { font: inherit; color: inherit; }
+button { cursor: pointer; }
+:focus-visible { outline: 2px solid var(--amber); outline-offset: 2px; }
+h1, h2, h3 { line-height: 1.15; margin: 0; }
+p { margin: 0 0 0.9em; }
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+}
+
+/* ── shared components ── */
+.wrap { width: min(var(--wrap), 100% - var(--gutter) * 2); margin-inline: auto; }
+
+.eyebrow {
+  font: 500 12px/1.4 var(--font-mono);
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--amber);
+  margin: 0 0 12px;
+}
+
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+  min-height: 44px; padding: 10px 20px;
+  border: 1px solid var(--line-2); border-radius: 999px;
+  background: transparent; text-decoration: none;
+  font-weight: 600; font-size: 15px; letter-spacing: 0.01em;
+  transition: background 0.2s, border-color 0.2s, transform 0.2s, color 0.2s;
+}
+.btn:hover { border-color: var(--text); }
+.btn:active { transform: translateY(1px); }
+.btn--primary { background: var(--red); border-color: var(--red); color: #fff4ec; }
+.btn--primary:hover { background: var(--red-2); border-color: var(--red-2); }
+.btn--ghost { background: rgba(236, 227, 207, 0.04); }
+.btn--small { min-height: 36px; padding: 6px 14px; font-size: 14px; }
+.btn[disabled], .btn[aria-disabled='true'] { opacity: 0.45; pointer-events: none; }
+
+.stamp {
+  display: inline-block;
+  padding: 4px 12px;
+  border: 3px solid currentColor; border-radius: 4px;
+  color: var(--red);
+  font: 800 18px/1 var(--font-display);
+  letter-spacing: 0.18em; text-transform: uppercase;
+  transform: rotate(-8deg);
+  opacity: 0.85;
+  mix-blend-mode: multiply;
+}
+
+.diff { display: inline-flex; gap: 4px; vertical-align: middle; }
+.diff i { width: 9px; height: 9px; border-radius: 50%; border: 1px solid var(--red-2); }
+.diff i.on { background: var(--red-2); }
+
+.badge {
+  display: inline-block; padding: 3px 10px; border-radius: 999px;
+  font: 500 11px/1.5 var(--font-mono); letter-spacing: 0.08em; text-transform: uppercase;
+  background: rgba(111, 154, 98, 0.16); color: #a9cf9b; border: 1px solid rgba(111, 154, 98, 0.4);
+}
+.badge--soon { background: rgba(212, 162, 76, 0.12); color: var(--amber); border-color: rgba(212, 162, 76, 0.4); }
+
+/* CSS-only case folder cover, used when a case has no cover image yet. */
+.folder {
+  position: relative;
+  aspect-ratio: 4 / 5;
+  border-radius: 4px 10px 6px 6px;
+  background:
+    radial-gradient(120% 80% at 20% 10%, rgba(255, 255, 255, 0.18), transparent 60%),
+    repeating-linear-gradient(90deg, rgba(0, 0, 0, 0.03) 0 2px, transparent 2px 5px),
+    linear-gradient(160deg, var(--manila), var(--manila-2));
+  color: #2c2214;
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.15), 0 18px 40px rgba(0, 0, 0, 0.45);
+  padding: 28px 22px 22px;
+  display: flex; flex-direction: column;
+  overflow: hidden;
+}
+.folder::before { /* tab */
+  content: ''; position: absolute; top: 0; right: 14%;
+  width: 34%; height: 14px;
+  background: rgba(0, 0, 0, 0.12); border-radius: 0 0 6px 6px;
+}
+.folder__no { font: 500 12px/1 var(--font-mono); letter-spacing: 0.2em; text-transform: uppercase; opacity: 0.75; }
+.folder__title { font: 800 clamp(22px, 3vw, 30px)/1.1 var(--font-display); margin-top: auto; }
+.folder__tag { font-size: 13px; margin-top: 8px; opacity: 0.8; }
+.folder .stamp { position: absolute; top: 18%; right: 10%; }
+.folder__label {
+  margin-top: 14px; padding-top: 10px; border-top: 1px dashed rgba(0, 0, 0, 0.35);
+  font: 500 11px/1.4 var(--font-mono); letter-spacing: 0.12em; text-transform: uppercase; opacity: 0.75;
+}
+.folder--image { padding: 0; }
+.folder--image img { width: 100%; height: 100%; object-fit: cover; }
+
+.toast {
+  position: fixed; left: 50%; bottom: 90px; z-index: 1000;
+  transform: translate(-50%, 20px); opacity: 0;
+  max-width: min(520px, calc(100vw - 32px));
+  padding: 12px 18px; border-radius: 10px;
+  background: #241f17; border: 1px solid var(--line-2); color: var(--text);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  font-size: 14px; pointer-events: none;
+  transition: opacity 0.25s, transform 0.25s;
+}
+.toast.is-on { opacity: 1; transform: translate(-50%, 0); }
+
+.btn--danger { border-color: rgba(217, 69, 47, 0.6); color: #f0b4a9; background: rgba(217, 69, 47, 0.08); }
+.btn--danger:hover { border-color: var(--red-2); background: rgba(217, 69, 47, 0.18); }
+html { -webkit-tap-highlight-color: transparent; }
+
+/* cover image with the case name over it */
+.folder--image { position: relative; }
+.folder--image::before { display: none; }
+.folder__overlay {
+  position: absolute; inset: auto 0 0 0; padding: 40px 18px 18px;
+  display: flex; flex-direction: column; gap: 6px;
+  background: linear-gradient(transparent, rgba(10, 8, 6, 0.88));
+  color: #f4ead6;
+}
+.folder__overlay .folder__title { margin-top: 0; font-size: clamp(20px, 2.4vw, 26px); }
+.case-hero__cover .folder__overlay { display: none; }

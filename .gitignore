@@ -1,0 +1,34 @@
+# ── phụ thuộc & bản build ──
+node_modules/
+dist/
+*.tsbuildinfo
+.vite/
+coverage/
+
+# ── biến môi trường: chứa khoá Supabase (SUPABASE_SECRET_KEY) ──
+.env
+.env.*
+!.env.example
+
+# ── công cụ triển khai / dịch vụ ──
+.vercel/
+supabase/.temp/
+supabase/.branches/
+
+# ── cấu hình cá nhân của Claude Code (giữ .claude/settings.json nếu muốn chia sẻ cho team) ──
+.claude/settings.local.json
+
+# ── log ──
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.log
+
+# ── hệ điều hành & trình soạn thảo ──
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/*
+!.vscode/extensions.json
+*.swp
