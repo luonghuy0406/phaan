@@ -1,6 +1,12 @@
 // So khớp bản chuyển đổi Supertonic (src/lib/supertonic/core.ts) với bản Python, dùng mô hình trong ~/.cache/supertonic3.
 // node tools/check-supertonic.mjs <texts.json> <python-output.json> <thư-mục-ghi-wav>
-import ort from 'onnxruntime-node';
+// onnxruntime-node is NOT a project dependency (its installer downloads CUDA builds and breaks `npm install` on Vercel).
+// To run this local check:  npm i --no-save onnxruntime-node@1.22.0  &&  node tools/check-supertonic.mjs …
+let ort;
+try { ort = (await import('onnxruntime-node')).default; } catch {
+  console.error('Thiếu onnxruntime-node. Cài tạm (không ghi vào package.json):  npm i --no-save onnxruntime-node@1.22.0');
+  process.exit(1);
+}
 import { readFileSync, writeFileSync } from 'node:fs';
 import { preprocess, toIds, makeStyle, synthesizeOne, encodeWav, chunkForModel } from '../src/lib/supertonic/core.ts';
 const D = process.env.HOME + '/.cache/supertonic3/';
