@@ -1,0 +1,308 @@
+{
+  "id": "quai-vat-21-khuon-mat",
+  "no": 16,
+  "status": "available",
+  "title": "Quái vật 21 khuôn mặt",
+  "tagline": "Những phong kẹo tẩm độc xyanua rải khắp kệ siêu thị và bức thư thách thức từ kẻ mang 21 khuôn mặt.",
+  "difficulty": 5,
+  "players": "2–6",
+  "duration": "110–130 phút",
+  "setting": "Osaka, Kyoto & Tokyo, Nhật Bản (1984–1985)",
+  "tags": [
+    "Vụ án có thật",
+    "Dễ gây ám ảnh",
+    "Kỳ án Nhật Bản",
+    "Tội phạm trí tuệ"
+  ],
+  "cover": "images/cover.webp",
+  "synopsis": "⚠️ HỒ SƠ DỰA TRÊN KỲ ÁN CÓ THẬT CHẤN ĐỘNG NƯỚC NHẬT NĂM 1984: Năm 1984, toàn bộ nước Nhật rơi vào cơn ác mộng kinh hoàng khi một tổ chức bí ẩn tự xưng là 'Quái vật 21 khuôn mặt' bắt cóc chủ tịch tập đoàn bánh kẹo Ezaki Glico, sau đó gửi hàng chục lá thư giễu cợt cảnh sát và truyền thông. Đỉnh điểm là việc chúng lén rải hàng loạt hộp kẹo socola tẩm kali xyanua dán nhãn cảnh báo chết người lên kệ siêu thị khắp các thành phố lớn. Vụ án đã huy động hơn 1,3 triệu lượt cảnh sát, phỏng vấn 125.000 nghi phạm nhưng thủ phạm với 'đôi mắt cáo' đã vĩnh viễn biến mất không một dấu vết trước khi hết thời hiệu khởi tố.",
+  "intro": "Bạn nhận được tập hồ sơ chuyên án tuyệt mật từ Cục Cảnh sát Quốc gia Nhật Bản (NPA). Một cuộc chiến cân não nghẹt thở chống lại tổ chức tội phạm trí tuệ bậc thầy thời kỳ hoàng kim kinh tế thập niên 80. Liệu những ký tự máy đánh chữ sứt mẻ và các phiên giao dịch chứng khoán ngầm có hé lộ động cơ thực sự của bóng ma thế kỷ?",
+  "documents": [
+    {
+      "id": "d01",
+      "stage": 1,
+      "type": "newspaper",
+      "title": "Báo Asahi Shimbun - Cơn ác mộng độc dược trên quầy kệ bánh kẹo Nhật Bản",
+      "date": "11/05/1984",
+      "content": "**CẢNH BÁO ĐỎ TOÀN QUỐC: BÁNH KẸO TẨM XYANUA XUẤT HIỆN TẠI SIÊU THỊ**\n\nHôm qua, tại một siêu thị lớn ở thành phố Osaka, cảnh sát đã thu giữ các hộp kẹo socola của tập đoàn Ezaki Glico bị kẻ gian lén dán nhãn viết tay: 'Nguy hiểm: Đã tẩm độc. Ăn vào sẽ chết'.\n\nKiểm tra sơ bộ xác nhận kẹo chứa lượng lớn chất kịch độc Kali Xyanua đủ làm tê liệt hệ thần kinh của người trưởng thành. Cục Cảnh sát Quốc gia đã phát lệnh khẩn cấp, yêu cầu tất cả các chuỗi bán lẻ trên toàn quốc lập tức dỡ bỏ toàn bộ sản phẩm của các hãng bánh kẹo đang bị đe dọa."
+    },
+    {
+      "id": "d02",
+      "stage": 1,
+      "type": "report",
+      "title": "Biên bản thu giữ hộp kẹo socola tại siêu thị Daiei Osaka",
+      "date": "14h00 ngày 10/05/1984",
+      "content": "**BIÊN BẢN KHÁM NGHIỆM TANG VẬT ĐẦU ĐỘC**\n\n- **Địa điểm**: Quầy bánh kẹo trẻ em, siêu thị Daiei, quận Kita, Osaka.\n- **Tình trạng hộp kẹo**: Hộp kẹo socola nhãn hiệu Glico được bọc màng co nhiệt nguyên vẹn. Tuy nhiên mép dán đáy hộp có dấu vết bị dùng dao lam rạch nhẹ một đường rồi dán lại bằng keo dán công nghiệp.\n- **Nhãn cảnh báo bên ngoài**: Một mẩu giấy trắng kẻ ngang dán đè lên mặt trước hộp bằng băng dính trong, viết bằng bút dạ đen: 'Kiken: Dokuiri Kiken. Tabettara Shinu. Kaijin 21 Mensō' (Nguy hiểm: Đã tẩm độc. Ăn vào sẽ chết. Quái vật 21 khuôn mặt)."
+    },
+    {
+      "id": "d03",
+      "stage": 1,
+      "type": "report",
+      "title": "Kết quả giám định độc chất viện nghiên cứu khoa học cảnh sát Osaka",
+      "date": "16h30 ngày 10/05/1984",
+      "content": "**KẾT QUẢ PHÂN TÍCH ĐỘC CHẤT HỌC**\n\n1. **Độc chất thu được**: Bột tinh thể màu trắng nhét trong 3 viên kẹo socola là Kali Xyanua (KCN) tinh khiết 98%.\n2. **Độc lực**: Mỗi viên kẹo chứa khoảng 0.2 gram xyanua (gấp 3 lần liều lượng gây tử vong tuyệt đối cho người trưởng thành trong vòng 2 phút do ức chế men hô hấp tế bào cytochrom oxidase).\n3. **Mục đích của việc dán nhãn cảnh báo**: Nhóm thủ phạm cố tình dán nhãn cảnh báo để người tiêu dùng không ăn phải, chứng tỏ mục tiêu của chúng không phải là thảm sát hàng loạt mà là gây hoảng loạn tâm lý tối đa để hủy hoại uy tín tập đoàn."
+    },
+    {
+      "id": "d04",
+      "stage": 1,
+      "type": "report",
+      "title": "Sơ đồ các địa điểm phát hiện kẹo độc tại vùng Kansai",
+      "date": "17h00 ngày 10/05/1984",
+      "content": "**SƠ ĐỒ PHÂN BỐ CÁC ĐIỂM RẢI ĐỘC DƯỢC**\n\n- Đợt 1: 5 siêu thị lớn dọc tuyến đường sắt Hankyu nối Osaka và Kobe.\n- Đợt 2: Các cửa hàng bách hóa quanh ga Kyoto và Nagoya.\n- Đặc điểm chung: Tất cả các điểm rải kẹo đều nằm gần các ga tàu điện ngầm có lưu lượng khách cực lớn, tạo điều kiện cho thủ phạm nhanh chóng tẩu thoát qua hệ thống giao thông công cộng."
+    },
+    {
+      "id": "d05",
+      "stage": 1,
+      "type": "photo",
+      "title": "Ảnh chụp bức thư nặc danh máy đánh chữ gửi tòa soạn báo",
+      "date": "18h00 ngày 10/05/1984",
+      "image": "images/d05-buc-thu.webp",
+      "content": "Ảnh chụp bức thư khiêu khích gửi báo Mainichi Shimbun: Gõ bằng máy đánh chữ cơ học tiếng Nhật. Ký tự 'ka' (か) có vết sứt cơ học mòn vẹt ở góc trái. Chân thư ký tên con dấu đỏ 'Quái vật 21 khuôn mặt'. Nội dung giễu cợt: 'Cảnh sát ngu ngốc các người chỉ biết đi tuần ngoài phố, làm sao bắt được ta?'."
+    },
+    {
+      "id": "d06",
+      "stage": 2,
+      "type": "testimony",
+      "title": "Lời khai của Giám đốc điều hành tập đoàn Morinaga",
+      "date": "09h00 ngày 15/09/1984",
+      "lines": [
+        { "n": 1, "text": "Sau khi tập đoàn Glico bị tấn công, đến lượt Morinaga chúng tôi nhận được thư tống tiền 100 triệu Yên." },
+        { "n": 2, "text": "Chúng đe dọa nếu không nộp tiền, chúng sẽ rải độc vào kẹo socola Morinaga trên toàn quốc." },
+        { "n": 3, "text": "Chúng tôi đã phải thu hồi khẩn cấp hàng triệu hộp bánh kẹo khỏi các kệ hàng, thiệt hại ước tính lên tới hơn 40 triệu USD." },
+        { "n": 4, "text": "Giá cổ phiếu của công ty chúng tôi trên sàn chứng khoán Tokyo đã tụt dốc thảm hại gần 50% chỉ trong hai tuần!" }
+      ]
+    },
+    {
+      "id": "d07",
+      "stage": 2,
+      "type": "report",
+      "title": "Biên bản thu hồi bánh kẹo toàn quốc",
+      "date": "10h30 ngày 15/09/1984",
+      "content": "**CHIẾN DỊCH THU HỒI BÁNH KẸO LỚN NHẤT LỊCH SỬ**\n\nHơn 35.000 cửa hàng tiện lợi và siêu thị trên khắp lãnh thổ Nhật Bản đã niêm phong và cất toàn bộ sản phẩm của Glico và Morinaga vào kho. Các kệ bánh kẹo của siêu thị trống trơn, cảnh sát tuần tra 24/24 tại tất cả các quầy hàng."
+    },
+    {
+      "id": "d08",
+      "stage": 2,
+      "type": "letter",
+      "title": "Bức thư thứ 14 của Quái vật 21 khuôn mặt gửi Cảnh sát trưởng",
+      "date": "20/09/1984",
+      "content": "**TRÍCH BỨC THƯ KHIÊU KHÍCH SỐ 14**\n\n'Gửi các viên cảnh sát ngốc nghếch!\n\nĐừng có nói dối nữa. Mọi tội ác đều bắt đầu từ một lời nói dối. Ở Nhật Bản này không ai có thể giấu nổi chúng ta điều gì đâu.\n\nCác người không thể bắt được chúng ta đâu. Tầm nhìn của các người quá hạn hẹp, cảnh sát chỉ biết chạy theo cái bóng của chính mình. Hãy để chúng ta chỉ cho các người cách phá án nhé...'\n\n(Ký tên: Quái vật 21 khuôn mặt)."
+    },
+    {
+      "id": "d09",
+      "stage": 2,
+      "type": "report",
+      "title": "Ảnh phác thảo truy nã 'Người đàn ông mắt cáo'",
+      "date": "25/09/1984",
+      "content": "**BẢN PHÁC HỌA NHẬN DẠNG NGHI PHẠM CHỦ CHỐT**\n\nCăn cứ lời khai của các nhân viên tàu điện và camera an ninh: Người đàn ông trạc 35-45 tuổi, cao khoảng 1m75, dáng người thể thao, đội mũ bóng chày màu xanh đậm, có đôi mắt xếch dài sắc lạnh đặc trưng như mắt loài cáo ('Fox-Eyed Man'), xuất hiện tại nhiều điểm hẹn giao tiền chuộc ở Kyoto và Nagoya."
+    },
+    {
+      "id": "d10",
+      "stage": 3,
+      "type": "report",
+      "title": "Báo cáo giám định kỹ thuật cơ học chiếc máy đánh chữ Panwriter",
+      "date": "14h00 ngày 05/10/1984",
+      "content": "**GIÁM ĐỊNH TÀI LIỆU CƠ HỌC**\n\n1. Tất cả 28 bức thư nặc danh gửi tới báo chí đều được gõ từ cùng **một chiếc máy đánh chữ cơ học xách tay hiệu Panwriter (sản xuất năm 1978)**.\n2. **Khuyết tật nhận dạng độc quyền**: Thanh dập ký tự 'ka' (か) bị mẻ khuyết một góc 0.3mm ở cạnh trên bên trái, tạo vết đứt đoạn mực đặc trưng không thể làm giả.\n3. Ruy-băng mực sử dụng là loại ruy-băng vải đen rẻ tiền bán đại trà tại các nhà sách vùng Kansai."
+    },
+    {
+      "id": "d11",
+      "stage": 3,
+      "type": "photo",
+      "title": "Ảnh chụp vi thể mép dán keo nhiệt polyurethane trên hộp kẹo",
+      "date": "15h30 ngày 05/10/1984",
+      "image": "images/d11-hop-keo.webp",
+      "content": "Ảnh chụp hộp kẹo socola dán nhãn độc và kết quả kính hiển vi quét: Lớp keo dán nhiệt ở mép hộp là hợp chất keo công nghiệp Polyurethane mã hiệu PUR-82. Loại keo này đòi hỏi súng phun nhiệt nhiệt độ trên 140°C để dán phẳng phiu như mới xuất xưởng."
+    },
+    {
+      "id": "d12",
+      "stage": 3,
+      "type": "report",
+      "title": "Danh sách các cơ sở sở hữu súng keo PUR-82 tại Kobe",
+      "date": "16h30 ngày 05/10/1984",
+      "content": "**RÀ SOÁT CÔNG NGHỆ ĐÓNG GÓI BAO BÌ**\n\nTại vùng Hyogo và Kobe chỉ có 3 nhà máy in ấn bao bì thực phẩm nhập khẩu súng phun keo PUR-82. Trong đó có Công ty In bao bì Kobe Seihan - nơi cựu kỹ sư Kenjiro Sato từng làm việc."
+    },
+    {
+      "id": "d13",
+      "stage": 3,
+      "type": "report",
+      "title": "Bản phân tích quang phổ âm thanh băng ghi âm chỉ dẫn giao tiền",
+      "date": "17h00 ngày 05/10/1984",
+      "content": "**PHÂN TÍCH ÂM HỌC TỔNG ĐÀI ĐIỆN THOẠI**\n\nCuộn băng cassette tống tiền gửi tập đoàn Morinaga ghi lại giọng một đứa trẻ khoảng 8-10 tuổi đọc từng câu chữ theo một kịch bản viết sẵn. Giọng đọc có ngữ điệu phương ngữ vùng Kyoto - Shiga rất đặc trưng."
+    },
+    {
+      "id": "d14",
+      "stage": 4,
+      "type": "report",
+      "title": "Báo cáo cuộc phục kích bắt hụt người đàn ông mắt cáo trên tàu Shinkansen",
+      "date": "15/11/1984",
+      "content": "**CUỘC CHẠY TRỐN NGHẸT THỞ TRÊN TÀU CAO TỐC**\n\nĐêm 14/11, cảnh sát mật cải trang trên chuyến tàu đêm Shinkansen từ Tokyo về Kyoto đã phát hiện một người đàn ông có nhân dạng mắt cáo ngồi khoang số 7. Khi tàu dừng bánh tại ga Kyoto, đối tượng đã nhanh chóng lẩn vào đám đông hành khách và biến mất sau cầu vượt nhà ga trước khi lực lượng vây bắt kịp áp sát."
+    },
+    {
+      "id": "d15",
+      "stage": 4,
+      "type": "report",
+      "title": "Biểu đồ biến động cổ phiếu bất thường của Glico và Morinaga trên sàn Tokyo",
+      "date": "10/12/1984",
+      "content": "**BẰNG CHỨNG THAO TÚNG THỊ TRƯỜNG CHỨNG KHOÁN**\n\nỦy ban Giám sát Giao dịch Chứng khoán Nhật Bản phát hiện:\n1. Ngay trước mỗi đợt gửi thư đe dọa tẩm độc, một nhóm tài khoản ngầm tại Osaka đã thực hiện lệnh **bán khống (short-selling) hàng triệu cổ phiếu** của Glico và Morinaga.\n2. Khi tin tức kẹo tẩm độc nổ ra trên báo chí, giá cổ phiếu lập tức giảm sàn từ 40% đến 50%.\n3. Ngay sau đó, nhóm này mua lại cổ phiếu ở mức đáy để đóng vị thế, thu lợi nhuận ròng ước tính hơn **1,2 tỷ Yên** (khoảng 8 triệu USD thời điểm năm 1984)!"
+    },
+    {
+      "id": "d16",
+      "stage": 4,
+      "type": "report",
+      "title": "Hồ sơ trinh sát nhóm đầu cơ Kansai và băng đảng Yakuza",
+      "date": "15/01/1985",
+      "content": "**MỐI LIÊN HỆ TỘI PHẠM CÓ TỔ CHỨC**\n\nCảnh sát xác định các tài khoản chứng khoán ngầm được mở thông qua các công ty bình phong có liên quan đến Yamaguchi-gumi (băng đảng Yakuza lớn nhất Nhật Bản) và cựu giám đốc một công ty đầu tư tài chính tại Osaka."
+    },
+    {
+      "id": "d17",
+      "stage": 4,
+      "type": "report",
+      "title": "Bi kịch tự sát của Cảnh sát trưởng tỉnh Shiga",
+      "date": "08/08/1985",
+      "content": "**BI KỊCH TẬN CÙNG CỦA CUỘC ĐIỀU TRA**\n\nDo áp lực quá lớn và nỗi dằn vặt vì đã để 'Người đàn ông mắt cáo' trốn thoát trong ca trực của mình tại ga tàu, Cảnh sát trưởng tỉnh Shiga - ông Shoji Yamamoto - đã tự thiêu để tạ lỗi trước danh dự của lực lượng cảnh sát Nhật Bản."
+    },
+    {
+      "id": "d18",
+      "stage": 5,
+      "type": "letter",
+      "title": "Bức thư tuyên bố kết thúc chiến dịch của Quái vật 21 khuôn mặt",
+      "date": "12/08/1985",
+      "content": "**LỜI TUYÊN BỐ BIẾN MẤT CỦA BÓNG MA THẾ KỶ**\n\n'Yamamoto của cảnh sát Shiga đã chết. Thật là một cái chết của một người đàn ông dũng cảm! Chúng ta xin gửi lời chia buồn chân thành.\n\nChúng ta quyết định buông tha các công ty thực phẩm. Kể từ nay, nếu có ai đầu độc bánh kẹo nữa, đó không phải là chúng ta. Nghề tội phạm của chúng ta thế là đủ rồi. Chúng ta là những kẻ xấu, điều đó có nghĩa chúng ta có nhiều việc phải làm hơn là bắt nạt các công ty kẹo.\n\nThật vui khi được sống một cuộc đời như những kẻ bất hảo!\n\nQuái vật với 21 khuôn mặt - Kính chào tạm biệt!'"
+    },
+    {
+      "id": "d19",
+      "stage": 5,
+      "type": "report",
+      "title": "Bản tổng kết 15 năm điều tra của Cục Cảnh sát Quốc gia Nhật Bản",
+      "date": "Năm 2000 (Hết thời hiệu khởi tố)",
+      "content": "**TỔNG KẾT ĐẠI CHUYÊN ÁN GLICO MORINAGA**\n\n- Tổng số cảnh sát tham gia: 1.300.000 lượt cán bộ chiến sĩ.\n- Số nghi phạm bị điều tra: 125.000 người.\n- Số chứng cứ thu thập: 28.300 mẫu vật.\n- Kết quả: Đúng 0h00 ngày 13/02/2000, thời hiệu khởi tố vụ án chính thức hết hiệu lực theo luật pháp Nhật Bản mà không có bất kỳ ai bị truy tố ra tòa. Vụ án mãi mãi khép lại như một bí ẩn thế kỷ."
+    },
+    {
+      "id": "d20",
+      "stage": 5,
+      "type": "note",
+      "title": "Bài học lịch sử về quy chuẩn đóng gói thực phẩm chống cạy mở",
+      "date": "Tài liệu bảo đảm an toàn tiêu dùng",
+      "content": "**DI SẢN SAU CƠN ÁC MỘNG**\n\nSau vụ án Quái vật 21 khuôn mặt, toàn bộ nền công nghiệp sản xuất bánh kẹo thế giới và Nhật Bản đã thay đổi hoàn toàn quy chuẩn đóng gói: Phát minh ra màng niêm phong xé rách một lần (Tamper-evident packaging), tem bảo đảm chống giả và camera an ninh phủ kín toàn bộ các kệ hàng siêu thị hiện đại."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "stage": 1,
+      "type": "evidence",
+      "title": "Chất kịch độc trong hộp kẹo và bức thư máy đánh chữ sứt mẻ",
+      "intro": "Vụ án đầu độc mở đầu bằng chất độc xyanua và những bức thư khiêu khích được gõ bằng máy đánh chữ cổ điển.",
+      "prompt": "Ghim 2 tài liệu chứng minh chất độc kali xyanua liều lượng gây chết người trong hộp kẹo và bức thư khiêu khích cảnh sát có ký tự máy đánh chữ sứt mẻ đặc thù.",
+      "need": 2,
+      "answer": ["d03", "d05"],
+      "hints": [
+        "Kiểm tra kết quả giám định độc chất về hàm lượng Kali Xyanua 98% trong viên kẹo.",
+        "Xem ảnh chụp bức thư nặc danh máy đánh chữ có ký tự 'ka' bị mòn vẹt sứt góc trái.",
+        "Xem xét kỹ các bằng chứng vật chất và báo cáo kỹ thuật hình sự."
+      ],
+      "explanation": [
+        "Tài liệu d03 xác nhận độc chất là Kali Xyanua liều lượng chết người gấp 3 lần.",
+        "Tài liệu d05 (ảnh chụp) thể hiện bức thư nặc danh gõ bằng máy đánh chữ có chữ 'ka' bị mòn sứt góc cơ học nhận dạng."
+      ],
+      "nudges": [
+        {
+          "picks": ["d01", "d02"],
+          "message": "Bản tin và biên bản siêu thị Daiei chưa thể hiện kết quả phân tích độc chất liều lượng và khuyết tật cơ học của phím máy đánh chữ."
+        }
+      ]
+    },
+    {
+      "id": "q2",
+      "stage": 2,
+      "type": "line",
+      "title": "Thiệt hại tài chính và cổ phiếu lao dốc",
+      "intro": "Các đợt đe dọa đầu độc đã đánh trực diện vào niềm tin của người tiêu dùng và giá trị tài chính của tập đoàn Morinaga.",
+      "prompt": "Hãy chọn một dòng trong lời khai của Giám đốc điều hành tập đoàn Morinaga (d06) chỉ ra tác động tàn khốc khiến giá cổ phiếu trên sàn chứng khoán Tokyo tụt dốc gần 50% chỉ trong hai tuần.",
+      "answer": ["d06:004"],
+      "hints": [
+        "Tìm dòng lời khai nói về việc giá cổ phiếu của công ty trên sàn Tokyo bị tụt dốc gần 50%.",
+        "Đối chiếu mốc thời gian và hành vi của người khai với các nhân chứng xung quanh."
+      ],
+      "explanation": [
+        "Tại dòng d06:004, Giám đốc Morinaga khai: 'Giá cổ phiếu của công ty chúng tôi trên sàn chứng khoán Tokyo đã tụt dốc thảm hại gần 50% chỉ trong hai tuần!'."
+      ]
+    },
+    {
+      "id": "q3",
+      "stage": 3,
+      "type": "evidence",
+      "title": "Vết sứt máy đánh chữ và công nghệ keo dán nhiệt",
+      "intro": "Khoa học kỹ thuật hình sự Nhật Bản đã bóc tách từng dấu vết cơ học của hung thủ.",
+      "prompt": "Ghim 2 tài liệu phân tích kỹ thuật về chiếc máy đánh chữ Panwriter đời 1978 có phím chữ 'ka' bị mẻ và loại keo dán nhiệt công nghiệp PUR-82 dán trên mép hộp kẹo.",
+      "need": 2,
+      "answer": ["d10", "d11"],
+      "hints": [
+        "Báo cáo giám định máy đánh chữ Panwriter về vết khuyết tật cơ học 0.3mm của chữ 'ka'.",
+        "Ảnh chụp vi thể hộp kẹo và phân tích hợp chất keo dán nhiệt Polyurethane PUR-82 đòi hỏi súng nhiệt 140 độ C.",
+        "Xem xét kỹ các bằng chứng vật chất và báo cáo kỹ thuật hình sự."
+      ],
+      "explanation": [
+        "Tài liệu d10 khẳng định toàn bộ thư được gõ từ một chiếc Panwriter 1978 có vết mẻ khuyết tật nhận dạng.",
+        "Tài liệu d11 (ảnh vi thể) chỉ ra mép hộp kẹo dán lại bằng keo nhiệt Polyurethane PUR-82 công nghiệp."
+      ],
+      "nudges": [
+        {
+          "picks": ["d12", "d13"],
+          "message": "d12 và d13 là danh sách xưởng và phân tích giọng nói; hãy chọn báo cáo máy đánh chữ d10 và ảnh chụp vi thể keo nhiệt d11."
+        }
+      ]
+    },
+    {
+      "id": "q4",
+      "stage": 4,
+      "type": "evidence",
+      "title": "Bóng ma mắt cáo và động cơ thao túng chứng khoán",
+      "intro": "Những cuộc rượt đuổi nghẹt thở và dữ liệu tài chính đã hé lộ mục đích thực sự của bóng ma thế kỷ.",
+      "prompt": "Ghim 2 tài liệu chỉ ra cuộc tẩu thoát của 'Người đàn ông mắt cáo' trên chuyến tàu Shinkansen và biểu đồ bán khống cổ phiếu thu lợi hơn 1,2 tỷ Yên.",
+      "need": 2,
+      "answer": ["d14", "d15"],
+      "hints": [
+        "Báo cáo trinh sát về việc bắt hụt người đàn ông mắt cáo tại ga Kyoto sau chuyến tàu Shinkansen.",
+        "Biểu đồ biến động tài chính của Ủy ban Chứng khoán về lệnh bán khống cổ phiếu Glico và Morinaga thu lợi hơn 1,2 tỷ Yên.",
+        "Xem xét kỹ các bằng chứng vật chất và báo cáo kỹ thuật hình sự."
+      ],
+      "explanation": [
+        "Tài liệu d14 mô tả cuộc chạy trốn của nghi phạm mắt cáo tại ga Kyoto.",
+        "Tài liệu d15 chứng minh động cơ kinh tế thao túng cổ phiếu bán khống thu lợi khổng lồ 1,2 tỷ Yên nhờ tin đồn đầu độc."
+      ],
+      "nudges": [
+        {
+          "picks": ["d16", "d17"],
+          "message": "d16 và d17 là hồ sơ Yakuza và cái chết của cảnh sát trưởng; hãy chọn tài liệu chạy trốn d14 và biểu đồ chứng khoán d15."
+        }
+      ]
+    },
+    {
+      "id": "q5",
+      "stage": 5,
+      "type": "choice",
+      "title": "Bản chất động cơ của Quái vật 21 khuôn mặt",
+      "intro": "Một chiến dịch khủng bố tâm lý không lời giải đã làm rung chuyển nền kinh tế Nhật Bản.",
+      "prompt": "Dựa vào toàn bộ tài liệu hồ sơ, động cơ cốt lõi thực sự của tổ chức Quái vật 21 khuôn mặt đằng sau các vụ đầu độc bánh kẹo là gì?",
+      "options": [
+        "Chỉ là hành động trả thù cá nhân của cựu kỹ sư hóa thực phẩm",
+        "Chỉ nhằm mục đích giết hại ngẫu nhiên người tiêu dùng siêu thị",
+        "Thao túng thị trường tài chính bằng cách bán khống cổ phiếu sụt giảm thu lợi hơn 1,2 tỷ Yên kết hợp tống tiền tâm lý doanh nghiệp",
+        "Do mâu thuẫn tranh giành địa bàn buôn bán bánh kẹo giữa các siêu thị"
+      ],
+      "answer": [2],
+      "hints": [
+        "Xem xét tài liệu d03 (cố tình dán nhãn để không ai ăn phải) và d15 (lệnh bán khống cổ phiếu thu lời 1,2 tỷ Yên trước mỗi đợt gửi thư độc).",
+        "Xem xét kỹ các bằng chứng vật chất và báo cáo kỹ thuật hình sự."
+      ],
+      "explanation": [
+        "Đáp án đúng là lựa chọn thứ ba: Quái vật 21 khuôn mặt cố tình dán nhãn cảnh báo để tránh chết người thực sự (d03) nhằm tạo sự hoảng loạn dư luận, ép cổ phiếu các tập đoàn bánh kẹo tụt dốc thảm hại để kiếm khoản lợi nhuận khổng lồ hơn 1,2 tỷ Yên từ thị trường bán khống chứng khoán (d15, d16)."
+      ]
+    }
+  ],
+  "finale": {
+    "culprit": "Quái vật 21 khuôn mặt (Tổ chức tội phạm thao túng tài chính ngầm)",
+    "text": "Đúng 0h00 ngày 13/02/2000, thời hiệu khởi tố vụ án Glico Morinaga chính thức khép lại. Danh tính thật sự của 'Người đàn ông mắt cáo' và tổ chức 'Quái vật 21 khuôn mặt' mãi mãi chìm vào bóng tối lịch sử như một trong những kỳ án tội phạm kinh tế - tâm lý hoàn hảo và ám ảnh nhất thế giới. Di sản còn lại của vụ án chính là sự ra đời của các màng niêm phong hộp bánh kẹo chống cạy mở mà cả nhân loại đang sử dụng ngày nay."
+  }
+}

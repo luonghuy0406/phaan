@@ -1,0 +1,269 @@
+{
+  "id": "dem-sung-no-tay-son",
+  "no": 15,
+  "status": "available",
+  "title": "Đêm súng nổ phố Tây Sơn",
+  "tagline": "Đêm mưa giông súng nổ chấn động phố Tây Sơn, kẻ sát nhân cướp tiệm vàng biến mất trong bóng tối cùng hàng trăm lượng vàng.",
+  "difficulty": 4,
+  "players": "2–5",
+  "duration": "100–120 phút",
+  "setting": "Tiệm vàng Kim Sinh, phố Tây Sơn, Đống Đa, Hà Nội (07/1999)",
+  "tags": [
+    "Vụ án có thật",
+    "Dễ gây ám ảnh",
+    "Trọng án có vũ trang",
+    "Hà Nội 1999"
+  ],
+  "cover": "images/cover.webp",
+  "synopsis": "⚠️ HỒ SƠ DỰA TRÊN TRỌNG ÁN CÓ THẬT CHẤN ĐỘNG THỦ ĐÔ HÀ NỘI NĂM 1999: Đêm 18/07/1999, giữa cơn mưa giông mù mịt sấm sét, tiếng súng nổ kinh hoàng đã xé toạc màn đêm tại tiệm vàng Kim Sinh (số 38 phố Tây Sơn, quận Đống Đa). Kẻ thủ ác mang súng ngắn K54 và súng hoa cải tàn bạo bắn gục gia đình chủ tiệm, đập vỡ tủ kính cướp đi hơn 100 lượng vàng rồi phóng xe máy tẩu thoát vào màn mưa. Vụ án gây chấn động dư luận cả nước, buộc lực lượng công an phải tung những điều tra viên kỳ cựu nhất lần theo từng vỏ đạn dập năm 1968 và vệt lốp xe máy trong đêm.",
+  "intro": "Phòng Cảnh sát Hình sự Công an thành phố Hà Nội xác lập chuyên án đặc biệt. Hiện trường ngổn ngang mảnh kính tủ vỡ và vỏ đạn quân dụng nồng nặc mùi thuốc súng. Một cuộc rượt đuổi nghẹt thở xuyên qua các ngõ ngách Hà thành bắt đầu từ một mẩu vỏ bao thuốc lá rơi lại trong đêm giông.",
+  "documents": [
+    {
+      "id": "d01",
+      "stage": 1,
+      "type": "newspaper",
+      "title": "Báo An ninh Thủ đô - Trọng án cướp tiệm vàng chấn động phố Tây Sơn",
+      "date": "19/07/1999",
+      "content": "**TIẾNG SÚNG TRONG ĐÊM MƯA: CƯỚP TIỆM VÀNG KIM SINH, HÀNG TRĂM LƯỢNG VÀNG BIẾN MẤT**\n\nKhoảng 23h00 đêm qua 18/07, tại tiệm vàng Kim Sinh (số 38 phố Tây Sơn, phường Quang Trung, quận Đống Đa), kẻ cướp có vũ trang đã liều lĩnh nổ súng tấn công gia đình chủ tiệm vàng trong cơn mưa lớn.\n\nNhiều phát đạn súng ngắn quân dụng đã vang lên cướp đi sinh mạng của chủ tiệm và làm người thân bị thương nặng. Toàn bộ vàng miếng, vàng trang sức trong tủ kính bị khoắng sạch. Ban Giám đốc Công an TP. Hà Nội đã trực tiếp có mặt tại hiện trường chỉ đạo phá án khẩn cấp."
+    },
+    {
+      "id": "d02",
+      "stage": 1,
+      "type": "report",
+      "title": "Biên bản khám nghiệm hiện trường tiệm vàng Kim Sinh",
+      "date": "00h30 ngày 19/07/1999",
+      "content": "**BIÊN BẢN KHÁM NGHIỆM HIỆN TRƯỜNG**\n\n- **Địa điểm**: Gian ngoài tầng 1 tiệm vàng Kim Sinh, số 38 phố Tây Sơn, Đống Đa.\n- **Hiện trạng đổ vỡ**: Hai tủ kính cường lực trưng bày vàng ta bị búa tạ đập vỡ toang, các khay nhung đỏ trống rỗng. Trên mặt sàn gỗ vương vãi các mảnh kính vỡ vụn dính máu.\n- **Dấu vết đạn đạo**: Trên tường vôi có 2 vết đạn xuyên phá làm bung vữa, trên khung cửa gỗ lim có vết bắn của đạn ghém hoa cải chì li ti. Thu giữ được 3 vỏ đạn súng ngắn bằng đồng dưới gầm quầy thu ngân."
+    },
+    {
+      "id": "d03",
+      "stage": 1,
+      "type": "report",
+      "title": "Kết quả giám định tử thi nạn nhân chủ tiệm vàng",
+      "date": "03h00 ngày 19/07/1999",
+      "content": "**KẾT QUẢ KHÁM NGHIỆM TỬ THI VÀ ĐẠN ĐẠO**\n\n1. **Nguyên nhân tử vong**: Mất máu cấp do trúng 2 phát đạn xuyên ngực từ cự ly gần dưới 2 mét làm thủng tâm thất trái và dập nát phổi.\n2. **Đặc điểm đầu đạn**: Thu được 2 đầu đạn kim loại bọc đồng cỡ 7.62mm còn nguyên rãnh xoắn nòng súng. Đặc điểm rãnh xoắn 4 rãnh nghiêng phải, phù hợp 100% với súng ngắn quân dụng K54 (K-54 Tokarev).\n3. **Thời điểm tử vong**: Khoảng 22h45 đến 23h00 đêm 18/07/1999."
+    },
+    {
+      "id": "d04",
+      "stage": 1,
+      "type": "report",
+      "title": "Sơ đồ hiện trường tiệm vàng và ngõ thoát hiểm",
+      "date": "04h00 ngày 19/07/1999",
+      "content": "**SƠ ĐỒ HIỆN TRƯỜNG VÀ ĐƯỜNG TẨU THOÁT**\n\n- Tiệm vàng nằm mặt phố Tây Sơn, sát cạnh ngõ chùa Đồng Quang.\n- Lối thoát hiểm: Cửa ngách sau tiệm vàng thông ra ngõ chùa Đồng Quang dẫn ngoằn ngoèo ra đường Đặng Tiến Đông và gò Đống Đa. Đây là lối đi tối tăm, vắng người vào đêm mưa bão."
+    },
+    {
+      "id": "d05",
+      "stage": 1,
+      "type": "photo",
+      "title": "Ảnh chụp 3 vỏ đạn K54 dập năm 1968 và đầu đạn thu tại hiện trường",
+      "date": "02h30 ngày 19/07/1999",
+      "image": "images/d05-vo-dan.webp",
+      "content": "Ảnh chụp cận cảnh kỹ thuật hình sự: Ba chiếc vỏ đạn súng ngắn quân dụng bằng đồng thau dập chìm con số '1968 - K54' ở đuôi vỏ. Cạnh đó là đầu đạn kim loại cỡ 7.62mm bị biến dạng đầu nhưng còn nguyên 4 đường rãnh xoắn nòng súng sắc nét."
+    },
+    {
+      "id": "d06",
+      "stage": 2,
+      "type": "testimony",
+      "title": "Lời khai của thợ kim hoàn cũ Nguyễn Văn Đông",
+      "date": "08h30 ngày 19/07/1999",
+      "lines": [
+        { "n": 1, "text": "Tôi từng làm thợ bạc cho ông Sinh được 3 năm, mới nghỉ việc hồi tháng trước." },
+        { "n": 2, "text": "Đúng là tôi có bức xúc vì ông Sinh trừ tiền công của tôi, nhưng tôi không dám làm chuyện tày đình như thế." },
+        { "n": 3, "text": "Tối qua từ 20h00 đến sáng hôm sau tôi ở lì tại nhà bố mẹ đẻ bên Gia Lâm ăn cơm và ngủ với vợ con, không hề bước chân sang nội thành." },
+        { "n": 4, "text": "Cả gia đình bố mẹ và hàng xóm đều có thể làm chứng cho tôi." },
+        { "n": 5, "text": "Tôi biết ông Sinh hay cất vàng miếng trong két sắt sau quầy, người ngoài không thể biết được." }
+      ]
+    },
+    {
+      "id": "d07",
+      "stage": 2,
+      "type": "testimony",
+      "title": "Lời khai của chủ tiệm cầm đồ bến xe Giáp Bát Trần Khắc Tuấn",
+      "date": "09h15 ngày 19/07/1999",
+      "lines": [
+        { "n": 1, "text": "Tôi mở tiệm cầm đồ xe máy gần bến xe Giáp Bát." },
+        { "n": 2, "text": "Mấy hôm trước có thằng Thắng 'quạ' đến hỏi tôi có chỗ nào mua gom vàng thỏi không hóa đơn không." },
+        { "n": 3, "text": "Thằng Thắng là dân giang hồ có lệnh nã trốn ở bãi sông Hồng, người nó lúc nào cũng găm khẩu súng ngắn trong bụng." },
+        { "n": 4, "text": "Tôi sợ rước họa vào thân nên xua tay từ chối không dám nhận." }
+      ]
+    },
+    {
+      "id": "d08",
+      "stage": 2,
+      "type": "testimony",
+      "title": "Lời khai của bảo vệ chùa Đồng Quang",
+      "date": "09h45 ngày 19/07/1999",
+      "lines": [
+        { "n": 1, "text": "Đêm qua mưa to gió lớn như trút nước, tôi đang ngồi trực trong gian tam bảo." },
+        { "n": 2, "text": "Khoảng gần 23h00, tôi nghe thấy mấy tiếng nổ 'đoàng, đoàng' chát chúa át cả tiếng sấm." },
+        { "n": 3, "text": "Chừng 2 phút sau, tôi hé cửa ngó ra thì thấy một bóng người cao gầy khoác áo mưa rách, phóng vọt một chiếc xe máy Simson màu đỏ mận từ trong ngõ ngách tiệm vàng phi thẳng ra đường Đặng Tiến Đông." }
+      ]
+    },
+    {
+      "id": "d09",
+      "stage": 2,
+      "type": "report",
+      "title": "Biên bản thu giữ vỏ bao thuốc lá Du Lịch tại ngõ thoát hiểm",
+      "date": "10h30 ngày 19/07/1999",
+      "content": "**VẬT CHỨNG THU TẠI NGÕ CHÙA ĐỒNG QUANG**\n\nKhám nghiệm kỹ mặt đất ngõ ngách phía sau tiệm vàng, công an phát hiện:\n1. Một vỏ bao thuốc lá Du Lịch màu xanh bị xé rách góc nắp, rơi cạnh vũng nước mưa dưới chân bờ tường.\n2. Kẹp bên trong nắp bao thuốc là một cuống vé qua phà Đen (chuyến phà 19h30 tối 18/07).\n3. Một vệt lốp xe máy in trên bùn đất ngõ hẹp có hoa văn gai lốp quả trám đặc trưng của dòng xe Simson S51 của Đức."
+    },
+    {
+      "id": "d10",
+      "stage": 3,
+      "type": "report",
+      "title": "Báo cáo giám định đạn đạo rãnh xoắn súng K54",
+      "date": "14h00 ngày 19/07/1999",
+      "content": "**KẾT QUẢ GIÁM ĐỊNH ĐẠN ĐẠO VI THỂ**\n\n1. Ba vỏ đạn thu tại tiệm vàng (d05) được bắn ra từ cùng một khẩu súng ngắn quân dụng K54. Vết kim hỏa hình bán nguyệt lõm sâu đặc thù và vết móc đạn trên gờ vỏ hoàn toàn đồng nhất.\n2. Khẩu súng gây án có nòng súng bị xước một vết xước dọc ở rãnh xoắn số 2, để lại đường gờ vi thể đặc biệt trên thân các đầu đạn bọc đồng thu được trong tử thi nạn nhân."
+    },
+    {
+      "id": "d11",
+      "stage": 3,
+      "type": "photo",
+      "title": "Ảnh dấu vân tay trên vỏ bao thuốc lá Du Lịch",
+      "date": "15h00 ngày 19/07/1999",
+      "image": "images/d11-bao-thuoc.webp",
+      "content": "Ảnh chụp giám định đường vân: Dấu vân tay ngón trỏ phải thu được trên lớp màng bóng kính của vỏ bao thuốc lá Du Lịch qua tra cứu tàng thư căn cước trùng khớp 100% với dấu vân tay của đối tượng truy nã đặc biệt nguy hiểm **Phạm Đức Thắng** (tự Thắng 'quạ', SN 1963)."
+    },
+    {
+      "id": "d12",
+      "stage": 3,
+      "type": "report",
+      "title": "Biên bản xác minh bến phà Đen",
+      "date": "16h00 ngày 19/07/1999",
+      "content": "**XÁC MINH LỊCH TRÌNH DI CHUYỂN**\n\nNhân viên soát vé bến phà Đen xác nhận: Chiều tối 18/07, có một người đàn ông đi xe máy Simson màu đỏ mận, dáng người gầy có vết sẹo ngang mắt qua phà từ phía Gia Lâm sang nội thành lúc 19h30, người này mua bao thuốc lá Du Lịch và kẹp cuống vé vào bao."
+    },
+    {
+      "id": "d13",
+      "stage": 3,
+      "type": "report",
+      "title": "Biên bản xác minh ngoại phạm của thợ bạc Đông",
+      "date": "16h30 ngày 19/07/1999",
+      "content": "**XÁC MINH NGOẠI PHẠM**\n\nCông an huyện Gia Lâm kiểm tra đột xuất và xác nhận: Nguyễn Văn Đông có mặt liên tục tại nhà bố mẹ đẻ ở thị trấn Yên Viên từ 19h tối 18/07 đến sáng hôm sau, có biên bản sinh hoạt tổ dân phố và lời khai hàng xóm chứng thực."
+    },
+    {
+      "id": "d14",
+      "stage": 4,
+      "type": "report",
+      "title": "Biên bản vây bắt khẩn cấp Phạm Đức Thắng tại bãi sông Hồng",
+      "date": "05h00 ngày 20/07/1999",
+      "content": "**KẾT QUẢ VÂY BẮT ĐỐI TƯỢNG VŨ TRANG NGUY HIỂM**\n\nRạng sáng 20/07, hơn 30 cán bộ chiến sĩ cảnh sát hình sự đặc nhiệm đã đột kích căn lều hoang tại bãi cát ven sông Hồng (khu vực Tứ Liên, Tây Hồ):\n- Bắt giữ gọn đối tượng Phạm Đức Thắng khi y đang chuẩn bị vượt biên.\n- Khống chế thu giữ ngay dưới gối ngủ của y: 1 khẩu súng ngắn K54 nạp sẵn 6 viên đạn, 1 viên đã lên nòng; 1 khẩu súng tự chế bắn đạn hoa cải và 1 chiếc búa tạ cán gỗ dính mạt kính."
+    },
+    {
+      "id": "d15",
+      "stage": 4,
+      "type": "report",
+      "title": "Biên bản đào bới thu giữ hơn 100 lượng vàng cướp được",
+      "date": "08h30 ngày 20/07/1999",
+      "content": "**THU HỒI TÀI SẢN TANG VẬT VỤ CƯỚP**\n\nDưới hố cát sau căn lều của Thắng, công an đào lên một chiếc túi dù bạt màu xanh rêu chứa:\n- 102 lượng vàng ta được nung chảy vội vã thành các thỏi thô còn dính tro than.\n- 5 chiếc nhẫn kim hoàn còn nguyên nhãn dán khắc chìm thương hiệu 'Kim Sinh - 38 Tây Sơn'.\n- 42 triệu đồng tiền mặt mệnh giá 50.000 đồng."
+    },
+    {
+      "id": "d16",
+      "stage": 4,
+      "type": "report",
+      "title": "Bản thú tội của Phạm Đức Thắng",
+      "date": "11h00 ngày 20/07/1999",
+      "content": "**LỜI THÚ NHẬN CỦA PHẠM ĐỨC THẮNG**\n\n'Tôi đang trốn lệnh truy nã, không có tiền tiêu xài và chuẩn bị trốn sang Campuchia. Tôi theo dõi tiệm vàng Kim Sinh mấy ngày, thấy trời mưa bão sấm chớp nên quyết định ra tay lúc đêm tối. Tôi nấp ở ngõ chùa Đồng Quang, khi chủ tiệm mở cửa sau dắt xe tôi xông vào nổ súng bắn gục những người cản trở rồi lấy búa đập tủ cướp vàng. Tôi không ngờ chiếc vỏ bao thuốc lá rơi lại trong ngõ mưa đã tố cáo tôi...'"
+    },
+    {
+      "id": "d17",
+      "stage": 4,
+      "type": "report",
+      "title": "Kết luận chuyên án cướp tiệm vàng Kim Sinh",
+      "date": "14h00 ngày 20/07/1999",
+      "content": "**KẾT LUẬN ĐIỀU TRA**\n\nChuyên án phá thành công sau chưa đầy 36 giờ truy kích thần tốc. Tên cướp đặc biệt nguy hiểm Phạm Đức Thắng bị bắt giữ cùng toàn bộ vũ khí nóng và tang vật, trả lại sự bình yên cho thủ đô."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "stage": 1,
+      "type": "evidence",
+      "title": "Hung khí quân dụng và dấu vết đạn đạo",
+      "intro": "Vụ cướp có vũ trang để lại hiện trường đầy dấu vết súng đạn quân dụng trong đêm mưa giông.",
+      "prompt": "Ghim 2 tài liệu chứng minh hung khí gây án là súng ngắn quân dụng K54 cỡ 7.62mm qua kết quả giám định tử thi và ảnh chụp 3 vỏ đạn dập năm 1968.",
+      "need": 2,
+      "answer": ["d03", "d05"],
+      "hints": [
+        "Kiểm tra kết quả giám định tử thi về 2 đầu đạn bọc đồng 7.62mm rãnh xoắn K54.",
+        "Xem ảnh chụp cận cảnh 3 vỏ đạn đồng dập số hiệu năm '1968 - K54' thu tại quầy thu ngân.",
+        "Xem xét kỹ các bằng chứng vật chất và báo cáo kỹ thuật hình sự."
+      ],
+      "explanation": [
+        "Tài liệu d03 xác nhận nạn nhân tử vong do đạn súng ngắn quân dụng K54 cỡ 7.62mm.",
+        "Tài liệu d05 (ảnh chụp) thể hiện 3 vỏ đạn đồng dập năm 1968 và đầu đạn biến dạng thu tại hiện trường."
+      ],
+      "nudges": [
+        {
+          "picks": ["d01", "d02"],
+          "message": "Bản tin và biên bản hiện trường ban đầu chưa nêu phân tích rãnh xoắn nòng súng 4 rãnh và con số năm 1968 dập đáy đạn."
+        }
+      ]
+    },
+    {
+      "id": "q2",
+      "stage": 2,
+      "type": "line",
+      "title": "Bằng chứng ngoại phạm của thợ bạc cũ Đông",
+      "intro": "Thợ bạc cũ Nguyễn Văn Đông đưa ra lời khai khẳng định mình ở nhà bố mẹ đẻ suốt buổi tối xảy ra án mạng.",
+      "prompt": "Hãy chọn một dòng trong lời khai của Nguyễn Văn Đông (d06) khẳng định y ở lì tại nhà bố mẹ đẻ bên Gia Lâm từ 20h00 đến sáng hôm sau không hề sang nội thành.",
+      "answer": ["d06:003"],
+      "hints": [
+        "Tìm dòng lời khai nói về việc Đông ở nhà bố mẹ đẻ tại Gia Lâm từ 20h00 đến sáng hôm sau.",
+        "Đối chiếu mốc thời gian và hành vi của người khai với các nhân chứng xung quanh."
+      ],
+      "explanation": [
+        "Tại dòng d06:003, Đông khai: 'Tối qua từ 20h00 đến sáng hôm sau tôi ở lì tại nhà bố mẹ đẻ bên Gia Lâm ăn cơm và ngủ với vợ con, không hề bước chân sang nội thành'."
+      ]
+    },
+    {
+      "id": "q3",
+      "stage": 3,
+      "type": "evidence",
+      "title": "Dấu vân tay then chốt và rãnh xoắn khẩu súng K54",
+      "intro": "Lần theo dấu vết tẩu thoát, cơ quan điều tra đã xác định chính xác danh tính kẻ thủ ác.",
+      "prompt": "Ghim 2 tài liệu chỉ ra kết quả giám định đạn đạo rãnh xoắn đặc thù và dấu vân tay của đối tượng truy nã Phạm Đức Thắng trên vỏ bao thuốc lá rơi lại hiện trường.",
+      "need": 2,
+      "answer": ["d10", "d11"],
+      "hints": [
+        "Báo cáo giám định đạn đạo về vết xước dọc ở rãnh xoắn số 2 trên nòng súng K54.",
+        "Ảnh chụp dấu vân tay trên vỏ bao thuốc lá Du Lịch trùng khớp với tàng thư căn cước của Phạm Đức Thắng.",
+        "Xem xét kỹ các bằng chứng vật chất và báo cáo kỹ thuật hình sự."
+      ],
+      "explanation": [
+        "Tài liệu d10 khẳng định 3 vỏ đạn được bắn từ cùng một khẩu K54 có rãnh xoắn bị xước đặc thù.",
+        "Tài liệu d11 (ảnh vân tay) xác định dấu vân tay trên vỏ bao thuốc lá Du Lịch chính là của tên cướp trốn nã Phạm Đức Thắng."
+      ],
+      "nudges": [
+        {
+          "picks": ["d12", "d13"],
+          "message": "d12 và d13 là xác minh bến phà và ngoại phạm của Đông; hãy chọn báo cáo đạn đạo d10 và ảnh dấu vân tay d11."
+        }
+      ]
+    },
+    {
+      "id": "q4",
+      "stage": 4,
+      "type": "choice",
+      "title": "Thủ phạm vụ cướp tiệm vàng Kim Sinh",
+      "intro": "Khẩu súng K54 còn lên nòng và hơn 100 lượng vàng thu giữ tại bãi sông Hồng đã hoàn toàn vạch trần kẻ sát nhân máu lạnh.",
+      "prompt": "Dựa vào toàn bộ tài liệu hồ sơ, ai là kẻ đã mang vũ khí nóng bắn gục gia đình chủ tiệm và cướp hơn 100 lượng vàng đêm 18/07/1999?",
+      "options": [
+        "Phạm Đức Thắng (Thắng 'quạ')",
+        "Thợ bạc cũ Nguyễn Văn Đông",
+        "Chủ tiệm cầm đồ Trần Khắc Tuấn",
+        "Bảo vệ chùa Đồng Quang"
+      ],
+      "answer": [0],
+      "hints": [
+        "Ai là đối tượng trốn nã sở hữu súng K54 nòng xước, đi xe Simson đỏ và để lại vỏ bao thuốc lá dính vân tay trong ngõ?",
+        "Xem xét kỹ các bằng chứng vật chất và báo cáo kỹ thuật hình sự."
+      ],
+      "explanation": [
+        "Phạm Đức Thắng là thủ phạm. Y nổ súng K54 sát hại nạn nhân lúc 22h45 (d03, d10), để lại vỏ bao thuốc lá dính vân tay (d09, d11), tẩu thoát bằng xe Simson (d08, d12) và bị bắt giữ cùng khẩu súng K54 và 102 lượng vàng chôn ở bãi sông Hồng (d14, d15, d16)."
+      ]
+    }
+  ],
+  "finale": {
+    "culprit": "Phạm Đức Thắng",
+    "text": "Bản án tử hình đã được thi hành nghiêm minh đối với tên cướp máu lạnh Phạm Đức Thắng. Chuyên án cướp tiệm vàng Kim Sinh phố Tây Sơn năm 1999 đã đi vào lịch sử ngành điều tra hình sự Việt Nam như một mốc son chói lọi về tinh thần quả cảm, sự mưu trí và sức mạnh của khoa học kỹ thuật hình sự trong cuộc đấu tranh không khoan nhượng với tội phạm có vũ trang."
+  }
+}

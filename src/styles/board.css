@@ -464,3 +464,97 @@ body.is-board { overflow: hidden; height: 100vh; height: 100dvh; overscroll-beha
 .cloud--saved { color: #8fc283; }
 .cloud--saving { color: var(--amber); animation: pulse 1.2s ease-in-out infinite; }
 .cloud--error { color: var(--red-2); }
+
+/* ── TTS player & buttons ── */
+.doc__btn--tts.is-on { color: var(--red); background: rgba(217, 69, 47, 0.12); animation: tts-pulse 2s ease-in-out infinite; }
+@keyframes tts-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.65; }
+}
+
+.tts-player {
+  position: fixed; z-index: 1000;
+  right: max(16px, env(safe-area-inset-right));
+  bottom: max(84px, calc(env(safe-area-inset-bottom) + 76px));
+  width: min(320px, calc(100vw - 32px));
+  background: #211d17;
+  border: 1px solid var(--line-2);
+  border-radius: 12px;
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.55);
+  overflow: hidden;
+  animation: tts-in 0.25s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+@keyframes tts-in {
+  from { opacity: 0; transform: translateY(8px) scale(0.96); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+.tts-player__bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 12px;
+  min-height: 48px;
+}
+.tts-player__icon {
+  flex: none;
+  width: 28px;
+  height: 28px;
+  display: grid;
+  place-items: center;
+  color: var(--amber);
+}
+.tts-player__spinner {
+  width: 18px;
+  height: 18px;
+  border: 2px solid var(--line-2);
+  border-top-color: var(--amber);
+  border-radius: 50%;
+  animation: tts-spin 0.8s linear infinite;
+}
+@keyframes tts-spin {
+  to { transform: rotate(360deg); }
+}
+
+.tts-player__label {
+  flex: 1;
+  font-size: 13px;
+  color: var(--text);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.tts-player--error .tts-player__label {
+  color: var(--red-2);
+}
+
+.tts-player__actions {
+  flex: none;
+  display: flex;
+  gap: 4px;
+}
+.tts-player__actions .icon-btn {
+  width: 32px;
+  height: 32px;
+  border: 0;
+  border-radius: 6px;
+  background: transparent;
+  color: var(--muted);
+  display: grid;
+  place-items: center;
+}
+.tts-player__actions .icon-btn:hover {
+  background: var(--bg-3);
+  color: var(--text);
+}
+
+.tts-player__progress {
+  height: 3px;
+  background: rgba(255, 255, 255, 0.08);
+  width: 100%;
+}
+.tts-player__fill {
+  height: 100%;
+  background: var(--amber);
+  transition: width 0.3s ease;
+}

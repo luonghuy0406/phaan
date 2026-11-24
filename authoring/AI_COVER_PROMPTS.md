@@ -161,3 +161,48 @@ File dữ liệu máy đọc (JSON): [`authoring/AI_COVER_PROMPTS.json`](file://
   ```text
   Detective case game box mockup, vertical product shot on gray floor. Split-portrait composite collage on cover showing an elderly Vietnamese folk woodblock artist and his young son. Neon yellow tape strips, traditional vermilion red pigment splatter accent, yellow title badge "VET MUC LANG DONG HO". Cultural folk crime mystery, clean editorial graphic design, 8k --ar 3:4 --v 6.0
   ```
+
+
+---
+
+### 13. Ly trà tráo độc (`ly-tra-trao-doc`) - [VỤ ÁN CÓ THẬT · DỄ GÂY ÁM ẢNH]
+* **Bối cảnh:** Bệnh viện Đa khoa tỉnh Thái Bình (tháng 12/2019)
+* **Prompt tiếng Việt:**
+  > Hộp boardgame phá án màu đen nhám cao cấp đứng thẳng trên nền xám tối giản. Trọng tâm bìa là bức chân dung ghép mặt đa mảnh (split-face photo collage) gồm ánh mắt sắc lạnh, vô cảm của một cô gái trẻ tuổi (thủ phạm) bị cắt ghép so le với nửa khuôn mặt hiền hậu của nữ điều dưỡng viên xấu số đeo khẩu trang y tế kéo xuống cằm. Dải băng keo niêm phong màu vàng neon dán vắt ngang qua đôi mắt, kèm các mẩu giấy ghi chú hình sự: 'VỤ ÁN CÓ THẬT', 'Đầu độc ngẫu nhiên?', '4/6 cốc có độc'. Phía dưới là khung nhãn vàng in đậm: 'LY TRÀ TRÁO ĐỘC - THÁI BÌNH 2019'.
+* **Prompt tiếng Anh:**
+  ```text
+  Product photo mockup of a true crime unsolved mystery boardgame box, standing vertically on a minimalist studio gray background. The cover features a chilling fragmented split-face composite photo collage combining a young cold-eyed woman and a gentle nurse wearing medical scrubs. Neon yellow caution tape strips crossing over the eyes, paper note evidence stickers with 'TRUE CRIME - FATAL POISON'. Premium matte black packaging, bold yellow title badge 'LY TRA TRAO DOC - THAI BINH 2019'. Dark crime thriller studio lighting, sharp 8k commercial photography, medium format shot --ar 3:4 --v 6.0
+  ```
+
+---
+
+### 14. Bức thư đêm tuyết trắng (`buc-thu-dem-tuyet-trang`) - [VỤ ÁN CÓ THẬT · DỄ GÂY ÁM ẢNH]
+* **Bối cảnh:** Biệt thự gia đình Ramsey, Boulder, Colorado, Mỹ (12/1996)
+* **Prompt tiếng Việt:**
+  > Hộp boardgame phá án màu đen nhám cao cấp đứng thẳng trên nền xám studio. Trọng tâm bìa là bức chân dung ghép mặt đa mảnh (split-face photo collage) gồm nửa khuôn mặt thiên thần của cô bé hoa khôi nhí tóc vàng đeo vương miện lấp lánh bị cắt ghép so le với ánh mắt hoảng loạn, toan tính của người mẹ cựu hoa hậu và góc mặt người cha tỷ phú. Dải băng keo niêm phong màu vàng neon dán vắt ngang qua đôi mắt, kèm các mẩu giấy ghi chú hình sự: 'VỤ ÁN CÓ THẬT', 'Thư tống tiền 3 trang?', 'Không dấu chân trên tuyết'. Phía dưới là khung nhãn vàng rực rỡ in đậm: 'BỨC THƯ ĐÊM TUYẾT TRẮNG - BOULDER 1996'.
+* **Prompt tiếng Anh:**
+  ```text
+  Product photo mockup of a true crime unsolved mystery boardgame box, standing vertically on a minimalist studio gray background. The cover features a haunting fragmented split-face composite photo collage combining a young blonde beauty pageant girl and her tense wealthy parents. Neon yellow caution tape strips crossing over the eyes, paper note evidence stickers with 'TRUE CRIME - RANSOM NOTE 1996'. Premium matte black packaging, bold yellow title badge 'BUC THU DEM TUYET TRANG - COLORADO 1996'. Dark crime thriller studio lighting, sharp 8k commercial photography, medium format shot --ar 3:4 --v 6.0
+  ```
+
+---
+
+### 15. Đêm súng nổ phố Tây Sơn (`dem-sung-no-tay-son`) - [VỤ ÁN CÓ THẬT · DỄ GÂY ÁM ẢNH]
+* **Bối cảnh:** Tiệm vàng Kim Sinh, phố Tây Sơn, Đống Đa, Hà Nội (07/1999)
+* **Prompt tiếng Việt:**
+  > Hộp boardgame phá án màu đen nhám cao cấp đứng thẳng trên nền xám studio. Trọng tâm bìa là bức chân dung ghép mặt đa mảnh (split-face photo collage) gồm khuôn mặt dữ tợn mang vết sẹo ngang đuôi mắt của tên cướp có vũ trang trốn nã bị cắt ghép so le với ánh mắt lo âu của người thợ bạc cũ và khuôn mặt người chủ tiệm vàng Hà Nội. Dải băng keo niêm phong màu vàng neon dán vắt ngang qua đôi mắt, kèm các mẩu giấy ghi chú hình sự: 'VỤ ÁN CÓ THẬT', 'Súng K54 đêm mưa bão', 'Cướp 100 lượng vàng'. Phía dưới là khung nhãn vàng: 'ĐÊM SÚNG NỔ PHỐ TÂY SƠN - HÀ NỘI 1999'.
+* **Prompt tiếng Anh:**
+  ```text
+  Product photo mockup of a true crime unsolved mystery boardgame box, standing vertically on a minimalist studio gray background. The cover features an intense fragmented split-face composite photo collage combining a scarred dangerous Vietnamese armed robber and suspects. Neon yellow caution tape strips crossing over the eyes, paper note evidence stickers with 'TRUE CRIME - ARMED HEIST 1999'. Premium matte black packaging, bold yellow title badge 'DEM SUNG NO PHO TAY SON - HANOI 1999'. Dark crime thriller studio lighting, sharp 8k commercial photography, medium format shot --ar 3:4 --v 6.0
+  ```
+
+---
+
+### 16. Quái vật 21 khuôn mặt (`quai-vat-21-khuon-mat`) - [VỤ ÁN CÓ THẬT · DỄ GÂY ÁM ẢNH]
+* **Bối cảnh:** Osaka, Kyoto & Tokyo, Nhật Bản (1984–1985)
+* **Prompt tiếng Việt:**
+  > Hộp boardgame phá án màu đen nhám cao cấp đứng thẳng trên nền xám studio. Trọng tâm bìa là bức chân dung ghép mặt đa mảnh (split-face photo collage) đầy ám ảnh gồm bản phác họa khuôn mặt 'Người đàn ông mắt cáo' (Fox-Eyed Man) đội mũ bóng chày màu xanh bị cắt ghép so le với nửa khuôn mặt chiếc mặt nạ kịch Noh Nhật Bản trắng bợt và ánh mắt hoảng sợ của một đứa trẻ. Dải băng keo niêm phong màu vàng neon dán vắt ngang qua đôi mắt, kèm các mẩu giấy ghi chú: 'VỤ ÁN CÓ THẬT', 'Kẹo tẩm Xyanua?', 'Quái vật 21 khuôn mặt'. Phía dưới là khung nhãn vàng: 'QUÁI VẬT 21 KHUÔN MẶT - NHẬT BẢN 1984'.
+* **Prompt tiếng Anh:**
+  ```text
+  Product photo mockup of a true crime unsolved mystery boardgame box, standing vertically on a minimalist studio gray background. The cover features a chilling fragmented split-face composite photo collage combining the police sketch of the Fox-Eyed Man, a pale Japanese Noh theater mask, and 1980s retro textures. Neon yellow caution tape strips crossing over the eyes, paper note evidence stickers with 'TRUE CRIME - GLICO MORINAGA 1984'. Premium matte black packaging, bold yellow title badge 'QUAI VAT 21 KHUON MAT - JAPAN 1984'. Dark psychological crime thriller studio lighting, sharp 8k commercial photography --ar 3:4 --v 6.0
+  ```

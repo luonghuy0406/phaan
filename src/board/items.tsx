@@ -9,6 +9,7 @@ import { strokePath, type Stroke } from './ink';
 import { useUi } from './ui';
 import { localToWorld } from './geometry';
 import { Icon } from './icons';
+import { useTts, speak, stop, extractDocText } from '../lib/tts';
 
 /* ── ink ── */
 const InkPath = memo(function InkPath({ s }: { s: Stroke }) {
@@ -59,6 +60,7 @@ export const DocItem = memo(function DocItem({ doc }: { doc: CaseDoc }) {
   const picked = useBoardState((s) => { const q = currentQ(c, s); return q?.type === 'line' ? s.q[q.id].line : ''; });
   const evidence = useBoardState((s) => { const q = currentQ(c, s); return q?.type === 'evidence' ? q : null; });
   const pinSlot = useBoardState((s) => (evidence ? s.pins.indexOf(id) : -1));
+  const isSpeaking = useTts((s) => s.activeId === `doc:${id}` && (s.status === 'playing' || s.status === 'loading'));
   const showToast = useUi((s) => s.showToast);
   const { focusDoc } = useBoard();
   const hl = useMemo(() => new Set(hlKey ? hlKey.split('|').map((k) => k.slice(id.length + 1)) : []), [hlKey, id]);
@@ -101,6 +103,20 @@ export const DocItem = memo(function DocItem({ doc }: { doc: CaseDoc }) {
             <a className="doc__btn" href={`${import.meta.env.BASE_URL}cases/${c.id}/${doc.file}`} download aria-label="Tải bản gốc" title="Tải bản gốc" data-ui>
               <Icon name="download" />
             </a>
+          )}
+          {doc.type !== 'scan' && (
+            <button
+              type="button"
+              className={`doc__btn doc__btn--tts${isSpeaking ? ' is-on' : ''}`}
+              aria-label={isSpeaking ? 'Dừng đọc' : 'Đọc tài liệu'}
+              title={isSpeaking ? 'Dừng đọc' : 'Đọc tài liệu'}
+              onClick={() => {
+                if (isSpeaking) stop();
+                else void speak(`doc:${id}`, extractDocText(doc));
+              }}
+            >
+              <Icon name={isSpeaking ? 'pause' : 'speaker'} />
+            </button>
           )}
           <button type="button" className="doc__btn" aria-label="Đọc gần" title="Đọc gần" onClick={() => focusDoc(id)}>
             <Icon name="search" />

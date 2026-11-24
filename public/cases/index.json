@@ -230,6 +230,78 @@
         "Nhẹ nhàng"
       ],
       "cover": "images/cover.webp"
+    },
+    {
+      "id": "ly-tra-trao-doc",
+      "no": 13,
+      "status": "available",
+      "title": "Ly trà tráo độc",
+      "tagline": "Nắp cốc dập màng kín không một vết rách, nhưng giọt độc dược natri xyanua đã chực chờ kẻ vô tội xấu số.",
+      "difficulty": 3,
+      "players": "2–5",
+      "duration": "75–90 phút",
+      "setting": "Bệnh viện Đa khoa tỉnh Thái Bình (tháng 12/2019)",
+      "tags": [
+        "Vụ án có thật",
+        "Dễ gây ám ảnh",
+        "Đầu độc Xyanua",
+        "Thái Bình 2019"
+      ],
+      "cover": "images/cover.webp"
+    },
+    {
+      "id": "buc-thu-dem-tuyet-trang",
+      "no": 14,
+      "status": "available",
+      "title": "Bức thư đêm tuyết trắng",
+      "tagline": "Bức thư tống tiền 3 trang giấy viết bằng chính giấy bút trong nhà, nhưng mặt tuyết trắng ngoài sân không một vết chân.",
+      "difficulty": 4,
+      "players": "2–6",
+      "duration": "100–120 phút",
+      "setting": "Biệt thự gia đình Ramsey, Boulder, Colorado, Mỹ (12/1996)",
+      "tags": [
+        "Vụ án có thật",
+        "Dễ gây ám ảnh",
+        "Kỳ án nước Mỹ",
+        "Hiện trường dàn dựng"
+      ],
+      "cover": "images/cover.webp"
+    },
+    {
+      "id": "dem-sung-no-tay-son",
+      "no": 15,
+      "status": "available",
+      "title": "Đêm súng nổ phố Tây Sơn",
+      "tagline": "Đêm mưa giông súng nổ chấn động phố Tây Sơn, kẻ sát nhân cướp tiệm vàng biến mất trong bóng tối cùng hàng trăm lượng vàng.",
+      "difficulty": 4,
+      "players": "2–5",
+      "duration": "100–120 phút",
+      "setting": "Tiệm vàng Kim Sinh, phố Tây Sơn, Đống Đa, Hà Nội (07/1999)",
+      "tags": [
+        "Vụ án có thật",
+        "Dễ gây ám ảnh",
+        "Trọng án có vũ trang",
+        "Hà Nội 1999"
+      ],
+      "cover": "images/cover.webp"
+    },
+    {
+      "id": "quai-vat-21-khuon-mat",
+      "no": 16,
+      "status": "available",
+      "title": "Quái vật 21 khuôn mặt",
+      "tagline": "Những phong kẹo tẩm độc xyanua rải khắp kệ siêu thị và bức thư thách thức từ kẻ mang 21 khuôn mặt.",
+      "difficulty": 5,
+      "players": "2–6",
+      "duration": "110–130 phút",
+      "setting": "Osaka, Kyoto & Tokyo, Nhật Bản (1984–1985)",
+      "tags": [
+        "Vụ án có thật",
+        "Dễ gây ám ảnh",
+        "Kỳ án Nhật Bản",
+        "Tội phạm trí tuệ"
+      ],
+      "cover": "images/cover.webp"
     }
   ]
 }

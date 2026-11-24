@@ -31,6 +31,9 @@ const PATHS: Record<string, string> = {
   search: 'M11 17a6 6 0 1 0 0-12 6 6 0 0 0 0 12z M20 20l-4.5-4.5',
   cloud: 'M7 18h10a4 4 0 0 0 .5-7.97A6 6 0 0 0 6.1 9.5 4.25 4.25 0 0 0 7 18z',
   download: 'M12 4v11 M7 10l5 5 5-5 M5 20h14',
+  speaker: 'M11 5L6 9H2v6h4l5 4V5z M15.5 8.5a5 5 0 0 1 0 7 M19 5a9 9 0 0 1 0 14',
+  pause: 'M6 4h4v16H6z M14 4h4v16h-4z',
+  play: 'M5 3l14 9-14 9V3z',
 };
 
 export function Icon({ name, className }: { name: string; className?: string }) {

@@ -11,6 +11,7 @@ import { typeLabel } from './papers';
 import { Avatar } from '../components/auth';
 import { useRoom, addRoomNote } from '../multiplayer/room';
 import { useCloud } from '../lib/cloud';
+import { speak, extractDocText } from '../lib/tts';
 
 const CLOUD_TEXT = { saving: 'Đang lưu…', saved: 'Đã lưu trên cloud', error: 'Chưa lưu được lên cloud', off: '' } as const;
 function CloudBadge() {
@@ -200,6 +201,7 @@ export function ActionMenu() {
     }
     const hk = `${t.doc}:${t.key}`;
     const isHl = st.hl.includes(hk);
+    items.push({ icon: 'speaker', label: 'Đọc đoạn này', run: () => void speak(`${t.doc}:${t.key}`, t.text) });
     items.push({ icon: 'highlight', label: isHl ? 'Bỏ tô dạ quang' : 'Tô dạ quang', run: () => s.toggleHl(hk) });
     items.push({ icon: 'quote', label: room ? 'Trích vào sổ của tôi' : 'Trích vào sổ tay', run: () => { s.addEntry({ kind: 'quote', text: t.text, ref: { doc: t.doc, key: t.key } }); toast('Đã trích vào Sổ tay.'); } });
     if (room) {
@@ -215,6 +217,9 @@ export function ActionMenu() {
     const doc = c.documents.find((d) => d.id === t.doc);
     title = doc ? `${pad2(doc.no ?? 0)} · ${doc.title}` : '';
     pinItem(t.doc);
+    if (doc) {
+      items.push({ icon: 'speaker', label: 'Đọc toàn bộ tài liệu', run: () => void speak(`doc:${t.doc}`, extractDocText(doc)) });
+    }
     items.push({ icon: 'eye', label: 'Xem cận cảnh', run: () => focusDoc(t.doc) });
     items.push({ icon: 'link', label: 'Nối dây đỏ từ tài liệu', run: () => set({ pendingString: { doc: t.doc } }) });
     items.push({ icon: 'rotate', label: 'Xoay 90°', run: () => s.rotateDoc(t.doc) });
@@ -222,6 +227,9 @@ export function ActionMenu() {
   } else if (t.kind === 'note') {
     title = 'Giấy ghi chú';
     const note = st.notes.find((n) => n.id === t.note);
+    if (note?.text?.trim()) {
+      items.push({ icon: 'speaker', label: 'Đọc ghi chú', run: () => void speak(`note:${t.note}`, note.text) });
+    }
     items.push({ icon: 'link', label: 'Nối dây đỏ từ ghi chú', run: () => set({ pendingString: { note: t.note } }) });
     items.push({ icon: 'color', label: 'Đổi màu giấy', run: () => s.setNote(t.note, { c: ((note?.c ?? 0) + 1) % NOTE_COLORS.length }) });
     unlinkItem((e) => 'note' in e && e.note === t.note, 'Gỡ dây');
