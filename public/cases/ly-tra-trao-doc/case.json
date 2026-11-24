@@ -24,7 +24,9 @@
       "type": "newspaper",
       "title": "Bản tin Thời sự - Vụ tử vong bất thường tại bệnh viện tỉnh",
       "date": "04/12/2019",
-      "content": "**ĐIỀU DƯỠNG VIÊN KHOA NỘI ĐỘT NGỘT TỬ VONG SAU KHI UỐNG NƯỚC**\n\nSáng 03/12, tại Khoa Nội Bệnh viện Đa khoa tỉnh Thái Bình, chị Đoàn Thị Thủy (29 tuổi, cán bộ điều dưỡng) trong lúc làm nhiệm vụ đã đột ngột ngất xỉu, co giật và tử vong nhanh chóng sau khi uống nước trong phòng giao ban.\n\nThời điểm xảy ra sự việc, nạn nhân có sức khỏe hoàn toàn bình thường, không có tiền sử bệnh lý tim mạch. Các dấu hiệu lâm sàng nghi ngờ nạn nhân bị ngộ độc cấp tính. Cơ quan điều tra đã niêm phong toàn bộ đồ ăn, thức uống trong tủ lạnh của khoa để làm rõ."
+      "content": "**ĐIỀU DƯỠNG VIÊN KHOA NỘI ĐỘT NGỘT TỬ VONG SAU KHI UỐNG NƯỚC**\n\nSáng 03/12, tại Khoa Nội Bệnh viện Đa khoa tỉnh Thái Bình, chị Đoàn Thị Thủy (29 tuổi, cán bộ điều dưỡng) trong lúc làm nhiệm vụ đã đột ngột ngất xỉu, co giật và tử vong nhanh chóng sau khi uống nước trong phòng giao ban.\n\nThời điểm xảy ra sự việc, nạn nhân có sức khỏe hoàn toàn bình thường, không có tiền sử bệnh lý tim mạch. Các dấu hiệu lâm sàng nghi ngờ nạn nhân bị ngộ độc cấp tính. Cơ quan điều tra đã niêm phong toàn bộ đồ ăn, thức uống trong tủ lạnh của khoa để làm rõ.",
+      "image": "images/d01-bao-chi.webp",
+      "imageCaption": "Ảnh tư liệu Báo Tuổi Trẻ: Hiện trường phong tỏa quán trà sữa đường Nguyễn Huệ"
     },
     {
       "id": "d02",
@@ -40,7 +42,9 @@
       "type": "report",
       "title": "Kết quả giám định pháp y tử thi điều dưỡng Thủy",
       "date": "14h30 ngày 03/12/2019",
-      "content": "**KẾT QUẢ KHÁM NGHIỆM TỬ THI VÀ ĐỘC CHẤT HỌC**\n\n1. **Nguyên nhân tử vong**: Suy tuần hoàn và hô hấp tối cấp do trúng độc Natri Xyanua (NaCN) - chất cực độc bảng A, liều lượng hấp thụ vào máu vượt mức gây chết người hơn 8 lần.\n2. **Dấu hiệu đặc trưng**: Niêm mạc thực quản và niêm mạc dạ dày nạn nhân bị sung huyết đỏ tươi rực rỡ (màu đỏ anh đào đặc trưng của ngộ độc xyanua do ngăn cản tế bào sử dụng oxy). Khí thở ra của nạn nhân có mùi hạnh nhân đắng thoang thoảng.\n3. **Thời gian phát tác**: Nạn nhân ngừng tim sau khi uống ngụm trà sữa đầu tiên chưa đầy 5 phút."
+      "content": "**KẾT QUẢ KHÁM NGHIỆM TỬ THI VÀ ĐỘC CHẤT HỌC**\n\n1. **Nguyên nhân tử vong**: Suy tuần hoàn và hô hấp tối cấp do trúng độc Natri Xyanua (NaCN) - chất cực độc bảng A, liều lượng hấp thụ vào máu vượt mức gây chết người hơn 8 lần.\n2. **Dấu hiệu đặc trưng**: Niêm mạc thực quản và niêm mạc dạ dày nạn nhân bị sung huyết đỏ tươi rực rỡ (màu đỏ anh đào đặc trưng của ngộ độc xyanua do ngăn cản tế bào sử dụng oxy). Khí thở ra của nạn nhân có mùi hạnh nhân đắng thoang thoảng.\n3. **Thời gian phát tác**: Nạn nhân ngừng tim sau khi uống ngụm trà sữa đầu tiên chưa đầy 5 phút.",
+      "image": "images/d03-so-do-quan-tra.webp",
+      "imageCaption": "Sơ đồ mặt bằng quán trà sữa và khu vực máy pha chế"
     },
     {
       "id": "d04",
@@ -66,11 +70,26 @@
       "title": "Lời khai của Bác sĩ Đỗ Thị Yến (Khoa Nội)",
       "date": "17h00 ngày 03/12/2019",
       "lines": [
-        { "n": 1, "text": "Tôi là bác sĩ điều trị tại Khoa Nội, chị Thủy là đồng nghiệp thân thiết của tôi." },
-        { "n": 2, "text": "Hôm qua và hôm nay tôi được nghỉ bù nên không có mặt ở bệnh viện." },
-        { "n": 3, "text": "Cả khoa này ai cũng biết tôi là người có sở thích nghiện uống trà sữa vị kem sữa nướng của thương hiệu này, hầu như ngày nào tôi đi trực cũng mua một cốc mang theo." },
-        { "n": 4, "text": "Khi nghe tin chị Thủy tử vong vì uống trà sữa gửi đến khoa, tôi rụng rời chân tay không thể tin nổi." },
-        { "n": 5, "text": "Gia đình tôi không hề có ân oán thù hằn gì với bệnh nhân nào đến mức phải nhận trả thù độc ác như vậy." }
+        {
+          "n": 1,
+          "text": "Tôi là bác sĩ điều trị tại Khoa Nội, chị Thủy là đồng nghiệp thân thiết của tôi."
+        },
+        {
+          "n": 2,
+          "text": "Hôm qua và hôm nay tôi được nghỉ bù nên không có mặt ở bệnh viện."
+        },
+        {
+          "n": 3,
+          "text": "Cả khoa này ai cũng biết tôi là người có sở thích nghiện uống trà sữa vị kem sữa nướng của thương hiệu này, hầu như ngày nào tôi đi trực cũng mua một cốc mang theo."
+        },
+        {
+          "n": 4,
+          "text": "Khi nghe tin chị Thủy tử vong vì uống trà sữa gửi đến khoa, tôi rụng rời chân tay không thể tin nổi."
+        },
+        {
+          "n": 5,
+          "text": "Gia đình tôi không hề có ân oán thù hằn gì với bệnh nhân nào đến mức phải nhận trả thù độc ác như vậy."
+        }
       ]
     },
     {
@@ -80,12 +99,29 @@
       "title": "Lời khai của anh rể Nguyễn Mạnh Hùng",
       "date": "18h30 ngày 03/12/2019",
       "lines": [
-        { "n": 1, "text": "Tôi là chồng của bác sĩ Đỗ Thị Yến." },
-        { "n": 2, "text": "Thời gian qua tôi và Lại Thị Kiều Trang (em họ của vợ tôi) có phát sinh mối quan hệ tình cảm vụng trộm." },
-        { "n": 3, "text": "Đến đầu tháng 11/2019, tôi thấy có lỗi với vợ con nên đã chủ động nói lời chia tay và chấm dứt liên lạc với Trang." },
-        { "n": 4, "text": "Trang khóc lóc, nhắn tin níu kéo nhiều lần nhưng tôi kiên quyết từ chối." },
-        { "n": 5, "text": "Tôi không ngờ Trang lại có thể tàn độc đến mức ra tay hãm hại chính người chị họ ruột thịt của mình!" }
-      ]
+        {
+          "n": 1,
+          "text": "Tôi là chồng của bác sĩ Đỗ Thị Yến."
+        },
+        {
+          "n": 2,
+          "text": "Thời gian qua tôi và Lại Thị Kiều Trang (em họ của vợ tôi) có phát sinh mối quan hệ tình cảm vụng trộm."
+        },
+        {
+          "n": 3,
+          "text": "Đến đầu tháng 11/2019, tôi thấy có lỗi với vợ con nên đã chủ động nói lời chia tay và chấm dứt liên lạc với Trang."
+        },
+        {
+          "n": 4,
+          "text": "Trang khóc lóc, nhắn tin níu kéo nhiều lần nhưng tôi kiên quyết từ chối."
+        },
+        {
+          "n": 5,
+          "text": "Tôi không ngờ Trang lại có thể tàn độc đến mức ra tay hãm hại chính người chị họ ruột thịt của mình!"
+        }
+      ],
+      "image": "images/d07-hoa-don-tra-sua.webp",
+      "imageCaption": "Bản scan hóa đơn thanh toán in nhiệt máy POS"
     },
     {
       "id": "d08",
@@ -94,10 +130,22 @@
       "title": "Lời khai của tài xế giao hàng Lê Văn Nam",
       "date": "19h15 ngày 03/12/2019",
       "lines": [
-        { "n": 1, "text": "Chiều ngày 02/12, tôi nhận được một đơn ship đồ từ một cô gái trẻ đeo khẩu trang kín mít ở khu vực ngã tư đường Lê Lợi." },
-        { "n": 2, "text": "Cô ta đưa cho tôi 6 cốc trà sữa bọc túi ni-lông và một túi quýt, dặn mang đến Khoa Nội Bệnh viện Đa khoa tỉnh giao cho chị Yến." },
-        { "n": 3, "text": "Cô ta trả tiền trước 50.000 đồng tiền công và không cho số điện thoại người gửi." },
-        { "n": 4, "text": "Khi tôi mang lên khoa thì người ta bảo chị Yến nghỉ trực, nên một chị điều dưỡng bảo tôi cứ để túi trà sữa lên bàn giao ban." }
+        {
+          "n": 1,
+          "text": "Chiều ngày 02/12, tôi nhận được một đơn ship đồ từ một cô gái trẻ đeo khẩu trang kín mít ở khu vực ngã tư đường Lê Lợi."
+        },
+        {
+          "n": 2,
+          "text": "Cô ta đưa cho tôi 6 cốc trà sữa bọc túi ni-lông và một túi quýt, dặn mang đến Khoa Nội Bệnh viện Đa khoa tỉnh giao cho chị Yến."
+        },
+        {
+          "n": 3,
+          "text": "Cô ta trả tiền trước 50.000 đồng tiền công và không cho số điện thoại người gửi."
+        },
+        {
+          "n": 4,
+          "text": "Khi tôi mang lên khoa thì người ta bảo chị Yến nghỉ trực, nên một chị điều dưỡng bảo tôi cứ để túi trà sữa lên bàn giao ban."
+        }
       ]
     },
     {
@@ -175,7 +223,10 @@
       "intro": "Cái chết đột ngột của điều dưỡng Thủy được hé lộ là do chất kịch độc Xyanua và phương thức đưa độc tố vào cốc trà sữa nguyên vẹn.",
       "prompt": "Ghim 2 tài liệu chứng minh nguyên nhân tử vong là chất độc Natri Xyanua và dấu vết lỗ châm kim vi thể trên màng dập nắp cốc.",
       "need": 2,
-      "answer": ["d03", "d05"],
+      "answer": [
+        "d03",
+        "d05"
+      ],
       "hints": [
         "Kiểm tra kết quả giám định tử thi về hoạt chất độc Natri Xyanua và niêm mạc dạ dày màu đỏ anh đào.",
         "Xem ảnh chụp macro nắp cốc trà sữa thể hiện vết châm kim siêu vi ti dưới 0.4mm.",
@@ -187,7 +238,10 @@
       ],
       "nudges": [
         {
-          "picks": ["d01", "d02"],
+          "picks": [
+            "d01",
+            "d02"
+          ],
           "message": "Bản tin và biên bản hiện trường ban đầu chưa xác định độc chất xyanua và chi tiết lỗ kim vi thể trên màng nilon."
         }
       ]
@@ -199,7 +253,9 @@
       "title": "Mục tiêu thật sự của cốc trà sữa độc",
       "intro": "Bác sĩ Đỗ Thị Yến giải thích lý do vì sao túi trà sữa được gửi tới khoa lại nhắm chính xác vào thói quen của cô.",
       "prompt": "Hãy chọn một dòng trong lời khai của Bác sĩ Đỗ Thị Yến (d06) chứng minh sở thích nghiện uống trà sữa của cô là nguyên nhân kẻ thủ ác chọn loại đồ uống này.",
-      "answer": ["d06:003"],
+      "answer": [
+        "d06:003"
+      ],
       "hints": [
         "Tìm dòng lời khai nói về sở thích nghiện trà sữa của bác sĩ Yến khiến cả khoa ai cũng biết.",
         "Đối chiếu mốc thời gian và hành vi của người khai với các nhân chứng xung quanh."
@@ -216,7 +272,10 @@
       "intro": "Dữ liệu điện thoại và cuộc khám xét khẩn cấp đã lột trần toàn bộ quá trình chuẩn bị tội ác của kẻ thủ ác.",
       "prompt": "Ghim 2 tài liệu chỉ ra lịch sử tìm kiếm mua chất độc xyanua trên điện thoại và tang vật ống tiêm cỡ 26G cùng gói xyanua thu giữ tại nhà nghi phạm.",
       "need": 2,
-      "answer": ["d10", "d11"],
+      "answer": [
+        "d10",
+        "d11"
+      ],
       "hints": [
         "Trích xuất dữ liệu duyệt web trên điện thoại của Trang tìm kiếm từ khóa 'mua natri xyanua'.",
         "Ảnh chụp tang vật ống tiêm y tế gắn kim 26G và gói hóa chất xyanua thu trong phòng ngủ của Trang.",
@@ -228,7 +287,10 @@
       ],
       "nudges": [
         {
-          "picks": ["d12", "d13"],
+          "picks": [
+            "d12",
+            "d13"
+          ],
           "message": "d12 và d13 là vận đơn và giám định 5 cốc trà; hãy chọn tài liệu trích xuất điện thoại d10 và hình ảnh tang vật d11."
         }
       ]
@@ -246,7 +308,9 @@
         "Nguyễn Mạnh Hùng (anh rể)",
         "Tài xế giao hàng Lê Văn Nam"
       ],
-      "answer": [0],
+      "answer": [
+        0
+      ],
       "hints": [
         "Ai có quan hệ bất chính bị chấm dứt, đặt mua 1kg xyanua từ Hải Phòng và dùng kim tiêm bơm độc vào trà sữa?",
         "Xem xét kỹ các bằng chứng vật chất và báo cáo kỹ thuật hình sự."

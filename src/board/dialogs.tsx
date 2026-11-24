@@ -7,6 +7,7 @@ import { deleteCloud } from '../lib/cloud';
 import { caseNo } from '../lib/data';
 import { useNavigate } from 'react-router-dom';
 import { leaveRoom } from '../multiplayer/room';
+import { ttsEngine, isDeviceVoiceCached, removeDeviceVoice, MODEL_MB } from '../lib/tts';
 import { Txt, Paras } from '../lib/text';
 
 function Modal({ open, onClose, className = '', children }: { open: boolean; onClose: () => void; className?: string; children: ReactNode }) {
@@ -116,6 +117,7 @@ function Settings({ onClose }: { onClose: () => void }) {
           {penSeen ? ' Đã nhận Apple Pencil trên thiết bị này.' : ''}
         </span>
       </label>
+      <VoiceSetting />
       <div className="setting">
         <span>
           <b>Chơi toàn màn hình trên iPad</b>
@@ -165,6 +167,32 @@ export function Tour() {
           {last ? 'Mở Kết luận' : 'Tiếp'}
         </button>
       </div>
+    </div>
+  );
+}
+
+// On-device voice: show whether it is downloaded and let the player free the space.
+function VoiceSetting() {
+  const [cached, setCached] = useState<boolean | null>(null);
+  const [busy, setBusy] = useState(false);
+  useEffect(() => { if (ttsEngine() === 'device') void isDeviceVoiceCached().then(setCached); }, []);
+  if (ttsEngine() !== 'device' || cached === null) return null;
+  return (
+    <div className="setting">
+      <span>
+        <b>Giọng đọc AI</b>
+        {cached
+          ? `Đã tải về máy (khoảng ${MODEL_MB} MB). Đọc được cả khi không có mạng.`
+          : `Chưa tải. Bấm nút loa trên một tài liệu để tải (khoảng ${MODEL_MB} MB, sẽ hỏi trước).`}
+        {cached && (
+          <button type="button" className="link-btn" style={{ display: 'block' }} disabled={busy} onClick={async () => {
+            setBusy(true);
+            await removeDeviceVoice();
+            setCached(false);
+            setBusy(false);
+          }}>{busy ? 'Đang xoá…' : 'Xoá giọng đọc khỏi máy'}</button>
+        )}
+      </span>
     </div>
   );
 }

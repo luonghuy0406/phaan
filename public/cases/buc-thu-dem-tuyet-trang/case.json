@@ -8,6 +8,7 @@
   "players": "2–6",
   "duration": "100–120 phút",
   "setting": "Biệt thự gia đình Ramsey, Boulder, Colorado, Mỹ (12/1996)",
+  "nationalHeader": false,
   "tags": [
     "Vụ án có thật",
     "Dễ gây ám ảnh",
@@ -24,7 +25,9 @@
       "type": "newspaper",
       "title": "Bản tin CNN - Bi kịch đêm Giáng sinh tại biệt thự gia đình tỷ phú",
       "date": "27/12/1996",
-      "content": "**HOA KHÔI NHÍ 6 TUỔI BỊ SÁT HẠI TRONG TẦNG HẦM BIỆT THỰ GIA ĐÌNH**\n\nNước Mỹ bàng hoàng trước cái chết bi thảm của cô bé JonBenét Ramsey (6 tuổi) trong chính ngôi biệt thự sang trọng của gia đình tại thành phố Boulder (bang Colorado). Ban đầu, gia đình thông báo cô bé bị bắt cóc tống tiền với bức thư nặc danh đòi 118.000 USD.\n\nTuy nhiên, chỉ 8 giờ sau khi cảnh sát có mặt, thi thể nạn nhân đã được người cha tìm thấy tại một căn phòng hầm rượu ít người qua lại dưới tầng hầm. Toàn bộ các lối ra vào của biệt thự được xác nhận khóa kín trong suốt đêm tuyết rơi dày."
+      "content": "**HOA KHÔI NHÍ 6 TUỔI BỊ SÁT HẠI TRONG TẦNG HẦM BIỆT THỰ GIA ĐÌNH**\n\nNước Mỹ bàng hoàng trước cái chết bi thảm của cô bé JonBenét Ramsey (6 tuổi) trong chính ngôi biệt thự sang trọng của gia đình tại thành phố Boulder (bang Colorado). Ban đầu, gia đình thông báo cô bé bị bắt cóc tống tiền với bức thư nặc danh đòi 118.000 USD.\n\nTuy nhiên, chỉ 8 giờ sau khi cảnh sát có mặt, thi thể nạn nhân đã được người cha tìm thấy tại một căn phòng hầm rượu ít người qua lại dưới tầng hầm. Toàn bộ các lối ra vào của biệt thự được xác nhận khóa kín trong suốt đêm tuyết rơi dày.",
+      "image": "images/d01-bao-chi.webp",
+      "imageCaption": "Ảnh tư liệu Bản tin CNN: Căn biệt thự gia đình Ramsey phủ đầy tuyết trắng"
     },
     {
       "id": "d02",
@@ -48,7 +51,9 @@
       "type": "report",
       "title": "Sơ đồ mặt bằng biệt thự 15 phòng gia đình Ramsey",
       "date": "18h00 ngày 26/12/1996",
-      "content": "**SƠ ĐỒ BIỆT THỰ BA TẦNG**\n\n- Tầng 3: Phòng ngủ của cha mẹ (John và Patsy Ramsey).\n- Tầng 2: Phòng ngủ của nạn nhân JonBenét và anh trai Burke (9 tuổi).\n- Tầng 1: Phòng khách, nhà bếp, cầu thang xoắn ốc (nơi phát hiện 3 trang thư tống tiền trên bậc tam cấp).\n- Tầng hầm: Phòng giặt, phòng lò sưởi và phòng hầm rượu (nơi tìm thấy thi thể)."
+      "content": "**SƠ ĐỒ BIỆT THỰ BA TẦNG**\n\n- Tầng 3: Phòng ngủ của cha mẹ (John và Patsy Ramsey).\n- Tầng 2: Phòng ngủ của nạn nhân JonBenét và anh trai Burke (9 tuổi).\n- Tầng 1: Phòng khách, nhà bếp, cầu thang xoắn ốc (nơi phát hiện 3 trang thư tống tiền trên bậc tam cấp).\n- Tầng hầm: Phòng giặt, phòng lò sưởi và phòng hầm rượu (nơi tìm thấy thi thể).",
+      "image": "images/d04-so-do-biet-thu.webp",
+      "imageCaption": "Sơ đồ kiến trúc mặt bằng tầng hầm và tầng trệt biệt thự"
     },
     {
       "id": "d05",
@@ -66,11 +71,26 @@
       "title": "Lời khai của người mẹ Patsy Ramsey",
       "date": "19h30 ngày 26/12/1996",
       "lines": [
-        { "n": 1, "text": "Sáng sớm 05h45 tôi thức dậy đi xuống cầu thang chuẩn bị đồ đạc cho chuyến bay đi nghỉ mát." },
-        { "n": 2, "text": "Khi bước xuống bậc cầu thang xoắn ốc tầng 1, tôi bàng hoàng thấy 3 tờ giấy viết tay xếp ngay ngắn trên bậc tam cấp mà tôi khẳng định không hề chạm vào hay biết gì về nó trước đó." },
-        { "n": 3, "text": "Tôi đọc thấy dòng chữ 'Chúng tôi đang giữ con gái ông' nên vội vã chạy lên phòng con kiểm tra thì thấy giường trống trơn." },
-        { "n": 4, "text": "Tôi hét lên gọi John rồi bấm số 911 cầu cứu cảnh sát trong hoảng loạn." },
-        { "n": 5, "text": "Tôi là một người mẹ yêu con hơn cả sinh mạng, làm sao tôi có thể liên can đến bức thư tàn nhẫn đó!" }
+        {
+          "n": 1,
+          "text": "Sáng sớm 05h45 tôi thức dậy đi xuống cầu thang chuẩn bị đồ đạc cho chuyến bay đi nghỉ mát."
+        },
+        {
+          "n": 2,
+          "text": "Khi bước xuống bậc cầu thang xoắn ốc tầng 1, tôi bàng hoàng thấy 3 tờ giấy viết tay xếp ngay ngắn trên bậc tam cấp mà tôi khẳng định không hề chạm vào hay biết gì về nó trước đó."
+        },
+        {
+          "n": 3,
+          "text": "Tôi đọc thấy dòng chữ 'Chúng tôi đang giữ con gái ông' nên vội vã chạy lên phòng con kiểm tra thì thấy giường trống trơn."
+        },
+        {
+          "n": 4,
+          "text": "Tôi hét lên gọi John rồi bấm số 911 cầu cứu cảnh sát trong hoảng loạn."
+        },
+        {
+          "n": 5,
+          "text": "Tôi là một người mẹ yêu con hơn cả sinh mạng, làm sao tôi có thể liên can đến bức thư tàn nhẫn đó!"
+        }
       ]
     },
     {
@@ -80,12 +100,29 @@
       "title": "Lời khai của người cha John Ramsey",
       "date": "20h15 ngày 26/12/1996",
       "lines": [
-        { "n": 1, "text": "Tôi nghe tiếng hét của vợ lúc gần 6h sáng nên chạy xuống tầng 1." },
-        { "n": 2, "text": "Bức thư yêu cầu nộp đúng 118.000 USD tiền mặt, đúng bằng tờ 100 đô và 20 đô." },
-        { "n": 3, "text": "Đến đầu giờ chiều, cảnh sát bảo tôi đi kiểm tra lại các phòng trong nhà xem có đồ vật gì bất thường không." },
-        { "n": 4, "text": "Tôi đi thẳng xuống tầng hầm, mở cánh cửa căn hầm rượu bị khóa then chốt ngoài thì bàng hoàng thấy thi thể con gái tôi dưới sàn." },
-        { "n": 5, "text": "Tôi lập tức ôm con gái bế thốc lên phòng khách tầng 1." }
-      ]
+        {
+          "n": 1,
+          "text": "Tôi nghe tiếng hét của vợ lúc gần 6h sáng nên chạy xuống tầng 1."
+        },
+        {
+          "n": 2,
+          "text": "Bức thư yêu cầu nộp đúng 118.000 USD tiền mặt, đúng bằng tờ 100 đô và 20 đô."
+        },
+        {
+          "n": 3,
+          "text": "Đến đầu giờ chiều, cảnh sát bảo tôi đi kiểm tra lại các phòng trong nhà xem có đồ vật gì bất thường không."
+        },
+        {
+          "n": 4,
+          "text": "Tôi đi thẳng xuống tầng hầm, mở cánh cửa căn hầm rượu bị khóa then chốt ngoài thì bàng hoàng thấy thi thể con gái tôi dưới sàn."
+        },
+        {
+          "n": 5,
+          "text": "Tôi lập tức ôm con gái bế thốc lên phòng khách tầng 1."
+        }
+      ],
+      "image": "images/d07-anh-hoa-khoi.webp",
+      "imageCaption": "Ảnh hồ sơ hoa khôi nhí tóc vàng JonBenét Ramsey"
     },
     {
       "id": "d08",
@@ -170,7 +207,10 @@
       "intro": "Cái chết của hoa khôi nhí và bức thư tống tiền 3 trang chứa đựng những chi tiết mâu thuẫn trực tiếp với giả thuyết bắt cóc thông thường.",
       "prompt": "Ghim 2 tài liệu chứng minh nguyên nhân tử vong kết hợp của nạn nhân và bằng chứng bức thư tống tiền 3 trang được xé từ cuốn sổ tay có sẵn trong nhà.",
       "need": 2,
-      "answer": ["d03", "d05"],
+      "answer": [
+        "d03",
+        "d05"
+      ],
       "hints": [
         "Kiểm tra kết quả giám định tử thi về chấn thương nứt sọ dài 21.5cm kết hợp siết cổ.",
         "Xem ảnh chụp bức thư tống tiền 3 trang khớp với gáy xé của cuốn sổ tay lò xo trong bếp.",
@@ -182,7 +222,10 @@
       ],
       "nudges": [
         {
-          "picks": ["d01", "d02"],
+          "picks": [
+            "d01",
+            "d02"
+          ],
           "message": "Bản tin và biên bản hiện trường ban đầu chưa thể hiện sự khớp nối răng cưa của cuốn sổ tay và kết luận y pháp tử thi."
         }
       ]
@@ -194,7 +237,9 @@
       "title": "Lời khai phát hiện bức thư trên cầu thang",
       "intro": "Người mẹ Patsy Ramsey đưa ra lời khai về việc bà phát hiện bức thư tống tiền lúc sáng sớm.",
       "prompt": "Hãy chọn một dòng trong lời khai của Patsy Ramsey (d06) khẳng định bà nhìn thấy 3 trang thư trên bậc cầu thang và không hề chạm vào hay biết gì về nó trước đó.",
-      "answer": ["d06:002"],
+      "answer": [
+        "d06:002"
+      ],
       "hints": [
         "Tìm dòng lời khai nói về việc bà bước xuống bậc cầu thang và thấy 3 tờ giấy viết tay xếp ngay ngắn.",
         "Đối chiếu mốc thời gian và hành vi của người khai với các nhân chứng xung quanh."
@@ -211,7 +256,10 @@
       "intro": "Các chứng cứ khoa học hình sự đã vạch trần mối liên hệ trực tiếp giữa người trong nhà và các vật chứng tại hiện trường.",
       "prompt": "Ghim 2 tài liệu chỉ ra kết quả giám định chữ viết tay trùng khớp hơn 24 đặc điểm với Patsy Ramsey và sợi vải len từ áo khoác đỏ của bà dính trên băng keo.",
       "need": 2,
-      "answer": ["d10", "d11"],
+      "answer": [
+        "d10",
+        "d11"
+      ],
       "hints": [
         "Bản phân tích giám định tài liệu chữ viết tay FBI về hơn 24 đặc điểm trùng khớp với người mẹ.",
         "Ảnh chụp phân tích vi thể sợi len màu đỏ tía dính trên băng dính dán miệng nạn nhân.",
@@ -223,7 +271,10 @@
       ],
       "nudges": [
         {
-          "picks": ["d12", "d13"],
+          "picks": [
+            "d12",
+            "d13"
+          ],
           "message": "d12 và d13 là hung khí cọ vẽ và báo cáo tâm lý FBI; hãy chọn bản giám định chữ viết d10 và ảnh so sánh sợi len d11."
         }
       ]
@@ -241,7 +292,9 @@
         "Do có kẻ lạ mặt để lại dấu chân trên tuyết ngoài sân",
         "Do nét chữ bức thư trùng khớp người trong nhà, giấy bút lấy tại bếp, sợi len áo đỏ trên băng dính và mạng nhện cửa sổ còn nguyên vẹn"
       ],
-      "answer": [3],
+      "answer": [
+        3
+      ],
       "hints": [
         "Hãy xâu chuỗi tất cả các bằng chứng vật chất: thư 3 trang viết tại chỗ, sợi len áo đỏ, mạng nhện ô thoáng và mặt tuyết trắng không dấu chân.",
         "Xem xét kỹ các bằng chứng vật chất và báo cáo kỹ thuật hình sự."

@@ -24,7 +24,9 @@
       "type": "newspaper",
       "title": "Bản tin Văn hóa Bắc Ninh - Bản khắc tranh cổ Đông Hồ bị hủy hoại",
       "date": "29 tháng Chạp năm Canh Thìn (23/01/2001)",
-      "content": "**HỦY HOẠI BẢO VẬT TRANH DÂN GIAN NGAY TRƯỚC THỀM NĂM MỚI**\n\nĐêm qua 28 Tết, xưởng tranh dân gian của nghệ nhân Nguyễn Đăng Thao tại làng Đông Hồ (Thuận Thành) đã xảy ra một vụ việc đau lòng. Bản khắc gỗ thị cổ 'Đám cưới chuột' có niên đại từ thời Tự Đức - báu vật gia truyền 4 đời của dòng họ Nguyễn Đăng - đã bị đập gãy làm đôi.\n\nĐây là bản khắc chính dùng để in mảng nét đen và nét son cho hội chợ Tết Kinh Bắc. Sự việc đang được công an địa phương khẩn trương thụ lý để tìm lại công bằng cho nghệ nhân làng nghề."
+      "content": "**HỦY HOẠI BẢO VẬT TRANH DÂN GIAN NGAY TRƯỚC THỀM NĂM MỚI**\n\nĐêm qua 28 Tết, xưởng tranh dân gian của nghệ nhân Nguyễn Đăng Thao tại làng Đông Hồ (Thuận Thành) đã xảy ra một vụ việc đau lòng. Bản khắc gỗ thị cổ 'Đám cưới chuột' có niên đại từ thời Tự Đức - báu vật gia truyền 4 đời của dòng họ Nguyễn Đăng - đã bị đập gãy làm đôi.\n\nĐây là bản khắc chính dùng để in mảng nét đen và nét son cho hội chợ Tết Kinh Bắc. Sự việc đang được công an địa phương khẩn trương thụ lý để tìm lại công bằng cho nghệ nhân làng nghề.",
+      "image": "images/d01-bao-chi.webp",
+      "imageCaption": "Ảnh tư liệu Văn hóa Bắc Ninh: Sân phơi giấy điệp làng tranh Đông Hồ"
     },
     {
       "id": "d02",
@@ -49,7 +51,9 @@
       "type": "report",
       "title": "Sơ đồ làng tranh Đông Hồ và lối đi bờ sông Đuống",
       "date": "23h30 ngày 22/01/2001",
-      "content": "**SƠ ĐỒ KHU VỰC LÀNG ĐÔNG HỒ**\n\n- **Sân đình làng**: Nơi tổ chức chiếu bóng lưu động cho bà con trong xã tối 28 Tết, cách xưởng tranh cụ Thao khoảng 800 mét đường chim bay.\n- **Đường cái lớn**: Rải đá dăm khô ráo, đi mất khoảng 15 phút.\n- **Lối ngõ tắt ven đê sông Đuống**: Lối mòn đất thịt bùn đỏ phù sa trơn trượt nối thẳng từ sau đình làng về cổng sau xưởng tranh cụ Thao, chỉ mất 5 phút đi bộ nhanh."
+      "content": "**SƠ ĐỒ KHU VỰC LÀNG ĐÔNG HỒ**\n\n- **Sân đình làng**: Nơi tổ chức chiếu bóng lưu động cho bà con trong xã tối 28 Tết, cách xưởng tranh cụ Thao khoảng 800 mét đường chim bay.\n- **Đường cái lớn**: Rải đá dăm khô ráo, đi mất khoảng 15 phút.\n- **Lối ngõ tắt ven đê sông Đuống**: Lối mòn đất thịt bùn đỏ phù sa trơn trượt nối thẳng từ sau đình làng về cổng sau xưởng tranh cụ Thao, chỉ mất 5 phút đi bộ nhanh.",
+      "image": "images/d04-so-do-lang-tranh.webp",
+      "imageCaption": "Sơ đồ đường làng Đông Hồ, xưởng tranh và lối ra bến sông Đuống"
     },
     {
       "id": "d05",
@@ -108,7 +112,9 @@
           "n": 2,
           "text": "Tối qua em đã đón xe khách về quê ở Tiên Du từ lúc 16h chiều, có vé xe đò chứng minh."
         }
-      ]
+      ],
+      "image": "images/d07-tranh-dong-ho.webp",
+      "imageCaption": "Bản dập thử tranh khắc gỗ Đám cưới chuột trên giấy điệp"
     },
     {
       "id": "d08",

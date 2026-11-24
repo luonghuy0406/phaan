@@ -24,7 +24,9 @@
       "type": "newspaper",
       "title": "Báo An ninh Thủ đô - Trọng án cướp tiệm vàng chấn động phố Tây Sơn",
       "date": "19/07/1999",
-      "content": "**TIẾNG SÚNG TRONG ĐÊM MƯA: CƯỚP TIỆM VÀNG KIM SINH, HÀNG TRĂM LƯỢNG VÀNG BIẾN MẤT**\n\nKhoảng 23h00 đêm qua 18/07, tại tiệm vàng Kim Sinh (số 38 phố Tây Sơn, phường Quang Trung, quận Đống Đa), kẻ cướp có vũ trang đã liều lĩnh nổ súng tấn công gia đình chủ tiệm vàng trong cơn mưa lớn.\n\nNhiều phát đạn súng ngắn quân dụng đã vang lên cướp đi sinh mạng của chủ tiệm và làm người thân bị thương nặng. Toàn bộ vàng miếng, vàng trang sức trong tủ kính bị khoắng sạch. Ban Giám đốc Công an TP. Hà Nội đã trực tiếp có mặt tại hiện trường chỉ đạo phá án khẩn cấp."
+      "content": "**TIẾNG SÚNG TRONG ĐÊM MƯA: CƯỚP TIỆM VÀNG KIM SINH, HÀNG TRĂM LƯỢNG VÀNG BIẾN MẤT**\n\nKhoảng 23h00 đêm qua 18/07, tại tiệm vàng Kim Sinh (số 38 phố Tây Sơn, phường Quang Trung, quận Đống Đa), kẻ cướp có vũ trang đã liều lĩnh nổ súng tấn công gia đình chủ tiệm vàng trong cơn mưa lớn.\n\nNhiều phát đạn súng ngắn quân dụng đã vang lên cướp đi sinh mạng của chủ tiệm và làm người thân bị thương nặng. Toàn bộ vàng miếng, vàng trang sức trong tủ kính bị khoắng sạch. Ban Giám đốc Công an TP. Hà Nội đã trực tiếp có mặt tại hiện trường chỉ đạo phá án khẩn cấp.",
+      "image": "images/d01-bao-chi.webp",
+      "imageCaption": "Ảnh tư liệu Báo An ninh Thủ đô: Hiện trường tiệm vàng phố Tây Sơn sáng sớm"
     },
     {
       "id": "d02",
@@ -48,7 +50,9 @@
       "type": "report",
       "title": "Sơ đồ hiện trường tiệm vàng và ngõ thoát hiểm",
       "date": "04h00 ngày 19/07/1999",
-      "content": "**SƠ ĐỒ HIỆN TRƯỜNG VÀ ĐƯỜNG TẨU THOÁT**\n\n- Tiệm vàng nằm mặt phố Tây Sơn, sát cạnh ngõ chùa Đồng Quang.\n- Lối thoát hiểm: Cửa ngách sau tiệm vàng thông ra ngõ chùa Đồng Quang dẫn ngoằn ngoèo ra đường Đặng Tiến Đông và gò Đống Đa. Đây là lối đi tối tăm, vắng người vào đêm mưa bão."
+      "content": "**SƠ ĐỒ HIỆN TRƯỜNG VÀ ĐƯỜNG TẨU THOÁT**\n\n- Tiệm vàng nằm mặt phố Tây Sơn, sát cạnh ngõ chùa Đồng Quang.\n- Lối thoát hiểm: Cửa ngách sau tiệm vàng thông ra ngõ chùa Đồng Quang dẫn ngoằn ngoèo ra đường Đặng Tiến Đông và gò Đống Đa. Đây là lối đi tối tăm, vắng người vào đêm mưa bão.",
+      "image": "images/d04-so-do-hien-truong.webp",
+      "imageCaption": "Sơ đồ hiện trường tiệm vàng, ngõ số 12 và lối thoát ra bến phà"
     },
     {
       "id": "d05",
@@ -66,11 +70,26 @@
       "title": "Lời khai của thợ kim hoàn cũ Nguyễn Văn Đông",
       "date": "08h30 ngày 19/07/1999",
       "lines": [
-        { "n": 1, "text": "Tôi từng làm thợ bạc cho ông Sinh được 3 năm, mới nghỉ việc hồi tháng trước." },
-        { "n": 2, "text": "Đúng là tôi có bức xúc vì ông Sinh trừ tiền công của tôi, nhưng tôi không dám làm chuyện tày đình như thế." },
-        { "n": 3, "text": "Tối qua từ 20h00 đến sáng hôm sau tôi ở lì tại nhà bố mẹ đẻ bên Gia Lâm ăn cơm và ngủ với vợ con, không hề bước chân sang nội thành." },
-        { "n": 4, "text": "Cả gia đình bố mẹ và hàng xóm đều có thể làm chứng cho tôi." },
-        { "n": 5, "text": "Tôi biết ông Sinh hay cất vàng miếng trong két sắt sau quầy, người ngoài không thể biết được." }
+        {
+          "n": 1,
+          "text": "Tôi từng làm thợ bạc cho ông Sinh được 3 năm, mới nghỉ việc hồi tháng trước."
+        },
+        {
+          "n": 2,
+          "text": "Đúng là tôi có bức xúc vì ông Sinh trừ tiền công của tôi, nhưng tôi không dám làm chuyện tày đình như thế."
+        },
+        {
+          "n": 3,
+          "text": "Tối qua từ 20h00 đến sáng hôm sau tôi ở lì tại nhà bố mẹ đẻ bên Gia Lâm ăn cơm và ngủ với vợ con, không hề bước chân sang nội thành."
+        },
+        {
+          "n": 4,
+          "text": "Cả gia đình bố mẹ và hàng xóm đều có thể làm chứng cho tôi."
+        },
+        {
+          "n": 5,
+          "text": "Tôi biết ông Sinh hay cất vàng miếng trong két sắt sau quầy, người ngoài không thể biết được."
+        }
       ]
     },
     {
@@ -80,10 +99,22 @@
       "title": "Lời khai của chủ tiệm cầm đồ bến xe Giáp Bát Trần Khắc Tuấn",
       "date": "09h15 ngày 19/07/1999",
       "lines": [
-        { "n": 1, "text": "Tôi mở tiệm cầm đồ xe máy gần bến xe Giáp Bát." },
-        { "n": 2, "text": "Mấy hôm trước có thằng Thắng 'quạ' đến hỏi tôi có chỗ nào mua gom vàng thỏi không hóa đơn không." },
-        { "n": 3, "text": "Thằng Thắng là dân giang hồ có lệnh nã trốn ở bãi sông Hồng, người nó lúc nào cũng găm khẩu súng ngắn trong bụng." },
-        { "n": 4, "text": "Tôi sợ rước họa vào thân nên xua tay từ chối không dám nhận." }
+        {
+          "n": 1,
+          "text": "Tôi mở tiệm cầm đồ xe máy gần bến xe Giáp Bát."
+        },
+        {
+          "n": 2,
+          "text": "Mấy hôm trước có thằng Thắng 'quạ' đến hỏi tôi có chỗ nào mua gom vàng thỏi không hóa đơn không."
+        },
+        {
+          "n": 3,
+          "text": "Thằng Thắng là dân giang hồ có lệnh nã trốn ở bãi sông Hồng, người nó lúc nào cũng găm khẩu súng ngắn trong bụng."
+        },
+        {
+          "n": 4,
+          "text": "Tôi sợ rước họa vào thân nên xua tay từ chối không dám nhận."
+        }
       ]
     },
     {
@@ -93,9 +124,18 @@
       "title": "Lời khai của bảo vệ chùa Đồng Quang",
       "date": "09h45 ngày 19/07/1999",
       "lines": [
-        { "n": 1, "text": "Đêm qua mưa to gió lớn như trút nước, tôi đang ngồi trực trong gian tam bảo." },
-        { "n": 2, "text": "Khoảng gần 23h00, tôi nghe thấy mấy tiếng nổ 'đoàng, đoàng' chát chúa át cả tiếng sấm." },
-        { "n": 3, "text": "Chừng 2 phút sau, tôi hé cửa ngó ra thì thấy một bóng người cao gầy khoác áo mưa rách, phóng vọt một chiếc xe máy Simson màu đỏ mận từ trong ngõ ngách tiệm vàng phi thẳng ra đường Đặng Tiến Đông." }
+        {
+          "n": 1,
+          "text": "Đêm qua mưa to gió lớn như trút nước, tôi đang ngồi trực trong gian tam bảo."
+        },
+        {
+          "n": 2,
+          "text": "Khoảng gần 23h00, tôi nghe thấy mấy tiếng nổ 'đoàng, đoàng' chát chúa át cả tiếng sấm."
+        },
+        {
+          "n": 3,
+          "text": "Chừng 2 phút sau, tôi hé cửa ngó ra thì thấy một bóng người cao gầy khoác áo mưa rách, phóng vọt một chiếc xe máy Simson màu đỏ mận từ trong ngõ ngách tiệm vàng phi thẳng ra đường Đặng Tiến Đông."
+        }
       ]
     },
     {
@@ -129,7 +169,9 @@
       "type": "report",
       "title": "Biên bản xác minh bến phà Đen",
       "date": "16h00 ngày 19/07/1999",
-      "content": "**XÁC MINH LỊCH TRÌNH DI CHUYỂN**\n\nNhân viên soát vé bến phà Đen xác nhận: Chiều tối 18/07, có một người đàn ông đi xe máy Simson màu đỏ mận, dáng người gầy có vết sẹo ngang mắt qua phà từ phía Gia Lâm sang nội thành lúc 19h30, người này mua bao thuốc lá Du Lịch và kẹp cuống vé vào bao."
+      "content": "**XÁC MINH LỊCH TRÌNH DI CHUYỂN**\n\nNhân viên soát vé bến phà Đen xác nhận: Chiều tối 18/07, có một người đàn ông đi xe máy Simson màu đỏ mận, dáng người gầy có vết sẹo ngang mắt qua phà từ phía Gia Lâm sang nội thành lúc 19h30, người này mua bao thuốc lá Du Lịch và kẹp cuống vé vào bao.",
+      "image": "images/d12-ve-pha-den.webp",
+      "imageCaption": "Bản chụp cuống vé phà Đen đêm giông bão"
     },
     {
       "id": "d13",
@@ -181,7 +223,10 @@
       "intro": "Vụ cướp có vũ trang để lại hiện trường đầy dấu vết súng đạn quân dụng trong đêm mưa giông.",
       "prompt": "Ghim 2 tài liệu chứng minh hung khí gây án là súng ngắn quân dụng K54 cỡ 7.62mm qua kết quả giám định tử thi và ảnh chụp 3 vỏ đạn dập năm 1968.",
       "need": 2,
-      "answer": ["d03", "d05"],
+      "answer": [
+        "d03",
+        "d05"
+      ],
       "hints": [
         "Kiểm tra kết quả giám định tử thi về 2 đầu đạn bọc đồng 7.62mm rãnh xoắn K54.",
         "Xem ảnh chụp cận cảnh 3 vỏ đạn đồng dập số hiệu năm '1968 - K54' thu tại quầy thu ngân.",
@@ -193,7 +238,10 @@
       ],
       "nudges": [
         {
-          "picks": ["d01", "d02"],
+          "picks": [
+            "d01",
+            "d02"
+          ],
           "message": "Bản tin và biên bản hiện trường ban đầu chưa nêu phân tích rãnh xoắn nòng súng 4 rãnh và con số năm 1968 dập đáy đạn."
         }
       ]
@@ -205,7 +253,9 @@
       "title": "Bằng chứng ngoại phạm của thợ bạc cũ Đông",
       "intro": "Thợ bạc cũ Nguyễn Văn Đông đưa ra lời khai khẳng định mình ở nhà bố mẹ đẻ suốt buổi tối xảy ra án mạng.",
       "prompt": "Hãy chọn một dòng trong lời khai của Nguyễn Văn Đông (d06) khẳng định y ở lì tại nhà bố mẹ đẻ bên Gia Lâm từ 20h00 đến sáng hôm sau không hề sang nội thành.",
-      "answer": ["d06:003"],
+      "answer": [
+        "d06:003"
+      ],
       "hints": [
         "Tìm dòng lời khai nói về việc Đông ở nhà bố mẹ đẻ tại Gia Lâm từ 20h00 đến sáng hôm sau.",
         "Đối chiếu mốc thời gian và hành vi của người khai với các nhân chứng xung quanh."
@@ -222,7 +272,10 @@
       "intro": "Lần theo dấu vết tẩu thoát, cơ quan điều tra đã xác định chính xác danh tính kẻ thủ ác.",
       "prompt": "Ghim 2 tài liệu chỉ ra kết quả giám định đạn đạo rãnh xoắn đặc thù và dấu vân tay của đối tượng truy nã Phạm Đức Thắng trên vỏ bao thuốc lá rơi lại hiện trường.",
       "need": 2,
-      "answer": ["d10", "d11"],
+      "answer": [
+        "d10",
+        "d11"
+      ],
       "hints": [
         "Báo cáo giám định đạn đạo về vết xước dọc ở rãnh xoắn số 2 trên nòng súng K54.",
         "Ảnh chụp dấu vân tay trên vỏ bao thuốc lá Du Lịch trùng khớp với tàng thư căn cước của Phạm Đức Thắng.",
@@ -234,7 +287,10 @@
       ],
       "nudges": [
         {
-          "picks": ["d12", "d13"],
+          "picks": [
+            "d12",
+            "d13"
+          ],
           "message": "d12 và d13 là xác minh bến phà và ngoại phạm của Đông; hãy chọn báo cáo đạn đạo d10 và ảnh dấu vân tay d11."
         }
       ]
@@ -252,7 +308,9 @@
         "Chủ tiệm cầm đồ Trần Khắc Tuấn",
         "Bảo vệ chùa Đồng Quang"
       ],
-      "answer": [0],
+      "answer": [
+        0
+      ],
       "hints": [
         "Ai là đối tượng trốn nã sở hữu súng K54 nòng xước, đi xe Simson đỏ và để lại vỏ bao thuốc lá dính vân tay trong ngõ?",
         "Xem xét kỹ các bằng chứng vật chất và báo cáo kỹ thuật hình sự."

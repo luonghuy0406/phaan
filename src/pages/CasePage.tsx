@@ -5,7 +5,7 @@ import { supabaseReady } from '../lib/supabase';
 import { createRoom } from '../multiplayer/room';
 import { useMyActivity, roomLink, ROOM_STATUS } from '../components/progress';
 import { CaseCard, Cover, Difficulty, Footer, Nav } from '../components/site';
-import { caseNo, loadCase, loadCatalog, useAsync } from '../lib/data';
+import { caseNo, loadCase, loadCatalog, useAsync, caseKind, KIND_LABEL } from '../lib/data';
 import { Paras } from '../lib/text';
 import { SITE } from '../lib/config';
 import { typeLabel } from '../board/papers';
@@ -59,8 +59,14 @@ export default function CasePage() {
               <>
                 <div className="case-hero__cover"><Cover entry={c} /></div>
                 <div>
-                  <p className="eyebrow">{caseNo(c)} · {open ? 'Đang mở' : 'Sắp ra mắt'}</p>
+                  <p className="eyebrow">{caseNo(c)} · {KIND_LABEL[caseKind(c)]} · {open ? 'Đang mở' : 'Sắp ra mắt'}</p>
                   <h1>{c.title}</h1>
+                  {caseKind(c) === 'true-crime' && (
+                    <p className="kind-notice">
+                      <b>Dựa trên vụ án có thật.</b> Hồ sơ tái hiện từ thông tin công khai; một số chi tiết được lược bớt hoặc dựng lại để chơi được.
+                      Nội dung liên quan tới nạn nhân thật và có thể gây ám ảnh, không dành cho trẻ em.
+                    </p>
+                  )}
                   {c.subtitle && <p className="case-hero__sub">{c.subtitle}</p>}
                   <div className="case-synopsis"><Paras list={c.synopsis || (c.tagline ? [c.tagline] : [])} /></div>
                   <dl className="case-facts">

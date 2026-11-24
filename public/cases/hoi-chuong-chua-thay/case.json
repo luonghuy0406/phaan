@@ -24,7 +24,9 @@
       "type": "newspaper",
       "title": "Báo Hà Tây - Vụ án mạng chấn động chốn thiền môn núi Sài Sơn",
       "date": "03/04/2004",
-      "content": "**SỰ VIỆC ĐAU LÒNG TẠI CHÙA CỔ SƠN: SƯ TRỤ TRÌ BỊ SÁT HẠI TRONG TỊNH THẤT**\n\nTrưa 01/04, tại chùa Cổ Sơn trên đỉnh núi Sài Sơn (Quốc Oai), Đại đức Thích Tâm Viên (72 tuổi) được phát hiện đã viên tịch bất thường trong tịnh thất am thiền.\n\nVụ việc gây chấn động dư luận bởi tịnh thất của sư trụ trì nằm biệt lập trên đỉnh vách đá, cửa chốt trong kiên cố. Đặc biệt, đúng 12h00 trưa toàn thể tăng ni phật tử dưới chân núi vẫn nghe thấy 3 tiếng chuông ngọ ngân vang do chính tay sư trụ trì thường ngày vẫn thỉnh. Cơ quan công an đang điều tra làm rõ nguyên nhân cái chết."
+      "content": "**SỰ VIỆC ĐAU LÒNG TẠI CHÙA CỔ SƠN: SƯ TRỤ TRÌ BỊ SÁT HẠI TRONG TỊNH THẤT**\n\nTrưa 01/04, tại chùa Cổ Sơn trên đỉnh núi Sài Sơn (Quốc Oai), Đại đức Thích Tâm Viên (72 tuổi) được phát hiện đã viên tịch bất thường trong tịnh thất am thiền.\n\nVụ việc gây chấn động dư luận bởi tịnh thất của sư trụ trì nằm biệt lập trên đỉnh vách đá, cửa chốt trong kiên cố. Đặc biệt, đúng 12h00 trưa toàn thể tăng ni phật tử dưới chân núi vẫn nghe thấy 3 tiếng chuông ngọ ngân vang do chính tay sư trụ trì thường ngày vẫn thỉnh. Cơ quan công an đang điều tra làm rõ nguyên nhân cái chết.",
+      "image": "images/d01-bao-chi.webp",
+      "imageCaption": "Ảnh tư liệu Bản tin Hà Tây: Toàn cảnh núi Sài Sơn và chùa Thầy"
     },
     {
       "id": "d02",
@@ -40,7 +42,9 @@
       "type": "report",
       "title": "Kết quả giám định tử thi Đại đức Thích Tâm Viên",
       "date": "15h00 ngày 01/04/2004",
-      "content": "**KẾT QUẢ GIÁM ĐỊNH PHÁP Y**\n\n1. **Nguyên nhân tử vong**: Ngạt cơ học do siết cổ bằng dây thừng gai sợi thô, gãy sụn nhẫn và rách tĩnh mạch cảnh.\n2. **Tình trạng dạ dày**: Hoàn toàn rỗng, chỉ có khoảng 5ml dịch vị trong suốt, chứng tỏ nạn nhân chưa hề ăn bữa ngọ trai trưa.\n3. **Thời điểm tử vong chính xác**: Căn cứ vết hoen tử thi và độ hạ thân nhiệt, nạn nhân đã tử vong vào khoảng **09h45 đến 10h15 sáng** ngày 01/04/2004. Nạn nhân tuyệt đối không thể tự mình thỉnh chuông vào lúc 12h00 trưa!"
+      "content": "**KẾT QUẢ GIÁM ĐỊNH PHÁP Y**\n\n1. **Nguyên nhân tử vong**: Ngạt cơ học do siết cổ bằng dây thừng gai sợi thô, gãy sụn nhẫn và rách tĩnh mạch cảnh.\n2. **Tình trạng dạ dày**: Hoàn toàn rỗng, chỉ có khoảng 5ml dịch vị trong suốt, chứng tỏ nạn nhân chưa hề ăn bữa ngọ trai trưa.\n3. **Thời điểm tử vong chính xác**: Căn cứ vết hoen tử thi và độ hạ thân nhiệt, nạn nhân đã tử vong vào khoảng **09h45 đến 10h15 sáng** ngày 01/04/2004. Nạn nhân tuyệt đối không thể tự mình thỉnh chuông vào lúc 12h00 trưa!",
+      "image": "images/d03-so-do-chua.webp",
+      "imageCaption": "Sơ đồ mặt bằng gác chuông và tòa chính điện chùa Thầy"
     },
     {
       "id": "d04",
@@ -128,7 +132,9 @@
           "n": 3,
           "text": "Sau đó từ 11h15 thầy Quảng Chân ngồi ở nhà khách ăn cơm cùng đoàn phật tử Hà Nội."
         }
-      ]
+      ],
+      "image": "images/d08-so-do-co-hoc.webp",
+      "imageCaption": "Bản phác thảo sơ đồ nguyên lý đòn bẩy thủy lực nước nhỏ giọt"
     },
     {
       "id": "d09",

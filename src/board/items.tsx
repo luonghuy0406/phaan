@@ -60,11 +60,12 @@ export const DocItem = memo(function DocItem({ doc }: { doc: CaseDoc }) {
   const picked = useBoardState((s) => { const q = currentQ(c, s); return q?.type === 'line' ? s.q[q.id].line : ''; });
   const evidence = useBoardState((s) => { const q = currentQ(c, s); return q?.type === 'evidence' ? q : null; });
   const pinSlot = useBoardState((s) => (evidence ? s.pins.indexOf(id) : -1));
-  const isSpeaking = useTts((s) => s.activeId === `doc:${id}` && (s.status === 'playing' || s.status === 'loading'));
+  const isSpeaking = useTts((s) => s.activeId === `doc:${id}` && (s.status === 'playing' || s.status === 'loading' || s.status === 'downloading'));
   const showToast = useUi((s) => s.showToast);
   const { focusDoc } = useBoard();
   const hl = useMemo(() => new Set(hlKey ? hlKey.split('|').map((k) => k.slice(id.length + 1)) : []), [hlKey, id]);
-  const paperCtx = useMemo(() => ({ hl, picked }), [hl, picked]);
+  const nation = c.nationalHeader !== false;
+  const paperCtx = useMemo(() => ({ hl, picked, nation }), [hl, picked, nation]);
   useTrackSize(`doc:${id}`, ref, (el) => { if (el) reg.docEls.set(id, el); else reg.docEls.delete(id); });
 
   const placed = Boolean(pos);

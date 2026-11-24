@@ -24,7 +24,9 @@
       "type": "newspaper",
       "title": "Báo Đắk Lắk - Hỏa hoạn thương tâm trong đêm hội buôn Ea Kral",
       "date": "10/04/2001",
-      "content": "**CHÁY LỚN KHO THÓC CỘNG ĐỒNG: GIÀ LÀNG AMA THUẬT TỬ NẠN**\n\nKhoảng 21h00 đêm 09/04, một vụ cháy dữ dội đã bùng phát tại kho thóc cộng đồng buôn Ea Kral (xã Ea Kiết). Bất chấp nỗ lực dập lửa của thanh niên trong buôn, kho thóc bằng gỗ nứa chứa hơn 20 tấn lúa giống đã bị thiêu rụi hoàn toàn.\n\nĐau lòng hơn, già làng Ama Thuật (62 tuổi) đã thiệt mạng bên trong đống đổ nát. Lực lượng kỹ thuật hình sự đã phong tỏa hiện trường để làm rõ nghi vấn cháy nổ bất thường."
+      "content": "**CHÁY LỚN KHO THÓC CỘNG ĐỒNG: GIÀ LÀNG AMA THUẬT TỬ NẠN**\n\nKhoảng 21h00 đêm 09/04, một vụ cháy dữ dội đã bùng phát tại kho thóc cộng đồng buôn Ea Kral (xã Ea Kiết). Bất chấp nỗ lực dập lửa của thanh niên trong buôn, kho thóc bằng gỗ nứa chứa hơn 20 tấn lúa giống đã bị thiêu rụi hoàn toàn.\n\nĐau lòng hơn, già làng Ama Thuật (62 tuổi) đã thiệt mạng bên trong đống đổ nát. Lực lượng kỹ thuật hình sự đã phong tỏa hiện trường để làm rõ nghi vấn cháy nổ bất thường.",
+      "image": "images/d01-bao-chi.webp",
+      "imageCaption": "Ảnh tư liệu Bản tin An ninh: Hiện trường đổ nát kho cà phê buôn Ea Kral"
     },
     {
       "id": "d02",
@@ -40,7 +42,9 @@
       "type": "report",
       "title": "Kết quả giám định tử thi già làng Ama Thuật",
       "date": "08h15 ngày 10/04/2001",
-      "content": "**KẾT QUẢ GIÁM ĐỊNH PHÁP Y TỬ THI**\n\n1. **Khí quản và phế nang**: Hoàn toàn sạch, không tìm thấy muội than hoặc bồ hóng; xét nghiệm máu cho thấy nồng độ khí độc CO bằng 0%. Điều này khẳng định 100% nạn nhân **đã ngừng thở trước khi đám cháy bùng phát**.\n2. **Nguyên nhân tử vong**: Vỡ lún xương hộp sọ vùng chẩm sau gáy kích thước 4x8cm kèm dập não. Vết thương do một vật kim loại có sống lưng dày, gồ ghề phang mạnh từ phía sau với lực cực lớn.\n3. **Thời điểm tử vong ước tính**: Khoảng từ 19h30 đến 20h00 tối ngày 09/04/2001."
+      "content": "**KẾT QUẢ GIÁM ĐỊNH PHÁP Y TỬ THI**\n\n1. **Khí quản và phế nang**: Hoàn toàn sạch, không tìm thấy muội than hoặc bồ hóng; xét nghiệm máu cho thấy nồng độ khí độc CO bằng 0%. Điều này khẳng định 100% nạn nhân **đã ngừng thở trước khi đám cháy bùng phát**.\n2. **Nguyên nhân tử vong**: Vỡ lún xương hộp sọ vùng chẩm sau gáy kích thước 4x8cm kèm dập não. Vết thương do một vật kim loại có sống lưng dày, gồ ghề phang mạnh từ phía sau với lực cực lớn.\n3. **Thời điểm tử vong ước tính**: Khoảng từ 19h30 đến 20h00 tối ngày 09/04/2001.",
+      "image": "images/d03-so-do-buon-lang.webp",
+      "imageCaption": "Sơ đồ mặt bằng buôn Ea Kral và đường dây tải điện tự kéo"
     },
     {
       "id": "d04",
@@ -86,7 +90,9 @@
           "n": 5,
           "text": "Hàng chục người trong buôn đều thấy tôi ở nhà rông, tôi làm sao mà giết cha và đốt kho được?"
         }
-      ]
+      ],
+      "image": "images/d06-anh-the.webp",
+      "imageCaption": "Ảnh thẻ căn cước và hồ sơ nhân chứng buôn Ea Kral"
     },
     {
       "id": "d07",

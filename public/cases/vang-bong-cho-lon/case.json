@@ -24,7 +24,9 @@
       "type": "newspaper",
       "title": "Báo Sài Gòn Giải Phóng - Vụ cướp tiệm vàng chấn động Chợ Lớn",
       "date": "19/05/1995",
-      "content": "**ÁNH VÀNG VẠN THÀNH TẮT LỊM: CHỦ TIỆM TỬ VONG, 50 LƯỢNG VÀNG BIẾN MẤT**\n\nRạng sáng 18/05, tại tiệm vàng Vạn Thành (số 62 đường Hải Thượng Lãn Ông, Phường 10, Quận 5), ông Lâm Vạn Thành (60 tuổi) đã qua đời bất thường trong phòng làm việc. Chiếc két sắt nhập khẩu hiệu Chubb bị mở toang, toàn bộ vàng dự trữ và tiền mặt đã không cánh mà bay.\n\nBảo vệ tiệm vàng được tìm thấy trong tình trạng hôn mê sâu ở góc hành lang. Công an TP. Hồ Chí Minh đang tập trung lực lượng điều tra làm rõ các mối quan hệ làm ăn của gia đình nạn nhân."
+      "content": "**ÁNH VÀNG VẠN THÀNH TẮT LỊM: CHỦ TIỆM TỬ VONG, 50 LƯỢNG VÀNG BIẾN MẤT**\n\nRạng sáng 18/05, tại tiệm vàng Vạn Thành (số 62 đường Hải Thượng Lãn Ông, Phường 10, Quận 5), ông Lâm Vạn Thành (60 tuổi) đã qua đời bất thường trong phòng làm việc. Chiếc két sắt nhập khẩu hiệu Chubb bị mở toang, toàn bộ vàng dự trữ và tiền mặt đã không cánh mà bay.\n\nBảo vệ tiệm vàng được tìm thấy trong tình trạng hôn mê sâu ở góc hành lang. Công an TP. Hồ Chí Minh đang tập trung lực lượng điều tra làm rõ các mối quan hệ làm ăn của gia đình nạn nhân.",
+      "image": "images/d01-bao-chi.webp",
+      "imageCaption": "Ảnh tư liệu Báo Sài Gòn Giải Phóng: Mặt tiền tiệm kim hoàn Vạn Thành Chợ Lớn năm 1995"
     },
     {
       "id": "d02",
@@ -48,7 +50,9 @@
       "type": "report",
       "title": "Sơ đồ mặt bằng tiệm vàng Vạn Thành",
       "date": "09h30 ngày 18/05/1995",
-      "content": "**SƠ ĐỒ TỔNG THỂ NHÀ PHỐ**\n\n- **Tầng trệt**: Phía trước là quầy trưng bày vàng và két sắt. Phía sau là bàn làm việc của ông Thành và phòng xưởng chế tác kim hoàn.\n- **Cửa sau**: Mở ra con hẻm nhỏ thông sang đường Triệu Quang Phục, khóa bằng khóa chốt trong nhưng buổi sáng phát hiện chốt đã bị mở sang chế độ tự do.\n- **Lầu 1 & 2**: Phòng ngủ của vợ bé Lý Diễm My và các phòng sinh hoạt gia đình."
+      "content": "**SƠ ĐỒ TỔNG THỂ NHÀ PHỐ**\n\n- **Tầng trệt**: Phía trước là quầy trưng bày vàng và két sắt. Phía sau là bàn làm việc của ông Thành và phòng xưởng chế tác kim hoàn.\n- **Cửa sau**: Mở ra con hẻm nhỏ thông sang đường Triệu Quang Phục, khóa bằng khóa chốt trong nhưng buổi sáng phát hiện chốt đã bị mở sang chế độ tự do.\n- **Lầu 1 & 2**: Phòng ngủ của vợ bé Lý Diễm My và các phòng sinh hoạt gia đình.",
+      "image": "images/d04-so-do-tiem-vang.webp",
+      "imageCaption": "Sơ đồ mặt bằng quầy tủ kính và vị trí két sắt tiệm kim hoàn"
     },
     {
       "id": "d05",
@@ -136,7 +140,9 @@
       "type": "receipt",
       "title": "Cuống vé ca nhạc rạp Hào Huê của Trương Chấn Hào",
       "date": "21h00 ngày 17/05/1995",
-      "content": "**CUỐNG VÉ RẠP HÀO HUÊ - ĐÊM DIỄN 17/05/1995**\n\n- Ghế: Hàng D số 14.\n- Giờ diễn: 20h30 - 23h00.\n- Tình trạng: Cuống vé xé góc cửa kiểm soát, trên mặt vé có dấu mộc đỏ của rạp Hào Huê."
+      "content": "**CUỐNG VÉ RẠP HÀO HUÊ - ĐÊM DIỄN 17/05/1995**\n\n- Ghế: Hàng D số 14.\n- Giờ diễn: 20h30 - 23h00.\n- Tình trạng: Cuống vé xé góc cửa kiểm soát, trên mặt vé có dấu mộc đỏ của rạp Hào Huê.",
+      "image": "images/d09-cuong-ve.webp",
+      "imageCaption": "Bản chụp cuống vé xem ca nhạc Dạ thảo rạp Hào Huê"
     },
     {
       "id": "d10",

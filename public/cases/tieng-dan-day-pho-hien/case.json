@@ -24,7 +24,9 @@
       "type": "newspaper",
       "title": "Báo Hải Hưng - Tin buồn trong đêm hội rằm Phố Hiến",
       "date": "16/08/1993 Âm lịch (30/09/1993)",
-      "content": "**ĐÊM RẰM HỒ BÁN NGUYỆT: NGHỆ NHÂN PHAN BÁ CỬU ĐỘT NGỘT TỪ TRẦN**\n\nHôm qua, trong đêm tế tổ thường niên của Kim Nguyệt Phường tổ chức tại đình cổ bên hồ Bán Nguyệt, nghệ nhân đàn đáy cự phách Phan Bá Cửu (68 tuổi) đã đột ngột ngã gục ngay trên chiếu biểu diễn trước sự chứng kiến của đông đảo bà con yêu văn nghệ cổ truyền.\n\nTheo người nhà và các thành viên phường hát, cụ Cửu vốn có sức khỏe dẻo dai, sáng cùng ngày vẫn cầm trịch buổi tổng duyệt. Cơ quan điều tra đã phong tỏa đình làng để làm rõ nguyên nhân cái chết bất thường."
+      "content": "**ĐÊM RẰM HỒ BÁN NGUYỆT: NGHỆ NHÂN PHAN BÁ CỬU ĐỘT NGỘT TỪ TRẦN**\n\nHôm qua, trong đêm tế tổ thường niên của Kim Nguyệt Phường tổ chức tại đình cổ bên hồ Bán Nguyệt, nghệ nhân đàn đáy cự phách Phan Bá Cửu (68 tuổi) đã đột ngột ngã gục ngay trên chiếu biểu diễn trước sự chứng kiến của đông đảo bà con yêu văn nghệ cổ truyền.\n\nTheo người nhà và các thành viên phường hát, cụ Cửu vốn có sức khỏe dẻo dai, sáng cùng ngày vẫn cầm trịch buổi tổng duyệt. Cơ quan điều tra đã phong tỏa đình làng để làm rõ nguyên nhân cái chết bất thường.",
+      "image": "images/d01-bao-chi.webp",
+      "imageCaption": "Ảnh tư liệu Báo Hải Hưng: Đình Hoa Nguyệt trong đêm hội rằm"
     },
     {
       "id": "d02",
@@ -40,7 +42,9 @@
       "type": "report",
       "title": "Sơ đồ mặt bằng đình Hoa Nguyệt",
       "date": "22h00 ngày 29/09/1993",
-      "content": "**SƠ ĐỒ BỐ TRÍ HIỆN TRƯỜNG**\n\n- **Tiền đình (Chiếu diễn chính)**: Nơi cụ Cửu ngã gục. Xung quanh là vị trí ngồi của đào nương Ánh Tuyết (phía bên phải), kép đàn Chu Văn Bình (phía sau cánh gà dự bị) và người đánh trống chầu.\n- **Hậu cung**: Nơi đặt bàn thờ tổ nghề ca trù và các cụ tiền bối. Nạn nhân có mặt tại đây lúc 19h30 để dâng hương tế tổ trước buổi diễn.\n- **Buồng hóa trang (Hành lang đông)**: Căn phòng nhỏ phía sau hậu cung, nơi để nhạc cụ, phục trang và tráp gỗ của cụ Cửu từ chiều cùng ngày."
+      "content": "**SƠ ĐỒ BỐ TRÍ HIỆN TRƯỜNG**\n\n- **Tiền đình (Chiếu diễn chính)**: Nơi cụ Cửu ngã gục. Xung quanh là vị trí ngồi của đào nương Ánh Tuyết (phía bên phải), kép đàn Chu Văn Bình (phía sau cánh gà dự bị) và người đánh trống chầu.\n- **Hậu cung**: Nơi đặt bàn thờ tổ nghề ca trù và các cụ tiền bối. Nạn nhân có mặt tại đây lúc 19h30 để dâng hương tế tổ trước buổi diễn.\n- **Buồng hóa trang (Hành lang đông)**: Căn phòng nhỏ phía sau hậu cung, nơi để nhạc cụ, phục trang và tráp gỗ của cụ Cửu từ chiều cùng ngày.",
+      "image": "images/d03-so-do-dinh.webp",
+      "imageCaption": "Sơ đồ kiến trúc mặt bằng đình cổ Hoa Nguyệt"
     },
     {
       "id": "d04",
@@ -66,13 +70,33 @@
       "title": "Lời khai sơ bộ của đào nương Nguyễn Thị Ánh Tuyết",
       "date": "22h30 ngày 29/09/1993",
       "lines": [
-        { "n": 1, "text": "Tôi là người pha ấm trà sen và dâng chén trà lên cho cụ Cửu lúc 19h45." },
-        { "n": 2, "text": "Trà sen là loại trà ướp hoa sen hồ Bán Nguyệt do anh Chu Văn Bình mang đến từ chiều." },
-        { "n": 3, "text": "Khi tôi dâng trà, cụ Cửu đang kiểm tra dây đàn đáy, cụ chỉ nhấp môi một tí xíu cho thơm giọng rồi đặt chén xuống góc chiếu." },
-        { "n": 4, "text": "Cụ mắng tôi hát khúc 'Hồng Hồng Tuyết Tuyết' sáng nay còn non, nhưng cụ dặn tối nay cứ tự tin mà gõ phách." },
-        { "n": 5, "text": "Lúc cụ Cửu so dây xong khúc dạo đầu, cụ bỗng ôm ngực quằn quại, tay quờ trúng chén trà làm đổ lênh láng." },
-        { "n": 6, "text": "Tôi hoàn toàn không bỏ thứ gì vào chén trà của cụ cả, trời đất chứng giám!" }
-      ]
+        {
+          "n": 1,
+          "text": "Tôi là người pha ấm trà sen và dâng chén trà lên cho cụ Cửu lúc 19h45."
+        },
+        {
+          "n": 2,
+          "text": "Trà sen là loại trà ướp hoa sen hồ Bán Nguyệt do anh Chu Văn Bình mang đến từ chiều."
+        },
+        {
+          "n": 3,
+          "text": "Khi tôi dâng trà, cụ Cửu đang kiểm tra dây đàn đáy, cụ chỉ nhấp môi một tí xíu cho thơm giọng rồi đặt chén xuống góc chiếu."
+        },
+        {
+          "n": 4,
+          "text": "Cụ mắng tôi hát khúc 'Hồng Hồng Tuyết Tuyết' sáng nay còn non, nhưng cụ dặn tối nay cứ tự tin mà gõ phách."
+        },
+        {
+          "n": 5,
+          "text": "Lúc cụ Cửu so dây xong khúc dạo đầu, cụ bỗng ôm ngực quằn quại, tay quờ trúng chén trà làm đổ lênh láng."
+        },
+        {
+          "n": 6,
+          "text": "Tôi hoàn toàn không bỏ thứ gì vào chén trà của cụ cả, trời đất chứng giám!"
+        }
+      ],
+      "image": "images/d06-anh-chan-dung.webp",
+      "imageCaption": "Ảnh kỷ niệm nghệ nhân phường chèo và kép đàn Chu Văn Bình"
     },
     {
       "id": "d07",
@@ -81,15 +105,42 @@
       "title": "Lời khai của kép đàn Chu Văn Bình",
       "date": "23h15 ngày 29/09/1993",
       "lines": [
-        { "n": 1, "text": "Tôi theo học đàn đáy với thầy Cửu đã hơn mười hai năm nay, tình như cha con." },
-        { "n": 2, "text": "Đúng là sáng nay thầy có bảo ngón đàn của tôi còn non, chưa đủ tầm đệm cho hội diễn tỉnh." },
-        { "n": 3, "text": "Nhưng tôi chỉ biết cúi đầu nghe lời thầy dạy chứ đâu dám có nửa lời oán trách." },
-        { "n": 4, "text": "Gói trà sen ướp sớm là do chính tay mẹ tôi làm ở nhà, mang biếu thầy bồi dưỡng." },
-        { "n": 5, "text": "Buổi tối từ 19h đến 19h40 tôi ngồi uống nước chè xanh ngoài quán bà Mùi trước cổng đình." },
-        { "n": 6, "text": "Mọi người đều nhìn thấy tôi ở quán nước, tôi không hề rời đi nửa bước." },
-        { "n": 7, "text": "Tôi chỉ vào gian tiền tế khi sắp tới giờ khai mạc lúc 19h45." },
-        { "n": 8, "text": "Tôi tuyệt đối không hề bước chân vào buồng hóa trang phía sau và cũng không bao giờ chạm tay vào tráp đồ nghề của thầy." },
-        { "n": 9, "text": "Đồ nghề của thầy Cửu thiêng liêng lắm, phím gảy bằng sừng trâu thầy coi như tính mạng, ai dám đụng vào!" }
+        {
+          "n": 1,
+          "text": "Tôi theo học đàn đáy với thầy Cửu đã hơn mười hai năm nay, tình như cha con."
+        },
+        {
+          "n": 2,
+          "text": "Đúng là sáng nay thầy có bảo ngón đàn của tôi còn non, chưa đủ tầm đệm cho hội diễn tỉnh."
+        },
+        {
+          "n": 3,
+          "text": "Nhưng tôi chỉ biết cúi đầu nghe lời thầy dạy chứ đâu dám có nửa lời oán trách."
+        },
+        {
+          "n": 4,
+          "text": "Gói trà sen ướp sớm là do chính tay mẹ tôi làm ở nhà, mang biếu thầy bồi dưỡng."
+        },
+        {
+          "n": 5,
+          "text": "Buổi tối từ 19h đến 19h40 tôi ngồi uống nước chè xanh ngoài quán bà Mùi trước cổng đình."
+        },
+        {
+          "n": 6,
+          "text": "Mọi người đều nhìn thấy tôi ở quán nước, tôi không hề rời đi nửa bước."
+        },
+        {
+          "n": 7,
+          "text": "Tôi chỉ vào gian tiền tế khi sắp tới giờ khai mạc lúc 19h45."
+        },
+        {
+          "n": 8,
+          "text": "Tôi tuyệt đối không hề bước chân vào buồng hóa trang phía sau và cũng không bao giờ chạm tay vào tráp đồ nghề của thầy."
+        },
+        {
+          "n": 9,
+          "text": "Đồ nghề của thầy Cửu thiêng liêng lắm, phím gảy bằng sừng trâu thầy coi như tính mạng, ai dám đụng vào!"
+        }
       ]
     },
     {
@@ -99,11 +150,26 @@
       "title": "Lời khai của quản lý phường Đỗ Trọng Toàn",
       "date": "00h15 ngày 30/09/1993",
       "lines": [
-        { "n": 1, "text": "Tôi phụ trách quản lý sổ sách và tiền thù lao cho Kim Nguyệt Phường." },
-        { "n": 2, "text": "Khoản tiền tài trợ tu sửa đàn cổ 3 triệu đồng vẫn nằm trong két sắt của hội quán, không thiếu một xu." },
-        { "n": 3, "text": "Cụ Cửu tính tình cổ hủ, hay xét nét người khác, nhưng chuyện tiền nong chúng tôi đã giải thích rõ ràng chiều qua." },
-        { "n": 4, "text": "Khoảng 19h20, tôi vào buồng hóa trang lấy danh sách tiết mục thì thấy buồng vắng tanh, chỉ có tráp gỗ của cụ Cửu đặt trên bàn phấn." },
-        { "n": 5, "text": "Tôi lấy giấy tờ rồi đi ra tiền sảnh tiếp khách, không gặp ai trong hành lang." }
+        {
+          "n": 1,
+          "text": "Tôi phụ trách quản lý sổ sách và tiền thù lao cho Kim Nguyệt Phường."
+        },
+        {
+          "n": 2,
+          "text": "Khoản tiền tài trợ tu sửa đàn cổ 3 triệu đồng vẫn nằm trong két sắt của hội quán, không thiếu một xu."
+        },
+        {
+          "n": 3,
+          "text": "Cụ Cửu tính tình cổ hủ, hay xét nét người khác, nhưng chuyện tiền nong chúng tôi đã giải thích rõ ràng chiều qua."
+        },
+        {
+          "n": 4,
+          "text": "Khoảng 19h20, tôi vào buồng hóa trang lấy danh sách tiết mục thì thấy buồng vắng tanh, chỉ có tráp gỗ của cụ Cửu đặt trên bàn phấn."
+        },
+        {
+          "n": 5,
+          "text": "Tôi lấy giấy tờ rồi đi ra tiền sảnh tiếp khách, không gặp ai trong hành lang."
+        }
       ]
     },
     {
@@ -113,11 +179,26 @@
       "title": "Lời khai của bà Lê Thị Mùi (bán nước chè cổng đình)",
       "date": "08h00 ngày 30/09/1993",
       "lines": [
-        { "n": 1, "text": "Tôi bán nước chè tươi và kẹo lạc ở gốc đa cổng đình này hơn hai chục năm rồi." },
-        { "n": 2, "text": "Tối qua chú kép Bình có ra ngồi uống bát nước chè tươi từ chập tối." },
-        { "n": 3, "text": "Nhưng chú ấy bảo ngồi suốt là nói xạo đấy! Khoảng 19h25 chú ấy bảo đau bụng rồi lén đi vòng qua lối ngách phía sau đình." },
-        { "n": 4, "text": "Cái ngách đó dẫn thẳng vào cửa buồng hóa trang, lối ấy tối om ít ai để ý." },
-        { "n": 5, "text": "Mãi đến gần 19h40 chú Bình mới quay lại quán, tay còn đang lau mồ hôi bằng cái khăn lụa màu vàng mỡ gà." }
+        {
+          "n": 1,
+          "text": "Tôi bán nước chè tươi và kẹo lạc ở gốc đa cổng đình này hơn hai chục năm rồi."
+        },
+        {
+          "n": 2,
+          "text": "Tối qua chú kép Bình có ra ngồi uống bát nước chè tươi từ chập tối."
+        },
+        {
+          "n": 3,
+          "text": "Nhưng chú ấy bảo ngồi suốt là nói xạo đấy! Khoảng 19h25 chú ấy bảo đau bụng rồi lén đi vòng qua lối ngách phía sau đình."
+        },
+        {
+          "n": 4,
+          "text": "Cái ngách đó dẫn thẳng vào cửa buồng hóa trang, lối ấy tối om ít ai để ý."
+        },
+        {
+          "n": 5,
+          "text": "Mãi đến gần 19h40 chú Bình mới quay lại quán, tay còn đang lau mồ hôi bằng cái khăn lụa màu vàng mỡ gà."
+        }
       ]
     },
     {
@@ -179,7 +260,10 @@
       "intro": "Đào nương Ánh Tuyết bị nghi bỏ độc vào chén trà sen dâng cụ Cửu. Hãy đối chiếu các tài liệu đã mở ở Trọng điểm 1 để chỉ ra: Nạn nhân không chết vì uống trà sen mà do chất độc ngấm qua một vật dụng bất thường trong miệng.",
       "prompt": "Ghim 2 tài liệu chứng minh chất độc gây tử vong không nằm trong dịch dạ dày mà tiếp xúc trực tiếp qua niêm mạc miệng và liên quan đến vật dụng nhạc cụ của nạn nhân.",
       "need": 2,
-      "answer": ["d04", "d05"],
+      "answer": [
+        "d04",
+        "d05"
+      ],
       "hints": [
         "Hãy đọc kỹ kết quả khám nghiệm tử thi sơ bộ xem dịch dạ dày của nạn nhân có độc hay không.",
         "Xem ảnh chụp hiện trường để tìm chi tiết bất thường trên vật dụng của cụ Cửu."
@@ -190,11 +274,17 @@
       ],
       "nudges": [
         {
-          "picks": ["d02", "d05"],
+          "picks": [
+            "d02",
+            "d05"
+          ],
           "message": "d02 ghi nhận hiện trường chung, nhưng tài liệu d04 mới đặc tả chi tiết bất thường trên phím gảy đàn đáy."
         },
         {
-          "picks": ["d01", "d06"],
+          "picks": [
+            "d01",
+            "d06"
+          ],
           "message": "Báo chí và lời khai Ánh Tuyết chưa cung cấp bằng chứng y khoa và dấu vết kỹ thuật hình sự."
         }
       ]
@@ -206,7 +296,9 @@
       "title": "Lời khai dối trá của kép đàn Chu Văn Bình",
       "intro": "Chu Văn Bình khẳng định mình ngồi suốt ở quán nước chè và không hề bước chân vào buồng hóa trang chứa tráp đàn của thầy.",
       "prompt": "Hãy chọn một dòng trong lời khai của Chu Văn Bình (d07) bị lời khai của bà bán nước chè (d09) vạch trần là dối trá về việc có mặt ở buồng hóa trang.",
-      "answer": ["d07:008"],
+      "answer": [
+        "d07:008"
+      ],
       "hints": [
         "So sánh lời khai về sự có mặt của Bình giữa d07 và d09.",
         "Chú ý dòng Bình khẳng định tuyệt đối không bước chân vào buồng hóa trang hay chạm vào tráp đồ nghề."
@@ -229,7 +321,9 @@
         "Quản lý Đỗ Trọng Toàn",
         "Bà bán nước chè Lê Thị Mùi"
       ],
-      "answer": [1],
+      "answer": [
+        1
+      ],
       "hints": [
         "Xem xét người đã mua thạch tín ở hiệu thuốc bắc và cất giữ khăn lụa dính mật ong độc.",
         "Ai có động cơ đố kỵ và hiểu rõ thói quen ngậm phím đàn của cụ Cửu?"

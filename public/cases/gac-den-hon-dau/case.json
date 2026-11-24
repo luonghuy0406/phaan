@@ -24,7 +24,9 @@
       "type": "newspaper",
       "title": "Báo Hải Phòng - Tang thương trên đảo tiền tiêu Hòn Dáu sau bão số 5",
       "date": "26/09/1998",
-      "content": "**TRẠM TRƯỞNG HẢI ĐĂNG TỬ NẠN TRONG ĐÊM BÃO DỮ DỘI**\n\nCơn bão số 5 vừa quét qua vịnh Bắc Bộ đã gây thiệt hại nghiêm trọng. Tại trạm hải đăng cổ Hòn Dáu (Đồ Sơn), Trạm trưởng Đỗ Đình Quyết (56 tuổi) đã tử nạn trong khi làm nhiệm vụ chỉ huy bão đêm 24/09.\n\nĐáng chú ý, hệ thống đèn biển đã bị mất tín hiệu trong 17 phút lúc nửa đêm do sự cố nổ cầu chì máy nổ. Do đảo bị cắt đứt liên lạc đường thủy trong bão, đến chiều 25/09 tàu cứu nạn mới tiếp cận được hiện trường. Công an thành phố đang phối hợp điều tra nguyên nhân vụ việc đau lòng này."
+      "content": "**TRẠM TRƯỞNG HẢI ĐĂNG TỬ NẠN TRONG ĐÊM BÃO DỮ DỘI**\n\nCơn bão số 5 vừa quét qua vịnh Bắc Bộ đã gây thiệt hại nghiêm trọng. Tại trạm hải đăng cổ Hòn Dáu (Đồ Sơn), Trạm trưởng Đỗ Đình Quyết (56 tuổi) đã tử nạn trong khi làm nhiệm vụ chỉ huy bão đêm 24/09.\n\nĐáng chú ý, hệ thống đèn biển đã bị mất tín hiệu trong 17 phút lúc nửa đêm do sự cố nổ cầu chì máy nổ. Do đảo bị cắt đứt liên lạc đường thủy trong bão, đến chiều 25/09 tàu cứu nạn mới tiếp cận được hiện trường. Công an thành phố đang phối hợp điều tra nguyên nhân vụ việc đau lòng này.",
+      "image": "images/d01-bao-chi.webp",
+      "imageCaption": "Ảnh tư liệu Báo Hải Phòng: Tháp hải đăng cổ Hòn Dáu trong giông bão"
     },
     {
       "id": "d02",
@@ -32,7 +34,9 @@
       "type": "report",
       "title": "Biên bản hiện trường chân vách đá bãi đá ngầm",
       "date": "16h00 ngày 25/09/1998",
-      "content": "**BIÊN BẢN KHÁM NGHIỆM HIỆN TRƯỜNG**\n\n- **Địa điểm**: Bãi đá ngầm chân vách đá dựng đứng phía sau ngọn hải đăng Hòn Dáu, độ cao từ lan can tầng 2 xuống mặt đá ngầm khoảng 25 mét.\n- **Tình trạng nạn nhân**: Nằm úp trên phiến đá hộc lởm chởm, thi thể bị sóng biển dập dềnh va đập. Mặc áo len cổ lọ màu tro, quần vải kaki xanh công nhân đèn biển.\n- **Vết tích trên lan can tầng 2**: Một đoạn lan can sắt hoa thời Pháp có vết trầy xước sơn mới toanh và một chiếc nút áo nhựa rơi cạnh chân cột sắt."
+      "content": "**BIÊN BẢN KHÁM NGHIỆM HIỆN TRƯỜNG**\n\n- **Địa điểm**: Bãi đá ngầm chân vách đá dựng đứng phía sau ngọn hải đăng Hòn Dáu, độ cao từ lan can tầng 2 xuống mặt đá ngầm khoảng 25 mét.\n- **Tình trạng nạn nhân**: Nằm úp trên phiến đá hộc lởm chởm, thi thể bị sóng biển dập dềnh va đập. Mặc áo len cổ lọ màu tro, quần vải kaki xanh công nhân đèn biển.\n- **Vết tích trên lan can tầng 2**: Một đoạn lan can sắt hoa thời Pháp có vết trầy xước sơn mới toanh và một chiếc nút áo nhựa rơi cạnh chân cột sắt.",
+      "image": "images/d02-ban-do-dao.webp",
+      "imageCaption": "Sơ đồ cao độ và các công trình trên đảo Hòn Dáu"
     },
     {
       "id": "d03",
@@ -48,7 +52,9 @@
       "type": "report",
       "title": "Sơ đồ mặt bằng trạm hải đăng Hòn Dáu",
       "date": "19h00 ngày 25/09/1998",
-      "content": "**SƠ ĐỒ THÁP HẢI ĐĂNG VÀ KHU VỰC LIÊN QUAN**\n\n- **Tầng hầm**: Phòng máy phát điện diesel (gồm máy chính Yanmar 50kVA và máy phụ 15kVA), tủ cầu dao phân phối điện và kho chứa dầu diesel.\n- **Tầng 1**: Phòng sinh hoạt chung, bếp, tủ sấy quần áo bảo hộ.\n- **Tầng 2**: Phòng làm việc và phòng ngủ của Trạm trưởng Quyết, có cửa mở ra ban công đá phía sau nhìn thẳng xuống vách biển sâu.\n- **Tầng 3 (Đài quan sát)**: Phòng thông tin vô tuyến điện đài của nhân viên Nghĩa.\n- **Tầng đỉnh tháp (Đài quang)**: Tháp thấu kính Fresnel và bóng đèn cao áp hải đăng, nơi trực của công nhân Tùng."
+      "content": "**SƠ ĐỒ THÁP HẢI ĐĂNG VÀ KHU VỰC LIÊN QUAN**\n\n- **Tầng hầm**: Phòng máy phát điện diesel (gồm máy chính Yanmar 50kVA và máy phụ 15kVA), tủ cầu dao phân phối điện và kho chứa dầu diesel.\n- **Tầng 1**: Phòng sinh hoạt chung, bếp, tủ sấy quần áo bảo hộ.\n- **Tầng 2**: Phòng làm việc và phòng ngủ của Trạm trưởng Quyết, có cửa mở ra ban công đá phía sau nhìn thẳng xuống vách biển sâu.\n- **Tầng 3 (Đài quan sát)**: Phòng thông tin vô tuyến điện đài của nhân viên Nghĩa.\n- **Tầng đỉnh tháp (Đài quang)**: Tháp thấu kính Fresnel và bóng đèn cao áp hải đăng, nơi trực của công nhân Tùng.",
+      "image": "images/d04-giai-phau.webp",
+      "imageCaption": "Sơ đồ thương tổn hộp sọ giám định pháp y"
     },
     {
       "id": "d05",

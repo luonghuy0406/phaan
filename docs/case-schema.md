@@ -56,6 +56,8 @@ Mỗi nghi phạm vô tội cần ít nhất một tài liệu loại trừ, th�
 Định dạng chữ cho phép: `**đậm**`, `__gạch chân__`, `~~gạch xoá~~`. **Không dùng thẻ HTML.**
 Có thể nhắc tài liệu bằng mã, ví dụ `(d12)`: người chơi sẽ thấy "(Tài liệu 12)" theo đúng số hiển thị.
 
+**Thể loại (`kind` trong `public/cases/index.json`):** `"fiction"` cho hồ sơ hư cấu, `"true-crime"` cho hồ sơ dựng lại từ vụ án có thật. Trang chủ chia kho hồ sơ theo trường này. Hồ sơ cũ chưa có `kind` được coi là có thật nếu có thẻ "Vụ án có thật".
+
 ## 2. Tài liệu (`documents[]`)
 
 Trường chung: `id` (`"d01"`… theo thứ tự đọc), `stage` (vòng, từ 1), `type`, `title`,
@@ -71,6 +73,28 @@ tuỳ chọn `x`, `y`, `width`, `rotate` (0–3), `file` (bản gốc để tả
 | `receipt` | `shop`, `address`, `fields[]`, `items[{name, qty, price}]`, `total`, `footer[]` |
 | `evidence` | `code`, `image`, `imageCaption`, `fields[]`, `paragraphs[]` |
 | `note` | `paragraphs[]`, `signature` (trang sổ tay viết tay) |
+
+**Trình bày giấy tờ.** `report` và `testimony` được in như giấy tờ hành chính:
+- đầu trang có cơ quan (`header[]`, kèm `code` thành dòng "Số: …") và quốc hiệu, tiêu ngữ;
+- `form` (vd. `"Mẫu số 138"`) in nghiêng ở góc phải;
+- `date` bắt đầu bằng chữ số thành dòng "Vào hồi …";
+- `fields[]` thành các dòng chấm điền tay bằng mực xanh.
+
+Chữ ký ở cuối trang:
+- lấy từ `signers: [{ "role": "Điều tra viên", "name": "Đại uý Lương Minh Khải" }]` (1 hoặc 2 người); nếu không có thì đọc `signature` dạng `"Vai trò: Họ tên"`;
+- biên bản có `header` được đóng dấu tròn mang tên cơ quan;
+- trong lời khai, `speaker` là người hỏi (Điều tra viên, Cán bộ, Thanh tra…) in thành **Câu hỏi:**, người đáp in thành **Trả lời:**; dòng nằm trọn trong ngoặc đơn in nghiêng như ghi chú.
+
+Hồ sơ diễn ra ở nước ngoài đặt `"nationalHeader": false` ở cấp hồ sơ để không in quốc hiệu Việt Nam.
+
+**Cách viết nhanh: `content`.** Mọi loại tài liệu (trừ `scan`) đều có thể dùng một chuỗi `content` thay cho các trường cấu trúc ở trên:
+- dòng trống ngăn đoạn;
+- dòng bắt đầu bằng `- ` hoặc `1. ` thành danh sách (thụt ≥ 2 dấu cách là mục con);
+- `**...**` in đậm.
+
+Nếu dòng đầu tiên chỉ gồm chữ đậm (`**BIÊN BẢN KHÁM NGHIỆM**`), dòng đó thành tiêu đề của tờ giấy. Với `newspaper`, `report`, `testimony` và `receipt`, tiêu đề này chỉ được dùng khi chưa đặt `headline`, `heading` hoặc `shop`.
+
+Nên ưu tiên các trường cấu trúc. Lời khai vẫn phải dùng `lines[]` để câu hỏi loại `line` trỏ được tới số dòng.
 | `scan` | `image` (bản chụp cả trang tài liệu đã dàn trang sẵn), `imageHi`, `caption` |
 
 - Ưu tiên các loại có chữ (report, testimony…): người chơi tô, trích dẫn, nối dây được từng đoạn. Chỉ dùng `scan` cho tài liệu

@@ -31,11 +31,20 @@ export default defineConfig({
             handler: 'StaleWhileRevalidate',
             options: { cacheName: 'fonts', expiration: { maxEntries: 30 } },
           },
+          {
+            // ONNX Runtime WebAssembly (~22 MB) for the on-device voice: cached after first use
+            urlPattern: ({ url, sameOrigin }) => sameOrigin && url.pathname.endsWith('.wasm'),
+            handler: 'CacheFirst',
+            options: { cacheName: 'tts-runtime', expiration: { maxEntries: 4 } },
+          },
+          // the voice model itself (~400 MB) lives in its own Cache Storage, filled only after consent
           // Supabase (auth, database, realtime) is never cached: multiplayer must stay live
         ],
       },
     }),
   ],
+  worker: { format: 'es' },
+  optimizeDeps: { exclude: ['onnxruntime-web'] }, // keeps its .wasm URLs intact and avoids a dev reload on first use // on-device TTS worker (src/lib/supertonic/worker.ts) uses ES module imports
   server: { port: 5173 },
   test: { environment: 'node', include: ['src/**/*.test.ts'] },
 } as any);

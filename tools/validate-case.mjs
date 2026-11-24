@@ -64,6 +64,11 @@ function validate(id) {
       });
       if (!seen.size) err(`${w}: lời khai cần có "lines"`);
     }
+    // something the player can actually read on the paper
+    const hasBody = (typeof d.content === 'string' && d.content.trim()) || d.paragraphs?.length || d.lines?.length
+      || d.sections?.length || d.fields?.length || d.items?.length || d.caption || d.imageCaption || d.image || d.headline || d.deck;
+    if (!hasBody) err(`${w}: tài liệu không có nội dung hiển thị (cần "content", "paragraphs", "lines", "sections"… xem docs/case-schema.md)`);
+    if (d.content !== undefined && typeof d.content !== 'string') err(`${w}: "content" phải là chuỗi`);
     if (['photo', 'scan'].includes(d.type) || d.image !== undefined) imageRef(`${w}.image`, d.image);
     if (d.imageHi !== undefined) imageRef(`${w}.imageHi`, d.imageHi);
     if (d.file !== undefined) {

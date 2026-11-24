@@ -24,7 +24,9 @@
       "type": "newspaper",
       "title": "Báo Lâm Đồng - Án mạng bí ẩn tại vùng hoa Trại Mát",
       "date": "16/12/2003",
-      "content": "**PHÁT HIỆN THI THỂ CHỦ TRANG TRẠI HOA LÂM VIÊN DƯỚI DỐC THÔNG**\n\nSáng qua 15/12, một người dân đi hái nấm thông tại khu vực Trại Mát đã bàng hoàng phát hiện thi thể ông Lâm Khải (54 tuổi), chủ trang trại hoa hồng Lâm Viên nổi tiếng, nằm gục bên vệ đường đất dưới chân dốc.\n\nTheo thông tin ban đầu, tối 14/12 lò sấy hoa của trang trại vẫn hoạt động bình thường phục vụ đơn hàng hoa Tết. Nạn nhân rời khu lò sấy vào khoảng chập tối và mất tích suốt đêm. Vụ việc đang được cơ quan công an khẩn trương điều tra."
+      "content": "**PHÁT HIỆN THI THỂ CHỦ TRANG TRẠI HOA LÂM VIÊN DƯỚI DỐC THÔNG**\n\nSáng qua 15/12, một người dân đi hái nấm thông tại khu vực Trại Mát đã bàng hoàng phát hiện thi thể ông Lâm Khải (54 tuổi), chủ trang trại hoa hồng Lâm Viên nổi tiếng, nằm gục bên vệ đường đất dưới chân dốc.\n\nTheo thông tin ban đầu, tối 14/12 lò sấy hoa của trang trại vẫn hoạt động bình thường phục vụ đơn hàng hoa Tết. Nạn nhân rời khu lò sấy vào khoảng chập tối và mất tích suốt đêm. Vụ việc đang được cơ quan công an khẩn trương điều tra.",
+      "image": "images/d01-bao-chi.webp",
+      "imageCaption": "Ảnh tư liệu Báo Lâm Đồng: Cổng trang trại hoa Lâm Viên trong sương sớm"
     },
     {
       "id": "d02",
@@ -40,7 +42,9 @@
       "type": "report",
       "title": "Sơ đồ mặt bằng trang trại hoa Lâm Viên",
       "date": "08h00 ngày 15/12/2003",
-      "content": "**SƠ ĐỒ TRANG TRẠI VÀ CÁC KHU VỰC CHÍNH**\n\n- **Biệt thự trung tâm**: Nơi ở của ông Lâm Khải và con gái Lâm Tuyết Mai.\n- **Khu nhà sấy hoa hồng**: Lò sấy hơi nhiệt than đá, luôn duy trì nhiệt độ 45–50°C vào mùa đông để hong khô cánh hoa ướp hương.\n- **Khu kho lạnh bảo quản**: Gồm kho số 1 (chứa hoa hồng chờ đóng thùng) và kho số 2 (kho lạnh sâu nhiệt độ 0°C đến 2°C, có máy làm đá vảy tuyết để đóng hoa cúc vàng đại đóa xuất khẩu).\n- **Cổng sau và đường dốc bìa thông**: Dẫn ra con đường đất liên thôn vắng vẻ."
+      "content": "**SƠ ĐỒ TRANG TRẠI VÀ CÁC KHU VỰC CHÍNH**\n\n- **Biệt thự trung tâm**: Nơi ở của ông Lâm Khải và con gái Lâm Tuyết Mai.\n- **Khu nhà sấy hoa hồng**: Lò sấy hơi nhiệt than đá, luôn duy trì nhiệt độ 45–50°C vào mùa đông để hong khô cánh hoa ướp hương.\n- **Khu kho lạnh bảo quản**: Gồm kho số 1 (chứa hoa hồng chờ đóng thùng) và kho số 2 (kho lạnh sâu nhiệt độ 0°C đến 2°C, có máy làm đá vảy tuyết để đóng hoa cúc vàng đại đóa xuất khẩu).\n- **Cổng sau và đường dốc bìa thông**: Dẫn ra con đường đất liên thôn vắng vẻ.",
+      "image": "images/d03-so-do-trang-trai.webp",
+      "imageCaption": "Sơ đồ tổng thể các nhà kính và kho lạnh trang trại hoa Lâm Viên"
     },
     {
       "id": "d04",
@@ -189,7 +193,9 @@
       "type": "report",
       "title": "Trích xuất đồng hồ đo điện và nhiệt độ kho lạnh số 2",
       "date": "17h00 ngày 15/12/2003",
-      "content": "**DỮ LIỆU TỰ ĐỘNG GHI NHẬN TẠI KHO LẠNH SỐ 2 (ĐÊM 14/12)**\n\n- Kho lạnh số 2 duy trì nhiệt độ cài đặt từ 0°C đến 1.5°C.\n- **Bất thường 1 (18h38 - 18h46)**: Cửa kho mở liên tục trong 8 phút. Công suất máy nén khí vọt lên 180% để bù nhiệt độ, cảm biến nhiệt độ kho tăng từ 1°C lên 6°C rồi giảm dần trở lại 0°C.\n- **Bất thường 2 (00h15 - 00h22 rạng sáng 15/12)**: Cửa kho tiếp tục mở lần thứ hai trong 7 phút, máy nén khí kích hoạt chu kỳ làm lạnh khẩn cấp."
+      "content": "**DỮ LIỆU TỰ ĐỘNG GHI NHẬN TẠI KHO LẠNH SỐ 2 (ĐÊM 14/12)**\n\n- Kho lạnh số 2 duy trì nhiệt độ cài đặt từ 0°C đến 1.5°C.\n- **Bất thường 1 (18h38 - 18h46)**: Cửa kho mở liên tục trong 8 phút. Công suất máy nén khí vọt lên 180% để bù nhiệt độ, cảm biến nhiệt độ kho tăng từ 1°C lên 6°C rồi giảm dần trở lại 0°C.\n- **Bất thường 2 (00h15 - 00h22 rạng sáng 15/12)**: Cửa kho tiếp tục mở lần thứ hai trong 7 phút, máy nén khí kích hoạt chu kỳ làm lạnh khẩn cấp.",
+      "image": "images/d11-dong-ho-nhiet-do.webp",
+      "imageCaption": "Biểu đồ tròn tự ghi nhiệt độ kho lạnh số 2 lúc nửa đêm"
     },
     {
       "id": "d12",

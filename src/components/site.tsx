@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { SITE } from '../lib/config';
-import { caseBase, caseNo } from '../lib/data';
+import { caseBase, caseNo, caseKind } from '../lib/data';
 import type { CaseSummary } from '../lib/types';
 import { AccountChip } from './auth';
 import { useCanInstall, openInstall } from './install';
@@ -76,9 +76,14 @@ export function Cover({ entry }: { entry: CaseSummary }) {
 
 export function CaseCard({ entry, compact = false }: { entry: CaseSummary; compact?: boolean }) {
   const open = entry.status === 'available';
+  const real = caseKind(entry) === 'true-crime';
+  const tags = (entry.tags || []).filter((t) => !/vụ án có thật/i.test(t));
   return (
-    <Link className={`case-card${open ? '' : ' is-soon'}`} to={`/ho-so/${entry.id}`}>
-      <Cover entry={entry} />
+    <Link className={`case-card${open ? '' : ' is-soon'}${real ? ' case-card--real' : ''}`} to={`/ho-so/${entry.id}`}>
+      <div className="case-card__cover">
+        <Cover entry={entry} />
+        {real && <span className="kind-ribbon">Vụ án có thật</span>}
+      </div>
       <div className="case-card__body">
         <div className="case-card__top">
           <span className="case-card__no">{caseNo(entry)}</span>
@@ -93,7 +98,7 @@ export function CaseCard({ entry, compact = false }: { entry: CaseSummary; compa
             <div><dt>Thời lượng</dt><dd>{entry.duration || '—'}</dd></div>
           </dl>
         )}
-        {!compact && !!entry.tags?.length && <ul className="case-card__tags">{entry.tags.slice(0, 3).map((t) => <li key={t}>{t}</li>)}</ul>}
+        {!compact && !!tags.length && <ul className="case-card__tags">{tags.slice(0, 3).map((t) => <li key={t}>{t}</li>)}</ul>}
       </div>
     </Link>
   );

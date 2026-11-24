@@ -24,6 +24,8 @@ export interface CaseDoc {
   imageHi?: string;      // sharper file, loaded when the paper is zoomed in
   file?: string;         // original file players can download (PDF / image)
   imageCaption?: string;
+  /** free text in light Markdown: blank line = new paragraph, "- " / "1. " lists, **bold** (see docs/case-schema.md) */
+  content?: string;
   paragraphs?: string[];
   header?: string[];
   heading?: string;
@@ -31,6 +33,10 @@ export interface CaseDoc {
   fields?: Field[];
   sections?: { heading: string; paragraphs: string[] }[];
   signature?: string;
+  /** signature blocks at the foot of official papers, e.g. [{ role: "Điều tra viên", name: "Vũ Minh Tâm" }] */
+  signers?: { role: string; name: string }[];
+  /** form number printed top-right, e.g. "Mẫu số 138" */
+  form?: string;
   lines?: { n: number; text: string; speaker?: string }[];
   caption?: string;
   label?: string;
@@ -76,12 +82,18 @@ export interface CaseSummary {
   setting?: string;
   tags?: string[];
   cover?: string | null;
+  /** 'fiction' (made-up people and places) or 'true-crime' (reconstructed from a real case) */
+  kind?: CaseKind;
 }
+
+export type CaseKind = 'fiction' | 'true-crime';
 
 export interface CaseData extends CaseSummary {
   subtitle?: string;
   era?: string;
   contentWarning?: string;
+  /** print "Cộng hòa xã hội chủ nghĩa Việt Nam" on official papers (default true; false for cases set abroad) */
+  nationalHeader?: boolean;
   synopsis?: string[];
   intro?: { title?: string; paragraphs?: string[]; objective?: string };
   documents: CaseDoc[];
