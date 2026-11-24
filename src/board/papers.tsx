@@ -264,9 +264,10 @@ const RENDER: Record<DocType, R> = {
       {extra}
     </div>
   ),
-  letter: (d, _base, extra) => (
+  letter: (d, base, extra) => (
     <div className="lt">
       {d.date && <B k="date" className="lt__date">{d.date}</B>}
+      {d.image !== undefined && <Figure src={d.image} hi={d.imageHi} caption={d.imageCaption} base={base} />}
       {d.greeting && <B k="gr"><Txt>{d.greeting}</Txt></B>}
       <ParaBlocks list={d.paragraphs} />
       {extra}

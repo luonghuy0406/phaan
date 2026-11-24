@@ -146,6 +146,12 @@ function validate(id) {
     else for (const k of ['title', 'status', 'no']) if (entry[k] !== c[k]) warn(`index.json: "${k}" khác case.json (${JSON.stringify(entry[k])} ≠ ${JSON.stringify(c[k])})`);
   } catch { err('cases/index.json lỗi'); }
 
+  // images in the case folder that nothing points to: they still ship to the website
+  const used = new Set([c.cover, ...docs.flatMap((d) => [d && d.image, d && d.imageHi, d && d.file])].filter((x) => typeof x === 'string'));
+  const walk = (rel) => readdirSync(join(dir, rel), { withFileTypes: true }).flatMap((e) => (e.isDirectory() ? walk(`${rel}/${e.name}`) : [`${rel}/${e.name}`]));
+  if (existsSync(join(dir, 'images'))) {
+    for (const f of walk('images')) if (!used.has(f) && !f.endsWith('.DS_Store')) warn(`${f}: không tài liệu nào dùng ảnh này (vẫn bị đưa lên web, ${(statSync(join(dir, f)).size / 1024).toFixed(0)} KB)`);
+  }
   return { errors, warns, stats: { docs: docs.length, stages: stages.length, questions: qs.length } };
 }
 
