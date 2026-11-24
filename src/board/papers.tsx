@@ -131,7 +131,7 @@ function parseSignature(text?: string): Signer | null {
   return m ? { role: m[1].trim(), name: m[2].trim() } : { role: '', name: t };
 }
 
-function Seal({ text }: { text: string }) {
+export function Seal({ text }: { text: string }) {
   const id = `seal-${text.length}-${text.charCodeAt(0)}`;
   return (
     <svg className="doc-seal" viewBox="0 0 120 120" aria-hidden="true">
