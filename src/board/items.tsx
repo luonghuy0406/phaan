@@ -1,8 +1,8 @@
 import { memo, useLayoutEffect, useMemo, useRef } from 'react';
 import { useShallow } from 'zustand/react/shallow';
 import type { CaseDoc } from '../lib/types';
-import { pad2 } from '../lib/data';
-import { Paper, PaperCtx, DEFAULT_WIDTH } from './papers';
+import { pad2, caseNo } from '../lib/data';
+import { Paper, PaperCtx, DEFAULT_WIDTH, Seal, TYPE_LABEL } from './papers';
 import { useBoard, useBoardState, type BoardCtx } from './context';
 import { currentQ, evidenceNeed, stageOpen, NOTE_COLORS, type End } from './store';
 import { strokePath, type Stroke } from './ink';
@@ -192,12 +192,40 @@ export function StageMarks() {
         if (open[i]) {
           return <p key={st} className="zone" style={{ transform: `translate(${x}px, ${y - 92}px)` }}><b>Trọng điểm {st}</b> · {range}</p>;
         }
+        // inventory by kind of paper only (never titles: nothing is revealed before the seal is broken)
+        const kinds = Object.entries(docs.reduce<Record<string, number>>((m, d) => ({ ...m, [d.type]: (m[d.type] || 0) + 1 }), {}))
+          .map(([t, n]) => `${n} ${(TYPE_LABEL[t as CaseDoc['type']] || 'tài liệu').toLowerCase()}`).join(' · ');
+        const until = st === 2 ? 'trọng điểm 1' : `các trọng điểm 1–${st - 1}`;
+        const sheets = Math.min(4, Math.max(2, Math.ceil(docs.length / 2)));
         return (
-          <section key={st} className="seal" style={{ transform: `translate(${x}px, ${y}px)` }} data-seal data-x={x} data-y={y}>
-            <p className="seal__no">Trọng điểm {st} · {range}</p>
-            <p className="seal__title">Hồ sơ niêm phong</p>
-            <p className="seal__text">{docs.length} tài liệu. Mở khi bạn giải xong {st === 2 ? 'trọng điểm 1' : `các trọng điểm 1–${st - 1}`}.</p>
-            <span className="stamp">Niêm phong</span>
+          <section key={st} className="seal env" style={{ transform: `translate(${x}px, ${y}px)` }} data-seal data-x={x} data-y={y} aria-label={`Hồ sơ trọng điểm ${st} đang niêm phong, mở khi giải xong ${until}`}>
+            {/* papers peeking out behind the envelope */}
+            {Array.from({ length: sheets }, (_, k) => <i key={k} className="env__sheet" style={{ '--k': k } as React.CSSProperties} />)}
+            <div className="env__body">
+              <div className="env__flap" />
+              <span className="env__button env__button--flap" />
+              <span className="env__button env__button--body" />
+              <svg className="env__string" viewBox="0 0 120 120" aria-hidden="true"><path d="M60 22 C 30 40, 25 78, 60 92 C 92 104, 98 58, 74 46 C 60 40, 52 60, 64 64" /></svg>
+
+              <div className="env__label">
+                <p className="env__agency">Ban chuyên án · {caseNo(c)}</p>
+                <p className="env__kind">Hồ sơ vụ án</p>
+                <dl className="env__rows">
+                  <div><dt>Vụ án</dt><dd>{c.title}</dd></div>
+                  <div><dt>Trọng điểm</dt><dd>{String(st).padStart(2, '0')}</dd></div>
+                  <div><dt>Tài liệu</dt><dd>{range.replace('Tài liệu ', 'Số ')} ({docs.length} tờ)</dd></div>
+                  <div><dt>Bảng kê</dt><dd>{kinds}</dd></div>
+                </dl>
+              </div>
+              <span className="env__mat">Mật</span>
+
+              <div className="env__strip">
+                <b>Niêm phong</b>
+                <span>Chỉ mở khi đã giải {until}</span>
+                <i className="env__sig">Đ.tra viên</i>
+                <Seal text="Ban chuyên án" />
+              </div>
+            </div>
           </section>
         );
       })}
