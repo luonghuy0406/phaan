@@ -754,3 +754,12 @@ body.is-board { overflow: hidden; height: 100vh; height: 100dvh; overscroll-beha
 .rank__body { display: flex; flex-direction: column; gap: 2px; }
 .rank__body b { font: 700 17px/1.2 var(--font-display); }
 .rank__body small { font-size: 12.5px; color: var(--muted); line-height: 1.4; }
+
+/* ── papers stay put; the title bar is the only handle ── */
+.tool-move .doc { cursor: inherit; }
+.doc__bar[data-grip] { cursor: grab; touch-action: none; }
+.doc.is-lifted .doc__bar { cursor: grabbing; }
+.doc__handle { flex: none; display: inline-flex; align-items: center; justify-content: center; width: 22px; height: 32px; margin: 0 -4px 0 -6px; border-radius: 6px; color: var(--paper-muted); opacity: 0.75; }
+.doc__handle svg { width: 18px; height: 18px; stroke-width: 3.2; }
+.doc__bar[data-grip]:hover .doc__handle { opacity: 1; background: rgba(42, 36, 26, 0.08); }
+.doc.is-lifted .doc__handle { opacity: 1; color: var(--red); }

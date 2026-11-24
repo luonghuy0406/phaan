@@ -10,6 +10,9 @@ body {
 /* ── nav ── */
 .nav {
   position: sticky; top: 0; z-index: 50;
+  /* PWA on iPhone/iPad (black-translucent status bar + viewport-fit=cover): keep the bar below the clock/battery */
+  padding-top: env(safe-area-inset-top);
+  padding-left: env(safe-area-inset-left); padding-right: env(safe-area-inset-right);
   background: rgba(14, 13, 11, 0.78);
   backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--line);
@@ -322,3 +325,6 @@ body {
 .draft-notice b { color: var(--amber); }
 .case-card__top { flex-wrap: wrap; row-gap: 6px; }
 .case-card__no { white-space: nowrap; }
+
+/* anchors (#catalog…) land below the sticky nav, including the PWA status-bar inset */
+html { scroll-padding-top: calc(72px + env(safe-area-inset-top)); }

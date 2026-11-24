@@ -1,7 +1,8 @@
 /*
  * The desk: camera, gestures and pen input.
  *
- *  finger / mouse drag   pan the desk, or drag a paper / sticky note (Di chuyển tool)
+ *  finger / mouse drag   pan the desk, also when it starts on a paper (papers stay put while browsing zoomed in);
+ *                        a paper moves only when dragged by its title bar, a sticky note by its grip ([data-grip])
  *  two fingers / ⌘-wheel pinch zoom (use-gesture)
  *  Apple Pencil          always writes (unless turned off in settings); fingers keep panning,
  *                        and touches while the pencil is down are ignored (palm rejection)
@@ -109,8 +110,7 @@ export function Viewport() {
         if (pinching.current || ink.current || t.closest(UI_SEL)) { cancel(); drag.current = null; return; }
         cam.stop();
         const item = t.closest<HTMLElement>('[data-item]');
-        const tool = useUi.getState().tool;
-        if (item && (tool === 'move' || t.closest('[data-grip]'))) {
+        if (item && t.closest('[data-grip]')) {
           const [kind, id] = (item.dataset.item || '').split(':') as ['doc' | 'note', string];
           const st = store.getState();
           const p = kind === 'doc' ? st.docs[id] : st.notes.find((n) => n.id === id);

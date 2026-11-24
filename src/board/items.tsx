@@ -87,7 +87,9 @@ export const DocItem = memo(function DocItem({ doc }: { doc: CaseDoc }) {
       aria-hidden={locked || undefined}
       aria-label={`Tài liệu ${pad2(doc.no ?? 0)}: ${doc.title}`}
     >
-      <header className="doc__bar" data-bar>
+      {/* the title bar is the paper's handle: drag it to move the paper; dragging the paper itself pans the desk */}
+      <header className="doc__bar" data-bar data-grip title="Kéo thanh này để di chuyển tài liệu">
+        <span className="doc__handle" aria-hidden="true"><Icon name="grip" /></span>
         <span className="doc__no">{pad2(doc.no ?? 0)}</span>
         <span className="doc__title">{doc.title}</span>
         <span className="doc__tools">

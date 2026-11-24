@@ -61,7 +61,7 @@ function Intro({ onClose }: { onClose: () => void }) {
       <div className="dlg__text"><Paras list={paras} /></div>
       <p className="dlg__objective"><span>Nhiệm vụ</span><Txt>{objective}</Txt></p>
       <ul className="guide">
-        <li><b>Di chuyển</b>Kéo nền để di chuyển bàn, kéo tài liệu để sắp xếp, chụm hai ngón để phóng to.</li>
+        <li><b>Di chuyển</b>Kéo ở bất kỳ đâu (cả trên tài liệu) để lướt bàn, chụm hai ngón để phóng to. Tài liệu đứng yên; muốn xếp lại thì kéo thanh tiêu đề có dấu ⠿.</li>
         <li><b>Chạm vào đoạn văn</b>để tô dạ quang, trích vào sổ tay, nối dây đỏ, ghim bằng chứng hoặc chọn dòng khai.</li>
         <li><b>Apple Pencil</b>viết thẳng lên tài liệu và mặt bàn; ngón tay vẫn dùng để di chuyển. Nét vẽ đi theo tài liệu khi bạn kéo hay xoay.</li>
         <li><b>Bút · Dạ quang · Tẩy</b>trên thanh công cụ; chạm lại vào Bút để đổi màu và cỡ nét.</li>
@@ -134,7 +134,7 @@ function Settings({ onClose }: { onClose: () => void }) {
         <input type="checkbox" checked={pencilDraws} onChange={(e) => { set({ pencilDraws: e.target.checked }); saveSettings({ pencilDraws: e.target.checked }); }} />
         <span>
           <b>Apple Pencil luôn viết</b>
-          Kể cả khi đang ở chế độ Di chuyển, bút viết còn ngón tay di chuyển bàn (giống GoodNotes). Tắt nếu bạn muốn dùng bút để kéo tài liệu.
+          Kể cả khi đang ở chế độ Di chuyển, bút viết còn ngón tay di chuyển bàn (giống GoodNotes). Tắt nếu bạn muốn dùng bút để lướt bàn hoặc kéo thanh tiêu đề tài liệu.
           {penSeen ? ' Đã nhận Apple Pencil trên thiết bị này.' : ''}
         </span>
       </label>
@@ -163,7 +163,7 @@ function Settings({ onClose }: { onClose: () => void }) {
 /* ── first-visit walkthrough (4 short steps) ── */
 const DEFAULT_TOUR = [
   { title: 'Đọc hồ sơ', text: 'Mỗi tờ giấy trên bàn là một tài liệu trong hồ sơ. Chạm vào một đoạn văn để tô dạ quang, trích vào sổ tay hoặc nối dây đỏ.' },
-  { title: 'Di chuyển bàn', text: 'Kéo nền để di chuyển, chụm hai ngón (hoặc cuộn chuột) để phóng to. Nút “Tài liệu” mở danh sách để tìm nhanh.' },
+  { title: 'Di chuyển bàn', text: 'Kéo ở bất kỳ đâu, kể cả trên tài liệu, để lướt bàn; chụm hai ngón (hoặc cuộn chuột) để phóng to. Muốn xếp lại tài liệu, kéo thanh tiêu đề có dấu ⠿. Nút “Tài liệu” mở danh sách để tìm nhanh.' },
   { title: 'Ghi chép', text: 'Dùng Bút, Dạ quang và Tẩy trên thanh công cụ. Trên iPad, Apple Pencil luôn viết, còn ngón tay để di chuyển.' },
   { title: 'Trả lời', text: 'Mở “Kết luận” để trả lời từng trọng điểm. Trả lời đúng, hồ sơ của trọng điểm tiếp theo sẽ được mở niêm phong.' },
 ];
