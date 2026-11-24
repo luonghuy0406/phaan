@@ -11,6 +11,8 @@ export default defineConfig({
       manifest: false,              // we ship public/manifest.webmanifest ourselves
       workbox: {
         globPatterns: ['**/*.{js,css,html,svg,png,ico,webmanifest}', 'site/*.webp'],
+        // source collages dropped into cases/*/images/ before cutting are never part of the app shell
+        globIgnores: ['cases/**/*.png'],
         navigateFallback: '/index.html',
         navigateFallbackDenylist: [/^\/cases\//, /^\/sw\.js$/],
         cleanupOutdatedCaches: true,
