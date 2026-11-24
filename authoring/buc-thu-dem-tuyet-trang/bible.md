@@ -31,16 +31,4 @@
   3. **Vật chứng sợi vải**:
      - Sợi len màu đỏ tía từ chiếc áo len dệt của người mẹ Patsy Ramsey mặc trong đêm Giáng sinh được tìm thấy dính chặt trên cuộn băng dính đen dán miệng nạn nhân và sợi dây thừng siết garrote.
 
-## 4. Cấu trúc câu hỏi & Trọng điểm
-- **Trọng điểm 1**: Phát hiện thi thể trong hầm rượu và bức thư tống tiền 3 trang.
-  - Tài liệu d01 - d05: Bản tin CNN, biên bản khám nghiệm hiện trường hầm rượu, kết quả khám nghiệm tử thi nạn nhân, sơ đồ biệt thự 15 phòng, ảnh chụp bức thư tống tiền 3 trang và cuốn sổ tay bị xé trang.
-  - Câu hỏi 1 (evidence): Ghim 2 tài liệu chứng minh nguyên nhân tử vong kết hợp của nạn nhân và bằng chứng bức thư tống tiền được viết từ chính đồ dùng trong nhà. Đáp án: d03, d05.
-- **Trọng điểm 2**: Lời khai mâu thuẫn và dấu vết tuyết phủ.
-  - Tài liệu d06 - d09: Lời khai Patsy Ramsey (cuộc gọi 911), lời khai John Ramsey, báo cáo giám định hiện trường tuyết và mạng nhện cửa sổ, sao kê ngân hàng tiền thưởng $118.000 của John Ramsey.
-  - Câu hỏi 2 (line): Dòng lời khai nào của người mẹ Patsy Ramsey khẳng định bà phát hiện bức thư tống tiền trên bậc cầu thang lúc vừa thức dậy mà không hề chạm vào trước đó? Đáp án: d06:002.
-- **Trọng điểm 3**: Bằng chứng giám định chữ viết và sợi vải áo len đỏ.
-  - Tài liệu d10 - d13: Kết quả phân tích chữ viết tay bức thư tống tiền (khớp với nét chữ Patsy), ảnh chụp sợi vải len đỏ dính trên băng keo dán miệng, báo cáo tâm lý học hành vi FBI về bức thư dàn dựng, biên bản kiểm tra chiếc cọ vẽ bị gãy làm hung khí garrote.
-  - Câu hỏi 3 (evidence): Ghim 2 tài liệu chứng minh nét chữ bức thư tống tiền trùng khớp với nghi phạm trong nhà và sợi vải len từ trang phục đêm Giáng sinh. Đáp án: d10, d11.
-- **Trọng điểm 4**: Kết luận điều tra về hiện trường dàn dựng.
-  - Tài liệu d14 - d18: Báo cáo tổng kết của Đại bồi thẩm đoàn hạt Boulder, phân tích âm thanh cuộc gọi 911 sau khi cúp máy, kết luận của chuyên gia phân tích hiện trường dàn cảnh (Staging), kết luận hồ sơ kỳ án.
-  - Câu hỏi 4 (choice): Yếu tố nào vạch trần vụ án là một hiện trường dàn dựng bắt cóc giả mạo từ chính nội bộ gia đình? Đáp án: Cả nét chữ, đồ dùng viết thư trong nhà và mạng nhện nguyên vẹn ở cửa sổ.
+## 4. Cấu trúc câu hỏi & Trọng điểm (Đã nâng cấp độ khó x5)

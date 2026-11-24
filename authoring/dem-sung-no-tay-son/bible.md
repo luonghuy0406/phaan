@@ -31,16 +31,4 @@
   - Vỏ bao thuốc lá Du Lịch rơi tại hiện trường kẹp cuống vé phà Đen mang dấu vân tay ngón trỏ phải của Phạm Đức Thắng.
   - Số vàng cướp được đem nung chảy thành thỏi thô tìm thấy chôn dưới bãi cát ven đê sông Đuống.
 
-## 4. Cấu trúc câu hỏi & Trọng điểm
-- **Trọng điểm 1**: Khám nghiệm hiện trường vụ cướp tiệm vàng đêm mưa bão.
-  - Tài liệu d01 - d05: Bản tin Báo An ninh Thủ đô, biên bản hiện trường tiệm vàng đổ nát, kết quả giám định pháp y tử thi nạn nhân, sơ đồ tiệm vàng số 38 Tây Sơn, ảnh chụp vỏ đạn K54 dập năm 1968 và đầu đạn biến dạng.
-  - Câu hỏi 1 (evidence): Ghim 2 tài liệu chứng minh hung khí gây án là súng ngắn quân dụng K54 qua kết quả tử thi và ảnh chụp vỏ đạn hiện trường. Đáp án: d03, d05.
-- **Trọng điểm 2**: Lời khai nhân chứng và dấu vết tẩu thoát trong đêm.
-  - Tài liệu d06 - d09: Lời khai thợ bạc cũ Nguyễn Văn Đông, lời khai chủ tiệm cầm đồ Trần Khắc Tuấn, lời khai bảo vệ chùa Đồng Quang (thấy bóng người phóng xe Simson đỏ), biên bản thu giữ vỏ bao thuốc lá Du Lịch kẹp cuống vé phà.
-  - Câu hỏi 2 (line): Dòng lời khai nào của thợ bạc cũ Nguyễn Văn Đông khẳng định y ở nhà bố mẹ đẻ tại Gia Lâm từ 20h đến sáng hôm sau? Đáp án: d06:003.
-- **Trọng điểm 3**: Giám định đạn đạo và dấu vân tay trên vỏ bao thuốc lá.
-  - Tài liệu d10 - d13: Báo cáo giám định đạn đạo rãnh xoắn súng K54, ảnh chụp dấu vân tay trên vỏ bao thuốc lá Du Lịch trùng khớp với tàng thư căn cước của Phạm Đức Thắng, kết quả đối chiếu vệt lốp xe Simson, lời khai nhân chứng bến phà Đen.
-  - Câu hỏi 3 (evidence): Ghim 2 tài liệu vạch trần danh tính đối tượng Thắng qua dấu vân tay trên vỏ bao thuốc lá và kết quả đạn đạo súng K54. Đáp án: d10, d11.
-- **Trọng điểm 4**: Cuộc vây bắt tại bãi sông Hồng và thu hồi vàng cướp.
-  - Tài liệu d14 - d17: Biên bản vây bắt khẩn cấp Phạm Đức Thắng tại bãi cát sông Hồng, biên bản thu giữ khẩu súng K54 và các thỏi vàng nung chảy thô, bản tự thú của Thắng, kết luận chuyên án.
-  - Câu hỏi 4 (choice): Ai là thủ phạm mang vũ khí nóng sát hại cướp tiệm vàng Kim Sinh đêm 18/07/1999? Đáp án: Phạm Đức Thắng.
+## 4. Cấu trúc câu hỏi & Trọng điểm (Đã nâng cấp độ khó x5)

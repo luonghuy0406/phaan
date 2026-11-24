@@ -34,19 +34,4 @@
   - Vết máu của nạn nhân dính ở mặt trong vạt áo mưa bộ màu vàng của Thắng treo trong phòng máy.
   - Trang nhật ký công tác bị xé khỏi sổ của ông Quyết được tìm thấy bị vò nát nhét trong bầu lọc gió máy phát phụ.
 
-## 4. Cấu trúc câu hỏi & Trọng điểm
-- **Trọng điểm 1**: Phát hiện thi thể sau bão và sự cố mất điện 17 phút.
-  - Tài liệu d01 - d05: Bản tin khí tượng bão số 5, biên bản hiện trường chân vách đá, khám nghiệm tử thi ban đầu (vết đâm sau lưng trước khi rơi ngã), sơ đồ trạm hải đăng Hòn Dáu, nhật ký vận hành hải đăng (ghi nhận tắt đèn 23h43 - 00h00).
-  - Câu hỏi 1 (evidence): Ghim 2 tài liệu chứng minh nạn nhân không phải trượt chân ngã do gió bão mà bị sát hại bằng hung khí và thời điểm ngọn đèn hải đăng bị tắt bất thường. Đáp án: d03, d05.
-- **Trọng điểm 2**: Lời khai các nhân viên trạm trong đêm bão.
-  - Tài liệu d06 - d09: Lời khai Vũ Văn Thắng, lời khai Bùi Xuân Tùng, lời khai Hoàng Đức Nghĩa, nhật ký điện đài phát về đất liền.
-  - Câu hỏi 2 (line): Dòng lời khai nào của Vũ Văn Thắng khẳng định y ở suốt dưới tầng hầm máy nổ từ 23h00 đến tận sáng hôm sau không hề bước lên các tầng trên? Đáp án: d06:003.
-- **Trọng điểm 3**: Kiểm tra kỹ thuật máy phát điện và nguyên nhân nổ cầu chì.
-  - Tài liệu d10 - d13: Báo cáo giám định hệ thống điện và máy phát Yanmar, ảnh chụp thanh lưỡng kim nhiệt gắn lén vào stato, kết quả giám định cầu chì tổng bị gọt mỏng chì, sơ đồ nguyên lý ngắn mạch trễ.
-  - Câu hỏi 3 (evidence): Ghim 2 tài liệu chứng minh sự cố chập nổ cầu chì lúc 23h43 là hành vi phá hoại có chủ đích bằng thiết bị nhiệt trễ. Đáp án: d10, d11.
-- **Trọng điểm 4**: Thu thập vật chứng và hồ sơ bị xé.
-  - Tài liệu d14 - d17: Biên bản khám xét đồ nghề và kìm bấm của Thắng, ảnh chụp chiếc áo mưa vàng dính máu và trang nhật ký vò nát trong bầu lọc gió, lời khai của Tùng về tủ sấy quần áo bị tháo rơ-le, bản khôi phục trang nhật ký tố cáo bán dầu lậu.
-  - Câu hỏi 4 (evidence): Ghim 2 tài liệu vạch trần động cơ vụ án và vật chứng sinh học gắn liền với Vũ Văn Thắng. Đáp án: d15, d17.
-- **Trọng điểm 5**: Kết luận điều tra kẻ thủ ác.
-  - Tài liệu d18 - d20: Kết quả xét nghiệm ADN vết máu, bản tự thú của Vũ Văn Thắng, kết luận khởi tố vụ án.
-  - Câu hỏi 5 (choice): Ai là thủ phạm đã sát hại Trạm trưởng Đỗ Đình Quyết trong đêm bão? Đáp án: Vũ Văn Thắng.
+## 4. Cấu trúc câu hỏi & Trọng điểm (Đã nâng cấp độ khó x5)

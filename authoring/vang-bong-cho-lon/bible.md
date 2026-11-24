@@ -30,16 +30,4 @@
   - Mảnh giấy ghi 24 hoán vị mật số có chữ viết tay của Hào, khoanh tròn ở số thứ 12, bị rơi kẹt dưới kẽ chân bàn trà.
   - Vàng lá đóng dấu hiệu 'Vạn Thành' được tìm thấy chôn dưới chậu cây mai chiếu thủy sau nhà Hào ở Quận 11.
 
-## 4. Cấu trúc câu hỏi & Trọng điểm
-- **Trọng điểm 1**: Hiện trường tiệm vàng và tử thi gục bên tách cà phê.
-  - Tài liệu d01 - d05: Bản tin Sài Gòn Giải Phóng, biên bản khám nghiệm hiện trường két sắt, khám nghiệm tử thi (ngộ độc thuốc an thần cloral hydrat), sơ đồ nhà phố tiệm vàng, ảnh chụp núm xoay két sắt dính bụi phấn.
-  - Câu hỏi 1 (evidence): Ghim 2 tài liệu chứng minh nạn nhân tử vong do chất độc ức chế thần kinh trong tách cà phê và dấu vết phấn lạ trên núm xoay két sắt. Đáp án: d03, d05.
-- **Trọng điểm 2**: Lời khai các nghi phạm và cuống vé ca nhạc.
-  - Tài liệu d06 - d09: Lời khai Trương Chấn Hào (xuất trình cuống vé rạp Hào Huê), lời khai Lý Diễm My, lời khai bảo vệ Quách Bửu, sơ đồ tuyến đường từ rạp hát về tiệm vàng.
-  - Câu hỏi 2 (line): Dòng lời khai nào của Trương Chấn Hào khẳng định y xem ca nhạc liên tục từ 21h00 đến 23h30 không hề rời rạp Hào Huê? Đáp án: d06:003.
-- **Trọng điểm 3**: Bằng chứng giải mã hoán vị mật mã két sắt.
-  - Tài liệu d10 - d13: Mảnh giấy ghi 24 hoán vị mật mã tìm thấy dưới kẽ chân bàn trà, kết quả giám định chữ viết tay của Hào, lời khai nhân chứng soát vé rạp Hào Huê, kết quả phân tích thành phần phấn bông lúa.
-  - Câu hỏi 3 (evidence): Ghim 2 tài liệu vạch trần phương pháp dò mật mã két sắt bằng hoán vị số học có chữ viết của nghi phạm. Đáp án: d10, d11.
-- **Trọng điểm 4**: Vạch mặt hung thủ và thu hồi 50 lượng vàng.
-  - Tài liệu d14 - d16: Biên bản đào bới chậu kiểng thu giữ 50 lượng vàng và tiền mặt tại nhà Hào, kết quả giám định cloral hydrat trong lọ thuốc của Hào, bản tự thú và kết luận điều tra.
-  - Câu hỏi 4 (choice): Ai là thủ phạm đã đầu độc ông Lâm Vạn Thành và trộm két sắt? Đáp án: Trương Chấn Hào.
+## 4. Cấu trúc câu hỏi & Trọng điểm (Đã nâng cấp độ khó x5)

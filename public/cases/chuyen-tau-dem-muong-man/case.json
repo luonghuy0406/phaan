@@ -277,21 +277,21 @@
       "id": "q1",
       "stage": 1,
       "type": "evidence",
-      "title": "Hiện trường phòng kín và dấu vết lạ",
+      "title": "Hiện trường phòng kín và dấu vết bất thường",
       "intro": "Khoang số 4 được ghi nhận khóa chốt từ bên trong khiến việc tiếp cận hiện trường gặp khó khăn. Hãy tìm ra các dấu hiệu vật lý trên cánh cửa chứng tỏ có cơ chế tác động bất thường.",
-      "prompt": "Ghim 2 tài liệu phản ánh tình trạng chốt khóa bên trong của khoang số 4 và dấu vết ma sát mài mòn lạ trên khe nẹp cửa trượt.",
+      "prompt": "Ghim 2 tài liệu phản ánh tình trạng niêm phong phòng kín của hiện trường và dấu vết cơ học bất thường trên cánh cửa trượt.",
       "need": 2,
       "answer": [
         "d02",
         "d05"
       ],
       "hints": [
-        "Kiểm tra biên bản hiện trường khi nhân viên phá chốt khóa để vào phòng.",
-        "Xem ảnh chụp cận cảnh góc trên của cửa trượt ghi lại dấu vết ma sát trên gioăng nẹp cao su."
+        "Xem biên bản mô tả tình trạng chốt gập bên trong và cửa sổ cố định khi nhân viên tiếp cận.",
+        "Kiểm tra ảnh chụp cận cảnh ghi lại dấu vết ma sát mài mòn trên gioăng nẹp đỉnh cửa."
       ],
       "explanation": [
-        "Tài liệu d02 ghi nhận cửa trượt bị chốt khóa từ bên trong, nhân viên phải dùng chìa kỹ thuật giật mạnh nảy chốt mới vào được.",
-        "Tài liệu d05 (ảnh chụp cận cảnh) ghi lại vết ma sát hằn rãnh bóng loáng trên gioăng nẹp đỉnh cửa do lực cọ xát của sợi dây mảnh."
+        "Tài liệu d02 ghi nhận cửa trượt bị chốt khóa từ bên trong, cửa sổ hai lớp niêm phong nguyên vẹn, nhân viên phải dùng chìa kỹ thuật giật mạnh nảy chốt mới vào được.",
+        "Tài liệu d05 ghi lại vết ma sát hằn rãnh bóng loáng trên nẹp nhôm và gioăng cao su đỉnh cửa do lực cọ xát của một sợi dây mảnh."
       ],
       "nudges": [
         {
@@ -307,39 +307,42 @@
       "id": "q2",
       "stage": 2,
       "type": "line",
-      "title": "Bằng chứng ngoại phạm của Nguyễn Hoàng Long",
-      "intro": "Nguyễn Hoàng Long ở khoang số 2 đưa ra lời khai nhằm loại trừ hoàn toàn sự liên quan của mình với cái chết của ông Vinh.",
-      "prompt": "Hãy chọn một dòng trong lời khai của Nguyễn Hoàng Long (d08) khẳng định y uống thuốc an thần và ngủ say trên giường suốt cả đêm không hề rời nửa bước.",
+      "title": "Lời khai ngoại phạm của kẻ tình nghi",
+      "intro": "Các hành khách và nhân viên trên toa số 6 đều đưa ra lời giải trình về lịch trình di chuyển trong đêm tàu qua đèo Cà Ná.",
+      "prompt": "Trong các biên bản hỏi cung người có mặt trên toa số 6, hãy chỉ ra dòng lời khai cung cấp bằng chứng ngoại phạm tuyệt đối của kẻ tình nghi nhằm khẳng định bản thân không hề rời khỏi phòng ngủ suốt cả đêm?",
       "answer": [
         "d08:004"
       ],
       "hints": [
-        "Tìm dòng lời khai nói về việc Long trùm chăn ngủ say và không rời giường khoang số 2.",
+        "Rà soát lời khai của các đối tượng có mặt trên toa xe số 6 để tìm người đưa ra bằng chứng ngoại phạm tự nhận là ngủ say suốt đêm.",
         "Đối chiếu mốc thời gian và hành vi của người khai với các nhân chứng xung quanh."
       ],
       "explanation": [
-        "Tại dòng d08:004, Long khai: 'Từ lúc 23h30 đêm qua tôi đã uống thuốc an thần và trùm chăn ngủ say như chết trên giường khoang số 2 suốt cả đêm, hoàn toàn không hề rời khỏi giường nửa bước'."
+        "Tại biên bản d08 dòng 004, Nguyễn Hoàng Long khai: 'Từ lúc 23h30 đêm qua tôi đã uống thuốc an thần và trùm chăn ngủ say như chết trên giường khoang số 2 suốt cả đêm, hoàn toàn không hề rời khỏi giường nửa bước'."
       ]
     },
     {
       "id": "q3",
       "stage": 3,
       "type": "evidence",
-      "title": "Vạch trần cơ chế phòng kín và hung khí",
-      "intro": "Lời khai của nhân chứng đã chứng minh thư ký Thảo có mặt tại căng-tin. Cơ quan điều tra cần xâu chuỗi tang vật tìm thấy để giải mã bí ẩn căn phòng kín.",
-      "prompt": "Ghim 2 tài liệu chứng minh cơ chế khóa chốt từ bên ngoài bằng sợi polymer và hung khí kim loại được phát hiện trong hành lý nghi phạm.",
-      "need": 2,
+      "title": "Giải mã cơ chế phòng kín và hung khí gây án",
+      "intro": "Lời khai của nhân viên căng-tin đã chứng minh thư ký Thảo có mặt tại toa 4 suốt khung giờ án mạng. Ban chuyên án cần liên kết dấu vết vật lý để vạch trần thủ đoạn khóa cửa từ bên ngoài.",
+      "prompt": "Hãy ghim 3 tài liệu liên kết dấu vết ma sát ban đầu trên cánh cửa với kết quả phân tích sợi polymer và tang vật thu giữ trong hành lý nghi phạm.",
+      "need": 3,
       "answer": [
+        "d05",
         "d10",
         "d12"
       ],
       "hints": [
-        "Tài liệu giám định kỹ thuật hình sự về cơ chế khóa cửa bằng sợi polymer luồn qua khe đỉnh cửa.",
-        "Tài liệu hình ảnh tang vật cuộn cước câu cá bị cắt đoạn và chiếc dùi sắt dính máu."
+        "Xem lại ảnh chụp macro dấu vết cọ xát ban đầu trên nẹp nhôm đỉnh cửa khoang số 4 (ở Vòng 1).",
+        "Đối chiếu với bản kết luận giám định kỹ thuật hình sự về cơ chế luồn sợi polymer qua khe cửa.",
+        "Tìm tài liệu ảnh chụp tang vật cuộn cước câu cá bị cắt đoạn và hung khí dùi sắt dính máu thu trong ba lô."
       ],
       "explanation": [
-        "Tài liệu d10 khẳng định cơ chế dùng sợi polymer luồn qua khe đỉnh cửa để giật chốt khóa từ bên ngoài.",
-        "Tài liệu d12 (ảnh tang vật) chụp cuộn cước Pioneer bị cắt nham nhở và chiếc dùi sắt dính máu thu trong ba lô Long."
+        "Tài liệu d05 (ở Vòng 1) ghi lại rãnh ma sát sâu 0.2mm dính mỡ ray trượt trên đỉnh cửa.",
+        "Tài liệu d10 khẳng định cơ chế dùng sợi polymer 0.45mm luồn qua khe đỉnh cửa để giật chốt khóa từ bên ngoài.",
+        "Tài liệu d12 chụp cuộn cước Pioneer bị cắt cụt một đoạn 3m dính mỡ ray và chiếc dùi sắt dính máu thu trong ba lô của Long."
       ],
       "nudges": [
         {
@@ -347,32 +350,53 @@
             "d11",
             "d13"
           ],
-          "message": "d13 chỉ là bằng chứng ngoại phạm của Thảo; hãy chọn báo cáo cơ chế kỹ thuật d10 cùng hình ảnh tang vật d12."
+          "message": "d13 chỉ là bằng chứng ngoại phạm của Thảo; hãy chọn đủ 3 tài liệu liên kết dấu vết cửa, giám định cơ học và tang vật hình ảnh."
         }
       ]
     },
     {
       "id": "q4",
       "stage": 4,
-      "type": "choice",
-      "title": "Thủ phạm vụ án mạng tàu SE3",
-      "intro": "ADN nạn nhân trên chiếc dùi sắt và cọc tiền 200 triệu giấu trong hộc điều hòa đã vạch trần kẻ thủ ác.",
-      "prompt": "Dựa vào toàn bộ chứng cứ trong hồ sơ, ai là thủ phạm đã sát hại ông Đặng Quốc Vinh?",
-      "options": [
-        "Thư ký Bùi Bích Thảo",
-        "Nguyễn Hoàng Long (khoang số 2)",
-        "Nhân viên phụ trách toa Trần Văn Hữu",
-        "Khách lạ lẻn lên từ ga Tháp Chàm"
-      ],
+      "type": "evidence",
+      "title": "Dấu vết sinh học và tài sản chiếm đoạt",
+      "intro": "Để chuyển hóa nghi can thành bị can với chứng cứ khoa học không thể chối cãi, cơ quan điều tra cần xác lập chứng cứ sinh học tại hiện trường và thu hồi tang vật cướp được.",
+      "prompt": "Ghim 2 tài liệu chứng minh sự hiện diện trực tiếp của hung thủ tại khoang số 4 thông qua dấu vết máu vi thể và vị trí cất giấu toàn bộ tài sản bị cướp.",
+      "need": 2,
       "answer": [
-        1
+        "d14",
+        "d15"
       ],
       "hints": [
-        "Ai có mối thù hằn tranh chấp mỏ titan, sở hữu cuộn cước câu cá dính mỡ cửa trượt và chiếc dùi sắt dính máu nạn nhân?",
-        "Ai giấu chiếc cặp da đựng 200 triệu trên nóc điều hòa khoang số 2?"
+        "Kiểm tra kết quả xét nghiệm ADN các tia máu bắn li ti thu giữ trên người nghi phạm.",
+        "Tìm biên bản khám xét phát hiện chiếc cặp da chứa 200 triệu đồng và hồ sơ thầu mỏ titan."
       ],
       "explanation": [
-        "Nguyễn Hoàng Long là thủ phạm duy nhất. Y đã dùng dùi sắt sát hại nạn nhân (d11, d14), dùng cước câu cá tạo phòng kín từ hành lang (d10, d16) và giấu tiền cướp được trên trần điều hòa khoang mình (d15, d17)."
+        "Tài liệu d14 chứng minh các tia máu bắn ngược trên mép đế giày da của Nguyễn Hoàng Long có ADN trùng khớp 100% với nạn nhân Đặng Quốc Vinh, bác bỏ hoàn toàn lời khai ngủ say.",
+        "Tài liệu d15 ghi nhận thu hồi nguyên vẹn chiếc cặp da, 200 triệu đồng tiền mặt và hồ sơ thầu titan giấu trong hộc cửa gió điều hòa trần khoang số 2 của Long."
+      ]
+    },
+    {
+      "id": "q5",
+      "stage": 4,
+      "type": "choice",
+      "title": "Bản kết luận điều tra toàn diện vụ án ga Mường Mán",
+      "intro": "Chuỗi chứng cứ từ hiện trường, dấu vết sợi cước, kết quả thực nghiệm và xét nghiệm ADN đã khép lại vụ án mạng trên đoàn tàu SE3.",
+      "prompt": "Dựa vào toàn bộ tài liệu hồ sơ, hãy lựa chọn bản kết luận điều tra toàn diện và chính xác nhất về vụ án:",
+      "options": [
+        "Nguyễn Hoàng Long do thù hằn cá nhân và muốn cướp 200 triệu đồng cùng hồ sơ thầu titan, đã nhân lúc thư ký vắng mặt vào khoang 4 đâm chết ông Vinh bằng dùi sắt, giấu tài sản lên hộc điều hòa khoang 2 rồi dùng cước Pioneer giật chốt khóa cửa từ ngoài hành lang tạo phòng kín.",
+        "Bùi Bích Thảo câu kết với nhân viên phụ trách toa Trần Văn Hữu dùng chìa kỹ thuật mở cửa sát hại ông Vinh cướp tiền rồi ra căng-tin tạo bằng chứng ngoại phạm, sau đó giấu cước câu cá vào ba lô Long nhằm vu oan giá họa.",
+        "Nguyễn Hoàng Long đột nhập qua cửa sổ khoang tàu khi tàu qua đèo Cà Ná, sát hại nạn nhân rồi thoát ra bằng cửa trượt, khóa chốt bằng cước câu cá và ném cặp tiền xuống sông nhưng bị vướng vào hộc điều hòa.",
+        "Khách lạ lẻn lên từ ga Tháp Chàm dùng dùi sắt đâm chết nạn nhân rồi tẩu thoát khi tàu dừng tại ga Mường Mán, vứt lại cước câu cá và dùi sắt vào ba lô của Long để đánh lạc hướng cơ quan điều tra."
+      ],
+      "answer": [
+        0
+      ],
+      "hints": [
+        "Xem xét đầy đủ 4 yếu tố: Động cơ thù hằn mỏ titan, hung khí dùi sắt dính máu trên giày, thủ pháp giật cước đỉnh cửa và tang vật trong hộc điều hòa khoang 2.",
+        "Loại trừ các giả thuyết mâu thuẫn với cửa sổ kính niêm phong cố định hoặc lời khai ngoại phạm có nhân chứng xác thực."
+      ],
+      "explanation": [
+        "Nguyễn Hoàng Long là thủ phạm duy nhất. Y đã chuẩn bị dùi sắt và cước câu cá từ trước, ra tay lúc tàu qua đèo Cà Ná, giấu tài sản trên trần điều hòa khoang mình và khóa chốt phòng kín từ bên ngoài trong 3 giây."
       ]
     }
   ],

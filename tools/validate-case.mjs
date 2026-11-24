@@ -13,6 +13,9 @@ const ID = /^[a-z0-9-]{1,60}$/;
 const DOC_ID = /^[a-z0-9-]{1,40}$/;
 const IMG_EXT = /\.(webp|jpe?g|png|avif)$/i;
 
+const comb = (n, k) => { let r = 1; for (let i = 1; i <= k; i++) r = (r * (n - k + i)) / i; return Math.round(r); };
+const evidenceNeedOf = (q) => q.need || (Array.isArray(q.answer) ? q.answer.length : 1);
+
 function validate(id) {
   const errors = [];
   const warns = [];
@@ -153,6 +156,45 @@ function validate(id) {
     if (!entry) err('Chưa có trong cases/index.json');
     else for (const k of ['title', 'status', 'no']) if (entry[k] !== c[k]) warn(`index.json: "${k}" khác case.json (${JSON.stringify(entry[k])} ≠ ${JSON.stringify(c[k])})`);
   } catch { err('cases/index.json lỗi'); }
+
+  // the finale dialog shows finale.paragraphs (finale.text is accepted too)
+  if (c.finale && !(Array.isArray(c.finale.paragraphs) && c.finale.paragraphs.length) && !c.finale.text && typeof c.finale !== 'string') warn('"finale" không có nội dung (cần paragraphs[]): màn kết thúc sẽ trống');
+
+  // ── difficulty lint: things that let players win without deducing anything ──
+  const docText = (d) => JSON.stringify(d || {});
+  const STOP = new Set('của và các trong với trên tại về cho một những được là có từ đến này đã khi theo bản biên ảnh chụp tài liệu lời khai kết quả giám định hồ sơ vụ án ngày số nơi người ra vào sau trước bị đang hai ba'.split(' '));
+  const words = (t) => new Set((String(t).toLowerCase().match(/[\p{L}\p{N}]+/gu) || []).filter((w) => w.length > 2 && !STOP.has(w)));
+  const overlap = (a, b) => { const A = words(a); if (!A.size) return 0; const B = words(b); let n = 0; A.forEach((w) => { if (B.has(w)) n += 1; }); return n / A.size; };
+  const lastChoice = [...qs].reverse().find((q) => q && q.type === 'choice' && Array.isArray(q.options) && q.options.length > 1);
+  if (lastChoice && Array.isArray(lastChoice.answer) && lastChoice.answer.length === 1) {
+    const lens = lastChoice.options.map((o) => String(o).length);
+    const right = lens[Number(lastChoice.answer[0])] || 0;
+    const otherMax = Math.max(...lens.filter((_, i) => i !== Number(lastChoice.answer[0])));
+    if (right > otherMax * 1.35) warn(`${lastChoice.id}: đáp án đúng dài hơn hẳn các phương án sai (${right} so với tối đa ${otherMax} ký tự): người chơi đoán được bằng độ dài. Viết các phương án sai cũng đủ chi tiết (người, thủ đoạn, động cơ).`);
+  }
+  if (lastChoice) {
+    const finalStage = lastChoice.stage ?? 1;
+    const CONFESS = /(tự thú|thú nhận|nhận tội|khai nhận|đầu thú|bản tự khai)/i;
+    docs.filter((d) => d && (d.stage ?? 1) <= finalStage && CONFESS.test(docText(d)))
+      .forEach((d) => warn(`${d.id}: lời thú tội / tự thú mở trước hoặc cùng lúc với câu chỉ mặt hung thủ (${lastChoice.id}): để vào finale hoặc epilogue.`));
+  }
+  const SPOIL_TITLE = /(tự thú|thú nhận|nhận tội|gài lén|ngụy tạo|giả mạo|dối trá|dàn dựng|thủ phạm|hung thủ|vạch trần)/i;
+  docs.filter((d) => d && SPOIL_TITLE.test(d.title || '')).forEach((d) => warn(`${d.id}: tiêu đề "${d.title}" nói trước kết luận; đặt tên theo loại giấy tờ (vd. "Biên bản giám định…", "Lời khai bổ sung…").`));
+  qs.filter((q) => q && q.type === 'evidence' && Array.isArray(q.answer)).forEach((q) => {
+    const prompt = `${q.title || ''} ${[].concat(q.prompt || []).join(' ')}`;
+    const pool = docs.filter((d) => d && (d.stage ?? 1) <= (q.stage ?? 1));
+    const right = Math.min(...q.answer.map((a) => overlap(docs.find((d) => d && d.id === a)?.title || '', prompt)));
+    const wrong = Math.max(0, ...pool.filter((d) => !q.answer.includes(d.id)).map((d) => overlap(d.title, prompt)));
+    if (right > 0.34 && right > wrong) warn(`${q.id}: đề bài lặp lại từ khoá trong tiêu đề tài liệu đáp án: người chơi dò chữ là ra. Hãy hỏi về điều cần chứng minh, đừng tả tài liệu.`);
+    (q.hints || []).forEach((h, i) => { if (q.answer.some((a) => new RegExp(`\\b${a}\\b`).test(h)) && i < (q.hints.length - 1)) warn(`${q.id}: gợi ý ${i + 1} nêu thẳng mã tài liệu đáp án; chỉ gợi ý cuối cùng mới nên làm vậy.`); });
+  });
+  const firstEvidence = qs.find((q) => q && q.type === 'evidence');
+  if (firstEvidence) {
+    const pool = docs.filter((d) => d && (d.stage ?? 1) <= (firstEvidence.stage ?? 1)).length;
+    const k = evidenceNeedOf(firstEvidence);
+    const combos = comb(pool, k);
+    if (combos <= 10) warn(`${firstEvidence.id}: chỉ có ${combos} cách chọn ${k}/${pool} tài liệu, bấm thử là ra; thêm tài liệu gây nhiễu ở vòng 1 hoặc cần nhiều bằng chứng hơn.`);
+  }
 
   // images in the case folder that nothing points to: they still ship to the website
   const used = new Set([c.cover, ...docs.flatMap((d) => [d && d.image, d && d.imageHi, d && d.file])].filter((x) => typeof x === 'string'));

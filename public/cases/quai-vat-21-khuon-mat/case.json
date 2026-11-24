@@ -233,30 +233,20 @@
       "stage": 1,
       "type": "evidence",
       "title": "Chất kịch độc trong hộp kẹo và bức thư máy đánh chữ sứt mẻ",
-      "intro": "Vụ án đầu độc mở đầu bằng chất độc xyanua và những bức thư khiêu khích được gõ bằng máy đánh chữ cổ điển.",
-      "prompt": "Ghim 2 tài liệu chứng minh chất độc kali xyanua liều lượng gây chết người trong hộp kẹo và bức thư khiêu khích cảnh sát có ký tự máy đánh chữ sứt mẻ đặc thù.",
+      "intro": "Bóng ma bí ẩn 'Quái vật 21 khuôn mặt' reo rắc kinh hoàng lên toàn nước Nhật năm 1984. Hãy xác định độc chất và phương thức khiêu khích truyền thông.",
+      "prompt": "Ghim 2 tài liệu chứng minh chất độc kali xyanua liều lượng gây chết người trong các hộp kẹo trẻ em và bức thư khiêu khích cảnh sát đánh máy có khuyết tật cơ học đặc thù.",
       "need": 2,
       "answer": [
         "d03",
         "d05"
       ],
       "hints": [
-        "Kiểm tra kết quả giám định độc chất về hàm lượng Kali Xyanua 98% trong viên kẹo.",
-        "Xem ảnh chụp bức thư nặc danh máy đánh chữ có ký tự 'ka' bị mòn vẹt sứt góc trái.",
-        "Xem xét kỹ các bằng chứng vật chất và báo cáo kỹ thuật hình sự."
+        "Báo cáo hóa nghiệm độc chất của Viện Khoa học Hình sự Osaka phát hiện Kali Xyanua tinh khiết 98% nồng độ 80mg/viên.",
+        "Ảnh chụp bức thư nặc danh đánh máy bằng máy cơ có ký tự chữ 'ka' bị mẻ khuyết độc nhất gửi tòa soạn báo Mainichi."
       ],
       "explanation": [
-        "Tài liệu d03 xác nhận độc chất là Kali Xyanua liều lượng chết người gấp 3 lần.",
-        "Tài liệu d05 (ảnh chụp) thể hiện bức thư nặc danh gõ bằng máy đánh chữ có chữ 'ka' bị mòn sứt góc cơ học nhận dạng."
-      ],
-      "nudges": [
-        {
-          "picks": [
-            "d01",
-            "d02"
-          ],
-          "message": "Bản tin và biên bản siêu thị Daiei chưa thể hiện kết quả phân tích độc chất liều lượng và khuyết tật cơ học của phím máy đánh chữ."
-        }
+        "Tài liệu d03 xác nhận chất độc là Kali Xyanua cực độc có thể giết chết người lớn trong vài phút.",
+        "Tài liệu d05 chụp bức thư đánh máy gửi truyền thông mang con dấu đỏ 'Kaijin 21 Mensō'."
       ]
     },
     {
@@ -264,103 +254,110 @@
       "stage": 2,
       "type": "line",
       "title": "Thiệt hại tài chính và cổ phiếu lao dốc",
-      "intro": "Các đợt đe dọa đầu độc đã đánh trực diện vào niềm tin của người tiêu dùng và giá trị tài chính của tập đoàn Morinaga.",
-      "prompt": "Hãy chọn một dòng trong lời khai của Giám đốc điều hành tập đoàn Morinaga (d06) chỉ ra tác động tàn khốc khiến giá cổ phiếu trên sàn chứng khoán Tokyo tụt dốc gần 50% chỉ trong hai tuần.",
+      "intro": "Các tập đoàn bánh kẹo hàng đầu Nhật Bản đứng trước bờ vực phá sản vì làn sóng khủng bố độc dược.",
+      "prompt": "Trong biên bản làm việc với lãnh đạo các tập đoàn bánh kẹo, hãy chỉ ra dòng lời khai mô tả thiệt hại tài chính tàn khốc khiến cổ phiếu trên sàn giao dịch Tokyo lao dốc gần 50% chỉ trong hai tuần?",
       "answer": [
         "d06:004"
       ],
       "hints": [
-        "Tìm dòng lời khai nói về việc giá cổ phiếu của công ty trên sàn Tokyo bị tụt dốc gần 50%.",
-        "Đối chiếu mốc thời gian và hành vi của người khai với các nhân chứng xung quanh."
+        "Rà soát lời khai của Giám đốc điều hành tập đoàn Morinaga.",
+        "Tìm câu mô tả giá cổ phiếu sụt giảm nghiêm trọng và hàng triệu hộp bánh kẹo bị thu hồi."
       ],
       "explanation": [
-        "Tại dòng d06:004, Giám đốc Morinaga khai: 'Giá cổ phiếu của công ty chúng tôi trên sàn chứng khoán Tokyo đã tụt dốc thảm hại gần 50% chỉ trong hai tuần!'."
+        "Tại d06 dòng 004, Giám đốc điều hành Morinaga mô tả: 'Giá cổ phiếu của chúng tôi trên sàn giao dịch Tokyo đã tụt dốc gần 50% chỉ trong hai tuần, thiệt hại tài chính và chi phí thu hồi sản phẩm lên tới hàng chục tỷ Yên, công ty đứng trước nguy cơ phá sản'."
       ]
     },
     {
       "id": "q3",
       "stage": 3,
       "type": "evidence",
-      "title": "Vết sứt máy đánh chữ và công nghệ keo dán nhiệt",
-      "intro": "Khoa học kỹ thuật hình sự Nhật Bản đã bóc tách từng dấu vết cơ học của hung thủ.",
-      "prompt": "Ghim 2 tài liệu phân tích kỹ thuật về chiếc máy đánh chữ Panwriter đời 1978 có phím chữ 'ka' bị mẻ và loại keo dán nhiệt công nghiệp PUR-82 dán trên mép hộp kẹo.",
-      "need": 2,
+      "title": "Vết sứt máy Panwriter, keo dán PUR-82 và danh sách nghi vấn",
+      "intro": "Cảnh sát Quốc gia Nhật Bản lần theo các dấu vết kỹ thuật độc nhất của kẻ chủ mưu.",
+      "prompt": "Ghim 3 tài liệu liên kết bức thư khiêu khích ban đầu (Vòng 1) với báo cáo giám định vi thể vết mẻ phím chữ 'ka' trên máy đánh chữ Panwriter (Vòng 3) và ảnh chụp vi thể keo nhiệt công nghiệp PUR-82 dán lại đáy hộp kẹo (Vòng 3).",
+      "need": 3,
       "answer": [
+        "d05",
         "d10",
         "d11"
       ],
       "hints": [
-        "Báo cáo giám định máy đánh chữ Panwriter về vết khuyết tật cơ học 0.3mm của chữ 'ka'.",
-        "Ảnh chụp vi thể hộp kẹo và phân tích hợp chất keo dán nhiệt Polyurethane PUR-82 đòi hỏi súng nhiệt 140 độ C.",
-        "Xem xét kỹ các bằng chứng vật chất và báo cáo kỹ thuật hình sự."
+        "Ảnh bức thư khiêu khích cảnh sát đánh máy bằng máy cơ học (ở Vòng 1).",
+        "Báo cáo giám định vết mẻ 0.3mm trên phím chữ 'ka' của chiếc máy đánh chữ Panwriter đời 1978.",
+        "Ảnh chụp vi thể mép dán keo nhiệt polyurethane PUR-82 dính sợi len xám chứng minh hộp kẹo bị cạy đáy tẩm độc rồi dán lại tinh vi."
       ],
       "explanation": [
-        "Tài liệu d10 khẳng định toàn bộ thư được gõ từ một chiếc Panwriter 1978 có vết mẻ khuyết tật nhận dạng.",
-        "Tài liệu d11 (ảnh vi thể) chỉ ra mép hộp kẹo dán lại bằng keo nhiệt Polyurethane PUR-82 công nghiệp."
-      ],
-      "nudges": [
-        {
-          "picks": [
-            "d12",
-            "d13"
-          ],
-          "message": "d12 và d13 là danh sách xưởng và phân tích giọng nói; hãy chọn báo cáo máy đánh chữ d10 và ảnh chụp vi thể keo nhiệt d11."
-        }
+        "Tài liệu d05 là vật chứng bức thư tống tiền ban đầu.",
+        "Tài liệu d10 khẳng định toàn bộ các bức thư gửi cảnh sát đều được gõ ra từ đúng một chiếc máy đánh chữ Panwriter có phím 'ka' bị sứt mẻ độc nhất vô nhị.",
+        "Tài liệu d11 chứng minh kẻ chủ mưu sở hữu súng bắn keo nhiệt công nghiệp PUR-82 dùng trong ngành đóng gói bao bì ở khu vực cảng Kobe."
       ]
     },
     {
       "id": "q4",
       "stage": 4,
       "type": "evidence",
-      "title": "Bóng ma mắt cáo và động cơ thao túng chứng khoán",
-      "intro": "Những cuộc rượt đuổi nghẹt thở và dữ liệu tài chính đã hé lộ mục đích thực sự của bóng ma thế kỷ.",
-      "prompt": "Ghim 2 tài liệu chỉ ra cuộc tẩu thoát của 'Người đàn ông mắt cáo' trên chuyến tàu Shinkansen và biểu đồ bán khống cổ phiếu thu lợi hơn 1,2 tỷ Yên.",
-      "need": 2,
+      "title": "Quang phổ âm thanh cassette, phục kích Shinkansen và cổ phiếu bán khống",
+      "intro": "Các cuộc giao tiền chuộc diễn ra nghẹt thở dọc tuyến đường sắt cao tốc Shinkansen.",
+      "prompt": "Ghim 3 tài liệu liên kết bản phân tích quang phổ giọng đọc trẻ con trong băng cassette (Vòng 3) với báo cáo phục kích bắt hụt Người đàn ông mắt cáo tại ga Kyoto (Vòng 4) và biểu đồ thao túng bán khống cổ phiếu thu lợi hơn 1,2 tỷ Yên (Vòng 4).",
+      "need": 3,
       "answer": [
+        "d13",
         "d14",
         "d15"
       ],
       "hints": [
-        "Báo cáo trinh sát về việc bắt hụt người đàn ông mắt cáo tại ga Kyoto sau chuyến tàu Shinkansen.",
-        "Biểu đồ biến động tài chính của Ủy ban Chứng khoán về lệnh bán khống cổ phiếu Glico và Morinaga thu lợi hơn 1,2 tỷ Yên.",
-        "Xem xét kỹ các bằng chứng vật chất và báo cáo kỹ thuật hình sự."
+        "Phân tích quang phổ âm thanh băng cassette ghi âm giọng đọc của một bé gái chỉ dẫn địa điểm ném tiền trên tàu (ở Vòng 3).",
+        "Báo cáo cuộc phục kích bắt hụt Người đàn ông mắt cáo ngồi ghế 14B toa số 7 tàu Shinkansen Hikari biến mất tại ga Kyoto.",
+        "Biểu đồ tài chính của Ủy ban Giám sát Chứng khoán vạch trần các đợt bán khống gom đáy cổ phiếu thu lợi hơn 1,2 tỷ Yên."
       ],
       "explanation": [
-        "Tài liệu d14 mô tả cuộc chạy trốn của nghi phạm mắt cáo tại ga Kyoto.",
-        "Tài liệu d15 chứng minh động cơ kinh tế thao túng cổ phiếu bán khống thu lợi khổng lồ 1,2 tỷ Yên nhờ tin đồn đầu độc."
-      ],
-      "nudges": [
-        {
-          "picks": [
-            "d16",
-            "d17"
-          ],
-          "message": "d16 và d17 là hồ sơ Yakuza và cái chết của cảnh sát trưởng; hãy chọn tài liệu chạy trốn d14 và biểu đồ chứng khoán d15."
-        }
+        "Tài liệu d13 cho thấy hung thủ dùng giọng trẻ con để tránh bị máy nhận diện giọng nói phân tích.",
+        "Tài liệu d14 ghi lại hình ảnh nhân dạng đối tượng then chốt 'Người đàn ông mắt cáo' trong chiến dịch phục kích.",
+        "Tài liệu d15 vạch trần bản chất thật sự: Các vụ tẩm độc kẹo chỉ là đòn hỏa mù nhằm làm sụp đổ giá cổ phiếu trên sàn TSE để các tài khoản ngầm kiếm lời khổng lồ từ nghiệp vụ bán khống."
       ]
     },
     {
       "id": "q5",
       "stage": 5,
-      "type": "choice",
-      "title": "Bản chất động cơ của Quái vật 21 khuôn mặt",
-      "intro": "Một chiến dịch khủng bố tâm lý không lời giải đã làm rung chuyển nền kinh tế Nhật Bản.",
-      "prompt": "Dựa vào toàn bộ tài liệu hồ sơ, động cơ cốt lõi thực sự của tổ chức Quái vật 21 khuôn mặt đằng sau các vụ đầu độc bánh kẹo là gì?",
-      "options": [
-        "Chỉ là hành động trả thù cá nhân của cựu kỹ sư hóa thực phẩm",
-        "Chỉ nhằm mục đích giết hại ngẫu nhiên người tiêu dùng siêu thị",
-        "Thao túng thị trường tài chính bằng cách bán khống cổ phiếu sụt giảm thu lợi hơn 1,2 tỷ Yên kết hợp tống tiền tâm lý doanh nghiệp",
-        "Do mâu thuẫn tranh giành địa bàn buôn bán bánh kẹo giữa các siêu thị"
-      ],
+      "type": "evidence",
+      "title": "Bức thư đình chiến lịch sử và bài học quy chuẩn bao bì",
+      "intro": "Sau 17 tháng gieo rắc ác mộng, Quái vật 21 khuôn mặt gửi bức thư cuối cùng chấn động lịch sử tư pháp.",
+      "prompt": "Ghim 2 tài liệu lưu trữ bức thư đình chiến ngày 12/08/1985 tuyên bố chấm dứt chiến dịch tống tiền và tài liệu đúc kết bài học lịch sử về quy chuẩn bao bì đóng gói chống cạy mở.",
+      "need": 2,
       "answer": [
-        2
+        "d18",
+        "d20"
       ],
       "hints": [
-        "Xem xét tài liệu d03 (cố tình dán nhãn để không ai ăn phải) và d15 (lệnh bán khống cổ phiếu thu lời 1,2 tỷ Yên trước mỗi đợt gửi thư độc).",
-        "Xem xét kỹ các bằng chứng vật chất và báo cáo kỹ thuật hình sự."
+        "Bản scan bức thư đình chiến của Quái vật 21 khuôn mặt gửi lời chia buồn trước cái chết của Cảnh sát trưởng Yamamoto và tuyên bố buông tha các hãng bánh kẹo.",
+        "Ghi chép bài học lịch sử về việc thay đổi toàn bộ quy chuẩn bao bì niêm phong chống cạy mở (Tamper-evident) của ngành thực phẩm toàn cầu."
       ],
       "explanation": [
-        "Đáp án đúng là lựa chọn thứ ba: Quái vật 21 khuôn mặt cố tình dán nhãn cảnh báo để tránh chết người thực sự (d03) nhằm tạo sự hoảng loạn dư luận, ép cổ phiếu các tập đoàn bánh kẹo tụt dốc thảm hại để kiếm khoản lợi nhuận khổng lồ hơn 1,2 tỷ Yên từ thị trường bán khống chứng khoán (d15, d16)."
+        "Tài liệu d18 là bức thư chia tay lịch sử ngày 12/08/1985 chấm dứt hoàn toàn vụ án Glico Morinaga.",
+        "Tài liệu d20 tổng kết tác động làm thay đổi vĩnh viễn ngành công nghiệp thực phẩm thế giới sang bao bì niêm phong khóa nhiệt không thể can thiệp."
+      ]
+    },
+    {
+      "id": "q6",
+      "stage": 5,
+      "type": "choice",
+      "title": "Bản kết luận điều tra toàn diện kỳ án Quái vật 21 khuôn mặt",
+      "intro": "Vụ án thế kỷ không lời giải của Cảnh sát Nhật Bản đã để lại những bài học sâu sắc về tội phạm kinh tế công nghệ cao.",
+      "prompt": "Dựa vào toàn bộ tài liệu hồ sơ, động cơ cốt lõi thực sự của tổ chức Quái vật 21 khuôn mặt đằng sau các vụ đầu độc bánh kẹo là gì?",
+      "options": [
+        "Khủng bố tâm lý và thao túng thị trường tài chính: Lợi dụng sự hoảng loạn của công chúng để đánh sập giá cổ phiếu các tập đoàn bánh kẹo khổng lồ trên Sàn giao dịch chứng khoán Tokyo (TSE), từ đó các tài khoản ngầm cấu kết với thế lực Yakuza thực hiện các lệnh bán khống gom đáy thu lợi nhuận bất chính hơn 1,2 tỷ Yên.",
+        "Một cựu nhân viên bị sa thải khỏi tập đoàn Glico nuôi mối thù hận cá nhân nên đã tẩm độc kẹo để trả thù ban giám đốc và phá hoại thương hiệu.",
+        "Một tổ chức tội phạm quốc tế muốn tống tiền 1 tỷ Yên tiền mặt của chính phủ Nhật Bản để tài trợ cho các hoạt động chính trị cực đoan.",
+        "Một nhóm thanh thiếu niên cuồng tín truyện trinh thám bắt chước nhân vật Quái vật 21 mặt của nhà văn Edogawa Ranpo để trêu ngươi cảnh sát mà không vì mục đích tiền bạc."
+      ],
+      "answer": [
+        0
+      ],
+      "hints": [
+        "Hãy nhìn vào dòng tiền: Tại sao bọn chúng liên tục đòi tiền chuộc nhưng không bao giờ đến lấy tiền thật sự ở các điểm hẹn?",
+        "Đối chiếu biểu đồ biến động giá cổ phiếu và khối lượng bán khống bất thường trên sàn chứng khoán Tokyo trong tài liệu d15."
+      ],
+      "explanation": [
+        "Phương án 1 là kết luận chính xác nhất của Cục Cảnh sát Quốc gia Nhật Bản: Quái vật 21 khuôn mặt thực chất là một tổ chức tội phạm kinh tế cực kỳ tinh vi. Tiền tống tiền chỉ là đòn nghi binh, nguồn tiền khổng lồ thực sự chúng kiếm được là từ việc thao túng bán khống cổ phiếu trên sàn chứng khoán."
       ]
     }
   ],

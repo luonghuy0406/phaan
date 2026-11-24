@@ -237,104 +237,108 @@
       "id": "q1",
       "stage": 1,
       "type": "evidence",
-      "title": "Nguyên nhân tử vong và dấu vết bơm độc nắp cốc",
-      "intro": "Cái chết đột ngột của điều dưỡng Thủy được hé lộ là do chất kịch độc Xyanua và phương thức đưa độc tố vào cốc trà sữa nguyên vẹn.",
-      "prompt": "Ghim 2 tài liệu chứng minh nguyên nhân tử vong là chất độc Natri Xyanua và dấu vết lỗ châm kim vi thể trên màng dập nắp cốc.",
+      "title": "Độc chất xyanua trong ly trà và lỗ kim châm vi thể",
+      "intro": "Một nữ điều dưỡng viên Bệnh viện Phổi Thái Bình tử vong đột ngột chỉ sau vài ngụm trà sữa tại phòng trực. Cơ quan điều tra cần xác định độc chất và đường xâm nhập.",
+      "prompt": "Ghim 2 tài liệu chứng minh nạn nhân tử vong do chất kịch độc xyanua trong ly trà sữa và dấu vết lỗ kim châm vi thể trên màng nilon nắp cốc.",
       "need": 2,
       "answer": [
         "d03",
         "d05"
       ],
       "hints": [
-        "Kiểm tra kết quả giám định tử thi về hoạt chất độc Natri Xyanua và niêm mạc dạ dày màu đỏ anh đào.",
-        "Xem ảnh chụp macro nắp cốc trà sữa thể hiện vết châm kim siêu vi ti dưới 0.4mm.",
-        "Xem xét kỹ các bằng chứng vật chất và báo cáo kỹ thuật hình sự."
+        "Kết quả giám định pháp y tử thi xác nhận nồng độ cực độc Natri Xyanua trong máu và niêm mạc dạ dày màu đỏ anh đào.",
+        "Ảnh chụp macro lỗ châm kim vi thể đường kính 0.5mm bị dán đè tinh vi trên màng ép nắp cốc trà sữa."
       ],
       "explanation": [
-        "Tài liệu d03 xác nhận nạn nhân tử vong do ngộ độc Natri Xyanua tối cấp liều lượng gấp 8 lần mức tử vong.",
-        "Tài liệu d05 (ảnh macro) ghi lại vết đâm kim siêu nhỏ cỡ 26G trên màng nilon dập nhiệt nắp cốc."
-      ],
-      "nudges": [
-        {
-          "picks": [
-            "d01",
-            "d02"
-          ],
-          "message": "Bản tin và biên bản hiện trường ban đầu chưa xác định độc chất xyanua và chi tiết lỗ kim vi thể trên màng nilon."
-        }
+        "Tài liệu d03 khẳng định nạn nhân chết do ngộ độc cấp xyanua với nồng độ gấp 5 lần liều gây chết người.",
+        "Tài liệu d05 vạch trần chất độc không được pha từ quán mà được bơm lén bằng ống tiêm qua lỗ châm kim siêu nhỏ trên nắp cốc sau khi mua về."
       ]
     },
     {
       "id": "q2",
       "stage": 2,
       "type": "line",
-      "title": "Mục tiêu thật sự của cốc trà sữa độc",
-      "intro": "Bác sĩ Đỗ Thị Yến giải thích lý do vì sao túi trà sữa được gửi tới khoa lại nhắm chính xác vào thói quen của cô.",
-      "prompt": "Hãy chọn một dòng trong lời khai của Bác sĩ Đỗ Thị Yến (d06) chứng minh sở thích nghiện uống trà sữa của cô là nguyên nhân kẻ thủ ác chọn loại đồ uống này.",
+      "title": "Lời khai ngoại phạm của người gửi trà",
+      "intro": "6 cốc trà sữa được gửi nặc danh đến Khoa Nội kèm mẩu giấy nhắn gửi chị Yến nhưng chị Yến đi vắng nên người khác uống phải.",
+      "prompt": "Trong các biên bản ghi lời khai người thân của đối tượng tình nghi, hãy chỉ ra dòng lời khai của người có quan hệ tình cảm khẳng định bản thân chỉ coi nhau như anh em họ hàng và không hề biết gì về các cốc trà sữa?",
       "answer": [
-        "d06:003"
+        "d07:003"
       ],
       "hints": [
-        "Tìm dòng lời khai nói về sở thích nghiện trà sữa của bác sĩ Yến khiến cả khoa ai cũng biết.",
-        "Đối chiếu mốc thời gian và hành vi của người khai với các nhân chứng xung quanh."
+        "Rà soát lời khai của người anh rể (chồng của chị Yến).",
+        "Tìm câu khẳng định quan hệ giữa hai người hoàn toàn trong sáng như anh em ruột thịt trong nhà."
       ],
       "explanation": [
-        "Tại dòng d06:003, bác sĩ Yến khai: 'Cả khoa này ai cũng biết tôi là người có sở thích nghiện uống trà sữa vị kem sữa nướng của thương hiệu này, hầu như ngày nào tôi đi trực cũng mua một cốc mang theo'."
+        "Tại d07 dòng 003, người anh rể khai: 'Mối quan hệ giữa tôi và cô Trang chỉ là anh rể em họ bình thường, hoàn toàn trong sáng không có gì khuất tất, tôi không hề biết ai gửi trà sữa đến cơ quan của vợ tôi'."
       ]
     },
     {
       "id": "q3",
       "stage": 3,
       "type": "evidence",
-      "title": "Bằng chứng kỹ thuật số và ống tiêm xyanua",
-      "intro": "Dữ liệu điện thoại và cuộc khám xét khẩn cấp đã lột trần toàn bộ quá trình chuẩn bị tội ác của kẻ thủ ác.",
-      "prompt": "Ghim 2 tài liệu chỉ ra lịch sử tìm kiếm mua chất độc xyanua trên điện thoại và tang vật ống tiêm cỡ 26G cùng gói xyanua thu giữ tại nhà nghi phạm.",
-      "need": 2,
+      "title": "Lỗ kim châm, mẩu giấy nhắn nặc danh và trích xuất điện thoại",
+      "intro": "Phân tích kỹ thuật số điện thoại và chữ viết tay trên mẩu giấy gửi trà sữa đã lần ra kẻ chủ mưu.",
+      "prompt": "Ghim 3 tài liệu liên kết dấu vết lỗ kim châm bơm độc (Vòng 1) với mẩu giấy nhắn kẹp ngoài túi trà (Vòng 3) và dữ liệu trích xuất điện thoại đặt mua chất kịch độc xyanua trên mạng (Vòng 3).",
+      "need": 3,
       "answer": [
-        "d10",
-        "d11"
+        "d05",
+        "d09",
+        "d10"
       ],
       "hints": [
-        "Trích xuất dữ liệu duyệt web trên điện thoại của Trang tìm kiếm từ khóa 'mua natri xyanua'.",
-        "Ảnh chụp tang vật ống tiêm y tế gắn kim 26G và gói hóa chất xyanua thu trong phòng ngủ của Trang.",
-        "Xem xét kỹ các bằng chứng vật chất và báo cáo kỹ thuật hình sự."
+        "Ảnh macro lỗ châm kim vi thể trên nắp cốc trà sữa (ở Vòng 1).",
+        "Mẩu giấy nhắn nặc danh viết tay bằng mực tím kẹp ngoài túi trà gửi đích danh cho chị họ Yến.",
+        "Trích xuất dữ liệu điện thoại Cellebrite vạch trần lịch sử tìm kiếm 'chất độc không mùi không màu' và tin nhắn đặt mua 2kg Natri Xyanua."
       ],
       "explanation": [
-        "Tài liệu d10 chứng minh Trang đã lên mạng tìm kiếm cách mua xyanua và cách bơm thuốc vào cốc nước.",
-        "Tài liệu d11 (ảnh tang vật) thể hiện ống tiêm y tế 26G và gói bột xyanua giấu dưới đáy tủ của Trang."
-      ],
-      "nudges": [
-        {
-          "picks": [
-            "d12",
-            "d13"
-          ],
-          "message": "d12 và d13 là vận đơn và giám định 5 cốc trà; hãy chọn tài liệu trích xuất điện thoại d10 và hình ảnh tang vật d11."
-        }
+        "Tài liệu d05 chứng minh thủ pháp bơm độc bằng ống tiêm y tế.",
+        "Tài liệu d09 thể hiện mục tiêu thực sự của kẻ gửi trà là chị họ Yến (đồng nghiệp của nạn nhân xấu số).",
+        "Tài liệu d10 vạch trần Lại Thị Kiều Trang đã tìm kiếm cách giết người bằng xyanua và liên hệ với đầu mối hóa chất để đặt mua độc chất."
       ]
     },
     {
       "id": "q4",
       "stage": 4,
+      "type": "evidence",
+      "title": "Ống tiêm y tế và hóa đơn chuyển phát ViettelPost",
+      "intro": "Lệnh khám xét khẩn cấp nơi ở của Lại Thị Kiều Trang đã thu giữ toàn bộ công cụ phương tiện phạm tội.",
+      "prompt": "Ghim 2 tài liệu chứng minh vật chứng ống tiêm dùng bơm xyanua vào cốc trà và hóa đơn bưu cục chuyển phát hộp xyanua đến tay thủ phạm.",
+      "need": 2,
+      "answer": [
+        "d11",
+        "d12"
+      ],
+      "hints": [
+        "Ảnh tang vật ống tiêm y tế 5ml còn dính dung dịch xyanua thu giữ trong thùng rác phòng ngủ.",
+        "Hóa đơn chuyển phát nhanh ViettelPost mang tên người nhận Lại Thị Kiều Trang bưu kiện chứa hóa chất công nghiệp."
+      ],
+      "explanation": [
+        "Tài liệu d11 thu giữ chính chiếc ống tiêm y tế dùng để bơm xyanua qua màng nilon cốc trà.",
+        "Tài liệu d12 xác nhận Trang đã ký nhận bưu kiện chứa chất kịch độc xyanua từ một cơ sở hóa chất tại Hà Nội chuyển về."
+      ]
+    },
+    {
+      "id": "q5",
+      "stage": 4,
       "type": "choice",
-      "title": "Thủ phạm vụ án Ly trà tráo độc",
-      "intro": "Tội ác man rợ xuất phát từ mối quan hệ bất chính và lòng ghen tuông mù quáng đã cướp đi sinh mạng người vô tội.",
-      "prompt": "Dựa vào toàn bộ tài liệu hồ sơ, ai là kẻ đã mua kịch độc Natri Xyanua bơm vào các cốc trà sữa?",
+      "title": "Bản kết luận điều tra toàn diện vụ án ly trà tráo độc",
+      "intro": "Mối quan hệ bất chính, lịch sử đặt mua xyanua và chiếc ống tiêm y tế đã khép lại kỳ án có thật chấn động Thái Bình.",
+      "prompt": "Dựa vào toàn bộ tài liệu hồ sơ, ai là thủ phạm của vụ án, bằng thủ đoạn nào và vì động cơ gì?",
       "options": [
-        "Lại Thị Kiều Trang",
-        "Bác sĩ Đỗ Thị Yến",
-        "Nguyễn Mạnh Hùng (anh rể)",
-        "Tài xế giao hàng Lê Văn Nam"
+        "Lại Thị Kiều Trang do có quan hệ bất chính với anh rể nhưng bị anh rể đòi chấm dứt, vì ghen tuông mù quáng muốn hạ độc người chị họ để được tự do qua lại với anh rể, đã đặt mua xyanua qua mạng, bơm độc vào 4 trong số 6 cốc trà sữa rồi gửi nặc danh đến Bệnh viện Phổi Thái Bình, khiến chị H. (nữ điều dưỡng vô tội) uống phải và tử vong oan uổng.",
+        "Người anh rể do muốn ly hôn vợ để chiếm đoạt tài sản chung, đã câu kết với Trang mua xyanua bơm vào trà sữa gửi đến cơ quan vợ nhằm đầu độc vợ nhưng tính toán nhầm.",
+        "Chủ tiệm trà sữa do bất cẩn trong khâu bảo quản chất tẩy rửa công nghiệp đã làm rò rỉ hóa chất vào các cốc trà sữa khiến khách hàng ngộ độc tử vong.",
+        "Một đối tượng bệnh nhân tâm thần có mâu thuẫn với khoa Nội bệnh viện đã chặn xe giao hàng tráo đổi trà sữa tẩm xyanua để trả thù các bác sĩ."
       ],
       "answer": [
         0
       ],
       "hints": [
-        "Ai có quan hệ bất chính bị chấm dứt, đặt mua 1kg xyanua từ Hải Phòng và dùng kim tiêm bơm độc vào trà sữa?",
-        "Xem xét kỹ các bằng chứng vật chất và báo cáo kỹ thuật hình sự."
+        "Ai là người ngoại tình với anh rể, tự tay đặt mua xyanua qua mạng, viết mẩu giấy nhắn gửi chị họ và bị camera tiệm trà ghi lại?",
+        "Đối chiếu dấu vết ống tiêm y tế thu trong phòng ngủ của Trang với lỗ châm kim trên nắp cốc."
       ],
       "explanation": [
-        "Lại Thị Kiều Trang là thủ phạm duy nhất. Y lên mạng tìm mua xyanua (d10, d12), dùng kim tiêm 26G bơm độc vào 4 cốc trà (d05, d11, d13), thuê người giao đến bệnh viện (d08, d14) nhằm giết chị họ nhưng khiến điều dưỡng Thủy tử vong oan uổng (d03, d15, d16)."
+        "Lại Thị Kiều Trang là thủ phạm duy nhất. Vụ án có thật tại Thái Bình năm 2019 với động cơ ghen tuông cuồng loạn và thủ đoạn tàn độc đầu độc bằng trà sữa xyanua đã cướp đi sinh mạng của một nữ điều dưỡng viên vô tội."
       ]
     }
   ],

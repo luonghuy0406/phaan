@@ -241,102 +241,108 @@
       "id": "q1",
       "stage": 1,
       "type": "evidence",
-      "title": "Già làng đã chết trước vụ cháy",
-      "intro": "Đám cháy thiêu rụi kho thóc tưởng chừng là tai nạn khiến già làng thiệt mạng do ngạt khói. Nhưng chứng cứ pháp y và vật chứng tại hiện trường đã vạch trần một vụ án mạng man rợ.",
-      "prompt": "Ghim 2 tài liệu chứng minh già làng Ama Thuật đã tử vong từ trước khi có lửa khói và hung khí để lại dấu vết cá nhân rõ ràng.",
+      "title": "Dấu vết sát hại trước hỏa hoạn và hung khí xà gạc",
+      "intro": "Nhà sàn của già làng Y Krông rực cháy trong đêm giông sét Buôn Ea Kral. Khám nghiệm tử thi cho thấy dấu hiệu của một vụ án mạng che giấu bằng biển lửa.",
+      "prompt": "Ghim 2 tài liệu chứng minh già làng đã bị sát hại bằng nhát chém hung khí sắc nhọn trước khi nhà sàn bốc cháy và hung khí xà gạc dính máu bị giấu ở bụi le.",
       "need": 2,
       "answer": [
         "d03",
         "d05"
       ],
       "hints": [
-        "Kiểm tra kết quả giám định tử thi về khí quản và nguyên nhân vỡ lún hộp sọ.",
-        "Xem ảnh chụp chiếc xà gạc dính máu khắc chữ cái trên chuôi gỗ."
+        "Kết quả giám định tử thi xác nhận hộp sọ bị vỡ do vật sắc nặng chém từ trước khi cháy, phổi không có muội than.",
+        "Ảnh chụp chiếc xà gạc đi rẫy dính máu khô thu giữ trong bụi le sau nhà sàn."
       ],
       "explanation": [
-        "Tài liệu d03 chứng minh khí quản già làng không có muội than, chết do vỡ lún hộp sọ từ trước khi cháy lúc 19h30 - 20h00.",
-        "Tài liệu d05 (ảnh chụp xà gạc) cho thấy sống dao dính máu và chuôi gỗ khắc chữ B hoa."
-      ],
-      "nudges": [
-        {
-          "picks": [
-            "d01",
-            "d02"
-          ],
-          "message": "Bản tin và biên bản hiện trường chưa cung cấp kết luận y khoa về đường thở và chi tiết hung khí."
-        }
+        "Tài liệu d03 chứng minh nạn nhân chết do vết chém sắc ngọt vào vùng thái dương, khí quản không có muội khói chứng tỏ đã chết trước khi đám cháy bùng lên.",
+        "Tài liệu d05 chụp chiếc xà gạc dính máu nạn nhân bị hung thủ lau chùi vội vã vứt giấu ở bờ rào bụi le."
       ]
     },
     {
       "id": "q2",
       "stage": 2,
       "type": "line",
-      "title": "Bằng chứng ngoại phạm của Y Bang",
-      "intro": "Y Bang khẳng định y có mặt liên tục ở nhà rông lớn suốt thời gian ngọn lửa bùng phát.",
-      "prompt": "Hãy chọn một dòng trong lời khai của Y Bang (d06) khẳng định y ngồi liên tục ở gian giữa nhà rông uống rượu cần từ đúng 20h10 đến 21h10 không rời nửa bước.",
+      "title": "Lời khai ngoại phạm cúng thần rừng",
+      "intro": "Những người thân trong buôn làng đều đưa ra lời giải trình về vị trí của mình trong đêm giông bão.",
+      "prompt": "Trong các biên bản hỏi cung người trong buôn làng, hãy chỉ ra dòng lời khai khẳng định ở lại suốt đêm trong rừng già cúng thần rừng nhưng thực tế mâu thuẫn với dấu vết di chuyển?",
       "answer": [
-        "d06:004"
+        "d06:003"
       ],
       "hints": [
-        "Tìm dòng lời khai nói về việc Y Bang ngồi uống rượu cần và đánh chiêng cùng đoàn cán bộ từ 20h10 đến 21h10.",
-        "Đối chiếu mốc thời gian và hành vi của người khai với các nhân chứng xung quanh."
+        "Rà soát lời khai của con nuôi già làng về địa điểm cúng rừng.",
+        "Tìm câu khẳng định ngủ lại chòi rẫy sâu trong rừng Ea Kral suốt đêm không về buôn."
       ],
       "explanation": [
-        "Tại dòng d06:004, Y Bang khai: 'Từ đúng 20h10 đến tận 21h10 khi có tiếng hô hoán cháy kho thóc, tôi ngồi liên tục ở gian giữa nhà rông uống rượu cần và đánh chiêng cùng đoàn cán bộ huyện, không hề bước chân ra ngoài nửa bước'."
+        "Tại d06 dòng 003, Y Bang khai: 'Từ chiều tối tôi đã ở lại chòi rẫy trên đỉnh đồi cúng thần rừng theo tục lệ, suốt đêm mưa giông sấm sét tôi ngủ say trong chòi rẫy cách buôn hơn 5 cây số, hoàn toàn không hề về buôn'."
       ]
     },
     {
       "id": "q3",
       "stage": 3,
       "type": "evidence",
-      "title": "Cơ chế bẫy nhiệt hẹn giờ phóng hỏa",
-      "intro": "Bằng chứng ngoại phạm của Y Bang thực chất được tạo ra bởi một bẫy nhiệt kích hoạt chậm.",
-      "prompt": "Ghim 2 tài liệu chỉ ra cơ chế phát hỏa hẹn giờ bằng bóng đèn 100W kết hợp rơ-le máy ấp trứng tại tâm cháy.",
-      "need": 2,
+      "title": "Vết chém xà gạc, bẫy nhiệt rơ-le và nguồn phóng hỏa",
+      "intro": "Đội Kỹ thuật hình sự khám nghiệm tàn tro nhà sàn để tìm ra nguồn phát lửa thực sự.",
+      "prompt": "Ghim 3 tài liệu liên kết hung khí xà gạc phát rẫy (Vòng 1) với kết quả khám nghiệm tàn tro phát hiện bẫy nhiệt rơ-le điện (Vòng 3) và ảnh tang vật đui đèn bẫy dây mai-so dây điện cháy dở (Vòng 3).",
+      "need": 3,
       "answer": [
+        "d05",
         "d10",
         "d11"
       ],
       "hints": [
-        "Tài liệu giám định kỹ thuật PCCC về cơ chế sinh nhiệt và rơ-le hẹn giờ 60 phút.",
-        "Ảnh chụp đui đèn vỡ và bánh răng rơ-le thu tại hiện trường tâm cháy."
+        "Ảnh chiếc xà gạc dính máu thu tại bụi le sau nhà (ở Vòng 1).",
+        "Biên bản giám định nguyên nhân hỏa hoạn loại trừ sét đánh và phát hiện dấu vết dầu hỏa cùng dây đồng nối tắt.",
+        "Ảnh tang vật đui đèn bẫy nhiệt đấu nối dây mai-so bếp điện chập cháy tạo nguồn phát lửa trễ."
       ],
       "explanation": [
-        "Tài liệu d10 làm rõ thủ đoạn hẹn giờ phát hỏa 60 phút bằng bóng đèn 100W quấn giẻ dầu và rơ-le cơ khí.",
-        "Tài liệu d11 ghi nhận hình ảnh đui đèn xoáy và cụm bánh răng rơ-le máy ấp trứng thu được tại tâm đám cháy."
-      ],
-      "nudges": [
-        {
-          "picks": [
-            "d12",
-            "d13"
-          ],
-          "message": "d12 và d13 là kiểm tra xưởng và xác nhận thợ rèn, nhưng d10 và d11 mới trực tiếp phân tích cơ chế bẫy nhiệt tại tâm cháy."
-        }
+        "Tài liệu d05 là hung khí sát hại trực tiếp nạn nhân.",
+        "Tài liệu d10 khẳng định đám cháy không phải do sét đánh tự nhiên mà do bẫy nhiệt phóng hỏa có chuẩn bị trước.",
+        "Tài liệu d11 chụp đui đèn vỡ dính dây điện bọc nhựa nhiệt dẻo và mảnh vụn mai-so chập mạch để kích cháy đống củi tẩm dầu sau khi hung thủ đã rời khỏi buôn."
       ]
     },
     {
       "id": "q4",
       "stage": 4,
+      "type": "evidence",
+      "title": "Mẫu bùn suối Ea Kral và pho tượng ngọc bích",
+      "intro": "Khám xét khẩn cấp chòi rẫy của nghi phạm đã tìm thấy tang vật của vụ án mạng cướp của.",
+      "prompt": "Ghim 2 tài liệu chứng minh sự hiện diện của thủ phạm tại hiện trường qua mẫu bùn suối Ea Kral và việc thu giữ pho tượng ngọc bích cổ giấu trong bồ thóc.",
+      "need": 2,
+      "answer": [
+        "d14",
+        "d15"
+      ],
+      "hints": [
+        "Kết quả phân tích mẫu bùn đỏ pha cát vàng trên gấu quần nghi phạm trùng khớp tuyệt đối với bùn rãnh nước sau nhà già làng.",
+        "Biên bản thu giữ pho tượng ngọc bích thần lửa gia truyền của buôn làng bị giấu đáy bồ thóc."
+      ],
+      "explanation": [
+        "Tài liệu d14 chứng minh chất đất bùn dính trên quần áo của Y Bang chỉ có tại chân cầu thang nhà sàn nạn nhân, bác bỏ lời khai ngủ ở chòi rẫy.",
+        "Tài liệu d15 ghi nhận thu hồi nguyên vẹn pho tượng ngọc bích gia bảo nghìn năm của Buôn Ea Kral mà già làng cất giữ trong rương gỗ."
+      ]
+    },
+    {
+      "id": "q5",
+      "stage": 4,
       "type": "choice",
-      "title": "Thủ phạm sát hại già làng và phóng hỏa",
-      "intro": "Tang vật tiền quỹ, bộ chiêng đồng đen và vết bỏng trên tay đã khép lại vòng vây công lý đối với kẻ bất nhân.",
-      "prompt": "Dựa vào toàn bộ tài liệu hồ sơ, ai là kẻ đã sát hại già làng Ama Thuật và phóng hỏa đốt kho thóc?",
+      "title": "Bản kết luận điều tra toàn diện vụ án Buôn Ea Kral",
+      "intro": "Toàn bộ chuỗi chứng cứ từ vết chém xà gạc, bẫy nhiệt phóng hỏa đến pho tượng ngọc bích giấu bồ thóc đã sáng tỏ.",
+      "prompt": "Dựa vào toàn bộ tài liệu hồ sơ, ai là thủ phạm đã sát hại già làng Y Krông và phóng hỏa đốt nhà sàn?",
       "options": [
-        "Con nuôi Y Bang",
-        "Thủ kho H'Nhi",
-        "Thợ săn Y Ksor",
-        "Cán bộ khuyến nông Lê Minh Tuấn"
+        "Y Bang (con nuôi già làng) do nợ nần cờ bạc và biết giá trị liên thành của pho tượng ngọc bích thần lửa, đã dùng xà gạc chém chết cha nuôi, cướp tượng ngọc đem giấu vào bồ thóc chòi rẫy, rồi cài bẫy nhiệt đui đèn mai-so kích cháy nhà sàn nhân lúc trời mưa giông để ngụy tạo tai nạn do sét đánh.",
+        "Y Thuật (cháu họ già làng) do tranh chấp quyền kế vị già làng buôn Ea Kral, đã phóng hỏa đốt nhà sàn hòng tiêu hủy di chúc rồi lấy cắp tượng ngọc.",
+        "Thương lái buôn đồ cổ người Kinh từ Buôn Ma Thuột cấu kết với đám thợ rừng lẻn vào buôn chém chết già làng cướp tượng ngọc.",
+        "Một tia sét đánh trúng cột nhà sàn làm đổ bếp lửa gây cháy, già làng trong lúc chạy thoát đã bị xà gồ rớt trúng đầu tử vong."
       ],
       "answer": [
         0
       ],
       "hints": [
-        "Ai sở hữu chiếc xà gạc khắc chữ 'B', tháo rơ-le máy ấp trứng tạo bẫy nhiệt và giấu tiền quỹ cùng chiêng cổ sau nhà?",
-        "Xem xét kỹ các bằng chứng vật chất và báo cáo kỹ thuật hình sự."
+        "Ai là người sở hữu xà gạc dính máu, biết kỹ thuật đấu nối đui đèn điện bẫy nhiệt và giấu tượng ngọc trong bồ thóc?",
+        "Đối chiếu mẫu bùn đỏ pha cát vàng dính trên gấu quần nghi phạm với vết đất chân cầu thang nhà già làng."
       ],
       "explanation": [
-        "Y Bang là kẻ thủ ác. Y dùng xà gạc khắc chữ B (d05, d13) sát hại cha nuôi lúc 19h45 (d03), dùng rơ-le máy ấp trứng (d10, d11, d12) hẹn giờ đốt kho rồi ra nhà rông tạo ngoại phạm, sau đó giấu tiền quỹ và chiêng cổ ở chuồng heo nhà mình (d14, d15, d16)."
+        "Y Bang là thủ phạm duy nhất. Lòng tham chiếm đoạt bảo vật cổ của buôn làng kết hợp thủ đoạn tạo bẫy nhiệt phóng hỏa che giấu tội ác đã bị bóc trần hoàn toàn."
       ]
     }
   ],

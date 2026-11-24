@@ -30,13 +30,4 @@
   - Hóa đơn mua ống nhựa PVC phi 90 và nắp bịt ren chống thấm tại tiệm kim khí phố Lê Lợi mang tên Bảo vào sáng 15/7 Âm lịch.
   - Dây cước đen buộc chặt vào khe gạch đá giếng cổ dẫn thẳng xuống ống nhựa chứa bức tranh lụa cổ nguyên vẹn dưới nước giếng.
 
-## 4. Cấu trúc câu hỏi & Trọng điểm
-- **Trọng điểm 1**: Khám phá vụ mất trộm tranh cổ và hiện trường giếng Bá Lễ.
-  - Tài liệu d01 - d05: Bản tin địa phương, biên bản hiện trường từ đường, ảnh chụp giếng Bá Lễ và bậc đá dính bùn vàng, sơ đồ ngõ từ đường ra giếng cổ, biên bản xác minh giá trị bức tranh.
-  - Câu hỏi 1 (evidence): Ghim 2 tài liệu phản ánh dấu vết khả nghi liên quan đến nguồn nước ngầm và bùn rêu nơi giếng cổ Bá Lễ. Đáp án: d02, d03.
-- **Trọng điểm 2**: Lời khai các nghi phạm và bức ảnh bằng chứng ngoại phạm.
-  - Tài liệu d06 - d09: Lời khai Lương Gia Bảo, ảnh chụp Bảo ngồi ăn ở quán cơm gà có đồng hồ chỉ 12h15, lời khai thợ mộc Nguyễn Văn Trực, lời khai chủ hiệu đồ cổ Trần Khắc Định.
-  - Câu hỏi 2 (line): Dòng lời khai nào của Lương Gia Bảo khẳng định y ngồi ăn cơm gà từ đúng 11h30 đến 13h30 trưa không hề rời quán? Đáp án: d06:003.
-- **Trọng điểm 3**: Bóc trần góc bóng nắng giả mạo và tìm lại cổ vật.
-  - Tài liệu d10 - d15: Bản giám định quang học góc bóng nắng trên bức ảnh cơm gà, hóa đơn mua ống nhựa PVC chống nước, biên bản trục vớt ống tranh dưới lòng giếng Bá Lễ, lời khai của chủ quán cơm gà, biên bản thu hồi tài sản và tự thú.
-  - Câu hỏi 3 (choice): Ai là thủ phạm đã trộm bức tranh lụa và giấu xuống giếng cổ Bá Lễ? Đáp án: Lương Gia Bảo.
+## 4. Cấu trúc câu hỏi & Trọng điểm (Đã nâng cấp độ khó x5)

@@ -29,13 +29,4 @@
   - Trên phím đàn sừng trâu tìm thấy dấu vết mật ong và thạch tín.
   - Trong ống tay áo tứ thân của Chu Văn Bình còn giấu chiếc khăn tay lụa dính vết mật ong vàng sẫm và dấu bột thạch tín trùng khớp với bột độc trên phím đàn.
 
-## 4. Cấu trúc câu hỏi & Trọng điểm
-- **Trọng điểm 1**: Hiện trường án mạng và phương thức gây án ban đầu.
-  - Tài liệu: d01 (Báo địa phương), d02 (Biên bản hiện trường), d03 (Sơ đồ đình cổ và buồng hóa trang), d04 (Ảnh chụp cây đàn đáy và hộp đồ nghề), d05 (Khám nghiệm tử thi sơ bộ), d06 (Lời khai sơ bộ của đào nương Ánh Tuyết).
-  - Câu hỏi 1 (evidence): Hãy chỉ ra 2 tài liệu chứng minh chất độc gây tử vong không phải do nạn nhân uống vào dạ dày qua chén trà sen mà ngấm qua đường miệng/họng. Đáp án: d04, d05.
-- **Trọng điểm 2**: Mâu thuẫn lời khai và vật phẩm nhiễm độc.
-  - Tài liệu: d07 (Lời khai Chu Văn Bình), d08 (Lời khai Đỗ Trọng Toàn), d09 (Lời khai bà Mùi bán nước chè), d10 (Báo cáo hóa nghiệm phím đàn sừng trâu và chén trà), d11 (Sổ thu chi của gánh hát).
-  - Câu hỏi 2 (line): Dòng lời khai nào của Chu Văn Bình tố cáo y nói dối về việc không hề lại gần tráp nhạc cụ của cụ Cửu trong buồng hóa trang trước giờ diễn? Đáp án: d07:008.
-- **Trọng điểm 3**: Phơi bày hung thủ và tang vật quyết định.
-  - Tài liệu: d12 (Biên bản thu giữ đồ vật cá nhân của Chu Văn Bình), d13 (Ảnh chụp chiếc khăn lụa dính mật ong và mẩu sừng trâu vụn trong túi áo Bình), d14 (Biên bản thẩm vấn hiệu thuốc bắc Nam Hòa Đường), d15 (Bản kết luận điều tra).
-  - Câu hỏi 3 (choice): Ai là hung thủ đã sát hại cụ Phan Bá Cửu? Đáp án: Chu Văn Bình.
+## 4. Cấu trúc câu hỏi & Trọng điểm (Đã nâng cấp độ khó x5)

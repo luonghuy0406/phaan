@@ -264,81 +264,105 @@
       "id": "q1",
       "stage": 1,
       "type": "evidence",
-      "title": "Phương thức trúng độc thật sự",
-      "intro": "Đào nương Ánh Tuyết bị nghi bỏ độc vào chén trà sen dâng cụ Cửu. Hãy đối chiếu các tài liệu đã mở ở Trọng điểm 1 để chỉ ra: Nạn nhân không chết vì uống trà sen mà do chất độc ngấm qua một vật dụng bất thường trong miệng.",
-      "prompt": "Ghim 2 tài liệu chứng minh chất độc gây tử vong không nằm trong dịch dạ dày mà tiếp xúc trực tiếp qua niêm mạc miệng và liên quan đến vật dụng nhạc cụ của nạn nhân.",
+      "title": "Phương thức trúng độc niêm mạc miệng",
+      "intro": "Nghệ nhân Phan Bá Cửu gục chết ngay trong lúc biểu diễn đêm hội rằm Phố Hiến. Cơ quan điều tra cần xác định đường xâm nhập của độc chất.",
+      "prompt": "Ghim 2 tài liệu chứng minh chất độc gây tử vong không nằm trong dịch dạ dày mà tiếp xúc trực tiếp qua niêm mạc miệng và liên quan đến vật dụng nhạc cụ của cụ Cửu.",
       "need": 2,
       "answer": [
         "d04",
         "d05"
       ],
       "hints": [
-        "Hãy đọc kỹ kết quả khám nghiệm tử thi sơ bộ xem dịch dạ dày của nạn nhân có độc hay không.",
-        "Xem ảnh chụp hiện trường để tìm chi tiết bất thường trên vật dụng của cụ Cửu."
+        "Ảnh chụp cây đàn đáy và hộp tráp gỗ đựng móng gảy của nghệ nhân.",
+        "Biên bản giám định pháp y sơ bộ về niêm mạc lưỡi và khoang miệng."
       ],
       "explanation": [
-        "Tài liệu d05 (Khám nghiệm tử thi) chỉ rõ dạ dày nạn nhân gần như rỗng, không chứa độc tố nguy hiểm, trong khi niêm mạc lưỡi và miệng có nồng độ thạch tín cực cao.",
-        "Tài liệu d04 (Ảnh chụp cây đàn và tráp gỗ) ghi nhận phím gảy đàn đáy bằng sừng trâu có lớp màng nhờn mờ đục bất thường ở chuôi cầm."
-      ],
-      "nudges": [
-        {
-          "picks": [
-            "d02",
-            "d05"
-          ],
-          "message": "d02 ghi nhận hiện trường chung, nhưng tài liệu d04 mới đặc tả chi tiết bất thường trên phím gảy đàn đáy."
-        },
-        {
-          "picks": [
-            "d01",
-            "d06"
-          ],
-          "message": "Báo chí và lời khai Ánh Tuyết chưa cung cấp bằng chứng y khoa và dấu vết kỹ thuật hình sự."
-        }
+        "Tài liệu d04 chụp cây đàn đáy và các phím đàn nơi nghệ nhân tiếp xúc ngón tay và móng gảy.",
+        "Tài liệu d05 xác nhận dịch dạ dày không có độc nhưng niêm mạc môi và đầu lưỡi phù nề hoại tử do tiếp xúc chất kịch độc alcaloid."
       ]
     },
     {
       "id": "q2",
       "stage": 2,
       "type": "line",
-      "title": "Lời khai dối trá của kép đàn Chu Văn Bình",
-      "intro": "Chu Văn Bình khẳng định mình ngồi suốt ở quán nước chè và không hề bước chân vào buồng hóa trang chứa tráp đàn của thầy.",
-      "prompt": "Hãy chọn một dòng trong lời khai của Chu Văn Bình (d07) bị lời khai của bà bán nước chè (d09) vạch trần là dối trá về việc có mặt ở buồng hóa trang.",
+      "title": "Lời khai dối trá về buồng hóa trang",
+      "intro": "Các đào nương và kép đàn tại đình Hoa Nguyệt đều được lấy lời khai về hành tung trước giờ biểu diễn.",
+      "prompt": "Đối chiếu lời khai của các nghệ nhân với nhân chứng bán nước chè cổng đình, hãy chỉ ra dòng lời khai của nghi phạm chối bỏ việc bước chân vào buồng hóa trang trước giờ diễn xướng nhưng thực tế đã bị nhìn thấy?",
       "answer": [
         "d07:008"
       ],
       "hints": [
-        "So sánh lời khai về sự có mặt của Bình giữa d07 và d09.",
-        "Chú ý dòng Bình khẳng định tuyệt đối không bước chân vào buồng hóa trang hay chạm vào tráp đồ nghề."
+        "Rà soát lời khai của kép đàn phụ để tìm câu khẳng định ngồi ở sân đình xem hát chứ không vào hậu trường.",
+        "Đối chiếu với lời khai của bà bán nước chè nhìn thấy bóng người bước vào buồng hóa trang lúc chạng vạng."
       ],
       "explanation": [
-        "Tại dòng d07:008, Chu Văn Bình khai: 'Tôi tuyệt đối không hề bước chân vào buồng hóa trang phía sau và cũng không bao giờ chạm tay vào tráp đồ nghề của thầy'.",
-        "Lời khai của bà Mùi (d09:003, d09:004) vạch trần Bình đã lén đi vào ngách dẫn thẳng vào buồng hóa trang lúc 19h25 và ở đó đến gần 19h40 mới quay lại."
+        "Tại d07 dòng 008, Chu Văn Bình khai: 'Suốt từ 18h30 đến khi cụ Cửu lên sân khấu, tôi ngồi uống nước chè ở gốc đa ngoài cổng đình nghe hát, tuyệt đối không hề bước chân vào buồng hóa trang của cụ Cửu'. Lời này bị bà Mùi d09 vạch trần khi thấy Bình lẻn vào buồng hóa trang lúc 18h45."
       ]
     },
     {
       "id": "q3",
-      "stage": 3,
-      "type": "choice",
-      "title": "Chỉ mặt hung thủ",
-      "intro": "Các chứng cứ hóa nghiệm và tang vật thu giữ đã sáng tỏ toàn bộ động cơ và thủ đoạn tinh vi của vụ án.",
-      "prompt": "Dựa vào toàn bộ hồ sơ, ai là thủ phạm đã đầu độc sát hại cụ Phan Bá Cửu?",
-      "options": [
-        "Đào nương Nguyễn Thị Ánh Tuyết",
-        "Kép đàn Chu Văn Bình",
-        "Quản lý Đỗ Trọng Toàn",
-        "Bà bán nước chè Lê Thị Mùi"
-      ],
+      "stage": 2,
+      "type": "evidence",
+      "title": "Cơ chế tẩm độc phím đàn và thói quen diễn tấu",
+      "intro": "Ban chuyên án kiểm tra kỹ lưỡng các nhạc cụ và thói quen của nghệ nhân trước khi so dây.",
+      "prompt": "Ghim 2 tài liệu chứng minh chất độc lá ngón được bôi tinh vi lên phím đàn đáy số 3 và thói quen liếm ngón tay vuốt phím của cụ Phan Bá Cửu.",
+      "need": 2,
       "answer": [
-        1
+        "d10",
+        "d11"
       ],
       "hints": [
-        "Xem xét người đã mua thạch tín ở hiệu thuốc bắc và cất giữ khăn lụa dính mật ong độc.",
-        "Ai có động cơ đố kỵ và hiểu rõ thói quen ngậm phím đàn của cụ Cửu?"
+        "Bản kết quả hóa nghiệm tang vật xác định dư lượng nhựa độc lá ngón trên phím đàn.",
+        "Trích bút ký về thói quen ngậm móng gảy và liếm đầu ngón tay làm ẩm phím khi so dây của cụ Cửu."
       ],
       "explanation": [
-        "Chu Văn Bình là thủ phạm duy nhất biết rõ thói quen ngậm phím đàn sừng trâu của cụ Cửu (d11).",
-        "Y đã lén bôi thạch tín hòa mật ong lên phím đàn, mua thạch tín ở tiệm Nam Hòa Đường (d14) và bị bắt quả tang chiếc khăn lụa dính vết mật ong độc trong túi áo (d12, d13)."
+        "Tài liệu d10 phát hiện alcaloid độc tố lá ngón bám trên bề mặt phím đàn số 3.",
+        "Tài liệu d11 ghi chép thói quen nghề nghiệp của cụ Cửu là luôn liếm đầu ngón tay trỏ miết qua phím số 3 trước khi đệm bài hát chầu văn, khiến chất độc ngấm thẳng qua niêm mạc lưỡi."
+      ]
+    },
+    {
+      "id": "q4",
+      "stage": 3,
+      "type": "evidence",
+      "title": "Tang vật bột độc và đơn thuốc bắc",
+      "intro": "Khám xét tư trang nghi phạm và xác minh các hiệu thuốc bắc trên địa bàn Phố Hiến.",
+      "prompt": "Ghim 2 tài liệu chứng minh nguồn gốc chất độc lá ngón thu giữ trong tư trang nghi phạm và chứng cứ xác minh việc bí mật mua độc dược tại hiệu thuốc bắc Nam Hòa Đường.",
+      "need": 2,
+      "answer": [
+        "d13",
+        "d14"
+      ],
+      "hints": [
+        "Ảnh tang vật chiếc khăn lụa tẩm nhựa độc và lọ bột lá ngón thu trong hòm đồ diễn của nghi phạm.",
+        "Biên bản xác minh tại hiệu thuốc bắc Nam Hòa Đường về người mua vị thuốc lá ngón sấy khô."
+      ],
+      "explanation": [
+        "Tài liệu d13 chụp chiếc khăn lụa lau đàn dính nhựa độc và lọ bột lá ngón thu trong túi áo của Chu Văn Bình.",
+        "Tài liệu d14 xác nhận Bình đã bí mật đến hiệu thuốc Nam Hòa Đường mua lá ngón khô lấy cớ để bẫy chuột phá kho thóc."
+      ]
+    },
+    {
+      "id": "q5",
+      "stage": 3,
+      "type": "choice",
+      "title": "Bản kết luận điều tra toàn diện vụ án tiếng đàn đáy Phố Hiến",
+      "intro": "Toàn bộ chứng cứ về chất độc trên phím đàn, lời khai dối trá và tang vật hiệu thuốc bắc đã phơi bày chân tướng kẻ thủ ác.",
+      "prompt": "Dựa vào toàn bộ hồ sơ, ai là thủ phạm đã đầu độc sát hại cụ Phan Bá Cửu, bằng thủ đoạn nào và vì động cơ gì?",
+      "options": [
+        "Chu Văn Bình do ghen ghét tài năng và đố kỵ danh tiếng nghệ nhân nhân dân của cụ Cửu, sợ bị tước vai kép chính trong chuyến lưu diễn nước ngoài, đã mua lá ngón bôi lên phím đàn số 3 lợi dụng thói quen liếm ngón tay của cụ để đầu độc sát hại.",
+        "Đào nương Nguyễn Thị Ánh Tuyết do mâu thuẫn tình cảm bị từ chối, đã tẩm độc vào chén trà gừng mời cụ Cửu uống trước giờ diễn xướng.",
+        "Quản lý phường Đỗ Trọng Toàn do nợ nần tiền thù lao biểu diễn, đã lén tẩm độc vào micro trên sân khấu nhằm chiếm đoạt quỹ đoàn.",
+        "Một kẻ buôn cổ vật lạ mặt đột nhập đình Hoa Nguyệt định trộm cây đàn đáy cổ nhưng bị phát hiện nên đã hạ độc cụ Cửu."
+      ],
+      "answer": [
+        0
+      ],
+      "hints": [
+        "Ai là người biết rõ thói quen vuốt phím số 3 của cụ Cửu và có mặt ở buồng hóa trang trước giờ diễn?",
+        "Đối chiếu tang vật khăn lụa tẩm độc và chứng cứ mua lá ngón tại hiệu thuốc bắc Nam Hòa Đường."
+      ],
+      "explanation": [
+        "Chu Văn Bình là thủ phạm duy nhất. Động cơ đố kỵ nghệ thuật tàn nhẫn kết hợp thủ đoạn tẩm độc phím đàn tinh vi đã bị vạch trần bởi tang vật khăn lụa và lời chứng của hiệu thuốc bắc."
       ]
     }
   ],

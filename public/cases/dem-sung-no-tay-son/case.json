@@ -228,103 +228,107 @@
       "stage": 1,
       "type": "evidence",
       "title": "Hung khí quân dụng và dấu vết đạn đạo",
-      "intro": "Vụ cướp có vũ trang để lại hiện trường đầy dấu vết súng đạn quân dụng trong đêm mưa giông.",
-      "prompt": "Ghim 2 tài liệu chứng minh hung khí gây án là súng ngắn quân dụng K54 cỡ 7.62mm qua kết quả giám định tử thi và ảnh chụp 3 vỏ đạn dập năm 1968.",
+      "intro": "Vụ cướp tiệm vàng Kim Sinh đêm giao thừa gây chấn động dư luận Thủ đô. Cơ quan điều tra cần xác định vũ khí gây án.",
+      "prompt": "Ghim 2 tài liệu chứng minh hung khí gây án là súng ngắn quân dụng K54 cỡ 7.62mm thông qua thương tích tử thi và dấu vết vỏ đạn thu tại hiện trường.",
       "need": 2,
       "answer": [
         "d03",
         "d05"
       ],
       "hints": [
-        "Kiểm tra kết quả giám định tử thi về 2 đầu đạn bọc đồng 7.62mm rãnh xoắn K54.",
-        "Xem ảnh chụp cận cảnh 3 vỏ đạn đồng dập số hiệu năm '1968 - K54' thu tại quầy thu ngân.",
-        "Xem xét kỹ các bằng chứng vật chất và báo cáo kỹ thuật hình sự."
+        "Kết quả giám định tử thi nạn nhân chủ tiệm vàng về đường đạn xuyên phá.",
+        "Ảnh chụp 3 vỏ đạn dập năm 1968 và đầu đạn thu gom tại quầy vàng."
       ],
       "explanation": [
-        "Tài liệu d03 xác nhận nạn nhân tử vong do đạn súng ngắn quân dụng K54 cỡ 7.62mm.",
-        "Tài liệu d05 (ảnh chụp) thể hiện 3 vỏ đạn đồng dập năm 1968 và đầu đạn biến dạng thu tại hiện trường."
-      ],
-      "nudges": [
-        {
-          "picks": [
-            "d01",
-            "d02"
-          ],
-          "message": "Bản tin và biên bản hiện trường ban đầu chưa nêu phân tích rãnh xoắn nòng súng 4 rãnh và con số năm 1968 dập đáy đạn."
-        }
+        "Tài liệu d03 xác nhận nạn nhân bị bắn bởi đạn súng ngắn quân dụng cỡ 7.62x25mm Tokarev xuyên phá tim phổi.",
+        "Tài liệu d05 chụp 3 vỏ đạn đồng dập số hiệu 71-68 (nhà máy 71 sản xuất năm 1968) đặc trưng của súng K54."
       ]
     },
     {
       "id": "q2",
       "stage": 2,
       "type": "line",
-      "title": "Bằng chứng ngoại phạm của thợ bạc cũ Đông",
-      "intro": "Thợ bạc cũ Nguyễn Văn Đông đưa ra lời khai khẳng định mình ở nhà bố mẹ đẻ suốt buổi tối xảy ra án mạng.",
-      "prompt": "Hãy chọn một dòng trong lời khai của Nguyễn Văn Đông (d06) khẳng định y ở lì tại nhà bố mẹ đẻ bên Gia Lâm từ 20h00 đến sáng hôm sau không hề sang nội thành.",
+      "title": "Bằng chứng ngoại phạm của người làm cũ",
+      "intro": "Các thợ kim hoàn và người quen biết quy luật hoạt động của tiệm vàng đều nằm trong diện rà soát.",
+      "prompt": "Trong các biên bản hỏi cung người có liên quan tại khu vực phố Tây Sơn, hãy chỉ ra dòng lời khai nại ra lý do ở lì bên Gia Lâm suốt đêm giao thừa nhưng thực chất đã bị bác bỏ?",
       "answer": [
         "d06:003"
       ],
       "hints": [
-        "Tìm dòng lời khai nói về việc Đông ở nhà bố mẹ đẻ tại Gia Lâm từ 20h00 đến sáng hôm sau.",
-        "Đối chiếu mốc thời gian và hành vi của người khai với các nhân chứng xung quanh."
+        "Rà soát lời khai của thợ kim hoàn cũ để tìm người khẳng định ở nhà bố mẹ đẻ không sang nội thành.",
+        "Tìm câu quả quyết ở trong nhà nghe pháo giao thừa từ 20h00 đến sáng hôm sau."
       ],
       "explanation": [
-        "Tại dòng d06:003, Đông khai: 'Tối qua từ 20h00 đến sáng hôm sau tôi ở lì tại nhà bố mẹ đẻ bên Gia Lâm ăn cơm và ngủ với vợ con, không hề bước chân sang nội thành'."
+        "Tại d06 dòng 003, Nguyễn Văn Đông khai: 'Từ 20h00 đêm 30 Tết tôi ở lì tại nhà bố mẹ đẻ bên Bồ Đề, Gia Lâm ăn tất niên và đón giao thừa, không hề bước chân qua cầu Long Biên sang nội thành nửa bước cho tới tận trưa mùng 1 Tết'."
       ]
     },
     {
       "id": "q3",
       "stage": 3,
       "type": "evidence",
-      "title": "Dấu vân tay then chốt và rãnh xoắn khẩu súng K54",
-      "intro": "Lần theo dấu vết tẩu thoát, cơ quan điều tra đã xác định chính xác danh tính kẻ thủ ác.",
-      "prompt": "Ghim 2 tài liệu chỉ ra kết quả giám định đạn đạo rãnh xoắn đặc thù và dấu vân tay của đối tượng truy nã Phạm Đức Thắng trên vỏ bao thuốc lá rơi lại hiện trường.",
-      "need": 2,
+      "title": "Vỏ đạn K54, rãnh xoắn nòng súng và dấu vân tay then chốt",
+      "intro": "Ban chuyên án đối chiếu hồ sơ tàng thư căn cước và kỹ thuật đạn đạo hình sự.",
+      "prompt": "Ghim 3 tài liệu liên kết 3 vỏ đạn K54 thu tại hiện trường (Vòng 1) với báo cáo giám định rãnh xoắn nòng súng của đối tượng truy nã (Vòng 3) và dấu vân tay trên vỏ bao thuốc lá rơi lại ngõ thoát hiểm (Vòng 3).",
+      "need": 3,
       "answer": [
+        "d05",
         "d10",
         "d11"
       ],
       "hints": [
-        "Báo cáo giám định đạn đạo về vết xước dọc ở rãnh xoắn số 2 trên nòng súng K54.",
-        "Ảnh chụp dấu vân tay trên vỏ bao thuốc lá Du Lịch trùng khớp với tàng thư căn cước của Phạm Đức Thắng.",
-        "Xem xét kỹ các bằng chứng vật chất và báo cáo kỹ thuật hình sự."
+        "Ảnh chụp 3 vỏ đạn K54 dập năm 1968 thu tại quầy vàng (ở Vòng 1).",
+        "Báo cáo đạn đạo xác định 4 rãnh xoắn nghiêng phải có vết xước khuyết tật của khẩu K54 số hiệu 140228.",
+        "Ảnh dấu vân tay ngón trỏ phải trên vỏ bao thuốc lá Du Lịch trùng khớp với tàng thư chỉ bản của Phạm Đức Thắng."
       ],
       "explanation": [
-        "Tài liệu d10 khẳng định 3 vỏ đạn được bắn từ cùng một khẩu K54 có rãnh xoắn bị xước đặc thù.",
-        "Tài liệu d11 (ảnh vân tay) xác định dấu vân tay trên vỏ bao thuốc lá Du Lịch chính là của tên cướp trốn nã Phạm Đức Thắng."
-      ],
-      "nudges": [
-        {
-          "picks": [
-            "d12",
-            "d13"
-          ],
-          "message": "d12 và d13 là xác minh bến phà và ngoại phạm của Đông; hãy chọn báo cáo đạn đạo d10 và ảnh dấu vân tay d11."
-        }
+        "Tài liệu d05 là vật chứng vỏ đạn ban đầu tại hiện trường.",
+        "Tài liệu d10 khẳng định cả 3 viên đạn đều bắn ra từ khẩu súng K54 số hiệu 140228 do đối tượng đặc biệt nguy hiểm Phạm Đức Thắng cướp khi trốn trại giam.",
+        "Tài liệu d11 chứng minh dấu vân tay trên bao thuốc lá d09 vứt lại ở ngõ thoát hiểm chính là của Phạm Đức Thắng."
       ]
     },
     {
       "id": "q4",
       "stage": 4,
+      "type": "evidence",
+      "title": "Lộ trình đào tẩu qua bến phà và tang vật vàng cướp được",
+      "intro": "Lần theo dấu vết vượt sông Hồng và tiến hành vây bắt khẩn cấp hang ổ của kẻ thủ ác.",
+      "prompt": "Ghim 2 tài liệu chứng minh lộ trình tẩu thoát qua sông Hồng trong đêm giao thừa và biên bản khai quật thu hồi hơn 100 lượng vàng chôn giấu tại bãi bồi ven sông.",
+      "need": 2,
+      "answer": [
+        "d12",
+        "d15"
+      ],
+      "hints": [
+        "Biên bản xác minh bến phà Đen ghi nhận đối tượng đi xe máy qua phà lúc 01h15 sáng mùng 1 Tết.",
+        "Biên bản đào bới thu hồi các bọc vàng miếng SJC và vàng trang sức chôn giấu dưới bãi ngô sông Hồng."
+      ],
+      "explanation": [
+        "Tài liệu d12 ghi nhận lời khai người lái phà Đen chở một đối tượng có nhân dạng giống Thắng mang túi nặng qua sông trong đêm.",
+        "Tài liệu d15 thể hiện lực lượng công an đã đào bới thu hồi 108 lượng vàng ta và vàng tây cùng số tiền mặt cướp được chôn dưới bãi cát ven sông Hồng."
+      ]
+    },
+    {
+      "id": "q5",
+      "stage": 4,
       "type": "choice",
-      "title": "Thủ phạm vụ cướp tiệm vàng Kim Sinh",
-      "intro": "Khẩu súng K54 còn lên nòng và hơn 100 lượng vàng thu giữ tại bãi sông Hồng đã hoàn toàn vạch trần kẻ sát nhân máu lạnh.",
-      "prompt": "Dựa vào toàn bộ tài liệu hồ sơ, ai là kẻ đã mang vũ khí nóng bắn gục gia đình chủ tiệm và cướp hơn 100 lượng vàng đêm 18/07/1999?",
+      "title": "Bản kết luận điều tra toàn diện chuyên án phố Tây Sơn",
+      "intro": "Khẩu súng ngắn K54, dấu vân tay trên bao thuốc lá và kho vàng chôn giấu đã vạch trần toàn bộ sự thật.",
+      "prompt": "Dựa vào toàn bộ tài liệu hồ sơ, ai là kẻ đã mang vũ khí nóng bắn gục gia đình chủ tiệm vàng Kim Sinh cướp tài sản?",
       "options": [
-        "Phạm Đức Thắng (Thắng 'quạ')",
-        "Thợ bạc cũ Nguyễn Văn Đông",
-        "Chủ tiệm cầm đồ Trần Khắc Tuấn",
-        "Bảo vệ chùa Đồng Quang"
+        "Phạm Đức Thắng (đối tượng trốn trại đang bị truy nã đặc biệt) đã mang theo súng K54 cướp được, rình rập thời khắc giao thừa tiếng pháo nổ rộ để nổ súng sát hại vợ chồng chủ tiệm vàng, cướp hơn 100 lượng vàng rồi qua bến phà Đen tẩu thoát sang bãi sông Hồng chôn giấu.",
+        "Nguyễn Văn Đông do bị đuổi việc uất ức, đã mua súng K54 bắn chết chủ tiệm vàng rồi đem vàng sang Gia Lâm chôn giấu trong vườn nhà bố mẹ đẻ.",
+        "Trần Khắc Tuấn (chủ tiệm cầm đồ Giáp Bát) đã thuê một nhóm giang hồ cộm cán mang súng quân dụng cướp tiệm vàng Kim Sinh để trừ nợ lô đề.",
+        "Nhân viên bảo vệ chùa Đồng Quang thông đồng với kẻ cướp mở cửa ngõ chùa cho đối tượng tẩu thoát sau khi nổ súng cướp tiệm vàng."
       ],
       "answer": [
         0
       ],
       "hints": [
-        "Ai là đối tượng trốn nã sở hữu súng K54 nòng xước, đi xe Simson đỏ và để lại vỏ bao thuốc lá dính vân tay trong ngõ?",
-        "Xem xét kỹ các bằng chứng vật chất và báo cáo kỹ thuật hình sự."
+        "Ai là đối tượng sở hữu khẩu súng K54 có vân tay trên bao thuốc lá Du Lịch và có lộ trình qua bến phà Đen?",
+        "Đối chiếu kết quả khai quật thu hồi 108 lượng vàng tại bãi ngô sông Hồng với nơi ẩn náu của đối tượng truy nã."
       ],
       "explanation": [
-        "Phạm Đức Thắng là thủ phạm. Y nổ súng K54 sát hại nạn nhân lúc 22h45 (d03, d10), để lại vỏ bao thuốc lá dính vân tay (d09, d11), tẩu thoát bằng xe Simson (d08, d12) và bị bắt giữ cùng khẩu súng K54 và 102 lượng vàng chôn ở bãi sông Hồng (d14, d15, d16)."
+        "Phạm Đức Thắng là thủ phạm duy nhất. Bản chất tàn bạo của tên tội phạm trốn trại đã lên kế hoạch dùng tiếng pháo giao thừa át tiếng súng để cướp vàng và bị bắt cùng toàn bộ tang vật."
       ]
     }
   ],

@@ -32,16 +32,4 @@
   - Biểu đồ công tơ điện tử của kho lạnh số 2 ghi nhận cửa mở lâu và nhiệt độ dao động bất thường lúc 18h40 và 00h25.
   - Mẩu tàn thuốc lá Bastos đỏ Duẩn hút bị rơi kẹt dưới tấm pallet nhựa trong kho lạnh số 2.
 
-## 4. Cấu trúc câu hỏi & Trọng điểm
-- **Trọng điểm 1**: Phát hiện thi thể và ước tính thời điểm tử vong ban đầu.
-  - Tài liệu d01 - d05: Bản tin địa phương, biên bản hiện trường đồi thông, khám nghiệm tử thi ban đầu (ước tính tử vong 21h-22h), sơ đồ trang trại, ảnh hiện trường thi thể cạnh gốc thông.
-  - Câu hỏi 1 (evidence): Ghim 2 tài liệu phản ánh dấu vết vật lý trên người thi thể không khớp với môi trường tự nhiên của bìa rừng thông. Đáp án: d02, d05.
-- **Trọng điểm 2**: Xác minh bằng chứng ngoại phạm của các nghi phạm.
-  - Tài liệu d06 - d09: Lời khai Lâm Tuyết Mai, lời khai Hoàng Văn Duẩn, xác nhận của trưởng trạm khí tượng Trại Mát, lời khai lái buôn Trần Đại.
-  - Câu hỏi 2 (line): Dòng lời khai nào của Hoàng Văn Duẩn khẳng định y hoàn toàn không sử dụng hoặc vào kho lạnh số 2 từ sau giờ nghỉ chiều 17h00? Đáp án: d07:005.
-- **Trọng điểm 3**: Bằng chứng kỹ thuật và môi trường kho lạnh.
-  - Tài liệu d10 - d13: Kết quả phân tích bào tử phấn hoa trên áo nạn nhân, dữ liệu công tơ điện và nhiệt độ kho lạnh số 2, ảnh chụp máy làm đá vảy trong kho lạnh, biên bản kiểm tra rãnh thoát nước kho lạnh.
-  - Câu hỏi 3 (evidence): Ghim 2 tài liệu chứng minh thi thể nạn nhân từng bị lưu trữ trong kho lạnh số 2 trước khi được chuyển ra bìa rừng thông. Đáp án: d10, d11.
-- **Trọng điểm 4**: Kết luận hung thủ và giải mã bằng chứng ngoại phạm.
-  - Tài liệu d14 - d17: Biên bản đối chiếu mẩu thuốc lá Bastos đỏ, đối chiếu thời gian co cứng trong nhiệt độ lạnh sâu, bản tự thú của Duẩn, bản kết luận vụ án.
-  - Câu hỏi 4 (choice): Ai là thủ phạm đã sát hại ông Lâm Khải và ngụy tạo thời điểm tử vong bằng kho lạnh? Đáp án: Hoàng Văn Duẩn.
+## 4. Cấu trúc câu hỏi & Trọng điểm (Đã nâng cấp độ khó x5)

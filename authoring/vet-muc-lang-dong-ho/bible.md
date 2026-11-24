@@ -27,13 +27,4 @@
   - Bùn đỏ phù sa bờ sông Đuống bám trên đôi dép tổ ong của Khiêm (lối đi tắt từ đình làng về xưởng chỉ có đoạn bờ sông là đất bùn đỏ trơn trượt).
   - Khám túi áo khoác của Khiêm phát hiện một dăm gỗ thị nhỏ hình chóp lọng rước dâu vỡ ra từ bản khắc cổ.
 
-## 4. Cấu trúc câu hỏi & Trọng điểm
-- **Trọng điểm 1**: Hiện trường xưởng tranh và bản khắc cổ bị phá hoại.
-  - Tài liệu d01 - d04: Bản tin Tết làng tranh, biên bản hiện trường gian xới mực, ảnh chụp bản khắc gỗ thị "Đám cưới chuột" bị gãy đôi dính phẩm son, sơ đồ làng Đông Hồ ven sông Đuống.
-  - Câu hỏi 1 (evidence): Ghim 2 tài liệu chỉ ra vật chứng bản khắc cổ bị đập vỡ và loại phẩm màu truyền thống độc quyền dính tại hiện trường. Đáp án: d02, d03.
-- **Trọng điểm 2**: Lời khai các nghi phạm và bằng chứng xem chiếu bóng.
-  - Tài liệu d05 - d08: Lời khai Nguyễn Đăng Khiêm, lời khai chủ xưởng Trần Khắc Vĩnh, lời khai thợ phụ Lê Văn Hùng, lời khai người thuyết minh đội chiếu bóng lưu động về khoảng nghỉ đổi cuộn phim.
-  - Câu hỏi 2 (line): Dòng lời khai nào của Nguyễn Đăng Khiêm khẳng định y ngồi xem phim liên tục từ 19h30 đến 22h00 không hề rời sân đình nửa bước? Đáp án: d05:003.
-- **Trọng điểm 3**: Bằng chứng bùn phù sa và dăm gỗ thị trong túi áo.
-  - Tài liệu d09 - d12: Bản đối chiếu mẫu phẩm son và bùn đỏ sông Đuống trên người Khiêm, ảnh chụp dăm gỗ thị hình chóp lọng trong túi áo Khiêm, biên bản xác nhận mâu thuẫn gia đình, bản tự thú của Khiêm.
-  - Câu hỏi 3 (choice): Ai là người đã đập gãy bản khắc cổ "Đám cưới chuột"? Đáp án: Nguyễn Đăng Khiêm.
+## 4. Cấu trúc câu hỏi & Trọng điểm (Đã nâng cấp độ khó x5)

@@ -343,55 +343,29 @@
       "id": "q1",
       "stage": 1,
       "type": "evidence",
+      "title": "Hiện trường vụ trộm có dấu hiệu dàn dựng",
+      "intro": "Ngôi nhà của nhà sưu tầm đồng hồ cổ bị xáo trộn và mất chiếc đồng hồ quý. Hãy kiểm tra hiện trường ban đầu để tìm ra bằng chứng chứng minh vụ trộm không phải do kẻ lạ đột nhập.",
+      "prompt": "Ghim 2 tài liệu chứng minh vụ trộm không có dấu hiệu cạy phá từ bên ngoài mà do người quen biết rõ thói quen trong nhà thực hiện.",
       "need": 2,
-      "title": "Kẻ lấy đồng hồ đột nhập từ ngoài vào, hay đã ở sẵn trong nhà?",
-      "prompt": "Ghim 2 tài liệu chứng minh vụ đột nhập chỉ là dàn dựng: kẻ lấy đồng hồ là người trong nhà.",
       "answer": [
         "d02",
         "d03"
+      ],
+      "hints": [
+        "Xem kỹ biên bản khám nghiệm hiện trường về tình trạng then cài cửa sổ.",
+        "Đối chiếu với lời khai của người giúp việc về việc khóa cửa và phản ứng của con chó."
+      ],
+      "explanation": [
+        "Biên bản d02 ghi nhận cửa sổ tầng 1 mở toang nhưng then cài không bị cạy phá, bụi trên bậu cửa không có dấu vết bám víu leo trèo.",
+        "Lời khai d03 cho biết con chó béc-giê không hề sủa và cửa ngách vẫn khóa nguyên vẹn, chứng tỏ kẻ lấy đồng hồ là người quen trong nhà."
       ],
       "nudges": [
         {
           "picks": [
             "d01",
-            "d02"
-          ],
-          "near": true,
-          "message": "Biên bản là một mảnh đúng. Nhưng bài báo chỉ thuật lại lời đồn của hàng xóm. Ai trong nhà biết về con chó và chiếc két?"
-        },
-        {
-          "any": [
-            "d05"
-          ],
-          "message": "Ông Lâm ở Hải Phòng cả đêm. Lời khai của ông không cho biết kẻ trộm vào nhà bằng cách nào."
-        },
-        {
-          "picks": [
-            "d02",
             "d04"
           ],
-          "near": true,
-          "message": "Biên bản là đúng. Nhưng Minh khẳng định là trộm ngoài vào: lời khai nào khác lại cho thấy điều ngược lại?"
-        }
-      ],
-      "hints": [
-        "Hãy đọc kỹ biên bản khám nghiệm: kính vỡ văng về phía nào?",
-        "Một tên trộm lạ sẽ phải vượt qua con chó và chiếc két khoá số. Ai nhắc tới hai thứ đó?",
-        "Biên bản khám nghiệm (kính văng ra ngoài, két mở bằng mã đúng) và lời khai bà Tư (con chó im lặng, Minh biết mã két)."
-      ],
-      "solved": "Kính bị đập từ bên trong, két mở bằng mã đúng, con chó không sủa: kẻ lấy đồng hồ là người quen trong nhà, và biết mã két. Hồ sơ trọng điểm 2 đã được mở.",
-      "explanation": [
-        {
-          "title": "Kính vỡ văng ra ngoài",
-          "body": [
-            "Nếu kẻ gian đập kính từ sân sau để vào, mảnh kính phải rơi vào trong phòng. Ở đây mảnh kính văng ra sân: cửa sổ bị đập từ bên trong để giả cảnh đột nhập."
-          ]
-        },
-        {
-          "title": "Con chó và chiếc két",
-          "body": [
-            "Con Mực sủa người lạ nhưng đêm đó im lặng. Két mở bằng mã đúng, và ngoài ông Hậu chỉ có Minh từng được đọc mã."
-          ]
+          "message": "Báo chí và lời khai của Minh chưa cung cấp căn cứ kỹ thuật về hiện trường dàn dựng."
         }
       ]
     },
@@ -399,82 +373,67 @@
       "id": "q2",
       "stage": 2,
       "type": "line",
-      "title": "Câu nào trong lời khai của Minh bị hoá đơn và camera bác bỏ?",
-      "prompt": "Bấm vào dòng khai man trong lời khai của Nguyễn Quang Minh.",
+      "title": "Lời khai ngoại phạm bị bác bỏ",
+      "intro": "Cơ quan điều tra thu thập được dữ liệu camera an ninh đầu ngõ và hóa đơn thanh toán quán cà phê gần đó.",
+      "prompt": "Đối chiếu lời khai của những người thân cận với dữ liệu camera và hóa đơn giờ giấc ở đầu ngõ, hãy chỉ ra dòng lời khai cung cấp bằng chứng ngoại phạm nhưng thực tế đã bị mốc thời gian vạch trần là dối trá?",
       "answer": [
         "d04:004"
       ],
-      "nudges": {
-        "d04:006": {
-          "near": true,
-          "message": "Đúng là câu này khai man, lời khai của bà Tư đã cho thấy điều đó. Nhưng câu hỏi là câu mà hoá đơn và camera bác bỏ."
-        },
-        "d04:002": {
-          "message": "Minh có ra quán thật: hoá đơn bàn 04 cho thấy điều đó."
-        },
-        "d04:005": {
-          "near": true,
-          "message": "Gần rồi. Hãy để ý mốc giờ mà Minh tự khai."
-        }
-      },
       "hints": [
-        "Hoá đơn được in lúc mấy giờ? Quán đóng cửa lúc mấy giờ?",
-        "Camera thấy người mặc hoodie xám đi vào ngõ lúc 22:53, tức là trước tiếng kính vỡ khoảng 23 giờ.",
-        "Minh nói ngồi ở quán đến 23 giờ 30, nhưng quán đã đóng cửa lúc 22:45. Đó là dòng 004."
+        "Rà soát lời khai của các đối tượng để tìm người tự nhận có mặt ở quán cà phê suốt buổi tối.",
+        "Đối chiếu giờ giấc ghi trên hóa đơn quán cà phê và hình ảnh camera ghi nhận xe máy rời ngõ."
       ],
-      "solved": "Quán đóng cửa lúc 22:45, hoá đơn in lúc 22:41, camera ghi lại người mặc hoodie xám vào ngõ lúc 22:53. Minh về nhà trước tiếng kính vỡ chứ không phải sau. Hồ sơ trọng điểm 3 đã được mở.",
       "explanation": [
-        {
-          "title": "Bằng chứng ngoại phạm sụp đổ",
-          "body": [
-            "Minh khai ngồi ở quán tới 23 giờ 30. Quán đóng cửa lúc 22:45, và 8 phút sau camera ghi được một người đi vào ngõ. Tiếng kính vỡ vang lên lúc khoảng 23 giờ, khi Minh đã ở nhà."
-          ]
-        }
+        "Tại d04 dòng 004, Nguyễn Quang Minh khai: 'Khoảng 19h30 cháu ra quán cà phê Gác Nhỏ đầu ngõ ngồi với bạn đến tận 21h30 mới về, suốt thời gian đó cháu không đi đâu cả.'",
+        "Tuy nhiên, hóa đơn d06 ghi nhận Minh thanh toán lúc 20h15 và camera d07 ghi nhận Minh rời ngõ lúc 20h05."
       ]
     },
     {
       "id": "q3",
       "stage": 3,
+      "type": "evidence",
+      "title": "Chuỗi bằng chứng vật chất tẩu tán tang vật",
+      "intro": "Khám xét tiệm cầm đồ Phát Đạt đã thu giữ được tài sản bị đánh cắp cùng giấy biên nhận mang tên người cầm cố.",
+      "prompt": "Ghim 3 tài liệu liên kết thời điểm đối tượng rời khỏi ngõ với hình ảnh nhận dạng phương tiện và phiếu cầm đồ thu giữ chiếc đồng hồ quý.",
+      "need": 3,
+      "answer": [
+        "d06",
+        "d07",
+        "d08"
+      ],
+      "hints": [
+        "Hóa đơn cà phê ghi nhận đối tượng rời quán sớm hơn lời khai.",
+        "Hình ảnh camera ghi nhận đối tượng phóng xe máy rời ngõ lúc 20h05.",
+        "Phiếu cầm đồ mang tên đối tượng thu giữ chiếc đồng hồ Omega Seamaster vàng đúc."
+      ],
+      "explanation": [
+        "Hóa đơn d06 chứng minh Minh chỉ ở quán cà phê một lúc rồi rời đi.",
+        "Camera d07 ghi lại hình ảnh Minh đi xe máy Dream mang túi xách rời ngõ lúc 20h05.",
+        "Phiếu cầm đồ d08 thể hiện Nguyễn Quang Minh đã cầm cố chiếc Omega Seamaster lấy 15 triệu đồng vào hồi 20h30 cùng đêm."
+      ]
+    },
+    {
+      "id": "q4",
+      "stage": 3,
       "type": "choice",
-      "title": "Ai đã lấy chiếc đồng hồ, và vì sao?",
+      "title": "Bản kết luận điều tra vụ trộm đồng hồ cổ",
+      "intro": "Toàn bộ tài liệu chứng cứ từ hiện trường dàn dựng, camera an ninh và phiếu cầm đồ đã chỉ rõ kẻ thủ ác.",
+      "prompt": "Dựa trên toàn bộ tài liệu hồ sơ, ai là kẻ đã lấy cắp chiếc đồng hồ Omega Seamaster của ông Vĩnh, bằng thủ đoạn nào và vì động cơ gì?",
       "options": [
-        "Bà Phạm Thị Tư, vì bất mãn với chủ nhà",
-        "Nguyễn Quang Minh, để trả nợ cờ bạc",
-        "Ông Lâm Văn Hoà, vì ông Hậu không chịu bán chiếc đồng hồ",
-        "Một tên trộm lạ đột nhập qua cửa sổ sân sau"
+        "Nguyễn Quang Minh do nợ nần cờ bạc, đã nhân lúc ông Vĩnh uống thuốc ngủ để lấy trộm đồng hồ, mở then cửa sổ tạo hiện trường giả rồi đi xe máy đem đến tiệm Phát Đạt cầm cố 15 triệu đồng trước khi vào quán cà phê tạo bằng chứng ngoại phạm.",
+        "Bà Phạm Thị Tư do túng thiếu tiền chữa bệnh cho con, đã thông đồng với kẻ trộm mở then cửa sổ từ bên trong rồi giấu đồng hồ vào giỏ đi chợ đem đi cầm cố.",
+        "Ông Lâm Văn Hoà trong lúc đến chơi cờ đã nhân lúc ông Vĩnh ngủ say tháo trộm đồng hồ giấu vào túi áo rồi đem cầm cố tiệm Phát Đạt.",
+        "Một tên trộm chuyên nghiệp trèo qua ban công cạy cửa sổ đột nhập lấy đồng hồ rồi làm rơi giấy tờ tùy thân của Minh tại tiệm cầm đồ."
       ],
       "answer": [
-        1
+        0
       ],
-      "nudges": {
-        "0": {
-          "message": "Bà Tư là người nói ra việc Minh biết mã két. Không có tài liệu nào cho thấy bà có động cơ hay đi cầm đồng hồ."
-        },
-        "2": {
-          "message": "Ông Lâm có động cơ, nhưng cả bàn tiệc ở Hải Phòng làm chứng cho ông suốt đêm 14/3."
-        },
-        "3": {
-          "message": "Kính văng ra ngoài, con chó không sủa, két mở bằng mã đúng: không có kẻ lạ nào cả."
-        }
-      },
       "hints": [
-        "Ai cần tiền gấp? Hãy đọc lại lời khai của ông Lâm.",
-        "Phiếu cầm đồ ghi tên ai, và người cầm đồ mặc gì?"
+        "Xem xét đối tượng nào có mặt trong nhà, biết rõ vị trí cất đồng hồ và có mâu thuẫn giờ giấc ngoại phạm.",
+        "Đối chiếu tên người cầm cố trên phiếu cầm đồ tiệm Phát Đạt với các nghi phạm."
       ],
-      "solved": "Nguyễn Quang Minh đã lấy chiếc đồng hồ để trả nợ cờ bạc.",
       "explanation": [
-        {
-          "title": "Động cơ",
-          "body": [
-            "Một tuần trước, Minh hỏi vay ông Lâm 80 triệu để trả nợ cờ bạc và bị từ chối."
-          ]
-        },
-        {
-          "title": "Tang vật",
-          "body": [
-            "8 giờ 15 sáng 15/3, chiếc đồng hồ khắc T.Đ.H được cầm tại tiệm Phát Đạt lấy 60 triệu, người cầm ký tên Minh, kèm bản sao CCCD của Minh, mặc áo hoodie xám như trong camera."
-          ]
-        }
+        "Nguyễn Quang Minh là thủ phạm duy nhất. Y dàn dựng hiện trường cậy cửa sổ nhưng con chó không sủa, giả mạo bằng chứng ngoại phạm ở quán cà phê và đã cầm cố đồng hồ lấy tiền tiêu xài."
       ]
     }
   ],

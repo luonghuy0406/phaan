@@ -294,132 +294,108 @@
       "id": "q1",
       "stage": 1,
       "type": "evidence",
-      "title": "Vết thương sát hại và sự cố tắt đèn bí ẩn",
-      "intro": "Cái chết của Trạm trưởng Quyết thoạt nhìn như tai nạn trượt chân trong đêm bão. Nhưng giám định pháp y và nhật ký trạm cho thấy một sự thật hoàn toàn khác.",
-      "prompt": "Ghim 2 tài liệu chứng minh nạn nhân đã bị đâm từ phía sau trước khi rơi xuống vực và thời gian ngọn hải đăng bị tắt gián đoạn bất thường.",
+      "title": "Vết đâm dao găm và sự cố ngắt điện hải đăng",
+      "intro": "Trạm trưởng hải đăng Hòn Dáu tử vong dưới vực đá trong đêm bão biển. Hãy kiểm tra các dấu hiệu ban đầu chứng minh vụ án mạng.",
+      "prompt": "Ghim 2 tài liệu chứng minh Trạm trưởng bị đâm từ phía sau bằng dao găm thợ lặn trước khi rơi xuống vực và thời gian ngọn đèn biển bị tắt gián đoạn 17 phút.",
       "need": 2,
       "answer": [
         "d03",
         "d05"
       ],
       "hints": [
-        "Kiểm tra kết quả giám định tử thi về vết thương do dao găm thấu ngực.",
-        "Xem nhật ký vận hành kỹ thuật đèn biển ghi nhận thời gian ngọn đèn bị tắt ngấm."
+        "Kết quả giám định tử thi xác nhận vết đâm thấu ngực lưng bằng dao găm thợ lặn trước khi va đập đá.",
+        "Trích sao sổ nhật ký vận hành hải đăng ghi nhận đèn vụt tắt 17 phút bất thường lúc 01h15 sáng."
       ],
       "explanation": [
-        "Tài liệu d03 chứng minh nạn nhân bị đâm thấu phổi bằng dao găm thợ lặn trước khi rơi xuống vực biển lúc 23h20 - 23h35.",
-        "Tài liệu d05 xác nhận đèn hải đăng bị tắt ngắt quãng 17 phút từ đúng 23h43 đến 00h00 do nổ cầu chì."
-      ],
-      "nudges": [
-        {
-          "picks": [
-            "d01",
-            "d02"
-          ],
-          "message": "Bản tin và biên bản hiện trường chân vách đá chưa kết luận nguyên nhân tử vong do dao đâm và số phút mất điện cụ thể."
-        }
+        "Tài liệu d03 xác nhận vết thương chí mạng do lưỡi dao găm thợ lặn đâm từ sau lưng vào khoang màng phổi gây tử vong trước khi rơi.",
+        "Tài liệu d05 ghi nhận ngọn hải đăng cấp quốc gia bị mất điện hoàn toàn từ 01h15 đến 01h32 sáng giữa đêm mưa bão."
       ]
     },
     {
       "id": "q2",
       "stage": 2,
       "type": "line",
-      "title": "Bằng chứng ngoại phạm của Vũ Văn Thắng",
-      "intro": "Vũ Văn Thắng khai rằng y luôn ở tầng hầm máy nổ suốt cả đêm và có nhân viên Tùng làm chứng.",
-      "prompt": "Hãy chọn một dòng trong lời khai của Vũ Văn Thắng (d06) khẳng định y túc trực liên tục dưới tầng hầm máy nổ từ 23h00 không hề bước lên các tầng trên nửa bước cho tới sáng.",
+      "title": "Lời khai túc trực tầng hầm máy nổ",
+      "intro": "Các nhân viên gác đèn trên đảo biệt lập đều phải tường trình chi tiết ca trực đêm.",
+      "prompt": "Trong các biên bản hỏi cung nhân viên trạm đèn Hòn Dáu, hãy chỉ ra dòng lời khai quả quyết túc trực liên tục dưới tầng hầm máy phát từ 23h00 không hề bước lên các tầng tháp cho tới sáng?",
       "answer": [
         "d06:003"
       ],
       "hints": [
-        "Tìm dòng lời khai mà Thắng khẳng định mình ở tầng hầm máy nổ từ 23h00 không lên tầng trên.",
-        "Đối chiếu mốc thời gian và hành vi của người khai với các nhân chứng xung quanh."
+        "Rà soát lời khai của Phó trạm trưởng phụ trách cơ điện.",
+        "Tìm câu khẳng định ở lì dưới hầm máy nổ canh áp lực dầu suốt cả đêm."
       ],
       "explanation": [
-        "Tại dòng d06:003, Thắng khai: 'Từ lúc 23h00 đêm qua tôi túc trực liên tục dưới tầng hầm máy nổ theo dõi áp suất dầu bôi trơn, không hề bước chân lên các tầng trên nửa bước cho tới tận sáng'."
+        "Tại d06 dòng 003, Vũ Văn Thắng khai: 'Từ 23h00 đêm tôi xuống tầng hầm túc trực máy nổ chính và theo dõi bảng điều áp, suốt đêm tôi ở lì dưới hầm máy không hề bước chân lên các tầng tháp đèn cho tới sáng hôm sau'."
       ]
     },
     {
       "id": "q3",
       "stage": 3,
       "type": "evidence",
-      "title": "Bẫy ngắn mạch trễ tạo bằng chứng ngoại phạm",
-      "intro": "Sự cố nổ cầu chì lúc 23h43 không phải do quá tải ngẫu nhiên mà là một cái bẫy kỹ thuật được tính toán trước.",
-      "prompt": "Ghim 2 tài liệu chứng minh sự cố chập nổ cầu chì là hành vi phá hoại có chủ đích bằng thanh lưỡng kim nhiệt gắn lén vào cuộn stato máy phát.",
-      "need": 2,
+      "title": "Nhật ký tắt đèn, cầu chì gọt mỏng và bẫy nhiệt đoản mạch",
+      "intro": "Cơ quan điều tra nghi ngờ sự cố mất điện hải đăng là một màn kịch kỹ thuật có chủ đích.",
+      "prompt": "Ghim 3 tài liệu liên kết thời gian mất điện 17 phút (Vòng 1) với kết luận giám định sợi chì bị gọt mỏng (Vòng 3) và bản vẽ sơ đồ nguyên lý ngắn mạch nhiệt trễ gắn vào máy nổ (Vòng 3).",
+      "need": 3,
       "answer": [
+        "d05",
         "d10",
-        "d11"
+        "d13"
       ],
       "hints": [
-        "Báo cáo giám định kỹ thuật điện về thanh lưỡng kim nhiệt và sợi chì bị gọt mỏng.",
-        "Ảnh chụp cận cảnh thanh lưỡng kim dập mã hiệu T-85 kẹp sát stato máy phát nổ."
+        "Nhật ký hải đăng ghi nhận thời điểm tắt đèn lúc 01h15 (ở Vòng 1).",
+        "Bản giám định nguyên nhân nổ cầu chì tổng do sợi chì bị dùng dao gọt mỏng chỉ còn 0.8mm.",
+        "Bản vẽ sơ đồ nguyên lý ngắn mạch trễ sử dụng thanh lưỡng kim nhiệt gài vào cuộn stato máy phát."
       ],
       "explanation": [
-        "Tài liệu d10 khẳng định cầu chì bị gọt mỏng và thanh lưỡng kim nhiệt tạo hiện tượng ngắn mạch trễ sau gần 2 tiếng máy phát chạy.",
-        "Tài liệu d11 (ảnh tang vật) chụp thanh lưỡng kim gắn kẹp vào stato máy Yanmar có vệt hồ quang điện cháy xém."
-      ],
-      "nudges": [
-        {
-          "picks": [
-            "d12",
-            "d13"
-          ],
-          "message": "d12 và d13 là lời khai về tủ sấy và sơ đồ lý thuyết, nhưng d10 và d11 mới trực tiếp phân tích vật chứng tại khối máy phát."
-        }
+        "Tài liệu d05 xác định chính xác khung giờ đèn vụt tắt 17 phút.",
+        "Tài liệu d10 vạch trần cầu chì tổng không đứt tự nhiên mà do bị gọt mỏng tiết diện để chịu tải yếu.",
+        "Tài liệu d13 giải mã cơ chế bẫy nhiệt trễ: Khi máy nổ chạy nóng đến 75°C sau 2 tiếng, thanh lưỡng kim uốn cong chạm mạch làm nổ cầu chì, tạo cớ kéo Trạm trưởng xuống sửa chữa hoặc ngắt đèn đón tàu buôn lậu."
       ]
     },
     {
       "id": "q4",
       "stage": 4,
       "type": "evidence",
-      "title": "Động cơ và vật chứng sinh học của kẻ thủ ác",
-      "intro": "Khám xét phòng máy nổ đã hé lộ tang vật và bản báo cáo kiểm kê bị tiêu hủy vội vã.",
-      "prompt": "Ghim 2 tài liệu chỉ ra vật chứng chiếc áo mưa dính máu nạn nhân và nội dung bản nhật ký tố cáo hành vi tham ô dầu diesel của thủ phạm.",
+      "title": "Áo mưa dính máu và trang nhật ký tố cáo tham ô dầu",
+      "intro": "Khám xét các ngóc ngách của tháp đèn hải đăng đã phát hiện nơi cất giấu chứng cứ phạm tội.",
+      "prompt": "Ghim 2 tài liệu chỉ ra chiếc áo mưa dính máu nạn nhân giấu trong bầu lọc gió và trang nhật ký tố cáo hành vi tuồn bán hơn 3.200 lít dầu diesel của thủ phạm.",
       "need": 2,
       "answer": [
         "d15",
-        "d17"
+        "d16"
       ],
       "hints": [
-        "Ảnh chụp chiếc áo mưa vàng dính máu và trang nhật ký giấu trong bầu lọc gió.",
-        "Bản khôi phục trang nhật ký của Trạm trưởng Quyết hoặc biên bản đứt nút áo xô xát lan can."
+        "Ảnh chụp chiếc áo mưa bảo hộ dính máu giấu trong bầu lọc gió máy nổ phụ.",
+        "Bản khôi phục trang nhật ký bị xé của Trạm trưởng ghi rõ việc phát hiện hao hụt 3.200 lít dầu diesel phục vụ hải đăng."
       ],
       "explanation": [
-        "Tài liệu d15 (ảnh tang vật) thể hiện vệt máu trên áo mưa và trang nhật ký bị vò nát.",
-        "Tài liệu d17 (hoặc d16 - tuy nhiên d17 chứng minh xô xát tầng 2 với nút áo bị đứt). Lưu ý đáp án chính thức theo bible là d15 và d17."
-      ],
-      "nudges": [
-        {
-          "picks": [
-            "d14",
-            "d16"
-          ],
-          "message": "d14 là kìm bấm và dao găm; hãy chọn tài liệu ảnh tang vật d15 và chứng cứ xô xát tầng 2 d17."
-        }
+        "Tài liệu d15 ghi nhận thu giữ chiếc áo mưa dính máu nạn nhân bị nhét sâu trong bầu lọc gió máy phát điện.",
+        "Tài liệu d16 là trang nhật ký Trạm trưởng Quyết ghi lại chứng cứ Vũ Văn Thắng rút ruột 3.200 lít dầu diesel bán cho tàu cá ngoài khơi, động cơ trực tiếp dẫn đến án mạng."
       ]
     },
     {
       "id": "q5",
       "stage": 5,
       "type": "choice",
-      "title": "Kẻ sát hại Trạm trưởng hải đăng",
-      "intro": "Kết quả xét nghiệm ADN trên con dao găm và lời tự thú đã khép lại màn sương mù bao quanh ngọn hải đăng.",
+      "title": "Bản kết luận điều tra toàn diện vụ án gác đèn Hòn Dáu",
+      "intro": "Toàn bộ chuỗi chứng cứ từ dao găm thợ lặn, bẫy đoản mạch nhiệt trễ đến chiếc áo mưa và trang nhật ký xé rời đã vạch trần kẻ thủ ác.",
       "prompt": "Dựa vào toàn bộ tài liệu hồ sơ, ai là thủ phạm đã sát hại Trạm trưởng Đỗ Đình Quyết?",
       "options": [
-        "Phó trạm trưởng Vũ Văn Thắng",
-        "Công nhân vận hành tháp đèn Bùi Xuân Tùng",
-        "Nhân viên vô tuyến Hoàng Đức Nghĩa",
-        "Thuyền viên tàu cá lạ cập bờ lánh nạn"
+        "Phó trạm trưởng Vũ Văn Thắng do bị Trạm trưởng Quyết phát hiện hành vi bòn rút 3.200 lít dầu diesel bán cho tàu buôn lậu, đã gài bẫy ngắn mạch nhiệt làm tắt đèn lúc nửa đêm, nhân lúc ông Quyết lên tháp quan sát đã dùng dao găm thợ lặn đâm chết rồi đẩy xác xuống vực, sau đó giấu áo mưa và xé trang nhật ký để phi tang.",
+        "Thợ máy Bùi Xuân Tùng do bất cẩn làm chập điện tủ sấy quần áo gây nổ cầu chì, sợ bị kỷ luật nên đã xô xát đẩy ông Quyết ngã xuống vực đá.",
+        "Nhân viên gác đèn Đỗ Văn Lượng do ngủ gật để tàu cá đâm vào rạn san hô, đã dựng hiện trường giả mất điện rồi sát hại cấp trên.",
+        "Nhóm cướp biển ngoại quốc lẻn lên đảo Hòn Dáu cắt điện hải đăng để đón tàu chở hàng lậu rồi đâm chết trạm trưởng."
       ],
       "answer": [
         0
       ],
       "hints": [
-        "Ai có chuyên môn cơ điện chế tạo bẫy nhiệt ngắn mạch, sở hữu dao găm thợ lặn dính máu và động cơ sợ bị thanh tra tham ô 3 tấn dầu?",
-        "Xem xét kỹ các bằng chứng vật chất và báo cáo kỹ thuật hình sự."
+        "Ai có chuyên môn cơ điện chế tạo bẫy ngắn mạch trễ, có kìm tuốt chì, sở hữu dao găm thợ lặn và tham ô 3.200 lít dầu?",
+        "Đối chiếu vết máu trên chiếc áo mưa giấu trong bầu lọc gió với mẫu ADN của nạn nhân."
       ],
       "explanation": [
-        "Vũ Văn Thắng là kẻ thủ ác. Y đâm nạn nhân lúc 23h25 (d03, d17), dùng thanh lưỡng kim hẹn giờ nổ cầu chì lúc 23h43 để kéo Tùng xuống làm nhân chứng ngoại phạm giả (d10, d11, d19) và cất giấu dao găm cùng trang nhật ký tố cáo bán dầu lậu trong bầu gió máy nổ phụ (d14, d15, d16, d18)."
+        "Vũ Văn Thắng là thủ phạm duy nhất. Động cơ che giấu đường dây buôn lậu dầu diesel kết hợp thủ đoạn tạo sự cố kỹ thuật hòng tạo bằng chứng ngoại phạm đã bị bóc trần hoàn toàn."
       ]
     }
   ],

@@ -34,16 +34,4 @@
   - Nhật ký thu phát vô tuyến chứng minh Tuấn cố tình kéo dài cuộc đàm thoại ICOM vô thưởng vô phạt về luồng cá để tạo ngoại phạm.
   - Kiện thuốc lá lậu 555 và cọc tiền mặt thu giữ dưới hộc ván cabin thuyền phó của Tuấn.
 
-## 4. Cấu trúc câu hỏi & Trọng điểm
-- **Trọng điểm 1**: Khám phá tử thi trong khoang lạnh và nghi vấn ngạt khí.
-  - Tài liệu d01 - d05: Bản tin cảng Cái Rồng, biên bản khám nghiệm khoang lạnh số 3, khám nghiệm tử thi ban đầu (chết ngạt, dấu phỏng lạnh tròn), sơ đồ tàu cá QN-9288-TS, ảnh nắp khoang lạnh số 3 then cài then ngoài.
-  - Câu hỏi 1 (evidence): Ghim 2 tài liệu chỉ ra nạn nhân chết ngạt kèm dấu vết phỏng lạnh hình học bất thường và tình trạng khóa kín của nắp khoang. Đáp án: d03, d05.
-- **Trọng điểm 2**: Lời khai các thuyền viên và bằng chứng ngoại phạm bộ đàm.
-  - Tài liệu d06 - d09: Lời khai Thuyền phó Lê Quốc Tuấn, lời khai Máy trưởng Nguyễn Văn Sáu, lời khai thủy thủ Bùi Văn Hải (kể về tiếng hú rít lúc 00h15), trích xuất nhật ký đàm thoại ICOM đài bờ.
-  - Câu hỏi 2 (line): Dòng lời khai nào của Lê Quốc Tuấn khẳng định y ngồi liên tục trên buồng lái đàm thoại vô tuyến từ 00h00 đến 03h30 sáng không hề xuống boong? Đáp án: d06:003.
-- **Trọng điểm 3**: Bằng chứng kỹ thuật về đá khô CO2 và quạt thông gió.
-  - Tài liệu d10 - d13: Báo cáo giám định nồng độ khí CO2 và dấu phỏng lạnh dạng viên đá khô, ảnh chụp khay đá khô viên nén và quạt hút xả khí, sổ kiểm kê thiếu hụt 5 bao đá khô, biên bản thu giữ găng tay dính mỡ then gài của Tuấn.
-  - Câu hỏi 3 (evidence): Ghim 2 tài liệu vạch trần thủ đoạn dùng đá khô CO2 viên nén và hiện tượng quạt hút xả khí tạo ra tiếng hú trong đêm. Đáp án: d10, d11.
-- **Trọng điểm 4**: Vạch mặt hung thủ và thu hồi tang vật thuốc lá lậu.
-  - Tài liệu d14 - d17: Biên bản khám xét cabin thu giữ thuốc lá 555 lậu và tiền mặt, kết quả đối chiếu vết mỡ trên găng tay của Tuấn, bản tự thú của Tuấn, kết luận điều tra.
-  - Câu hỏi 4 (choice): Ai là thủ phạm đã sát hại Thuyền trưởng Trần Văn Đạt? Đáp án: Lê Quốc Tuấn.
+## 4. Cấu trúc câu hỏi & Trọng điểm (Đã nâng cấp độ khó x5)

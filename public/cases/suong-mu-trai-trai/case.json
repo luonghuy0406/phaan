@@ -260,48 +260,39 @@
       "id": "q1",
       "stage": 1,
       "type": "evidence",
-      "title": "Dấu vết bất thường nơi đồi thông",
-      "intro": "Hiện trường ban đầu là triền dốc thông tự nhiên đất đỏ bazan. Hãy tìm ra các dấu hiệu vật lý chứng tỏ hiện trường này có sự can thiệp nhân tạo và vật thể lạ từ nơi khác mang tới.",
-      "prompt": "Ghim 2 tài liệu chỉ ra vật chất lạ dính trên người nạn nhân không thuộc tự nhiên đồi thông và phương tiện vận chuyển thi thể.",
+      "title": "Dấu vết vận chuyển và vật chất bất thường trên đồi thông",
+      "intro": "Thi thể ông Lâm Khải được phát hiện dưới dốc bìa thông Trại Mát trong đêm sương mù dày đặc. Hãy phân tích các dấu hiệu hiện trường.",
+      "prompt": "Ghim 2 tài liệu chỉ ra phương tiện vận chuyển thi thể xuống dốc bìa thông và dấu vết hạt vi thể lạ dính trên quần áo nạn nhân không thuộc hệ thực vật đồi thông.",
       "need": 2,
       "answer": [
         "d02",
         "d05"
       ],
       "hints": [
-        "Kiểm tra vật chất dính ở đế dép nạn nhân trong biên bản khám nghiệm hiện trường.",
-        "Xem xét dấu vết di chuyển cơ học được ghi lại bằng hình ảnh trên triền dốc."
+        "Biên bản khám nghiệm hiện trường mô tả vệt trượt của bánh xe rùa và bùn đất đỏ.",
+        "Ảnh chụp hiện trường dốc bìa thông nơi ghi nhận dấu vết lốp xe cút kít."
       ],
       "explanation": [
-        "Tài liệu d02 ghi nhận đế dép xốp của nạn nhân dính đá vảy nhân tạo li ti trong khi mặt đất xung quanh là đất thịt mùn thông.",
-        "Tài liệu d05 (và ảnh hiện trường) chỉ ra vệt bánh xe cút kít đơn chở vật nặng từ đường bê tông trượt xuống rãnh cỏ."
-      ],
-      "nudges": [
-        {
-          "picks": [
-            "d01",
-            "d04"
-          ],
-          "message": "Báo chí và giám định pháp y tử thi chưa mô tả dấu vết cơ học ngoài mặt đất hiện trường."
-        }
+        "Tài liệu d02 ghi nhận vết trượt sâu của bánh xe cút kít chở vật nặng và các hạt bụi hoa màu vàng cam dính trên áo khoác dạ.",
+        "Tài liệu d05 chụp rõ vệt lốp cao su xe rùa chạy từ hướng kho lạnh trang trại ra mép dốc đồi thông."
       ]
     },
     {
       "id": "q2",
       "stage": 2,
       "type": "line",
-      "title": "Lời khai dối trá về kho lạnh số 2",
-      "intro": "Kỹ sư Hoàng Văn Duẩn đưa ra lời khai khẳng định mình không hề dính dáng gì đến kho lạnh số 2 sau giờ làm việc buổi chiều.",
-      "prompt": "Hãy chọn dòng lời khai trong biên bản hỏi cung Hoàng Văn Duẩn (d07) khẳng định y hoàn toàn không bước chân vào kho lạnh số 2 từ sau 17h00 chiều.",
+      "title": "Bằng chứng ngoại phạm về kho lạnh số 2",
+      "intro": "Các kỹ sư và công nhân trang trại hoa Lâm Viên đều khai báo thời gian biểu ca trực.",
+      "prompt": "Trong các biên bản hỏi cung người làm việc tại trang trại hoa Lâm Viên, hãy chỉ ra dòng lời khai khẳng định bản thân không hề mở cửa hay bước chân vào kho lạnh số 2 sau 17h00 chiều?",
       "answer": [
         "d07:005"
       ],
       "hints": [
-        "Tìm dòng lời khai mà Duẩn nói về thời gian và việc không bước chân vào kho lạnh số 2.",
-        "Đối chiếu mốc thời gian và hành vi của người khai với các nhân chứng xung quanh."
+        "Rà soát lời khai của kỹ sư quản lý để tìm câu quả quyết niêm phong kho hoa lúc tan ca và không quay lại.",
+        "Đối chiếu với dữ liệu cảm biến điện năng và nhiệt độ ghi nhận kho lạnh hoạt động bất thường."
       ],
       "explanation": [
-        "Tại dòng d07:005, Duẩn khai: 'Tôi khẳng định từ sau 17h chiều hôm qua tôi không hề bước chân vào kho lạnh số 2 vì mẻ cúc xuất khẩu đã đóng thùng xong từ trưa'."
+        "Tại d07 dòng 005, Hoàng Văn Duẩn khai: 'Sau khi kiểm kê đóng cửa kho lạnh số 2 lúc 17h00, tôi giao chìa khóa cho bảo vệ rồi về thẳng nhà riêng ở thị trấn, tuyệt đối không hề quay lại kho lạnh nửa bước cho đến sáng hôm sau'."
       ]
     },
     {
@@ -309,53 +300,68 @@
       "stage": 3,
       "type": "evidence",
       "title": "Bằng chứng thi thể bị lưu trữ trong kho lạnh",
-      "intro": "Để bác bỏ bằng chứng ngoại phạm đánh cờ của Duẩn, điều tra viên cần chứng minh thi thể nạn nhân từng nằm trong kho lạnh số 2 trước khi bị vứt ra đồi thông.",
-      "prompt": "Ghim 2 tài liệu chứng minh thi thể ông Lâm Khải đã ở trong kho lạnh số 2 thông qua mẫu sinh học vi thể và dữ liệu nhiệt độ kho lạnh đêm xảy ra án mạng.",
-      "need": 2,
+      "intro": "Nghi ngờ thi thể nạn nhân đã bị can thiệp nhiệt độ để đánh lừa thời điểm tử vong.",
+      "prompt": "Ghim 3 tài liệu liên kết độ co cứng tử thi bất thường (Vòng 1), mẫu phấn hoa Lily chỉ có trong kho lạnh (Vòng 3) và dữ liệu đồng hồ điện ghi nhận nhiệt độ tụt sâu xuống -18°C trong đêm (Vòng 3).",
+      "need": 3,
       "answer": [
+        "d04",
         "d10",
         "d11"
       ],
       "hints": [
-        "Một tài liệu phân tích phấn hoa đặc thù chỉ có trong kho lạnh số 2 dính trên áo nạn nhân.",
-        "Một tài liệu ghi nhận biến động công suất và cửa kho lạnh số 2 bị mở bất thường vào ban đêm."
+        "Kết quả giám định tử thi về hiện tượng đông cứng các khớp cơ bất thường (ở Vòng 1).",
+        "Phân tích vi thể mẫu phấn hoa Lily Casablanca chỉ lưu giữ trong phòng lạnh số 2.",
+        "Trích xuất đồng hồ điện tử ghi nhận máy nén khí hoạt động hết công suất hạ nhiệt độ xuống -18°C lúc nửa đêm."
       ],
       "explanation": [
-        "Tài liệu d10 xác nhận áo khoác nạn nhân dính mật độ lớn phấn hoa cúc hoàng yến đại đóa - giống hoa chỉ có trong kho lạnh số 2.",
-        "Tài liệu d11 cho thấy kho lạnh số 2 bị mở cửa 2 lần bất thường lúc 18h38 (khi tống xác vào) và 00h15 (khi mang xác ra vứt)."
-      ],
-      "nudges": [
-        {
-          "picks": [
-            "d12",
-            "d13"
-          ],
-          "message": "d12 và d13 là vật chứng bổ sung, nhưng d10 (phấn hoa) và d11 (dữ liệu nhiệt độ giờ mở cửa) mới trực tiếp chứng minh thi thể đã nằm trong kho suốt thời gian đó."
-        }
+        "Tài liệu d04 (ở Vòng 1) ghi nhận tử thi đông cứng sâu và thân nhiệt tụt nhanh gấp 3 lần bình thường.",
+        "Tài liệu d10 khẳng định các hạt phấn hoa dính trên cổ áo nạn nhân là giống hoa Lily nhập khẩu chỉ được lưu trữ riêng trong kho lạnh số 2.",
+        "Tài liệu d11 vạch trần lúc 01h15 sáng kho lạnh số 2 bị bật chế độ làm đá lạnh sâu -18°C trong 4 tiếng liền, chứng minh thi thể đã bị giấu trong kho để giả mạo giờ chết."
       ]
     },
     {
       "id": "q4",
       "stage": 4,
-      "type": "choice",
-      "title": "Thủ phạm và thủ pháp ngụy tạo thời gian tử vong",
-      "intro": "Khi thủ đoạn đông đá thi thể để đánh lừa chiếc nhiệt kế pháp y bị bóc trần, kẻ chủ mưu không còn đường chối cãi.",
-      "prompt": "Dựa vào toàn bộ chứng cứ trong hồ sơ, ai là kẻ đã sát hại ông Lâm Khải và ngụy tạo bằng chứng ngoại phạm bằng kho lạnh số 2?",
-      "options": [
-        "Con gái nạn nhân Lâm Tuyết Mai",
-        "Kỹ sư quản lý Hoàng Văn Duẩn",
-        "Lái buôn Trần Đại",
-        "Trưởng trạm khí tượng Bùi Văn Thao"
-      ],
+      "type": "evidence",
+      "title": "Vết tích bánh xe cút kít và bao thuốc lá rơi lại",
+      "intro": "Khám xét hiện trường xưởng cơ khí và người quản lý trang trại đã thu thập được các chứng cứ then chốt.",
+      "prompt": "Ghim 2 tài liệu đối chiếu khớp nối dấu vết hoa lốp bánh xe cút kít chở thi thể và vật chứng bao thuốc lá đặc chủng rơi tại cửa xả kho lạnh.",
+      "need": 2,
       "answer": [
-        1
+        "d15",
+        "d16"
       ],
       "hints": [
-        "Ai là người có chìa khóa kho lạnh, để lại tàn thuốc lá Bastos đỏ và xe cút kít dính dấu vân tay?",
-        "Ai có động cơ bị cướp đoạt bản quyền giống hoa hồng lai Pháp?"
+        "Biên bản thu giữ bao thuốc lá ba số 555 đặc chủng có dấu vân tay rơi ở rãnh thoát nước.",
+        "Bản giám định dấu vết cơ học đối chiếu hoa lốp bánh xe cút kít tại xưởng trang trại."
       ],
       "explanation": [
-        "Hoàng Văn Duẩn là người nắm rõ quy trình kho lạnh số 2, để lại mẩu thuốc Bastos đỏ (d13, d15), xe rùa dính dấu vân tay (d16) và đã sát hại nạn nhân lúc 18h30 rồi dùng kho lạnh làm đông cứng thi thể để tạo bằng chứng ngoại phạm đánh cờ (d14, d17)."
+        "Tài liệu d15 thu giữ bao thuốc lá ngoại nhập của Duẩn dính nước đá xả kho lạnh.",
+        "Tài liệu d16 xác nhận vết hoa lốp cao su trên đồi thông d05 trùng khớp 100% với chiếc xe cút kít Duẩn thường dùng để chở phân bón."
+      ]
+    },
+    {
+      "id": "q5",
+      "stage": 4,
+      "type": "choice",
+      "title": "Bản kết luận điều tra toàn diện vụ án sương mù Trại Mát",
+      "intro": "Thủ đoạn dùng kho lạnh số 2 để đóng băng tử thi nhằm ngụy tạo thời gian chết và bằng chứng ngoại phạm đã bị phơi bày.",
+      "prompt": "Dựa vào toàn bộ chứng cứ trong hồ sơ, ai là kẻ đã sát hại ông Lâm Khải, bằng thủ đoạn nào và vì động cơ gì?",
+      "options": [
+        "Hoàng Văn Duẩn do bị ông Khải phát hiện hành vi bòn rút công quỹ và bán trộm hoa giống quý, đã đánh ngất nạn nhân lúc chiều tối rồi nhốt vào kho lạnh số 2 bật nhiệt độ -18°C làm đông cứng tử thi, sau đó dùng xe cút kít chở xác phi tang xuống dốc bìa thông trong đêm sương mù nhằm ngụy tạo giờ chết lúc nửa đêm.",
+        "Lâm Tuyết Mai do mâu thuẫn phân chia thừa kế trang trại, đã cấu kết với thương lái Trần Đại đầu độc cha ruột rồi đưa xác ra đồi thông.",
+        "Thương lái Trần Đại do bị hủy hợp đồng thu mua hoa Lily, đã phục kích sát hại ông Khải tại bìa thông rồi cướp tiền bỏ trốn.",
+        "Ông Bùi Văn Thao do thù oán ranh giới đất trạm khí tượng, đã dùng xà beng sát hại nạn nhân rồi ngụy tạo vết bánh xe rùa."
+      ],
+      "answer": [
+        0
+      ],
+      "hints": [
+        "Ai có chìa khóa kho lạnh số 2, biết điều khiển máy nén khí làm đá lạnh sâu -18°C?",
+        "Đối chiếu dấu vết lốp xe cút kít tại xưởng hoa và bao thuốc lá ba số 555 rơi tại cửa xả kho lạnh."
+      ],
+      "explanation": [
+        "Hoàng Văn Duẩn là thủ phạm duy nhất. Y tận dụng sự am hiểu kỹ thuật kho lạnh hoa để tạo hiện trường đóng băng thi thể hòng qua mặt giám định pháp y về thời điểm tử vong."
       ]
     }
   ],

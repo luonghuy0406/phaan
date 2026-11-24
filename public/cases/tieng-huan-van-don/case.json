@@ -232,101 +232,107 @@
       "stage": 1,
       "type": "evidence",
       "title": "Nguyên nhân tử vong và tình trạng nắp khoang khóa kín",
-      "intro": "Thuyền trưởng Đạt chết trong khoang lạnh ướp mực tưởng như do tai nạn trúng gió lạnh. Nhưng vết phỏng hình học và chiếc then cài ngoài cho thấy đây là vụ án mạng có tính toán.",
-      "prompt": "Ghim 2 tài liệu chứng minh nạn nhân chết ngạt CO2 kèm vết phỏng lạnh hình học và nắp khoang bị gài then sắt từ bên ngoài.",
+      "intro": "Thuyền trưởng tàu cá xa bờ được phát hiện tử vong bí ẩn dưới khoang lạnh số 3 khi tàu cập cảng Cái Rồng. Hãy kiểm tra các dấu vết ban đầu.",
+      "prompt": "Ghim 2 tài liệu chứng minh Thuyền trưởng tử vong do ngạt khí CO2 kèm tổn thương phỏng lạnh hình học và tình trạng nắp khoang lạnh số 3 bị gài then sắt từ bên ngoài.",
       "need": 2,
       "answer": [
         "d03",
         "d05"
       ],
       "hints": [
-        "Kiểm tra kết quả giám định pháp y về vết thương phỏng lạnh hình tròn đường kính 20mm do đá khô.",
-        "Xem ảnh chụp cận cảnh thanh then sắt khóa ngoài boong trên nắp khoang lạnh số 3."
+        "Kết quả giám định tử thi về dấu hiệu ngạt khí cacbonic và các vết phỏng lạnh hình tròn trên da.",
+        "Ảnh chụp cận cảnh nắp khoang lạnh số 3 bị gài then sắt kiên cố từ phía ngoài mặt boong."
       ],
       "explanation": [
-        "Tài liệu d03 xác nhận nạn nhân chết do ngạt khí CO2 kèm vết phỏng hoại tử lạnh hình tròn 20mm do tiếp xúc đá khô viên nén.",
-        "Tài liệu d05 (ảnh chụp then gài) thể hiện nắp khoang bị khóa chốt kiên cố từ phía ngoài bằng thanh sắt đúc dính vết mỡ găng tay."
-      ],
-      "nudges": [
-        {
-          "picks": [
-            "d01",
-            "d02"
-          ],
-          "message": "Bản tin và biên bản hiện trường ban đầu chưa miêu tả chi tiết vết thương phỏng hoại tử lạnh 20mm trên da nạn nhân."
-        }
+        "Tài liệu d03 xác nhận nạn nhân chết ngạt trong môi trường yếm khí bão hòa khí CO2, trên tay có các vết bỏng nhiệt độ âm do tiếp xúc đá khô.",
+        "Tài liệu d05 ghi nhận nắp khoang lạnh bằng thép bọc cao su bị gài then ngoài, người bên trong hoàn toàn không thể mở ra."
       ]
     },
     {
       "id": "q2",
       "stage": 2,
       "type": "line",
-      "title": "Bằng chứng ngoại phạm của Lê Quốc Tuấn",
-      "intro": "Lê Quốc Tuấn khẳng định mình ngồi liên tục trên buồng lái đàm thoại vô tuyến suốt ca đêm.",
-      "prompt": "Hãy chọn một dòng trong lời khai của Lê Quốc Tuấn (d06) khẳng định y ngồi liên tục trên buồng lái cầm vô lăng và đàm thoại vô tuyến từ 00h00 đến 03h30 sáng không rời nửa bước.",
+      "title": "Bằng chứng ngoại phạm trên buồng lái",
+      "intro": "Các thuyền viên và máy trưởng trên tàu đều được lấy lời khai về ca trực đêm xảy ra tai nạn.",
+      "prompt": "Trong các biên bản hỏi cung thuyền viên tàu cá QN-9288-TS, hãy chỉ ra dòng lời khai khẳng định túc trực liên tục trên buồng lái đàm thoại vô tuyến từ 00h00 đến 03h30 sáng không rời nửa bước?",
       "answer": [
         "d06:003"
       ],
       "hints": [
-        "Tìm dòng lời khai nói về việc Tuấn ngồi buồng lái đàm thoại ICOM từ 00h00 đến 03h30.",
-        "Đối chiếu mốc thời gian và hành vi của người khai với các nhân chứng xung quanh."
+        "Rà soát lời khai của Thuyền phó phụ trách hoa tiêu buồng lái.",
+        "Tìm câu khẳng định một mình cầm vô lăng và giữ liên lạc vô tuyến suốt ca đêm."
       ],
       "explanation": [
-        "Tại dòng d06:003, Tuấn khai: 'Từ đúng 00h00 đến tận 03h30 sáng tôi ngồi liên tục trên buồng lái cầm vô lăng và đàm thoại vô tuyến ICOM với đài kiểm ngư bờ biển, không hề rời buồng lái xuống boong nửa bước'."
+        "Tại d06 dòng 003, Lê Quốc Tuấn khai: 'Suốt từ 00h00 đến 03h30 sáng tôi ngồi liên tục trong cabin buồng lái cầm vô lăng điều khiển tàu và giữ đàm thoại vô tuyến với đài bờ Cái Rồng, tuyệt đối không hề rời buồng lái nửa bước'."
       ]
     },
     {
       "id": "q3",
       "stage": 3,
       "type": "evidence",
-      "title": "Vạch trần thủ đoạn đá khô CO2 và tiếng hú ban đêm",
-      "intro": "Khám phá kỹ thuật đã bóc trần bí ẩn về nhiệt độ tử thi tụt nhanh và tiếng hú ma quái lúc nửa đêm trên boong tàu.",
-      "prompt": "Ghim 2 tài liệu phân tích kỹ thuật về việc đá khô CO2 làm hạ thân nhiệt giả mạo giờ chết và hình ảnh vật chứng đá khô cùng phễu quạt hút xả khí.",
-      "need": 2,
+      "title": "Vết phỏng lạnh CO2, đá khô viên nén và quạt hút xả khí",
+      "intro": "Cơ quan điều tra nghi ngờ hiện tượng 'tiếng hú ma ám' thực chất là một cơ chế vật lý ngụy tạo tinh vi.",
+      "prompt": "Ghim 3 tài liệu liên kết thương tích phỏng lạnh do CO2 (Vòng 1) với bản phân tích kỹ thuật thăng hoa của đá khô (Vòng 3) và ảnh tang vật ống quạt hút xả khí tạo tiếng hú rùng rợn trong đêm (Vòng 3).",
+      "need": 3,
       "answer": [
+        "d03",
         "d10",
         "d11"
       ],
       "hints": [
-        "Báo cáo giám định kỹ thuật hình sự về cơ chế ngạt khí CO2 đá khô và nguồn gốc tiếng hú rít qua phễu quạt.",
-        "Ảnh chụp tang vật mẫu đá khô viên nén đường kính 20mm và miệng phễu quạt hút bám tuyết."
+        "Giám định tử thi về nồng độ CO2 máu và vết phỏng lạnh hình học (ở Vòng 1).",
+        "Bản phân tích kỹ thuật chứng minh đá khô CO2 thăng hoa làm tụt thân nhiệt giả mạo giờ chết sớm hơn 4 tiếng.",
+        "Ảnh tang vật mẫu đá khô viên nén công nghiệp và phễu quạt hút gió tạo luồng khí áp suất cao phát ra tiếng hú."
       ],
       "explanation": [
-        "Tài liệu d10 giải mã việc đá khô CO2 làm đông đá giả mạo giờ chết và quạt hút xả khí áp lực cao tạo ra tiếng hú lúc 00h15.",
-        "Tài liệu d11 (ảnh tang vật) chụp các viên đá khô hình trụ 20mm và miệng ống quạt hút xả khí đông tuyết trắng."
-      ],
-      "nudges": [
-        {
-          "picks": [
-            "d12",
-            "d13"
-          ],
-          "message": "d12 và d13 là sổ kho và găng tay; hãy chọn tài liệu giám định d10 và hình ảnh vật chứng kỹ thuật d11."
-        }
+        "Tài liệu d03 xác định nạn nhân tiếp xúc với nguồn nhiệt độ âm cực thấp.",
+        "Tài liệu d10 giải mã thủ đoạn dùng đá khô thăng hoa giải phóng khí CO2 đậm đặc chiếm đoạt oxy, đồng thời làm lạnh sâu thi thể để đánh lừa giám định pháp y.",
+        "Tài liệu d11 chụp phễu ống thông gió gắn ngược tạo hiệu ứng Venturi phát ra tiếng rít hú gió trong đêm bão để dọa các thủy thủ không dám lại gần hầm lạnh."
       ]
     },
     {
       "id": "q4",
       "stage": 4,
+      "type": "evidence",
+      "title": "Sổ kiểm kê đá khô và ly trà gừng tẩm thuốc mê",
+      "intro": "Khám xét buồng lái và phòng riêng của thuyền phó đã làm sáng tỏ hành vi giết người có kế hoạch.",
+      "prompt": "Ghim 2 tài liệu chứng minh việc mua lén 50kg đá khô lạnh sâu và kết quả xét nghiệm ly trà gừng có độc chất chuốc mê nạn nhân trước khi nhốt vào khoang lạnh.",
+      "need": 2,
+      "answer": [
+        "d12",
+        "d15"
+      ],
+      "hints": [
+        "Sổ kiểm kê vật tư đá khô lạnh sâu ghi nhận lượng đá khô bị bớt xén dùng sai mục đích bảo quản cá.",
+        "Kết quả xét nghiệm mẫu cặn ly trà gừng tìm thấy thuốc an thần liều cao seduxen."
+      ],
+      "explanation": [
+        "Tài liệu d12 vạch trần việc Tuấn tự ý mua thêm 50kg đá khô CO2 viên nén trước ngày ra khơi.",
+        "Tài liệu d15 chứng minh Thuyền trưởng Đạt đã bị đánh thuốc mê vào ly trà gừng trước khi bị đẩy xuống hầm lạnh khóa chốt."
+      ]
+    },
+    {
+      "id": "q5",
+      "stage": 4,
       "type": "choice",
-      "title": "Thủ phạm sát hại Thuyền trưởng Đạt",
-      "intro": "Thuốc lá lậu, tiền mặt giấu dưới nệm và đôi găng tay dính vết mỡ then cài đã khép lại vòng vây công lý đối với kẻ thủ ác.",
+      "title": "Bản kết luận điều tra toàn diện vụ án tàu cá Cái Rồng",
+      "intro": "Tiếng hú ban đêm, vết phỏng đá khô CO2 và ly trà gừng chuốc mê đã vạch trần toàn bộ sự thật.",
       "prompt": "Dựa vào toàn bộ tài liệu hồ sơ, ai là thủ phạm đã sát hại Thuyền trưởng Trần Văn Đạt?",
       "options": [
-        "Thuyền phó Lê Quốc Tuấn",
-        "Máy trưởng Nguyễn Văn Sáu",
-        "Thủy thủ Bùi Văn Hải",
-        "Trực ban đài bờ Cái Rồng"
+        "Thuyền phó Lê Quốc Tuấn do mâu thuẫn chia tiền bán hải sản và muốn đoạt quyền chỉ huy tàu cá, đã lén pha thuốc mê vào ly trà gừng của Thuyền trưởng Đạt, đẩy nạn nhân vào khoang lạnh số 3 gài then sắt ngoài rồi đổ 50kg đá khô CO2 làm ngạt thở, dùng ống quạt gió tạo tiếng hú dọa thủy thủ để ngụy tạo tai nạn ma ám.",
+        "Máy trưởng Nguyễn Văn Sáu do bất cẩn trong lúc xả đá khô làm lạnh hầm cá đã để khí CO2 rò rỉ làm ngạt Thuyền trưởng, sau đó vì sợ hãi nên khóa then nắp hầm trốn tránh trách nhiệm.",
+        "Thủy thủ Bùi Văn Hải do bị Thuyền trưởng khiển trách phạt trừ lương, đã lẻn vào hầm lạnh số 3 gài then sắt nhốt cấp trên rồi đổ đá khô sát hại.",
+        "Tàu đánh cá bị một nhóm hải tặc lạ mặt đột nhập trong đêm bão khống chế Thuyền trưởng nhốt vào khoang lạnh rồi tẩu thoát."
       ],
       "answer": [
         0
       ],
       "hints": [
-        "Ai có động cơ buôn lậu thuốc lá 555 sợ bị thuyền trưởng tố cáo, bỏ thuốc an thần vào trà gừng và sở hữu đôi găng tay dính mỡ then cài khoang lạnh?",
-        "Xem xét kỹ các bằng chứng vật chất và báo cáo kỹ thuật hình sự."
+        "Ai có chuyên môn hoa tiêu buồng lái, tự tay pha ly trà gừng cho nạn nhân và lén mua 50kg đá khô CO2 viên nén?",
+        "Đối chiếu lời khai ngoại phạm của Tuấn với việc mất tín hiệu đàm thoại ICOM 45 phút trên biển."
       ],
       "explanation": [
-        "Lê Quốc Tuấn là thủ phạm. Y bỏ thuốc an thần vào trà (d15), đổ 5 bao đá khô CO2 sát hại nạn nhân lúc 21h30 (d03, d10, d12), bật quạt hút tạo tiếng hú lúc 00h15 rồi đàm thoại ICOM liên tục tạo bằng chứng ngoại phạm giả (d06, d09, d16) và giấu thuốc lá lậu dưới nệm cabin (d14)."
+        "Lê Quốc Tuấn là thủ phạm duy nhất. Kế hoạch giết người tinh vi bằng đá khô CO2 kết hợp hiệu ứng âm thanh dọa ma nhằm tạo bằng chứng ngoại phạm đã bị bóc trần hoàn toàn."
       ]
     }
   ],

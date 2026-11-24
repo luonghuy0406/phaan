@@ -35,16 +35,4 @@
   - Bưu phẩm chuyển phát nhanh từ Hải Phòng về địa chỉ nhà Trang chứa hóa chất xi mạ.
   - Trích xuất camera an ninh tiệm trà sữa và lời khai người giao hàng xác nhận đặc điểm nhân dạng của Trang.
 
-## 4. Cấu trúc câu hỏi & Trọng điểm
-- **Trọng điểm 1**: Cái chết đột ngột của điều dưỡng viên và túi trà sữa bí ẩn.
-  - Tài liệu d01 - d05: Bản tin thời sự, biên bản khám nghiệm hiện trường phòng giao ban, khám nghiệm tử thi nạn nhân Thủy (ngộ độc Natri Xyanua), sơ đồ Khoa Nội bệnh viện, ảnh chụp cốc trà sữa có màng nilon bị đâm kim vi thể.
-  - Câu hỏi 1 (evidence): Ghim 2 tài liệu chứng minh nguyên nhân tử vong là chất kịch độc xyanua và dấu vết bơm độc nhân tạo qua màng nắp cốc. Đáp án: d03, d05.
-- **Trọng điểm 2**: Truy tìm nguồn gốc bưu kiện và mục tiêu thực sự.
-  - Tài liệu d06 - d09: Lời khai bác sĩ Đỗ Thị Yến (xác nhận mình không trực hôm đó), lời khai anh rể Nguyễn Mạnh Hùng, lời khai người giao hàng Lê Văn Nam, mẩu giấy nhắn nặc danh gửi kèm túi trà sữa.
-  - Câu hỏi 2 (line): Dòng lời khai nào của bác sĩ Đỗ Thị Yến chứng minh cô mới chính là người thường xuyên uống loại trà sữa này và lẽ ra là người nhận túi quà? Đáp án: d06:003.
-- **Trọng điểm 3**: Bằng chứng kỹ thuật số và gói độc chất Xyanua.
-  - Tài liệu d10 - d13: Kết quả phục hồi dữ liệu điện thoại nghi phạm (tìm kiếm 'mua xyanua'), ảnh chụp vết châm kim siêu vi và ống tiêm 26G thu giữ tại nhà Trang, hóa đơn chuyển phát nhanh bưu phẩm từ Hải Phòng, kết quả xét nghiệm 4 cốc trà còn lại.
-  - Câu hỏi 3 (evidence): Ghim 2 tài liệu vạch trần việc chuẩn bị chất độc có chủ đích qua điện thoại và hung khí ống tiêm kim vi thể. Đáp án: d10, d11.
-- **Trọng điểm 4**: Bản tự thú và kết luận vụ án chấn động.
-  - Tài liệu d14 - d16: Biên bản đối chiếu camera an ninh tiệm trà sữa, bản tự thú lạnh lùng của Lại Thị Kiều Trang, kết luận điều tra và cáo trạng.
-  - Câu hỏi 4 (choice): Ai là kẻ đã bơm chất kịch độc Xyanua vào các cốc trà sữa khiến điều dưỡng Thủy tử vong oan uổng? Đáp án: Lại Thị Kiều Trang.
+## 4. Cấu trúc câu hỏi & Trọng điểm (Đã nâng cấp độ khó x5)

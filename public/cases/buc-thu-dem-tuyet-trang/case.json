@@ -211,104 +211,108 @@
       "id": "q1",
       "stage": 1,
       "type": "evidence",
-      "title": "Nguyên nhân tử vong và nguồn gốc bức thư tống tiền",
-      "intro": "Cái chết của hoa khôi nhí và bức thư tống tiền 3 trang chứa đựng những chi tiết mâu thuẫn trực tiếp với giả thuyết bắt cóc thông thường.",
-      "prompt": "Ghim 2 tài liệu chứng minh nguyên nhân tử vong kết hợp của nạn nhân và bằng chứng bức thư tống tiền 3 trang được xé từ cuốn sổ tay có sẵn trong nhà.",
+      "title": "Nguyên nhân tử vong kết hợp và nguồn gốc bức thư tống tiền",
+      "intro": "Vụ án mạng hoa khôi nhí JonBenét Ramsey trong căn biệt thự đêm Giáng sinh gây chấn động toàn nước Mỹ. Hãy phân tích các dấu hiệu bất thường ban đầu.",
+      "prompt": "Ghim 2 tài liệu chứng minh nguyên nhân tử vong do chấn thương sọ não kết hợp siết cổ và bằng chứng bức thư tống tiền dài 3 trang được xé từ cuốn sổ tay có sẵn trong nhà.",
       "need": 2,
       "answer": [
         "d03",
         "d05"
       ],
       "hints": [
-        "Kiểm tra kết quả giám định tử thi về chấn thương nứt sọ dài 21.5cm kết hợp siết cổ.",
-        "Xem ảnh chụp bức thư tống tiền 3 trang khớp với gáy xé của cuốn sổ tay lò xo trong bếp.",
-        "Xem xét kỹ các bằng chứng vật chất và báo cáo kỹ thuật hình sự."
+        "Kết quả giám định tử thi về vết nứt sọ dài 21cm và vòng dây thừng siết cổ garrote.",
+        "Ảnh chụp bức thư tống tiền 3 trang đòi đúng 118.000 USD trùng khớp với tiền thưởng tết của người cha và vết giấy xé từ sổ tay trong bếp."
       ],
       "explanation": [
-        "Tài liệu d03 xác nhận nạn nhân tử vong do chấn thương nứt sọ kết hợp siết cổ garrote.",
-        "Tài liệu d05 (ảnh chụp) chứng minh 3 trang thư tống tiền được xé trực tiếp từ cuốn sổ tay của gia đình để trên bàn bếp."
-      ],
-      "nudges": [
-        {
-          "picks": [
-            "d01",
-            "d02"
-          ],
-          "message": "Bản tin và biên bản hiện trường ban đầu chưa thể hiện sự khớp nối răng cưa của cuốn sổ tay và kết luận y pháp tử thi."
-        }
+        "Tài liệu d03 xác nhận nạn nhân bị đánh vỡ hộp sọ trước rồi mới bị siết cổ bằng dây garrote.",
+        "Tài liệu d05 vạch trần bức thư tống tiền dài lê thê bất thường được viết bằng bút dạ và giấy xé từ cuốn sổ tay Pad trên bàn bếp của gia đình."
       ]
     },
     {
       "id": "q2",
       "stage": 2,
       "type": "line",
-      "title": "Lời khai phát hiện bức thư trên cầu thang",
-      "intro": "Người mẹ Patsy Ramsey đưa ra lời khai về việc bà phát hiện bức thư tống tiền lúc sáng sớm.",
-      "prompt": "Hãy chọn một dòng trong lời khai của Patsy Ramsey (d06) khẳng định bà nhìn thấy 3 trang thư trên bậc cầu thang và không hề chạm vào hay biết gì về nó trước đó.",
+      "title": "Lời khai phát hiện bức thư trên bậc cầu thang",
+      "intro": "Lời khai của các thành viên gia đình Ramsey có nhiều điểm mâu thuẫn về thời khắc rạng sáng ngày 26/12.",
+      "prompt": "Trong biên bản hỏi cung người nhà nạn nhân, hãy chỉ ra dòng lời khai khẳng định nhìn thấy 3 trang thư trên bậc cầu thang và hoàn toàn không biết nguồn gốc bức thư từ trước?",
       "answer": [
         "d06:002"
       ],
       "hints": [
-        "Tìm dòng lời khai nói về việc bà bước xuống bậc cầu thang và thấy 3 tờ giấy viết tay xếp ngay ngắn.",
-        "Đối chiếu mốc thời gian và hành vi của người khai với các nhân chứng xung quanh."
+        "Rà soát lời khai của người mẹ Patsy Ramsey về khoảnh khắc bước xuống cầu thang lúc 05h30 sáng.",
+        "Tìm câu khẳng định nhìn thấy các trang giấy đặt ngay ngắn trên bậc thang xoắn ốc."
       ],
       "explanation": [
-        "Tại dòng d06:002, Patsy Ramsey khai: 'Khi bước xuống bậc cầu thang xoắn ốc tầng 1, tôi bàng hoàng thấy 3 tờ giấy viết tay xếp ngay ngắn trên bậc tam cấp mà tôi khẳng định không hề chạm vào hay biết gì về nó trước đó'."
+        "Tại d06 dòng 002, Patsy Ramsey khai: 'Lúc 05h30 sáng tôi bước xuống cầu thang xoắn ốc để xuống bếp pha cà phê thì nhìn thấy 3 trang giấy viết tay đặt ngay ngắn trên bậc thang thứ hai, tôi đọc lướt thấy đòi tiền chuộc nên hoảng loạn hét lên gọi chồng'."
       ]
     },
     {
       "id": "q3",
       "stage": 3,
       "type": "evidence",
-      "title": "Bằng chứng giám định chữ viết và sợi len áo đỏ",
-      "intro": "Các chứng cứ khoa học hình sự đã vạch trần mối liên hệ trực tiếp giữa người trong nhà và các vật chứng tại hiện trường.",
-      "prompt": "Ghim 2 tài liệu chỉ ra kết quả giám định chữ viết tay trùng khớp hơn 24 đặc điểm với Patsy Ramsey và sợi vải len từ áo khoác đỏ của bà dính trên băng keo.",
-      "need": 2,
+      "title": "Bức thư 3 trang, giám định chữ viết tay và sợi len áo đỏ",
+      "intro": "Cục Điều tra Liên bang FBI vào cuộc phân tích văn bản học và dấu vết vi thể.",
+      "prompt": "Ghim 3 tài liệu liên kết bức thư tống tiền (Vòng 1) với kết quả giám định chữ viết tay trùng khớp hơn 24 đặc điểm với người mẹ (Vòng 3) và phân tích vi thể sợi len áo khoác đỏ dính trên băng dính dán miệng nạn nhân (Vòng 3).",
+      "need": 3,
       "answer": [
+        "d05",
         "d10",
         "d11"
       ],
       "hints": [
-        "Bản phân tích giám định tài liệu chữ viết tay FBI về hơn 24 đặc điểm trùng khớp với người mẹ.",
-        "Ảnh chụp phân tích vi thể sợi len màu đỏ tía dính trên băng dính dán miệng nạn nhân.",
-        "Xem xét kỹ các bằng chứng vật chất và báo cáo kỹ thuật hình sự."
+        "Ảnh chụp bức thư tống tiền 3 trang (ở Vòng 1).",
+        "Báo cáo giám định chữ viết tay của các chuyên gia FBI kết luận người mẹ Patsy Ramsey có độ tương đồng chữ viết cao nhất.",
+        "Ảnh phân tích sợi dệt vi thể xác định sợi len màu đỏ dính trên mép băng keo dán miệng nạn nhân trùng khớp với sợi áo khoác len Patsy mặc đêm Giáng sinh."
       ],
       "explanation": [
-        "Tài liệu d10 khẳng định nét chữ bức thư tống tiền có hơn 24 điểm tương đồng cốt lõi với chữ viết tay của Patsy Ramsey.",
-        "Tài liệu d11 (ảnh vi thể) chỉ ra sợi len đỏ trên băng dính miệng nạn nhân hoàn toàn đồng chất với áo len của Patsy Ramsey."
-      ],
-      "nudges": [
-        {
-          "picks": [
-            "d12",
-            "d13"
-          ],
-          "message": "d12 và d13 là hung khí cọ vẽ và báo cáo tâm lý FBI; hãy chọn bản giám định chữ viết d10 và ảnh so sánh sợi len d11."
-        }
+        "Tài liệu d05 là vật chứng bức thư tống tiền ban đầu.",
+        "Tài liệu d10 khẳng định nét chữ nắn nót, cách ngắt dòng và các chữ cái 'a', 'q', 'd' trùng khớp hoàn toàn với mẫu chữ viết tay của Patsy Ramsey.",
+        "Tài liệu d11 chứng minh sợi len từ áo khoác đỏ của người mẹ đã rơi rụng và dính chặt vào lớp keo dán miệng nạn nhân trong quá trình dàn dựng hiện trường."
       ]
     },
     {
       "id": "q4",
       "stage": 4,
-      "type": "choice",
-      "title": "Bản chất thật sự của vụ án JonBenét Ramsey",
-      "intro": "Toàn bộ chuỗi chứng cứ vật lý đã bác bỏ hoàn toàn giả thuyết về một kẻ đột nhập từ bên ngoài.",
-      "prompt": "Dựa vào toàn bộ tài liệu hồ sơ, chuỗi chứng cứ nào vạch trần vụ án là một màn kịch dàn dựng bắt cóc giả mạo (Staging) từ nội bộ ngôi nhà?",
-      "options": [
-        "Chỉ do số tiền tống tiền 118.000 USD quá nhỏ so với tài sản tỷ phú",
-        "Chỉ do cửa hầm rượu bị khóa then cài ngoài",
-        "Do có kẻ lạ mặt để lại dấu chân trên tuyết ngoài sân",
-        "Do nét chữ bức thư trùng khớp người trong nhà, giấy bút lấy tại bếp, sợi len áo đỏ trên băng dính và mạng nhện cửa sổ còn nguyên vẹn"
-      ],
+      "type": "evidence",
+      "title": "Cửa sổ tầng hầm nguyên tuyết và que cọ vẽ tự chế",
+      "intro": "Khám nghiệm lối đột nhập tầng hầm và hung khí tự chế đã chứng minh kẻ gây án là người trong nhà.",
+      "prompt": "Ghim 2 tài liệu chỉ ra sơ đồ hiện trường lớp tuyết trắng quanh cửa sổ tầng hầm hoàn toàn nguyên vẹn không có dấu chân kẻ đột nhập và hung khí dây thừng garrote tự chế từ thân que cọ vẽ của người mẹ.",
+      "need": 2,
       "answer": [
-        3
+        "d04",
+        "d12"
       ],
       "hints": [
-        "Hãy xâu chuỗi tất cả các bằng chứng vật chất: thư 3 trang viết tại chỗ, sợi len áo đỏ, mạng nhện ô thoáng và mặt tuyết trắng không dấu chân.",
-        "Xem xét kỹ các bằng chứng vật chất và báo cáo kỹ thuật hình sự."
+        "Sơ đồ mặt bằng biệt thự và báo cáo trinh sát xác nhận tuyết bao phủ kín quanh nhà, cửa sổ tầng hầm đóng chặt không có vết chân trên tuyết.",
+        "Biên bản giám định hung khí dây garrote xác nhận cán xoay được bẻ từ chiếc cọ vẽ lông thú trong hộp màu vẽ của Patsy Ramsey."
       ],
       "explanation": [
-        "Đáp án đúng là lựa chọn thứ tư: Chuỗi chứng cứ khoa học hình sự gồm nét chữ tương đồng (d10), giấy bút xé từ sổ trong bếp (d05), sợi len đỏ của người mẹ trên băng dính miệng (d11), mạng nhện nguyên vẹn ở cửa sổ và tuyết trắng không dấu chân (d08) đã chứng minh đây là một hiện trường dàn cảnh (d13, d15)."
+        "Tài liệu d04 bác bỏ hoàn toàn giả thuyết kẻ lạ đột nhập từ ngoài vào vì tuyết trắng quanh biệt thự nguyên vẹn không một dấu chân.",
+        "Tài liệu d12 chứng minh hung khí siết cổ garrote được chế tạo ngay tại chỗ bằng que cọ vẽ lấy từ hộp họa cụ của người mẹ trong tầng hầm."
+      ]
+    },
+    {
+      "id": "q5",
+      "stage": 4,
+      "type": "choice",
+      "title": "Bản kết luận điều tra toàn diện kỳ án JonBenét Ramsey",
+      "intro": "Lớp tuyết trắng nguyên vẹn, nét chữ trong bức thư và sợi len áo khoác đỏ đã hé lộ bản chất thực sự của vụ án.",
+      "prompt": "Dựa vào toàn bộ tài liệu hồ sơ, chuỗi chứng cứ nào vạch trần vụ án là một màn kịch dàn dựng bắt cóc giả mạo (Staging) từ nội bộ ngôi nhà?",
+      "options": [
+        "Hiện trường không hề có kẻ lạ đột nhập từ ngoài vào vì tuyết trắng nguyên vẹn; bức thư tống tiền 3 trang thực chất do người mẹ Patsy Ramsey viết bằng giấy bút trong nhà với số tiền đòi chuộc đúng bằng tiền thưởng tết của chồng; sợi len áo khoác đỏ của bà dính trên băng dính dán miệng và hung khí dây garrote làm từ chính que cọ vẽ trong tầng hầm, chứng minh gia đình đã dàn dựng màn kịch bắt cóc giả mạo để che đậy một tai nạn chấn thương sọ não nội bộ.",
+        "Một kẻ ấu dâm biến thái đột nhập qua cửa sổ tầng hầm trong lúc tuyết ngừng rơi, dùng que cọ vẽ chế tạo dây garrote sát hại JonBenét rồi sao chép chữ viết của Patsy Ramsey để đánh lạc hướng cảnh sát.",
+        "Nhóm khủng bố ngoại quốc cánh tả 'Small Foreign Faction' đã bắt cóc tống tiền gia đình Ramsey nhưng do nạn nhân la hét nên đã sát hại rồi để lại bức thư tống tiền đòi 118.000 USD.",
+        "Người giúp việc Linda Hoffmann do túng thiếu nợ nần đã đột nhập tầng hầm ban đêm sát hại JonBenét rồi vu oan cho bà chủ bằng cách dùng que cọ vẽ và sổ tay trong bếp."
+      ],
+      "answer": [
+        0
+      ],
+      "hints": [
+        "Tại sao kẻ bắt cóc tống tiền lại viết thư dài 3 trang bằng giấy bút trong nhà, đòi đúng 118.000 USD và để lại xác nạn nhân ngay trong tầng hầm?",
+        "Đối chiếu lớp tuyết phủ nguyên vẹn không dấu chân và sợi len áo đỏ của người mẹ dính trên băng dính."
+      ],
+      "explanation": [
+        "Phương án 1 là kết luận chính xác nhất được toàn bộ các chuyên gia hình sự và nhà phân tích FBI đồng thuận: Đây là vụ dàn dựng hiện trường (Crime Scene Staging) kinh điển nhất thế kỷ 20 nhằm bảo vệ thành viên gia đình sau một bi kịch tai nạn nội bộ."
       ]
     }
   ],

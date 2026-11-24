@@ -34,16 +34,4 @@
   - Mu bàn tay Y Bang có vết bỏng nhiệt dầu dừa còn mới, giấu dưới miếng băng dán cá nhân.
   - Cọc tiền 80 triệu và bộ chiêng đồng đen được tìm thấy giấu dưới bể phốt xi măng chưa dùng sau nhà Y Bang.
 
-## 4. Cấu trúc câu hỏi & Trọng điểm
-- **Trọng điểm 1**: Khám nghiệm hiện trường vụ cháy và tử thi già làng.
-  - Tài liệu d01 - d05: Bản tin địa phương, biên bản hiện trường kho thóc tro tàn, kết quả khám nghiệm tử thi già làng (không muội than khí quản, lún sọ), sơ đồ buôn Ea Kral, ảnh chụp chiếc xà gạc khắc chữ B vùi trong tro.
-  - Câu hỏi 1 (evidence): Ghim 2 tài liệu chứng minh già làng đã bị sát hại trước khi vụ cháy bùng phát và hung khí có dấu vết cá nhân. Đáp án: d03, d05.
-- **Trọng điểm 2**: Lời khai các nghi phạm và bằng chứng ngoại phạm uống rượu cần.
-  - Tài liệu d06 - d09: Lời khai Y Bang, lời khai H'Nhi, lời khai thợ săn Y Ksor, xác nhận của cán bộ khuyến nông về việc Y Bang ngồi uống rượu cần.
-  - Câu hỏi 2 (line): Dòng lời khai nào của Y Bang khẳng định y có mặt liên tục ở nhà rông từ 20h10 đến khi chuông báo cháy vang lên mà không hề đi đâu? Đáp án: d06:004.
-- **Trọng điểm 3**: Bằng chứng kỹ thuật về cơ chế phóng hỏa hẹn giờ.
-  - Tài liệu d10 - d13: Báo cáo giám định nguyên nhân cháy và mảnh vỡ rơ-le máy ấp trứng, ảnh chụp đui đèn và bánh răng cơ khí thu tại tâm cháy, biên bản kiểm tra xưởng sửa chữa máy nông nghiệp của Y Bang, lời khai thợ điện xã.
-  - Câu hỏi 3 (evidence): Ghim 2 tài liệu chứng minh vụ cháy được kích hoạt bằng cơ chế bẫy nhiệt hẹn giờ từ thiết bị cơ khí máy ấp trứng. Đáp án: d10, d11.
-- **Trọng điểm 4**: Vạch mặt hung thủ và thu hồi báu vật buôn làng.
-  - Tài liệu d14 - d16: Biên bản khám xét nhà Y Bang tìm thấy tiền quỹ và chiêng cổ, bản giám định vết bỏng trên tay Y Bang, bản thú tội và kết luận vụ án.
-  - Câu hỏi 4 (choice): Ai là kẻ đã sát hại già làng Ama Thuật và phóng hỏa đốt kho thóc? Đáp án: Y Bang.
+## 4. Cấu trúc câu hỏi & Trọng điểm (Đã nâng cấp độ khó x5)

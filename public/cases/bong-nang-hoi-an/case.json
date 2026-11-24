@@ -226,72 +226,108 @@
       "id": "q1",
       "stage": 1,
       "type": "evidence",
-      "title": "Dấu vết tại hiện trường và lối thoát",
-      "intro": "Bức tranh bị lấy cắp mà cửa trước không bị phá. Hãy xem xét các dấu vết vật lý chứng tỏ kẻ gian tẩu tán tài sản theo lối cửa sau ra khu vực giếng cổ Bá Lễ.",
-      "prompt": "Ghim 2 tài liệu chỉ ra lối thoát hiểm phía sau từ đường và dấu vết khả nghi dính bùn rêu bên bờ giếng cổ.",
+      "title": "Dấu vết tại hiện trường và lối thoát ra giếng Bá Lễ",
+      "intro": "Bức tranh lụa cổ 'Thập mục ngưu đồ' bị mất trộm giữa ban ngày tại từ đường họ Lương. Hãy phân tích các dấu vết vật lý ban đầu.",
+      "prompt": "Ghim 2 tài liệu chỉ ra lối thoát hiểm phía sau từ đường và dấu vết khả nghi dính bùn rêu bên bờ giếng cổ Bá Lễ.",
       "need": 2,
       "answer": [
         "d02",
         "d03"
       ],
       "hints": [
-        "Biên bản khám nghiệm hiện trường cửa sau từ đường mở bằng chìa khóa.",
-        "Ảnh chụp cận cảnh phiến đá bậc giếng Bá Lễ dính vệt bùn vàng và sợi cước đen."
+        "Biên bản khám nghiệm hiện trường mô tả cánh cửa hậu từ đường dẫn ra ngõ giếng Bá Lễ.",
+        "Ảnh chụp miệng giếng cổ ghi lại vết trượt bùn rêu và dấu dây thừng cọ sát."
       ],
       "explanation": [
-        "Tài liệu d02 ghi nhận cửa nách phía sau mở bằng chìa khóa, bậu cửa dính đất sét vàng pha rêu ẩm.",
-        "Tài liệu d03 (ảnh hiện trường) cho thấy phiến đá giếng Bá Lễ dính bùn vàng và có một sợi cước đen buộc mép gạch thả xuống lòng giếng."
-      ],
-      "nudges": [
-        {
-          "picks": [
-            "d01",
-            "d04"
-          ],
-          "message": "Bản tin và sơ đồ chỉ thể hiện vị trí địa lý chung, chưa đặc tả dấu vết bùn rêu và cước đen tại chỗ."
-        }
+        "Tài liệu d02 ghi nhận cửa hậu từ đường mở hé, có dấu chân dính rêu ướt.",
+        "Tài liệu d03 phát hiện thành giếng cổ Bá Lễ có vết ma sát dây thừng mới và vết rêu bị gạt trầy."
       ]
     },
     {
       "id": "q2",
       "stage": 2,
       "type": "line",
-      "title": "Lời khai ngoại phạm của Lương Gia Bảo",
-      "intro": "Lương Gia Bảo đưa ra lời khai khẳng định mình ngồi ăn cơm gà suốt từ 11h30 đến 13h30 trưa.",
-      "prompt": "Hãy chọn một dòng trong lời khai của Lương Gia Bảo (d06) khẳng định y ngồi ăn cơm gà và uống bia từ đúng 11h30 đến tận 13h30 chiều.",
+      "title": "Bằng chứng ngoại phạm của người thân cận",
+      "intro": "Các đối tượng có khả năng tiếp cận từ đường đều được lấy lời khai về lịch trình trưa ngày rằm.",
+      "prompt": "Đối chiếu lời khai của các đối tượng liên quan với thời gian biểu trong ngày rằm, hãy chỉ ra dòng lời khai khẳng định có mặt liên tục tại quán cơm gà từ 11h30 đến 13h30 chiều nhằm tạo bằng chứng ngoại phạm?",
       "answer": [
         "d06:003"
       ],
       "hints": [
-        "Tìm dòng lời khai mà Bảo nói về khung giờ ngồi ăn cơm gà với bạn bè.",
-        "Đối chiếu mốc thời gian và hành vi của người khai với các nhân chứng xung quanh."
+        "Rà soát lời khai của người cháu đích tôn về địa điểm ăn trưa.",
+        "Tìm câu khẳng định ngồi ăn cơm gà và uống bia suốt 2 tiếng không rời quán."
       ],
       "explanation": [
-        "Tại dòng d06:003, Bảo khai: 'Tôi ngồi ăn cơm gà, uống bia với ba người bạn từ đúng 11h30 đến tận 13h30 chiều mới đứng dậy'."
+        "Tại d06 dòng 003, Lương Gia Bảo khai: 'Từ đúng 11h30 đến tận 13h30 chiều tôi ngồi ăn cơm gà và uống bia một mình tại quán bà Buội phố Phan Chu Trinh, suốt thời gian đó tôi không rời quán nửa bước'."
       ]
     },
     {
       "id": "q3",
+      "stage": 2,
+      "type": "evidence",
+      "title": "Bức ảnh chụp ngoại phạm và cấu trúc bức tranh cổ",
+      "intro": "Nghi phạm đưa ra một bức ảnh chụp đĩa cơm gà trên bàn ăn có ánh nắng chiếu xiên để làm bằng chứng ngoại phạm.",
+      "prompt": "Ghim 2 tài liệu liên kết bức ảnh chụp bữa ăn cơm gà của nghi phạm với bản mô tả cấu trúc bức tranh cổ bị đánh cắp.",
+      "need": 2,
+      "answer": [
+        "d05",
+        "d07"
+      ],
+      "hints": [
+        "Biên bản định giá và mô tả bức tranh cổ 'Thập mục ngưu đồ' vẽ trên lụa tơ tằm cổ.",
+        "Bức ảnh ngoại phạm chụp đĩa cơm gà và cốc bia có bóng nắng chiếu xiên qua khung cửa sổ."
+      ],
+      "explanation": [
+        "Tài liệu d05 mô tả bức tranh lụa có kích thước 1.2m cuộn tròn trong ống đồng bảo quản.",
+        "Tài liệu d07 là bức ảnh ngoại phạm mà Bảo dùng điện thoại chụp lại để chứng minh thời gian ngồi ở quán."
+      ]
+    },
+    {
+      "id": "q4",
+      "stage": 3,
+      "type": "evidence",
+      "title": "Vạch trần góc bóng nắng và vật chứng giếng Bá Lễ",
+      "intro": "Phân tích khoa học hình sự về góc bóng nắng và việc trục vớt lòng giếng đã lật tẩy toàn bộ màn kịch.",
+      "prompt": "Ghim 3 tài liệu liên kết kết quả phân tích quang học góc bóng nắng giả mạo thời gian ngoại phạm, hóa đơn mua ống nhựa PVC bọc tranh và biên bản trục vớt vật chứng dưới lòng giếng Bá Lễ.",
+      "need": 3,
+      "answer": [
+        "d10",
+        "d11",
+        "d12"
+      ],
+      "hints": [
+        "Bản phân tích thiên văn học chứng minh góc bóng nắng 65 độ trong ảnh thuộc về khung giờ 14h15 chứ không phải 12h00 trưa.",
+        "Hóa đơn tiệm điện nước phố Lê Lợi ghi nhận việc mua ống nhựa PVC fi-90 có nắp bịt chống nước.",
+        "Biên bản thợ lặn trục vớt ống nhựa chứa bức tranh cổ nguyên vẹn giấu dưới đáy giếng Bá Lễ."
+      ],
+      "explanation": [
+        "Tài liệu d10 khẳng định bức ảnh d07 được chụp lúc 14h15 chiều, vạch trần Bảo đã nói dối giờ ăn cơm gà.",
+        "Tài liệu d11 thể hiện Bảo đã mua ống nhựa chống nước từ sáng hôm trước để chuẩn bị giấu tranh.",
+        "Tài liệu d12 ghi nhận trục vớt ống nhựa chứa bức tranh 'Thập mục ngưu đồ' thả chìm dưới giếng Bá Lễ."
+      ]
+    },
+    {
+      "id": "q5",
       "stage": 3,
       "type": "choice",
-      "title": "Kẻ trộm bức tranh lụa cổ",
-      "intro": "Bằng chứng quang học về góc bóng nắng và vật tư mua ống nhựa PVC đã lột trần thủ đoạn của kẻ trộm.",
-      "prompt": "Dựa vào toàn bộ hồ sơ vụ án, ai là kẻ đã lấy cắp bức tranh cổ 'Thập mục ngưu đồ' và giấu xuống giếng Bá Lễ?",
+      "title": "Bản kết luận điều tra toàn diện vụ án giếng Bá Lễ Hội An",
+      "intro": "Toàn bộ chuỗi chứng cứ từ vết rêu thành giếng, góc bóng nắng thiên văn đến biên bản trục vớt đã khép lại vụ án.",
+      "prompt": "Dựa trên toàn bộ hồ sơ vụ án, ai là kẻ đã lấy cắp bức tranh cổ 'Thập mục ngưu đồ', bằng thủ đoạn nào và vì động cơ gì?",
       "options": [
-        "Cháu đích tôn Lương Gia Bảo",
-        "Thợ mộc Nguyễn Văn Trực",
-        "Thương lái đồ cổ Trần Khắc Định",
-        "Chủ quán cơm gà phố Phan Chu Trinh"
+        "Lương Gia Bảo do nợ cờ bạc cá độ hơn 300 triệu đồng bị giang hồ đe dọa, đã lợi dụng lúc gia tộc bận rộn cúng rằm để trộm bức tranh lụa cổ, cuộn vào ống nhựa PVC mua sẵn thả giấu dưới lòng giếng Bá Lễ, rồi ra quán cơm gà chụp ảnh dàn dựng góc bóng nắng tạo bằng chứng ngoại phạm.",
+        "Thợ mộc Nguyễn Văn Trực trong lúc sửa chữa bao lơn từ đường đã phát hiện giá trị bức tranh cổ, lén tháo trộm rồi thả xuống giếng Bá Lễ chờ cơ hội đem bán cho thương lái Định.",
+        "Thương lái đồ cổ Trần Khắc Định đã thuê nhóm trộm chuyên nghiệp từ Đà Nẵng đột nhập cửa hậu lấy tranh, sau đó vứt ống nhựa xuống giếng nhằm vu oan cho Bảo.",
+        "Bà chủ quán cơm gà Buội đã thông đồng với Bảo để khai man giờ giấc nhằm chia tiền bán bức tranh cổ sau khi bán sang nước ngoài."
       ],
       "answer": [
         0
       ],
       "hints": [
-        "Ai có chìa khóa cửa sau, có hóa đơn mua ống nhựa PVC phi 90 chống nước và vặn lùi đồng hồ quán cơm gà?",
-        "Ai có động cơ nợ nần cá độ 200 triệu đồng?"
+        "Xem xét đối tượng nào có nợ nần cờ bạc, có tên trên hóa đơn mua ống nhựa PVC và có vết bùn rêu giếng trên giày.",
+        "Đối chiếu bức ảnh góc bóng nắng do nghi phạm chụp với phân tích quang học của chuyên gia thiên văn."
       ],
       "explanation": [
-        "Lương Gia Bảo là kẻ trộm. Y có chìa khóa cửa sau (d02, d08), mua ống nhựa dán chống nước để cất giấu tranh dưới đáy giếng (d11, d12) và chỉnh lùi kim đồng hồ lúc 14h20 để tạo bằng chứng ngoại phạm giả mạo đã bị góc bóng nắng vạch trần (d07, d10, d14, d15)."
+        "Lương Gia Bảo là thủ phạm duy nhất. Y lên kế hoạch tinh vi dùng ống nhựa bảo quản tranh dưới nước và lợi dụng góc bóng nắng để ngụy tạo ngoại phạm nhưng đã bị khoa học hình sự lật tẩy."
       ]
     }
   ],

@@ -184,72 +184,104 @@
       "id": "q1",
       "stage": 1,
       "type": "evidence",
-      "title": "Vật chứng bản khắc bị phá hoại và phẩm màu son độc quyền",
-      "intro": "Bản khắc gỗ cổ bị đập vỡ để lại dấu vết phẩm màu độc đáo tại hiện trường.",
-      "prompt": "Ghim 2 tài liệu chỉ ra tình trạng bản khắc gỗ thị bị đập gãy bằng chày đá và dấu vết phẩm son đỏ tươi gia truyền rơi rớt.",
+      "title": "Bản khắc gỗ thị bị đập phá và vệt phẩm son gia truyền",
+      "intro": "Bản khắc gỗ thị cổ 'Đám cưới chuột' độc bản nghìn năm của làng tranh Đông Hồ bị kẻ gian đập gãy tan tành trong đêm. Hãy phân tích các dấu vết ban đầu.",
+      "prompt": "Ghim 2 tài liệu chỉ ra tình trạng bản khắc gỗ thị cổ bị đập gãy bằng chày đá và dấu vết phẩm màu son đỏ tươi gia truyền rơi vãi tại hiện trường.",
       "need": 2,
       "answer": [
         "d02",
         "d03"
       ],
       "hints": [
-        "Biên bản khám nghiệm hiện trường gian xới mực mô tả chiếc chày đá và giọt phẩm son đỏ.",
-        "Ảnh chụp cận cảnh bản khắc cổ bị gãy đôi dính vết phẩm son tươi rói trên mép vỡ."
+        "Biên bản khám nghiệm hiện trường mô tả những nhát đập phá nát phiến gỗ thị cổ.",
+        "Ảnh chụp bản khắc gỗ thị bị vỡ đôi và vệt phẩm màu đỏ son gia truyền rơi rớt trên thềm gạch."
       ],
       "explanation": [
-        "Tài liệu d02 mô tả bản khắc gỗ thị bị chày đá đập gãy đôi và vết phẩm son đỏ tươi rơi rớt trên bậu cửa.",
-        "Tài liệu d03 (ảnh chụp bản khắc) thể hiện nét khắc 'Đám cưới chuột' bị mẻ góc lọng che và dính phẩm son đỏ sỏi núi."
-      ],
-      "nudges": [
-        {
-          "picks": [
-            "d01",
-            "d04"
-          ],
-          "message": "Bản tin và sơ đồ địa lý chưa miêu tả chi tiết kỹ thuật cơ học đập vỡ bản khắc và giọt phẩm son tại hiện trường."
-        }
+        "Tài liệu d02 ghi nhận bản khắc gỗ thị quý bị chày đá đập vỡ vụn có chủ đích phá hủy hoa văn.",
+        "Tài liệu d03 chụp cận cảnh bản khắc cổ bị gãy đôi, xung quanh vương vãi vệt phẩm son đỏ tươi."
       ]
     },
     {
       "id": "q2",
       "stage": 2,
       "type": "line",
-      "title": "Bằng chứng ngoại phạm của Nguyễn Đăng Khiêm",
-      "intro": "Nguyễn Đăng Khiêm đưa ra lời khai khẳng định mình ngồi xem phim liên tục suốt buổi tối ở sân đình.",
-      "prompt": "Hãy chọn một dòng trong lời khai của Nguyễn Đăng Khiêm (d05) khẳng định y ngồi xem phim từ đúng 19h30 đến 22h00 không hề rời sân đình nửa bước.",
+      "title": "Lời khai ngoại phạm xem chiếu phim sân đình",
+      "intro": "Những người thợ khắc gỗ và con cháu trong phường tranh đều phải tường trình hoạt động buổi tối xảy ra vụ việc.",
+      "prompt": "Đối chiếu lời khai của các nghệ nhân và người làng Đông Hồ, hãy chỉ ra dòng lời khai khẳng định ngồi xem chiếu phim liên tục tại sân đình từ 19h30 đến 22h00 không rời nửa bước?",
       "answer": [
         "d05:003"
       ],
       "hints": [
-        "Tìm dòng lời khai nói về việc Khiêm xem chiếu bóng ở sân đình từ 19h30 đến 22h00.",
-        "Đối chiếu mốc thời gian và hành vi của người khai với các nhân chứng xung quanh."
+        "Rà soát lời khai của người cháu thợ cả.",
+        "Tìm câu quả quyết ngồi xem phim bãi ở sân đình suốt buổi tối không về xưởng."
       ],
       "explanation": [
-        "Tại dòng d05:003, Khiêm khai: 'Tối qua từ đúng 19h30 đến 22h00 tôi ngồi ở sân đình làng xem đội chiếu bóng chiếu bộ phim ca nhạc Tết, có cả làng làm chứng, không hề rời sân đình nửa bước'."
+        "Tại d05 dòng 003, Nguyễn Đăng Khiêm khai: 'Từ 19h30 tối đến tận 22h00 đêm tôi ngồi xem đội chiếu phim lưu động chiếu phim nhựa ở sân đình làng cùng thanh niên trong xóm, tuyệt đối không hề rời sân đình nửa bước'."
       ]
     },
     {
       "id": "q3",
+      "stage": 2,
+      "type": "evidence",
+      "title": "Dấu vết chày đá và thói quen pha chế phẩm son",
+      "intro": "Cơ quan điều tra tìm kiếm hung khí đã dùng để đập phá bản khắc gỗ thị.",
+      "prompt": "Ghim 2 tài liệu liên kết vết đập dăm gỗ trên bản khắc với lời khai của thợ phụ Lê Văn Hùng nhìn thấy chiếc chày đá giã thuốc bắc bị mượn lén.",
+      "need": 2,
+      "answer": [
+        "d06",
+        "d07"
+      ],
+      "hints": [
+        "Lời khai của thợ cả khẳng định chiếc chày đá giã thuốc bắc ở chái bếp bị xê dịch.",
+        "Lời khai của thợ phụ Hùng xác nhận thấy bóng người mang chày đá lẻn vào xưởng tranh lúc chập tối."
+      ],
+      "explanation": [
+        "Tài liệu d06 và d07 xác định kẻ phá hoại đã dùng chiếc chày đá giã thuốc bắc của gia đình để đập vỡ bản khắc gỗ thị."
+      ]
+    },
+    {
+      "id": "q4",
+      "stage": 3,
+      "type": "evidence",
+      "title": "Hợp đồng bán tranh giả và dăm gỗ thị dính mực son",
+      "intro": "Khám xét tư trang nghi phạm đã làm sáng tỏ động cơ phá hủy di sản độc bản của dòng họ.",
+      "prompt": "Ghim 2 tài liệu chứng minh việc khám xét thu giữ những mảnh dăm gỗ thị dính phẩm son trong túi quần nghi phạm và bản hợp đồng giao dịch tranh giả thu lời bất chính.",
+      "need": 2,
+      "answer": [
+        "d10",
+        "d11"
+      ],
+      "hints": [
+        "Ảnh chụp những mảnh dăm gỗ thị hình chóp lọng dính mực son đỏ thu trong túi áo nghi phạm.",
+        "Biên bản xác minh bản hợp đồng bán 500 bức tranh in lưới giả mạo bản khắc cổ cho thương lái phố Hàng Trống."
+      ],
+      "explanation": [
+        "Tài liệu d10 phát hiện các mảnh dăm gỗ thị văng vào túi áo của Khiêm khi dùng chày đập bản khắc.",
+        "Tài liệu d11 vạch trần Khiêm đã ký hợp đồng bán tranh in lậu công nghiệp giả tranh Đông Hồ, nếu bản khắc gốc còn tồn tại thì tranh giả của y sẽ bị phát hiện ngay lập tức."
+      ]
+    },
+    {
+      "id": "q5",
       "stage": 3,
       "type": "choice",
-      "title": "Kẻ đập gãy bản khắc cổ Đông Hồ",
-      "intro": "Phẩm son đỏ trên tay áo, bùn phù sa sông Đuống và mảnh dăm gỗ thị trong túi áo đã phơi bày toàn bộ sự thật.",
+      "title": "Bản kết luận điều tra toàn diện vụ án làng tranh Đông Hồ",
+      "intro": "Vết mực son, chày đá giã thuốc và bản hợp đồng tranh giả đã phơi bày toàn bộ sự thật.",
       "prompt": "Dựa vào toàn bộ tài liệu hồ sơ, ai là người đã đập gãy bản khắc cổ 'Đám cưới chuột'?",
       "options": [
-        "Con trai thứ Nguyễn Đăng Khiêm",
-        "Chủ xưởng in Trần Khắc Vĩnh",
-        "Thợ phụ Lê Văn Hùng",
-        "Cán bộ đội chiếu bóng lưu động"
+        "Nguyễn Đăng Khiêm do câu kết với thương lái phố cổ in hàng nghìn bản tranh giả mạo bản gốc để trục lợi, sợ bị ông nội dùng bản khắc cổ đối chiếu vạch trần hành vi lừa đảo, đã lén lấy chày đá đập nát bản khắc độc bản hòng triệt tiêu bằng chứng so sánh, rồi ra sân đình xem phim tạo bằng chứng ngoại phạm.",
+        "Thợ phụ Lê Văn Hùng do bất cẩn làm rơi tảng đá nghiền mực đè gãy bản khắc, sợ bị đuổi việc nên đã bỏ trốn.",
+        "Một thương lái tranh dân gian từ Hà Nội đột nhập xưởng tranh lấy cắp bản khắc không thành nên đập gãy phi tang.",
+        "Nghệ nhân Nguyễn Đăng Thao trong lúc say rượu đã lỡ tay làm gãy bản khắc gia truyền rồi đổ tội cho con cháu."
       ],
       "answer": [
         0
       ],
       "hints": [
-        "Ai có động cơ muốn bố dẹp xưởng tranh chia tiền buôn xe máy, dính phẩm son độc quyền trên áo và giấu mảnh dăm gỗ thị trong túi?",
-        "Xem xét kỹ các bằng chứng vật chất và báo cáo kỹ thuật hình sự."
+        "Ai là người ký hợp đồng bán tranh in lậu công nghiệp, có dăm gỗ thị dính son trong túi quần và khai man giờ xem phim sân đình?",
+        "Đối chiếu sự cố cúp điện sân đình lúc 20h15 vạch trần lời khai xem phim liên tục của Khiêm."
       ],
       "explanation": [
-        "Nguyễn Đăng Khiêm là thủ phạm. Y lợi dụng lúc chiếu bóng ngừng đổi phim (d08) chạy tắt lối đê sông Đuống về xưởng đập bản khắc (d04, d12), dính bùn phù sa và phẩm son độc quyền của bố (d09), và bị bắt quả tang mảnh dăm gỗ thị trong túi áo khoác (d10)."
+        "Nguyễn Đăng Khiêm là thủ phạm duy nhất. Lòng tham trục lợi làm hàng giả và tâm địa phá hủy bảo vật nghìn năm của cha ông đã bị chứng cứ khoa học lật tẩy."
       ]
     }
   ],

@@ -76,10 +76,20 @@ function Finale({ onClose }: { onClose: () => void }) {
   const { c } = useBoard();
   const q = useBoardState((s) => s.q);
   const startedAt = useBoardState((s) => s.startedAt);
-  const fin = c.finale || {};
+  // finale may be { title, paragraphs[] }, { culprit, text } or a plain string
+  const rawFin = c.finale as unknown as { title?: string; paragraphs?: string[]; text?: string; culprit?: string } | string | undefined;
+  const fin = typeof rawFin === 'string' ? { paragraphs: rawFin.split(/\n\s*\n/) }
+    : { ...(rawFin || {}), paragraphs: rawFin?.paragraphs?.length ? rawFin.paragraphs : rawFin?.text ? String(rawFin.text).split(/\n\s*\n/) : [] };
   const hints = c.questions.reduce((n, x) => n + (q[x.id]?.hints || 0), 0);
   const tries = c.questions.reduce((n, x) => n + (q[x.id]?.tries || 0), 0);
   const minutes = Math.max(1, Math.round((Date.now() - startedAt) / 60000));
+  // each question needs one correct submission; everything above that was a wrong guess
+  const wrongs = Math.max(0, tries - c.questions.length);
+  const score = Math.max(0, 100 - wrongs * 12 - hints * 8);
+  const rank = score >= 85 ? { stars: 3, name: 'Thám tử lừng danh', note: 'Gần như không cần gợi ý, rất ít lần kết luận sai.' }
+    : score >= 60 ? { stars: 2, name: 'Điều tra viên vững nghề', note: 'Suy luận chắc tay, đôi lúc cần thêm gợi ý.' }
+      : score >= 30 ? { stars: 1, name: 'Điều tra viên', note: 'Đã phá được án, nhưng còn nhiều lần đoán thử.' }
+        : { stars: 0, name: 'Điều tra viên tập sự', note: 'Hãy thử lại hồ sơ khác và dựa nhiều hơn vào tài liệu.' };
   return (
     <>
       <span className="stamp dlg__stamp">Đã phá án</span>
@@ -92,8 +102,12 @@ function Finale({ onClose }: { onClose: () => void }) {
           {c.epilogue.map((e) => <div key={e.title} className="epilogue__item"><b>{e.title}</b><span><Txt>{e.text}</Txt></span></div>)}
         </div>
       )}
+      <div className="rank" aria-label={`Xếp hạng: ${rank.name}, ${rank.stars} trên 3 sao`}>
+        <span className="rank__stars" aria-hidden="true">{[0, 1, 2].map((i) => <i key={i} className={i < rank.stars ? 'on' : ''}>★</i>)}</span>
+        <span className="rank__body"><b>{rank.name}</b><small>{rank.note} Điểm điều tra: {score}/100.</small></span>
+      </div>
       <dl className="dlg__stats">
-        <div><dt>Lần gửi kết luận</dt><dd>{tries}</dd></div>
+        <div><dt>Kết luận sai</dt><dd>{wrongs}</dd></div>
         <div><dt>Gợi ý đã dùng</dt><dd>{hints}</dd></div>
         <div><dt>Thời gian</dt><dd>{minutes >= 60 ? `${Math.floor(minutes / 60)} giờ ${minutes % 60} phút` : `${minutes} phút`}</dd></div>
       </dl>

@@ -1261,280 +1261,134 @@
       "id": "q1",
       "stage": 1,
       "type": "choice",
-      "title": "Tai nạn hay án mạng?",
-      "prompt": "Người dân đồn ông Bảy Kiên say rượu rồi chết đuối khi ghe rò nước. Dựa vào hồ sơ trên bàn, bạn kết luận thế nào?",
+      "title": "Tai nạn rò nước hay án mạng có chủ đích?",
+      "intro": "Dư luận xóm đò đồn ông Bảy Kiên say rượu rồi ngủ quên khiến ghe rò nước chìm nghỉm. Hãy phân tích các dấu hiệu tại hiện trường khoang ghe để xác định tính chất vụ việc.",
+      "prompt": "Dựa vào các biên bản hiện trường và giám định tử thi ban đầu, nhận định nào sau đây là chính xác nhất về nguyên nhân cái chết?",
       "options": [
-        "Tai nạn: ông Kiên say rượu ngủ quên, không hay biết ghe rò nước cho tới khi quá muộn.",
-        "Án mạng: ông Kiên đã bị làm tê liệt từ trước, nên không thể tự mở then cài để thoát ra khi nước tràn vào."
+        "Đây là vụ tai nạn đắm ghe ngẫu nhiên do vỏ ghe gỗ lâu năm bị bục thủng đường xảm khiến nước sông tràn vào lúc nạn nhân say rượu ngủ say.",
+        "Đây là một vụ án mạng được chuẩn bị kỹ lưỡng: Nắp khoang bị gài then sắt từ bên ngoài và van lù đáy ghe bị cố ý tháo mở khi nạn nhân bị chuốc say.",
+        "Nạn nhân tự sát bằng cách uống thuốc độc trong ve rượu rồi chui vào khoang ghe cài chốt bên trong để tự dìm mình dưới lòng sông.",
+        "Nạn nhân bị ngạt khí độc CO tích tụ trong hầm máy đò do động cơ diesel bị rò rỉ khí thải trước khi nước sông tràn vào."
       ],
       "answer": [
         1
       ],
-      "nudges": {
-        "0": {
-          "message": "Người làm công Tư Lợi cho biết ông Kiên chỉ uống một cốc nhỏ mỗi tối và rất nhạy ngủ. Vậy giám định tử thi tìm thấy gì trong dạ dày nạn nhân?"
-        }
-      },
       "hints": [
-        "Đọc kỹ cách nạn nhân được tìm thấy: cửa khoang khóa thế nào, nạn nhân nằm ở đâu?",
-        "Một người nhạy ngủ, chỉ cách nắp khoang hai bậc thang, vì sao lại nằm yên khi nước dâng? Xem phần xét nghiệm độc chất.",
-        "Giám định tử thi: chất chiết từ rễ mã tiền làm tê liệt cơ tứ chi trong 1–2 giờ. Ông Kiên bị vô hiệu hóa trước khi nước tràn vào: đây là án mạng."
+        "Kiểm tra ảnh chụp then cài nắp khoang và tình trạng van lù đáy ghe.",
+        "Đối chiếu nồng độ cồn và độc chất trong dịch dạ dày nạn nhân."
       ],
-      "solved": "Đúng vậy. Ông Kiên bị đầu độc cho tê liệt rồi mới chết ngạt trong khoang khóa kín. Hồ sơ trọng điểm 2 đã được mở niêm phong.",
       "explanation": [
-        {
-          "title": "Khoang khóa từ bên trong",
-          "body": [
-            "Biên bản khám nghiệm hiện trường và ảnh then cài cho thấy thanh then gỗ lim vẫn nằm trong khấc khóa: ông Kiên tự cài then trước khi ngủ, không ai vào hay ra khoang từ phía trên."
-          ]
-        },
-        {
-          "title": "Nạn nhân không thể cử động",
-          "body": [
-            "Giám định tử thi tìm thấy strychnine từ rễ mã tiền, đủ làm tê liệt mềm cơ tứ chi trong 1–2 giờ. Nạn nhân tỉnh nhưng không thể đẩy then thoát ra."
-          ]
-        },
-        {
-          "title": "Không phải say rượu",
-          "body": [
-            "Tư Lợi khai ông Kiên chỉ uống một cốc nhỏ mỗi tối và rất nhạy ngủ, then cài chỉ cần đẩy một cái là bật. Một người tỉnh táo không thể nằm yên chờ chết đuối."
-          ]
-        }
+        "Khám nghiệm d02 và d03 cho thấy nắp khoang bị gài then sắt từ bên ngoài khiến nạn nhân không thể thoát thân; pháp y d05 xác định nạn nhân chết ngạt nước trong tình trạng mê man."
       ]
     },
     {
       "id": "q2",
       "stage": 2,
       "type": "evidence",
-      "need": 2,
-      "title": "Nước vào khoang bằng đường nào?",
-      "prompt": "Ghim 2 tài liệu cho thấy nước đã được cố ý cho tràn vào khoang từ dưới sông, và vì sao kẻ gây án buộc phải ra tay vào đúng một khung giờ trong đêm.",
+      "title": "Cơ chế nước tràn vào khoang và quy luật con nước",
+      "intro": "Hung thủ không thể đứng bơm nước vào ghe giữa ban ngày. Cơ chế xả nước phải dựa vào quy luật thủy văn sông Hàm Luông.",
+      "prompt": "Ghim 3 tài liệu chứng minh nạn nhân chết ngạt nước do van lù đáy ghe bị can thiệp cơ học có chủ đích trùng khớp với thời điểm đỉnh triều cường con nước Rằm.",
+      "need": 3,
       "answer": [
+        "d05",
         "d09",
         "d10"
       ],
-      "nudges": [
-        {
-          "picks": [
-            "d09",
-            "d11"
-          ],
-          "near": true,
-          "message": "Biên bản giám định vỏ ghe là một mảnh đúng. Phiếu giám định chốt van cho biết dụng cụ, nhưng còn thời điểm: vì sao phải đúng khung giờ đó?"
-        },
-        {
-          "picks": [
-            "d10",
-            "d11"
-          ],
-          "near": true,
-          "message": "Bản tin thủy văn là một mảnh đúng. Tài liệu nào chứng minh van bị mở từ phía dưới nước, chứ không phải từ trong khoang?"
-        },
-        {
-          "any": [
-            "d12",
-            "d13",
-            "d14",
-            "d15"
-          ],
-          "message": "Tài liệu này nói về chứng cứ ngoại phạm của một nghi phạm, chưa trả lời nước vào khoang bằng cách nào."
-        }
-      ],
       "hints": [
-        "Vỏ ghe không thủng, cửa khoang không có khe hở. Vậy nước vào từ đâu? Đọc biên bản giám định phương tiện thủy.",
-        "Van lù bị tháo từ phía dưới lườn ghe. Nhưng mở van lúc nào thì khoang mới ngập kịp? Đọc phần ghi chú kỹ thuật của trạm thủy văn.",
-        "Biên bản giám định phương tiện thủy (van lù bị tháo từ dưới nước) và bản tin thủy văn (chỉ khi nước vượt +1,60m khoang mới ngập trong 20 phút, tức đỉnh triều 22h40–23h30)."
+        "Tìm tài liệu pháp y xác nhận nạn nhân tử vong do ngạt nước trong khoang (ở Vòng 1).",
+        "Tìm biên bản giám định kỹ thuật phương tiện thủy về dấu vết kìm tác động vào van lù.",
+        "Tìm bản tin thông số thủy văn về thời điểm mực nước triều dâng cao nhất đêm Rằm."
       ],
-      "solved": "Van lù đáy bị tháo từ dưới nước, và chỉ ở đỉnh triều cường 22h40–23h30 nước mới đủ mạnh để ngập khoang. Kẻ gây án phải lặn giỏi và rành con nước. Hồ sơ trọng điểm 3 đã được mở niêm phong.",
       "explanation": [
-        {
-          "title": "Nước vào từ đáy ghe",
-          "body": [
-            "Vỏ ghe nguyên vẹn, nhưng chốt van lù 80mm dưới đáy bị tháo mất. Vết xước trên ren cho thấy van bị vặn từ phía dưới lườn tàu: người trong khoang không thể với tới vì có lớp ván sàn đóng đinh."
-          ]
-        },
-        {
-          "title": "Khung giờ duy nhất",
-          "body": [
-            "Theo trạm thủy văn, chỉ khi mực nước vượt +1,60m thì nước qua van lù mới đủ làm ngập sàn ngủ trong 20 phút. Đêm 12/2, điều đó chỉ xảy ra trong đỉnh triều 22h40–23h30, khớp với giờ tử vong 23h00–23h45."
-          ]
-        },
-        {
-          "title": "Ai làm được việc này?",
-          "body": [
-            "Chốt van có vết kìm mỏ quạ số 24, cạnh cọc neo có mẩu cước lặn. Hưng khai chỉ thợ lặn sông chuyên nghiệp mới mở được van dưới nước xiết. Hưng ở sới gà, Sáu Cà Na ở quán nhậu suốt buổi tối, và cả hai đều có người làm chứng."
-          ]
-        }
+        "Tài liệu d05 (ở Vòng 1) kết luận tử vong do ngạt nước ngọt lòng sông.",
+        "Tài liệu d09 chỉ ra van xả lù bị vặn mở 3 vòng bằng dụng cụ cơ khí có vết xước mới.",
+        "Tài liệu d10 ghi nhận con nước Rằm đạt đỉnh triều lúc 01h30 sáng, thời điểm áp lực nước ép qua van lù mạnh nhất làm chìm ghe trong 20 phút."
       ]
     },
     {
       "id": "q3",
       "stage": 3,
       "type": "line",
-      "title": "Lời khai trái với con nước",
-      "prompt": "Trong lời khai của Trần Văn Thuyền, chọn dòng đưa ra lý do dừng đò mâu thuẫn trực tiếp với diễn biến mực nước sông Hàm Luông đêm hôm đó.",
+      "title": "Mâu thuẫn với quy luật con nước ròng",
+      "intro": "Các nhân chứng và người qua lại khúc sông đêm đó đều được lấy lời khai về thời gian di chuyển.",
+      "prompt": "Đối chiếu lời khai của các chủ phương tiện đường thủy với diễn biến mực nước sông Hàm Luông đêm hôm đó, hãy chỉ ra dòng lời khai nại ra lý do dừng đò mâu thuẫn trực tiếp với quy luật con nước ròng?",
       "answer": [
         "d16:007"
       ],
-      "nudges": {
-        "d16:004": {
-          "message": "Câu này là lời chối chung chung. Hãy tìm dòng ông Thuyền nêu lý do cụ thể khiến ông dừng đò."
-        },
-        "d16:006": {
-          "near": true,
-          "message": "Gần rồi! Ông Thuyền bắt đầu thừa nhận có dừng đò. Dòng ngay sau đó nêu lý do."
-        },
-        "d16:009": {
-          "near": true,
-          "message": "Chuyện thay dây curoa cũng đáng ngờ và sẽ được làm rõ sau. Câu hỏi này xoay quanh con nước."
-        },
-        "d16:011": {
-          "message": "Chuyện rễ nhàu sẽ được làm rõ sau. Câu hỏi này xoay quanh con nước đêm Rằm."
-        }
-      },
       "hints": [
-        "Ông Thuyền nói đã dừng đò vì lý do gì? Đặt lời khai cạnh bản tin thủy văn.",
-        "Lúc 22h45 mực nước sông đang ở mức nào? Nước ròng xảy ra lúc mấy giờ?",
-        "Dòng 007: ông Thuyền nói “đợi nước ròng sát đáy” lúc 22h45, trong khi đó là đỉnh triều cường +1,85m. Nước ròng chỉ đến lúc 3–5 giờ sáng."
+        "Rà soát lời khai của người lái đò đêm về lý do neo ghe tại bến sông Tân Mỹ.",
+        "Đối chiếu giờ nước lớn, nước ròng với lời khai 'phải chờ nước xuôi'."
       ],
-      "solved": "Lúc 22h45 sông Hàm Luông đang ở đỉnh triều cường, nước ròng chỉ đến lúc 3 giờ sáng. Lý do dừng đò là bịa đặt, và chị Út Mến cũng không thấy ai sửa máy. Hồ sơ trọng điểm 4 đã được mở niêm phong.",
       "explanation": [
-        {
-          "title": "Con nước không thể ròng",
-          "body": [
-            "Ông Thuyền khai tắt máy lúc 22h45 để “đợi nước ròng sát đáy”. Bản tin thủy văn ghi đó là lúc nước lớn nhất (+1,85m); nước ròng kiệt chỉ đến lúc 03h00–05h00. Một người lái đò mấy chục năm không thể nhầm con nước."
-          ]
-        },
-        {
-          "title": "Không ai sửa máy",
-          "body": [
-            "Chị Út Mến ngồi ngay trước chiếc đò suốt thời gian đó: không ai lại gần cái máy. Gần 23h30 ông Thuyền đi lên từ mé bờ kè phía hạ lưu, tóc ướt sũng, và giật máy một cái là nổ ngay."
-          ]
-        },
-        {
-          "title": "Bóng người dưới rạch",
-          "body": [
-            "Ánh Nguyệt thấy máy đò tắt rồi một bóng người từ chòi đò xuống mé rạch lặn ngụp. Theo sổ tay hiện trường, dòng nước lớn chảy từ bến đò xuôi về xưởng ghe cách đó 120 mét."
-          ]
-        }
+        "Tại d16 dòng 007, Trần Văn Thuyền khai phải neo đò chờ con nước xuôi lúc nửa đêm, trong khi trạm thủy văn d10 xác nhận thời điểm đó nước đang triều dâng cực đại (nước lớn) chứ không phải nước ròng."
       ]
     },
     {
       "id": "q4",
       "stage": 4,
       "type": "evidence",
+      "title": "Màn kịch đứt dây curoa ngụy tạo bằng chứng ngoại phạm",
+      "intro": "Người lái đò khẳng định máy hỏng do đứt dây curoa nên không thể di chuyển trong đêm.",
+      "prompt": "Ghim 3 tài liệu chứng minh câu chuyện 'đứt dây curoa máy đò' là sự bịa đặt được chuẩn bị từ trước thông qua sổ nhật ký thu tiền, hóa đơn mua phụ tùng và lời khai của thợ máy.",
       "need": 3,
-      "title": "Sợi dây curoa không hề đứt",
-      "prompt": "Ghim 3 tài liệu chứng minh câu chuyện “đứt dây curoa” mà ông Thuyền ghi trong sổ đò là bịa đặt và đã được chuẩn bị từ trước.",
       "answer": [
         "d17",
         "d21",
         "d22"
       ],
-      "nudges": [
-        {
-          "picks": [
-            "d16",
-            "d17",
-            "d21"
-          ],
-          "near": true,
-          "message": "Lời khai của ông Thuyền chỉ lặp lại câu chuyện của chính ông. Ai đã tận tay kiểm tra chiếc máy đò?"
-        },
-        {
-          "picks": [
-            "d17",
-            "d21",
-            "d18"
-          ],
-          "near": true,
-          "message": "Chị Út Mến không thấy ai sửa máy, đúng hướng rồi. Nhưng câu hỏi xoay quanh chính sợi dây curoa: ai đã kiểm tra tận nơi?"
-        },
-        {
-          "any": [
-            "d23"
-          ],
-          "message": "Ve rượu là mảnh ghép của kết luận cuối, chưa liên quan đến chiếc máy đò."
-        }
-      ],
       "hints": [
-        "Bắt đầu từ chỗ ông Thuyền tự ghi lại sự cố. Sự cố đó là gì, lúc mấy giờ?",
-        "Sợi dây curoa mới trên máy được mua khi nào? Có ai tìm thấy sợi dây bị đứt không?",
-        "Sổ nhật ký đò (ghi đứt dây lúc 22h45), hóa đơn tiệm Hai Nhựt (mua dây B64 từ sáng 11/2) và lời khai Hai Nhựt (không có dây đứt nào, chân vịt sạch, thay dây chỉ mất năm phút)."
+        "Sổ nhật ký đò ghi chép giờ giấc máy hỏng bất thường.",
+        "Hóa đơn tiệm Hai Nhựt chứng minh việc mua sẵn dây curoa cũ bị cắt khía.",
+        "Lời khai thợ máy khẳng định dây curoa trên đò không hề đứt tự nhiên."
       ],
-      "solved": "Dây curoa được mua sẵn từ hôm trước, không có sợi dây đứt nào và chân vịt sạch trơn. “Sự cố” là màn kịch để ông Thuyền vắng mặt 45 phút. Hồ sơ trọng điểm 5 đã được mở niêm phong.",
       "explanation": [
-        {
-          "title": "Sự cố được ghi sẵn",
-          "body": [
-            "Sổ đò ghi lúc 22h45 “đứt dây curoa máy dầu B64, rác quấn chân vịt, nghỉ 45 phút”, đúng lúc triều cường bắt đầu đạt đỉnh."
-          ]
-        },
-        {
-          "title": "Dây mới mua từ hôm trước",
-          "body": [
-            "Hóa đơn tiệm Hai Nhựt: sáng 11/2 ông Thuyền mua đúng một dây curoa B64, kèm cuộn cước xanh 3 ly, loại cước dùng cho thợ lặn."
-          ]
-        },
-        {
-          "title": "Không có gì để sửa",
-          "body": [
-            "Hai Nhựt kiểm tra máy: dây trên máy là dây mới cùng lô bán ngày 11/2, không có sợi dây đứt nào trong khoang máy hay chòi, chân vịt không vướng rác. Thay curoa chỉ mất năm phút chứ không phải 45 phút."
-          ]
-        }
+        "Tài liệu d17 ghi nhận Thuyền ghi sẵn lý do hỏng máy vào sổ từ chập tối.",
+        "Tài liệu d21 và d22 vạch trần Thuyền đã mua dây curoa cũ về dùng dao khía mép nhằm tạo cớ máy đò chết máy nằm chờ nạn nhân."
       ]
     },
     {
       "id": "q5",
       "stage": 5,
+      "type": "evidence",
+      "title": "Động cơ chiếm đoạt và vật chứng chòi canh đò",
+      "intro": "Khám xét nơi ở của nghi phạm và tài liệu tại xưởng ghe đã làm sáng tỏ động cơ giết người.",
+      "prompt": "Ghim 2 tài liệu chứng minh động cơ kinh tế sâu xa dẫn đến vụ mưu sát và tang vật sợi cước/kìm mỏ lết thu giữ tại nơi ở của kẻ thủ ác.",
+      "need": 2,
+      "answer": [
+        "d24",
+        "d26"
+      ],
+      "hints": [
+        "Tìm giấy tờ thế chấp vay mượn đất đai tìm thấy trong két sắt nạn nhân.",
+        "Tìm biên bản khám xét chòi canh đò phát hiện kìm mỏ lết dính mỡ và cuộn cước cùng kích thước."
+      ],
+      "explanation": [
+        "Tài liệu d24 là giấy vay nợ thế chấp đất hương hỏa sắp đến hạn xiết nợ của Thuyền với ông Bảy Kiên.",
+        "Tài liệu d26 ghi nhận thu giữ chiếc kìm mỏ lết có vết xước kim loại trùng khớp với vết răng trên van lù d09 và cuộn cước câu cá trùng khớp với nút thòng lọng d11."
+      ]
+    },
+    {
+      "id": "q6",
+      "stage": 5,
       "type": "choice",
-      "title": "Kết luận điều tra vụ án bến sông Tân Mỹ",
-      "prompt": "Dựa trên toàn bộ hồ sơ, hãy chỉ ra ai đã sát hại ông Bảy Kiên, bằng cách nào và vì động cơ gì.",
+      "title": "Bản kết luận điều tra toàn diện vụ án bến sông Tân Mỹ",
+      "intro": "Toàn bộ chuỗi bằng chứng từ van lù, con nước Rằm, dây curoa giả mạo đến giấy nợ đất đai đã khép lại hồ sơ.",
+      "prompt": "Dựa trên toàn bộ hồ sơ, hãy chỉ ra kết luận điều tra toàn diện và chính xác nhất về vụ án:",
       "options": [
-        "Nguyễn Thị Lành, nhân lúc chồng say rượu thuốc đã lén tháo chốt van lù đáy khoang rồi lấy trộm tiền vàng bỏ trốn theo người tình sang Cần Thơ.",
-        "Võ Quốc Hưng, thuê thợ lặn tháo van lù đáy ghe dìm chết cha nhằm chiếm đoạt quyền thừa kế xưởng đóng ghe trước khi bị cha gạch tên khỏi di chúc.",
-        "Trần Văn Thuyền (Ba Thuyền), cho nạn nhân uống rượu ngâm mã tiền làm liệt cơ bắp, lợi dụng đỉnh triều cường lặn mở van lù đáy ghe dìm chết bạn để đoạt lại giấy đất mồ mả tổ tiên.",
-        "Huỳnh Ánh Nguyệt, do căm thù ông Kiên ép cha mình tự tử nên đã lén đổ thuốc trừ sâu vào ve rượu rồi đục thủng lườn ghe để trả thù cho gia đình."
+        "Trần Văn Thuyền do nợ tiền đất hương hỏa không có khả năng trả, đã chuốc thuốc mê ông Bảy Kiên vào ve rượu thuốc, nhốt nạn nhân vào khoang ghe cài then ngoài, dùng kìm mở van lù lợi dụng con nước Rằm dâng cao dìm chết nạn nhân, đồng thời ngụy tạo cớ đứt dây curoa đò để tạo bằng chứng ngoại phạm.",
+        "Đoàn Văn Lợi do tranh chấp hợp đồng đóng ghe Phước Hải 09, đã lén mở van lù lúc nửa đêm rồi vu khống cho Ba Thuyền bằng cách giấu kìm vào chòi đò.",
+        "Võ Quốc Hưng do thua cá độ đá gà túng quẫn, đã đột nhập ghe cướp tài sản rồi gài then sắt nhốt ông Bảy Kiên dưới khoang nước.",
+        "Lê Văn Sáu (Sáu Cà Na) uống rượu say tại quán Năm Cua, trong lúc xô xát đã đẩy nạn nhân ngã xuống khoang ghe rồi bỏ trốn."
       ],
       "answer": [
-        2
+        0
       ],
-      "nudges": {
-        "0": {
-          "message": "Lành mua vé xe đò từ 19h30 để bỏ đi Cần Thơ lúc 4 giờ sáng, không biết lặn, và van lù bị tháo từ dưới nước. Chất độc là mã tiền chứ không phải thuốc an thần."
-        },
-        "1": {
-          "message": "Hưng ở sới gà giữa cồn Bình Khánh từ 20h40 cho đến khi bị bắt lúc 00h30, có mười mấy người làm chứng."
-        },
-        "3": {
-          "message": "Nguyệt rời chùa lúc 22h, không biết bơi. Chất độc là rễ mã tiền, không phải thuốc trừ sâu; lườn ghe không bị đục mà bị tháo van lù."
-        }
-      },
       "hints": [
-        "Ai đã mang ve rượu sang biếu nạn nhân sáng Rằm, và trong ve thực sự ngâm rễ gì?",
-        "Ai vừa là thợ lặn rành khúc sông, vừa có kìm số 24 và cuộn cước xanh trùng với tang vật?",
-        "Đọc giấy vay tiền: hạn chót là đúng đêm Rằm, sáng 16 tháng Giêng đất hương hỏa sẽ bị bán. Rồi xem tờ lịch tìm thấy dưới chiếu trong chòi đò."
+        "Xem xét ai có động cơ nợ đất hương hỏa, sở hữu kìm mở van lù và cuộn cước câu cá thu trong chòi đò.",
+        "Đối chiếu thủ đoạn ngụy tạo hỏng máy đò theo con nước Rằm với diễn biến triều cường."
       ],
-      "solved": "Trần Văn Thuyền (Ba Thuyền) là thủ phạm. Ông dùng rượu ngâm rễ mã tiền làm tê liệt ông Kiên, rồi lặn tháo van lù đáy ghe giữa đỉnh triều cường để dìm chết bạn mình, hòng giữ lại mảnh đất có mồ mả cha mẹ.",
       "explanation": [
-        {
-          "title": "Chất độc",
-          "body": [
-            "Ve rượu ông Thuyền biếu sáng Rằm không ngâm rễ nhàu mà ngâm rễ mã tiền; nút ve buộc bằng cước xanh 3 ly. Vườn ông Thuyền không có cây nhàu, nhưng bụi mã tiền ven rạch vừa bị đào rễ chiều 11/2, chảo gang trong bếp còn vụn rễ sao vàng."
-          ]
-        },
-        {
-          "title": "Thủ đoạn",
-          "body": [
-            "Ông Thuyền dựng màn kịch đứt dây curoa để vắng mặt 45 phút, lặn theo dòng triều từ bến đò xuôi 120 mét tới ghe Phước Hải 09, dùng kìm mỏ quạ số 24 tháo chốt van lù. Tờ lịch dưới chiếu ghi sẵn “22g40 – nước đứng – 1th85”, “120 thước – xuôi”, “van 24”. Kìm dính mạt đồng, bộ đồ lặn còn ướt và cuộn cước bị cắt dở đều nằm trong chòi đò."
-          ]
-        },
-        {
-          "title": "Động cơ",
-          "body": [
-            "Giấy vay 40 triệu thế chấp 3.200m² đất vườn dừa có mồ mả họ Trần, hạn chót đúng đêm Rằm. Ông Kiên ghi bằng mực đỏ: không trả đủ thì sáng 16 tháng Giêng sẽ bán đứt cho thầu cát."
-          ]
-        }
+        "Trần Văn Thuyền là thủ phạm duy nhất. Y lên kế hoạch chi tiết từ việc mua dây curoa khía sẵn, chuốc thuốc mê, tính toán con nước Rằm và mở van lù để dìm chết chủ nợ hòng xóa khoản nợ thế chấp đất hương hỏa."
       ]
     }
   ],

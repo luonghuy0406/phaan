@@ -33,16 +33,4 @@
   - Ống bương tre tự chế có trục xoay lật úp bị giấu sau tượng Hộ Pháp trên gác chuông dính nhựa mủ tre tươi mới cắt sáng cùng ngày.
   - Trong túi áo nâu sồng của Quảng Chân có chiếc cưa tay mini dính mùn tre và một mẩu dây dù cùng loại với bẫy gõ chuông.
 
-## 4. Cấu trúc câu hỏi & Trọng điểm
-- **Trọng điểm 1**: Phát hiện án mạng trong tịnh thất và tiếng chuông ngọ bí ẩn.
-  - Tài liệu d01 - d05: Bản tin địa phương, biên bản hiện trường tịnh thất khóa trong, kết quả khám nghiệm tử thi (tử vong 09h45 - 10h15 sáng), sơ đồ chùa Cổ Sơn trên núi Sài Sơn, ảnh gác chuông cổ và chày gõ đại hồng chung.
-  - Câu hỏi 1 (evidence): Ghim 2 tài liệu chứng minh sư trụ trì đã viên tịch từ sáng sớm trước giờ ngọ và cơ chế gõ chuông treo trên gác chuông. Đáp án: d03, d05.
-- **Trọng điểm 2**: Lời khai nghi phạm và bằng chứng ngoại phạm nhà khách.
-  - Tài liệu d06 - d09: Lời khai Thích Quảng Chân (ăn cơm chay với 20 phật tử lúc 12h00), lời khai thợ đúc đồng Bùi Văn Lực, lời khai bà bếp Hoàng Thị Nga, biên bản xác nhận của đại diện phật tử nhà khách.
-  - Câu hỏi 2 (line): Dòng lời khai nào của Thích Quảng Chân khẳng định y ngồi liên tục ở nhà khách dưới chân núi từ 11h15 đến 12h30 nghe tiếng chuông ngọ mà không lên núi? Đáp án: d06:003.
-- **Trọng điểm 3**: Bằng chứng kỹ thuật về bẫy thủy lực nhỏ giọt gõ chuông.
-  - Tài liệu d10 - d13: Báo cáo giám định cơ học đòn bẩy và máng nước trên gác chuông, ảnh chụp ống bương tre có trục xoay đối trọng giấu sau tượng Hộ Pháp, biên bản kiểm tra xô nước rỉ giọt trên xà gỗ, kết quả phân tích thời gian tích nước 105 phút.
-  - Câu hỏi 3 (evidence): Ghim 2 tài liệu vạch trần bẫy cơ học tích nước nhỏ giọt gõ chuông và ống bương tre trục xoay tang vật. Đáp án: d10, d11.
-- **Trọng điểm 4**: Vạch mặt hung thủ và thu hồi chứng cứ tham ô.
-  - Tài liệu d14 - d17: Biên bản khám xét tăng phòng Quảng Chân thu giữ cưa tay dính mùn tre và dây dù, sổ quỹ trùng tu chùa bị xé giấu dưới đệm thiền, bản thú tội của Quảng Chân, kết luận điều tra.
-  - Câu hỏi 4 (choice): Ai là kẻ đã sát hại sư trụ trì Thích Tâm Viên và tạo bẫy cơ học gõ chuông? Đáp án: Thích Quảng Chân.
+## 4. Cấu trúc câu hỏi & Trọng điểm (Đã nâng cấp độ khó x5)

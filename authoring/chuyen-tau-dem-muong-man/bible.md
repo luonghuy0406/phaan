@@ -33,16 +33,4 @@
   - Trên dùi sắt của Long còn dính sợi len từ áo vest của Vinh.
   - Giày da của Long dính vết máu li ti dạng tia bắn của nạn nhân, bị giấu sâu dưới gầm giường khoang số 2.
 
-## 4. Cấu trúc câu hỏi & Trọng điểm
-- **Trọng điểm 1**: Khám phá phòng kín trên tàu SE3 lúc rạng sáng.
-  - Tài liệu d01 - d05: Bản tin sự việc ga Mường Mán, biên bản khám nghiệm hiện trường khoang số 4, sơ đồ toa xe số 6, kết quả pháp y ban đầu (tử vong 01h30 - 02h00), ảnh cửa trượt khoang số 4 và lẫy chốt trong.
-  - Câu hỏi 1 (evidence): Ghim 2 tài liệu phản ánh trạng thái đóng kín của khoang số 4 và dấu vết lạ trên khe nẹp cửa trượt. Đáp án: d02, d05.
-- **Trọng điểm 2**: Lời khai các hành khách và nhân viên toa xe.
-  - Tài liệu d06 - d09: Lời khai thư ký Bùi Bích Thảo, lời khai nhân viên phụ trách toa Trần Văn Hữu, lời khai Nguyễn Hoàng Long, danh sách phân bổ giường vé toa số 6.
-  - Câu hỏi 2 (line): Dòng lời khai nào của Nguyễn Hoàng Long khẳng định y không hề rời khỏi giường khoang số 2 và ngủ say suốt đêm? Đáp án: d08:004.
-- **Trọng điểm 3**: Bằng chứng cơ học và thủ pháp khóa chốt bằng dây cước.
-  - Tài liệu d10 - d13: Báo cáo giám định vết ma sát trên gioăng cửa, biên bản khám xét hành lý Nguyễn Hoàng Long, ảnh chụp cuộn cước câu cá Pioneer và dùi sắt, lời khai của nhân chứng toa căng-tin xác nhận sự có mặt của Bùi Bích Thảo.
-  - Câu hỏi 3 (evidence): Ghim 2 tài liệu vạch trần cơ chế tạo phòng kín từ bên ngoài và hung khí gây án thu giữ trong đồ đạc nghi phạm. Đáp án: d10, d12.
-- **Trọng điểm 4**: Vạch mặt hung thủ và tang vật tiền cướp.
-  - Tài liệu d14 - d18: Kết quả xét nghiệm vết máu trên giày của Long, tập hồ sơ titan và cọc tiền thu giữ dưới đáy vali, bản vẽ thực nghiệm mở khóa bằng dây cước, bản tự thú của Long, kết luận điều tra.
-  - Câu hỏi 4 (choice): Ai là thủ phạm đã sát hại ông Đặng Quốc Vinh và dùng thủ pháp dây cước khóa chốt khoang số 4? Đáp án: Nguyễn Hoàng Long.
+## 4. Cấu trúc câu hỏi & Trọng điểm (Đã nâng cấp độ khó x5)

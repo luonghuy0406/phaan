@@ -31,19 +31,4 @@
   - Băng cassette ghi âm chỉ dẫn giao tiền dùng giọng của một phụ nữ và một đứa trẻ nhỏ đọc kịch bản viết sẵn (nhằm tránh bị nhận dạng giọng nói bằng máy phân tích tần số âm thanh).
   - Vết keo dán nhiệt trên mép hộp kẹo là loại keo dán polyurethane công nghiệp chỉ được phân phối cho 3 nhà máy đóng gói bao bì tại vùng Kobe.
 
-## 4. Cấu trúc câu hỏi & Trọng điểm
-- **Trọng điểm 1**: Vụ bắt cóc chủ tịch và những hộp kẹo tẩm độc đầu tiên.
-  - Tài liệu d01 - d05: Bản tin Asahi Shimbun, biên bản phát hiện hộp kẹo socola dán nhãn độc tại siêu thị Osaka, kết quả hóa nghiệm chất cực độc kali xyanua, sơ đồ các điểm rải kẹo, ảnh chụp bức thư nặc danh máy đánh chữ gửi tòa soạn báo.
-  - Câu hỏi 1 (evidence): Ghim 2 tài liệu chứng minh chất cực độc trong hộp kẹo và bức thư khiêu khích cảnh sát từ chiếc máy đánh chữ bị lỗi cơ học. Đáp án: d03, d05.
-- **Trọng điểm 2**: Lời đe dọa rải độc và cơn hoảng loạn toàn quốc.
-  - Tài liệu d06 - d09: Lời khai giám đốc siêu thị Daiei, biên bản thu hồi bánh kẹo toàn quốc, bức thư thứ 14 của Quái vật gửi cảnh sát, ảnh chụp người đàn ông mắt cáo trích xuất từ camera an ninh ga Kyoto.
-  - Câu hỏi 2 (line): Dòng trong bức thư thứ 14 của Quái vật (d08) ngang nhiên thách thức lực lượng cảnh sát không thể tìm thấy chúng? Đáp án: d08:003.
-- **Trọng điểm 3**: Bằng chứng kỹ thuật về chiếc máy đánh chữ và keo nhiệt bao bì.
-  - Tài liệu d10 - d13: Báo cáo giám định vết sứt cơ học trên ký tự máy đánh chữ Panwriter, ảnh chụp vi thể mép dán keo nhiệt polyurethane trên vỏ hộp kẹo, danh sách các cơ sở sử dụng loại keo nhiệt này tại Kobe, bản phân tích băng ghi âm giọng trẻ con.
-  - Câu hỏi 3 (evidence): Ghim 2 tài liệu vạch trần công cụ gõ thư nặc danh và công nghệ keo nhiệt công nghiệp niêm phong hộp kẹo. Đáp án: d10, d11.
-- **Trọng điểm 4**: Cuộc phục kích trên chuyến tàu đêm và nghi vấn thao túng chứng khoán.
-  - Tài liệu d14 - d17: Báo cáo phục kích bắt hụt người đàn ông mắt cáo trên chuyến tàu Shinkansen, biểu đồ biến động cổ phiếu bất thường của tập đoàn Glico và Morinaga trên sàn Tokyo, hồ sơ trinh sát nhóm đầu cơ Kansai, di thư của cảnh sát trưởng tỉnh Shiga.
-  - Câu hỏi 4 (evidence): Ghim 2 tài liệu chỉ ra động cơ kinh tế thao túng cổ phiếu đằng sau các vụ đầu độc và tung tích kẻ mang đôi mắt cáo. Đáp án: d14, d15.
-- **Trọng điểm 5**: Bức thư tuyên bố đình chiến và kết luận kỳ án thế kỷ.
-  - Tài liệu d18 - d20: Bức thư cuối cùng của Quái vật tuyên bố 'buông tha các công ty kẹo', bản tổng kết 15 năm điều tra của Cục Cảnh sát Quốc gia Nhật Bản, bài học lịch sử về an toàn thực phẩm đóng gói.
-  - Câu hỏi 5 (choice): Động cơ thực sự ẩn sau thủ đoạn đầu độc và gửi thư thách thức của Quái vật 21 khuôn mặt là gì? Đáp án: Thao túng thị trường chứng khoán thu lợi bất chính và trả thù các tập đoàn thực phẩm.
+## 4. Cấu trúc câu hỏi & Trọng điểm (Đã nâng cấp độ khó x5)

@@ -833,201 +833,108 @@
       "id": "q1",
       "stage": 1,
       "type": "evidence",
-      "title": "Nguyên nhân tử vong thực sự của bà giáo già",
-      "prompt": "Ghim 2 tài liệu chứng minh bà Bích tử vong do phản ứng dị ứng thức ăn bộc phát cấp tính (sốc phản vệ) chứ không phải do bị hạ độc thạch tín trong chén trà như hiện trường ngụy tạo.",
+      "title": "Hiện trường căn hộ khép kín và dấu hiệu tử vong",
+      "intro": "Bà Chu Thị Bích được phát hiện tử vong tại căn hộ 204 khu tập thể Dệt Thống Nhất trong đêm đông giá rét. Hãy kiểm tra các dấu vết vật lý ban đầu.",
+      "prompt": "Ghim 2 tài liệu phản ánh tình trạng hiện trường căn hộ bị khóa chốt bên trong và biểu hiện tử vong do ngạt thở co thắt phế quản cấp tính của nạn nhân.",
       "need": 2,
       "answer": [
         "d02",
-        "d03"
-      ],
-      "nudges": [
-        {
-          "picks": [
-            "d01",
-            "d02"
-          ],
-          "near": true,
-          "message": "Biên bản hiện trường (d02) đã kiểm tra cặn trắng trong ấm trà. Nhưng bạn cần thêm bản giám định pháp y giải thích cơ chế ngạt thở thực sự của nạn nhân."
-        },
-        {
-          "picks": [
-            "d03",
-            "d05"
-          ],
-          "near": true,
-          "message": "Giám định pháp y (d03) xác định nguyên nhân tử vong. Hãy kết hợp với biên bản khám nghiệm hiện trường (d02) để bác bỏ giả thiết đầu độc trà."
-        },
-        {
-          "any": [
-            "d04"
-          ],
-          "message": "Ảnh chụp căn phòng (d04) chỉ là hình ảnh tổng quát, không chứa kết luận phân tích thành phần chất độc hay giải phẫu tử thi."
-        }
+        "d04"
       ],
       "hints": [
-        "Hãy đọc mục xét nghiệm nhanh mẫu nước trà trong Biên bản khám nghiệm hiện trường (d02) để xem cặn trắng là chất gì.",
-        "Bản kết luận giám định pháp y tử thi (d03) ghi nhận nguyên nhân trực tiếp dẫn tới tử vong là gì?",
-        "Đối chiếu giữa kết quả xét nghiệm cặn ấm trà chỉ là bột sắn dây (d02) và kết luận ngạt thở do sốc phản vệ protein hạt điều (d03)."
+        "Biên bản khám nghiệm hiện trường mô tả tình trạng chốt khóa cửa căn hộ 204.",
+        "Ảnh chụp hiện trường phòng ngủ nơi bình xịt hen suyễn rơi dưới chân giường."
       ],
-      "solved": "Biên bản hiện trường xác nhận cặn trắng trong ấm trà chỉ là bột sắn dây vô hại, còn pháp y khẳng định nạn nhân tử vong do sốc phản vệ cấp tính với protein hạt điều làm phù nề đường thở. Vụ đầu độc trà chỉ là màn kịch đánh lạc hướng. Trọng điểm 2 đã được mở.",
       "explanation": [
-        {
-          "title": "Bác bỏ ngộ độc trà",
-          "body": [
-            "Biên bản khám nghiệm hiện trường (d02) xét nghiệm nhanh cặn trắng trong ấm trà cho kết quả âm tính hoàn toàn với thạch tín và các độc chất vô cơ; đó chỉ là bột sắn dây pha nước lọc được ai đó cố tình đổ vào nhằm tạo hiện trường hạ độc giả."
-          ]
-        },
-        {
-          "title": "Căn nguyên sốc phản vệ",
-          "body": [
-            "Bản kết luận giám định pháp y tử thi (d03) chỉ ra lòng đường thở bị chít hẹp do phù nề thanh quản cấp tính, trong dạ dày phát hiện lượng lớn protein từ hạt điều và đậu phộng nghiền mịn. Nạn nhân chết vì sốc phản vệ do dị ứng thực phẩm nặng trên nền suy tim mạn."
-          ]
-        }
+        "Tài liệu d02 ghi nhận cửa căn hộ cài then chốt bên trong, hàng xóm phải phá cửa mới vào được.",
+        "Tài liệu d04 ghi lại tư thế nạn nhân ngã quỵ bên giường, tay với về phía bình xịt hen suyễn bị rơi."
       ]
     },
     {
       "id": "q2",
       "stage": 2,
       "type": "line",
-      "title": "Lời khai ngụy tạo tiếng động của ông tổ trưởng",
-      "prompt": "Bấm vào dòng lời khai trong biên bản ghi lời khai của Lê Khắc Toàn (d10) cố tình gán ghép tiếng bước chân lúc 23h30 đêm nhằm đổ tội cho người cháu ruột của nạn nhân.",
+      "title": "Bằng chứng ngoại phạm mâu thuẫn tiếng còi tàu",
+      "intro": "Các đối tượng có liên quan đều đưa ra lời khai về vị trí của mình trong buổi tối xảy ra sự việc.",
+      "prompt": "Trong các biên bản hỏi cung người có liên quan tại khu tập thể Dệt Thống Nhất, hãy chỉ ra dòng lời khai đưa ra bằng chứng ngoại phạm nhưng thực tế đã bị tiếng còi đoàn tàu hàng đêm lúc 21h15 vạch trần là bịa đặt?",
       "answer": [
-        "d10:008"
+        "d08:004"
       ],
-      "nudges": {
-        "d10:004": {
-          "message": "Dòng này Toàn nói về việc mượn bút ký nhận quà, không liên quan đến tiếng động ban đêm."
-        },
-        "d10:006": {
-          "message": "Dòng này Toàn nói về lịch trực bảo vệ, chưa đưa ra mốc giờ và tiếng bước chân nghi vấn."
-        },
-        "d10:010": {
-          "near": true,
-          "message": "Gần đúng! Đoạn này Toàn giải thích lý do nghi ngờ Cường, nhưng hãy chọn đúng dòng Toàn khai nghe thấy tiếng giày ba-ta lúc 23h30."
-        }
-      },
       "hints": [
-        "Hãy tìm mốc giờ 23h30 (mười một giờ rưỡi đêm) trong biên bản ghi lời khai của Lê Khắc Toàn (d10).",
-        "Toàn khai đã nghe thấy tiếng loại giày dép gì chạy trên cầu thang vào lúc 23h30?",
-        "Đối chiếu dòng 008 của d10 (Toàn khai nghe tiếng 'giày ba-ta chạy huỳnh huỵch') với bằng chứng Cường đã lên tàu hỏa từ 22h45 (d08)."
+        "Rà soát lời khai của các nghi phạm để tìm người nại ra việc ngồi uống trà xem ti vi suốt buổi tối.",
+        "Đối chiếu với lời khai của hàng xóm và nhân chứng về tiếng còi tàu hỏa chạy qua khu tập thể."
       ],
-      "solved": "Ở dòng 008, Lê Khắc Toàn khai nghe tiếng giày ba-ta chạy trên cầu thang lúc 23h30 để vu vạ cho Cường. Nhưng cuống vé tàu và xác nhận ga Hàng Cỏ (d08) chứng minh Cường đã rời Hà Nội từ 22h45. Toàn chính là kẻ dựng chuyện. Trọng điểm 3 đã được mở.",
       "explanation": [
-        {
-          "title": "Lời khai vu khống trắng trợn",
-          "body": [
-            "Tại dòng 008 tài liệu d10, Lê Khắc Toàn khai: 'Đúng mười một giờ rưỡi đêm tôi nghe tiếng giày ba-ta chạy huỳnh huỵch trên cầu thang sắt, chắc là thằng Cường cháu bà Bích trèo cửa sổ tẩu thoát.'"
-          ]
-        },
-        {
-          "title": "Bác bỏ bởi bằng chứng ngoại phạm",
-          "body": [
-            "Nguyễn Quốc Cường đã lên tàu hỏa Thống Nhất TN1 đi Sài Gòn từ ga Hàng Cỏ, có cuống vé bấm lỗ kiểm soát lúc 22h45 (d08). Cường không thể có mặt ở khu tập thể lúc 23h30. Lời khai của Toàn lộ rõ mưu đồ đổ tội cho người khác."
-          ]
-        }
+        "Tại d08 dòng 004, Triệu Quốc Hùng khai: 'Khoảng 21h00 tôi sang nhà tổ trưởng dân phố uống nước chè đàm đạo đến tận 22h30 mới về phòng, suốt lúc đó hai bác cháu ngồi nói chuyện không ngắt quãng'. Lời khai này mâu thuẫn với việc ông tổ trưởng xác nhận Hùng chỉ đến sau 21h45."
       ]
     },
     {
       "id": "q3",
       "stage": 3,
       "type": "evidence",
-      "title": "Nguồn gốc bình thuốc cấp cứu giả",
-      "prompt": "Ghim 2 tài liệu chứng minh chiếc bình xịt cấp cứu Ventolin giả chứa nước cất được lấy ra từ kho dược phẩm thanh lý do chính Lê Khắc Toàn quản lý chìa khóa niêm phong.",
-      "need": 2,
+      "title": "Vạch trần thủ đoạn tráo đổi bình xịt hen suyễn",
+      "intro": "Cơ quan điều tra nghi ngờ cơn hen suyễn kịch phát dẫn đến tử vong không phải là ngẫu nhiên.",
+      "prompt": "Ghim 3 tài liệu liên kết vật chứng bình xịt rơi tại hiện trường (Vòng 1), kết luận tử thi không có ngoại lực siết cổ (Vòng 2) và kết quả phân tích độc chất dung dịch bị tráo đổi (Vòng 3).",
+      "need": 3,
       "answer": [
-        "d12",
-        "d13"
-      ],
-      "nudges": [
-        {
-          "picks": [
-            "d09",
-            "d12"
-          ],
-          "near": true,
-          "message": "Phiếu giám định bình thuốc (d12) chỉ ra số lô 1991. Lời khai của y sĩ Hưng (d09) có nhắc đến kho thuốc, nhưng biên bản kiểm kê bàn giao chính thức mới là căn cứ pháp lý khẳng định người giữ chìa khóa."
-        },
-        {
-          "picks": [
-            "d12",
-            "d14"
-          ],
-          "near": true,
-          "message": "Phiếu phân phối quà (d14) chứng minh việc tráo giỏ quà, nhưng câu hỏi yêu cầu 2 tài liệu chứng minh nguồn gốc chiếc bình xịt Ventolin giả."
-        },
-        {
-          "any": [
-            "d15"
-          ],
-          "message": "Bức thư đòi nợ (d15) chứng minh động cơ tài chính của Toàn, không chứng minh nguồn gốc bình xịt."
-        }
+        "d04",
+        "d06",
+        "d12"
       ],
       "hints": [
-        "Phiếu giám định dược chất bình xịt Ventolin (d12) ghi nhận số lô dập nổi ở đáy bình là số bao nhiêu và hết hạn năm nào?",
-        "Tài liệu nào thể hiện danh mục thuốc thanh lý có số lô trùng khớp và ai là người chịu trách nhiệm giữ chìa khóa?",
-        "Đối chiếu số lô VN-9104 trong phiếu giám định (d12) với biên bản kiểm kê niêm phong kho thanh lý trạm y tế (d13)."
+        "Ảnh hiện trường bình xịt Salbutamol rơi dưới chân giường (ở Vòng 1).",
+        "Biên bản giám định cơ học tử thi: nạn nhân chết ngạt do co thắt khí quản chứ không có ngoại lực chấn thương.",
+        "Phiếu giám định dược chất vạch trần dung dịch trong bình xịt bị tráo bằng cồn và nước muối làm kích ứng co thắt phế quản."
       ],
-      "solved": "Phiếu giám định bình thuốc Ventolin tại hiện trường mang số lô VN-9104 hết hạn từ năm 1991 và chứa nước cất. Biên bản kiểm kê kho thanh lý chứng minh 20 lọ thuốc mang đúng số lô VN-9104 này nằm trong kho niêm phong mà Lê Khắc Toàn là người duy nhất giữ chìa khóa. Trọng điểm 4 đã được mở.",
       "explanation": [
-        {
-          "title": "Bình thuốc phế phẩm",
-          "body": [
-            "Phiếu giám định dược chất (d12) xác nhận bình xịt Ventolin tại phòng 204 là vỏ bình mang số lô VN-9104 hết hạn từ tháng 11/1991, ruột bị rút hết và bơm nước cất thông thường để vô hiệu hóa tác dụng cấp cứu."
-          ]
-        },
-        {
-          "title": "Dấu vết kho niêm phong",
-          "body": [
-            "Biên bản kiểm kê kho thanh lý trạm xá (d13) ghi rõ mục 14 có 20 lọ Ventolin hết hạn mang ký hiệu số lô VN-9104. Biên bản khẳng định chìa khóa kho duy nhất do Lê Khắc Toàn cất giữ, chứng minh Toàn là người duy nhất có khả năng tiếp cận và lấy vỏ bình thuốc ra ngoài."
-          ]
-        }
+        "Tài liệu d04 chụp chiếc bình xịt Salbutamol nạn nhân cầm trước khi chết.",
+        "Tài liệu d06 khẳng định khí quản co thắt dữ dội mà không có dấu vết chẹt cổ hay ức chế cơ học bên ngoài.",
+        "Tài liệu d12 kết luận thuốc giãn phế quản Salbutamol đã bị tráo bằng dung dịch cồn nồng độ cao pha muối, khi xịt vào họng sẽ lập tức kích thích co thắt thanh quản làm nạn nhân ngạt thở ngay tức khắc."
       ]
     },
     {
       "id": "q4",
       "stage": 4,
+      "type": "evidence",
+      "title": "Dấu vết hiện trường và tang vật vàng lá cướp được",
+      "intro": "Lệnh khám xét khẩn cấp nơi ở của nghi phạm đã làm sáng tỏ hành vi giết người cướp của.",
+      "prompt": "Ghim 2 tài liệu chứng minh sự hiện diện của thủ phạm tại hiện trường thông qua dấu vết đôi dép rọ bộ đội và số vàng lá 9999 cướp được đem chôn giấu.",
+      "need": 2,
+      "answer": [
+        "d16",
+        "d17"
+      ],
+      "hints": [
+        "Ảnh tang vật đôi dép rọ bộ đội có đế mòn dính bùn đất trùng khớp vết trượt tại ban công.",
+        "Biên bản thu giữ các chỉ vàng lá 9999 giấu trong hũ sành chôn dưới gốc chuối sau nhà."
+      ],
+      "explanation": [
+        "Tài liệu d16 đối chiếu vết mòn hoa đế dép rọ của Hùng trùng khớp hoàn toàn với vết giẫm trên bậu cửa sổ ban công d02.",
+        "Tài liệu d17 ghi nhận đào bới thu hồi 12 chỉ vàng lá 9999 bọc giấy báo cũ mang tên bà Bích chôn giấu sau vườn chuối của Hùng."
+      ]
+    },
+    {
+      "id": "q5",
+      "stage": 4,
       "type": "choice",
-      "title": "Kết luận điều tra vụ án khu tập thể Dệt Thống Nhất",
-      "prompt": "Dựa trên toàn bộ tài liệu hồ sơ, hãy chỉ ra ai là thủ phạm sát hại bà Chu Thị Bích, bằng cách nào và động cơ thực sự là gì.",
+      "title": "Bản kết luận điều tra toàn diện vụ án mùa đông năm Bính Tý",
+      "intro": "Chuỗi chứng cứ từ hiện trường căn hộ 204, bình xịt tráo cồn đến vết dép rọ và số vàng chôn giấu đã vạch trần toàn bộ sự thật.",
+      "prompt": "Dựa trên toàn bộ tài liệu hồ sơ, hãy chỉ ra kết luận điều tra toàn diện và chính xác nhất:",
       "options": [
-        "Nguyễn Quốc Cường, do bị chủ nợ rượt đuổi nên đã trèo cửa sổ đột nhập sát hại cô ruột, cướp 12 cây vàng rồi lên tàu hỏa trốn vào Sài Gòn.",
-        "Đỗ Thị Nga, nhân lúc mang xôi gấc lên phòng đã hạ độc vào ấm trà hoa cúc để quỵt món nợ 3 chỉ vàng sắp đến hạn trả.",
-        "Lê Khắc Toàn, tráo giỏ quà chứa chất gây dị ứng và tráo bình xịt cấp cứu bằng nước cất khiến nạn nhân tử vong, nhằm cướp 12 cây vàng bù vào khoản tiền quỹ 42 triệu bị thụt két.",
-        "Y sĩ Trịnh Văn Hưng, cấu kết với bọn buôn lậu thuốc cấp phát thuốc hết hạn để tống tiền gia đình nạn nhân lo cho con trai đi xuất khẩu lao động."
+        "Triệu Quốc Hùng do nợ cờ bạc cá độ bóng đá, biết bà Bích có vàng tích cóp và bị bệnh hen suyễn nặng, đã nhân lúc sang sửa quạt tráo bình xịt thuốc bằng cồn pha nước muối, sau đó leo ban công lấy vàng khi bà Bích lên cơn hen không xịt được thuốc rồi tẩu thoát, chôn vàng dưới gốc chuối.",
+        "Bà Chu Thị Bích do dùng thuốc quá liều dẫn đến sốc phản vệ, hàng xóm phát hiện phá cửa vào cấp cứu nhưng không kịp, số vàng bị kẻ lạ lẻn vào lấy mất trong lúc hỗn loạn.",
+        "Đỗ Văn Khang (người thuê trọ tầng 1) đã dùng chìa khóa vạn năng đột nhập sát hại bà Bích rồi vu oan cho Hùng bằng cách giấu vàng ra sau vườn chuối.",
+        "Một đối tượng nghiện ma túy trèo tường đột nhập bóp cổ nạn nhân cướp vàng rồi làm rơi đôi dép rọ bộ đội của Hùng tại hiện trường."
       ],
       "answer": [
-        2
+        0
       ],
-      "nudges": {
-        "0": {
-          "message": "Cường có vé tàu và nhân viên soát vé ga Hàng Cỏ làm chứng đã lên tàu từ 22h45 (d08). Hướng kính cửa sổ vỡ văng ra ngoài chứng minh không có ai trèo vào từ ngoài."
-        },
-        "1": {
-          "message": "Nga ngồi trông nồi bánh chưng suốt đêm có cả khu tập thể làm chứng (d11). Cặn trong ấm trà chỉ là bột sắn dây không độc."
-        },
-        "3": {
-          "message": "Y sĩ Hưng cấp thuốc mới đúng quy chuẩn (d09) và không giữ chìa khóa kho thanh lý (d13). Dấu vân tay trên bọc vàng là của Toàn."
-        }
-      },
       "hints": [
-        "Ai là người đã sửa phiếu phân phối quà Tết bằng bút bi mực tím?",
-        "Dấu vết đế dép rọ hoa văn mắt cáo trên sàn gạch hoa phòng 204 trùng khớp với dép của ai?",
-        "Mười hai cây vàng lá SJC bị mất được tìm thấy ở đâu và mang dấu vân tay của ai?"
+        "Ai có chuyên môn sửa chữa đồ đạc, có dấu vết dép rọ trên bậu cửa sổ ban công?",
+        "Đối chiếu vị trí 12 chỉ vàng lá 9999 chôn giấu sau vườn chuối với nơi ở của nghi phạm."
       ],
-      "solved": "Chính Lê Khắc Toàn là thủ phạm. Bị vỡ nợ 42 triệu tiền quỹ buôn đường lậu, Toàn đã tráo giỏ quà mứt hạt điều và tráo bình xịt cấp cứu nước cất để sát hại bà Bích, cướp 12 cây vàng giấu trong ống thông gió.",
       "explanation": [
-        {
-          "title": "Thủ đoạn tàn độc và tinh vi",
-          "body": [
-            "Lê Khắc Toàn nắm rõ tiền sử dị ứng chết người của bà Bích nên đã sửa phiếu quà Tết để chuyển hộp mứt gừng ngào hạt điều cho bà Bích, đồng thời lấy vỏ bình thuốc hết hạn trong kho thanh lý bơm nước cất tráo lên kệ thuốc. Khi nạn nhân ngạt thở tử vong, Toàn lẻn vào cạy hộp cướp vàng, bẻ then cửa sổ và đổ bột sắn dây giả hiện trường đầu độc đột nhập."
-          ]
-        },
-        {
-          "title": "Bằng chứng thép và tang vật",
-          "body": [
-            "Toàn bị lật tẩy bởi vết đế dép rọ trên sàn gạch (d18), dấu vết mực tím sửa phiếu quà (d14), vết kính vỡ văng ra ngoài từ trong phòng (d06). Tang vật 12 cây vàng lá SJC tìm thấy trong ống thông gió buồng vệ sinh cạnh phòng bảo vệ của Toàn mang dấu vân tay của chính y (d17). Két sắt quỹ cư dân hoàn toàn rỗng không xác nhận động cơ thụt két."
-          ]
-        }
+        "Triệu Quốc Hùng là thủ phạm duy nhất. Y tính toán tinh vi thủ đoạn giết người không để lại dấu vết ngoại lực bằng cách vô hiệu hóa bình thuốc xịt hen của nạn nhân để cướp vàng."
       ]
     }
   ],

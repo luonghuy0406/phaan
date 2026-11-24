@@ -228,102 +228,108 @@
       "id": "q1",
       "stage": 1,
       "type": "evidence",
-      "title": "Đầu độc bằng tách cà phê và dấu vết trên núm két sắt",
-      "intro": "Hiện trường tiệm vàng cho thấy nạn nhân đột tử bên bàn làm việc và chiếc két sắt mở hé lộ ra manh mối kỹ thuật đặc biệt.",
-      "prompt": "Ghim 2 tài liệu chứng minh nạn nhân bị đầu độc bằng thuốc ức chế thần kinh trong tách cà phê và dấu vết phấn lạ vạch trần 4 con số mật mã két sắt.",
+      "title": "Độc chất tách cà phê và dấu vết bột phấn trên núm két sắt",
+      "intro": "Chủ tiệm vàng Vạn Thành gục chết trên bàn làm việc trong căn phòng kín khóa chốt. Hãy kiểm tra các dấu vết vật lý ban đầu.",
+      "prompt": "Ghim 2 tài liệu chứng minh nạn nhân bị đầu độc bằng thuốc ức chế thần kinh trong tách cà phê và dấu vết bột phấn lạ vạch trần 4 con số mật mã két sắt.",
       "need": 2,
       "answer": [
         "d03",
         "d05"
       ],
       "hints": [
-        "Kiểm tra kết quả giám định pháp y về chất cloral hydrat trong dạ dày và đáy tách cà phê.",
-        "Xem ảnh chụp macro núm xoay két sắt dính bụi phấn làm lộ ra 4 vạch số."
+        "Kết quả giám định pháp y tử thi xác nhận nồng độ cao thuốc mê cloral hydrat trong dạ dày.",
+        "Ảnh chụp cận cảnh núm xoay két sắt dính bột phấn phản quang trên các con số mật mã."
       ],
       "explanation": [
-        "Tài liệu d03 xác nhận nạn nhân tử vong do ngộ độc cloral hydrat nồng độ cao trong tách cà phê vợt.",
-        "Tài liệu d05 (ảnh chụp núm xoay két) thể hiện lớp phấn trang điểm bị ngón tay quẹt lộ 4 con số 18, 42, 65, 89."
-      ],
-      "nudges": [
-        {
-          "picks": [
-            "d01",
-            "d02"
-          ],
-          "message": "Bản tin và biên bản hiện trường ban đầu chưa nêu tên hoạt chất độc tố và phân tích chi tiết 4 con số trên vành xoay két."
-        }
+        "Tài liệu d03 xác nhận ông Lâm Vạn Thành bị hôn mê sâu dẫn đến ngừng thở do uống phải thuốc mê cực mạnh cloral hydrat pha trong tách cà phê.",
+        "Tài liệu d05 phát hiện trên núm xoay két sắt có bám dính bột phấn màu trắng giúp kẻ gian nhận biết 4 con số thường xuyên được bấm."
       ]
     },
     {
       "id": "q2",
       "stage": 2,
       "type": "line",
-      "title": "Bằng chứng ngoại phạm của Trương Chấn Hào",
-      "intro": "Trương Chấn Hào đưa ra cuống vé ca nhạc khẳng định mình ngồi trong rạp Hào Huê suốt buổi tối.",
-      "prompt": "Hãy chọn một dòng trong lời khai của Trương Chấn Hào (d06) khẳng định y ngồi xem ca nhạc từ 21h00 đến 23h30 không hề rời rạp nửa bước.",
+      "title": "Bằng chứng ngoại phạm rạp ca nhạc",
+      "intro": "Những người thân cận và thợ kim hoàn làm việc tại tiệm vàng đều phải giải trình lịch trình buổi tối xảy ra án mạng.",
+      "prompt": "Trong các biên bản hỏi cung người thân cận tiệm vàng Vạn Thành, hãy chỉ ra dòng lời khai khẳng định ngồi xem ca nhạc liên tục từ 21h00 đến 23h30 không hề rời rạp nửa bước?",
       "answer": [
         "d06:003"
       ],
       "hints": [
-        "Tìm dòng lời khai nói về việc Hào xem ca nhạc tại rạp Hào Huê từ 21h00 đến 23h30.",
-        "Đối chiếu mốc thời gian và hành vi của người khai với các nhân chứng xung quanh."
+        "Rà soát lời khai của người thợ kim hoàn chính để tìm bằng chứng ngoại phạm xem ca nhạc.",
+        "Tìm câu khẳng định ngồi xem từ đầu đến cuối không ra ngoài nửa bước."
       ],
       "explanation": [
-        "Tại dòng d06:003, Hào khai: 'Tối qua từ 21h00 đến tận 23h30 tôi mua vé vào rạp Hào Huê xem chương trình ca nhạc tạp kỹ Sài Gòn Đêm Trắng, không hề rời rạp nửa bước'."
+        "Tại d06 dòng 003, Trương Chấn Hào khai: 'Từ 21h00 đến 23h30 đêm qua tôi ngồi liên tục tại hàng ghế F12 rạp Hào Huê xem ca nhạc tạp kỹ, suốt buổi diễn tôi ngồi im thưởng thức không hề rời rạp nửa bước cho tới khi tan màn'."
       ]
     },
     {
       "id": "q3",
       "stage": 3,
       "type": "evidence",
-      "title": "Bảng hoán vị mật số của kẻ trộm",
-      "intro": "Nhân viên rạp hát đã lật tẩy việc Hào trốn ra ngoài qua cửa thoát hiểm. Khám nghiệm hiện trường phát hiện mảnh giấy then chốt về phương pháp mở két.",
-      "prompt": "Ghim 2 tài liệu chỉ ra mảnh giấy ghi 24 hoán vị mật mã két sắt có chữ viết tay của Trương Chấn Hào.",
-      "need": 2,
+      "title": "Núm xoay két sắt, mảnh giấy 24 hoán vị và chữ viết tay",
+      "intro": "Khám nghiệm tỉ mỉ phòng làm việc đã thu thập được manh mối về cách thức mở két sắt cơ học.",
+      "prompt": "Ghim 3 tài liệu liên kết dấu vết bột phấn trên núm két sắt (Vòng 1) với mảnh giấy ghi 24 hoán vị mật số (Vòng 3) và kết luận giám định chữ viết tay của nghi phạm (Vòng 3).",
+      "need": 3,
       "answer": [
+        "d05",
         "d10",
         "d11"
       ],
       "hints": [
-        "Ảnh chụp mảnh giấy bao thuốc lá ghi 24 hoán vị mật số tìm thấy dưới gầm bàn trà.",
-        "Báo cáo giám định chữ viết tay trên mảnh giấy trùng khớp với Trương Chấn Hào."
+        "Ảnh chụp cận cảnh núm xoay két sắt dính bột phấn (ở Vòng 1).",
+        "Ảnh mảnh giấy ghi 24 dãy số hoán vị của 4 con số tìm thấy dưới gầm bàn trà.",
+        "Báo cáo giám định chữ viết tay xác nhận các con số hoán vị do chính thợ kim hoàn Trương Chấn Hào viết."
       ],
       "explanation": [
-        "Tài liệu d10 (ảnh vật chứng) chụp mảnh giấy ghi 24 hoán vị có khoanh tròn mật mã số 12.",
-        "Tài liệu d11 kết luận chữ viết trên mảnh giấy trùng khớp hoàn toàn với mẫu chữ của Trương Chấn Hào."
-      ],
-      "nudges": [
-        {
-          "picks": [
-            "d12",
-            "d13"
-          ],
-          "message": "d12 và d13 là lời khai nhân viên soát vé và bột phấn, nhưng d10 và d11 mới trực tiếp thể hiện mảnh giấy hoán vị mật mã."
-        }
+        "Tài liệu d05 phát hiện 4 con số dính phấn gồm 2, 5, 7, 9.",
+        "Tài liệu d10 là mảnh giấy kẻ gian tính toán sẵn 24 tổ hợp hoán vị để thử mở két sắt sau khi đánh thuốc mê nạn nhân.",
+        "Tài liệu d11 khẳng định nét chữ trên mảnh giấy d10 trùng khớp hoàn toàn với chữ viết tay của Trương Chấn Hào."
       ]
     },
     {
       "id": "q4",
       "stage": 4,
+      "type": "evidence",
+      "title": "Lọ thuốc ngủ cloral hydrat và số vàng thỏi cướp được",
+      "intro": "Lệnh khám xét khẩn cấp nơi ở của thủ phạm tại Quận 11 đã thu giữ trọn vẹn tang vật vụ cướp giết.",
+      "prompt": "Ghim 2 tài liệu chứng minh việc khám xét thu giữ độc chất cloral hydrat đầu độc nạn nhân và số vàng thỏi cướp được giấu trong hộp trà Thiết Quan Âm.",
+      "need": 2,
+      "answer": [
+        "d14",
+        "d15"
+      ],
+      "hints": [
+        "Biên bản khám xét nhà thu hồi 30 lượng vàng thỏi và ngoại tệ giấu dưới đáy hộp trà Thiết Quan Âm.",
+        "Kết quả giám định lọ thuốc ngủ cloral hydrat dạng lỏng giấu trong túi áo blu của nghi phạm."
+      ],
+      "explanation": [
+        "Tài liệu d14 ghi nhận thu hồi toàn bộ số vàng thỏi và tiền mặt bị cướp giấu tinh vi trong hộp trà Thiết Quan Âm.",
+        "Tài liệu d15 xác nhận hoạt chất trong lọ thuốc ngủ thu được ở nhà Hào trùng khớp 100% với độc chất trong tách cà phê của nạn nhân d03."
+      ]
+    },
+    {
+      "id": "q5",
+      "stage": 4,
       "type": "choice",
-      "title": "Thủ phạm vụ án tiệm vàng Vạn Thành",
-      "intro": "Kho vàng 50 lượng và lọ thuốc độc cloral hydrat thu được tại nhà riêng đã hoàn toàn vạch trần tên trộm giết người.",
+      "title": "Bản kết luận điều tra toàn diện vụ án tiệm vàng Vạn Thành",
+      "intro": "Bột phấn núm két sắt, mảnh giấy hoán vị mật mã và số vàng thỏi giấu trong hộp trà đã vạch trần chân tướng kẻ thủ ác.",
       "prompt": "Dựa vào toàn bộ tài liệu hồ sơ, ai là thủ phạm đã sát hại ông Lâm Vạn Thành và trộm két sắt?",
       "options": [
-        "Thợ kim hoàn Trương Chấn Hào",
-        "Vợ bé Lý Diễm My",
-        "Bảo vệ Quách Bửu",
-        "Nhân viên soát vé rạp Hào Huê"
+        "Trương Chấn Hào do thua cá độ bóng đá và nợ nặng lãi, đã bôi bột phấn lên núm két sắt để tìm ra 4 con số mật mã, pha thuốc ngủ cloral hydrat vào cà phê cho ông Thành uống rồi lẻn về mở két cướp 30 lượng vàng, sau đó đến rạp Hào Huê mua vé nhờ người ngồi thế chỗ để tạo bằng chứng ngoại phạm.",
+        "Bà vợ bé Lý Diễm My do bị ông Thành cắt tiền chu cấp, đã câu kết với nhân viên bảo vệ Quách Bửu đầu độc chồng rồi mở két lấy vàng bỏ trốn.",
+        "Bảo vệ Quách Bửu nhân lúc ông Thành ngủ say đã mở cửa cho nhóm giang hồ Chợ Lớn đột nhập dùng xà beng cạy két sắt cướp tài sản.",
+        "Một đối tượng khách hàng quen của tiệm vàng đã đánh thuốc mê nạn nhân rồi ép buộc Trương Chấn Hào phải viết giấy hoán vị mở két sắt."
       ],
       "answer": [
         0
       ],
       "hints": [
-        "Ai bôi phấn bông lúa lên két, pha thuốc an thần vào cà phê và cất giấu 50 lượng vàng dưới chậu mai chiếu thủy?",
-        "Xem xét kỹ các bằng chứng vật chất và báo cáo kỹ thuật hình sự."
+        "Ai là người biết rõ thói quen uống cà phê của ông Thành, viết mảnh giấy 24 hoán vị và tàng trữ vàng thỏi trong hộp trà?",
+        "Đối chiếu mẫu bột phấn trên núm két sắt và kết quả giám định lọ thuốc ngủ cloral hydrat thu giữ tại nhà riêng."
       ],
       "explanation": [
-        "Trương Chấn Hào là thủ phạm. Y đầu độc nạn nhân bằng cloral hydrat (d03, d15), dùng phấn dò 4 số mật mã két rồi thử hoán vị (d05, d10, d11), lẻn khỏi rạp hát để gây án (d12) và giấu 50 cây vàng sau nhà mình (d14, d16)."
+        "Trương Chấn Hào là thủ phạm duy nhất. Kế hoạch trộm két sắt tinh vi bằng bột phấn và hoán vị số học kết hợp màn kịch vé rạp ca nhạc đã bị bóc trần hoàn toàn."
       ]
     }
   ],

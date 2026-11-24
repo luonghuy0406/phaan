@@ -120,6 +120,21 @@ function SolvedQ({ q, head }: { q: Question; head: React.ReactNode }) {
   );
 }
 
+/* Guessing guard: the first wrong answer is free; after that each wrong answer locks the button for a while
+   (15 s, 30 s, 45 s, max 60 s) so trying every combination costs more than reading the papers. */
+const lockedUntil = new Map<string, number>();
+const COOLDOWN = (wrongs: number) => (wrongs < 2 ? 0 : Math.min(60, 15 * (wrongs - 1))) * 1000;
+
+function useCountdown(until: number) {
+  const [now, setNow] = useState(() => Date.now());
+  useEffect(() => {
+    if (until <= Date.now()) return undefined;
+    const t = window.setInterval(() => setNow(Date.now()), 500);
+    return () => window.clearInterval(t);
+  }, [until]);
+  return Math.max(0, Math.ceil((until - now) / 1000));
+}
+
 function CurrentQ({ q, head, innerRef }: { q: Question; head: React.ReactNode; innerRef: React.RefObject<HTMLElement> }) {
   const { c, store, focusDoc } = useBoard();
   const label = useDocLabel();
@@ -132,9 +147,18 @@ function CurrentQ({ q, head, innerRef }: { q: Question; head: React.ReactNode; i
   const api = store.getState();
   const hints = q.hints || [];
   const isReveal = q.type === 'choice' && !(q.options || []).length;
+  const lockKey = `${c.id}:${q.id}`;
+  const [lockUntil, setLockUntil] = useState(() => lockedUntil.get(lockKey) || 0);
+  const wait = useCountdown(lockUntil);
 
   const submit = () => {
+    if (wait > 0) return;
     const r = api.submit(q.id);
+    if (r?.status === 'wrong') {
+      const wrongs = store.getState().q[q.id]?.tries || 0;
+      const until = Date.now() + COOLDOWN(wrongs);
+      if (until > Date.now()) { lockedUntil.set(lockKey, until); setLockUntil(until); }
+    }
     if (r?.status === 'correct') {
       showToast('Chính xác!');
       const s = store.getState();
@@ -213,9 +237,12 @@ function CurrentQ({ q, head, innerRef }: { q: Question; head: React.ReactNode; i
       {q.prompt && <div className="q__prompt"><Paras list={q.prompt} /></div>}
       {form}
       <div className="q__actions">
-        <button type="button" className="btn btn--primary btn--small" onClick={submit}>{isReveal ? 'Xem diễn biến' : q.submit || 'Gửi kết luận'}</button>
+        <button type="button" className="btn btn--primary btn--small" onClick={submit} disabled={wait > 0} aria-disabled={wait > 0}>
+          {wait > 0 ? `Đọc lại hồ sơ… (${wait} giây)` : isReveal ? 'Xem diễn biến' : q.submit || 'Gửi kết luận'}
+        </button>
         {qs.tries > 0 && <span className="q__tries">{qs.tries} lần thử</span>}
       </div>
+      {wait > 0 && <p className="q__cooldown">Kết luận sai liên tiếp sẽ bị tạm khoá. Hãy đối chiếu lại tài liệu trước khi gửi tiếp: mỗi lần sai đều tính vào xếp hạng cuối hồ sơ.</p>}
       {fb && <p className={`q__feedback is-${fb.status}`} role="status"><Txt>{fb.message}</Txt></p>}
       {qs.hints > 0 && (
         <ol className="q__hints">

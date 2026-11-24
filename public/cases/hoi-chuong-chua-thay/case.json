@@ -237,101 +237,107 @@
       "stage": 1,
       "type": "evidence",
       "title": "Giờ chết thực tế của sư trụ trì và dấu vết gác chuông",
-      "intro": "Tiếng chuông ngân vang lúc 12h00 trưa đánh lừa mọi người rằng sư trụ trì vẫn còn sống. Nhưng giám định y khoa và dấu vết ẩm ướt trên gác chuông đã phơi bày sự mâu thuẫn.",
-      "prompt": "Ghim 2 tài liệu chứng minh sư trụ trì đã viên tịch từ trước 10h15 sáng và dấu vết dây dù cùng vũng nước bất thường trên gác chuông.",
+      "intro": "Đại đức Thích Tâm Viên được phát hiện viên tịch trong tịnh thất am thiền sau tiếng chuông chùa ngân vang lúc 10h15 sáng. Hãy kiểm tra các dấu vết bất thường.",
+      "prompt": "Ghim 2 tài liệu chứng minh sư trụ trì đã tử vong từ trước 10h15 sáng và dấu vết dây dù cùng vũng nước bất thường trên sàn gác chuông chùa Cổ Sơn.",
       "need": 2,
       "answer": [
         "d03",
         "d05"
       ],
       "hints": [
-        "Kiểm tra kết quả giám định tử thi về thời điểm tử vong 09h45 - 10h15 sáng.",
-        "Xem ảnh chụp gác chuông thể hiện dây dù buộc chày giộng chuông và vũng nước đọng dưới sàn."
+        "Kết quả giám định tử thi xác định vết hoằn siết cổ và thời điểm tử vong vào khoảng 07h00 - 08h00 sáng.",
+        "Ảnh chụp gác chuông phát hiện vũng nước ướt loang và hệ thống chày gỗ giộng chuông có buộc sợi dây dù nối xuống máng nước."
       ],
       "explanation": [
-        "Tài liệu d03 xác nhận nạn nhân đã chết do ngạt siết cổ lúc 09h45 - 10h15 sáng, dạ dày rỗng không thể gõ chuông lúc 12h00.",
-        "Tài liệu d05 (ảnh chụp gác chuông) ghi lại dây dù xanh buộc chày chuông và vũng nước đọng rỉ giọt trên sàn gỗ lim."
-      ],
-      "nudges": [
-        {
-          "picks": [
-            "d01",
-            "d02"
-          ],
-          "message": "Bản tin và biên bản tịnh thất chưa nêu kết luận giám định y pháp về giờ tử vong chính xác và dấu vết trên gác chuông."
-        }
+        "Tài liệu d03 xác nhận nạn nhân bị siết cổ chết từ 07h30 sáng, tức là tiếng chuông ngân vang lúc 10h15 sáng không thể do nạn nhân giộng.",
+        "Tài liệu d05 ghi nhận trên sàn gác chuông có vệt nước đọng và cơ chế chày giộng chuông bị buộc dây dù khác thường."
       ]
     },
     {
       "id": "q2",
       "stage": 2,
       "type": "line",
-      "title": "Bằng chứng ngoại phạm của Thích Quảng Chân",
-      "intro": "Thích Quảng Chân đưa ra lời khai khẳng định mình ngồi ăn cơm chay với hơn 20 phật tử dưới chân núi suốt giờ trưa.",
-      "prompt": "Hãy chọn một dòng trong lời khai của Thích Quảng Chân (d06) khẳng định y ngồi liên tục tại nhà khách dưới chân núi ăn cơm chay và thuyết pháp từ đúng 11h15 đến 12h30 không lên núi nửa bước.",
+      "title": "Bằng chứng ngoại phạm tiếp đón phật tử",
+      "intro": "Các sư thầy và phật tử có mặt tại chùa đều giải trình hành tung trong buổi sáng xảy ra vụ án.",
+      "prompt": "Trong các biên bản hỏi cung người có mặt tại chùa, hãy chỉ ra dòng lời khai khẳng định có mặt liên tục dưới nhà khách đón tiếp đoàn phật tử không hề lên gác chuông?",
       "answer": [
         "d06:003"
       ],
       "hints": [
-        "Tìm dòng lời khai nói về việc Quảng Chân ngồi ở nhà khách ăn cơm chay từ 11h15 đến 12h30.",
-        "Đối chiếu mốc thời gian và hành vi của người khai với các nhân chứng xung quanh."
+        "Rà soát lời khai của đệ tử trưởng phụ trách việc đón tiếp khách thập phương.",
+        "Tìm câu khẳng định ngồi ăn cơm chay và thuyết pháp dưới chân núi suốt từ 09h00 đến 11h30."
       ],
       "explanation": [
-        "Tại dòng d06:003, Quảng Chân khai: 'Từ đúng 11h15 đến 12h30 trưa, tôi ngồi liên tục tại nhà khách dưới chân núi cùng ăn cơm chay thụ lộc và thuyết pháp cho hơn 20 phật tử thập phương, không hề bước chân lên núi nửa bước'."
+        "Tại d06 dòng 003, Thích Quảng Chân khai: 'Suốt từ 09h00 đến 11h30 trưa tôi ngồi liên tục tại nhà khách dưới chân núi tiếp đón và ăn cơm chay cùng đoàn phật tử Hà Nội, khi nghe tiếng chuông chùa ngân lúc 10h15 tôi còn cùng mọi người chắp tay niệm Phật'."
       ]
     },
     {
       "id": "q3",
       "stage": 3,
       "type": "evidence",
-      "title": "Vạch trần cơ chế bẫy nước nhỏ giọt gõ chuông",
-      "intro": "Bí ẩn về tiếng chuông lúc 12h00 trưa được giải mã bằng nguyên lý thủy lực học nhỏ giọt tích nước.",
-      "prompt": "Ghim 2 tài liệu phân tích kỹ thuật về cơ chế nhỏ giọt nước 105 phút kích hoạt chày chuông và hình ảnh ống bương tre đối trọng tang vật.",
-      "need": 2,
+      "title": "Vũng nước gác chuông, đòn bẩy máng nước và ống bương tre",
+      "intro": "Ban chuyên án thực nghiệm cơ học trên gác chuông để giải mã nguồn gốc tiếng chuông lúc 10h15.",
+      "prompt": "Ghim 3 tài liệu liên kết vết nước lạ trên gác chuông (Vòng 1) với bản giám định cơ học đòn bẩy máng nước (Vòng 3) và ảnh tang vật ống bương tre trục xoay tìm thấy sau tượng Hộ Pháp (Vòng 3).",
+      "need": 3,
       "answer": [
+        "d05",
         "d10",
         "d11"
       ],
       "hints": [
-        "Báo cáo giám định kỹ thuật cơ học về cơ chế nhỏ giọt nước làm sập lẫy hãm gõ 3 tiếng chuông sau 105 phút.",
-        "Ảnh chụp tang vật ống bương tre có trục xoay lật nước giấu sau tượng Hộ Pháp."
+        "Ảnh hiện trường gác chuông vũng nước và chày gỗ (ở Vòng 1).",
+        "Bản giám định cơ học nguyên lý đòn bẩy nước giọt: Máng nước tre tích nước đủ nặng sẽ bập bênh kéo chày gỗ giộng vào chuông.",
+        "Ảnh tang vật ống bương tre có đục lỗ điều tiết giọt nước và trục xoay giấu sau tượng Hộ Pháp."
       ],
       "explanation": [
-        "Tài liệu d10 làm rõ cơ chế nước nhỏ giọt vào ống bương tre trong 105 phút làm sập lẫy giộng chuông lúc 12h00.",
-        "Tài liệu d11 (ảnh tang vật) chụp ống bương tre khoan trục xoay và cuộn dây dù màu xanh dính mủ tre tươi."
-      ],
-      "nudges": [
-        {
-          "picks": [
-            "d12",
-            "d13"
-          ],
-          "message": "d12 và d13 là kiểm tra túi áo và thực nghiệm thời gian; hãy chọn báo cáo cơ chế kỹ thuật d10 và hình ảnh vật chứng d11."
-        }
+        "Tài liệu d05 là hiện trường vết nước ban đầu.",
+        "Tài liệu d10 giải mã cơ chế đồng hồ nước hẹn giờ: Nước từ máng tre rỉ từng giọt mất đúng 2 tiếng 45 phút để làm đầy ống bương làm nảy đòn bẩy kéo chày giộng chuông lúc 10h15.",
+        "Tài liệu d11 chụp ống bương tre chuyên dụng dùng để chế tạo bẫy nước hẹn giờ phát ra tiếng chuông tự động."
       ]
     },
     {
       "id": "q4",
       "stage": 4,
+      "type": "evidence",
+      "title": "Sợi dây thừng siết cổ và hòm công đức đúc chuông",
+      "intro": "Khám xét phòng riêng của nghi phạm đã làm sáng tỏ động cơ và hung khí gây án.",
+      "prompt": "Ghim 2 tài liệu chứng minh hung khí sợi dây thừng dù siết cổ nạn nhân và biên bản thu hồi bọc tiền công đức đúc chuông đồng giấu dưới đệm nằm.",
+      "need": 2,
+      "answer": [
+        "d14",
+        "d15"
+      ],
+      "hints": [
+        "Biên bản khám xét phòng riêng thu giữ bọc tiền mặt 120 triệu đồng quyên góp đúc đại hồng chung.",
+        "Kết quả giám định sợi dây thừng siết cổ có dính xơ vải áo cà sa của Đại đức Thích Tâm Viên."
+      ],
+      "explanation": [
+        "Tài liệu d14 ghi nhận thu hồi 120 triệu đồng tiền công đức đúc đại hồng chung do đệ tử trưởng biển thủ giấu dưới giát giường.",
+        "Tài liệu d15 chứng minh sợi dây dù thu trong rương đồ chơi cơ khí của Quảng Chân có kích thước và vết máu trùng khớp với vết siết cổ sư trụ trì."
+      ]
+    },
+    {
+      "id": "q5",
+      "stage": 4,
       "type": "choice",
-      "title": "Kẻ sát hại sư trụ trì Chùa Cổ Sơn",
-      "intro": "Trang sổ quỹ bị xé, tiền mặt giấu dưới đệm thiền và dăm tre trong túi áo đã chỉ đích danh kẻ sát nhân phản thầy.",
-      "prompt": "Dựa vào toàn bộ tài liệu hồ sơ, ai là kẻ đã sát hại Đại đức Thích Tâm Viên?",
+      "title": "Bản kết luận điều tra toàn diện vụ án Chùa Cổ Sơn",
+      "intro": "Thủ đoạn bẫy nước hẹn giờ giộng chuông để tạo bằng chứng ngoại phạm trước đoàn phật tử đã bị lật tẩy.",
+      "prompt": "Dựa vào toàn bộ tài liệu hồ sơ, ai là thủ phạm đã sát hại sư trụ trì Thích Tâm Viên?",
       "options": [
-        "Đệ tử trưởng Thích Quảng Chân",
-        "Thợ đúc đồng Bùi Văn Lực",
-        "Phật tử làm bếp Hoàng Thị Nga",
-        "Khách hành hương từ Hà Nội"
+        "Đệ tử trưởng Thích Quảng Chân do tham ô 120 triệu đồng tiền công đức đúc chuông bị sư trụ trì phát hiện và yêu cầu sám hối trục xuất, đã siết cổ sư phụ lúc 07h30 sáng rồi lắp đặt hệ thống ống bương tre nhỏ giọt nước tự động giộng chuông lúc 10h15, nhân lúc đó đang ngồi tiếp đoàn phật tử dưới chân núi để tạo bằng chứng ngoại phạm hoàn hảo.",
+        "Thợ đúc đồng Bùi Văn Lực do tranh chấp tiền công đúc đại hồng chung, đã lẻn lên tịnh thất siết cổ sư trụ trì rồi trèo lên gác chuông giộng chuông báo động.",
+        "Phật tử làm bếp Hoàng Thị Nga do bị khiển trách làm mất trộm gạo chay, đã cấu kết với kẻ gian bên ngoài đột nhập am thiền cướp hòm tiền công đức.",
+        "Một tên trộm cổ vật đột nhập am thiền lấy cắp tượng Phật ngọc rồi kéo dây chuông đánh động để tẩu thoát."
       ],
       "answer": [
         0
       ],
       "hints": [
-        "Ai có động cơ sợ bị đuổi khỏi chùa vì tham ô 60 triệu tiền trùng tu, cưa ống bương tre làm bẫy nước gõ chuông hẹn giờ?",
-        "Xem xét kỹ các bằng chứng vật chất và báo cáo kỹ thuật hình sự."
+        "Ai là người am hiểu cơ học chế tạo bẫy nước máng tre, có xơ tre trong túi áo và cất giấu 120 triệu tiền công đức đúc chuông?",
+        "Đối chiếu lời khai ngoại phạm của Quảng Chân với thời gian hẹn giờ 2 tiếng 45 phút của ống bương tre."
       ],
       "explanation": [
-        "Thích Quảng Chân là kẻ thủ ác. Y siết cổ sư trụ trì lúc 09h45 (d03, d15), cài đặt bẫy nước nhỏ giọt gõ chuông lúc 12h00 (d10, d11, d13), có dăm tre trong túi áo (d12) và giấu sổ quỹ cùng tiền tham ô dưới đệm thiền (d14, d16)."
+        "Thích Quảng Chân là thủ phạm duy nhất. Tâm ma vụ lợi kết hợp sự xảo quyệt dùng bẫy nước cơ học hẹn giờ giộng chuông hòng tạo bằng chứng ngoại phạm đã bị khoa học hình sự vạch trần."
       ]
     }
   ],
