@@ -4,6 +4,7 @@ import { hitStroke, strokePath, type Stroke } from './ink';
 import { sanitize, stageOpen, currentQ } from './store';
 import { check, normalizeLine } from '../lib/checks.js';
 import type { CaseData } from '../lib/types';
+import { chunkText, extractDocText } from '../lib/tts';
 
 describe('geometry', () => {
   const box: Box = { x: 100, y: 50, w: 200, h: 100, r: 0 };
@@ -83,5 +84,38 @@ describe('saved state', () => {
     const s = sanitize({ q: { q1: { solved: true } } }, CASE);
     expect(stageOpen(CASE, s, 2)).toBe(true);
     expect(currentQ(CASE, s)?.id).toBe('q2');
+  });
+});
+
+describe('TTS (text-to-speech)', () => {
+  it('chunks text by sentence boundaries without exceeding max chunk size', () => {
+    const short = 'Chào bạn. Đây là đoạn ngắn.';
+    expect(chunkText(short)).toEqual([short]);
+
+    const longSentence = 'Câu thứ nhất rất dài và có nhiều thông tin chi tiết cần phải truyền đạt đến người nghe một cách mạch lạc. '.repeat(6);
+    const chunks = chunkText(longSentence);
+    expect(chunks.length).toBeGreaterThan(1);
+    chunks.forEach((c) => {
+      expect(c.length).toBeLessThanOrEqual(400);
+      expect(c.length).toBeGreaterThan(0);
+    });
+  });
+
+  it('extracts plain text from complex documents', () => {
+    const doc = {
+      type: 'testimony',
+      title: 'Biên bản lấy lời khai',
+      fields: [{ label: 'Nhân chứng', value: 'Nguyễn Văn A' }],
+      lines: [
+        { n: 1, speaker: 'Điều tra viên', text: 'Ông ở đâu vào lúc **20:00**?' },
+        { n: 2, speaker: 'Nguyễn Văn A', text: 'Tôi ở nhà đọc sách.' },
+      ],
+      signature: 'Ký tên A',
+    };
+    const extracted = extractDocText(doc);
+    expect(extracted).toContain('Biên bản lấy lời khai');
+    expect(extracted).toContain('Nhân chứng: Nguyễn Văn A');
+    expect(extracted).toContain('Điều tra viên: Ông ở đâu vào lúc 20:00?');
+    expect(extracted).not.toContain('**');
   });
 });

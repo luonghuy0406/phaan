@@ -37,6 +37,14 @@ function validate(id) {
     if (!existsSync(p)) err(`${where}: không tìm thấy file ${src}`);
     else if (statSync(p).size > 600 * 1024) warn(`${where}: ${src} nặng ${(statSync(p).size / 1024).toFixed(0)} KB (nên < 400 KB)`);
   };
+  // the intro popup opens on first entry: it needs the setting and the player's task
+  if (c.intro != null) {
+    if (typeof c.intro !== 'object' || Array.isArray(c.intro)) err('"intro" phải là { title, paragraphs[], objective } (popup giới thiệu khi vào bàn)');
+    else {
+      if (!Array.isArray(c.intro.paragraphs) || !c.intro.paragraphs.length) err('"intro.paragraphs" cần ít nhất 1 đoạn bối cảnh');
+      if (!c.intro.objective) warn('"intro.objective" nên có một câu nêu nhiệm vụ của người chơi');
+    }
+  }
   if (c.cover !== undefined) imageRef('cover', c.cover);
 
   const docs = Array.isArray(c.documents) ? c.documents : [];
@@ -64,6 +72,11 @@ function validate(id) {
       });
       if (!seen.size) err(`${w}: lời khai cần có "lines"`);
     }
+    // something the player can actually read on the paper
+    const hasBody = (typeof d.content === 'string' && d.content.trim()) || d.paragraphs?.length || d.lines?.length
+      || d.sections?.length || d.fields?.length || d.items?.length || d.caption || d.imageCaption || d.image || d.headline || d.deck;
+    if (!hasBody) err(`${w}: tài liệu không có nội dung hiển thị (cần "content", "paragraphs", "lines", "sections"… xem docs/case-schema.md)`);
+    if (d.content !== undefined && typeof d.content !== 'string') err(`${w}: "content" phải là chuỗi`);
     if (['photo', 'scan'].includes(d.type) || d.image !== undefined) imageRef(`${w}.image`, d.image);
     if (d.imageHi !== undefined) imageRef(`${w}.imageHi`, d.imageHi);
     if (d.file !== undefined) {
@@ -141,6 +154,12 @@ function validate(id) {
     else for (const k of ['title', 'status', 'no']) if (entry[k] !== c[k]) warn(`index.json: "${k}" khác case.json (${JSON.stringify(entry[k])} ≠ ${JSON.stringify(c[k])})`);
   } catch { err('cases/index.json lỗi'); }
 
+  // images in the case folder that nothing points to: they still ship to the website
+  const used = new Set([c.cover, ...docs.flatMap((d) => [d && d.image, d && d.imageHi, d && d.file])].filter((x) => typeof x === 'string'));
+  const walk = (rel) => readdirSync(join(dir, rel), { withFileTypes: true }).flatMap((e) => (e.isDirectory() ? walk(`${rel}/${e.name}`) : [`${rel}/${e.name}`]));
+  if (existsSync(join(dir, 'images'))) {
+    for (const f of walk('images')) if (!used.has(f) && !f.endsWith('.DS_Store')) warn(`${f}: không tài liệu nào dùng ảnh này (vẫn bị đưa lên web, ${(statSync(join(dir, f)).size / 1024).toFixed(0)} KB)`);
+  }
   return { errors, warns, stats: { docs: docs.length, stages: stages.length, questions: qs.length } };
 }
 

@@ -9,6 +9,7 @@ import { Viewport } from './Viewport';
 import { Topbar, Toolbar, ActionMenu, PendingBanner, DocIndex, Toast } from './chrome';
 import { SidePanel } from './panels';
 import { Dialogs, Tour } from './dialogs';
+import { TtsPlayer } from '../components/TtsPlayer';
 import { setDocNumbers } from '../lib/text';
 import { allSolved } from './store';
 import { useRoomBoardSync } from '../multiplayer/sync';
@@ -138,6 +139,7 @@ export function Board({ c, store, room }: { c: CaseData; store: BoardStore; room
         <ActionMenu />
         <Dialogs />
         <Toast />
+        <TtsPlayer />
       </div>
     </Ctx.Provider>
   );

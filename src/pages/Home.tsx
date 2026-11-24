@@ -5,17 +5,22 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useGSAP } from '@gsap/react';
 import { CaseCard, Footer, Nav } from '../components/site';
 import { ContinueStrip } from '../components/progress';
-import { loadCatalog, useAsync } from '../lib/data';
+import { loadCatalog, useAsync, caseKind } from '../lib/data';
+import type { CaseKind } from '../lib/types';
 import { SITE } from '../lib/config';
 import '../styles/home.css';
 
 gsap.registerPlugin(ScrollTrigger, useGSAP);
 
-type Filter = 'all' | 'available' | 'coming-soon';
+type Filter = 'all' | CaseKind;
 const FILTERS: { id: Filter; label: string }[] = [
   { id: 'all', label: 'Tất cả' },
-  { id: 'available', label: 'Đang mở' },
-  { id: 'coming-soon', label: 'Sắp ra mắt' },
+  { id: 'fiction', label: 'Hư cấu' },
+  { id: 'true-crime', label: 'Vụ án có thật' },
+];
+const GROUPS: { kind: CaseKind; title: string; note: string }[] = [
+  { kind: 'fiction', title: 'Hồ sơ hư cấu', note: 'Nhân vật, địa danh và tình tiết đều do chúng tôi dựng nên. Phù hợp để chơi cùng bạn bè, gia đình.' },
+  { kind: 'true-crime', title: 'Dựa trên vụ án có thật', note: 'Tái hiện từ thông tin công khai về những vụ án đã xảy ra. Có chi tiết dễ gây ám ảnh, không dành cho trẻ em.' },
 ];
 
 const TICKER = ['Biên bản khám nghiệm', 'Lời khai nhân chứng', 'Ảnh hiện trường', 'Tang vật', 'Dây đỏ', 'Sổ tay điều tra', 'Hồ sơ niêm phong', 'Apple Pencil'];
@@ -84,7 +89,8 @@ export default function Home() {
 
   const open = (cases || []).filter((c) => c.status === 'available');
   const featured = open[0];
-  const list = (cases || []).filter((c) => filter === 'all' || c.status === filter);
+  const ofKind = (k: CaseKind) => (cases || []).filter((c) => caseKind(c) === k);
+  const groups = GROUPS.filter((g) => filter === 'all' || g.kind === filter).map((g) => ({ ...g, list: ofKind(g.kind) })).filter((g) => g.list.length);
   const featuredTo = featured ? `/ho-so/${featured.id}` : '/#catalog';
 
   /* ── animations: everything degrades to the static layout with prefers-reduced-motion ── */
@@ -267,16 +273,24 @@ export default function Home() {
               </div>
               <div className="chips" role="tablist" aria-label="Lọc hồ sơ">
                 {FILTERS.map((f) => (
-                  <button key={f.id} type="button" role="tab" aria-selected={filter === f.id} className={`chip${filter === f.id ? ' is-on' : ''}`} onClick={() => setFilter(f.id)}>{f.label}</button>
+                  <button key={f.id} type="button" role="tab" aria-selected={filter === f.id} className={`chip${filter === f.id ? ' is-on' : ''}${f.id === 'true-crime' ? ' chip--real' : ''}`} onClick={() => setFilter(f.id)}>
+                    {f.label}{cases && <span className="chip__n">{f.id === 'all' ? cases.length : ofKind(f.id).length}</span>}
+                  </button>
                 ))}
               </div>
             </div>
-            <div className="catalog">
-              {error ? <p className="catalog__empty">Không tải được kho hồ sơ.</p>
-                : !cases ? <p className="catalog__empty">Đang tải hồ sơ…</p>
-                  : list.length ? list.map((c) => <CaseCard key={c.id} entry={c} />)
-                    : <p className="catalog__empty">Chưa có hồ sơ nào trong mục này.</p>}
-            </div>
+            {error ? <p className="catalog__empty">Không tải được kho hồ sơ.</p>
+              : !cases ? <p className="catalog__empty">Đang tải hồ sơ…</p>
+                : groups.length ? groups.map((g) => (
+                  <div key={g.kind} className={`catalog-group catalog-group--${g.kind}`}>
+                    <div className="catalog-group__head">
+                      <h3>{g.title}<span>{g.list.length} hồ sơ</span></h3>
+                      <p>{g.note}</p>
+                    </div>
+                    <div className="catalog">{g.list.map((c) => <CaseCard key={c.id} entry={c} />)}</div>
+                  </div>
+                ))
+                  : <p className="catalog__empty">Chưa có hồ sơ nào trong mục này.</p>}
           </div>
         </section>
 

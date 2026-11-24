@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import type { CaseData, CaseSummary } from './types';
+import type { CaseData, CaseSummary, CaseKind } from './types';
 
 const BASE = import.meta.env.BASE_URL;
 const ID_RE = /^[a-z0-9-]{1,60}$/;
@@ -47,3 +47,8 @@ export function useAsync<T>(fn: () => Promise<T>, deps: unknown[]): Async<T> {
   }, deps);
   return state;
 }
+
+/** Fiction or reconstructed from a real case. Older catalogs only mark real cases with the tag "Vụ án có thật". */
+export const caseKind = (c: { kind?: CaseKind; tags?: string[] }): CaseKind =>
+  c.kind ?? (c.tags?.some((t) => /vụ án có thật/i.test(t)) ? 'true-crime' : 'fiction');
+export const KIND_LABEL: Record<CaseKind, string> = { fiction: 'Hư cấu', 'true-crime': 'Vụ án có thật' };

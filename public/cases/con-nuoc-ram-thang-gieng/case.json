@@ -110,7 +110,9 @@
           ]
         }
       ],
-      "signature": "Đại úy Lê Thành Danh (ký và ghi rõ họ tên)"
+      "signature": "Đại úy Lê Thành Danh (ký và ghi rõ họ tên)",
+      "image": "images/d02-ban-do-song.webp",
+      "imageCaption": "Sơ đồ khúc sông Hàm Luông và nhánh rạch Cây Bần"
     },
     {
       "id": "d03",
@@ -180,7 +182,9 @@
           ]
         }
       ],
-      "signature": "Giám định viên: BS. Trần Thanh Bình"
+      "signature": "Giám định viên: BS. Trần Thanh Bình",
+      "image": "images/d05-giai-phau.webp",
+      "imageCaption": "Sơ đồ phác họa hình nhân y pháp và dấu hiệu ngạt nước"
     },
     {
       "id": "d06",

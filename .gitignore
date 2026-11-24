@@ -32,3 +32,9 @@ Thumbs.db
 .vscode/*
 !.vscode/extensions.json
 *.swp
+
+# Python bytecode
+__pycache__/
+
+# ảnh báo chí chỉ để tham khảo riêng trên máy, không đưa lên repo / web (bản quyền thuộc nguồn gốc)
+authoring/*/tham-khao/

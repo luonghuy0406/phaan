@@ -16,7 +16,15 @@
   ],
   "cover": "images/cover.webp",
   "synopsis": "Đêm 12/10/2008, trên đoàn tàu SE3 xuôi Nam, khi tàu vừa vượt qua cung đường ven biển Bình Thuận trong đêm giông gió, cửa khoang giường nằm số 4 bỗng khóa chặt bất thường. Khi nhân viên đường sắt giật nảy chốt khóa dự phòng lúc rạng sáng, hành khách Đặng Quốc Vinh - giám đốc mỏ cát titan - đã nằm chết gục trên giường ngủ, chiếc cặp da đựng 200 triệu đồng và hồ sơ đấu thầu biến mất không dấu vết.",
-  "intro": "Đội Cảnh sát Hình sự Công an tỉnh Bình Thuận tiếp nhận vụ án khi đoàn tàu khẩn cấp dừng lại tại ga Mường Mán lúc 05h30 sáng. Cửa sổ khoang tàu cố định không thể mở, cửa ra vào hành lang có chốt lẫy gập khóa chặt từ bên trong. Bằng cách nào hung thủ có thể sát hại nạn nhân, đoạt lấy tài sản rồi biến mất khỏi căn phòng kín di động này?",
+  "intro": {
+    "title": "Chuyến tàu đêm Mường Mán",
+    "paragraphs": [
+      "Đội Cảnh sát Hình sự Công an tỉnh Bình Thuận tiếp nhận vụ án khi đoàn tàu khẩn cấp dừng lại tại ga Mường Mán lúc 05h30 sáng. Cửa sổ khoang tàu cố định không thể mở, cửa ra vào hành lang có chốt lẫy gập khóa chặt từ bên trong.",
+      "Bằng cách nào hung thủ có thể sát hại nạn nhân, đoạt lấy tài sản rồi biến mất khỏi căn phòng kín di động này?",
+      "Bạn là điều tra viên thụ lý hồ sơ. Hãy đọc kỹ các tài liệu trên bàn, đối chiếu lời khai và trả lời từng trọng điểm để mở niêm phong phần hồ sơ tiếp theo."
+    ],
+    "objective": "Giải thích căn phòng kín trên toa tàu, kiểm chứng bằng chứng ngoại phạm của những người cùng chuyến, và chỉ ra hung thủ."
+  },
   "documents": [
     {
       "id": "d01",
@@ -24,7 +32,9 @@
       "type": "newspaper",
       "title": "Báo Bình Thuận - Vụ án mạng kinh hoàng trên đoàn tàu SE3",
       "date": "13/10/2008",
-      "content": "**ÁN MẠNG TRONG PHÒNG KHOÁ KÍN TRÊN ĐOÀN TÀU BẮC NAM**\n\nRạng sáng nay 13/10, đoàn tàu SE3 hành trình Hà Nội - Sài Gòn đã phải phong tỏa khẩn cấp một toa xe khi cập ga Mường Mán (Hàm Thuận Nam, Bình Thuận). Một hành khách khoang giường nằm cao cấp được phát hiện tử vong với vết thương chí mạng ở cổ.\n\nĐáng chú ý, cửa khoang tàu khi phát hiện vụ việc đang bị khóa trái chốt an toàn từ phía bên trong. Toàn bộ hành khách và tổ tiếp viên trên toa xe đang được giữ lại ga để phục vụ công tác điều tra phá án."
+      "content": "**ÁN MẠNG TRONG PHÒNG KHOÁ KÍN TRÊN ĐOÀN TÀU BẮC NAM**\n\nRạng sáng nay 13/10, đoàn tàu SE3 hành trình Hà Nội - Sài Gòn đã phải phong tỏa khẩn cấp một toa xe khi cập ga Mường Mán (Hàm Thuận Nam, Bình Thuận). Một hành khách khoang giường nằm cao cấp được phát hiện tử vong với vết thương chí mạng ở cổ.\n\nĐáng chú ý, cửa khoang tàu khi phát hiện vụ việc đang bị khóa trái chốt an toàn từ phía bên trong. Toàn bộ hành khách và tổ tiếp viên trên toa xe đang được giữ lại ga để phục vụ công tác điều tra phá án.",
+      "image": "images/d01-bao-chi.webp",
+      "imageCaption": "Ảnh tư liệu Báo Bình Thuận: Đoàn tàu SE3 dừng khẩn cấp tại ga Mường Mán"
     },
     {
       "id": "d02",
@@ -40,7 +50,9 @@
       "type": "report",
       "title": "Sơ đồ mặt bằng toa xe số 6",
       "date": "06h45 ngày 13/10/2008",
-      "content": "**SƠ ĐỒ BỐ TRÍ TOA XE SỐ 6**\n\n- Toa gồm 7 khoang giường nằm (khoang 1 đến khoang 7) nối với nhau bằng một hành lang dài bên mạn phải toa xe.\n- Đầu toa là phòng trực của nhân viên phục vụ toa xe (ông Trần Văn Hữu) và khu vệ sinh.\n- Cuối toa là cửa thông sang toa số 7 (toa ghế mềm).\n- Nạn nhân nằm ở khoang 4 giường 1. Thư ký Bùi Bích Thảo đăng ký giường 2 (cùng khoang 4). Nghi phạm Nguyễn Hoàng Long đăng ký giường 5 ở khoang 2."
+      "content": "**SƠ ĐỒ BỐ TRÍ TOA XE SỐ 6**\n\n- Toa gồm 7 khoang giường nằm (khoang 1 đến khoang 7) nối với nhau bằng một hành lang dài bên mạn phải toa xe.\n- Đầu toa là phòng trực của nhân viên phục vụ toa xe (ông Trần Văn Hữu) và khu vệ sinh.\n- Cuối toa là cửa thông sang toa số 7 (toa ghế mềm).\n- Nạn nhân nằm ở khoang 4 giường 1. Thư ký Bùi Bích Thảo đăng ký giường 2 (cùng khoang 4). Nghi phạm Nguyễn Hoàng Long đăng ký giường 5 ở khoang 2.",
+      "image": "images/d03-so-do-toa-tau.webp",
+      "imageCaption": "Sơ đồ mặt bằng toa 6 tàu Thống Nhất SE3"
     },
     {
       "id": "d04",
@@ -156,7 +168,9 @@
       "type": "receipt",
       "title": "Bảng phân bổ hành khách và kiểm soát vé toa số 6",
       "date": "22h00 ngày 12/10/2008",
-      "content": "**DANH SÁCH HÀNH KHÁCH TOA 6 (CHUYẾN TÀU SE3)**\n\n- Khoang 1: Trống (chờ đón khách ở ga Nha Trang nhưng khách bỏ vé).\n- Khoang 2: Giường 5 (Nguyễn Hoàng Long), các giường khác trống.\n- Khoang 3: Gia đình 4 người đi du lịch Mũi Né.\n- Khoang 4: Giường 1 (Đặng Quốc Vinh), Giường 2 (Bùi Bích Thảo), hai giường tầng trên trống.\n- Khoang 5 & 6: Khách du lịch đoàn."
+      "content": "**DANH SÁCH HÀNH KHÁCH TOA 6 (CHUYẾN TÀU SE3)**\n\n- Khoang 1: Trống (chờ đón khách ở ga Nha Trang nhưng khách bỏ vé).\n- Khoang 2: Giường 5 (Nguyễn Hoàng Long), các giường khác trống.\n- Khoang 3: Gia đình 4 người đi du lịch Mũi Né.\n- Khoang 4: Giường 1 (Đặng Quốc Vinh), Giường 2 (Bùi Bích Thảo), hai giường tầng trên trống.\n- Khoang 5 & 6: Khách du lịch đoàn.",
+      "image": "images/d09-ve-tau-se3.webp",
+      "imageCaption": "Bản chụp cuống vé tàu hỏa Thống Nhất SE3"
     },
     {
       "id": "d10",

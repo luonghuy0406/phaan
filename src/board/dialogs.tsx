@@ -7,6 +7,7 @@ import { deleteCloud } from '../lib/cloud';
 import { caseNo } from '../lib/data';
 import { useNavigate } from 'react-router-dom';
 import { leaveRoom } from '../multiplayer/room';
+import { ttsEngine, isDeviceVoiceCached, removeDeviceVoice, MODEL_MB } from '../lib/tts';
 import { Txt, Paras } from '../lib/text';
 
 function Modal({ open, onClose, className = '', children }: { open: boolean; onClose: () => void; className?: string; children: ReactNode }) {
@@ -45,13 +46,20 @@ export function Dialogs() {
 function Intro({ onClose }: { onClose: () => void }) {
   const { c } = useBoard();
   const seen = useBoardState((s) => s.seenIntro);
-  const intro = c.intro || {};
+  // intro may be written as an object, a plain string, or be missing (then fall back to the synopsis)
+  const raw = c.intro as unknown;
+  const intro = typeof raw === 'string'
+    ? { title: undefined, paragraphs: raw.split(/\n\s*\n/).filter(Boolean), objective: undefined }
+    : (c.intro || {});
+  const paras = intro.paragraphs?.length ? intro.paragraphs
+    : Array.isArray(c.synopsis) ? c.synopsis : typeof c.synopsis === 'string' ? [c.synopsis as string] : [];
+  const objective = intro.objective || 'Đọc kỹ tài liệu, đối chiếu lời khai và trả lời từng trọng điểm để tìm ra sự thật.';
   return (
     <>
       <p className="eyebrow">{caseNo(c)}</p>
       <h2><Txt>{intro.title || c.title}</Txt></h2>
-      <div className="dlg__text"><Paras list={intro.paragraphs} /></div>
-      {intro.objective && <p className="dlg__objective"><span>Nhiệm vụ</span><Txt>{intro.objective}</Txt></p>}
+      <div className="dlg__text"><Paras list={paras} /></div>
+      <p className="dlg__objective"><span>Nhiệm vụ</span><Txt>{objective}</Txt></p>
       <ul className="guide">
         <li><b>Di chuyển</b>Kéo nền để di chuyển bàn, kéo tài liệu để sắp xếp, chụm hai ngón để phóng to.</li>
         <li><b>Chạm vào đoạn văn</b>để tô dạ quang, trích vào sổ tay, nối dây đỏ, ghim bằng chứng hoặc chọn dòng khai.</li>
@@ -116,6 +124,7 @@ function Settings({ onClose }: { onClose: () => void }) {
           {penSeen ? ' Đã nhận Apple Pencil trên thiết bị này.' : ''}
         </span>
       </label>
+      <VoiceSetting />
       <div className="setting">
         <span>
           <b>Chơi toàn màn hình trên iPad</b>
@@ -165,6 +174,32 @@ export function Tour() {
           {last ? 'Mở Kết luận' : 'Tiếp'}
         </button>
       </div>
+    </div>
+  );
+}
+
+// On-device voice: show whether it is downloaded and let the player free the space.
+function VoiceSetting() {
+  const [cached, setCached] = useState<boolean | null>(null);
+  const [busy, setBusy] = useState(false);
+  useEffect(() => { if (ttsEngine() === 'device') void isDeviceVoiceCached().then(setCached); }, []);
+  if (ttsEngine() !== 'device' || cached === null) return null;
+  return (
+    <div className="setting">
+      <span>
+        <b>Giọng đọc AI</b>
+        {cached
+          ? `Đã tải về máy (khoảng ${MODEL_MB} MB). Đọc được cả khi không có mạng.`
+          : `Chưa tải. Bấm nút loa trên một tài liệu để tải (khoảng ${MODEL_MB} MB, sẽ hỏi trước).`}
+        {cached && (
+          <button type="button" className="link-btn" style={{ display: 'block' }} disabled={busy} onClick={async () => {
+            setBusy(true);
+            await removeDeviceVoice();
+            setCached(false);
+            setBusy(false);
+          }}>{busy ? 'Đang xoá…' : 'Xoá giọng đọc khỏi máy'}</button>
+        )}
+      </span>
     </div>
   );
 }

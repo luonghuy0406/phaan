@@ -16,7 +16,15 @@
   ],
   "cover": "images/cover.webp",
   "synopsis": "Rạng sáng ngày 14/11/2006, tàu đánh cá xa bờ QN-9288-TS cập cảng Cái Rồng trong sương lạnh mùa đông. Khi thợ bốc xếp mở nắp khoang lạnh số 3 để chuyển mực ống lên bờ, người ta bàng hoàng phát hiện thi thể Thuyền trưởng Trần Văn Đạt đông cứng giữa các khay mực. Cửa nắp khoang bị gài then sắt từ bên ngoài, trong khi người nắm ca lái đêm khẳng định mình ngồi liên tục trên đài lái nói chuyện bộ đàm.",
-  "intro": "Đội Điều tra Hình sự Công an huyện Vân Đồn phối hợp Đồn Biên phòng Cái Rồng phong tỏa con tàu viễn dương. Nạn nhân chết ngạt do thiếu dưỡng khí trong khi khoang tàu vẫn lưu thông không khí bình thường. Dấu vết phỏng lạnh hình học kỳ lạ trên thi thể và âm thanh tiếng rít chói tai giữa đêm biển hé lộ một thủ đoạn sát nhân bằng hóa chất băng giá.",
+  "intro": {
+    "title": "Tiếng hú cảng Vân Đồn",
+    "paragraphs": [
+      "Đội Điều tra Hình sự Công an huyện Vân Đồn phối hợp Đồn Biên phòng Cái Rồng phong tỏa con tàu viễn dương. Nạn nhân chết ngạt do thiếu dưỡng khí trong khi khoang tàu vẫn lưu thông không khí bình thường.",
+      "Dấu vết phỏng lạnh hình học kỳ lạ trên thi thể và âm thanh tiếng rít chói tai giữa đêm biển hé lộ một thủ đoạn sát nhân bằng hóa chất băng giá.",
+      "Bạn là điều tra viên thụ lý hồ sơ. Hãy đọc kỹ các tài liệu trên bàn, đối chiếu lời khai và trả lời từng trọng điểm để mở niêm phong phần hồ sơ tiếp theo."
+    ],
+    "objective": "Làm rõ vì sao thuyền trưởng chết ngạt trong khoang tàu vẫn thông gió, giải thích tiếng hú ban đêm, và chỉ ra thủ phạm."
+  },
   "documents": [
     {
       "id": "d01",
@@ -24,7 +32,9 @@
       "type": "newspaper",
       "title": "Báo Quảng Ninh - Vụ án mạng kỳ lạ trên tàu cá xa bờ tại Cái Rồng",
       "date": "15/11/2006",
-      "content": "**THUYỀN TRƯỞNG TỬ VONG TRONG KHOANG LẠNH TÀU CÁ VÂN ĐỒN**\n\nKhoảng 05h30 sáng hôm qua 14/11, một vụ việc nghiêm trọng đã xảy ra trên tàu cá QN-9288-TS khi vừa cập bến cảng Cái Rồng (Vân Đồn). Thuyền trưởng Trần Văn Đạt (50 tuổi) được phát hiện đã tử vong bên trong khoang lạnh bảo quản hải sản số 3.\n\nĐáng chú ý, nắp khoang lạnh khi phát hiện đang bị khóa then cài ngoài kiên cố. Cơ quan cảnh sát điều tra và lực lượng biên phòng đã tạm giữ toàn bộ thuyền viên để lấy lời khai và khám nghiệm tử thi."
+      "content": "**THUYỀN TRƯỞNG TỬ VONG TRONG KHOANG LẠNH TÀU CÁ VÂN ĐỒN**\n\nKhoảng 05h30 sáng hôm qua 14/11, một vụ việc nghiêm trọng đã xảy ra trên tàu cá QN-9288-TS khi vừa cập bến cảng Cái Rồng (Vân Đồn). Thuyền trưởng Trần Văn Đạt (50 tuổi) được phát hiện đã tử vong bên trong khoang lạnh bảo quản hải sản số 3.\n\nĐáng chú ý, nắp khoang lạnh khi phát hiện đang bị khóa then cài ngoài kiên cố. Cơ quan cảnh sát điều tra và lực lượng biên phòng đã tạm giữ toàn bộ thuyền viên để lấy lời khai và khám nghiệm tử thi.",
+      "image": "images/d01-bao-chi.webp",
+      "imageCaption": "Ảnh tư liệu Báo Quảng Ninh: Tàu cá QN-9288-TS cập cảng Cái Rồng"
     },
     {
       "id": "d02",
@@ -40,7 +50,9 @@
       "type": "report",
       "title": "Kết quả giám định tử thi Thuyền trưởng Trần Văn Đạt",
       "date": "08h00 ngày 14/11/2006",
-      "content": "**KẾT QUẢ GIÁM ĐỊNH PHÁP Y**\n\n1. **Nguyên nhân tử vong**: Ngạt cấp tính do suy hô hấp trong môi trường bão hòa khí carbonic (CO2) và thiếu hụt oxy trầm trọng, kết hợp hạ thân nhiệt cấp.\n2. **Dấu vết bất thường trên da**: Tại vùng xương quai xanh bên phải và ngực trên có 4 vết trợt loét dạng tròn đường kính đúng 20mm (2cm), mô da bị hoại tử lạnh sâu màu trắng tái (đặc trưng của vết thương phỏng lạnh do tiếp xúc trực tiếp với đá khô CO2 viên nén nung lạnh -78.5°C).\n3. **Thời điểm tử vong ước tính**: Pháp y ban đầu ước tính vào khoảng 01h00 đến 02h00 sáng ngày 14/11/2006 dựa trên độ đông cứng tử thi."
+      "content": "**KẾT QUẢ GIÁM ĐỊNH PHÁP Y**\n\n1. **Nguyên nhân tử vong**: Ngạt cấp tính do suy hô hấp trong môi trường bão hòa khí carbonic (CO2) và thiếu hụt oxy trầm trọng, kết hợp hạ thân nhiệt cấp.\n2. **Dấu vết bất thường trên da**: Tại vùng xương quai xanh bên phải và ngực trên có 4 vết trợt loét dạng tròn đường kính đúng 20mm (2cm), mô da bị hoại tử lạnh sâu màu trắng tái (đặc trưng của vết thương phỏng lạnh do tiếp xúc trực tiếp với đá khô CO2 viên nén nung lạnh -78.5°C).\n3. **Thời điểm tử vong ước tính**: Pháp y ban đầu ước tính vào khoảng 01h00 đến 02h00 sáng ngày 14/11/2006 dựa trên độ đông cứng tử thi.",
+      "image": "images/d03-giai-phau.webp",
+      "imageCaption": "Sơ đồ y pháp: Dấu hiệu ngạt khí độc Carbon Dioxide (CO2)"
     },
     {
       "id": "d04",
@@ -48,7 +60,9 @@
       "type": "report",
       "title": "Sơ đồ mặt bằng tàu đánh cá QN-9288-TS",
       "date": "08h30 ngày 14/11/2006",
-      "content": "**SƠ ĐỒ TÀU CÁ QN-9288-TS**\n\n- **Cabin lái (Tầng thượng)**: Nơi đặt bánh lái, la bàn từ và đài vô tuyến ICOM đàm thoại bờ biển.\n- **Boong chính**: Gồm 4 khoang bảo quản lạnh (khoang 1 đến 4). Khoang số 3 là nơi phát hiện thi thể. Cạnh khoang 3 có đường ống quạt hút khí xả dẫn lên miệng phễu sắt trên boong.\n- **Tầng hầm máy**: Nơi đặt động cơ diesel chính và dàn máy nén lạnh do Máy trưởng Nguyễn Văn Sáu quản lý.\n- **Cabin nghỉ của thủy thủ đoàn**: Phía sau đuôi tàu."
+      "content": "**SƠ ĐỒ TÀU CÁ QN-9288-TS**\n\n- **Cabin lái (Tầng thượng)**: Nơi đặt bánh lái, la bàn từ và đài vô tuyến ICOM đàm thoại bờ biển.\n- **Boong chính**: Gồm 4 khoang bảo quản lạnh (khoang 1 đến 4). Khoang số 3 là nơi phát hiện thi thể. Cạnh khoang 3 có đường ống quạt hút khí xả dẫn lên miệng phễu sắt trên boong.\n- **Tầng hầm máy**: Nơi đặt động cơ diesel chính và dàn máy nén lạnh do Máy trưởng Nguyễn Văn Sáu quản lý.\n- **Cabin nghỉ của thủy thủ đoàn**: Phía sau đuôi tàu.",
+      "image": "images/d04-so-do-tau-ca.webp",
+      "imageCaption": "Sơ đồ mặt cắt hệ thống hầm bảo quản đá lạnh tàu cá"
     },
     {
       "id": "d05",

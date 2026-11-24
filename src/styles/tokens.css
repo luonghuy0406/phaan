@@ -27,6 +27,11 @@
   --font-display: 'Playfair Display', Georgia, 'Times New Roman', serif;
   --font-mono: 'IBM Plex Mono', ui-monospace, Menlo, monospace;
   --font-hand: 'Patrick Hand', 'Comic Sans MS', cursive;
+  --font-official: 'Tinos', 'Times New Roman', Times, serif; /* printed forms, newspaper body */
+  --font-condensed: 'Oswald', 'Arial Narrow', sans-serif;
+  --font-sign: 'Dancing Script', 'Brush Script MT', cursive;
+  --ink-blue: #24507a; /* ballpoint fill-ins */
+  --stamp-red: #c0262d;
 
   --radius: 6px;
   --shadow-paper: 0 1px 0 rgba(0, 0, 0, 0.25), 0 14px 34px rgba(0, 0, 0, 0.5);

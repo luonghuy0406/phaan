@@ -16,7 +16,15 @@
   ],
   "cover": "images/cover.webp",
   "synopsis": "Đúng trưa ngày rằm tháng Bảy năm 2005 (Lễ Vu Lan), khi cả gia tộc họ Lương đang tề tựu tại chùa Cầu hành lễ, bức tranh lụa cổ 'Thập mục ngưu đồ' dát chỉ vàng hơn 200 năm tuổi treo trong từ đường bỗng không cánh mà bay. Không có dấu vết cạy phá cửa, nhưng bậc đá giếng cổ Bá Lễ phía sau nhà lại in vệt bùn vàng và một sợi cước đen lạ kỳ.",
-  "intro": "Đội Cảnh sát Điều tra Công an thị xã Hội An nhận nhiệm vụ phá án trước khi bức tranh gia bảo bị tuồn ra nước ngoài. Một nghi phạm chìa ra bức ảnh chụp chính mình đang ngồi ăn cơm gà lúc 12h15 trưa với chiếc đồng hồ treo tường rõ mồn một. Nhưng liệu góc bóng nắng của vùng đất di sản có chấp nhận lời khai ấy?",
+  "intro": {
+    "title": "Bóng nắng giếng Bá Lễ",
+    "paragraphs": [
+      "Đội Cảnh sát Điều tra Công an thị xã Hội An nhận nhiệm vụ phá án trước khi bức tranh gia bảo bị tuồn ra nước ngoài. Một nghi phạm chìa ra bức ảnh chụp chính mình đang ngồi ăn cơm gà lúc 12h15 trưa với chiếc đồng hồ treo tường rõ mồn một.",
+      "Nhưng liệu góc bóng nắng của vùng đất di sản có chấp nhận lời khai ấy?",
+      "Bạn là điều tra viên thụ lý hồ sơ. Hãy đọc kỹ các tài liệu trên bàn, đối chiếu lời khai và trả lời từng trọng điểm để mở niêm phong phần hồ sơ tiếp theo."
+    ],
+    "objective": "Tìm ra kẻ gian đã vào và rời từ đường bằng lối nào, kiểm chứng tấm ảnh ngoại phạm lúc 12h15, và chỉ ra ai đã lấy bức tranh lụa."
+  },
   "documents": [
     {
       "id": "d01",
@@ -24,7 +32,9 @@
       "type": "newspaper",
       "title": "Bản tin An ninh Quảng Nam - Trộm cổ vật giữa ban ngày ở Hội An",
       "date": "16/07 Âm lịch (20/08/2005)",
-      "content": "**MẤT TRỘM TRANH LỤA CỔ THỜI CHÚA NGUYỄN TẠI PHỐ CỔ HỘI AN**\n\nTrưa hôm qua, tại ngôi nhà cổ từ đường họ Lương trên đường Trần Phú (phường Minh An), kẻ gian đã đột nhập lấy đi bức tranh lụa quý 'Thập mục ngưu đồ' dát vàng có niên đại đầu thế kỷ 19.\n\nThời điểm xảy ra vụ trộm vào khoảng từ 11h45 đến 13h00 trưa khi gia đình đi dự đại lễ Vu Lan. Công an thị xã Hội An đã rà soát các lối xuất cảnh sân bay Đà Nẵng và các cảng biển nhằm phong tỏa đường tẩu tán của cổ vật."
+      "content": "**MẤT TRỘM TRANH LỤA CỔ THỜI CHÚA NGUYỄN TẠI PHỐ CỔ HỘI AN**\n\nTrưa hôm qua, tại ngôi nhà cổ từ đường họ Lương trên đường Trần Phú (phường Minh An), kẻ gian đã đột nhập lấy đi bức tranh lụa quý 'Thập mục ngưu đồ' dát vàng có niên đại đầu thế kỷ 19.\n\nThời điểm xảy ra vụ trộm vào khoảng từ 11h45 đến 13h00 trưa khi gia đình đi dự đại lễ Vu Lan. Công an thị xã Hội An đã rà soát các lối xuất cảnh sân bay Đà Nẵng và các cảng biển nhằm phong tỏa đường tẩu tán của cổ vật.",
+      "image": "images/d01-bao-chi.webp",
+      "imageCaption": "Ảnh tư liệu Báo Quảng Nam: Phố cổ Hội An và khu vực giếng Bá Lễ"
     },
     {
       "id": "d02",
@@ -49,7 +59,9 @@
       "type": "report",
       "title": "Sơ đồ lối đi từ từ đường ra giếng Bá Lễ",
       "date": "15h00 ngày 19/08/2005",
-      "content": "**SƠ ĐỒ KHU VỰC HIỆN TRƯỜNG**\n\n- Từ cửa sau từ đường họ Lương có một ngõ nhỏ lát gạch thẻ dài khoảng 80 mét dẫn thông thẳng ra khu vực giếng cổ Bá Lễ.\n- Giếng Bá Lễ là giếng nước ngọt cổ nổi tiếng của Hội An, xung quanh có tường rào thấp và lùm cây râm mát, buổi trưa hè thường rất vắng người qua lại do thợ gánh nước chỉ làm việc vào sáng sớm và chiều muộn."
+      "content": "**SƠ ĐỒ KHU VỰC HIỆN TRƯỜNG**\n\n- Từ cửa sau từ đường họ Lương có một ngõ nhỏ lát gạch thẻ dài khoảng 80 mét dẫn thông thẳng ra khu vực giếng cổ Bá Lễ.\n- Giếng Bá Lễ là giếng nước ngọt cổ nổi tiếng của Hội An, xung quanh có tường rào thấp và lùm cây râm mát, buổi trưa hè thường rất vắng người qua lại do thợ gánh nước chỉ làm việc vào sáng sớm và chiều muộn.",
+      "image": "images/d04-so-do-tu-duong.webp",
+      "imageCaption": "Sơ đồ ngõ hẹp từ cổng từ đường họ Lương ra giếng Bá Lễ"
     },
     {
       "id": "d05",

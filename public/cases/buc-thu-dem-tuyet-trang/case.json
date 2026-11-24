@@ -1,0 +1,319 @@
+{
+  "id": "buc-thu-dem-tuyet-trang",
+  "no": 14,
+  "status": "available",
+  "title": "Bức thư đêm tuyết trắng",
+  "tagline": "Bức thư tống tiền 3 trang giấy viết bằng chính giấy bút trong nhà, nhưng mặt tuyết trắng ngoài sân không một vết chân.",
+  "difficulty": 4,
+  "players": "2–6",
+  "duration": "100–120 phút",
+  "setting": "Biệt thự gia đình Ramsey, Boulder, Colorado, Mỹ (12/1996)",
+  "nationalHeader": false,
+  "tags": [
+    "Vụ án có thật",
+    "Dễ gây ám ảnh",
+    "Kỳ án nước Mỹ",
+    "Hiện trường dàn dựng"
+  ],
+  "cover": "images/cover.webp",
+  "synopsis": "⚠️ HỒ SƠ DỰA TRÊN KỲ ÁN CÓ THẬT CHẤN ĐỘNG NƯỚC MỸ NĂM 1996: Sáng sớm ngày 26/12/1996, cô bé hoa khôi nhí 6 tuổi JonBenét Ramsey được phát hiện mất tích trong căn biệt thự 15 phòng kín cổng cao tường tại Boulder, Colorado. Trên cầu thang là bức thư tống tiền dài 3 trang viết tay kỳ dị đòi đúng 118.000 USD. Nhưng vài giờ sau, thi thể nạn nhân lại được chính người cha tìm thấy ngay trong góc hầm rượu của ngôi nhà. Bức thư viết bằng sổ tay của người mẹ, mặt tuyết dày ngoài sân không có dấu chân người lạ, và một màng nhện giăng nguyên vẹn trước ô cửa kính tầng hầm đã biến vụ án thành một trong những bí ẩn pháp y gây ám ảnh nhất nhân loại.",
+  "intro": {
+    "title": "Bức thư đêm tuyết trắng",
+    "paragraphs": [
+      "Đội Đặc nhiệm FBI và Cảnh sát hạt Boulder tiếp nhận điều tra một kỳ án kinh điển. Tội ác không đến từ kẻ bắt cóc xa xôi mà ẩn hiện sau tấm màn nhung của sự giàu sang và những lời khai mâu thuẫn đến rợn người.",
+      "Bằng chứng vật lý nào đã vạch trần hiện trường dàn dựng tàn nhẫn này?",
+      "Bạn là điều tra viên thụ lý hồ sơ. Hãy đọc kỹ các tài liệu trên bàn, đối chiếu lời khai và trả lời từng trọng điểm để mở niêm phong phần hồ sơ tiếp theo."
+    ],
+    "objective": "Làm rõ nguyên nhân tử vong và nguồn gốc bức thư đòi tiền chuộc, đối chiếu lời khai của những người trong nhà, rồi kết luận bản chất thật của vụ án."
+  },
+  "documents": [
+    {
+      "id": "d01",
+      "stage": 1,
+      "type": "newspaper",
+      "title": "Bản tin CNN - Bi kịch đêm Giáng sinh tại biệt thự gia đình tỷ phú",
+      "date": "27/12/1996",
+      "content": "**HOA KHÔI NHÍ 6 TUỔI BỊ SÁT HẠI TRONG TẦNG HẦM BIỆT THỰ GIA ĐÌNH**\n\nNước Mỹ bàng hoàng trước cái chết bi thảm của cô bé JonBenét Ramsey (6 tuổi) trong chính ngôi biệt thự sang trọng của gia đình tại thành phố Boulder (bang Colorado). Ban đầu, gia đình thông báo cô bé bị bắt cóc tống tiền với bức thư nặc danh đòi 118.000 USD.\n\nTuy nhiên, chỉ 8 giờ sau khi cảnh sát có mặt, thi thể nạn nhân đã được người cha tìm thấy tại một căn phòng hầm rượu ít người qua lại dưới tầng hầm. Toàn bộ các lối ra vào của biệt thự được xác nhận khóa kín trong suốt đêm tuyết rơi dày.",
+      "image": "images/d01-bao-chi.webp",
+      "imageCaption": "Ảnh tư liệu Bản tin CNN: Căn biệt thự gia đình Ramsey phủ đầy tuyết trắng"
+    },
+    {
+      "id": "d02",
+      "stage": 1,
+      "type": "report",
+      "title": "Biên bản khám nghiệm hiện trường hầm rượu biệt thự",
+      "date": "14h00 ngày 26/12/1996",
+      "content": "**BIÊN BẢN KHÁM NGHIỆM HIỆN TRƯỜNG**\n\n- **Địa điểm**: Căn phòng chứa rượu vang dưới tầng hầm biệt thự số 755 đường 15th, Boulder.\n- **Tình trạng nạn nhân**: Nằm ngửa trên sàn xi măng, phủ một tấm chăn len trắng. Miệng bị dán chặt bằng một dải băng dính đen chuyên dụng dày 5cm. Hai cổ tay bị trói lỏng phía trước bằng sợi dây thừng dù trắng.\n- **Dụng cụ siết cổ (Garrote)**: Quanh cổ nạn nhân quấn một sợi dây thừng siết chặt, đầu dây buộc vào một đoạn cán cọ vẽ tranh bằng gỗ dài 12cm dùng làm đòn bẩy vặn xoắn cơ học (loại cọ vẽ lấy từ hộp đồ nghề hội họa của người mẹ Patsy Ramsey)."
+    },
+    {
+      "id": "d03",
+      "stage": 1,
+      "type": "report",
+      "title": "Kết quả giám định tử thi nạn nhân JonBenét Ramsey",
+      "date": "17h30 ngày 26/12/1996",
+      "content": "**KẾT QUẢ KHÁM NGHIỆM TỬ THI VÀ PHÁP Y**\n\n1. **Chấn thương sọ não nghiêm trọng**: Vết nứt hộp sọ dài 21.5cm vùng thái dương đỉnh phải kèm dập mô não diện rộng. Vết thương do vật cứng tù đập với lực cực mạnh từ phía trên giáng xuống (phù hợp với chiếc đèn pin kim loại dài 3 pin tìm thấy trên bàn bếp).\n2. **Nguyên nhân tử vong kết hợp**: Ngạt thở cơ học do siết cổ bằng dây thừng garrote kết hợp với hôn mê sâu do chấn thương sọ não cấp.\n3. **Thời điểm tử vong ước tính**: Khoảng từ 23h00 đêm 25/12 đến 02h00 sáng ngày 26/12/1996."
+    },
+    {
+      "id": "d04",
+      "stage": 1,
+      "type": "report",
+      "title": "Sơ đồ mặt bằng biệt thự 15 phòng gia đình Ramsey",
+      "date": "18h00 ngày 26/12/1996",
+      "content": "**SƠ ĐỒ BIỆT THỰ BA TẦNG**\n\n- Tầng 3: Phòng ngủ của cha mẹ (John và Patsy Ramsey).\n- Tầng 2: Phòng ngủ của nạn nhân JonBenét và anh trai Burke (9 tuổi).\n- Tầng 1: Phòng khách, nhà bếp, cầu thang xoắn ốc (nơi phát hiện 3 trang thư tống tiền trên bậc tam cấp).\n- Tầng hầm: Phòng giặt, phòng lò sưởi và phòng hầm rượu (nơi tìm thấy thi thể).",
+      "image": "images/d04-so-do-biet-thu.webp",
+      "imageCaption": "Sơ đồ kiến trúc mặt bằng tầng hầm và tầng trệt biệt thự"
+    },
+    {
+      "id": "d05",
+      "stage": 1,
+      "type": "photo",
+      "title": "Ảnh chụp bức thư tống tiền 3 trang và cuốn sổ tay bị xé",
+      "date": "18h30 ngày 26/12/1996",
+      "image": "images/d05-buc-thu.webp",
+      "content": "Ảnh chụp tài liệu then chốt: Ba trang thư tống tiền viết bằng mực dạ đen trên giấy kẻ ngang. Cạnh đó là cuốn sổ tay lò xo của bà Patsy Ramsey để trên bàn bếp, phần gáy giấy có vết xé răng cưa trùng khớp 100% với 3 trang thư, các trang trước của sổ tay có dấu hằn chữ viết nháp bị xé bỏ."
+    },
+    {
+      "id": "d06",
+      "stage": 2,
+      "type": "testimony",
+      "title": "Lời khai của người mẹ Patsy Ramsey",
+      "date": "19h30 ngày 26/12/1996",
+      "lines": [
+        {
+          "n": 1,
+          "text": "Sáng sớm 05h45 tôi thức dậy đi xuống cầu thang chuẩn bị đồ đạc cho chuyến bay đi nghỉ mát."
+        },
+        {
+          "n": 2,
+          "text": "Khi bước xuống bậc cầu thang xoắn ốc tầng 1, tôi bàng hoàng thấy 3 tờ giấy viết tay xếp ngay ngắn trên bậc tam cấp mà tôi khẳng định không hề chạm vào hay biết gì về nó trước đó."
+        },
+        {
+          "n": 3,
+          "text": "Tôi đọc thấy dòng chữ 'Chúng tôi đang giữ con gái ông' nên vội vã chạy lên phòng con kiểm tra thì thấy giường trống trơn."
+        },
+        {
+          "n": 4,
+          "text": "Tôi hét lên gọi John rồi bấm số 911 cầu cứu cảnh sát trong hoảng loạn."
+        },
+        {
+          "n": 5,
+          "text": "Tôi là một người mẹ yêu con hơn cả sinh mạng, làm sao tôi có thể liên can đến bức thư tàn nhẫn đó!"
+        }
+      ]
+    },
+    {
+      "id": "d07",
+      "stage": 2,
+      "type": "testimony",
+      "title": "Lời khai của người cha John Ramsey",
+      "date": "20h15 ngày 26/12/1996",
+      "lines": [
+        {
+          "n": 1,
+          "text": "Tôi nghe tiếng hét của vợ lúc gần 6h sáng nên chạy xuống tầng 1."
+        },
+        {
+          "n": 2,
+          "text": "Bức thư yêu cầu nộp đúng 118.000 USD tiền mặt, đúng bằng tờ 100 đô và 20 đô."
+        },
+        {
+          "n": 3,
+          "text": "Đến đầu giờ chiều, cảnh sát bảo tôi đi kiểm tra lại các phòng trong nhà xem có đồ vật gì bất thường không."
+        },
+        {
+          "n": 4,
+          "text": "Tôi đi thẳng xuống tầng hầm, mở cánh cửa căn hầm rượu bị khóa then chốt ngoài thì bàng hoàng thấy thi thể con gái tôi dưới sàn."
+        },
+        {
+          "n": 5,
+          "text": "Tôi lập tức ôm con gái bế thốc lên phòng khách tầng 1."
+        }
+      ],
+      "image": "images/d07-anh-hoa-khoi.webp",
+      "imageCaption": "Ảnh hồ sơ hoa khôi nhí tóc vàng JonBenét Ramsey"
+    },
+    {
+      "id": "d08",
+      "stage": 2,
+      "type": "report",
+      "title": "Báo cáo giám định dấu tuyết và ô cửa kính tầng hầm",
+      "date": "21h00 ngày 26/12/1996",
+      "content": "**GIÁM ĐỊNH HIỆN TRƯỜNG TỰ NHIÊN NGOẠI CẢNH**\n\n1. **Lớp tuyết trắng dày 10cm**: Bao phủ nguyên vẹn toàn bộ khoảng sân, lối đi và bãi cỏ quanh biệt thự từ 22h00 đêm 25/12 đến 06h00 sáng 26/12. Tuyệt đối **không có bất kỳ dấu chân người nào** đi từ ngoài đường vào hoặc từ nhà đi ra ngoài tuyết.\n2. **Ô cửa kính tầng hầm**: Cảnh sát phát hiện một ô cửa sổ thông gió tầng hầm bị nứt một góc. Tuy nhiên, tại góc nứt và khung sắt có một **màng nhện lớn giăng mắc nguyên vẹn không hề bị rách**, phủ đầy bụi cũ. Điều này chứng minh không một kẻ đột nhập nào có thể chui qua ô cửa sổ này mà không làm rách màng nhện!"
+    },
+    {
+      "id": "d09",
+      "stage": 2,
+      "type": "receipt",
+      "title": "Bản sao kê tiền thưởng Giáng sinh của John Ramsey",
+      "date": "Tháng 12/1996",
+      "content": "**BẢNG KÊ TIỀN THƯỞNG CÔNG TY ACCESS GRAPHICS**\n\n- Người nhận: John Ramsey (Chủ tịch kiêm Giám đốc điều hành).\n- Số tiền thưởng cuối năm thực nhận sau thuế: **Đúng 118.117,50 USD** (làm tròn số là 118.000 USD).\n- Khoản tiền thưởng này chỉ có John Ramsey và người nhà biết được qua phiếu thanh toán kẹp trong sổ công tác trên bàn làm việc tại gia đình."
+    },
+    {
+      "id": "d10",
+      "stage": 3,
+      "type": "report",
+      "title": "Bản phân tích giám định tài liệu chữ viết tay bức thư tống tiền",
+      "date": "09h00 ngày 27/12/1996",
+      "content": "**KẾT LUẬN GIÁM ĐỊNH CHỮ VIẾT TAY (CỤC ĐIỀU TRA LIÊN BANG FBI)**\n\n1. **Độ dài bất thường**: Bức thư dài tới 3 trang viết tay nắn nót (hơn 400 từ). Các chuyên gia phân tích hành vi FBI khẳng định: Trong lịch sử tội phạm bắt cóc tống tiền, không một kẻ bắt cóc nào mạo hiểm ngồi lại hiện trường hơn 20 phút để nắn nót viết một bức thư dài 3 trang bằng bút và giấy của nạn nhân!\n2. **So sánh mẫu chữ viết tay**: Nét chữ viết tay trên bức thư có hơn 24 đặc điểm tương đồng cốt lõi (về độ nghiêng, nét móc chữ 'a', 'q', 'd' và cách chấm dấu câu) với mẫu chữ viết tay của bà Patsy Ramsey. Các chuyên gia tài liệu không thể loại trừ Patsy Ramsey khỏi danh tính người viết lá thư này."
+    },
+    {
+      "id": "d11",
+      "stage": 3,
+      "type": "photo",
+      "title": "Ảnh phân tích vi thể sợi len áo đỏ của người mẹ",
+      "date": "10h30 ngày 27/12/1996",
+      "image": "images/d11-soi-len.webp",
+      "content": "Ảnh chụp qua kính hiển vi so sánh: Các sợi xơ len màu đỏ tía dính trên mặt keo dính của cuộn băng keo dán miệng nạn nhân và sợi dây thừng siết garrote hoàn toàn trùng khớp về tỷ lệ vi thể và sắc ký nhuộm màu với chiếc áo len đỏ bà Patsy Ramsey mặc trong suốt bữa tiệc đêm Giáng sinh."
+    },
+    {
+      "id": "d12",
+      "stage": 3,
+      "type": "report",
+      "title": "Biên bản kiểm tra chiếc cọ vẽ bị gãy dùng làm garrote",
+      "date": "11h30 ngày 27/12/1996",
+      "content": "**GIÁM ĐỊNH HUNG KHÍ TỰ CHẾ**\n\nĐoạn cán gỗ 12cm dùng để vặn xoắn dây thừng garrote quanh cổ nạn nhân chính là phần chuôi bị bẻ gãy của chiếc cọ vẽ màu nước nhãn hiệu 'Grumbacher'. Phần đầu cọ và hộp sơn dầu tương ứng được tìm thấy ngay trên bàn làm việc trong phòng sở thích của bà Patsy Ramsey dưới tầng hầm."
+    },
+    {
+      "id": "d13",
+      "stage": 3,
+      "type": "report",
+      "title": "Báo cáo phân tích tâm lý tội phạm học hành vi FBI",
+      "date": "14h00 ngày 27/12/1996",
+      "content": "**BÁO CÁO PHÂN TÍCH HIỆN TRƯỜNG DÀN DỰNG (CRIME SCENE STAGING)**\n\nChuyên gia hành vi John Douglas (FBI) kết luận:\n- Toàn bộ hiện trường mang đầy đủ dấu hiệu kinh điển của một vụ **'Dàn dựng hiện trường' (Staging)** do người trong nhà thực hiện.\n- Mục đích của việc viết bức thư tống tiền 3 trang, trói tay lỏng và dán băng dính vào miệng nạn nhân đã tử vong là để biến một vụ tai nạn/chấn thương bộc phát trong gia đình thành một kịch bản bắt cóc tống tiền giả mạo nhằm đánh lừa dư luận và cảnh sát."
+    },
+    {
+      "id": "d14",
+      "stage": 4,
+      "type": "report",
+      "title": "Bản phân tích âm thanh băng ghi âm cuộc gọi 911",
+      "date": "15h30 ngày 27/12/1996",
+      "content": "**GIẢI MÃ ÂM THANH 6 GIÂY CUỐI CUỘC GỌI 911**\n\nSau khi Patsy Ramsey tưởng rằng đã cúp máy, máy ghi âm tổng đài 911 vẫn tiếp tục ghi lại 6 giây âm thanh trong phòng khách. Sau khi lọc tạp âm số, các chuyên gia ghi nhận giọng nói trầm tĩnh của người cha: 'Chúng ta không nói chuyện với họ', và giọng người mẹ thì thầm: 'Chúa ơi, con đã làm gì thế này?'."
+    },
+    {
+      "id": "d15",
+      "stage": 4,
+      "type": "report",
+      "title": "Bản cáo trạng của Đại bồi thẩm đoàn hạt Boulder (Năm 1999)",
+      "date": "Hồ sơ niêm phong tòa án",
+      "content": "**KẾT LUẬN CỦA ĐẠI BỒI THẨM ĐOÀN**\n\nNăm 1999, sau khi xem xét hàng trăm chứng cứ kỹ thuật hình sự, Đại bồi thẩm đoàn đã bỏ phiếu truy tố cả John Ramsey và Patsy Ramsey về tội 'Đồng lõa đặt một đứa trẻ vào tình trạng nguy hiểm dẫn đến tử vong và cản trở điều tra tư pháp'."
+    },
+    {
+      "id": "d16",
+      "stage": 4,
+      "type": "report",
+      "title": "Kết luận hồ sơ vụ án đêm Giáng sinh 1996",
+      "date": "Hồ sơ lưu trữ tư pháp",
+      "content": "**KẾT LUẬN HỒ SƠ**\n\nVụ án JonBenét Ramsey vẫn được xếp vào danh mục những kỳ án chưa có bản án chung cuộc có hiệu lực pháp luật hoàn chỉnh, nhưng các bằng chứng vật lý về bức thư tống tiền 3 trang, sợi len đỏ và hiện trường tuyết trắng đã vạch trần bức màn kịch dàn dựng đau lòng chốn biệt thự giàu sang."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "stage": 1,
+      "type": "evidence",
+      "title": "Nguyên nhân tử vong và nguồn gốc bức thư tống tiền",
+      "intro": "Cái chết của hoa khôi nhí và bức thư tống tiền 3 trang chứa đựng những chi tiết mâu thuẫn trực tiếp với giả thuyết bắt cóc thông thường.",
+      "prompt": "Ghim 2 tài liệu chứng minh nguyên nhân tử vong kết hợp của nạn nhân và bằng chứng bức thư tống tiền 3 trang được xé từ cuốn sổ tay có sẵn trong nhà.",
+      "need": 2,
+      "answer": [
+        "d03",
+        "d05"
+      ],
+      "hints": [
+        "Kiểm tra kết quả giám định tử thi về chấn thương nứt sọ dài 21.5cm kết hợp siết cổ.",
+        "Xem ảnh chụp bức thư tống tiền 3 trang khớp với gáy xé của cuốn sổ tay lò xo trong bếp.",
+        "Xem xét kỹ các bằng chứng vật chất và báo cáo kỹ thuật hình sự."
+      ],
+      "explanation": [
+        "Tài liệu d03 xác nhận nạn nhân tử vong do chấn thương nứt sọ kết hợp siết cổ garrote.",
+        "Tài liệu d05 (ảnh chụp) chứng minh 3 trang thư tống tiền được xé trực tiếp từ cuốn sổ tay của gia đình để trên bàn bếp."
+      ],
+      "nudges": [
+        {
+          "picks": [
+            "d01",
+            "d02"
+          ],
+          "message": "Bản tin và biên bản hiện trường ban đầu chưa thể hiện sự khớp nối răng cưa của cuốn sổ tay và kết luận y pháp tử thi."
+        }
+      ]
+    },
+    {
+      "id": "q2",
+      "stage": 2,
+      "type": "line",
+      "title": "Lời khai phát hiện bức thư trên cầu thang",
+      "intro": "Người mẹ Patsy Ramsey đưa ra lời khai về việc bà phát hiện bức thư tống tiền lúc sáng sớm.",
+      "prompt": "Hãy chọn một dòng trong lời khai của Patsy Ramsey (d06) khẳng định bà nhìn thấy 3 trang thư trên bậc cầu thang và không hề chạm vào hay biết gì về nó trước đó.",
+      "answer": [
+        "d06:002"
+      ],
+      "hints": [
+        "Tìm dòng lời khai nói về việc bà bước xuống bậc cầu thang và thấy 3 tờ giấy viết tay xếp ngay ngắn.",
+        "Đối chiếu mốc thời gian và hành vi của người khai với các nhân chứng xung quanh."
+      ],
+      "explanation": [
+        "Tại dòng d06:002, Patsy Ramsey khai: 'Khi bước xuống bậc cầu thang xoắn ốc tầng 1, tôi bàng hoàng thấy 3 tờ giấy viết tay xếp ngay ngắn trên bậc tam cấp mà tôi khẳng định không hề chạm vào hay biết gì về nó trước đó'."
+      ]
+    },
+    {
+      "id": "q3",
+      "stage": 3,
+      "type": "evidence",
+      "title": "Bằng chứng giám định chữ viết và sợi len áo đỏ",
+      "intro": "Các chứng cứ khoa học hình sự đã vạch trần mối liên hệ trực tiếp giữa người trong nhà và các vật chứng tại hiện trường.",
+      "prompt": "Ghim 2 tài liệu chỉ ra kết quả giám định chữ viết tay trùng khớp hơn 24 đặc điểm với Patsy Ramsey và sợi vải len từ áo khoác đỏ của bà dính trên băng keo.",
+      "need": 2,
+      "answer": [
+        "d10",
+        "d11"
+      ],
+      "hints": [
+        "Bản phân tích giám định tài liệu chữ viết tay FBI về hơn 24 đặc điểm trùng khớp với người mẹ.",
+        "Ảnh chụp phân tích vi thể sợi len màu đỏ tía dính trên băng dính dán miệng nạn nhân.",
+        "Xem xét kỹ các bằng chứng vật chất và báo cáo kỹ thuật hình sự."
+      ],
+      "explanation": [
+        "Tài liệu d10 khẳng định nét chữ bức thư tống tiền có hơn 24 điểm tương đồng cốt lõi với chữ viết tay của Patsy Ramsey.",
+        "Tài liệu d11 (ảnh vi thể) chỉ ra sợi len đỏ trên băng dính miệng nạn nhân hoàn toàn đồng chất với áo len của Patsy Ramsey."
+      ],
+      "nudges": [
+        {
+          "picks": [
+            "d12",
+            "d13"
+          ],
+          "message": "d12 và d13 là hung khí cọ vẽ và báo cáo tâm lý FBI; hãy chọn bản giám định chữ viết d10 và ảnh so sánh sợi len d11."
+        }
+      ]
+    },
+    {
+      "id": "q4",
+      "stage": 4,
+      "type": "choice",
+      "title": "Bản chất thật sự của vụ án JonBenét Ramsey",
+      "intro": "Toàn bộ chuỗi chứng cứ vật lý đã bác bỏ hoàn toàn giả thuyết về một kẻ đột nhập từ bên ngoài.",
+      "prompt": "Dựa vào toàn bộ tài liệu hồ sơ, chuỗi chứng cứ nào vạch trần vụ án là một màn kịch dàn dựng bắt cóc giả mạo (Staging) từ nội bộ ngôi nhà?",
+      "options": [
+        "Chỉ do số tiền tống tiền 118.000 USD quá nhỏ so với tài sản tỷ phú",
+        "Chỉ do cửa hầm rượu bị khóa then cài ngoài",
+        "Do có kẻ lạ mặt để lại dấu chân trên tuyết ngoài sân",
+        "Do nét chữ bức thư trùng khớp người trong nhà, giấy bút lấy tại bếp, sợi len áo đỏ trên băng dính và mạng nhện cửa sổ còn nguyên vẹn"
+      ],
+      "answer": [
+        3
+      ],
+      "hints": [
+        "Hãy xâu chuỗi tất cả các bằng chứng vật chất: thư 3 trang viết tại chỗ, sợi len áo đỏ, mạng nhện ô thoáng và mặt tuyết trắng không dấu chân.",
+        "Xem xét kỹ các bằng chứng vật chất và báo cáo kỹ thuật hình sự."
+      ],
+      "explanation": [
+        "Đáp án đúng là lựa chọn thứ tư: Chuỗi chứng cứ khoa học hình sự gồm nét chữ tương đồng (d10), giấy bút xé từ sổ trong bếp (d05), sợi len đỏ của người mẹ trên băng dính miệng (d11), mạng nhện nguyên vẹn ở cửa sổ và tuyết trắng không dấu chân (d08) đã chứng minh đây là một hiện trường dàn cảnh (d13, d15)."
+      ]
+    }
+  ],
+  "finale": {
+    "culprit": "Hiện trường dàn dựng nội bộ gia đình",
+    "text": "Bức màn bí ẩn bao trùm ngôi biệt thự đêm Giáng sinh năm 1996 vẫn là một trong những hồ sơ gây ám ảnh nhất trong lịch sử tư pháp thế giới. Những dấu vết khoa học về bức thư 3 trang, sợi len đỏ và mạng nhện nơi tầng hầm lạnh giá mãi mãi là lời cảnh tỉnh đanh thép rằng không một sự dàn dựng giả mạo nào có thể che giấu hoàn toàn sự thật trước lăng kính của khoa học hình sự."
+  }
+}

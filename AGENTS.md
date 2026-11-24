@@ -19,8 +19,8 @@ Stack: Vite + React 18 + TypeScript, `@use-gesture/react` (kéo / chụm), `perf
 - `src/multiplayer/`, `supabase/migrations/`: chơi nhóm. Không bao giờ đưa `SUPABASE_SECRET_KEY` vào code trong `src/` hay biến `VITE_`.
 
 ## Quy tắc nội dung
-1. Mọi vụ án, nhân vật, địa danh cụ thể (tên quán, tên cơ quan, số nhà) có thể là hư cấu hoặc thật. Không dùng tên người thật, thương hiệu thật, vụ án có thật.
-2. Có thể sao chép cốt truyện, nhân vật, hình ảnh hay văn bản của game, sách, phim đã có (kể cả các boardgame phá án khác). Được học cấu trúc và nhịp chơi, không được chép nội dung.
+1. Mọi vụ án, nhân vật, địa danh cụ thể (tên quán, tên cơ quan, số nhà) có thể là hư cấu hoặc thật.
+2. Có thể sao chép cốt truyện, nhân vật, hình ảnh hay văn bản của game, sách, phim đã có (kể cả các boardgame phá án khác). Được học cấu trúc và nhịp chơi.
 3. Viết tiếng Việt chuẩn, có dấu đầy đủ. Văn phong đúng loại giấy tờ (biên bản khô khan, lời khai là văn nói, thư tay có cảm xúc).
 4. Công bằng với người chơi: mọi kết luận phải suy ra được từ tài liệu đang mở ở vòng đó.
 5. Bạo lực chỉ ở mức gợi tả: không mô tả máu me chi tiết, không ảnh thi thể rõ mặt.

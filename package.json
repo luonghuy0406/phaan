@@ -9,7 +9,8 @@
     "preview": "vite preview --host",
     "test": "vitest run",
     "validate": "node tools/validate-case.mjs --all",
-    "sync-cases": "node tools/sync-cases.mjs"
+    "sync-cases": "node tools/sync-cases.mjs",
+    "tts-server": "python3 tools/supertonic-server.py"
   },
   "dependencies": {
     "@gsap/react": "^2.1.2",
@@ -17,6 +18,7 @@
     "@use-gesture/react": "^10.3.1",
     "gsap": "^3.13.0",
     "idb-keyval": "^6.2.1",
+    "onnxruntime-web": "^1.22.0",
     "perfect-freehand": "^1.2.2",
     "qrcode": "^1.5.4",
     "react": "^18.3.1",
@@ -29,6 +31,7 @@
     "@types/react": "^18.3.12",
     "@types/react-dom": "^18.3.1",
     "@vitejs/plugin-react": "^4.3.4",
+    "onnxruntime-node": "^1.22.0",
     "typescript": "^5.6.3",
     "vite": "^5.4.11",
     "vite-plugin-pwa": "^0.21.1",
