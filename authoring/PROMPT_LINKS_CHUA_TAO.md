@@ -8,7 +8,7 @@
 
 ## 📊 THỐNG KÊ TÀI NGUYÊN CHỜ SINH ẢNH
 
-- **Tổng số ảnh chờ tạo chính thức:** **114** hình ảnh.
+- **Tổng số ảnh chờ tạo chính thức:** **94** hình ảnh.
 - **Phân bổ:** 17/17 vụ án (Bao gồm 7 ảnh bìa hộp remaster và 85 ảnh tư liệu/hiện trường/sơ đồ).
 
 ---
@@ -85,21 +85,14 @@
 | 10 | Tài liệu d15 (Biên bản thu giữ tang vật giấu...) | `d15-tien-va-cap-da.webp` | [image-prompts.md](file:///Users/huynguyen/Documents/game_pha_an/authoring/chuyen-tau-dem-muong-man/image-prompts.md#L218) | L218 | [Mở Prompt](file:///Users/huynguyen/Documents/game_pha_an/authoring/chuyen-tau-dem-muong-man/image-prompts.md#L218) |
 | 11 | Tài liệu d16 (Bản thực nghiệm hiện trường th...) | `d16-thuc-nghiem-hien-truong.webp` | [image-prompts.md](file:///Users/huynguyen/Documents/game_pha_an/authoring/chuyen-tau-dem-muong-man/image-prompts.md#L241) | L241 | [Mở Prompt](file:///Users/huynguyen/Documents/game_pha_an/authoring/chuyen-tau-dem-muong-man/image-prompts.md#L241) |
 
-### Bóng nắng giếng Bá Lễ (`bong-nang-hoi-an`)
-
-| STT | Hạng mục ảnh | Tên file đích | File Prompt nguồn | Dòng | Thao tác |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| 1 | Tài liệu d01 (Bản tin An ninh Quảng Nam - Tr...) | `d01-bao-chi.webp` | [image-prompts.md](file:///Users/huynguyen/Documents/game_pha_an/authoring/bong-nang-hoi-an/image-prompts.md#L1) | L1 | [Mở Prompt](file:///Users/huynguyen/Documents/game_pha_an/authoring/bong-nang-hoi-an/image-prompts.md#L1) |
-| 2 | Tài liệu d04 (Sơ đồ lối đi từ từ đường ra gi...) | `d04-so-do-tu-duong.webp` | [image-prompts.md](file:///Users/huynguyen/Documents/game_pha_an/authoring/bong-nang-hoi-an/image-prompts.md#L1) | L1 | [Mở Prompt](file:///Users/huynguyen/Documents/game_pha_an/authoring/bong-nang-hoi-an/image-prompts.md#L1) |
-
 ### Đêm lửa tàn Buôn Ea Kral (`lua-than-tay-nguyen`)
 
 | STT | Hạng mục ảnh | Tên file đích | File Prompt nguồn | Dòng | Thao tác |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 1 | Tài liệu d01 (Báo Đắk Lắk - Hỏa hoạn thương ...) | `d01-bao-chi.webp` | [image-prompts.md](file:///Users/huynguyen/Documents/game_pha_an/authoring/lua-than-tay-nguyen/image-prompts.md#L1) | L1 | [Mở Prompt](file:///Users/huynguyen/Documents/game_pha_an/authoring/lua-than-tay-nguyen/image-prompts.md#L1) |
-| 2 | Tài liệu d03 (Kết quả giám định tử thi già l...) | `d03-so-do-buon-lang.webp` | [image-prompts.md](file:///Users/huynguyen/Documents/game_pha_an/authoring/lua-than-tay-nguyen/image-prompts.md#L1) | L1 | [Mở Prompt](file:///Users/huynguyen/Documents/game_pha_an/authoring/lua-than-tay-nguyen/image-prompts.md#L1) |
+| 1 | Tài liệu d01 (Báo Đắk Lắk - Hỏa hoạn thương ...) | `d01-bao-chi.webp` | [image-prompts.md](file:///Users/huynguyen/Documents/game_pha_an/authoring/lua-than-tay-nguyen/image-prompts.md#L31) | L31 | [Mở Prompt](file:///Users/huynguyen/Documents/game_pha_an/authoring/lua-than-tay-nguyen/image-prompts.md#L31) |
+| 2 | Tài liệu d03 (Kết quả giám định tử thi già l...) | `d03-so-do-buon-lang.webp` | [image-prompts.md](file:///Users/huynguyen/Documents/game_pha_an/authoring/lua-than-tay-nguyen/image-prompts.md#L47) | L47 | [Mở Prompt](file:///Users/huynguyen/Documents/game_pha_an/authoring/lua-than-tay-nguyen/image-prompts.md#L47) |
 | 3 | Tài liệu d05 (Ảnh chụp chiếc xà gạc dính máu...) | `d05-xa-gac.webp` | [image-prompts.md](file:///Users/huynguyen/Documents/game_pha_an/authoring/lua-than-tay-nguyen/image-prompts.md#L15) | L15 | [Mở Prompt](file:///Users/huynguyen/Documents/game_pha_an/authoring/lua-than-tay-nguyen/image-prompts.md#L15) |
-| 4 | Tài liệu d06 (Lời khai của con nuôi Y Bang...) | `d06-anh-the.webp` | [image-prompts.md](file:///Users/huynguyen/Documents/game_pha_an/authoring/lua-than-tay-nguyen/image-prompts.md#L1) | L1 | [Mở Prompt](file:///Users/huynguyen/Documents/game_pha_an/authoring/lua-than-tay-nguyen/image-prompts.md#L1) |
+| 4 | Tài liệu d06 (Lời khai của con nuôi Y Bang...) | `d06-anh-the.webp` | [image-prompts.md](file:///Users/huynguyen/Documents/game_pha_an/authoring/lua-than-tay-nguyen/image-prompts.md#L37) | L37 | [Mở Prompt](file:///Users/huynguyen/Documents/game_pha_an/authoring/lua-than-tay-nguyen/image-prompts.md#L37) |
 | 5 | Tài liệu d11 (Ảnh tang vật bẫy nhiệt: Đui đè...) | `d11-rui-dien.webp` | [image-prompts.md](file:///Users/huynguyen/Documents/game_pha_an/authoring/lua-than-tay-nguyen/image-prompts.md#L23) | L23 | [Mở Prompt](file:///Users/huynguyen/Documents/game_pha_an/authoring/lua-than-tay-nguyen/image-prompts.md#L23) |
 
 ### Gác đèn Hòn Dáu (`gac-den-hon-dau`)
@@ -138,17 +131,6 @@
 | 4 | Tài liệu d05 (Ảnh chụp cận cảnh nắp khoang l...) | `d05-nap-khoang.webp` | [image-prompts.md](file:///Users/huynguyen/Documents/game_pha_an/authoring/tieng-huan-van-don/image-prompts.md#L15) | L15 | [Mở Prompt](file:///Users/huynguyen/Documents/game_pha_an/authoring/tieng-huan-van-don/image-prompts.md#L15) |
 | 5 | Tài liệu d11 (Ảnh tang vật mẫu đá khô CO2 vi...) | `d11-da-kho.webp` | [image-prompts.md](file:///Users/huynguyen/Documents/game_pha_an/authoring/tieng-huan-van-don/image-prompts.md#L23) | L23 | [Mở Prompt](file:///Users/huynguyen/Documents/game_pha_an/authoring/tieng-huan-van-don/image-prompts.md#L23) |
 
-### Hồi chuông núi Sài Sơn (`hoi-chuong-chua-thay`)
-
-| STT | Hạng mục ảnh | Tên file đích | File Prompt nguồn | Dòng | Thao tác |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| 1 | Ảnh bìa hộp (3:4) | `cover.webp` | [image-prompts.md](file:///Users/huynguyen/Documents/game_pha_an/authoring/hoi-chuong-chua-thay/image-prompts.md#L7) | L7 | [Mở Prompt](file:///Users/huynguyen/Documents/game_pha_an/authoring/hoi-chuong-chua-thay/image-prompts.md#L7) |
-| 2 | Tài liệu d01 (Báo Hà Tây - Vụ án mạng chấn đ...) | `d01-bao-chi.webp` | [image-prompts.md](file:///Users/huynguyen/Documents/game_pha_an/authoring/hoi-chuong-chua-thay/image-prompts.md#L1) | L1 | [Mở Prompt](file:///Users/huynguyen/Documents/game_pha_an/authoring/hoi-chuong-chua-thay/image-prompts.md#L1) |
-| 3 | Tài liệu d03 (Kết quả giám định tử thi Đại đ...) | `d03-so-do-chua.webp` | [image-prompts.md](file:///Users/huynguyen/Documents/game_pha_an/authoring/hoi-chuong-chua-thay/image-prompts.md#L1) | L1 | [Mở Prompt](file:///Users/huynguyen/Documents/game_pha_an/authoring/hoi-chuong-chua-thay/image-prompts.md#L1) |
-| 4 | Tài liệu d05 (Ảnh chụp gác chuông và hệ thốn...) | `d05-gac-chuong.webp` | [image-prompts.md](file:///Users/huynguyen/Documents/game_pha_an/authoring/hoi-chuong-chua-thay/image-prompts.md#L15) | L15 | [Mở Prompt](file:///Users/huynguyen/Documents/game_pha_an/authoring/hoi-chuong-chua-thay/image-prompts.md#L15) |
-| 5 | Tài liệu d08 (Lời khai của phật tử làm bếp H...) | `d08-so-do-co-hoc.webp` | [image-prompts.md](file:///Users/huynguyen/Documents/game_pha_an/authoring/hoi-chuong-chua-thay/image-prompts.md#L3) | L3 | [Mở Prompt](file:///Users/huynguyen/Documents/game_pha_an/authoring/hoi-chuong-chua-thay/image-prompts.md#L3) |
-| 6 | Tài liệu d11 (Ảnh tang vật ống bương tre trụ...) | `d11-ong-tre.webp` | [image-prompts.md](file:///Users/huynguyen/Documents/game_pha_an/authoring/hoi-chuong-chua-thay/image-prompts.md#L23) | L23 | [Mở Prompt](file:///Users/huynguyen/Documents/game_pha_an/authoring/hoi-chuong-chua-thay/image-prompts.md#L23) |
-
 ### Vết mực làng Đông Hồ (`vet-muc-lang-dong-ho`)
 
 | STT | Hạng mục ảnh | Tên file đích | File Prompt nguồn | Dòng | Thao tác |
@@ -172,28 +154,6 @@
 | 7 | Tài liệu d11 (Ảnh tang vật ống tiêm y tế và ...) | `d11-ong-tiem.webp` | [image-prompts.md](file:///Users/huynguyen/Documents/game_pha_an/authoring/ly-tra-trao-doc/image-prompts.md#L156) | L156 | [Mở Prompt](file:///Users/huynguyen/Documents/game_pha_an/authoring/ly-tra-trao-doc/image-prompts.md#L156) |
 | 8 | Tài liệu d12 (Hóa đơn chuyển phát nhanh bưu ...) | `d12-van-don-viettelpost.webp` | [image-prompts.md](file:///Users/huynguyen/Documents/game_pha_an/authoring/ly-tra-trao-doc/image-prompts.md#L178) | L178 | [Mở Prompt](file:///Users/huynguyen/Documents/game_pha_an/authoring/ly-tra-trao-doc/image-prompts.md#L178) |
 | 9 | Tài liệu d14 (Trích xuất camera an ninh tiệm...) | `d14-camera-quan-tra.webp` | [image-prompts.md](file:///Users/huynguyen/Documents/game_pha_an/authoring/ly-tra-trao-doc/image-prompts.md#L197) | L197 | [Mở Prompt](file:///Users/huynguyen/Documents/game_pha_an/authoring/ly-tra-trao-doc/image-prompts.md#L197) |
-
-### Bức thư đêm tuyết trắng (`buc-thu-dem-tuyet-trang`)
-
-| STT | Hạng mục ảnh | Tên file đích | File Prompt nguồn | Dòng | Thao tác |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| 1 | Ảnh bìa hộp (3:4) | `cover.webp` | [image-prompts.md](file:///Users/huynguyen/Documents/game_pha_an/authoring/buc-thu-dem-tuyet-trang/image-prompts.md#L7) | L7 | [Mở Prompt](file:///Users/huynguyen/Documents/game_pha_an/authoring/buc-thu-dem-tuyet-trang/image-prompts.md#L7) |
-| 2 | Tài liệu d01 (Bản tin CNN - Bi kịch đêm Gián...) | `d01-bao-chi.webp` | [image-prompts.md](file:///Users/huynguyen/Documents/game_pha_an/authoring/buc-thu-dem-tuyet-trang/image-prompts.md#L1) | L1 | [Mở Prompt](file:///Users/huynguyen/Documents/game_pha_an/authoring/buc-thu-dem-tuyet-trang/image-prompts.md#L1) |
-| 3 | Tài liệu d04 (Sơ đồ mặt bằng biệt thự 15 phò...) | `d04-so-do-biet-thu.webp` | [image-prompts.md](file:///Users/huynguyen/Documents/game_pha_an/authoring/buc-thu-dem-tuyet-trang/image-prompts.md#L1) | L1 | [Mở Prompt](file:///Users/huynguyen/Documents/game_pha_an/authoring/buc-thu-dem-tuyet-trang/image-prompts.md#L1) |
-| 4 | Tài liệu d05 (Ảnh chụp bức thư tống tiền 3 t...) | `d05-buc-thu.webp` | [image-prompts.md](file:///Users/huynguyen/Documents/game_pha_an/authoring/buc-thu-dem-tuyet-trang/image-prompts.md#L18) | L18 | [Mở Prompt](file:///Users/huynguyen/Documents/game_pha_an/authoring/buc-thu-dem-tuyet-trang/image-prompts.md#L18) |
-| 5 | Tài liệu d07 (Lời khai của người cha John Ra...) | `d07-anh-hoa-khoi.webp` | [image-prompts.md](file:///Users/huynguyen/Documents/game_pha_an/authoring/buc-thu-dem-tuyet-trang/image-prompts.md#L10) | L10 | [Mở Prompt](file:///Users/huynguyen/Documents/game_pha_an/authoring/buc-thu-dem-tuyet-trang/image-prompts.md#L10) |
-| 6 | Tài liệu d11 (Ảnh phân tích vi thể sợi len á...) | `d11-soi-len.webp` | [image-prompts.md](file:///Users/huynguyen/Documents/game_pha_an/authoring/buc-thu-dem-tuyet-trang/image-prompts.md#L25) | L25 | [Mở Prompt](file:///Users/huynguyen/Documents/game_pha_an/authoring/buc-thu-dem-tuyet-trang/image-prompts.md#L25) |
-
-### Đêm súng nổ phố Tây Sơn (`dem-sung-no-tay-son`)
-
-| STT | Hạng mục ảnh | Tên file đích | File Prompt nguồn | Dòng | Thao tác |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| 1 | Ảnh bìa hộp (3:4) | `cover.webp` | [image-prompts.md](file:///Users/huynguyen/Documents/game_pha_an/authoring/dem-sung-no-tay-son/image-prompts.md#L7) | L7 | [Mở Prompt](file:///Users/huynguyen/Documents/game_pha_an/authoring/dem-sung-no-tay-son/image-prompts.md#L7) |
-| 2 | Tài liệu d01 (Báo An ninh Thủ đô - Trọng án ...) | `d01-bao-chi.webp` | [image-prompts.md](file:///Users/huynguyen/Documents/game_pha_an/authoring/dem-sung-no-tay-son/image-prompts.md#L1) | L1 | [Mở Prompt](file:///Users/huynguyen/Documents/game_pha_an/authoring/dem-sung-no-tay-son/image-prompts.md#L1) |
-| 3 | Tài liệu d04 (Sơ đồ hiện trường tiệm vàng và...) | `d04-so-do-hien-truong.webp` | [image-prompts.md](file:///Users/huynguyen/Documents/game_pha_an/authoring/dem-sung-no-tay-son/image-prompts.md#L10) | L10 | [Mở Prompt](file:///Users/huynguyen/Documents/game_pha_an/authoring/dem-sung-no-tay-son/image-prompts.md#L10) |
-| 4 | Tài liệu d05 (Ảnh chụp 3 vỏ đạn K54 dập năm ...) | `d05-vo-dan.webp` | [image-prompts.md](file:///Users/huynguyen/Documents/game_pha_an/authoring/dem-sung-no-tay-son/image-prompts.md#L18) | L18 | [Mở Prompt](file:///Users/huynguyen/Documents/game_pha_an/authoring/dem-sung-no-tay-son/image-prompts.md#L18) |
-| 5 | Tài liệu d11 (Ảnh dấu vân tay trên vỏ bao th...) | `d11-bao-thuoc.webp` | [image-prompts.md](file:///Users/huynguyen/Documents/game_pha_an/authoring/dem-sung-no-tay-son/image-prompts.md#L25) | L25 | [Mở Prompt](file:///Users/huynguyen/Documents/game_pha_an/authoring/dem-sung-no-tay-son/image-prompts.md#L25) |
-| 6 | Tài liệu d12 (Biên bản xác minh bến phà Đen...) | `d12-ve-pha-den.webp` | [image-prompts.md](file:///Users/huynguyen/Documents/game_pha_an/authoring/dem-sung-no-tay-son/image-prompts.md#L26) | L26 | [Mở Prompt](file:///Users/huynguyen/Documents/game_pha_an/authoring/dem-sung-no-tay-son/image-prompts.md#L26) |
 
 ### Quái vật 21 khuôn mặt (`quai-vat-21-khuon-mat`)
 

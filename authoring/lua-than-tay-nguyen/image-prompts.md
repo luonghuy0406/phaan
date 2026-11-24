@@ -28,6 +28,33 @@ Toàn bộ prompt được viết bằng tiếng Việt chi tiết, hướng d�
 
 ---
 
+### 4. Ảnh báo: `images/d01-bao-chi.webp`
+- **Tên file**: `images/d01-bao-chi.webp` (ngang 16:10)
+- **Mô tả bối cảnh**: Ảnh tư liệu báo Đắk Lắk sáng 10/04/2001: hiện trường kho thóc cộng đồng buôn Ea Kral sau đêm cháy.
+- **Chi tiết khung hình**: Ảnh báo chí đen trắng hơi nhoè hạt. Nền đất đỏ bazan, tàn tích kho thóc nhà sàn gỗ nứa cháy rụi chỉ còn vài cột gỗ đen trơ trụi và mái ngói sụp, khói xám mỏng còn bốc lên. Phía sau, cách khoảng 50 m, mái nhà rông cao vút. Vài người dân Ê Đê đứng xa nhìn, quay lưng hoặc mờ mặt; một công an mặc sắc phục xanh lá năm 2001 căng dây phong toả. Không có chữ, không có biển hiệu.
+- **Ánh sáng & Màu sắc**: Nắng sớm mùa khô Tây Nguyên, khói làm dịu ánh sáng; đen trắng tương phản vừa, kiểu ảnh in báo.
+
+### 5. Ảnh thẻ nhân chứng: `images/d06-anh-the.webp`
+- **Tên file**: `images/d06-anh-the.webp` (ngang 4:3)
+- **Mô tả bối cảnh**: Ảnh thẻ kèm hồ sơ lời khai của Y Bang (con nuôi già làng, khoảng 30 tuổi, chủ tiệm thu mua cà phê). Nhân vật hư cấu.
+- **Chi tiết khung hình**: Tấm ảnh thẻ chân dung 4x6 cũ, kẹp ghim vào góc một tờ hồ sơ giấy ngả vàng trên mặt bàn gỗ. Người đàn ông Ê Đê khoảng 30 tuổi, da rám nắng, tóc ngắn, áo sơ mi cổ bẻ màu xanh nhạt, nét mặt lì, nhìn thẳng. Nền ảnh thẻ xanh dương nhạt kiểu tiệm ảnh năm 2001. Không có chữ đọc được trên giấy.
+- **Ánh sáng & Màu sắc**: Ánh đèn bàn vàng ấm chiếu xiên; ảnh thẻ hơi phai màu, mép giấy sờn.
+
+---
+
+### Prompt ảnh tổng hợp (một lần tạo cho cả 4 ảnh chụp, sau đó cắt thành từng ô)
+
+Dán nguyên đoạn dưới vào công cụ tạo ảnh, tỉ lệ 3:2 (ví dụ 1536×1024). Ô thứ tự trái sang phải, trên xuống dưới: d01, d05, d06, d11. Ảnh sơ đồ d03 đã được vẽ bằng code (`draw_so_do.py`), không cần tạo.
+
+```
+A 2x2 grid of four separate documentary photographs from a 2001 police case file in the Central Highlands of Vietnam, separated by thin pure-white gutters (8 px) on a white background, no text, no captions, no logos, no watermarks.
+Top-left: black-and-white newspaper photograph, slightly grainy: the burnt ruins of a wooden stilt rice storehouse on red basalt earth at dawn, only a few charred posts and a collapsed tile roof left, thin grey smoke rising; a tall Ede communal house (nha rong) roof about 50 metres behind; a few villagers far away with faces not visible; a Vietnamese policeman in 2001 olive-green uniform stretching a cordon tape.
+Top-right: forensic flat-lay macro under direct camera flash: a traditional Ede machete (xa gac) half buried in grey burnt rice husk ash, hand-forged blade blackened by smoke, thick spine with dark dried blood and a strand of hair, round polished wooden handle with a stylised capital letter B carved into it, a yellow plastic centimetre scale ruler laid parallel to the blade.
+Bottom-left: an old faded 4x6 cm passport-style ID photo of a fictional Ede man about 30, tanned skin, short hair, light-blue collared shirt, blank stare, light-blue studio backdrop typical of 2001, paper-clipped to the corner of a yellowed blank file sheet on a wooden desk, warm desk-lamp light.
+Bottom-right: evidence laid out on a stainless-steel forensic tray under white fluorescent lab light: curved shards of a smoke-blackened 100 W incandescent bulb with a broken tungsten filament, a brass screw lamp socket with a scorched yellow twin-core cable shrunk by heat, and next to it the brass gears and coil spring of a half-burnt mechanical timer relay from a poultry egg incubator, razor-sharp detail.
+Photorealistic, authentic 2001 documentary look, no illustration, no anime.
+```
+
 ### Gợi ý tinh chỉnh khi dùng công cụ AI (Midjourney / Bing / Stable Diffusion):
 - Thêm từ khóa: `Central Highlands Vietnam village, burnt wooden stilt storehouse ruins, glowing embers, smoke, Ede traditional knife xa gac, forensic crime scene photo, 2001 documentary photograph, high detail texture, authentic cultural artifacts`.
 - Tránh: Không xuất hiện chữ viết nhân tạo trên ảnh, không hình ảnh hoạt hình anime.

@@ -10,8 +10,12 @@ AUTHORING_DIR = ROOT / "authoring"
 # Define official AI images
 OFFICIAL_AI = {
     ("bong-nang-hoi-an", "cover.webp"),
+    ("bong-nang-hoi-an", "d01-bao-chi.webp"),
     ("bong-nang-hoi-an", "d03-gieng-ba-le.webp"),
+    ("bong-nang-hoi-an", "d04-so-do-tu-duong.webp"),
+    ("bong-nang-hoi-an", "d05-tranh-co.webp"),
     ("bong-nang-hoi-an", "d07-anh-com-ga.webp"),
+    ("bong-nang-hoi-an", "d11-ong-nhua.webp"),
     ("tieng-dan-day-pho-hien", "cover.webp"),
     ("suong-mu-trai-trai", "cover.webp"),
     ("chuyen-tau-dem-muong-man", "cover.webp"),
@@ -21,6 +25,24 @@ OFFICIAL_AI = {
     ("tieng-huan-van-don", "cover.webp"),
     ("vet-muc-lang-dong-ho", "cover.webp"),
     ("ly-tra-trao-doc", "cover.webp"),
+    ("hoi-chuong-chua-thay", "cover.webp"),
+    ("hoi-chuong-chua-thay", "d01-bao-chi.webp"),
+    ("hoi-chuong-chua-thay", "d03-so-do-chua.webp"),
+    ("hoi-chuong-chua-thay", "d05-gac-chuong.webp"),
+    ("hoi-chuong-chua-thay", "d08-so-do-co-hoc.webp"),
+    ("hoi-chuong-chua-thay", "d11-ong-tre.webp"),
+    ("dem-sung-no-tay-son", "cover.webp"),
+    ("dem-sung-no-tay-son", "d01-bao-chi.webp"),
+    ("dem-sung-no-tay-son", "d04-so-do-hien-truong.webp"),
+    ("dem-sung-no-tay-son", "d05-vo-dan.webp"),
+    ("dem-sung-no-tay-son", "d11-bao-thuoc.webp"),
+    ("dem-sung-no-tay-son", "d12-ve-pha-den.webp"),
+    ("buc-thu-dem-tuyet-trang", "cover.webp"),
+    ("buc-thu-dem-tuyet-trang", "d01-bao-chi.webp"),
+    ("buc-thu-dem-tuyet-trang", "d04-so-do-biet-thu.webp"),
+    ("buc-thu-dem-tuyet-trang", "d05-buc-thu.webp"),
+    ("buc-thu-dem-tuyet-trang", "d07-anh-hoa-khoi.webp"),
+    ("buc-thu-dem-tuyet-trang", "d11-soi-len.webp"),
 }
 
 def get_case_order():

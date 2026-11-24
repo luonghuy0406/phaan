@@ -69,7 +69,9 @@
       "type": "note",
       "title": "Biên bản định giá và mô tả bức tranh cổ bị mất",
       "date": "Hồ sơ di sản thị xã",
-      "content": "**MÔ TẢ BẢO VẬT GIA TỘC HỌ LƯƠNG**\n\nBức tranh 'Thập mục ngưu đồ' vẽ trên lụa tơ tằm cổ, kích thước 40cm x 120cm, bọc lụa điều, dát chỉ vàng ròng viền mép. Trục tranh làm bằng gỗ mun tiện tròn hai đầu bịt ngọc bích. Giá trị ước tính trên thị trường cổ vật quốc tế không dưới 30.000 USD (khoảng 500 triệu đồng thời điểm năm 2005)."
+      "content": "**MÔ TẢ BẢO VẬT GIA TỘC HỌ LƯƠNG**\n\nBức tranh 'Thập mục ngưu đồ' vẽ trên lụa tơ tằm cổ, kích thước 40cm x 120cm, bọc lụa điều, dát chỉ vàng ròng viền mép. Trục tranh làm bằng gỗ mun tiện tròn hai đầu bịt ngọc bích. Giá trị ước tính trên thị trường cổ vật quốc tế không dưới 30.000 USD (khoảng 500 triệu đồng thời điểm năm 2005).",
+      "image": "images/d05-tranh-co.webp",
+      "imageCaption": "Ảnh tư liệu: Bức tranh lụa cổ 'Thập mục ngưu đồ' dát chỉ vàng trước khi bị trộm"
     },
     {
       "id": "d06",
@@ -169,7 +171,9 @@
       "type": "receipt",
       "title": "Hóa đơn mua vật tư tại tiệm điện nước phố Lê Lợi",
       "date": "08h30 ngày 19/08/2005",
-      "content": "**HÓA ĐƠN BÁN LẺ - TIỆM KIM KHÍ ĐIỆN NƯỚC AN THÀNH**\n\n- Khách hàng: Lương Gia Bảo (ghi tên sổ nợ)\n- Hàng hóa:\n  1. Ống nhựa PVC đường kính 90mm, dài 60cm: 1 đoạn.\n  2. Nắp bịt ren cao su chống thấm PVC 90: 2 chiếc.\n  3. Keo dán ống nhựa Tiền Phong: 1 tuýp.\n  4. Dây cước dù đen chịu lực: 1 cuộn 10m."
+      "content": "**HÓA ĐƠN BÁN LẺ - TIỆM KIM KHÍ ĐIỆN NƯỚC AN THÀNH**\n\n- Khách hàng: Lương Gia Bảo (ghi tên sổ nợ)\n- Hàng hóa:\n  1. Ống nhựa PVC đường kính 90mm, dài 60cm: 1 đoạn.\n  2. Nắp bịt ren cao su chống thấm PVC 90: 2 chiếc.\n  3. Keo dán ống nhựa Tiền Phong: 1 tuýp.\n  4. Dây cước dù đen chịu lực: 1 cuộn 10m.",
+      "image": "images/d11-ong-nhua.webp",
+      "imageCaption": "Tang vật thu giữ: Ống nhựa PVC phi 90, nắp ren chống thấm và cuộn dây cước đen"
     },
     {
       "id": "d12",
@@ -216,7 +220,7 @@
       "id": "d15",
       "stage": 3,
       "type": "report",
-      "title": "Bản tự thú của Lương Gia Bảo",
+      "title": "Biên bản ghi lời khai bổ sung của Lương Gia Bảo",
       "date": "19h30 ngày 19/08/2005",
       "content": "**LỜI THÚ NHẬN CỦA LƯƠNG GIA BẢO**\n\n'Tôi nợ cá độ bóng đá 200 triệu bị giang hồ đe dọa chặt ngón tay nếu không trả trước rằm. Tôi biết cả nhà đi chùa Cầu trưa nay nên mở cửa sau lấy bức tranh, cho vào ống nhựa chuẩn bị sẵn thả xuống giếng Bá Lễ để tránh công an kiểm tra đồ đạc khi rời phố cổ. Đến hơn 14h chiều tôi mới đến quán cơm gà vặn ngược đồng hồ lại 12h15 để chụp ảnh giả làm chứng cứ ngoại phạm...'"
     }
@@ -265,21 +269,21 @@
       "id": "q3",
       "stage": 2,
       "type": "evidence",
-      "title": "Bức ảnh chụp ngoại phạm và cấu trúc bức tranh cổ",
+      "title": "Bức ảnh chụp ngoại phạm và cấu trúc bảo vật",
       "intro": "Nghi phạm đưa ra một bức ảnh chụp đĩa cơm gà trên bàn ăn có ánh nắng chiếu xiên để làm bằng chứng ngoại phạm.",
-      "prompt": "Ghim 2 tài liệu liên kết bức ảnh chụp bữa ăn cơm gà của nghi phạm với bản mô tả cấu trúc bức tranh cổ bị đánh cắp.",
+      "prompt": "Ghim 2 tài liệu phản ánh quy cách kích thước bảo vật bị đánh cắp và bức ảnh cung cấp bằng chứng ngoại phạm của người tình nghi.",
       "need": 2,
       "answer": [
         "d05",
         "d07"
       ],
       "hints": [
-        "Biên bản định giá và mô tả bức tranh cổ 'Thập mục ngưu đồ' vẽ trên lụa tơ tằm cổ.",
-        "Bức ảnh ngoại phạm chụp đĩa cơm gà và cốc bia có bóng nắng chiếu xiên qua khung cửa sổ."
+        "Biên bản định giá và mô tả bức tranh cổ vẽ trên lụa tơ tằm cổ.",
+        "Bức ảnh ngoại phạm chụp người tình nghi ngồi bên bàn ăn có bóng nắng chiếu xiên qua khung cửa sổ."
       ],
       "explanation": [
-        "Tài liệu d05 mô tả bức tranh lụa có kích thước 1.2m cuộn tròn trong ống đồng bảo quản.",
-        "Tài liệu d07 là bức ảnh ngoại phạm mà Bảo dùng điện thoại chụp lại để chứng minh thời gian ngồi ở quán."
+        "Tài liệu d05 mô tả bức tranh lụa có kích thước 1.2m cuộn tròn trong ống bảo quản.",
+        "Tài liệu d07 là bức ảnh ngoại phạm mà Bảo dùng để chứng minh thời gian ngồi ở quán."
       ]
     },
     {
@@ -288,7 +292,7 @@
       "type": "evidence",
       "title": "Vạch trần góc bóng nắng và vật chứng giếng Bá Lễ",
       "intro": "Phân tích khoa học hình sự về góc bóng nắng và việc trục vớt lòng giếng đã lật tẩy toàn bộ màn kịch.",
-      "prompt": "Ghim 3 tài liệu liên kết kết quả phân tích quang học góc bóng nắng giả mạo thời gian ngoại phạm, hóa đơn mua ống nhựa PVC bọc tranh và biên bản trục vớt vật chứng dưới lòng giếng Bá Lễ.",
+      "prompt": "Ghim 3 tài liệu chứng minh sự mâu thuẫn thời gian qua góc bóng đổ quang học, công cụ chống thấm nước nghi phạm đã mua sắm và vị trí thu hồi bảo vật nguyên vẹn.",
       "need": 3,
       "answer": [
         "d10",
@@ -296,13 +300,13 @@
         "d12"
       ],
       "hints": [
-        "Bản phân tích thiên văn học chứng minh góc bóng nắng 65 độ trong ảnh thuộc về khung giờ 14h15 chứ không phải 12h00 trưa.",
-        "Hóa đơn tiệm điện nước phố Lê Lợi ghi nhận việc mua ống nhựa PVC fi-90 có nắp bịt chống nước.",
-        "Biên bản thợ lặn trục vớt ống nhựa chứa bức tranh cổ nguyên vẹn giấu dưới đáy giếng Bá Lễ."
+        "Bản phân tích thiên văn học chứng minh góc bóng nắng trong ảnh thuộc về khung giờ 14h20 chứ không phải 12h15 trưa.",
+        "Hóa đơn bán lẻ ghi nhận việc mua ống nhựa PVC phi 90 có nắp bịt cao su chống nước.",
+        "Biên bản trục vớt vật chứng dưới lòng giếng cổ Bá Lễ."
       ],
       "explanation": [
-        "Tài liệu d10 khẳng định bức ảnh d07 được chụp lúc 14h15 chiều, vạch trần Bảo đã nói dối giờ ăn cơm gà.",
-        "Tài liệu d11 thể hiện Bảo đã mua ống nhựa chống nước từ sáng hôm trước để chuẩn bị giấu tranh.",
+        "Tài liệu d10 khẳng định bức ảnh d07 được chụp lúc 14h20 chiều, vạch trần Bảo đã nói dối giờ ăn cơm gà.",
+        "Tài liệu d11 thể hiện Bảo đã mua ống nhựa chống nước từ sáng để chuẩn bị giấu tranh.",
         "Tài liệu d12 ghi nhận trục vớt ống nhựa chứa bức tranh 'Thập mục ngưu đồ' thả chìm dưới giếng Bá Lễ."
       ]
     },
@@ -314,10 +318,10 @@
       "intro": "Toàn bộ chuỗi chứng cứ từ vết rêu thành giếng, góc bóng nắng thiên văn đến biên bản trục vớt đã khép lại vụ án.",
       "prompt": "Dựa trên toàn bộ hồ sơ vụ án, ai là kẻ đã lấy cắp bức tranh cổ 'Thập mục ngưu đồ', bằng thủ đoạn nào và vì động cơ gì?",
       "options": [
-        "Lương Gia Bảo do nợ cờ bạc cá độ hơn 300 triệu đồng bị giang hồ đe dọa, đã lợi dụng lúc gia tộc bận rộn cúng rằm để trộm bức tranh lụa cổ, cuộn vào ống nhựa PVC mua sẵn thả giấu dưới lòng giếng Bá Lễ, rồi ra quán cơm gà chụp ảnh dàn dựng góc bóng nắng tạo bằng chứng ngoại phạm.",
-        "Thợ mộc Nguyễn Văn Trực trong lúc sửa chữa bao lơn từ đường đã phát hiện giá trị bức tranh cổ, lén tháo trộm rồi thả xuống giếng Bá Lễ chờ cơ hội đem bán cho thương lái Định.",
-        "Thương lái đồ cổ Trần Khắc Định đã thuê nhóm trộm chuyên nghiệp từ Đà Nẵng đột nhập cửa hậu lấy tranh, sau đó vứt ống nhựa xuống giếng nhằm vu oan cho Bảo.",
-        "Bà chủ quán cơm gà Buội đã thông đồng với Bảo để khai man giờ giấc nhằm chia tiền bán bức tranh cổ sau khi bán sang nước ngoài."
+        "Lương Gia Bảo do nợ cá độ 200 triệu đồng bị đe dọa, đã lợi dụng lúc gia đình dự lễ chùa Cầu để mở cửa sau trộm tranh, cuộn vào ống nhựa PVC chống nước giấu dưới giếng Bá Lễ, rồi đến quán cơm gà chỉnh lùi kim đồng hồ lúc chiều tà để tạo ngoại phạm giả.",
+        "Thợ mộc Nguyễn Văn Trực do túng thiếu tiền bạc khi sửa chữa vì kèo từ đường, đã lén mở cửa hông lấy trộm tranh lụa, dùng ống nhựa thả xuống giếng Bá Lễ chờ cơ hội bán cho lái buôn Định, sau đó cố tình ra quán nước mía đầu phố ngồi uống nước để tạo ngoại phạm.",
+        "Thương lái Trần Khắc Định do bị cụ tộc trưởng từ chối bán tranh giá 300 triệu, đã câu kết với kẻ gian mở khóa sau từ đường lấy trộm cổ vật đem thả xuống lòng giếng cổ Bá Lễ, đồng thời cố tình ngồi sảnh khách sạn Riverside suốt buổi trưa để qua mắt công an thị xã.",
+        "Chủ quán cơm gà phố Phan Chu Trinh thông đồng cùng Lương Gia Bảo, trực tiếp nhận giấu bức tranh lụa cổ sau chái bếp rồi tự tay chỉnh lùi kim đồng hồ quả lắc về 12h15 để chụp ảnh che giấu hành vi trộm cắp cho Bảo nhằm chia chác số tiền bán cổ vật ra nước ngoài."
       ],
       "answer": [
         0
