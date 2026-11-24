@@ -8,7 +8,7 @@
 
 ## 📊 THỐNG KÊ TÀI NGUYÊN CHỜ SINH ẢNH
 
-- **Tổng số ảnh chờ tạo chính thức:** **108** hình ảnh.
+- **Tổng số ảnh chờ tạo chính thức:** **114** hình ảnh.
 - **Phân bổ:** 17/17 vụ án (Bao gồm 7 ảnh bìa hộp remaster và 85 ảnh tư liệu/hiện trường/sơ đồ).
 
 ---
@@ -73,11 +73,17 @@
 
 | STT | Hạng mục ảnh | Tên file đích | File Prompt nguồn | Dòng | Thao tác |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 1 | Tài liệu d01 (Báo Bình Thuận - Vụ án mạng ki...) | `d01-bao-chi.webp` | [image-prompts.md](file:///Users/huynguyen/Documents/game_pha_an/authoring/chuyen-tau-dem-muong-man/image-prompts.md#L1) | L1 | [Mở Prompt](file:///Users/huynguyen/Documents/game_pha_an/authoring/chuyen-tau-dem-muong-man/image-prompts.md#L1) |
-| 2 | Tài liệu d03 (Sơ đồ mặt bằng toa xe số 6...) | `d03-so-do-toa-tau.webp` | [image-prompts.md](file:///Users/huynguyen/Documents/game_pha_an/authoring/chuyen-tau-dem-muong-man/image-prompts.md#L1) | L1 | [Mở Prompt](file:///Users/huynguyen/Documents/game_pha_an/authoring/chuyen-tau-dem-muong-man/image-prompts.md#L1) |
-| 3 | Tài liệu d05 (Ảnh cận cảnh lẫy khóa trong và...) | `d05-cua-truot.webp` | [image-prompts.md](file:///Users/huynguyen/Documents/game_pha_an/authoring/chuyen-tau-dem-muong-man/image-prompts.md#L15) | L15 | [Mở Prompt](file:///Users/huynguyen/Documents/game_pha_an/authoring/chuyen-tau-dem-muong-man/image-prompts.md#L15) |
-| 4 | Tài liệu d09 (Bảng phân bổ hành khách và kiể...) | `d09-ve-tau-se3.webp` | [image-prompts.md](file:///Users/huynguyen/Documents/game_pha_an/authoring/chuyen-tau-dem-muong-man/image-prompts.md#L1) | L1 | [Mở Prompt](file:///Users/huynguyen/Documents/game_pha_an/authoring/chuyen-tau-dem-muong-man/image-prompts.md#L1) |
-| 5 | Tài liệu d12 (Ảnh tang vật cuộn cước và chiế...) | `d12-cuon-cuoc.webp` | [image-prompts.md](file:///Users/huynguyen/Documents/game_pha_an/authoring/chuyen-tau-dem-muong-man/image-prompts.md#L23) | L23 | [Mở Prompt](file:///Users/huynguyen/Documents/game_pha_an/authoring/chuyen-tau-dem-muong-man/image-prompts.md#L23) |
+| 1 | Tài liệu d01 (Báo Bình Thuận - Vụ án mạng ki...) | `d01-bao-chi.webp` | [image-prompts.md](file:///Users/huynguyen/Documents/game_pha_an/authoring/chuyen-tau-dem-muong-man/image-prompts.md#L34) | L34 | [Mở Prompt](file:///Users/huynguyen/Documents/game_pha_an/authoring/chuyen-tau-dem-muong-man/image-prompts.md#L34) |
+| 2 | Tài liệu d02 (Biên bản khám nghiệm hiện trườ...) | `d02-hien-truong-khoang-4.webp` | [image-prompts.md](file:///Users/huynguyen/Documents/game_pha_an/authoring/chuyen-tau-dem-muong-man/image-prompts.md#L53) | L53 | [Mở Prompt](file:///Users/huynguyen/Documents/game_pha_an/authoring/chuyen-tau-dem-muong-man/image-prompts.md#L53) |
+| 3 | Tài liệu d03 (Sơ đồ mặt bằng toa xe số 6...) | `d03-so-do-toa-tau.webp` | [image-prompts.md](file:///Users/huynguyen/Documents/game_pha_an/authoring/chuyen-tau-dem-muong-man/image-prompts.md#L72) | L72 | [Mở Prompt](file:///Users/huynguyen/Documents/game_pha_an/authoring/chuyen-tau-dem-muong-man/image-prompts.md#L72) |
+| 4 | Tài liệu d04 (Kết quả giám định pháp y sơ bộ...) | `d04-giam-dinh-phap-y.webp` | [image-prompts.md](file:///Users/huynguyen/Documents/game_pha_an/authoring/chuyen-tau-dem-muong-man/image-prompts.md#L95) | L95 | [Mở Prompt](file:///Users/huynguyen/Documents/game_pha_an/authoring/chuyen-tau-dem-muong-man/image-prompts.md#L95) |
+| 5 | Tài liệu d05 (Ảnh cận cảnh lẫy khóa trong và...) | `d05-cua-truot.webp` | [image-prompts.md](file:///Users/huynguyen/Documents/game_pha_an/authoring/chuyen-tau-dem-muong-man/image-prompts.md#L114) | L114 | [Mở Prompt](file:///Users/huynguyen/Documents/game_pha_an/authoring/chuyen-tau-dem-muong-man/image-prompts.md#L114) |
+| 6 | Tài liệu d09 (Bảng phân bổ hành khách và kiể...) | `d09-ve-tau-se3.webp` | [image-prompts.md](file:///Users/huynguyen/Documents/game_pha_an/authoring/chuyen-tau-dem-muong-man/image-prompts.md#L133) | L133 | [Mở Prompt](file:///Users/huynguyen/Documents/game_pha_an/authoring/chuyen-tau-dem-muong-man/image-prompts.md#L133) |
+| 7 | Tài liệu d10 (Bản giám định cơ học về dấu vế...) | `d10-giam-dinh-co-hoc.webp` | [image-prompts.md](file:///Users/huynguyen/Documents/game_pha_an/authoring/chuyen-tau-dem-muong-man/image-prompts.md#L155) | L155 | [Mở Prompt](file:///Users/huynguyen/Documents/game_pha_an/authoring/chuyen-tau-dem-muong-man/image-prompts.md#L155) |
+| 8 | Tài liệu d12 (Ảnh tang vật cuộn cước và chiế...) | `d12-cuon-cuoc.webp` | [image-prompts.md](file:///Users/huynguyen/Documents/game_pha_an/authoring/chuyen-tau-dem-muong-man/image-prompts.md#L174) | L174 | [Mở Prompt](file:///Users/huynguyen/Documents/game_pha_an/authoring/chuyen-tau-dem-muong-man/image-prompts.md#L174) |
+| 9 | Tài liệu d14 (Kết quả giám định vết máu trên...) | `d14-giam-dinh-vet-mau.webp` | [image-prompts.md](file:///Users/huynguyen/Documents/game_pha_an/authoring/chuyen-tau-dem-muong-man/image-prompts.md#L196) | L196 | [Mở Prompt](file:///Users/huynguyen/Documents/game_pha_an/authoring/chuyen-tau-dem-muong-man/image-prompts.md#L196) |
+| 10 | Tài liệu d15 (Biên bản thu giữ tang vật giấu...) | `d15-tien-va-cap-da.webp` | [image-prompts.md](file:///Users/huynguyen/Documents/game_pha_an/authoring/chuyen-tau-dem-muong-man/image-prompts.md#L218) | L218 | [Mở Prompt](file:///Users/huynguyen/Documents/game_pha_an/authoring/chuyen-tau-dem-muong-man/image-prompts.md#L218) |
+| 11 | Tài liệu d16 (Bản thực nghiệm hiện trường th...) | `d16-thuc-nghiem-hien-truong.webp` | [image-prompts.md](file:///Users/huynguyen/Documents/game_pha_an/authoring/chuyen-tau-dem-muong-man/image-prompts.md#L241) | L241 | [Mở Prompt](file:///Users/huynguyen/Documents/game_pha_an/authoring/chuyen-tau-dem-muong-man/image-prompts.md#L241) |
 
 ### Bóng nắng giếng Bá Lễ (`bong-nang-hoi-an`)
 

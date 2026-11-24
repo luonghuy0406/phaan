@@ -2,20 +2,20 @@
 ## (IMAGE GENERATION AUDIT & PRODUCTION TRACKER)
 
 > [!IMPORTANT]
-> **Mục đích tài liệu:** Phân loại rõ ràng toàn bộ 120 hình ảnh trong hệ thống game phá án: đâu là hình ảnh **CHÍNH THỨC** (đã sinh bằng AI Image Model) và đâu là hình ảnh **DEMO** (đồ họa dựng tạm nội bộ đang chờ tạo lại bằng AI model). Dùng làm cơ sở dữ liệu để kích hoạt sinh ảnh tự động khi quota hồi phục.
+> **Mục đích tài liệu:** Phân loại rõ ràng toàn bộ 126 hình ảnh trong hệ thống game phá án: đâu là hình ảnh **CHÍNH THỨC** (đã sinh bằng AI Image Model) và đâu là hình ảnh **DEMO** (đồ họa dựng tạm nội bộ đang chờ tạo lại bằng AI model). Dùng làm cơ sở dữ liệu để kích hoạt sinh ảnh tự động khi quota hồi phục.
 
 ---
 
 ## 📊 TỔNG QUAN TIẾN ĐỘ
 
-- **Tổng số hình ảnh trong toàn bộ hệ thống:** **120** tệp (.webp)
-- **Đã hoàn thiện CHÍNH THỨC bằng Model AI:** **12 / 120** (10%)
-- **Bản DEMO đồ họa nội bộ (Cần sinh lại bằng Model AI):** **108 / 120** (90%)
+- **Tổng số hình ảnh trong toàn bộ hệ thống:** **126** tệp (.webp)
+- **Đã hoàn thiện CHÍNH THỨC bằng Model AI:** **12 / 126** (9%)
+- **Bản DEMO đồ họa nội bộ (Cần sinh lại bằng Model AI):** **114 / 126** (90%)
 
 ```mermaid
-pie title Tỉ lệ hoàn thiện hình ảnh chính thức (120 ảnh)
+pie title Tỉ lệ hoàn thiện hình ảnh chính thức (126 ảnh)
     "Đã sinh bằng AI Model (Chính thức)" : 12
-    "Bản Demo đồ họa nội bộ (Cần sinh lại)" : 108
+    "Bản Demo đồ họa nội bộ (Cần sinh lại)" : 114
 ```
 
 ---
@@ -78,12 +78,18 @@ pie title Tỉ lệ hoàn thiện hình ảnh chính thức (120 ảnh)
 ### Vụ án: Chuyến tàu đêm Mường Mán (`chuyen-tau-dem-muong-man`)
 | STT | Hạng mục ảnh | Tên file | Kích thước | Trạng thái hiện tại | Chi tiết / Nguồn gốc |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 1 | Ảnh bìa hộp (3:4) | `cover.webp` | 2247 KB | 🟢 **CHÍNH THỨC (AI Model)** | AI Image Generator |
-| 2 | Tài liệu d01 (Báo Bình Thuận - Vụ án mạng ki...) | `d01-bao-chi.webp` | 12 KB | 🟡 *DEMO (Cần tạo lại)* | Đồ họa nội bộ • Prompt: [image-prompts.md#L1](file:///Users/huynguyen/Documents/game_pha_an/authoring/chuyen-tau-dem-muong-man/image-prompts.md#L1) |
-| 3 | Tài liệu d03 (Sơ đồ mặt bằng toa xe số 6...) | `d03-so-do-toa-tau.webp` | 12 KB | 🟡 *DEMO (Cần tạo lại)* | Đồ họa nội bộ • Prompt: [image-prompts.md#L1](file:///Users/huynguyen/Documents/game_pha_an/authoring/chuyen-tau-dem-muong-man/image-prompts.md#L1) |
-| 4 | Tài liệu d05 (Ảnh cận cảnh lẫy khóa trong và...) | `d05-cua-truot.webp` | 5 KB | 🟡 *DEMO (Cần tạo lại)* | Đồ họa nội bộ • Prompt: [image-prompts.md#L15](file:///Users/huynguyen/Documents/game_pha_an/authoring/chuyen-tau-dem-muong-man/image-prompts.md#L15) |
-| 5 | Tài liệu d09 (Bảng phân bổ hành khách và kiể...) | `d09-ve-tau-se3.webp` | 17 KB | 🟡 *DEMO (Cần tạo lại)* | Đồ họa nội bộ • Prompt: [image-prompts.md#L1](file:///Users/huynguyen/Documents/game_pha_an/authoring/chuyen-tau-dem-muong-man/image-prompts.md#L1) |
-| 6 | Tài liệu d12 (Ảnh tang vật cuộn cước và chiế...) | `d12-cuon-cuoc.webp` | 11 KB | 🟡 *DEMO (Cần tạo lại)* | Đồ họa nội bộ • Prompt: [image-prompts.md#L23](file:///Users/huynguyen/Documents/game_pha_an/authoring/chuyen-tau-dem-muong-man/image-prompts.md#L23) |
+| 1 | Ảnh bìa hộp (3:4) | `cover.webp` | 145 KB | 🟢 **CHÍNH THỨC (AI Model)** | AI Image Generator |
+| 2 | Tài liệu d01 (Báo Bình Thuận - Vụ án mạng ki...) | `d01-bao-chi.webp` | 45 KB | 🟡 *DEMO (Cần tạo lại)* | Đồ họa nội bộ • Prompt: [image-prompts.md#L34](file:///Users/huynguyen/Documents/game_pha_an/authoring/chuyen-tau-dem-muong-man/image-prompts.md#L34) |
+| 3 | Tài liệu d02 (Biên bản khám nghiệm hiện trườ...) | `d02-hien-truong-khoang-4.webp` | 43 KB | 🟡 *DEMO (Cần tạo lại)* | Đồ họa nội bộ • Prompt: [image-prompts.md#L53](file:///Users/huynguyen/Documents/game_pha_an/authoring/chuyen-tau-dem-muong-man/image-prompts.md#L53) |
+| 4 | Tài liệu d03 (Sơ đồ mặt bằng toa xe số 6...) | `d03-so-do-toa-tau.webp` | 35 KB | 🟡 *DEMO (Cần tạo lại)* | Đồ họa nội bộ • Prompt: [image-prompts.md#L72](file:///Users/huynguyen/Documents/game_pha_an/authoring/chuyen-tau-dem-muong-man/image-prompts.md#L72) |
+| 5 | Tài liệu d04 (Kết quả giám định pháp y sơ bộ...) | `d04-giam-dinh-phap-y.webp` | 43 KB | 🟡 *DEMO (Cần tạo lại)* | Đồ họa nội bộ • Prompt: [image-prompts.md#L95](file:///Users/huynguyen/Documents/game_pha_an/authoring/chuyen-tau-dem-muong-man/image-prompts.md#L95) |
+| 6 | Tài liệu d05 (Ảnh cận cảnh lẫy khóa trong và...) | `d05-cua-truot.webp` | 19 KB | 🟡 *DEMO (Cần tạo lại)* | Đồ họa nội bộ • Prompt: [image-prompts.md#L114](file:///Users/huynguyen/Documents/game_pha_an/authoring/chuyen-tau-dem-muong-man/image-prompts.md#L114) |
+| 7 | Tài liệu d09 (Bảng phân bổ hành khách và kiể...) | `d09-ve-tau-se3.webp` | 46 KB | 🟡 *DEMO (Cần tạo lại)* | Đồ họa nội bộ • Prompt: [image-prompts.md#L133](file:///Users/huynguyen/Documents/game_pha_an/authoring/chuyen-tau-dem-muong-man/image-prompts.md#L133) |
+| 8 | Tài liệu d10 (Bản giám định cơ học về dấu vế...) | `d10-giam-dinh-co-hoc.webp` | 46 KB | 🟡 *DEMO (Cần tạo lại)* | Đồ họa nội bộ • Prompt: [image-prompts.md#L155](file:///Users/huynguyen/Documents/game_pha_an/authoring/chuyen-tau-dem-muong-man/image-prompts.md#L155) |
+| 9 | Tài liệu d12 (Ảnh tang vật cuộn cước và chiế...) | `d12-cuon-cuoc.webp` | 27 KB | 🟡 *DEMO (Cần tạo lại)* | Đồ họa nội bộ • Prompt: [image-prompts.md#L174](file:///Users/huynguyen/Documents/game_pha_an/authoring/chuyen-tau-dem-muong-man/image-prompts.md#L174) |
+| 10 | Tài liệu d14 (Kết quả giám định vết máu trên...) | `d14-giam-dinh-vet-mau.webp` | 38 KB | 🟡 *DEMO (Cần tạo lại)* | Đồ họa nội bộ • Prompt: [image-prompts.md#L196](file:///Users/huynguyen/Documents/game_pha_an/authoring/chuyen-tau-dem-muong-man/image-prompts.md#L196) |
+| 11 | Tài liệu d15 (Biên bản thu giữ tang vật giấu...) | `d15-tien-va-cap-da.webp` | 37 KB | 🟡 *DEMO (Cần tạo lại)* | Đồ họa nội bộ • Prompt: [image-prompts.md#L218](file:///Users/huynguyen/Documents/game_pha_an/authoring/chuyen-tau-dem-muong-man/image-prompts.md#L218) |
+| 12 | Tài liệu d16 (Bản thực nghiệm hiện trường th...) | `d16-thuc-nghiem-hien-truong.webp` | 39 KB | 🟡 *DEMO (Cần tạo lại)* | Đồ họa nội bộ • Prompt: [image-prompts.md#L241](file:///Users/huynguyen/Documents/game_pha_an/authoring/chuyen-tau-dem-muong-man/image-prompts.md#L241) |
 
 ### Vụ án: Bóng nắng giếng Bá Lễ (`bong-nang-hoi-an`)
 | STT | Hạng mục ảnh | Tên file | Kích thước | Trạng thái hiện tại | Chi tiết / Nguồn gốc |
@@ -107,18 +113,18 @@ pie title Tỉ lệ hoàn thiện hình ảnh chính thức (120 ảnh)
 ### Vụ án: Gác đèn Hòn Dáu (`gac-den-hon-dau`)
 | STT | Hạng mục ảnh | Tên file | Kích thước | Trạng thái hiện tại | Chi tiết / Nguồn gốc |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 1 | Ảnh bìa hộp (3:4) | `cover.webp` | 151 KB | 🟢 **CHÍNH THỨC (AI Model)** | AI Image Generator |
-| 2 | Tài liệu d01 (Báo Hải Phòng - Tang thương tr...) | `d01-bao-chi.webp` | 11 KB | 🟡 *DEMO (Cần tạo lại)* | Đồ họa nội bộ • Prompt: [image-prompts.md#L34](file:///Users/huynguyen/Documents/game_pha_an/authoring/gac-den-hon-dau/image-prompts.md#L34) |
-| 3 | Tài liệu d02 (Biên bản hiện trường chân vách...) | `d02-ban-do-dao.webp` | 18 KB | 🟡 *DEMO (Cần tạo lại)* | Đồ họa nội bộ • Prompt: [image-prompts.md#L53](file:///Users/huynguyen/Documents/game_pha_an/authoring/gac-den-hon-dau/image-prompts.md#L53) |
-| 4 | Tài liệu d03 (Kết quả giám định pháp y tử th...) | `d03-giai-phau.webp` | 52 KB | 🟡 *DEMO (Cần tạo lại)* | Đồ họa nội bộ • Prompt: [image-prompts.md#L76](file:///Users/huynguyen/Documents/game_pha_an/authoring/gac-den-hon-dau/image-prompts.md#L76) |
-| 5 | Tài liệu d04 (Sơ đồ mặt bằng trạm hải đăng H...) | `d04-so-do-thap-den.webp` | 44 KB | 🟡 *DEMO (Cần tạo lại)* | Đồ họa nội bộ • Prompt: [image-prompts.md#L98](file:///Users/huynguyen/Documents/game_pha_an/authoring/gac-den-hon-dau/image-prompts.md#L98) |
-| 6 | Tài liệu d05 (Nhật ký vận hành kỹ thuật đèn ...) | `d05-nhat-ky-hai-dang.webp` | 65 KB | 🟡 *DEMO (Cần tạo lại)* | Đồ họa nội bộ • Prompt: [image-prompts.md#L123](file:///Users/huynguyen/Documents/game_pha_an/authoring/gac-den-hon-dau/image-prompts.md#L123) |
-| 7 | Tài liệu d10 (Bản giám định kỹ thuật nguyên ...) | `d10-cau-chi-got-mong.webp` | 39 KB | 🟡 *DEMO (Cần tạo lại)* | Đồ họa nội bộ • Prompt: [image-prompts.md#L142](file:///Users/huynguyen/Documents/game_pha_an/authoring/gac-den-hon-dau/image-prompts.md#L142) |
-| 8 | Tài liệu d11 (Ảnh chụp thanh lưỡng kim nhiệt...) | `d11-may-phat.webp` | 9 KB | 🟡 *DEMO (Cần tạo lại)* | Đồ họa nội bộ • Prompt: [image-prompts.md#L161](file:///Users/huynguyen/Documents/game_pha_an/authoring/gac-den-hon-dau/image-prompts.md#L161) |
-| 9 | Tài liệu d13 (Bản vẽ sơ đồ nguyên lý ngắn mạ...) | `d13-so-do-ngan-mach.webp` | 51 KB | 🟡 *DEMO (Cần tạo lại)* | Đồ họa nội bộ • Prompt: [image-prompts.md#L180](file:///Users/huynguyen/Documents/game_pha_an/authoring/gac-den-hon-dau/image-prompts.md#L180) |
-| 10 | Tài liệu d14 (Biên bản khám xét túi đồ nghề ...) | `d14-dao-gam-va-kim.webp` | 43 KB | 🟡 *DEMO (Cần tạo lại)* | Đồ họa nội bộ • Prompt: [image-prompts.md#L201](file:///Users/huynguyen/Documents/game_pha_an/authoring/gac-den-hon-dau/image-prompts.md#L201) |
-| 11 | Tài liệu d15 (Ảnh chiếc áo mưa dính máu và t...) | `d15-ao-mua.webp` | 12 KB | 🟡 *DEMO (Cần tạo lại)* | Đồ họa nội bộ • Prompt: [image-prompts.md#L222](file:///Users/huynguyen/Documents/game_pha_an/authoring/gac-den-hon-dau/image-prompts.md#L222) |
-| 12 | Tài liệu d16 (Bản khôi phục trang nhật ký bị...) | `d16-trang-nhat-ky-xe.webp` | 42 KB | 🟡 *DEMO (Cần tạo lại)* | Đồ họa nội bộ • Prompt: [image-prompts.md#L241](file:///Users/huynguyen/Documents/game_pha_an/authoring/gac-den-hon-dau/image-prompts.md#L241) |
+| 1 | Ảnh bìa hộp (3:4) | `cover.webp` | 70 KB | 🟢 **CHÍNH THỨC (AI Model)** | AI Image Generator |
+| 2 | Tài liệu d01 (Báo Hải Phòng - Tang thương tr...) | `d01-bao-chi.webp` | 38 KB | 🟡 *DEMO (Cần tạo lại)* | Đồ họa nội bộ • Prompt: [image-prompts.md#L34](file:///Users/huynguyen/Documents/game_pha_an/authoring/gac-den-hon-dau/image-prompts.md#L34) |
+| 3 | Tài liệu d02 (Biên bản hiện trường chân vách...) | `d02-ban-do-dao.webp` | 65 KB | 🟡 *DEMO (Cần tạo lại)* | Đồ họa nội bộ • Prompt: [image-prompts.md#L53](file:///Users/huynguyen/Documents/game_pha_an/authoring/gac-den-hon-dau/image-prompts.md#L53) |
+| 4 | Tài liệu d03 (Kết quả giám định pháp y tử th...) | `d03-giai-phau.webp` | 36 KB | 🟡 *DEMO (Cần tạo lại)* | Đồ họa nội bộ • Prompt: [image-prompts.md#L76](file:///Users/huynguyen/Documents/game_pha_an/authoring/gac-den-hon-dau/image-prompts.md#L76) |
+| 5 | Tài liệu d04 (Sơ đồ mặt bằng trạm hải đăng H...) | `d04-so-do-thap-den.webp` | 27 KB | 🟡 *DEMO (Cần tạo lại)* | Đồ họa nội bộ • Prompt: [image-prompts.md#L98](file:///Users/huynguyen/Documents/game_pha_an/authoring/gac-den-hon-dau/image-prompts.md#L98) |
+| 6 | Tài liệu d05 (Nhật ký vận hành kỹ thuật đèn ...) | `d05-nhat-ky-hai-dang.webp` | 50 KB | 🟡 *DEMO (Cần tạo lại)* | Đồ họa nội bộ • Prompt: [image-prompts.md#L123](file:///Users/huynguyen/Documents/game_pha_an/authoring/gac-den-hon-dau/image-prompts.md#L123) |
+| 7 | Tài liệu d10 (Bản giám định kỹ thuật nguyên ...) | `d10-cau-chi-got-mong.webp` | 30 KB | 🟡 *DEMO (Cần tạo lại)* | Đồ họa nội bộ • Prompt: [image-prompts.md#L142](file:///Users/huynguyen/Documents/game_pha_an/authoring/gac-den-hon-dau/image-prompts.md#L142) |
+| 8 | Tài liệu d11 (Ảnh chụp thanh lưỡng kim nhiệt...) | `d11-may-phat.webp` | 28 KB | 🟡 *DEMO (Cần tạo lại)* | Đồ họa nội bộ • Prompt: [image-prompts.md#L161](file:///Users/huynguyen/Documents/game_pha_an/authoring/gac-den-hon-dau/image-prompts.md#L161) |
+| 9 | Tài liệu d13 (Bản vẽ sơ đồ nguyên lý ngắn mạ...) | `d13-so-do-ngan-mach.webp` | 23 KB | 🟡 *DEMO (Cần tạo lại)* | Đồ họa nội bộ • Prompt: [image-prompts.md#L180](file:///Users/huynguyen/Documents/game_pha_an/authoring/gac-den-hon-dau/image-prompts.md#L180) |
+| 10 | Tài liệu d14 (Biên bản khám xét túi đồ nghề ...) | `d14-dao-gam-va-kim.webp` | 31 KB | 🟡 *DEMO (Cần tạo lại)* | Đồ họa nội bộ • Prompt: [image-prompts.md#L201](file:///Users/huynguyen/Documents/game_pha_an/authoring/gac-den-hon-dau/image-prompts.md#L201) |
+| 11 | Tài liệu d15 (Ảnh chiếc áo mưa dính máu và t...) | `d15-ao-mua.webp` | 28 KB | 🟡 *DEMO (Cần tạo lại)* | Đồ họa nội bộ • Prompt: [image-prompts.md#L222](file:///Users/huynguyen/Documents/game_pha_an/authoring/gac-den-hon-dau/image-prompts.md#L222) |
+| 12 | Tài liệu d16 (Bản khôi phục trang nhật ký bị...) | `d16-trang-nhat-ky-xe.webp` | 54 KB | 🟡 *DEMO (Cần tạo lại)* | Đồ họa nội bộ • Prompt: [image-prompts.md#L241](file:///Users/huynguyen/Documents/game_pha_an/authoring/gac-den-hon-dau/image-prompts.md#L241) |
 
 ### Vụ án: Vàng bóng Chợ Lớn (`vang-bong-cho-lon`)
 | STT | Hạng mục ảnh | Tên file | Kích thước | Trạng thái hiện tại | Chi tiết / Nguồn gốc |
@@ -199,13 +205,13 @@ pie title Tỉ lệ hoàn thiện hình ảnh chính thức (120 ảnh)
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | 1 | Ảnh bìa hộp (3:4) | `cover.webp` | 165 KB | 🟡 *DEMO (Cần tạo lại)* | Đồ họa nội bộ • Prompt: [image-prompts.md#L15](file:///Users/huynguyen/Documents/game_pha_an/authoring/quai-vat-21-khuon-mat/image-prompts.md#L15) |
 | 2 | Tài liệu d01 (Báo Asahi Shimbun - Cơn ác mộn...) | `d01-bao-chi.webp` | 195 KB | 🟡 *DEMO (Cần tạo lại)* | Đồ họa nội bộ • Prompt: [image-prompts.md#L34](file:///Users/huynguyen/Documents/game_pha_an/authoring/quai-vat-21-khuon-mat/image-prompts.md#L34) |
-| 3 | Tài liệu d03 (Kết quả giám định độc chất việ...) | `d03-giam-dinh-doc-chat.webp` | 56 KB | 🟡 *DEMO (Cần tạo lại)* | Đồ họa nội bộ • Prompt: [image-prompts.md#L53](file:///Users/huynguyen/Documents/game_pha_an/authoring/quai-vat-21-khuon-mat/image-prompts.md#L53) |
-| 4 | Tài liệu d04 (Sơ đồ các địa điểm phát hiện k...) | `d04-ban-do-rai-keo.webp` | 46 KB | 🟡 *DEMO (Cần tạo lại)* | Đồ họa nội bộ • Prompt: [image-prompts.md#L72](file:///Users/huynguyen/Documents/game_pha_an/authoring/quai-vat-21-khuon-mat/image-prompts.md#L72) |
+| 3 | Tài liệu d03 (Kết quả giám định độc chất việ...) | `d03-giam-dinh-doc-chat.webp` | 64 KB | 🟡 *DEMO (Cần tạo lại)* | Đồ họa nội bộ • Prompt: [image-prompts.md#L53](file:///Users/huynguyen/Documents/game_pha_an/authoring/quai-vat-21-khuon-mat/image-prompts.md#L53) |
+| 4 | Tài liệu d04 (Sơ đồ các địa điểm phát hiện k...) | `d04-ban-do-rai-keo.webp` | 65 KB | 🟡 *DEMO (Cần tạo lại)* | Đồ họa nội bộ • Prompt: [image-prompts.md#L72](file:///Users/huynguyen/Documents/game_pha_an/authoring/quai-vat-21-khuon-mat/image-prompts.md#L72) |
 | 5 | Tài liệu d05 (Ảnh chụp bức thư nặc danh máy ...) | `d05-buc-thu.webp` | 92 KB | 🟡 *DEMO (Cần tạo lại)* | Đồ họa nội bộ • Prompt: [image-prompts.md#L95](file:///Users/huynguyen/Documents/game_pha_an/authoring/quai-vat-21-khuon-mat/image-prompts.md#L95) |
 | 6 | Tài liệu d09 (Ảnh phác thảo truy nã 'Người đ...) | `d09-phac-hoa-mat-cao.webp` | 64 KB | 🟡 *DEMO (Cần tạo lại)* | Đồ họa nội bộ • Prompt: [image-prompts.md#L114](file:///Users/huynguyen/Documents/game_pha_an/authoring/quai-vat-21-khuon-mat/image-prompts.md#L114) |
-| 7 | Tài liệu d10 (Báo cáo giám định kỹ thuật cơ ...) | `d10-giam-dinh-may-chu.webp` | 47 KB | 🟡 *DEMO (Cần tạo lại)* | Đồ họa nội bộ • Prompt: [image-prompts.md#L133](file:///Users/huynguyen/Documents/game_pha_an/authoring/quai-vat-21-khuon-mat/image-prompts.md#L133) |
+| 7 | Tài liệu d10 (Báo cáo giám định kỹ thuật cơ ...) | `d10-giam-dinh-may-chu.webp` | 84 KB | 🟡 *DEMO (Cần tạo lại)* | Đồ họa nội bộ • Prompt: [image-prompts.md#L133](file:///Users/huynguyen/Documents/game_pha_an/authoring/quai-vat-21-khuon-mat/image-prompts.md#L133) |
 | 8 | Tài liệu d11 (Ảnh chụp vi thể mép dán keo nh...) | `d11-hop-keo.webp` | 106 KB | 🟡 *DEMO (Cần tạo lại)* | Đồ họa nội bộ • Prompt: [image-prompts.md#L155](file:///Users/huynguyen/Documents/game_pha_an/authoring/quai-vat-21-khuon-mat/image-prompts.md#L155) |
-| 9 | Tài liệu d13 (Bản phân tích quang phổ âm tha...) | `d13-quang-pho-am-thanh.webp` | 45 KB | 🟡 *DEMO (Cần tạo lại)* | Đồ họa nội bộ • Prompt: [image-prompts.md#L174](file:///Users/huynguyen/Documents/game_pha_an/authoring/quai-vat-21-khuon-mat/image-prompts.md#L174) |
-| 10 | Tài liệu d14 (Báo cáo cuộc phục kích bắt hụt...) | `d14-phuc-kich-shinkansen.webp` | 46 KB | 🟡 *DEMO (Cần tạo lại)* | Đồ họa nội bộ • Prompt: [image-prompts.md#L196](file:///Users/huynguyen/Documents/game_pha_an/authoring/quai-vat-21-khuon-mat/image-prompts.md#L196) |
+| 9 | Tài liệu d13 (Bản phân tích quang phổ âm tha...) | `d13-quang-pho-am-thanh.webp` | 72 KB | 🟡 *DEMO (Cần tạo lại)* | Đồ họa nội bộ • Prompt: [image-prompts.md#L174](file:///Users/huynguyen/Documents/game_pha_an/authoring/quai-vat-21-khuon-mat/image-prompts.md#L174) |
+| 10 | Tài liệu d14 (Báo cáo cuộc phục kích bắt hụt...) | `d14-phuc-kich-shinkansen.webp` | 69 KB | 🟡 *DEMO (Cần tạo lại)* | Đồ họa nội bộ • Prompt: [image-prompts.md#L196](file:///Users/huynguyen/Documents/game_pha_an/authoring/quai-vat-21-khuon-mat/image-prompts.md#L196) |
 | 11 | Tài liệu d15 (Biểu đồ biến động cổ phiếu bất...) | `d15-bieu-do-co-phieu.webp` | 32 KB | 🟡 *DEMO (Cần tạo lại)* | Đồ họa nội bộ • Prompt: [image-prompts.md#L218](file:///Users/huynguyen/Documents/game_pha_an/authoring/quai-vat-21-khuon-mat/image-prompts.md#L218) |
-| 12 | Tài liệu d18 (Bức thư tuyên bố kết thúc chiế...) | `d18-thu-dinh-chien.webp` | 29 KB | 🟡 *DEMO (Cần tạo lại)* | Đồ họa nội bộ • Prompt: [image-prompts.md#L237](file:///Users/huynguyen/Documents/game_pha_an/authoring/quai-vat-21-khuon-mat/image-prompts.md#L237) |
+| 12 | Tài liệu d18 (Bức thư tuyên bố kết thúc chiế...) | `d18-thu-dinh-chien.webp` | 55 KB | 🟡 *DEMO (Cần tạo lại)* | Đồ họa nội bộ • Prompt: [image-prompts.md#L237](file:///Users/huynguyen/Documents/game_pha_an/authoring/quai-vat-21-khuon-mat/image-prompts.md#L237) |
