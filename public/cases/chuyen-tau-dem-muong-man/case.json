@@ -16,7 +16,15 @@
   ],
   "cover": "images/cover.webp",
   "synopsis": "Đêm 12/10/2008, trên đoàn tàu SE3 xuôi Nam, khi tàu vừa vượt qua cung đường ven biển Bình Thuận trong đêm giông gió, cửa khoang giường nằm số 4 bỗng khóa chặt bất thường. Khi nhân viên đường sắt giật nảy chốt khóa dự phòng lúc rạng sáng, hành khách Đặng Quốc Vinh - giám đốc mỏ cát titan - đã nằm chết gục trên giường ngủ, chiếc cặp da đựng 200 triệu đồng và hồ sơ đấu thầu biến mất không dấu vết.",
-  "intro": "Đội Cảnh sát Hình sự Công an tỉnh Bình Thuận tiếp nhận vụ án khi đoàn tàu khẩn cấp dừng lại tại ga Mường Mán lúc 05h30 sáng. Cửa sổ khoang tàu cố định không thể mở, cửa ra vào hành lang có chốt lẫy gập khóa chặt từ bên trong. Bằng cách nào hung thủ có thể sát hại nạn nhân, đoạt lấy tài sản rồi biến mất khỏi căn phòng kín di động này?",
+  "intro": {
+    "title": "Chuyến tàu đêm Mường Mán",
+    "paragraphs": [
+      "Đội Cảnh sát Hình sự Công an tỉnh Bình Thuận tiếp nhận vụ án khi đoàn tàu khẩn cấp dừng lại tại ga Mường Mán lúc 05h30 sáng. Cửa sổ khoang tàu cố định không thể mở, cửa ra vào hành lang có chốt lẫy gập khóa chặt từ bên trong.",
+      "Bằng cách nào hung thủ có thể sát hại nạn nhân, đoạt lấy tài sản rồi biến mất khỏi căn phòng kín di động này?",
+      "Bạn là điều tra viên thụ lý hồ sơ. Hãy đọc kỹ các tài liệu trên bàn, đối chiếu lời khai và trả lời từng trọng điểm để mở niêm phong phần hồ sơ tiếp theo."
+    ],
+    "objective": "Giải thích căn phòng kín trên toa tàu, kiểm chứng bằng chứng ngoại phạm của những người cùng chuyến, và chỉ ra hung thủ."
+  },
   "documents": [
     {
       "id": "d01",

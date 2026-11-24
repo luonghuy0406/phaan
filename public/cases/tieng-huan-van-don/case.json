@@ -16,7 +16,15 @@
   ],
   "cover": "images/cover.webp",
   "synopsis": "Rạng sáng ngày 14/11/2006, tàu đánh cá xa bờ QN-9288-TS cập cảng Cái Rồng trong sương lạnh mùa đông. Khi thợ bốc xếp mở nắp khoang lạnh số 3 để chuyển mực ống lên bờ, người ta bàng hoàng phát hiện thi thể Thuyền trưởng Trần Văn Đạt đông cứng giữa các khay mực. Cửa nắp khoang bị gài then sắt từ bên ngoài, trong khi người nắm ca lái đêm khẳng định mình ngồi liên tục trên đài lái nói chuyện bộ đàm.",
-  "intro": "Đội Điều tra Hình sự Công an huyện Vân Đồn phối hợp Đồn Biên phòng Cái Rồng phong tỏa con tàu viễn dương. Nạn nhân chết ngạt do thiếu dưỡng khí trong khi khoang tàu vẫn lưu thông không khí bình thường. Dấu vết phỏng lạnh hình học kỳ lạ trên thi thể và âm thanh tiếng rít chói tai giữa đêm biển hé lộ một thủ đoạn sát nhân bằng hóa chất băng giá.",
+  "intro": {
+    "title": "Tiếng hú cảng Vân Đồn",
+    "paragraphs": [
+      "Đội Điều tra Hình sự Công an huyện Vân Đồn phối hợp Đồn Biên phòng Cái Rồng phong tỏa con tàu viễn dương. Nạn nhân chết ngạt do thiếu dưỡng khí trong khi khoang tàu vẫn lưu thông không khí bình thường.",
+      "Dấu vết phỏng lạnh hình học kỳ lạ trên thi thể và âm thanh tiếng rít chói tai giữa đêm biển hé lộ một thủ đoạn sát nhân bằng hóa chất băng giá.",
+      "Bạn là điều tra viên thụ lý hồ sơ. Hãy đọc kỹ các tài liệu trên bàn, đối chiếu lời khai và trả lời từng trọng điểm để mở niêm phong phần hồ sơ tiếp theo."
+    ],
+    "objective": "Làm rõ vì sao thuyền trưởng chết ngạt trong khoang tàu vẫn thông gió, giải thích tiếng hú ban đêm, và chỉ ra thủ phạm."
+  },
   "documents": [
     {
       "id": "d01",

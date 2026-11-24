@@ -16,7 +16,15 @@
   ],
   "cover": "images/cover.webp",
   "synopsis": "Đêm rằm tháng Tám năm 1993, tại buổi tế tổ và hội diễn cổ nhạc Kim Nguyệt Phường ven hồ Bán Nguyệt, cụ Phan Bá Cửu - nghệ nhân đàn đáy bậc thầy - ngã gục ngay khi vừa dứt khúc dạo đầu 'Lạc Nhạn'. Chén trà sen đào nương vừa dâng bị đổ sóng xoài trên chiếu hoa, toàn bộ phường hát náo loạn giữa cơn dông đầu thu.",
-  "intro": "Bạn nhận được tập hồ sơ kỹ thuật hình sự từ Công an thị xã Phố Hiến. Nạn nhân qua đời do nhiễm độc cấp tính chất asen (thạch tín). Mọi nghi vấn ban đầu dồn vào đào nương Ánh Tuyết - người trực tiếp dâng chén trà sen cho cụ Cửu. Tuy nhiên, những chi tiết nhỏ nơi tráp nhạc cụ và thói quen ngón đàn của người nghệ nhân già mở ra một bức màn kịch độc ác hơn thế.",
+  "intro": {
+    "title": "Tiếng đàn đáy Phố Hiến",
+    "paragraphs": [
+      "Bạn nhận được tập hồ sơ kỹ thuật hình sự từ Công an thị xã Phố Hiến. Nạn nhân qua đời do nhiễm độc cấp tính chất asen (thạch tín).",
+      "Mọi nghi vấn ban đầu dồn vào đào nương Ánh Tuyết - người trực tiếp dâng chén trà sen cho cụ Cửu. Tuy nhiên, những chi tiết nhỏ nơi tráp nhạc cụ và thói quen ngón đàn của người nghệ nhân già mở ra một bức màn kịch độc ác hơn thế.",
+      "Bạn là điều tra viên thụ lý hồ sơ. Hãy đọc kỹ các tài liệu trên bàn, đối chiếu lời khai và trả lời từng trọng điểm để mở niêm phong phần hồ sơ tiếp theo."
+    ],
+    "objective": "Xác định chất độc đã vào cơ thể cụ Cửu bằng con đường nào, đối chiếu lời khai của những người trong phường, và chỉ ra hung thủ."
+  },
   "documents": [
     {
       "id": "d01",

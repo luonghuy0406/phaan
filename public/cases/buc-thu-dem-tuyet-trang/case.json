@@ -17,7 +17,15 @@
   ],
   "cover": "images/cover.webp",
   "synopsis": "⚠️ HỒ SƠ DỰA TRÊN KỲ ÁN CÓ THẬT CHẤN ĐỘNG NƯỚC MỸ NĂM 1996: Sáng sớm ngày 26/12/1996, cô bé hoa khôi nhí 6 tuổi JonBenét Ramsey được phát hiện mất tích trong căn biệt thự 15 phòng kín cổng cao tường tại Boulder, Colorado. Trên cầu thang là bức thư tống tiền dài 3 trang viết tay kỳ dị đòi đúng 118.000 USD. Nhưng vài giờ sau, thi thể nạn nhân lại được chính người cha tìm thấy ngay trong góc hầm rượu của ngôi nhà. Bức thư viết bằng sổ tay của người mẹ, mặt tuyết dày ngoài sân không có dấu chân người lạ, và một màng nhện giăng nguyên vẹn trước ô cửa kính tầng hầm đã biến vụ án thành một trong những bí ẩn pháp y gây ám ảnh nhất nhân loại.",
-  "intro": "Đội Đặc nhiệm FBI và Cảnh sát hạt Boulder tiếp nhận điều tra một kỳ án kinh điển. Tội ác không đến từ kẻ bắt cóc xa xôi mà ẩn hiện sau tấm màn nhung của sự giàu sang và những lời khai mâu thuẫn đến rợn người. Bằng chứng vật lý nào đã vạch trần hiện trường dàn dựng tàn nhẫn này?",
+  "intro": {
+    "title": "Bức thư đêm tuyết trắng",
+    "paragraphs": [
+      "Đội Đặc nhiệm FBI và Cảnh sát hạt Boulder tiếp nhận điều tra một kỳ án kinh điển. Tội ác không đến từ kẻ bắt cóc xa xôi mà ẩn hiện sau tấm màn nhung của sự giàu sang và những lời khai mâu thuẫn đến rợn người.",
+      "Bằng chứng vật lý nào đã vạch trần hiện trường dàn dựng tàn nhẫn này?",
+      "Bạn là điều tra viên thụ lý hồ sơ. Hãy đọc kỹ các tài liệu trên bàn, đối chiếu lời khai và trả lời từng trọng điểm để mở niêm phong phần hồ sơ tiếp theo."
+    ],
+    "objective": "Làm rõ nguyên nhân tử vong và nguồn gốc bức thư đòi tiền chuộc, đối chiếu lời khai của những người trong nhà, rồi kết luận bản chất thật của vụ án."
+  },
   "documents": [
     {
       "id": "d01",

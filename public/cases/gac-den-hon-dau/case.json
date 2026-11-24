@@ -16,7 +16,15 @@
   ],
   "cover": "images/cover.webp",
   "synopsis": "Đêm 24/09/1998, cơn bão số 5 đổ bộ vào vịnh Bắc Bộ với sức gió giật cấp 11. Đảo Hòn Dáu hoàn toàn bị cô lập giữa biển khơi gầm thét. Đúng 23h43, máy phát điện chính nổ cầu chì tổng, ngọn hải đăng vụt tắt trong 17 phút sinh tử trước khi nguồn phụ được đóng. Sáng hôm sau khi bão tan, thi thể Trạm trưởng Đỗ Đình Quyết được tìm thấy dưới chân vách đá sau tháp đèn với vết thương chí mạng trên lưng.",
-  "intro": "Bạn cùng đoàn công tác Công an thành phố Hải Phòng theo tàu cứu hộ vượt sóng ra đảo Hòn Dáu. Bốn con người túc trực trên đảo trong đêm cuồng phong, nhưng một người đã vĩnh viễn nằm lại dưới rạn đá ngầm. Kẻ thủ ác đã dùng kỹ thuật ngắn mạch trễ tinh vi để tạo bằng chứng ngoại phạm hoàn hảo trong phòng máy nổ. Bạn có đủ bản lĩnh để giải mã sự thật?",
+  "intro": {
+    "title": "Gác đèn Hòn Dáu",
+    "paragraphs": [
+      "Bạn cùng đoàn công tác Công an thành phố Hải Phòng theo tàu cứu hộ vượt sóng ra đảo Hòn Dáu. Bốn con người túc trực trên đảo trong đêm cuồng phong, nhưng một người đã vĩnh viễn nằm lại dưới rạn đá ngầm.",
+      "Kẻ thủ ác đã dùng kỹ thuật ngắn mạch trễ tinh vi để tạo bằng chứng ngoại phạm hoàn hảo trong phòng máy nổ. Bạn có đủ bản lĩnh để giải mã sự thật?",
+      "Bạn là điều tra viên thụ lý hồ sơ. Hãy đọc kỹ các tài liệu trên bàn, đối chiếu lời khai và trả lời từng trọng điểm để mở niêm phong phần hồ sơ tiếp theo."
+    ],
+    "objective": "Làm rõ nạn nhân chết thế nào và vì sao ngọn hải đăng tắt, kiểm chứng bằng chứng ngoại phạm của những người trên đảo, rồi chỉ ra kẻ thủ ác."
+  },
   "documents": [
     {
       "id": "d01",
@@ -44,7 +52,9 @@
       "type": "report",
       "title": "Kết quả giám định pháp y tử thi Trạm trưởng Quyết",
       "date": "18h30 ngày 25/09/1998",
-      "content": "**KẾT QUẢ KHÁM NGHIỆM TỬ THI**\n\n1. **Chấn thương vỡ hộp sọ**: Nạn nhân bị đa chấn thương do rơi từ độ cao 25 mét đập vào đá ngầm.\n2. **Vết thương tiên phát (nguyên nhân tử vong chính)**: Tại vùng lưng bên phải kề xương bả vai có một vết thương thấu ngực sâu 12cm đâm xuyên màng phổi và tiểu thùy phổi. Vết thương có đặc điểm bờ mép sắc gọn, lưỡi dao dày có rãnh thoát máu (đặc trưng của dao găm thợ lặn quân sự).\n3. **Kết luận pháp y**: Vết đâm xảy ra khi tim còn đập mạnh, có phản ứng viêm và xuất huyết cấp tính trước khi cơ thể rơi xuống chân vách đá. Nạn nhân đã bị sát hại trước khi rơi xuống vực lúc khoảng 23h20 đến 23h35 đêm 24/09/1998."
+      "content": "**KẾT QUẢ KHÁM NGHIỆM TỬ THI**\n\n1. **Chấn thương vỡ hộp sọ**: Nạn nhân bị đa chấn thương do rơi từ độ cao 25 mét đập vào đá ngầm.\n2. **Vết thương tiên phát (nguyên nhân tử vong chính)**: Tại vùng lưng bên phải kề xương bả vai có một vết thương thấu ngực sâu 12cm đâm xuyên màng phổi và tiểu thùy phổi. Vết thương có đặc điểm bờ mép sắc gọn, lưỡi dao dày có rãnh thoát máu (đặc trưng của dao găm thợ lặn quân sự).\n3. **Kết luận pháp y**: Vết đâm xảy ra khi tim còn đập mạnh, có phản ứng viêm và xuất huyết cấp tính trước khi cơ thể rơi xuống chân vách đá. Nạn nhân đã bị sát hại trước khi rơi xuống vực lúc khoảng 23h20 đến 23h35 đêm 24/09/1998.",
+      "image": "images/d03-giai-phau.webp",
+      "imageCaption": "Bản vẽ giám định pháp y: Vết thương thấu ngực do dao găm và đa chấn thương rơi ngã"
     },
     {
       "id": "d04",
@@ -52,9 +62,9 @@
       "type": "report",
       "title": "Sơ đồ mặt bằng trạm hải đăng Hòn Dáu",
       "date": "19h00 ngày 25/09/1998",
-      "content": "**SƠ ĐỒ THÁP HẢI ĐĂNG VÀ KHU VỰC LIÊN QUAN**\n\n- **Tầng hầm**: Phòng máy phát điện diesel (gồm máy chính Yanmar 50kVA và máy phụ 15kVA), tủ cầu dao phân phối điện và kho chứa dầu diesel.\n- **Tầng 1**: Phòng sinh hoạt chung, bếp, tủ sấy quần áo bảo hộ.\n- **Tầng 2**: Phòng làm việc và phòng ngủ của Trạm trưởng Quyết, có cửa mở ra ban công đá phía sau nhìn thẳng xuống vách biển sâu.\n- **Tầng 3 (Đài quan sát)**: Phòng thông tin vô tuyến điện đài của nhân viên Nghĩa.\n- **Tầng đỉnh tháp (Đài quang)**: Tháp thấu kính Fresnel và bóng đèn cao áp hải đăng, nơi trực của công nhân Tùng.",
-      "image": "images/d04-giai-phau.webp",
-      "imageCaption": "Sơ đồ thương tổn hộp sọ giám định pháp y"
+      "content": "**SƠ ĐỒ THÁP HẢI ĐĂNG VÀ KHU VỰC LIÊN QUAN**\n\n- **Tầng hầm**: Phòng máy phát điện diesel (gồm máy chính Yanmar 50kVA và máy phụ 15kVA), tủ cầu dao phân phối điện và kho chứa dầu diesel.\n- **Tầng 1**: Phòng sinh hoạt chung, bếp, tủ sấy quần áo bảo hộ.\n- **Tầng 2**: Phòng làm việc và phòng ngủ của Trạm trưởng Quyết, có cửa mở ra ban công đá phía sau nhìn thẳng xuống vách biển sâu.\n- **Tầng 3 (Đài quan sát)**: Phòng thông tin vô tuyến điện đài của nhân viên Nghĩa.\n- **Tầng đỉnh tháp (Đài quang)**: Tháp thấu kính Fresnel và bóng đèn cao áp hải đăng, nơi trực của công nhân Tùng.\n\nGhi trên bản vẽ: tháp cao 25 m, xây dựng năm 1892. Từ trên xuống: đài quang (thấu kính Fresnel), phòng điện đài vô tuyến, phòng Trạm trưởng có lan can đá, phòng sinh hoạt, phòng máy phát Yanmar 50kVA ở chân tháp.",
+      "image": "images/d04-so-do-thap-den.webp",
+      "imageCaption": "Sơ đồ mặt cắt kỹ thuật tháp hải đăng Hòn Dáu và vị trí các tầng"
     },
     {
       "id": "d05",
@@ -62,7 +72,9 @@
       "type": "note",
       "title": "Nhật ký vận hành kỹ thuật đèn biển Hòn Dáu",
       "date": "24/09/1998",
-      "content": "**TRÍCH SỔ TRỰC KỸ THUẬT VẬN HÀNH**\n\n- 18h00: Khởi động máy phát điện chính Yanmar 50kVA. Bật đèn hải đăng phục vụ dẫn luồng tàu tránh bão số 5.\n- 23h43: Cầu chì tổng tủ điện chính phát nổ chập cháy dữ dội. Toàn bộ trạm mất điện, hải đăng tắt hoàn toàn tín hiệu luồng.\n- 00h00 (25/09): Đóng điện thành công từ máy phát phụ 15kVA. Ngọn hải đăng hoạt động trở lại sau đúng 17 phút gián đoạn."
+      "content": "**TRÍCH SỔ TRỰC KỸ THUẬT VẬN HÀNH**\n\n- 18h00: Khởi động máy phát điện chính Yanmar 50kVA. Bật đèn hải đăng phục vụ dẫn luồng tàu tránh bão số 5.\n- 22h00: Máy nổ chính vận hành bình thường.\n- 23h25: Tuần tra, không phát hiện bất thường.\n- 23h43: Cầu chì tổng tủ điện chính phát nổ chập cháy dữ dội. Toàn bộ trạm mất điện, hải đăng tắt hoàn toàn tín hiệu luồng.\n- 00h00 (25/09): Đóng điện thành công từ máy phát phụ 15kVA. Ngọn hải đăng hoạt động trở lại sau đúng 17 phút gián đoạn.\n\n(Mỗi dòng nhật ký có chữ ký của người trực ca ở cột cuối.)",
+      "image": "images/d05-nhat-ky-hai-dang.webp",
+      "imageCaption": "Trích sổ nhật ký ca trực kỹ thuật: Đèn biển tắt ngắt quãng 17 phút từ 23h43 đến 00h00"
     },
     {
       "id": "d06",
@@ -169,7 +181,9 @@
       "type": "report",
       "title": "Bản giám định kỹ thuật nguyên nhân nổ cầu chì tổng",
       "date": "08h30 ngày 26/09/1998",
-      "content": "**KẾT QUẢ GIÁM ĐỊNH HỆ THỐNG ĐIỆN VÀ MÁY PHÁT YANMAR**\n\n1. Cầu chì tổng 100A tủ điện chính bị nổ đứt toác. Kiểm tra mảnh dây chì còn lại phát hiện ruột chì bị gọt mỏng cơ học chỉ còn 30% tiết diện, làm giảm khả năng chịu tải xuống dưới 30A.\n2. **Phát hiện thiết bị lạ tại máy phát chính**:\n   - Kẹp sát vào vỏ cuộn dây stato của máy phát Yanmar có một thanh lưỡng kim nhiệt (bimetal) tự chế gắn dây đồng nhỏ.\n   - Khi cuộn stato hoạt động liên tục trong khoảng 80-100 phút, nhiệt độ cuộn dây đạt ngưỡng 85°C làm thanh lưỡng kim cong vòng, chạm vào thanh giằng tiếp địa kim loại gây hiện tượng ngắn mạch có chủ đích!\n3. **Kết luận kỹ thuật**: Sự cố chập nổ cầu chì lúc 23h43 **hoàn toàn là hành vi phá hoại được lập trình trễ bằng hiệu ứng nhiệt** nhằm gây mất điện tự động sau khi máy phát vận hành được gần 2 tiếng!"
+      "image": "images/d10-cau-chi-got-mong.webp",
+      "imageCaption": "Ảnh giám định kỹ thuật: Cầu chì tổng 100A bị nổ và ruột chì bị gọt mỏng cơ học",
+      "content": "**KẾT QUẢ GIÁM ĐỊNH HỆ THỐNG ĐIỆN VÀ MÁY PHÁT YANMAR**\n\n1. Cầu chì tổng 100A tủ điện chính bị nổ đứt toác. Kiểm tra mảnh dây chì còn lại phát hiện ruột chì bị gọt mỏng cơ học chỉ còn 30% tiết diện, làm giảm khả năng chịu tải xuống dưới 30A.\n2. **Phát hiện thiết bị lạ tại máy phát chính**:\n   - Kẹp sát vào vỏ cuộn dây stato của máy phát Yanmar có một thanh lưỡng kim nhiệt (bimetal) tự chế gắn dây đồng nhỏ.\n   - Khi cuộn stato hoạt động liên tục trong khoảng 80-100 phút, nhiệt độ cuộn dây đạt ngưỡng 85°C làm thanh lưỡng kim cong vòng, chạm vào thanh giằng tiếp địa kim loại gây hiện tượng ngắn mạch có chủ đích!\n3. **Kết luận kỹ thuật**: Sự cố chập nổ cầu chì lúc 23h43 **hoàn toàn là hành vi phá hoại được lập trình trễ bằng hiệu ứng nhiệt** nhằm gây mất điện tự động sau khi máy phát vận hành được gần 2 tiếng!\n\n**Ảnh kèm theo**: cầu chì tổng cháy xém đặt cạnh thước cặp điện tử; số đo đường kính phần ruột chì còn lại hiển thị **0,95 mm**."
     },
     {
       "id": "d11",
@@ -178,7 +192,8 @@
       "title": "Ảnh chụp thanh lưỡng kim nhiệt gài lén vào stato máy nổ",
       "date": "09h00 ngày 26/09/1998",
       "image": "images/d11-may-phat.webp",
-      "content": "Ảnh chụp cận cảnh máy phát Yanmar: Thanh lưỡng kim nhiệt kẹp sát cuộn stato đồng đỏ có mã hiệu 'T-85 Thermo'. Đầu kim loại tiếp xúc có vệt hồ quang điện đen khét cháy xém trên thanh tiếp địa."
+      "imageCaption": "Cận cảnh thanh lưỡng kim nhiệt T-85 kẹp cuộn stato máy phát điện Yanmar 50kVA",
+      "content": "Ảnh chụp cận cảnh máy phát Yanmar: Thanh lưỡng kim nhiệt kẹp sát cuộn stato đồng đỏ có mã hiệu 'T-85 Thermo'. Đầu kim loại tiếp xúc có vệt hồ quang điện đen khét cháy xém trên thanh tiếp địa.\n\nThẻ đánh dấu tang vật **số 03** đặt ngay cạnh điểm kẹp thanh lưỡng kim."
     },
     {
       "id": "d12",
@@ -207,7 +222,9 @@
       "type": "report",
       "title": "Bản vẽ sơ đồ nguyên lý ngắn mạch trễ",
       "date": "10h15 ngày 26/09/1998",
-      "content": "**SƠ ĐỒ NGUYÊN LÝ BẪY ĐOẢN MẠCH TRỄ**\n\n- Máy phát nổ lúc 18h00 nhưng tải thấp (chỉ thắp sáng đèn thường).\n- Đến 22h00 khi bắt đầu chạy thêm quạt hút và đèn công suất cao, stato sinh nhiệt tăng dần.\n- Sau đúng 103 phút (lúc 23h43), thanh lưỡng kim đạt độ cong cực đại 4mm chạm vỏ mát, gây chập nổ sợi chì bị gọt mỏng."
+      "image": "images/d13-so-do-ngan-mach.webp",
+      "imageCaption": "Sơ đồ nguyên lý bẫy đoản mạch trễ: Cơ chế kích nổ cầu chì tự động sau 103 phút",
+      "content": "**SƠ ĐỒ NGUYÊN LÝ BẪY ĐOẢN MẠCH TRỄ**\n\n- Máy phát nổ lúc 18h00 nhưng tải thấp (chỉ thắp sáng đèn thường).\n- Đến 22h00 khi bắt đầu chạy thêm quạt hút và đèn công suất cao, stato sinh nhiệt tăng dần.\n- Sau đúng 103 phút (lúc 23h43), thanh lưỡng kim đạt độ cong cực đại 4mm chạm vỏ mát, gây chập nổ sợi chì bị gọt mỏng.\n\n**Dòng thời gian ghi trên sơ đồ**\n\n- 22h00: Gài bẫy.\n- 23h43: Cầu chì nổ.\n- 00h00: Đóng máy phụ.\n\nNhiệt độ cuộn stato máy phát tăng từ 45°C lên 85°C trong 103 phút; thanh lưỡng kim T-85 cong 4 mm thì chạm mát."
     },
     {
       "id": "d14",
@@ -215,7 +232,9 @@
       "type": "report",
       "title": "Biên bản khám xét túi đồ nghề của Vũ Văn Thắng",
       "date": "11h00 ngày 26/09/1998",
-      "content": "**TANG VẬT THU GIỮ TỪ TÚI ĐỒ NGHỀ CỦA THẮNG**\n\n1. Một chiếc kìm mỏ nhọn cán bọc nhựa đỏ. Trên lưỡi kìm kẹp có dính mạt kim loại chì mềm, phân tích quang phổ trùng khớp 100% với hợp kim của dây cầu chì tổng bị gọt.\n2. Một con dao găm thợ lặn nhãn hiệu US Divers dài 25cm chuôi bọc cao su đen, lưỡi thép có rãnh thoát khí giấu trong hốc thông gió máy nổ phụ."
+      "image": "images/d14-dao-gam-va-kim.webp",
+      "imageCaption": "Bàn kiểm kê tang vật: Dao găm thợ lặn 25cm dính máu và kìm mỏ nhọn dính mạt chì",
+      "content": "**TANG VẬT THU GIỮ TỪ TÚI ĐỒ NGHỀ CỦA THẮNG**\n\n1. Một chiếc kìm mỏ nhọn cán bọc nhựa đỏ. Trên lưỡi kìm kẹp có dính mạt kim loại chì mềm, phân tích quang phổ trùng khớp 100% với hợp kim của dây cầu chì tổng bị gọt.\n2. Một con dao găm thợ lặn nhãn hiệu US Divers dài 25cm chuôi bọc cao su đen, lưỡi thép có rãnh thoát khí giấu trong hốc thông gió máy nổ phụ.\n\nThẻ tang vật trên bàn kiểm kê: **số 01** là con dao găm, **số 02** là chiếc kìm mỏ nhọn cán đỏ. Thước đặt cạnh cho thấy dao dài khoảng 25 cm."
     },
     {
       "id": "d15",
@@ -224,7 +243,8 @@
       "title": "Ảnh chiếc áo mưa dính máu và trang nhật ký bị xé giấu trong bầu lọc gió",
       "date": "11h45 ngày 26/09/1998",
       "image": "images/d15-ao-mua.webp",
-      "content": "Ảnh chụp tang vật: Vạt trong chiếc áo mưa vàng của Vũ Văn Thắng có vệt quẹt máu khô màu nâu sẫm. Cạnh đó là bầu lọc gió máy nổ phụ chứa mẩu giấy nhật ký bị vò nát nhét bên trong."
+      "imageCaption": "Ảnh tang vật: Vệt máu trên vạt trong áo mưa vàng và trang nhật ký nhét trong bầu lọc gió",
+      "content": "Ảnh chụp tang vật: Vạt trong chiếc áo mưa vàng của Vũ Văn Thắng có vệt quẹt máu khô màu nâu sẫm. Cạnh đó là bầu lọc gió máy nổ phụ chứa mẩu giấy nhật ký bị vò nát nhét bên trong.\n\nThẻ đánh dấu tang vật **R** đặt cạnh bầu lọc gió có mẩu giấy bị vò."
     },
     {
       "id": "d16",
@@ -232,7 +252,9 @@
       "type": "report",
       "title": "Bản khôi phục trang nhật ký bị xé của Trạm trưởng Quyết",
       "date": "13h30 ngày 26/09/1998",
-      "content": "**NỘI DUNG TRANG NHẬT KÝ THU TRONG BẦU LỌC GIÓ**\n\n'...Hôm nay 24/09, tôi đã kiểm kê lại kho dầu ngầm và phát hiện hao hụt 3.200 lít dầu diesel chuyên dụng. Phó trạm trưởng Vũ Văn Thắng thừa nhận đã thông đồng với tàu cá rút trộm dầu đem bán ra ngoài luồng. Thắng xin tôi bỏ qua nhưng tôi kiên quyết lập biên bản gửi đoàn thanh tra của Sở Giao thông ra đảo vào thứ Hai tới sau khi tan bão số 5...'"
+      "image": "images/d16-trang-nhat-ky-xe.webp",
+      "imageCaption": "Bản phục chế trang nhật ký bị xé của Trạm trưởng Quyết tố cáo bán trộm 3.200 lít dầu",
+      "content": "**NỘI DUNG TRANG NHẬT KÝ THU TRONG BẦU LỌC GIÓ**\n\n'...Hôm nay 24/09, tôi đã kiểm kê lại kho dầu ngầm và phát hiện hao hụt 3.200 lít dầu diesel chuyên dụng. Phó trạm trưởng Vũ Văn Thắng thừa nhận đã thông đồng với tàu cá rút trộm dầu đem bán ra ngoài luồng. Thắng xin tôi bỏ qua nhưng tôi kiên quyết lập biên bản gửi đoàn thanh tra của Sở Giao thông ra đảo vào thứ Hai tới sau khi tan bão số 5...'\n\nBút tích phục chế: đầu trang ghi \"Hòn Dáu, chiều 24/09/1998\", cuối trang ký tên **Đỗ Đình Quyết**."
     },
     {
       "id": "d17",

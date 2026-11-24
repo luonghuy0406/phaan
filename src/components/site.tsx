@@ -87,7 +87,12 @@ export function CaseCard({ entry, compact = false }: { entry: CaseSummary; compa
       <div className="case-card__body">
         <div className="case-card__top">
           <span className="case-card__no">{caseNo(entry)}</span>
-          {!compact && <span className={`badge${open ? '' : ' badge--soon'}`}>{open ? 'Đang mở' : 'Sắp ra mắt'}</span>}
+          {!compact && (
+            <span className="case-card__badges">
+              {entry.draft && <span className="badge badge--draft" title="Hồ sơ chơi được nhưng hình ảnh tư liệu đang được bổ sung">Chưa hoàn thiện</span>}
+              <span className={`badge${open ? '' : ' badge--soon'}`}>{open ? 'Đang mở' : 'Sắp ra mắt'}</span>
+            </span>
+          )}
         </div>
         <h3>{entry.title}</h3>
         {!compact && entry.tagline && <p>{entry.tagline}</p>}

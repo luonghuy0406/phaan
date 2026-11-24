@@ -16,7 +16,15 @@
   ],
   "cover": "images/cover.webp",
   "synopsis": "⚠️ HỒ SƠ DỰA TRÊN TRỌNG ÁN CÓ THẬT CHẤN ĐỘNG THỦ ĐÔ HÀ NỘI NĂM 1999: Đêm 18/07/1999, giữa cơn mưa giông mù mịt sấm sét, tiếng súng nổ kinh hoàng đã xé toạc màn đêm tại tiệm vàng Kim Sinh (số 38 phố Tây Sơn, quận Đống Đa). Kẻ thủ ác mang súng ngắn K54 và súng hoa cải tàn bạo bắn gục gia đình chủ tiệm, đập vỡ tủ kính cướp đi hơn 100 lượng vàng rồi phóng xe máy tẩu thoát vào màn mưa. Vụ án gây chấn động dư luận cả nước, buộc lực lượng công an phải tung những điều tra viên kỳ cựu nhất lần theo từng vỏ đạn dập năm 1968 và vệt lốp xe máy trong đêm.",
-  "intro": "Phòng Cảnh sát Hình sự Công an thành phố Hà Nội xác lập chuyên án đặc biệt. Hiện trường ngổn ngang mảnh kính tủ vỡ và vỏ đạn quân dụng nồng nặc mùi thuốc súng. Một cuộc rượt đuổi nghẹt thở xuyên qua các ngõ ngách Hà thành bắt đầu từ một mẩu vỏ bao thuốc lá rơi lại trong đêm giông.",
+  "intro": {
+    "title": "Đêm súng nổ phố Tây Sơn",
+    "paragraphs": [
+      "Phòng Cảnh sát Hình sự Công an thành phố Hà Nội xác lập chuyên án đặc biệt. Hiện trường ngổn ngang mảnh kính tủ vỡ và vỏ đạn quân dụng nồng nặc mùi thuốc súng.",
+      "Một cuộc rượt đuổi nghẹt thở xuyên qua các ngõ ngách Hà thành bắt đầu từ một mẩu vỏ bao thuốc lá rơi lại trong đêm giông.",
+      "Bạn là điều tra viên thụ lý hồ sơ. Hãy đọc kỹ các tài liệu trên bàn, đối chiếu lời khai và trả lời từng trọng điểm để mở niêm phong phần hồ sơ tiếp theo."
+    ],
+    "objective": "Lần theo hung khí và dấu vết đạn, kiểm chứng bằng chứng ngoại phạm của các nghi phạm, và xác định kẻ đã gây ra vụ cướp tiệm vàng."
+  },
   "documents": [
     {
       "id": "d01",

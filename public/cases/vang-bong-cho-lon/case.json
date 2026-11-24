@@ -16,7 +16,15 @@
   ],
   "cover": "images/cover.webp",
   "synopsis": "Sáng sớm ngày 18/05/1995, người làm công tại tiệm vàng Vạn Thành trên đường Hải Thượng Lãn Ông kinh hoàng phát hiện ông chủ Lâm Vạn Thành gục chết trên ghế tựa bên tách cà phê vợt nguội ngắt. Chiếc két sắt sắt đúc nặng nửa tấn mở toang không một vết cạy phá, 50 lượng vàng 24K và 100 triệu đồng tiền mặt biến mất sạch trơn.",
-  "intro": "Đội Cảnh sát Hình sự Công an Quận 5 tiếp nhận hiện trường một vụ trộm tiệm vàng chấn động phố người Hoa. Nạn nhân là người duy nhất nắm giữ mật mã xoay cơ học 4 số cực kỳ phức tạp. Bằng thủ pháp nào kẻ gian đã mở được cánh cửa sắt kiên cố và tẩu tán kho vàng trong đêm tối?",
+  "intro": {
+    "title": "Vàng bóng Chợ Lớn",
+    "paragraphs": [
+      "Đội Cảnh sát Hình sự Công an Quận 5 tiếp nhận hiện trường một vụ trộm tiệm vàng chấn động phố người Hoa. Nạn nhân là người duy nhất nắm giữ mật mã xoay cơ học 4 số cực kỳ phức tạp.",
+      "Bằng thủ pháp nào kẻ gian đã mở được cánh cửa sắt kiên cố và tẩu tán kho vàng trong đêm tối?",
+      "Bạn là điều tra viên thụ lý hồ sơ. Hãy đọc kỹ các tài liệu trên bàn, đối chiếu lời khai và trả lời từng trọng điểm để mở niêm phong phần hồ sơ tiếp theo."
+    ],
+    "objective": "Làm rõ chủ tiệm bị hạ độc thế nào và két sắt bị mở bằng cách nào, kiểm chứng bằng chứng ngoại phạm của những người liên quan, rồi chỉ ra thủ phạm."
+  },
   "documents": [
     {
       "id": "d01",

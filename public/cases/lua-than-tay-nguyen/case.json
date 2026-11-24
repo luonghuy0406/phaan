@@ -16,7 +16,15 @@
   ],
   "cover": "images/cover.webp",
   "synopsis": "Đêm rằm tháng Ba năm 2001, trong khi cả buôn Ea Kral đang rộn rã cồng chiêng trong lễ cúng bến nước tại nhà rông lớn, kho thóc nứa cổ truyền kề bên bỗng bốc cháy ngùn ngụt. Khi ngọn lửa được khống chế, thi thể già làng Ama Thuật được tìm thấy dưới đống than hồng. Nhưng pháp y phát hiện một sự thật rợn người: Già làng đã ngừng thở từ trước khi ngọn lửa đầu tiên bùng phát.",
-  "intro": "Đội Điều tra Trọng án Công an tỉnh Đắk Lắk có mặt tại hiện trường buôn Ea Kral giữa trưa nắng gắt. Đám cháy tưởng như tai nạn chập điện hay tàn đuốc mùa hanh khô thực chất là màn kịch che đậy vụ sát hại cướp đoạt báu vật buôn làng. Liệu các dấu vết cơ khí trong đống tro tàn có giúp vạch mặt kẻ nghịch tử?",
+  "intro": {
+    "title": "Đêm lửa tàn Buôn Ea Kral",
+    "paragraphs": [
+      "Đội Điều tra Trọng án Công an tỉnh Đắk Lắk có mặt tại hiện trường buôn Ea Kral giữa trưa nắng gắt. Đám cháy tưởng như tai nạn chập điện hay tàn đuốc mùa hanh khô thực chất là màn kịch che đậy vụ sát hại cướp đoạt báu vật buôn làng.",
+      "Liệu các dấu vết cơ khí trong đống tro tàn có giúp vạch mặt kẻ nghịch tử?",
+      "Bạn là điều tra viên thụ lý hồ sơ. Hãy đọc kỹ các tài liệu trên bàn, đối chiếu lời khai và trả lời từng trọng điểm để mở niêm phong phần hồ sơ tiếp theo."
+    ],
+    "objective": "Chứng minh điều gì đã xảy ra với già làng trước khi ngọn lửa bùng lên, tìm ra cách đám cháy được châm, và chỉ ra thủ phạm."
+  },
   "documents": [
     {
       "id": "d01",

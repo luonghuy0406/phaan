@@ -16,7 +16,15 @@
   ],
   "cover": "images/cover.webp",
   "synopsis": "Sáng sớm ngày 15/12/2003, giữa tiết trời sương muối giá buốt của vùng đồi Trại Mát, thi thể ông Lâm Khải - chủ trang trại hoa hồng Lâm Viên - được tìm thấy đông cứng dưới triền dốc bìa rừng thông. Bác sĩ pháp y nhận định nạn nhân qua đời khoảng 21h-22h đêm hôm trước. Nhưng vào khung giờ đó, tất cả nghi phạm đáng ngờ nhất đều có bằng chứng ngoại phạm vững như bàn thạch.",
-  "intro": "Đội Cảnh sát Điều tra Công an thành phố Đà Lạt nhận vụ án trong một buổi sáng mùa đông mịt mùng sương. Khám nghiệm tử thi cho thấy hiện tượng co cứng toàn thân diễn ra sớm bất thường so với thời gian nạn nhân rời nhà. Điều gì đã đánh lừa chiếc nhiệt kế pháp y giữa vùng cao nguyên lạnh giá này?",
+  "intro": {
+    "title": "Sương mù Trại Mát",
+    "paragraphs": [
+      "Đội Cảnh sát Điều tra Công an thành phố Đà Lạt nhận vụ án trong một buổi sáng mùa đông mịt mùng sương. Khám nghiệm tử thi cho thấy hiện tượng co cứng toàn thân diễn ra sớm bất thường so với thời gian nạn nhân rời nhà.",
+      "Điều gì đã đánh lừa chiếc nhiệt kế pháp y giữa vùng cao nguyên lạnh giá này?",
+      "Bạn là điều tra viên thụ lý hồ sơ. Hãy đọc kỹ các tài liệu trên bàn, đối chiếu lời khai và trả lời từng trọng điểm để mở niêm phong phần hồ sơ tiếp theo."
+    ],
+    "objective": "Tìm điểm bất thường nơi phát hiện thi thể, xác định thời điểm tử vong thật, và chỉ ra kẻ đã đánh lừa cơ quan điều tra."
+  },
   "documents": [
     {
       "id": "d01",

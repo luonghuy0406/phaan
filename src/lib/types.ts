@@ -84,6 +84,8 @@ export interface CaseSummary {
   cover?: string | null;
   /** 'fiction' (made-up people and places) or 'true-crime' (reconstructed from a real case) */
   kind?: CaseKind;
+  /** content is playable but images are still being made: shown with a "Chưa hoàn thiện" label */
+  draft?: boolean;
 }
 
 export type CaseKind = 'fiction' | 'true-crime';

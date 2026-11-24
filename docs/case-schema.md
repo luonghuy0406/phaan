@@ -58,6 +58,8 @@ Có thể nhắc tài liệu bằng mã, ví dụ `(d12)`: người chơi sẽ t
 
 **Thể loại (`kind` trong `public/cases/index.json`):** `"fiction"` cho hồ sơ hư cấu, `"true-crime"` cho hồ sơ dựng lại từ vụ án có thật. Trang chủ chia kho hồ sơ theo trường này. Hồ sơ cũ chưa có `kind` được coi là có thật nếu có thẻ "Vụ án có thật".
 
+**Chưa hoàn thiện (`draft` trong `public/cases/index.json`):** đặt `"draft": true` cho hồ sơ đã chơi được nhưng còn thiếu hình ảnh. Thẻ hồ sơ và trang chi tiết sẽ hiện nhãn "Chưa hoàn thiện". Xoá dòng này khi đã đủ ảnh.
+
 ## 2. Tài liệu (`documents[]`)
 
 Trường chung: `id` (`"d01"`… theo thứ tự đọc), `stage` (vòng, từ 1), `type`, `title`,

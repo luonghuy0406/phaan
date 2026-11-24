@@ -16,7 +16,15 @@
   ],
   "cover": "images/cover.webp",
   "synopsis": "⚠️ HỒ SƠ DỰA TRÊN VỤ ÁN CÓ THẬT GÂY CHẤN ĐỘNG DƯ LUẬN NĂM 2019: Sáng ngày 03/12/2019, tại phòng giao ban Khoa Nội Bệnh viện Đa khoa tỉnh Thái Bình, một nữ điều dưỡng viên 29 tuổi đã đột ngột ngã gục và tử vong chỉ sau vài phút uống cốc trà sữa lấy từ tủ lạnh chung. Giám định pháp y phát hiện nồng độ cực độc của chất Natri Xyanua. Kẻ thủ ác đã dùng thủ đoạn bơm độc tinh vi qua nắp cốc kín nhằm sát hại người khác vì ghen tuông mù quáng, nhưng một sinh mạng vô tội đã phải gánh chịu bi kịch oan nghiệt.",
-  "intro": "Đội Cảnh sát Hình sự Công an tỉnh Thái Bình thụ lý điều tra một trong những vụ án đầu độc tàn nhẫn và gây ám ảnh bậc nhất lịch sử hình sự Việt Nam. Túi trà sữa nặc danh được gửi tới bệnh viện kèm lời nhắn cảm ơn ngọt ngào. Kẻ thủ ác đã toan tính những gì sau mũi kim tiêm siêu nhỏ?",
+  "intro": {
+    "title": "Ly trà tráo độc",
+    "paragraphs": [
+      "Đội Cảnh sát Hình sự Công an tỉnh Thái Bình thụ lý điều tra một trong những vụ án đầu độc tàn nhẫn và gây ám ảnh bậc nhất lịch sử hình sự Việt Nam. Túi trà sữa nặc danh được gửi tới bệnh viện kèm lời nhắn cảm ơn ngọt ngào.",
+      "Kẻ thủ ác đã toan tính những gì sau mũi kim tiêm siêu nhỏ?",
+      "Bạn là điều tra viên thụ lý hồ sơ. Hãy đọc kỹ các tài liệu trên bàn, đối chiếu lời khai và trả lời từng trọng điểm để mở niêm phong phần hồ sơ tiếp theo."
+    ],
+    "objective": "Xác định chất độc và cách nó lọt vào cốc trà sữa, tìm ra cốc trà thật sự nhắm vào ai, và chỉ ra người đứng sau."
+  },
   "documents": [
     {
       "id": "d01",
@@ -26,7 +34,7 @@
       "date": "04/12/2019",
       "content": "**ĐIỀU DƯỠNG VIÊN KHOA NỘI ĐỘT NGỘT TỬ VONG SAU KHI UỐNG NƯỚC**\n\nSáng 03/12, tại Khoa Nội Bệnh viện Đa khoa tỉnh Thái Bình, chị Đoàn Thị Thủy (29 tuổi, cán bộ điều dưỡng) trong lúc làm nhiệm vụ đã đột ngột ngất xỉu, co giật và tử vong nhanh chóng sau khi uống nước trong phòng giao ban.\n\nThời điểm xảy ra sự việc, nạn nhân có sức khỏe hoàn toàn bình thường, không có tiền sử bệnh lý tim mạch. Các dấu hiệu lâm sàng nghi ngờ nạn nhân bị ngộ độc cấp tính. Cơ quan điều tra đã niêm phong toàn bộ đồ ăn, thức uống trong tủ lạnh của khoa để làm rõ.",
       "image": "images/d01-bao-chi.webp",
-      "imageCaption": "Ảnh tư liệu Báo Tuổi Trẻ: Hiện trường phong tỏa quán trà sữa đường Nguyễn Huệ"
+      "imageCaption": "Ảnh tư liệu Báo Tuổi Trẻ: Lực lượng chức năng phong tỏa khu vực khám nghiệm tại Bệnh viện Đa khoa tỉnh Thái Bình"
     },
     {
       "id": "d02",
@@ -43,8 +51,8 @@
       "title": "Kết quả giám định pháp y tử thi điều dưỡng Thủy",
       "date": "14h30 ngày 03/12/2019",
       "content": "**KẾT QUẢ KHÁM NGHIỆM TỬ THI VÀ ĐỘC CHẤT HỌC**\n\n1. **Nguyên nhân tử vong**: Suy tuần hoàn và hô hấp tối cấp do trúng độc Natri Xyanua (NaCN) - chất cực độc bảng A, liều lượng hấp thụ vào máu vượt mức gây chết người hơn 8 lần.\n2. **Dấu hiệu đặc trưng**: Niêm mạc thực quản và niêm mạc dạ dày nạn nhân bị sung huyết đỏ tươi rực rỡ (màu đỏ anh đào đặc trưng của ngộ độc xyanua do ngăn cản tế bào sử dụng oxy). Khí thở ra của nạn nhân có mùi hạnh nhân đắng thoang thoảng.\n3. **Thời gian phát tác**: Nạn nhân ngừng tim sau khi uống ngụm trà sữa đầu tiên chưa đầy 5 phút.",
-      "image": "images/d03-so-do-quan-tra.webp",
-      "imageCaption": "Sơ đồ mặt bằng quán trà sữa và khu vực máy pha chế"
+      "image": "images/d03-giam-dinh-doc-chat.webp",
+      "imageCaption": "Kết quả giám định độc chất pháp y: Nồng độ Natri Xyanua (NaCN) trong máu và dịch dạ dày"
     },
     {
       "id": "d04",
@@ -52,7 +60,9 @@
       "type": "report",
       "title": "Sơ đồ mặt bằng Khoa Nội Bệnh viện",
       "date": "15h00 ngày 03/12/2019",
-      "content": "**SƠ ĐỒ PHÂN BỔ PHÒNG GIAO BAN VÀ KHU ĐIỀU TRỊ**\n\n- Phòng giao ban: Nơi đặt tủ lạnh chứa đồ ăn của nhân viên y tế trong ca trực.\n- Bác sĩ Đỗ Thị Yến (chị họ nghi phạm) có bàn làm việc cố định tại phòng này nhưng ngày 02 và 03/12 được phân công nghỉ bù sau ca trực cuối tuần."
+      "content": "**SƠ ĐỒ PHÂN BỔ PHÒNG GIAO BAN VÀ KHU ĐIỀU TRỊ**\n\n- Phòng giao ban: Nơi đặt tủ lạnh chứa đồ ăn của nhân viên y tế trong ca trực.\n- Bác sĩ Đỗ Thị Yến (chị họ nghi phạm) có bàn làm việc cố định tại phòng này nhưng ngày 02 và 03/12 được phân công nghỉ bù sau ca trực cuối tuần.",
+      "image": "images/d04-so-do-khoa-noi.webp",
+      "imageCaption": "Sơ đồ mặt bằng Khoa Nội: Vị trí tủ lạnh chung phòng giao ban và bàn làm việc Bác sĩ Yến"
     },
     {
       "id": "d05",
@@ -61,6 +71,7 @@
       "title": "Ảnh chụp macro lỗ châm kim vi thể trên màng nắp cốc trà sữa",
       "date": "16h00 ngày 03/12/2019",
       "image": "images/d05-nap-coc.webp",
+      "imageCaption": "Ảnh chụp macro kỹ thuật hình sự: Vết châm kim vi thể cỡ 26G trên màng dập nắp cốc",
       "content": "Ảnh chụp macro bề mặt nắp cốc trà sữa dập nhiệt: Màng nilon trong suốt có một vết châm kim siêu nhỏ đường kính dưới 0.4mm (kích cỡ kim tiêm y tế cỡ 26G). Xung quanh lỗ châm kim có vệt ố kết tinh vi thể của tinh thể xyanua khô."
     },
     {
@@ -119,9 +130,7 @@
           "n": 5,
           "text": "Tôi không ngờ Trang lại có thể tàn độc đến mức ra tay hãm hại chính người chị họ ruột thịt của mình!"
         }
-      ],
-      "image": "images/d07-hoa-don-tra-sua.webp",
-      "imageCaption": "Bản scan hóa đơn thanh toán in nhiệt máy POS"
+      ]
     },
     {
       "id": "d08",
@@ -154,6 +163,8 @@
       "type": "note",
       "title": "Mẩu giấy nhắn kẹp ngoài túi trà sữa",
       "date": "02/12/2019",
+      "image": "images/d09-giay-nhan.webp",
+      "imageCaption": "Mẫu vật chứng: Tờ giấy ghi chú học sinh viết tay bằng mực tím kẹp ngoài túi trà sữa",
       "content": "**MẪU VẬT CHỨNG: TỜ GIẤY GHI CHÚ VIẾT TAY**\n\nNội dung viết bằng bút mực tím trên mẩu giấy kẻ ô học sinh: 'Gửi chị Yến Khoa Nội! Em cảm ơn chị và các bác sĩ đã tận tình chăm sóc người nhà em ạ!'"
     },
     {
@@ -162,6 +173,8 @@
       "type": "report",
       "title": "Trích xuất dữ liệu kỹ thuật số điện thoại Lại Thị Kiều Trang",
       "date": "09h00 ngày 04/12/2019",
+      "image": "images/d10-trich-xuat-dien-thoai.webp",
+      "imageCaption": "Bản trích xuất dữ liệu kỹ thuật số điện thoại nghi phạm: Lịch sử tìm kiếm chất độc Xyanua",
       "content": "**KẾT QUẢ KHÔI PHỤC LỊCH SỬ DUYỆT WEB VÀ ĐỊNH VỊ**\n\nPhân tích điện thoại iPhone của nghi phạm Lại Thị Kiều Trang ghi nhận:\n1. Các lượt tìm kiếm Google từ ngày 15/11 đến 28/11/2019: 'chất độc xyanua mua ở đâu', 'mua natri xyanua hải phòng', 'uống xyanua sau bao lâu thì chết', 'cách bơm thuốc vào cốc nước không bị phát hiện'.\n2. Tin nhắn đe dọa gửi cho anh Hùng: 'Nếu anh bỏ em, em sẽ làm cho gia đình anh phải ân hận suốt đời!'."
     },
     {
@@ -171,6 +184,7 @@
       "title": "Ảnh tang vật ống tiêm y tế và gói xyanua thu tại nhà Trang",
       "date": "10h00 ngày 04/12/2019",
       "image": "images/d11-ong-tiem.webp",
+      "imageCaption": "Ảnh tang vật khám xét: Bơm kim tiêm y tế 26G dính độc chất và túi hóa chất Natri Xyanua",
       "content": "Ảnh chụp tang vật khám xét phòng ngủ Lại Thị Kiều Trang: Ống tiêm y tế loại 5ml gắn kim tiêm siêu nhỏ cỡ 26G dính giọt dung dịch xyanua và một túi nilon zip chứa bột hóa chất xyanua màu trắng đục giấu dưới đáy tủ quần áo."
     },
     {
@@ -179,6 +193,8 @@
       "type": "receipt",
       "title": "Hóa đơn chuyển phát nhanh bưu phẩm hóa chất từ Hải Phòng",
       "date": "29/11/2019",
+      "image": "images/d12-van-don-viettelpost.webp",
+      "imageCaption": "Bản scan vận đơn chuyển phát nhanh Viettel Post gói hàng hóa chất từ Hải Phòng",
       "content": "**VẬN ĐƠN CHUYỂN PHÁT NHANH VIETTEL POST**\n\n- Người gửi: Cửa hàng Hóa chất xi mạ Nam Cường, Lê Chân, Hải Phòng.\n- Người nhận: Lại Thị Kiều Trang (số điện thoại cá nhân trùng khớp 100%).\n- Tên hàng: 'Hóa chất thí nghiệm - 1kg Natri Xyanua'."
     },
     {
@@ -195,6 +211,8 @@
       "type": "report",
       "title": "Trích xuất camera an ninh tiệm trà sữa",
       "date": "14h00 ngày 04/12/2019",
+      "image": "images/d14-camera-quan-tra.webp",
+      "imageCaption": "Trích xuất camera an ninh tiệm trà sữa phố Lý Thường Kiệt: Nghi phạm mua 6 cốc trà lúc 10h15",
       "content": "**HÌNH ẢNH CAMERA AN NINH**\n\nCamera tiệm trà sữa trên phố Lý Thường Kiệt ghi lại hình ảnh Lại Thị Kiều Trang trực tiếp vào mua 6 cốc trà sữa vào lúc 10h15 sáng ngày 02/12/2019, khớp hoàn toàn về trang phục và xe máy hiệu Vision màu đỏ."
     },
     {

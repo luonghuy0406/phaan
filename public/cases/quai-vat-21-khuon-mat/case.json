@@ -17,7 +17,15 @@
   ],
   "cover": "images/cover.webp",
   "synopsis": "⚠️ HỒ SƠ DỰA TRÊN KỲ ÁN CÓ THẬT CHẤN ĐỘNG NƯỚC NHẬT NĂM 1984: Năm 1984, toàn bộ nước Nhật rơi vào cơn ác mộng kinh hoàng khi một tổ chức bí ẩn tự xưng là 'Quái vật 21 khuôn mặt' bắt cóc chủ tịch tập đoàn bánh kẹo Ezaki Glico, sau đó gửi hàng chục lá thư giễu cợt cảnh sát và truyền thông. Đỉnh điểm là việc chúng lén rải hàng loạt hộp kẹo socola tẩm kali xyanua dán nhãn cảnh báo chết người lên kệ siêu thị khắp các thành phố lớn. Vụ án đã huy động hơn 1,3 triệu lượt cảnh sát, phỏng vấn 125.000 nghi phạm nhưng thủ phạm với 'đôi mắt cáo' đã vĩnh viễn biến mất không một dấu vết trước khi hết thời hiệu khởi tố.",
-  "intro": "Bạn nhận được tập hồ sơ chuyên án tuyệt mật từ Cục Cảnh sát Quốc gia Nhật Bản (NPA). Một cuộc chiến cân não nghẹt thở chống lại tổ chức tội phạm trí tuệ bậc thầy thời kỳ hoàng kim kinh tế thập niên 80. Liệu những ký tự máy đánh chữ sứt mẻ và các phiên giao dịch chứng khoán ngầm có hé lộ động cơ thực sự của bóng ma thế kỷ?",
+  "intro": {
+    "title": "Quái vật 21 khuôn mặt",
+    "paragraphs": [
+      "Bạn nhận được tập hồ sơ chuyên án tuyệt mật từ Cục Cảnh sát Quốc gia Nhật Bản (NPA). Một cuộc chiến cân não nghẹt thở chống lại tổ chức tội phạm trí tuệ bậc thầy thời kỳ hoàng kim kinh tế thập niên 80.",
+      "Liệu những ký tự máy đánh chữ sứt mẻ và các phiên giao dịch chứng khoán ngầm có hé lộ động cơ thực sự của bóng ma thế kỷ?",
+      "Bạn là điều tra viên thụ lý hồ sơ. Hãy đọc kỹ các tài liệu trên bàn, đối chiếu lời khai và trả lời từng trọng điểm để mở niêm phong phần hồ sơ tiếp theo."
+    ],
+    "objective": "Lần theo dấu vết trên hộp kẹo và những bức thư đánh máy, đánh giá thiệt hại của các tập đoàn, rồi đưa ra kết luận về động cơ thật sự của nhóm tội phạm."
+  },
   "documents": [
     {
       "id": "d01",
@@ -43,7 +51,9 @@
       "type": "report",
       "title": "Kết quả giám định độc chất viện nghiên cứu khoa học cảnh sát Osaka",
       "date": "16h30 ngày 10/05/1984",
-      "content": "**KẾT QUẢ PHÂN TÍCH ĐỘC CHẤT HỌC**\n\n1. **Độc chất thu được**: Bột tinh thể màu trắng nhét trong 3 viên kẹo socola là Kali Xyanua (KCN) tinh khiết 98%.\n2. **Độc lực**: Mỗi viên kẹo chứa khoảng 0.2 gram xyanua (gấp 3 lần liều lượng gây tử vong tuyệt đối cho người trưởng thành trong vòng 2 phút do ức chế men hô hấp tế bào cytochrom oxidase).\n3. **Mục đích của việc dán nhãn cảnh báo**: Nhóm thủ phạm cố tình dán nhãn cảnh báo để người tiêu dùng không ăn phải, chứng tỏ mục tiêu của chúng không phải là thảm sát hàng loạt mà là gây hoảng loạn tâm lý tối đa để hủy hoại uy tín tập đoàn."
+      "content": "**KẾT QUẢ PHÂN TÍCH ĐỘC CHẤT HỌC**\n\n1. **Độc chất thu được**: Bột tinh thể màu trắng nhét trong 3 viên kẹo socola là Kali Xyanua (KCN) tinh khiết 98%.\n2. **Độc lực**: Mỗi viên kẹo chứa khoảng 0.2 gram xyanua (gấp 3 lần liều lượng gây tử vong tuyệt đối cho người trưởng thành trong vòng 2 phút do ức chế men hô hấp tế bào cytochrom oxidase).\n3. **Mục đích của việc dán nhãn cảnh báo**: Nhóm thủ phạm cố tình dán nhãn cảnh báo để người tiêu dùng không ăn phải, chứng tỏ mục tiêu của chúng không phải là thảm sát hàng loạt mà là gây hoảng loạn tâm lý tối đa để hủy hoại uy tín tập đoàn.",
+      "image": "images/d03-giam-dinh-doc-chat.webp",
+      "imageCaption": "Phiếu hóa nghiệm độc chất: Kali Xyanua (KCN) tinh khiết 98% trong viên kẹo socola"
     },
     {
       "id": "d04",
@@ -51,7 +61,9 @@
       "type": "report",
       "title": "Sơ đồ các địa điểm phát hiện kẹo độc tại vùng Kansai",
       "date": "17h00 ngày 10/05/1984",
-      "content": "**SƠ ĐỒ PHÂN BỐ CÁC ĐIỂM RẢI ĐỘC DƯỢC**\n\n- Đợt 1: 5 siêu thị lớn dọc tuyến đường sắt Hankyu nối Osaka và Kobe.\n- Đợt 2: Các cửa hàng bách hóa quanh ga Kyoto và Nagoya.\n- Đặc điểm chung: Tất cả các điểm rải kẹo đều nằm gần các ga tàu điện ngầm có lưu lượng khách cực lớn, tạo điều kiện cho thủ phạm nhanh chóng tẩu thoát qua hệ thống giao thông công cộng."
+      "content": "**SƠ ĐỒ PHÂN BỐ CÁC ĐIỂM RẢI ĐỘC DƯỢC**\n\n- Đợt 1: 5 siêu thị lớn dọc tuyến đường sắt Hankyu nối Osaka và Kobe.\n- Đợt 2: Các cửa hàng bách hóa quanh ga Kyoto và Nagoya.\n- Đặc điểm chung: Tất cả các điểm rải kẹo đều nằm gần các ga tàu điện ngầm có lưu lượng khách cực lớn, tạo điều kiện cho thủ phạm nhanh chóng tẩu thoát qua hệ thống giao thông công cộng.",
+      "image": "images/d04-ban-do-rai-keo.webp",
+      "imageCaption": "Sơ đồ trinh sát các địa điểm rải kẹo độc tại vùng Kansai và Tokyo"
     },
     {
       "id": "d05",
@@ -60,6 +72,7 @@
       "title": "Ảnh chụp bức thư nặc danh máy đánh chữ gửi tòa soạn báo",
       "date": "18h00 ngày 10/05/1984",
       "image": "images/d05-buc-thu.webp",
+      "imageCaption": "Ảnh tư liệu Báo Mainichi: Bức thư nặc danh máy đánh chữ có ký tự 'ka' bị mẻ khuyết góc",
       "content": "Ảnh chụp bức thư khiêu khích gửi báo Mainichi Shimbun: Gõ bằng máy đánh chữ cơ học tiếng Nhật. Ký tự 'ka' (か) có vết sứt cơ học mòn vẹt ở góc trái. Chân thư ký tên con dấu đỏ 'Quái vật 21 khuôn mặt'. Nội dung giễu cợt: 'Cảnh sát ngu ngốc các người chỉ biết đi tuần ngoài phố, làm sao bắt được ta?'."
     },
     {
@@ -101,9 +114,7 @@
       "type": "letter",
       "title": "Bức thư thứ 14 của Quái vật 21 khuôn mặt gửi Cảnh sát trưởng",
       "date": "20/09/1984",
-      "content": "**TRÍCH BỨC THƯ KHIÊU KHÍCH SỐ 14**\n\n'Gửi các viên cảnh sát ngốc nghếch!\n\nĐừng có nói dối nữa. Mọi tội ác đều bắt đầu từ một lời nói dối. Ở Nhật Bản này không ai có thể giấu nổi chúng ta điều gì đâu.\n\nCác người không thể bắt được chúng ta đâu. Tầm nhìn của các người quá hạn hẹp, cảnh sát chỉ biết chạy theo cái bóng của chính mình. Hãy để chúng ta chỉ cho các người cách phá án nhé...'\n\n(Ký tên: Quái vật 21 khuôn mặt).",
-      "image": "images/d08-phac-hoa-mat-cao.webp",
-      "imageCaption": "Bản phác họa truy nã 'Người đàn ông mắt cáo' của Cảnh sát Osaka"
+      "content": "**TRÍCH BỨC THƯ KHIÊU KHÍCH SỐ 14**\n\n'Gửi các viên cảnh sát ngốc nghếch!\n\nĐừng có nói dối nữa. Mọi tội ác đều bắt đầu từ một lời nói dối. Ở Nhật Bản này không ai có thể giấu nổi chúng ta điều gì đâu.\n\nCác người không thể bắt được chúng ta đâu. Tầm nhìn của các người quá hạn hẹp, cảnh sát chỉ biết chạy theo cái bóng của chính mình. Hãy để chúng ta chỉ cho các người cách phá án nhé...'\n\n(Ký tên: Quái vật 21 khuôn mặt)."
     },
     {
       "id": "d09",
@@ -111,6 +122,8 @@
       "type": "report",
       "title": "Ảnh phác thảo truy nã 'Người đàn ông mắt cáo'",
       "date": "25/09/1984",
+      "image": "images/d09-phac-hoa-mat-cao.webp",
+      "imageCaption": "Bản phác họa truy nã 'Người đàn ông mắt cáo' của Cảnh sát Osaka",
       "content": "**BẢN PHÁC HỌA NHẬN DẠNG NGHI PHẠM CHỦ CHỐT**\n\nCăn cứ lời khai của các nhân viên tàu điện và camera an ninh: Người đàn ông trạc 35-45 tuổi, cao khoảng 1m75, dáng người thể thao, đội mũ bóng chày màu xanh đậm, có đôi mắt xếch dài sắc lạnh đặc trưng như mắt loài cáo ('Fox-Eyed Man'), xuất hiện tại nhiều điểm hẹn giao tiền chuộc ở Kyoto và Nagoya.\n\n**LẦN ĐẦU LỘ MẶT (28/6/1984)**\n\nNhóm đòi 50 triệu yên, yêu cầu ném túi tiền ra khỏi đoàn tàu chạy về hướng Kyoto tại nơi có cắm một lá cờ trắng. Lá cờ không hề xuất hiện. Tuy vậy, viên cảnh sát chìm áp tải tiền để ý một người đàn ông vạm vỡ, tóc ngắn xoăn, mắt xếch như mắt cáo, liên tục theo dõi anh trên tàu. Tổ bám đuôi mất dấu người này khi đối tượng xuống ga."
     },
     {
@@ -119,6 +132,8 @@
       "type": "report",
       "title": "Báo cáo giám định kỹ thuật cơ học chiếc máy đánh chữ Panwriter",
       "date": "14h00 ngày 05/10/1984",
+      "image": "images/d10-giam-dinh-may-chu.webp",
+      "imageCaption": "Ảnh vi thể giám định cơ học ký tự 'ka' bị sứt mòn 0.3mm của máy đánh chữ Panwriter",
       "content": "**GIÁM ĐỊNH TÀI LIỆU CƠ HỌC**\n\n1. Tất cả 28 bức thư nặc danh gửi tới báo chí đều được gõ từ cùng **một chiếc máy đánh chữ cơ học xách tay hiệu Panwriter (sản xuất năm 1978)**.\n2. **Khuyết tật nhận dạng độc quyền**: Thanh dập ký tự 'ka' (か) bị mẻ khuyết một góc 0.3mm ở cạnh trên bên trái, tạo vết đứt đoạn mực đặc trưng không thể làm giả.\n3. Ruy-băng mực sử dụng là loại ruy-băng vải đen rẻ tiền bán đại trà tại các nhà sách vùng Kansai."
     },
     {
@@ -128,6 +143,7 @@
       "title": "Ảnh chụp vi thể mép dán keo nhiệt polyurethane trên hộp kẹo",
       "date": "15h30 ngày 05/10/1984",
       "image": "images/d11-hop-keo.webp",
+      "imageCaption": "Ảnh vi thể kính hiển vi quét: Vết keo dán nhiệt Polyurethane PUR-82 trên mép hộp kẹo",
       "content": "Ảnh chụp hộp kẹo socola dán nhãn độc và kết quả kính hiển vi quét: Lớp keo dán nhiệt ở mép hộp là hợp chất keo công nghiệp Polyurethane mã hiệu PUR-82. Loại keo này đòi hỏi súng phun nhiệt nhiệt độ trên 140°C để dán phẳng phiu như mới xuất xưởng."
     },
     {
@@ -144,6 +160,8 @@
       "type": "report",
       "title": "Bản phân tích quang phổ âm thanh băng ghi âm chỉ dẫn giao tiền",
       "date": "17h00 ngày 05/10/1984",
+      "image": "images/d13-quang-pho-am-thanh.webp",
+      "imageCaption": "Biểu đồ quang phổ tần số âm thanh (Sonogram) băng ghi âm giọng trẻ con tống tiền",
       "content": "**PHÂN TÍCH ÂM HỌC TỔNG ĐÀI ĐIỆN THOẠI**\n\nCuộn băng cassette tống tiền gửi tập đoàn Morinaga ghi lại giọng một đứa trẻ khoảng 8-10 tuổi đọc từng câu chữ theo một kịch bản viết sẵn. Giọng đọc có ngữ điệu phương ngữ vùng Kyoto - Shiga rất đặc trưng."
     },
     {
@@ -152,6 +170,8 @@
       "type": "report",
       "title": "Báo cáo cuộc phục kích bắt hụt người đàn ông mắt cáo trên tàu Shinkansen",
       "date": "15/11/1984",
+      "image": "images/d14-phuc-kich-shinkansen.webp",
+      "imageCaption": "Sơ đồ phục kích toa số 7 tàu Shinkansen Hikari và trích xuất camera ga Kyoto",
       "content": "**CUỘC CHẠY TRỐN NGHẸT THỞ TRÊN TÀU CAO TỐC**\n\nĐêm 14/11, cảnh sát mật cải trang trên chuyến tàu đêm Shinkansen từ Tokyo về Kyoto đã phát hiện một người đàn ông có nhân dạng mắt cáo ngồi khoang số 7. Khi tàu dừng bánh tại ga Kyoto, đối tượng đã nhanh chóng lẩn vào đám đông hành khách và biến mất sau cầu vượt nhà ga trước khi lực lượng vây bắt kịp áp sát.\n\n**KẸO MORINAGA (THÁNG 10/1984)**\n\nMột tháng trước cuộc phục kích, nhóm báo cho báo chí rằng 21 gói kẹo Morinaga đã bị tẩm natri xyanua. Cảnh sát thu hồi đủ 21 gói trước khi có người ăn phải. Gói nào cũng dán dòng chữ cảnh báo có chất độc.\n\n**ĐIỂM GIAO TIỀN TRÊN CAO TỐC MEISHIN**\n\nCùng đợt này, nhóm đòi 100 triệu yên, yêu cầu thả vào một chiếc thùng buộc vải trắng bên đường cao tốc Meishin, đoạn qua khu vực Otsu (tỉnh Shiga). Lực lượng mai phục tìm thấy mảnh vải trắng nhưng không thấy chiếc thùng. Người đàn ông mắt cáo lại bị phát hiện quanh khu vực rồi một lần nữa biến mất."
     },
     {
@@ -186,6 +206,8 @@
       "type": "letter",
       "title": "Bức thư tuyên bố kết thúc chiến dịch của Quái vật 21 khuôn mặt",
       "date": "12/08/1985",
+      "image": "images/d18-thu-dinh-chien.webp",
+      "imageCaption": "Bản scan bức thư tuyên bố đình chiến kết thúc chiến dịch của Quái vật 21 khuôn mặt",
       "content": "**LỜI TUYÊN BỐ BIẾN MẤT CỦA BÓNG MA THẾ KỶ**\n\n'Yamamoto của cảnh sát Shiga đã chết. Thật là một cái chết của một người đàn ông dũng cảm! Chúng ta xin gửi lời chia buồn chân thành.\n\nChúng ta quyết định buông tha các công ty thực phẩm. Kể từ nay, nếu có ai đầu độc bánh kẹo nữa, đó không phải là chúng ta. Nghề tội phạm của chúng ta thế là đủ rồi. Chúng ta là những kẻ xấu, điều đó có nghĩa chúng ta có nhiều việc phải làm hơn là bắt nạt các công ty kẹo.\n\nThật vui khi được sống một cuộc đời như những kẻ bất hảo!\n\nQuái vật với 21 khuôn mặt - Kính chào tạm biệt!'\n\n(Đoạn tiếp theo của bức thư)\n\n'Chúng ta chẳng có bạn bè hay hang ổ nào ở Shiga cả. Kẻ đáng phải chết là Yoshino hoặc Shikata. Một năm năm tháng qua bọn họ đã làm được gì? Có nhiều kẻ ngốc muốn bắt chước chúng ta. Từ nay ai tống tiền công ty thực phẩm thì đó chỉ là đồ bắt chước. Làm kẻ xấu vui lắm.'\n\nSau lá thư này, nhóm hoàn toàn im lặng."
     },
     {

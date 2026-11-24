@@ -16,7 +16,15 @@
   ],
   "cover": "images/cover.webp",
   "synopsis": "Đúng trưa ngày rằm tháng Bảy năm 2005 (Lễ Vu Lan), khi cả gia tộc họ Lương đang tề tựu tại chùa Cầu hành lễ, bức tranh lụa cổ 'Thập mục ngưu đồ' dát chỉ vàng hơn 200 năm tuổi treo trong từ đường bỗng không cánh mà bay. Không có dấu vết cạy phá cửa, nhưng bậc đá giếng cổ Bá Lễ phía sau nhà lại in vệt bùn vàng và một sợi cước đen lạ kỳ.",
-  "intro": "Đội Cảnh sát Điều tra Công an thị xã Hội An nhận nhiệm vụ phá án trước khi bức tranh gia bảo bị tuồn ra nước ngoài. Một nghi phạm chìa ra bức ảnh chụp chính mình đang ngồi ăn cơm gà lúc 12h15 trưa với chiếc đồng hồ treo tường rõ mồn một. Nhưng liệu góc bóng nắng của vùng đất di sản có chấp nhận lời khai ấy?",
+  "intro": {
+    "title": "Bóng nắng giếng Bá Lễ",
+    "paragraphs": [
+      "Đội Cảnh sát Điều tra Công an thị xã Hội An nhận nhiệm vụ phá án trước khi bức tranh gia bảo bị tuồn ra nước ngoài. Một nghi phạm chìa ra bức ảnh chụp chính mình đang ngồi ăn cơm gà lúc 12h15 trưa với chiếc đồng hồ treo tường rõ mồn một.",
+      "Nhưng liệu góc bóng nắng của vùng đất di sản có chấp nhận lời khai ấy?",
+      "Bạn là điều tra viên thụ lý hồ sơ. Hãy đọc kỹ các tài liệu trên bàn, đối chiếu lời khai và trả lời từng trọng điểm để mở niêm phong phần hồ sơ tiếp theo."
+    ],
+    "objective": "Tìm ra kẻ gian đã vào và rời từ đường bằng lối nào, kiểm chứng tấm ảnh ngoại phạm lúc 12h15, và chỉ ra ai đã lấy bức tranh lụa."
+  },
   "documents": [
     {
       "id": "d01",

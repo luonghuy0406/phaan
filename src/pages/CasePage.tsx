@@ -59,8 +59,13 @@ export default function CasePage() {
               <>
                 <div className="case-hero__cover"><Cover entry={c} /></div>
                 <div>
-                  <p className="eyebrow">{caseNo(c)} · {KIND_LABEL[caseKind(c)]} · {open ? 'Đang mở' : 'Sắp ra mắt'}</p>
+                  <p className="eyebrow">{caseNo(c)} · {KIND_LABEL[caseKind(c)]} · {open ? (c.draft ? 'Chưa hoàn thiện' : 'Đang mở') : 'Sắp ra mắt'}</p>
                   <h1>{c.title}</h1>
+                  {c.draft && (
+                    <p className="draft-notice">
+                      <b>Chưa hoàn thiện.</b> Hồ sơ đã chơi được trọn vẹn, nhưng hình ảnh tư liệu vẫn đang được bổ sung: một số tài liệu tạm hiện khung ảnh trống.
+                    </p>
+                  )}
                   {caseKind(c) === 'true-crime' && (
                     <p className="kind-notice">
                       <b>Dựa trên vụ án có thật.</b> Hồ sơ tái hiện từ thông tin công khai; một số chi tiết được lược bớt hoặc dựng lại để chơi được.

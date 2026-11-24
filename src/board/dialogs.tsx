@@ -46,13 +46,20 @@ export function Dialogs() {
 function Intro({ onClose }: { onClose: () => void }) {
   const { c } = useBoard();
   const seen = useBoardState((s) => s.seenIntro);
-  const intro = c.intro || {};
+  // intro may be written as an object, a plain string, or be missing (then fall back to the synopsis)
+  const raw = c.intro as unknown;
+  const intro = typeof raw === 'string'
+    ? { title: undefined, paragraphs: raw.split(/\n\s*\n/).filter(Boolean), objective: undefined }
+    : (c.intro || {});
+  const paras = intro.paragraphs?.length ? intro.paragraphs
+    : Array.isArray(c.synopsis) ? c.synopsis : typeof c.synopsis === 'string' ? [c.synopsis as string] : [];
+  const objective = intro.objective || 'Đọc kỹ tài liệu, đối chiếu lời khai và trả lời từng trọng điểm để tìm ra sự thật.';
   return (
     <>
       <p className="eyebrow">{caseNo(c)}</p>
       <h2><Txt>{intro.title || c.title}</Txt></h2>
-      <div className="dlg__text"><Paras list={intro.paragraphs} /></div>
-      {intro.objective && <p className="dlg__objective"><span>Nhiệm vụ</span><Txt>{intro.objective}</Txt></p>}
+      <div className="dlg__text"><Paras list={paras} /></div>
+      <p className="dlg__objective"><span>Nhiệm vụ</span><Txt>{objective}</Txt></p>
       <ul className="guide">
         <li><b>Di chuyển</b>Kéo nền để di chuyển bàn, kéo tài liệu để sắp xếp, chụm hai ngón để phóng to.</li>
         <li><b>Chạm vào đoạn văn</b>để tô dạ quang, trích vào sổ tay, nối dây đỏ, ghim bằng chứng hoặc chọn dòng khai.</li>

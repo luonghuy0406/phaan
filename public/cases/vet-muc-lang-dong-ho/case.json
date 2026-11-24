@@ -16,7 +16,15 @@
   ],
   "cover": "images/cover.webp",
   "synopsis": "Đêm 28 tháng Chạp năm Canh Thìn (2000), trong khi cả làng Đông Hồ đang rộn rã đón Tết, xưởng tranh của nghệ nhân lão thành Nguyễn Đăng Thao bị kẻ gian đột nhập. Bản khắc gỗ thị cổ hơn 150 năm vẽ bức 'Đám cưới chuột' gia truyền bị đập gãy đôi ngay trước đợt in tranh phục vụ hội xuân Kinh Bắc. Dấu vết kẻ thủ ác để lại là giọt phẩm điệp đỏ son và vệt bùn phù sa ven đê sông Đuống.",
-  "intro": "Công an xã Song Hồ phối hợp người dân khám nghiệm xưởng tranh cổ truyền. Kẻ gian không lấy đi một đồng tiền hay tài sản nào, chỉ nhắm vào độc bản khuôn gỗ truyền đời của gia đình. Một nghi phạm chìa ra lời khai xem chiếu bóng cả buổi tối ở sân đình, nhưng liệu màu phẩm đỏ son gia truyền có để kẻ phá hoại dễ dàng chối cãi?",
+  "intro": {
+    "title": "Vết mực làng Đông Hồ",
+    "paragraphs": [
+      "Công an xã Song Hồ phối hợp người dân khám nghiệm xưởng tranh cổ truyền. Kẻ gian không lấy đi một đồng tiền hay tài sản nào, chỉ nhắm vào độc bản khuôn gỗ truyền đời của gia đình.",
+      "Một nghi phạm chìa ra lời khai xem chiếu bóng cả buổi tối ở sân đình, nhưng liệu màu phẩm đỏ son gia truyền có để kẻ phá hoại dễ dàng chối cãi?",
+      "Bạn là điều tra viên thụ lý hồ sơ. Hãy đọc kỹ các tài liệu trên bàn, đối chiếu lời khai và trả lời từng trọng điểm để mở niêm phong phần hồ sơ tiếp theo."
+    ],
+    "objective": "Xem xét bản khắc bị phá hoại và vết phẩm son, kiểm chứng lời khai xem chiếu bóng ở sân đình, và chỉ ra kẻ phá hoại."
+  },
   "documents": [
     {
       "id": "d01",

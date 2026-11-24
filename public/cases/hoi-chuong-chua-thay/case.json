@@ -16,7 +16,15 @@
   ],
   "cover": "images/cover.webp",
   "synopsis": "Đúng 12h00 trưa ngày mùng một tháng Tư năm 2004, tiếng đại hồng chung trên gác chuông chùa Cổ Sơn ngân vang 3 nhịp u minh thanh thoát báo hiệu giờ ngọ. Nhưng khi tăng chúng lên am thiền thỉnh sư trụ trì Thích Tâm Viên dùng cơm chay, cửa tịnh thất bị khóa chốt từ bên trong và vị cao tăng đã viên tịch tự bao giờ bên án thư. Ai đã thỉnh hồi chuông ngọ giữa thanh thiên bạch nhật?",
-  "intro": "Đội Điều tra Trọng án Công an tỉnh Hà Tây vượt hàng trăm bậc đá lên đỉnh núi Sài Sơn phong tỏa hiện trường. Kết quả khám nghiệm pháp y xác định nạn nhân bị siết cổ chết từ trước giờ ngọ gần hai tiếng đồng hồ. Tiếng chuông vang lên đúng 12h00 trưa thực chất là một mắt xích cơ học ma quái nhằm tạo ra bằng chứng ngoại phạm hoàn hảo cho kẻ thủ ác.",
+  "intro": {
+    "title": "Hồi chuông núi Sài Sơn",
+    "paragraphs": [
+      "Đội Điều tra Trọng án Công an tỉnh Hà Tây vượt hàng trăm bậc đá lên đỉnh núi Sài Sơn phong tỏa hiện trường. Kết quả khám nghiệm pháp y xác định nạn nhân bị siết cổ chết từ trước giờ ngọ gần hai tiếng đồng hồ.",
+      "Tiếng chuông vang lên đúng 12h00 trưa thực chất là một mắt xích cơ học ma quái nhằm tạo ra bằng chứng ngoại phạm hoàn hảo cho kẻ thủ ác.",
+      "Bạn là điều tra viên thụ lý hồ sơ. Hãy đọc kỹ các tài liệu trên bàn, đối chiếu lời khai và trả lời từng trọng điểm để mở niêm phong phần hồ sơ tiếp theo."
+    ],
+    "objective": "Xác định giờ chết thật của sư trụ trì, giải thích tiếng chuông vang lúc giữa trưa, và chỉ ra kẻ sát hại."
+  },
   "documents": [
     {
       "id": "d01",

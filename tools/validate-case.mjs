@@ -37,6 +37,14 @@ function validate(id) {
     if (!existsSync(p)) err(`${where}: không tìm thấy file ${src}`);
     else if (statSync(p).size > 600 * 1024) warn(`${where}: ${src} nặng ${(statSync(p).size / 1024).toFixed(0)} KB (nên < 400 KB)`);
   };
+  // the intro popup opens on first entry: it needs the setting and the player's task
+  if (c.intro != null) {
+    if (typeof c.intro !== 'object' || Array.isArray(c.intro)) err('"intro" phải là { title, paragraphs[], objective } (popup giới thiệu khi vào bàn)');
+    else {
+      if (!Array.isArray(c.intro.paragraphs) || !c.intro.paragraphs.length) err('"intro.paragraphs" cần ít nhất 1 đoạn bối cảnh');
+      if (!c.intro.objective) warn('"intro.objective" nên có một câu nêu nhiệm vụ của người chơi');
+    }
+  }
   if (c.cover !== undefined) imageRef('cover', c.cover);
 
   const docs = Array.isArray(c.documents) ? c.documents : [];
