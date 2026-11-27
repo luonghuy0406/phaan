@@ -21,7 +21,9 @@ export interface UiState {
   indexOpen: boolean;
   menu: { target: MenuTarget; x: number; y: number } | null;
   pendingString: End | null;
-  dialog: 'intro' | 'finale' | 'settings' | null;
+  dialog: 'intro' | 'finale' | 'settings' | 'beat' | 'suspects' | null;
+  /** stage whose opening scene the 'beat' dialog shows */
+  beatStage: number | null;
   tourStep: number | null;
   layoutVersion: number;
   penSeen: boolean;
@@ -54,6 +56,7 @@ export const useUi = create<UiState>((set, get) => ({
   menu: null,
   pendingString: null,
   dialog: null,
+  beatStage: null,
   tourStep: null,
   layoutVersion: 0,
   penSeen: false,
@@ -74,5 +77,5 @@ export const useUi = create<UiState>((set, get) => ({
 }));
 
 export const resetUi = () => useUi.setState({
-  tool: 'move', palette: false, panel: null, indexOpen: false, menu: null, pendingString: null, dialog: null, tourStep: null, toast: null,
+  tool: 'move', palette: false, panel: null, indexOpen: false, menu: null, pendingString: null, dialog: null, beatStage: null, tourStep: null, toast: null,
 });

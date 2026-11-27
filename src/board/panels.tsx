@@ -2,6 +2,7 @@ import { useEffect, useLayoutEffect, useRef, useState } from 'react';
 import { useShallow } from 'zustand/react/shallow';
 import { useBoard, useBoardState } from './context';
 import { useUi } from './ui';
+import { SuspectCard } from './suspects';
 import { Icon } from './icons';
 import { allSolved, currentQ, evidenceNeed, isSolved, stageOpen, type Entry } from './store';
 import { Txt, Paras } from '../lib/text';
@@ -113,7 +114,10 @@ function SolvedQ({ q, head }: { q: Question; head: React.ReactNode }) {
       {!!q.explanation?.length && (
         <details className="q__explain">
           <summary>Lời giải</summary>
-          {q.explanation.map((e, i) => <div key={i}><h4><Txt>{e.title}</Txt></h4><Paras list={e.body} /></div>)}
+          {/* older cases write each point as a plain string */}
+          {q.explanation.map((e, i) => (typeof e === 'string'
+            ? <div key={i}><Paras list={[e]} /></div>
+            : <div key={i}>{e.title && <h4><Txt>{e.title}</Txt></h4>}<Paras list={e.body || []} /></div>))}
         </details>
       )}
     </article>
@@ -162,7 +166,7 @@ function CurrentQ({ q, head, innerRef }: { q: Question; head: React.ReactNode; i
     if (r?.status === 'correct') {
       showToast('Chính xác!');
       const s = store.getState();
-      if (allSolved(c, s)) setTimeout(() => set({ dialog: 'finale' }), 900);
+      if (allSolved(c, s)) setTimeout(() => { if (useUi.getState().dialog !== 'finale') set({ dialog: 'finale' }); }, 900);
     }
   };
 
@@ -216,7 +220,20 @@ function CurrentQ({ q, head, innerRef }: { q: Question; head: React.ReactNode; i
   } else if (!isReveal) {
     const multi = Boolean(q.multiple);
     const toggle = (i: number) => api.setPick(q.id, multi ? (qs.pick.includes(i) ? qs.pick.filter((x) => x !== i) : [...qs.pick, i]) : [i]);
-    form = (
+    const people = q.cards?.map((id) => c.suspects?.find((p) => p.id === id));
+    form = people && people.every(Boolean) ? (
+      <>
+        <div className="sus-pick" role={multi ? 'group' : 'radiogroup'}>
+          {people.map((p, i) => (
+            <label key={i} className="sus-pick__opt">
+              <input type={multi ? 'checkbox' : 'radio'} name={`opt-${q.id}`} checked={qs.pick.includes(i)} onChange={() => toggle(i)} aria-label={q.options?.[i] || p!.name} />
+              <SuspectCard p={p!} picked={qs.pick.includes(i)} />
+            </label>
+          ))}
+        </div>
+        {multi && <p className="q__tip">Có thể chọn nhiều người.</p>}
+      </>
+    ) : (
       <>
         <div className="opts" role={multi ? 'group' : 'radiogroup'}>
           {(q.options || []).map((o, i) => (

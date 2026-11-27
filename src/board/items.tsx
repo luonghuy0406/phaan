@@ -9,7 +9,7 @@ import { strokePath, type Stroke } from './ink';
 import { useUi } from './ui';
 import { localToWorld } from './geometry';
 import { Icon } from './icons';
-import { useTts, speak, stop, extractDocText } from '../lib/tts';
+import { useTts, speakDoc, stop } from '../lib/tts';
 
 /* ── ink ── */
 const InkPath = memo(function InkPath({ s }: { s: Stroke }) {
@@ -115,7 +115,7 @@ export const DocItem = memo(function DocItem({ doc }: { doc: CaseDoc }) {
               title={isSpeaking ? 'Dừng đọc' : 'Đọc tài liệu'}
               onClick={() => {
                 if (isSpeaking) stop();
-                else void speak(`doc:${id}`, extractDocText(doc));
+                else void speakDoc(c.id, doc);
               }}
             >
               <Icon name={isSpeaking ? 'pause' : 'speaker'} />

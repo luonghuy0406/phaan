@@ -1,11 +1,13 @@
 // Shape of public/cases/<id>/case.json. See docs/case-schema.md.
 
-export type DocType = 'newspaper' | 'report' | 'testimony' | 'photo' | 'letter' | 'receipt' | 'evidence' | 'note' | 'scan';
+export type DocType = 'newspaper' | 'report' | 'testimony' | 'photo' | 'letter' | 'receipt' | 'evidence' | 'note' | 'scan' | 'people';
 
 export interface Field { label: string; value: string }
 
 export interface CaseDoc {
   id: string;
+  /** type "people": filled from the case's victim + suspects when the case loads */
+  persons?: (CasePerson & { victim?: boolean })[];
   stage?: number;
   no?: number;
   type: DocType;
@@ -67,7 +69,10 @@ export interface Question {
   wrong?: string;
   incomplete?: string;
   submit?: string;
-  explanation?: { title: string; body: string[] }[];
+  /** each point is { title, body[] }; a plain string is accepted too */
+  explanation?: ({ title: string; body: string[] } | string)[];
+  /** choice shown as suspect ID cards: suspect id for each option, same order as `options` */
+  cards?: string[];
 }
 
 export interface CaseSummary {
@@ -103,7 +108,18 @@ export interface CaseData extends CaseSummary {
   finale?: { title?: string; paragraphs?: string[] };
   epilogue?: { title: string; text: string }[];
   tour?: { title: string; text: string }[];
+  /** short scene shown when a round opens (stage ≥ 2), with an optional narration clip */
+  beats?: CaseBeat[];
+  /** case audio, paths relative to the case folder: looped ambience and narration for intro / finale */
+  audio?: { ambient?: string; intro?: string; finale?: string };
+  /** people of the case shown as ID cards (intro, "Nghi phạm" dialog, card questions) */
+  suspects?: CasePerson[];
+  victim?: CasePerson;
 }
+
+export interface CasePerson { id: string; name: string; alias?: string; age?: number; role?: string; image?: string; suspicion?: string; note?: string }
+
+export interface CaseBeat { stage: number; kicker?: string; title?: string; paragraphs: string[]; voice?: string }
 
 export type CheckStatus = 'correct' | 'near' | 'wrong' | 'incomplete';
 export interface CheckResult { status: CheckStatus; message: string }

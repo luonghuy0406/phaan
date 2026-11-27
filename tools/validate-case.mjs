@@ -7,7 +7,7 @@ import { fileURLToPath } from 'node:url';
 import { check, normalizeLine } from '../src/lib/checks.js';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
-const TYPES = ['newspaper', 'report', 'testimony', 'photo', 'letter', 'receipt', 'evidence', 'note', 'scan'];
+const TYPES = ['newspaper', 'report', 'testimony', 'photo', 'letter', 'receipt', 'evidence', 'note', 'scan', 'people'];
 const QTYPES = ['evidence', 'line', 'choice'];
 const ID = /^[a-z0-9-]{1,60}$/;
 const DOC_ID = /^[a-z0-9-]{1,40}$/;
@@ -77,7 +77,8 @@ function validate(id) {
     }
     // something the player can actually read on the paper
     const hasBody = (typeof d.content === 'string' && d.content.trim()) || d.paragraphs?.length || d.lines?.length
-      || d.sections?.length || d.fields?.length || d.items?.length || d.caption || d.imageCaption || d.image || d.headline || d.deck;
+      || d.sections?.length || d.fields?.length || d.items?.length || d.caption || d.imageCaption || d.image || d.headline || d.deck
+      || (d.type === 'people' && (c.suspects?.length || c.victim));
     if (!hasBody) err(`${w}: tài liệu không có nội dung hiển thị (cần "content", "paragraphs", "lines", "sections"… xem docs/case-schema.md)`);
     if (d.content !== undefined && typeof d.content !== 'string') err(`${w}: "content" phải là chuỗi`);
     if (['photo', 'scan'].includes(d.type) || d.image !== undefined) imageRef(`${w}.image`, d.image);
@@ -157,6 +158,67 @@ function validate(id) {
     else for (const k of ['title', 'status', 'no']) if (entry[k] !== c[k]) warn(`index.json: "${k}" khác case.json (${JSON.stringify(entry[k])} ≠ ${JSON.stringify(c[k])})`);
   } catch { err('cases/index.json lỗi'); }
 
+  // audio: ambience / narration clips must exist; beats open at a real round
+  const audioRef = (where, src) => {
+    if (typeof src !== 'string' || src.startsWith('/') || src.includes('..')) { err(`${where}: đường dẫn âm thanh phải là tương đối, ví dụ "audio/intro.mp3"`); return; }
+    if (!/\.mp3$/i.test(src)) warn(`${where}: nên dùng .mp3 (Safari trên iPad đọc ổn định nhất)`);
+    const p = join(dir, src);
+    if (!existsSync(p)) err(`${where}: không tìm thấy file ${src} (chạy npm run gen-voice -- ${id})`);
+    else if (statSync(p).size > 2.5 * 1024 * 1024) warn(`${where}: ${src} nặng ${(statSync(p).size / 1048576).toFixed(1)} MB`);
+  };
+  if (c.audio != null) {
+    if (typeof c.audio !== 'object' || Array.isArray(c.audio)) err('"audio" phải là { ambient?, intro?, finale? }');
+    else for (const k of Object.keys(c.audio)) {
+      if (!['ambient', 'intro', 'finale'].includes(k)) warn(`audio.${k}: trường không dùng tới`);
+      else audioRef(`audio.${k}`, c.audio[k]);
+    }
+  }
+  if (c.beats != null) {
+    if (!Array.isArray(c.beats)) err('"beats" phải là mảng');
+    else {
+      const seenBeat = new Set();
+      c.beats.forEach((b, i) => {
+        const w = `beats[${i}]`;
+        if (!Number.isInteger(b?.stage) || b.stage < 2 || !stages.includes(b.stage)) err(`${w}: "stage" phải là một trọng điểm có thật, từ 2 trở đi (đoạn chuyển cảnh hiện khi trọng điểm đó mở)`);
+        if (seenBeat.has(b?.stage)) err(`${w}: trùng trọng điểm ${b.stage}`);
+        seenBeat.add(b?.stage);
+        if (!Array.isArray(b?.paragraphs) || !b.paragraphs.length) err(`${w}: cần "paragraphs"`);
+        if (b?.voice !== undefined) audioRef(`${w}.voice`, b.voice);
+        if (/<[a-z/][^>]*>/i.test(JSON.stringify(b || {}))) err(`${w}: không được dùng thẻ HTML`);
+      });
+    }
+  }
+  // suspects shown as ID cards
+  const people = new Set();
+  for (const [i, sp] of [...(c.suspects || []), ...(c.victim ? [c.victim] : [])].entries()) {
+    const w = `suspects[${i}]${sp?.id ? ` (${sp.id})` : ''}`;
+    if (!sp?.id || !sp.name) err(`${w}: cần "id" và "name"`);
+    if (people.has(sp?.id)) err(`${w}: trùng id`);
+    people.add(sp?.id);
+    if (sp?.image !== undefined) imageRef(`${w}.image`, sp.image);
+  }
+  qs.forEach((q, i) => {
+    if (q?.cards === undefined) return;
+    const w = `questions[${i}] (${q.id})`;
+    if (q.type !== 'choice') err(`${w}: "cards" chỉ dùng cho câu "choice"`);
+    if (!Array.isArray(q.cards) || q.cards.length !== (q.options || []).length) err(`${w}: "cards" phải có đúng một người cho mỗi phương án`);
+    else q.cards.forEach((id) => { if (!(c.suspects || []).some((s) => s.id === id)) err(`${w}: "${id}" không có trong "suspects"`); });
+  });
+
+  // pre-recorded document reading (tools/gen-doc-voice.mjs): every listed block must have its file
+  const readIdx = join(dir, 'audio', 'read', 'index.json');
+  if (existsSync(readIdx)) {
+    try {
+      const ri = JSON.parse(readFileSync(readIdx, 'utf8'));
+      let missing = 0;
+      for (const [docId, list] of Object.entries(ri.docs || {})) {
+        if (!docIds.has(docId)) { warn(`audio/read: tài liệu "${docId}" không còn trong hồ sơ (chạy lại npm run gen-doc-voice -- ${id})`); continue; }
+        for (const e of list) if (!existsSync(join(dir, 'audio', 'read', docId, `${e.k}.mp3`))) missing += 1;
+      }
+      if (missing) err(`audio/read: thiếu ${missing} file giọng đọc tài liệu (chạy npm run gen-doc-voice -- ${id})`);
+    } catch (e) { err(`audio/read/index.json lỗi: ${e.message}`); }
+  }
+
   // the finale dialog shows finale.paragraphs (finale.text is accepted too)
   if (c.finale && !(Array.isArray(c.finale.paragraphs) && c.finale.paragraphs.length) && !c.finale.text && typeof c.finale !== 'string') warn('"finale" không có nội dung (cần paragraphs[]): màn kết thúc sẽ trống');
 
@@ -197,7 +259,7 @@ function validate(id) {
   }
 
   // images in the case folder that nothing points to: they still ship to the website
-  const used = new Set([c.cover, ...docs.flatMap((d) => [d && d.image, d && d.imageHi, d && d.file])].filter((x) => typeof x === 'string'));
+  const used = new Set([c.cover, c.victim?.image, ...(c.suspects || []).map((p) => p?.image), ...docs.flatMap((d) => [d && d.image, d && d.imageHi, d && d.file])].filter((x) => typeof x === 'string'));
   const walk = (rel) => readdirSync(join(dir, rel), { withFileTypes: true }).flatMap((e) => (e.isDirectory() ? walk(`${rel}/${e.name}`) : [`${rel}/${e.name}`]));
   if (existsSync(join(dir, 'images'))) {
     for (const f of walk('images')) if (!used.has(f) && !f.endsWith('.DS_Store')) warn(`${f}: không tài liệu nào dùng ảnh này (vẫn bị đưa lên web, ${(statSync(join(dir, f)).size / 1024).toFixed(0)} KB)`);

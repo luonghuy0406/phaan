@@ -10,7 +10,9 @@
     "test": "vitest run",
     "validate": "node tools/validate-case.mjs --all",
     "sync-cases": "node tools/sync-cases.mjs",
-    "tts-server": "python3 tools/supertonic-server.py"
+    "tts-server": "python3 tools/supertonic-server.py",
+    "gen-voice": "node tools/gen-voice.mjs",
+    "gen-doc-voice": "node tools/gen-doc-voice.mjs"
   },
   "dependencies": {
     "@gsap/react": "^2.1.2",

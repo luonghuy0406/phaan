@@ -9,6 +9,10 @@ import { useNavigate } from 'react-router-dom';
 import { leaveRoom } from '../multiplayer/room';
 import { ttsEngine, isDeviceVoiceCached, removeDeviceVoice, MODEL_MB } from '../lib/tts';
 import { Txt, Paras } from '../lib/text';
+import { useAudio, playVoice, stopVoice } from '../lib/sfx';
+import { caseBase } from '../lib/data';
+import { Icon } from './icons';
+import { SuspectGallery } from './suspects';
 
 function Modal({ open, onClose, className = '', children }: { open: boolean; onClose: () => void; className?: string; children: ReactNode }) {
   const ref = useRef<HTMLDialogElement>(null);
@@ -30,6 +34,7 @@ export function Dialogs() {
   const set = useUi((s) => s.set);
   const { store } = useBoard();
   const close = () => {
+    stopVoice();
     const first = dialog === 'intro' && !store.getState().seenIntro;
     if (dialog === 'intro') store.getState().setSeenIntro();
     set({ dialog: null, ...(first ? { tourStep: 0 } : {}) }); // first visit: walk through the board
@@ -39,6 +44,8 @@ export function Dialogs() {
       <Modal open={dialog === 'intro'} onClose={close}><Intro onClose={close} /></Modal>
       <Modal open={dialog === 'finale'} onClose={close} className="dlg--finale"><Finale onClose={close} /></Modal>
       <Modal open={dialog === 'settings'} onClose={close}><Settings onClose={close} /></Modal>
+      <Modal open={dialog === 'beat'} onClose={close} className="dlg--beat"><Beat onClose={close} /></Modal>
+      <Modal open={dialog === 'suspects'} onClose={close} className="dlg--wide"><Suspects onClose={close} /></Modal>
     </>
   );
 }
@@ -58,6 +65,7 @@ function Intro({ onClose }: { onClose: () => void }) {
     <>
       <p className="eyebrow">{caseNo(c)}</p>
       <h2><Txt>{intro.title || c.title}</Txt></h2>
+      {c.audio?.intro && <VoiceButton src={caseBase(c.id) + c.audio.intro} label="Nghe lời dẫn" />}
       <div className="dlg__text"><Paras list={paras} /></div>
       <p className="dlg__objective"><span>Nhiệm vụ</span><Txt>{objective}</Txt></p>
       <ul className="guide">
@@ -95,6 +103,7 @@ function Finale({ onClose }: { onClose: () => void }) {
       <span className="stamp dlg__stamp">Đã phá án</span>
       <p className="eyebrow">{caseNo(c)} · Hồ sơ khép lại</p>
       <h2><Txt>{fin.title || 'Sự thật đã sáng tỏ'}</Txt></h2>
+      {c.audio?.finale && <VoiceButton src={caseBase(c.id) + c.audio.finale} label="Nghe kết thúc" />}
       <div className="dlg__text"><Paras list={fin.paragraphs} /></div>
       {!!c.epilogue?.length && (
         <div className="epilogue">
@@ -138,6 +147,7 @@ function Settings({ onClose }: { onClose: () => void }) {
           {penSeen ? ' Đã nhận Apple Pencil trên thiết bị này.' : ''}
         </span>
       </label>
+      <AudioSetting />
       <VoiceSetting />
       <div className="setting">
         <span>
@@ -215,5 +225,71 @@ function VoiceSetting() {
         )}
       </span>
     </div>
+  );
+}
+
+/* ── narration: pre-generated clips (tools/gen-voice.mjs) ── */
+function VoiceButton({ src, label, auto = false }: { src: string; label: string; auto?: boolean }) {
+  const playing = useAudio((s) => s.voice === src);
+  useEffect(() => {
+    if (auto) void playVoice(src);
+    return () => { if (useAudio.getState().voice === src) stopVoice(); };
+  }, [src, auto]);
+  return (
+    <button type="button" className={`voice-btn${playing ? ' is-on' : ''}`} onClick={() => (playing ? stopVoice() : void playVoice(src))} aria-pressed={playing}>
+      <Icon name="speaker" />
+      <span>{playing ? 'Dừng đọc' : label}</span>
+      {playing && <i className="voice-btn__wave" aria-hidden="true"><b /><b /><b /></i>}
+    </button>
+  );
+}
+
+/* ── the scene that opens a new round ── */
+function Beat({ onClose }: { onClose: () => void }) {
+  const { c } = useBoard();
+  const stage = useUi((s) => s.beatStage);
+  const effects = useAudio((s) => s.effects);
+  const beat = c.beats?.find((b) => b.stage === stage);
+  if (!beat) return null;
+  return (
+    <>
+      <p className="eyebrow">Trọng điểm {beat.stage}{beat.kicker ? ` · ${beat.kicker}` : ''}</p>
+      <h2><Txt>{beat.title || 'Hồ sơ mở rộng'}</Txt></h2>
+      {/* the round was opened by a tap on "Kết luận", so the clip may start on its own when sound is on */}
+      {beat.voice && <VoiceButton src={caseBase(c.id) + beat.voice} label="Nghe lời dẫn" auto={effects} />}
+      <div className="dlg__text dlg__text--beat"><Paras list={beat.paragraphs} /></div>
+      <div className="dlg__actions"><button type="button" className="btn btn--primary" onClick={onClose}>Mở hồ sơ mới</button></div>
+    </>
+  );
+}
+
+function AudioSetting() {
+  const { c } = useBoard();
+  const { effects, ambient, volume, setPrefs } = useAudio();
+  return (
+    <div className="setting setting--audio">
+      <span>
+        <b>Âm thanh</b>
+        Tiếng giấy, con dấu, gợi ý{c.audio?.ambient ? ' và tiếng nền của hồ sơ' : ''}. Lời dẫn chuyện nghe bằng nút loa ở màn mở đầu, đầu mỗi trọng điểm và màn kết thúc.
+        <span className="setting__row">
+          <label><input type="checkbox" checked={effects} onChange={(e) => setPrefs({ effects: e.target.checked })} /> Hiệu ứng</label>
+          {c.audio?.ambient && <label><input type="checkbox" checked={ambient} onChange={(e) => setPrefs({ ambient: e.target.checked })} /> Tiếng nền</label>}
+          <label className="setting__vol">Âm lượng <input type="range" min={0} max={1} step={0.05} value={volume} onChange={(e) => setPrefs({ volume: Number(e.target.value) })} /></label>
+        </span>
+      </span>
+    </div>
+  );
+}
+
+function Suspects({ onClose }: { onClose: () => void }) {
+  const { c } = useBoard();
+  return (
+    <>
+      <p className="eyebrow">{caseNo(c)} · Hồ sơ nhân thân</p>
+      <h2>Nghi phạm</h2>
+      <p className="dlg__lead">Lý do mỗi người bị đưa vào diện nghi vấn lúc mở hồ sơ. Đối chiếu với tài liệu để loại trừ hoặc buộc tội.</p>
+      <SuspectGallery />
+      <div className="dlg__actions"><button type="button" className="btn btn--primary" onClick={onClose}>Quay lại bàn điều tra</button></div>
+    </>
   );
 }

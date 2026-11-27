@@ -11,7 +11,7 @@ import { typeLabel } from './papers';
 import { Avatar } from '../components/auth';
 import { useRoom, addRoomNote } from '../multiplayer/room';
 import { useCloud } from '../lib/cloud';
-import { speak, extractDocText } from '../lib/tts';
+import { speak, speakDoc, speakBlock } from '../lib/tts';
 
 const CLOUD_TEXT = { saving: 'Đang lưu…', saved: 'Đã lưu trên cloud', error: 'Chưa lưu được lên cloud', off: '' } as const;
 function CloudBadge() {
@@ -54,6 +54,7 @@ export function Topbar() {
         <CloudBadge />
         <span className="topbar__progress">{done}/{c.questions.length} trọng điểm</span>
         <button type="button" className={`tb-btn${indexOpen ? ' is-on' : ''}`} onClick={() => set({ indexOpen: !indexOpen })}><Icon name="list" /><span>Tài liệu</span></button>
+        {!!c.suspects?.length && <button type="button" className="tb-btn" onClick={() => set({ dialog: 'suspects' })}><Icon name="people" /><span>Nghi phạm</span></button>}
         <button type="button" className={`tb-btn${panel === 'notebook' ? ' is-on' : ''}`} onClick={() => toggle('notebook')}><Icon name="book" /><span>Sổ tay</span></button>
         <button type="button" className={`tb-btn tb-btn--accent${panel === 'questions' ? ' is-on' : ''}`} onClick={() => toggle('questions')}><Icon name="check" /><span>Kết luận</span></button>
         <button type="button" className="tb-btn tb-btn--icon" aria-label="Hướng dẫn" onClick={() => set({ dialog: 'intro' })}><Icon name="help" /></button>
@@ -201,7 +202,7 @@ export function ActionMenu() {
     }
     const hk = `${t.doc}:${t.key}`;
     const isHl = st.hl.includes(hk);
-    items.push({ icon: 'speaker', label: 'Đọc đoạn này', run: () => void speak(`${t.doc}:${t.key}`, t.text) });
+    items.push({ icon: 'speaker', label: 'Đọc đoạn này', run: () => void speakBlock(c.id, t.doc, t.key, t.text) });
     items.push({ icon: 'highlight', label: isHl ? 'Bỏ tô dạ quang' : 'Tô dạ quang', run: () => s.toggleHl(hk) });
     items.push({ icon: 'quote', label: room ? 'Trích vào sổ của tôi' : 'Trích vào sổ tay', run: () => { s.addEntry({ kind: 'quote', text: t.text, ref: { doc: t.doc, key: t.key } }); toast('Đã trích vào Sổ tay.'); } });
     if (room) {
@@ -218,7 +219,7 @@ export function ActionMenu() {
     title = doc ? `${pad2(doc.no ?? 0)} · ${doc.title}` : '';
     pinItem(t.doc);
     if (doc) {
-      items.push({ icon: 'speaker', label: 'Đọc toàn bộ tài liệu', run: () => void speak(`doc:${t.doc}`, extractDocText(doc)) });
+      items.push({ icon: 'speaker', label: 'Đọc toàn bộ tài liệu', run: () => void speakDoc(c.id, doc) });
     }
     items.push({ icon: 'eye', label: 'Xem cận cảnh', run: () => focusDoc(t.doc) });
     items.push({ icon: 'link', label: 'Nối dây đỏ từ tài liệu', run: () => set({ pendingString: { doc: t.doc } }) });

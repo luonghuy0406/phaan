@@ -5,7 +5,8 @@
 * **Thể loại:** Án mạng phòng kín trên sông nước / Tranh chấp nợ nần & mâu thuẫn ân oán đồng đội
 * **Bối cảnh:** Xã Tân Mỹ ven sông Hàm Luông, huyện Tân Trúc, tỉnh Bến Tre (hư cấu)
 * **Thời gian xảy ra vụ án:** Đêm Rằm tháng Giêng năm Bính Tuất (ngày 12/2/2006)
-* **Độ khó:** 3/5 · **Thời lượng:** 90 phút · **Số người chơi:** 2–6
+* **Độ khó:** 4/5 · **Thời lượng:** 100–130 phút · **Số người chơi:** 2–6
+* **Phiên bản:** 2 (27/11/2026): 35 tài liệu, 12 câu hỏi, có lớp bi kịch, đoạn chuyển cảnh và giọng đọc. Mã tài liệu bên dưới theo `case.json` hiện hành.
 
 ---
 
@@ -23,72 +24,72 @@ Sau khi gây án, Ba Thuyền lặn trở lại bến đò, lên chòi giấu b�
 
 ---
 
+**Lớp bi kịch (mới ở phiên bản 2):** Chiều Rằm, 16h30, ông Kiên đã trả lại 10 triệu tiền cọc cho Ba Thầu cát, hủy việc bán mảnh vườn (`d34`). Tối đó ông viết dở một lá thư cho Ba Thuyền, hẹn sáng mai qua lấy giấy đất về, tiền trả dần không lời (`d35`), và nói với vợ "Mai kêu thằng Ba qua" (`d24`). Không ai kịp báo cho Ba Thuyền. Ông giết người để giữ mảnh đất mà ông sắp được trả lại.
+
+---
+
 ## 2. Danh sách nhân vật
 
-| Họ và tên | Tuổi | Nghề nghiệp | Quan hệ với nạn nhân | Động cơ bề ngoài | Bí mật thật | Chứng cứ ngoại phạm & Đúng/Sai | Đặc điểm ngoại hình (dùng cho ảnh) | Tài liệu loại trừ |
-|---|---|---|---|---|---|---|---|---|
-| **Võ Văn Kiên** *(Bảy Kiên)* | 63 | Chủ xưởng đóng ghe, cho vay cầm cố | Nạn nhân | — | Giữ giấy tờ đất hương hỏa ép Ba Thuyền vào đường cùng, chuẩn bị bán đất cho thầu cát | — | Người gầy gò, râu hoa râm tỉa gọn, mắt sâu, hay mặc áo bà ba nâu vải kate | — |
-| **Trần Văn Thuyền** *(Ba Thuyền)* | 58 | Thợ lặn vớt gỗ, lái đò ngang bến Tân Mỹ | Bạn chiến đấu thời trẻ, con nợ | Nợ nần cùng quẫn, sắp mất đất hương hỏa có mồ mả tổ tiên | **HUNG THỦ THẬT**. Đã đầu độc mã tiền làm liệt cơ rồi lặn mở van lù đáy ghe dìm chết nạn nhân | Khai bận trực chở khách hoa đăng từ 18h-24h, lúc 22h45-23h30 dừng máy sửa chân vịt. **SAI (ngụy tạo)** | Dáng người thấp đậm, da ngăm đen rám nắng sông nước, bắp tay cuồn cuộn có sẹo dài ở bả vai phải, tóc húi cua muối tiêu | Bị vạch trần bởi d07, d10, d13, d14, d16 |
-| **Nguyễn Thị Lành** | 32 | Nội trợ, buôn bán nhỏ | Vợ kế (cưới 2 năm) | Bị nghi đào mỏ, lén gửi tiền về quê, cãi nhau với chồng trước ngày Rằm | Đang gom đồ và tiền tiết kiệm để trốn theo người yêu cũ ở Cần Thơ lúc rạng sáng, không giết chồng | Khai ở nhà ngủ một mình từ 21h. **KHÔNG THỂ TỰ CHỨNG MINH** (ở một mình) | Khuôn mặt trái xoan, mắt đượm buồn, tóc dài cặp sau gáy, dáng mảnh khảnh, mặc áo bà ba hoa nhí | `d12` (vé xe đò mua từ 19h30, không có kỹ năng lặn mở van đáy tàu), `d06` (cửa then trong) |
-| **Võ Quốc Hưng** | 38 | Thợ cả xưởng ghe | Con trai trưởng | Nghiện cờ bạc đá gà, nợ ngập đầu, bị cha dọa gạch tên khỏi di chúc thừa kế xưởng | Tối đó lén sang phòng làm việc của cha cạy tủ tìm sổ đỏ xưởng ghe để thế chấp nhưng không thấy | Khai ngồi cá cược ở bãi gà xã Bình Khánh từ 20h đến 01h sáng. **ĐÚNG** (được nhiều người xác nhận) | To cao, mặt bạnh, râu quai nón lởm chởm, bàn tay thô ráp dính dầu mỡ máy móc, mặc áo thun ba lỗ đen | `d08` (xác nhận của công an xã Bình Khánh về vụ bắt sới bạc lúc 00h30 có mặt Hưng) |
-| **Huỳnh Ánh Nguyệt** | 24 | Kế toán đại lý dừa đối diện | Cháu gái con nợ | Cha vừa nhảy cầu tự tử tháng trước vì vỡ hụi do ông Kiên thu hẹp nợ; căm thù ông Kiên | Tối Rằm lẻn đến xưởng ông Kiên định đốt sổ nợ nhưng thấy xưởng tối om và nghe tiếng máy đò tắt nên sợ hãi bỏ chạy | Khai đi thả hoa đăng ở chùa Tân Mỹ từ 20h đến 22h. **ĐÚNG** (được sư cô và bạn bè làm chứng) | Nữ thanh niên dong dỏng cao, đeo kính cận gọng nhựa, mặt thanh tú nhưng ánh mắt u uất | `d11` (nhân chứng tại chùa, về nhà trước 22h15), không biết bơi lặn sông sâu |
-| **Lê Văn Sáu** *(Sáu Cà Na)* | 46 | Thầu buôn gỗ căm xe | Đối tác làm ăn xích mích | Cung cấp lô gỗ mục bị ông Kiên phát hiện, bị đe dọa kiện ra công an kinh tế | Lo sợ bị phát hiện đường dây buôn lậu gỗ từ biên giới Tây Ninh | Đêm đó ở tại quán nhậu Năm Cua xã bên cùng lái buôn từ 19h đến 23h30. **ĐÚNG** | Mập mạp, bụng phệ, cổ đeo dây chuyền vàng to bản hình nanh heo rừng | `d02` (không có dấu vết cạy phá cửa), hóa đơn quán nhậu xác nhận có mặt suốt buổi tối |
+| Nhân vật | Vai | Lý do bị nghi | Gỡ tội / buộc tội bằng |
+|---|---|---|---|
+| **Võ Văn Kiên** (Bảy Kiên), 63 | Nạn nhân, chủ xưởng ghe, cho vay | — | — |
+| **Trần Văn Thuyền** (Ba Thuyền), 58 | **Hung thủ**. Lái đò ngang, thợ lặn, bạn chiến đấu cũ | Nợ 45 triệu, thế chấp đất có mộ cha mẹ, hạn đêm Rằm | `d18` (nói dối con nước), `d19`, `d20`, `d21`, `d26`, `d27`, `d28`, `d29`, `d30`, `d31`, `d32`, `d33`; biết van vì từng thay ron tháng Chạp (`d13`) |
+| **Nguyễn Thị Lành**, 32 | Vợ kế | Thuốc an thần, túi đồ gói sẵn, rút sạch sổ tiết kiệm (`d09`), ngủ một mình | Định bỏ trốn đi Cần Thơ, vé mua 19h30 (`d23`); nạn nhân không có thuốc an thần (`d25`); không lặn được (`d24`) |
+| **Võ Quốc Hưng**, 38 | Con trai trưởng | Nợ đá gà, cãi cha, cạy tủ lúc 19h30 | Ở sới gà cồn Bình Khánh từ 20h40, đò duy nhất nằm ụ, bị bắt 00h30 (`d15`) |
+| **Huỳnh Ánh Nguyệt**, 24 | Kế toán, con người tự tử vì nợ | Căm thù, có mặt trước cổng xưởng lúc ~22h45 | Sư cô: sợ nước từ nhỏ, qua đò phải mặc áo phao (`d22`); chính cô là nhân chứng thấy bóng người lặn từ chòi đò (`d21`) |
+| **Lê Văn Sáu** (Sáu Cà Na), 46 | Thầu gỗ bị dọa kiện | Tức ông Kiên, chửi giữa chợ | Quán Năm Cua 19h05–23h40, không rời bàn quá 10 phút (`d17`); không lặn được (`d16`) |
+| **Đoàn Văn Lợi** (Tư Lợi), 41 | Thợ phụ, người phát hiện | Ngủ một mình trên gác xưởng sát bến, từng lặn giỏi (`d14`) | Thủng màng nhĩ từ 1998, không xuống sâu được (`d13`); không bị tài liệu nào bác |
+| **Tạ Văn Thầu** (Ba Thầu cát) | Chủ ghe hút cát, người định mua đất | Thợ hút cát của ông biết lặn (`d14`) | Ba thợ hút cát ở sới gà (`d15`); ông đã nhận lại cọc chiều Rằm (`d34`) |
+| **Phan Thị Mến** (Út Mến), 29 | Bán hàng đầu bến đò | — | Nhân chứng: đò nằm im, ông Ba lên từ bờ kè, tóc ướt (`d20`) |
 
----
+## 3. Dòng thời gian
 
-## 3. Dòng thời gian chi tiết
-
-* **10/2/2006 (2 ngày trước vụ án):**
-  * Ông Bảy Kiên gặp Ba Thuyền tại bến đò, tuyên bố dứt khoát: nếu đúng tối Rằm không trả đủ 40 triệu gốc và 5 triệu lãi thì sáng 16 tháng Giêng sẽ ký chuyển nhượng 3 công đất vườn dừa cho Ba Thầu cát làm bãi tập kết vật liệu. Ba Thuyền van xin giữ lại mồ mả cha mẹ nhưng bị ông Kiên gạt đi.
-* **11/2/2006 (1 ngày trước vụ án):**
-  * 09h15: Ba Thuyền đến tiệm phụ tùng máy thủy Hai Nhựt (chân cầu Tân Trúc) mua 01 dây curoa máy dầu B64, 01 tuýp keo dán ron thủy và sợi cước xanh (lưu lại hóa đơn bán lẻ `d14`).
-  * 14h00: Ba Thuyền vào vườn hái rễ cây mã tiền hoang ven rạch, sao vàng hạ thổ rồi ngâm vào ve rượu nếp trắng.
-* **12/2/2006 (Ngày Rằm tháng Giêng - Ngày xảy ra vụ án):**
-  * 08h30: Ba Thuyền đem ve rượu thuốc sang xưởng ghe biếu ông Kiên, nói dối là "rượu rễ nhàu rừng trị phong thấp gia truyền tạ lỗi vì chậm tiền nợ". Ông Kiên nhận và cất vào khoang ghe chài `Phước Hải 09`.
-  * 17h00: Huỳnh Ánh Nguyệt to tiếng với ông Kiên trước cổng xưởng về cái chết của cha cô, bị đuổi đi.
-  * 18h00: Bến đò ngang Tân Mỹ bắt đầu đông khách qua sông đi chùa viếng rằm. Ba Thuyền chạy đò liên tục.
-  * 19h30: Nguyễn Thị Lành lén ra bến xe Mỏ Cày mua vé xe đò chuyến 04h00 sáng mai đi Cần Thơ (`d12`), gửi sẵn một thùng tư trang tại phòng vé.
-  * 20h00: Võ Quốc Hưng cãi nhau với ông Kiên vì xin 10 triệu gỡ nợ cờ bạc không được; Hưng đón xe ôm sang bãi gà xã Bình Khánh sát phạt thâu đêm.
-  * 21h00: Ông Kiên uống một cốc rượu thuốc Ba Thuyền tặng, dặn vợ ở nhà khóa cửa rồi xuống ghe `Phước Hải 09` cài then gỗ bên trong đi ngủ như thường lệ.
-  * 22h00: Lễ thả hoa đăng trên sông Hàm Luông thưa dần. Ánh Nguyệt rời chùa, đi ngang qua xưởng ghe tính tìm cách lẻn vào đốt sổ nợ nhưng xưởng đóng kín mít.
-  * 22h40: Đỉnh triều cường Rằm tháng Giêng dâng cao chạm mốc +1.85m (`d07`). Nước sông cuồn cuộn chảy xiết từ phía bến đò qua xưởng ghe.
-  * **22h45 (Thời điểm gây án):** Ba Thuyền thông báo cho khách đứng ở bến là đò bị "đứt dây curoa, rác quấn chân vịt, phải đợi nước rút mới sửa máy được", ghi vào sổ nhật ký thu tiền đò (`d13`). Ngay sau đó, Ba Thuyền lẻn ra sau chòi canh đò, mặc quần áo lặn cao su, ngậm ống thở lặn theo dòng triều cường sang bến sau xưởng ghe Kiên.
-  * 22h55: Ba Thuyền tiếp cận lườn ghe `Phước Hải 09`, dùng kìm mỏ quạ số 24 vặn tháo rời **chốt van lù phụ** đường kính 80mm dưới đáy lườn ghe (`d06`, `d10`). Nước triều cường chảy ồ ạt từ đáy tràn vào khoang lót ván.
-  * 23h05: Nước dâng ngập sàn ván gỗ trong khoang ghe. Ông Kiên giật mình tỉnh giấc, nhưng chất độc mã tiền đã phong bế thần kinh vận động ngoại biên khiến chân tay mềm nhũn, cơ hoành khó thở. Ông không thể nhổm dậy giật thanh then cài cửa khoang, ú ớ hít phải dòng nước bùn phù sa và ngạt thở tử vong trong bóng tối (`d03`).
-  * 23h15: Ba Thuyền lặn ngược dòng bám vào mạn bờ kè về lại chòi đò, cởi đồ lặn ướt nhẹp giấu sau đống lưới rách, giấu chiếc kìm số 24 dính vụn đồng vào hốc củi (`d16`).
-  * 23h30: Ba Thuyền nổ máy đò, gọi lớn rủ các khách muộn lên đò sang sông, vờ như vừa sửa xong máy.
-  * 00h30 (13/2/2006): Công an huyện Tân Trúc ập vào sới đá gà xã Bình Khánh, lập biên bản bắt quả tang 18 đối tượng, trong đó có Võ Quốc Hưng (`d08`).
-* **13/2/2006 (Sáng hôm sau):**
-  * 06h00: Người làm công xưởng ghe ra bến lấy ván ép thì phát hiện chiếc ghe `Phước Hải 09` chìm mấp mé mép nước bến gỗ, cửa khoang then cài đóng kín. Phá cửa khoang thì phát hiện ông Kiên đã chết đuối bên trong.
-  * 08h30: Đội Cảnh sát Điều tra Công an huyện Tân Trúc tiến hành khám nghiệm hiện trường (`d02`).
-
----
+* **Tháng Chạp 2005:** ông Kiên thuê Ba Thuyền lặn tháo van lù Phước Hải 09 thay ron tại bến (`d13`).
+* **10/2:** ông Kiên dọa giao đất cho Ba Thầu sáng 16 tháng Giêng (ghi mực đỏ trên giấy vay `d32`). Bà Lành rút 12 triệu tiết kiệm (`d09`).
+* **11/2, 09h15:** Ba Thuyền mua dây curoa B64, keo, cuộn cước xanh 3 ly ở tiệm Hai Nhựt (`d26`). **14h00:** đào rễ mã tiền cuối vườn, nói với bà Năm Thơ là rễ nhàu (`d29`).
+* **12/2 (Rằm):**
+  * 08h30: biếu ông Kiên ve rượu "rễ nhàu" (`d07`, `d18`); nút ve buộc cước xanh (`d28`).
+  * 16h30: ông Kiên trả cọc 10 triệu cho Ba Thầu, hủy bán đất (`d34`).
+  * 18h00: cơm tối; ông Kiên viết gì đó, nói "Mai kêu thằng Ba qua" (`d24`).
+  * 19h05: Sáu Cà Na mở bàn ở quán Năm Cua (`d17`). 19h30: Hưng cạy hộc bàn (`d14`); bà Lành mua vé xe 4h sáng, gửi vali (`d23`).
+  * 19h00–22h05: Nguyệt phát đèn hoa đăng ở chùa Phước Quang (`d22`). 20h40: Hưng có mặt ở sới gà (`d15`).
+  * 21h00–21h30: ông Kiên uống một cốc rượu thuốc, xuống ghe, cài then (`d05`, `d07`).
+  * 21h30: bà Lành uống một viên an thần, ngủ quên (`d07`, `d24`).
+  * 22h30: chuyến đò số 20 chở Nguyệt về Tân Mỹ (`d19`, `d21`).
+  * **22h40:** đỉnh triều +1,85 m (`d11`).
+  * **22h45:** Ba Thuyền tắt máy, ghi "đứt dây curoa… chờ nước ròng" (`d19`), vào sau chòi (`d20`); Nguyệt thấy bóng người lặn từ chòi đò (`d21`).
+  * ~22h50–23h00: lặn xuôi 120 m (4 phút, `d30`), tháo chốt van số 24 (`d10`, `d12`), cước xanh buộc cọc neo (`d12`).
+  * 23h00–23h45: ông Kiên liệt cơ, chết ngạt (`d05`).
+  * ~23h25: bám bờ kè về chòi (17,5 phút, `d30`); 23h30 nổ máy, tóc ướt (`d20`).
+  * 23h40: Sáu tính tiền (`d17`).
+* **13/2:** 00h30 bắt sới gà (`d15`); 06h00 Tư Lợi phát hiện (`d06`); 08h30 khám nghiệm (`d02`); 11h20 thu giữ phòng bà Lành (`d09`).
+* **14/2–16/2:** giám định ghe (`d10`), lời khai, thực nghiệm 15/2 (`d30`), khám xét chòi 16/2 (`d33`), mở két sắt (`d32`, `d34`), thư trong hộp thiếc (`d35`).
 
 ## 4. Bản đồ manh mối
 
-| Manh mối | Nằm ở tài liệu nào | Chứng minh điều gì | Cần đối chiếu với tài liệu nào |
+| Manh mối | Tài liệu | Chứng minh | Đối chiếu với |
 |---|---|---|---|
-| Mảnh rễ cây và độc tố mã tiền trong dạ dày nạn nhân | `d03` (Giám định tử thi) | Nạn nhân bị tê liệt cơ bắp trước khi chết, không thể kháng cự hay đạp cửa | `d02` (Cửa khoang cài then trong), `d05` (Ve rượu thuốc ngâm rễ cây) |
-| Cửa khoang cài then trong bằng thanh gỗ lim sập chốt | `d02` (Khám nghiệm hiện trường) | Không ai có thể vào hoặc ra khỏi khoang từ phía trên sau khi cửa đã đóng | `d06` (Kiểm định vỏ ghe), `d01` (Loại bỏ giả thuyết trộm đột nhập) |
-| Chốt tán van lù phụ đáy ghe bị cạy tháo từ dưới nước | `d06` (Kiểm định vỏ ghe), `d10` (Ảnh tang vật chốt van) | Nước tràn vào khoang từ đáy lườn tàu do có thợ lặn thao tác dưới nước | `d07` (Thủy triều dâng ngập sàn), `d16` (Kìm mỏ quạ số 24) |
-| Đỉnh triều cường +1.85m lúc 22h40–23h30 | `d07` (Bản tin thủy văn sông Hàm Luông) | Thời điểm duy nhất nước sông dâng cao hơn lỗ thông khí và sàn khoang để dìm chết người | `d03` (Giờ tử vong 23h00–23h45), `d13` (Giờ đò ngừng chạy) |
-| Ba Thuyền ghi "chờ nước ròng/nước kiệt để gỡ rác chân vịt" lúc 22h45 | `d13` (Sổ nhật ký đò ngang) | **Lời khai dối trá mâu thuẫn tự nhiên**: 22h45 là đỉnh triều cường nước lớn nhất chứ không phải nước ròng | `d07` (Thủy văn: đỉnh triều cường lúc 22h40-23h30), `d09` (Lời khai Ba Thuyền) |
-| Hóa đơn mua phụ tùng máy thủy ngày 11/2 | `d14` (Hóa đơn tiệm Hai Nhựt) | Ba Thuyền đã mua sẵn dây curoa từ hôm trước; cái cớ "hỏng máy đêm Rằm" là màn kịch ngụy tạo | `d13` (Sổ đò ghi đứt dây curoa ngày 12/2), `d09` (Lời khai Ba Thuyền) |
-| Mẩu sợi cước xanh dính chốt neo bến xưởng ghe | `d10` (Ảnh tang vật) | Thợ lặn mang theo cuộn cước bơi từ bến sang xưởng ghe | `d16` (Cuộn cước xanh và đồ lặn trong chòi Ba Thuyền) |
-| Giấy thế chấp đất hương hỏa ghi chú đòi phát mãi | `d15` (Giấy nợ viết tay), `d16` (Tìm thấy tại chòi) | Động cơ trực tiếp: Ba Thuyền muốn lấy lại đất tổ tiên trước khi bị bán sáng 16 tháng Giêng | `d09` (Ba Thuyền chối việc nợ nần gay gắt), `d02` (Tủ xưởng ghe bị lục) |
+| Strychnine dưới ngưỡng chết, liệt cơ 1–2 giờ | `d05` | Nạn nhân không tự thoát | `d06` (then đẩy là bật), `d02`, `d03` |
+| Không có thuốc an thần, cồn thấp | `d25` | Gỡ nghi bà Lành; ông Kiên không say | `d09`, `d07` |
+| Van lù tháo từ dưới lườn | `d10`, `d12` | Nước vào từ đáy, do người lặn | `d11`, `d13` |
+| Chỉ trên +1,60 m mới ngập khoang; đỉnh 22h40–23h30 | `d11` | Khung giờ gây án | `d05`, `d19` |
+| "Đợi nước ròng sát đáy" lúc 22h45 | `d18` dòng 7 | Lời khai dối | `d11` |
+| Đò nằm im, ông lên từ bờ kè, tóc ướt | `d20` | Ông xuống nước | `d21`, `d18` dòng 4 |
+| Dây trên máy mới, đúng lô bán 11/2 | `d27` | "Đứt dây" là dàn dựng | `d26`, `d31` dòng 4 |
+| Vườn không có cây nhàu, mã tiền bị đào | `d29` | Biết rõ mình ngâm gì | `d28`, `d31` dòng 6 |
+| Thực nghiệm 28–31 phút | `d30` | 45 phút là đủ, nếu biết vị trí van | `d31` dòng 9, `d13` |
+| Giấy vay, mực đỏ | `d32` | Động cơ, hạn chót đêm Rằm | `d33` (tờ lịch) |
+| Kìm số 24, mạt đồng, cước cắt dở, đồ lặn | `d33` | Hung khí | `d10`, `d12` |
+| Nhận lại cọc 16h30; thư viết dở | `d34`, `d35` | Bi kịch: ông Kiên đã định tha | `d24` dòng 9 |
 
-### Các manh mối gây nhiễu (Red Herrings) và cách hóa giải:
-1. **Người vợ kế (Nguyễn Thị Lành):** Có bột thuốc an thần trong phòng ngủ và vali đồ đạc gửi bến xe chuẩn bị bỏ trốn.
-   * *Hóa giải:* `d12` (Vé xe đò mua từ 19h30 chứng minh cô lên kế hoạch trốn từ trước chứ không phải gây án rồi chạy), `d06` (Cô không biết bơi lặn và không thể thao tác van đáy tàu dưới dòng nước xiết), `d03` (Chất độc là mã tiền chứ không phải thuốc an thần).
-2. **Người con trai (Võ Quốc Hưng):** Cãi nhau đòi tiền cha, có mặt ở xưởng lúc 20h và tủ làm việc của cha bị cạy khóa.
-   * *Hóa giải:* `d08` (Biên bản bắt sới bạc lúc 00h30 của công an xã Bình Khánh xác nhận Hưng ngồi đánh bạc liên tục từ 20h30 đến khi bị bắt, có hàng chục con bạc làm chứng).
-3. **Cô kế toán (Huỳnh Ánh Nguyệt):** Có mối thù sâu sắc vì cha tự tử, xuất hiện lảng vảng gần xưởng ghe lúc 22h đêm.
-   * *Hóa giải:* `d11` (Lời khai của sư cô chùa Tân Mỹ và bạn bè xác nhận cô ở chùa thả hoa đăng đến 22h, về nhà lúc 22h15; cô là phụ nữ mảnh khảnh không biết kỹ thuật máy thủy hay lặn sông).
+## 5. Trọng điểm và câu hỏi
 
----
+| Vòng | Tài liệu mới | Câu hỏi | Đáp án |
+|---|---|---|---|
+| 1 | d01–d09 (9) | q1 `choice`: tính chất cái chết | Án mạng, nạn nhân bị liệt cơ |
+| 2 | d10–d17 (8) | q2 `evidence` 3: cơ chế · q3 `choice` nhiều đáp án: ngoại phạm kín | d05, d10, d11 · Hưng, Sáu |
+| 3 | d18–d25 (8) | q4 `line`: khai trái con nước · q5 `evidence` 2: ông xuống nước · q6 `evidence` 2: gỡ nghi bà Lành | d18:007 · d20, d21 · d23, d25 |
+| 4 | d26–d31 (6) | q7, q8 đối chất `evidence` 1 · q9 đối chất `line` | d27 · d29 · d31:009 |
+| 5 | d32–d35 (4) | q10 `evidence` 2: động cơ + hung khí · q-accuse `choice` thẻ ảnh: chỉ mặt hung thủ · q11 `choice`: kết luận · q12 `choice`: bi kịch | d32, d33 · Ba Thuyền · phương án 1 · phương án 2 |
 
-## 5. Cấu trúc trọng điểm (Stages & Questions)
-
-Vụ án gồm **4 trọng điểm**:
-
-### 4. Cấu trúc câu hỏi & Trọng điểm (Đã nâng cấp độ khó x5)
+Đoạn chuyển cảnh (`beats`) mở đầu vòng 2–5 và giọng đọc: xem `voice.json`.

@@ -297,6 +297,7 @@ export function extractDocText(doc: {
   fields?: { label: string; value: string }[];
   footer?: string[];
   content?: string;
+  persons?: { name: string; age?: number; role?: string; note?: string; suspicion?: string; victim?: boolean }[];
 }): string {
   const strip = (s?: string | null) => (s || '').replace(/\*\*|__|~~/g, '');
   const parts: string[] = [];
@@ -354,6 +355,11 @@ export function extractDocText(doc: {
       const t = strip(line.replace(/^\s*([-*•]|\d+[.)])\s+/, '')).trim();
       if (t) parts.push(t);
     }
+  }
+
+  // ID sheet ("people"): one entry per person
+  for (const p of doc.persons || []) {
+    parts.push(strip(`${p.victim ? 'Nạn nhân' : 'Nghi phạm'}: ${p.name}${p.age ? `, ${p.age} tuổi` : ''}${p.role ? `, ${p.role}` : ''}. ${(p.victim ? p.note : p.suspicion) || ''}`));
   }
 
   // Signature
@@ -443,6 +449,84 @@ export async function speak(id: string, text: string) {
     stopSources();
     useTts.setState({ status: 'error', error: `Lỗi đọc: ${(err as Error).message}`, activeId: null });
   }
+}
+
+/* ── pre-recorded reading of case documents (tools/gen-doc-voice.mjs, VieNeu) ──
+   public/cases/<id>/audio/read/index.json lists, per document, its blocks in reading order;
+   each block is <doc>/<key>.mp3 with the same key as the paper block (f0, p1, l7…). Played back to back,
+   with the next few files fetched ahead, so reading is smooth and uses the same voices as the narration.
+   Documents or blocks without a file fall back to the live voice above. */
+type ReadIndex = { v: number; docs: Record<string, { k: string; p: number }[]> };
+const readIndexes = new Map<string, Promise<ReadIndex | null>>();
+const readBase = (caseId: string) => `${import.meta.env.BASE_URL}cases/${caseId}/audio/read/`;
+function loadReadIndex(caseId: string): Promise<ReadIndex | null> {
+  let p = readIndexes.get(caseId);
+  if (!p) {
+    p = fetch(readBase(caseId) + 'index.json')
+      .then((r) => (r.ok ? (r.json() as Promise<ReadIndex>) : null))
+      .catch(() => null);
+    readIndexes.set(caseId, p);
+  }
+  return p;
+}
+
+async function playRecorded(id: string, list: { url: string; pause: number }[]) {
+  const ctrl = new AbortController();
+  abortController = ctrl;
+  const { signal } = ctrl;
+  useTts.setState({ status: 'loading', activeId: id, chunkIndex: 0, chunkCount: list.length, error: null });
+  const ctx = getAudioCtx();
+  const bufs: Promise<AudioBuffer>[] = [];
+  const get = (i: number) => {
+    if (i < list.length && !bufs[i]) {
+      bufs[i] = fetch(list[i].url, { signal })
+        .then((r) => (r.ok ? r.arrayBuffer() : Promise.reject(new Error(`HTTP ${r.status}`))))
+        .then((b) => ctx.decodeAudioData(b));
+      bufs[i].catch(() => {}); // handled when awaited
+    }
+    return bufs[i];
+  };
+  try {
+    let end = 0;
+    let last: Promise<void> = Promise.resolve();
+    for (let i = 0; i < list.length; i++) {
+      for (let k = i; k <= i + 3; k++) void get(k);
+      const buf = await get(i);
+      if (signal.aborted) return;
+      const at = Math.max(ctx.currentTime + 0.05, end + (i > 0 ? list[i - 1].pause : 0));
+      const idx = i;
+      last = schedule(buf, at);
+      void last.then(() => { if (!signal.aborted) useTts.setState({ chunkIndex: Math.min(idx + 1, list.length - 1) }); });
+      end = at + buf.duration;
+      if (useTts.getState().status !== 'paused') useTts.setState({ status: 'playing' });
+      while (!signal.aborted && i + 1 < list.length && end - ctx.currentTime > 15) await new Promise((r) => setTimeout(r, 250));
+    }
+    await last;
+    if (!signal.aborted) useTts.setState({ status: 'idle', activeId: null, chunkIndex: 0, chunkCount: 0 });
+  } catch (err) {
+    if ((err as DOMException).name === 'AbortError' || signal.aborted) return;
+    stopSources();
+    useTts.setState({ status: 'error', error: `Lỗi đọc: ${(err as Error).message}`, activeId: null });
+  }
+}
+
+/** Read a whole document: pre-recorded voice when the case has it, otherwise the live voice. */
+export async function speakDoc(caseId: string, doc: Parameters<typeof extractDocText>[0] & { id: string }) {
+  stop();
+  unlockAudio(); // inside the tap, before any await
+  const entry = (await loadReadIndex(caseId))?.docs[doc.id];
+  if (!entry?.length) return speak(`doc:${doc.id}`, extractDocText(doc));
+  const base = readBase(caseId);
+  return playRecorded(`doc:${doc.id}`, entry.map((e) => ({ url: `${base}${doc.id}/${e.k}.mp3`, pause: e.p })));
+}
+
+/** Read one block of a document ("Đọc đoạn này"). */
+export async function speakBlock(caseId: string, docId: string, key: string, text: string) {
+  stop();
+  unlockAudio();
+  const entry = (await loadReadIndex(caseId))?.docs[docId]?.find((e) => e.k === key);
+  if (!entry) return speak(`${docId}:${key}`, text);
+  return playRecorded(`${docId}:${key}`, [{ url: `${readBase(caseId)}${docId}/${key}.mp3`, pause: 0 }]);
 }
 
 /** The player agreed to download the on-device voice: remember it and read what they asked for. */

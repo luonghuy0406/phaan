@@ -48,6 +48,10 @@ Mỗi nghi phạm vô tội cần ít nhất một tài liệu loại trừ, th�
 | `synopsis` | chuỗi[] | giới thiệu KHÔNG tiết lộ, hiện ở trang chi tiết |
 | `intro` | `{ title, paragraphs[], objective }` | hiện khi mở bàn điều tra |
 | `tour` | `{ title, text }[]` | tuỳ chọn, 4 bước hướng dẫn lần đầu (bỏ trống = dùng bản mặc định) |
+| `beats` | `{ stage, kicker?, title?, paragraphs[], voice? }[]` | tuỳ chọn, đoạn chuyển cảnh hiện khi trọng điểm `stage` (≥ 2) mở; `voice` là clip giọng đọc |
+| `suspects` | `{ id, name, alias?, age?, role?, image?, suspicion? }[]` | tuỳ chọn, thẻ ảnh nghi phạm: hiện ở màn mở đầu, nút "Nghi phạm" và câu hỏi có `cards`. `suspicion` chỉ ghi lý do bị nghi lúc mở hồ sơ, không lộ lời giải. Ảnh thẻ 3:4 (480×640 webp) |
+| `victim` | như một phần tử `suspects`, thêm `note` | tuỳ chọn, thẻ nạn nhân |
+| `audio` | `{ ambient?, intro?, finale? }` | tuỳ chọn, đường dẫn `.mp3` trong thư mục hồ sơ: tiếng nền lặp, lời dẫn mở đầu và kết thúc |
 | `documents` | Document[] | mục 2 |
 | `questions` | Question[] | mục 3 |
 | `finale` | `{ title, paragraphs[] }` | kể lại toàn bộ sự thật sau khi phá án |
@@ -59,6 +63,35 @@ Có thể nhắc tài liệu bằng mã, ví dụ `(d12)`: người chơi sẽ t
 **Thể loại (`kind` trong `public/cases/index.json`):** `"fiction"` cho hồ sơ hư cấu, `"true-crime"` cho hồ sơ dựng lại từ vụ án có thật. Trang chủ chia kho hồ sơ theo trường này. Hồ sơ cũ chưa có `kind` được coi là có thật nếu có thẻ "Vụ án có thật".
 
 **Chưa hoàn thiện (`draft` trong `public/cases/index.json`):** đặt `"draft": true` cho hồ sơ đã chơi được nhưng còn thiếu hình ảnh. Thẻ hồ sơ và trang chi tiết sẽ hiện nhãn "Chưa hoàn thiện". Xoá dòng này khi đã đủ ảnh.
+
+## 1b. Âm thanh và giọng đọc
+
+```json
+"audio": { "ambient": "audio/ambient.mp3", "intro": "audio/intro.mp3", "finale": "audio/finale.mp3" },
+"beats": [
+  { "stage": 2, "kicker": "Sáng 14/2/2006 · Công an huyện", "title": "Thứ làm ông nằm yên",
+    "paragraphs": ["…", "…", "Câu hỏi treo cho vòng mới (in nghiêng)."], "voice": "audio/beat-2.mp3" }
+]
+```
+
+- Hiệu ứng thao tác (lật giấy, ghim, đóng dấu đúng/sai, gợi ý, mở niêm phong, kết thúc) có sẵn cho mọi hồ sơ trong `public/sfx/`.
+- Tiếng nền nên dài 60–90 giây, lặp liền (đầu và cuối trộn chéo), âm lượng thấp; dưới 1 MB.
+- Giọng đọc tạo sẵn bằng `npm run gen-voice -- <case-id>` từ `authoring/<case-id>/voice.json`, chạy trên máy.
+  `"engine": "vieneu"` (khuyên dùng, VieNeu-TTS v3 Turbo, giọng dựng sẵn như "Thiện Minh", "Đức Trí"; cài theo đầu `tools/gen-voice.mjs`)
+  hoặc `"supertonic"` (giọng F1–F5, M1–M5).
+  **Mỗi clip nên lấy chữ thẳng từ `case.json`** để giọng luôn khớp chữ hiển thị:
+  `{ "id": "beat-3", "source": "beat:3", "quotes": ["thuyen"] }` (`source`: `intro`, `beat:N`, `finale`).
+  Mỗi lời thoại trong ngoặc kép đọc bằng vai kế tiếp trong `quotes` (vai trùng người dẫn thì đọc liền câu);
+  phần còn lại do `narrator` (mặc định `dan`) đọc. Sửa chữ trong `case.json` rồi chạy lại lệnh: clip nào đổi chữ sẽ tự tạo lại.
+  `npm run gen-voice -- <case-id> --dry` in ra đúng các câu sẽ đọc để đối chiếu.
+- **Đọc tài liệu** (nút loa trên tờ giấy, "Đọc đoạn này"): `npm run gen-doc-voice -- <case-id>` tạo sẵn mỗi khối chữ thành
+  `audio/read/<doc>/<khoá>.mp3` (cùng khoá với khối trên giấy) và `audio/read/index.json`. Lời khai đọc phân vai theo
+  mục `docs` trong `voice.json`: `{ "narrator": "dan", "asker": "danh", "speakers": { "Trần Văn Thuyền": "thuyen" } }`.
+  Chỉ khối có chữ thay đổi mới được tạo lại; `--dry` in ra danh sách khối. Thiếu file thì bàn điều tra đọc trực tiếp như cũ
+  (Supertonic trên máy, chậm hơn). Tài liệu viết bằng `content` chưa được tạo sẵn.
+  Với VieNeu có thể chèn `[thở dài]`, `[cười]`, `[hắng giọng]`.
+  Viết số và ký hiệu thành chữ khi dễ đọc sai ("Phước Hải không chín", "một mét tám lăm").
+- Mọi nguồn âm thanh phải là CC0 hoặc tự tạo; ghi vào `public/sfx/CREDITS.md`.
 
 ## 2. Tài liệu (`documents[]`)
 
@@ -98,6 +131,7 @@ Nếu dòng đầu tiên chỉ gồm chữ đậm (`**BIÊN BẢN KHÁM NGHIỆM
 
 Nên ưu tiên các trường cấu trúc. Lời khai vẫn phải dùng `lines[]` để câu hỏi loại `line` trỏ được tới số dòng.
 | `scan` | `image` (bản chụp cả trang tài liệu đã dàn trang sẵn), `imageHi`, `caption` |
+| `people` | `paragraphs[]` tuỳ chọn. Tờ "Hồ sơ nhân thân": tự lấy ảnh thẻ, tên, tuổi, vai trò và lý do bị nghi từ `victim` + `suspects`; mỗi người là một khối `pp0`, `pp1`… (tô, nối dây, đọc được) |
 
 - Ưu tiên các loại có chữ (report, testimony…): người chơi tô, trích dẫn, nối dây được từng đoạn. Chỉ dùng `scan` cho tài liệu
   đã được thiết kế sẵn thành ảnh (bản đồ, sơ đồ, giấy tờ viết tay phức tạp). Trên `scan` người chơi vẫn viết tay bằng bút được.
@@ -125,9 +159,10 @@ Trường chung: `id`, `stage`, `type`, `title`, `prompt`, `answer`, `hints[]` (
 ```
 
 ### `choice`
+Thêm `"cards": ["lanh", "hung", …]` (id trong `suspects`, cùng thứ tự `options`) để người chơi chọn bằng thẻ ảnh thay vì chữ.
 ```json
 { "type": "choice", "options": ["A…", "B…"], "answer": [1], "multiple": false,
   "nudges": { "0": { "message": "Vì sao A sai…" } } }
 ```
 
-Ví dụ đầy đủ: `public/cases/con-nuoc-ram-thang-gieng/case.json` (5 vòng, 26 tài liệu).
+Ví dụ đầy đủ: `public/cases/con-nuoc-ram-thang-gieng/case.json` (5 vòng, 35 tài liệu, 12 câu hỏi, có `beats` và `audio`).

@@ -8,12 +8,12 @@ import { pad3 } from '../lib/data';
 
 export const TYPE_LABEL: Record<DocType, string> = {
   newspaper: 'Bài báo', report: 'Biên bản', testimony: 'Lời khai', photo: 'Ảnh',
-  letter: 'Thư tay', receipt: 'Hoá đơn', evidence: 'Tang vật', note: 'Ghi chép', scan: 'Bản chụp',
+  letter: 'Thư tay', receipt: 'Hoá đơn', evidence: 'Tang vật', note: 'Ghi chép', scan: 'Bản chụp', people: 'Nhân thân',
 };
 export const typeLabel = (t: string) => TYPE_LABEL[t as DocType] || 'Tài liệu';
 
 export const DEFAULT_WIDTH: Record<DocType, number> = {
-  newspaper: 640, report: 600, testimony: 580, photo: 420, letter: 500, receipt: 330, evidence: 470, note: 420, scan: 620,
+  newspaper: 640, report: 600, testimony: 580, photo: 420, letter: 500, receipt: 330, evidence: 470, note: 420, scan: 620, people: 680,
 };
 
 export const PaperCtx = createContext<{ hl: Set<string>; picked: string; nation: boolean }>({ hl: new Set(), picked: '', nation: true });
@@ -317,6 +317,34 @@ const RENDER: Record<DocType, R> = {
       <Figure src={d.image} hi={d.imageHi} base={base} caption={d.caption} />
     </div>
   ),
+  // ID photos of the victim and the suspects, one readable block per person (pp0, pp1…)
+  people: (d, base, extra) => {
+    const list = d.persons || [];
+    let n = 0;
+    return (
+      <div className="pp">
+        <div className="pp__head"><span>Hồ sơ nhân thân</span><b><Txt>{d.title}</Txt></b></div>
+        {d.paragraphs?.length ? <ParaBlocks list={d.paragraphs} /> : null}
+        <div className="pp__grid">
+          {list.map((p, i) => {
+            const no = p.victim ? null : ++n;
+            return (
+              <B key={p.id} k={`pp${i}`} as="div" className={`pp__card${p.victim ? ' pp__card--victim' : ''}`}>
+                <span className="pp__photo">
+                  {p.image ? <img src={base + p.image} alt={`Ảnh thẻ ${p.name}`} draggable={false} loading="lazy" /> : null}
+                  <span className="pp__tag">{p.victim ? 'Nạn nhân' : `Nghi phạm ${String(no).padStart(2, '0')}`}</span>
+                </span>
+                <span className="pp__name">{p.name}{p.alias ? <i> ({p.alias})</i> : null}</span>
+                <span className="pp__meta">{[p.age ? `${p.age} tuổi` : '', p.role].filter(Boolean).join(' · ')}</span>
+                {(p.victim ? p.note : p.suspicion) && <span className="pp__why"><Txt>{(p.victim ? p.note : p.suspicion) as string}</Txt></span>}
+              </B>
+            );
+          })}
+        </div>
+        {extra}
+      </div>
+    );
+  },
   note: (d, base, extra) => (
     <div className="nt">
       {d.image !== undefined && <Figure src={d.image} hi={d.imageHi} caption={d.imageCaption} base={base} />}

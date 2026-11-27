@@ -29,6 +29,12 @@ export default defineConfig({
             options: { cacheName: 'images', expiration: { maxEntries: 400, maxAgeSeconds: 60 * 60 * 24 * 30 } },
           },
           {
+            // sound effects and case audio (ambience, narration): fetched by the board, kept for offline play
+            urlPattern: ({ url, sameOrigin }) => sameOrigin && url.pathname.endsWith('.mp3') && (url.pathname.startsWith('/sfx/') || url.pathname.startsWith('/cases/')),
+            handler: 'CacheFirst',
+            options: { cacheName: 'audio', expiration: { maxEntries: 200, maxAgeSeconds: 60 * 60 * 24 * 30 } },
+          },
+          {
             urlPattern: ({ url }) => url.origin === 'https://fonts.googleapis.com' || url.origin === 'https://fonts.gstatic.com',
             handler: 'StaleWhileRevalidate',
             options: { cacheName: 'fonts', expiration: { maxEntries: 30 } },

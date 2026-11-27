@@ -191,3 +191,19 @@ Tài liệu hướng dẫn đạo diễn nghệ thuật và đặc tả thông s
 | 6 | Sơ đồ giám định tử thi | `images/d05-giai-phau.webp` | 4:3 | WebP | Dấu hiệu chết đuối nước phù sa & độc tố mã tiền | Trọng điểm 2 (Y pháp) |
 | 7 | Chốt van lù đồng & cước | `images/d10-valve.webp` | 4:3 | WebP | Dấu vết cưa cạy chốt lù số 24 đáy lườn ghe | Trọng điểm 3 (Tang vật) |
 | 8 | Kìm số 24 & đồ lặn chòi đò | `images/d16-tools.webp` | 4:3 | WebP | Vật chứng trực tiếp thu giữ tại chòi Ba Thuyền | Trọng điểm 4 (Vạch trần) |
+
+
+## Ảnh thẻ nhân vật (`images/id-*.webp`, 27/11/2026)
+
+Tạo bằng FLUX.1 Krea-dev (Hugging Face MCP), 768×1024, thu về 480×640 webp. Khung chung:
+"Vintage 2006 Vietnamese ID card photo, head and shoulders, frontal, plain pale blue studio backdrop. … Flat even flash lighting, slight film grain, 85mm lens, sharp focus, no text, no border."
+
+| File | Nhân vật | Mô tả trong prompt |
+|---|---|---|
+| `id-kien.webp` | Võ Văn Kiên (nạn nhân) | 63, gaunt, trimmed grey moustache and short beard, deep-set hard eyes, brown áo bà ba |
+| `id-thuyen.webp` | Trần Văn Thuyền | 58, Mekong ferryman, grey crew-cut, sun-tanned weathered skin, stocky, faded olive work shirt |
+| `id-lanh.webp` | Nguyễn Thị Lành | 32, oval face, long black hair tied low, slim, sad downcast eyes, floral áo bà ba |
+| `id-hung.webp` | Võ Quốc Hưng | 38, tall broad, square jaw, stubble beard, black sleeveless undershirt, grease smudge |
+| `id-nguyet.webp` | Huỳnh Ánh Nguyệt | 24, slender, black plastic-framed glasses, shoulder-length hair, white blouse |
+| `id-sau.webp` | Lê Văn Sáu | 46, heavy-set timber trader, gold chain with boar tusk pendant, patterned shirt |
+| `id-loi.webp` | Đoàn Văn Lợi | 41, lean boatyard worker, sawdust in short hair, faded blue work shirt |

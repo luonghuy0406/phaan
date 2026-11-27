@@ -30,7 +30,11 @@ export async function loadCase(id: string): Promise<CaseData> {
   const data = await getJson<CaseData>(`${caseBase(id)}case.json`);
   return {
     ...data,
-    documents: (data.documents || []).map((d, i) => ({ ...d, stage: Math.max(1, Math.floor(Number(d.stage) || 1)), no: d.no ?? i + 1 })),
+    documents: (data.documents || []).map((d, i) => ({
+      ...d, stage: Math.max(1, Math.floor(Number(d.stage) || 1)), no: d.no ?? i + 1,
+      // the "Hồ sơ nhân thân" sheet shows the people declared once at case level
+      ...(d.type === 'people' ? { persons: [...(data.victim ? [{ ...data.victim, victim: true }] : []), ...(data.suspects || [])] } : {}),
+    })),
     questions: (data.questions || []).map((q) => ({ ...q, stage: Math.max(1, Math.floor(Number(q.stage) || 1)) })),
   };
 }

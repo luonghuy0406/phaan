@@ -13,6 +13,8 @@ import { TtsPlayer } from '../components/TtsPlayer';
 import { setDocNumbers } from '../lib/text';
 import { allSolved } from './store';
 import { useRoomBoardSync } from '../multiplayer/sync';
+import { playSfx, preloadSfx, setAmbient, stopAllAudio } from '../lib/sfx';
+import { caseBase } from '../lib/data';
 import { useCloudSave } from '../lib/cloud';
 
 export function Board({ c, store, room }: { c: CaseData; store: BoardStore; room?: { id: string; me: string } }) {
@@ -26,6 +28,7 @@ export function Board({ c, store, room }: { c: CaseData; store: BoardStore; room
     const box = surfaceBox({ store, reg }, `doc:${id}`);
     const el = reg.docEls.get(id);
     if (!box || !el || el.classList.contains('is-locked')) return;
+    playSfx('paper');
     store.getState().raise('doc', id);
     cam.flyTo(cam.forRect(boundsOf(box), 1.1));
     el.classList.remove('is-flash');
@@ -72,15 +75,41 @@ export function Board({ c, store, room }: { c: CaseData; store: BoardStore; room
     if (!store.getState().seenIntro) useUi.setState({ dialog: 'intro' });
   }, [c.id, store]);
 
+  // Case ambience: loops quietly under the board, starts at the first tap (iPad needs a gesture).
+  useEffect(() => {
+    preloadSfx();
+    setAmbient(c.audio?.ambient ? caseBase(c.id) + c.audio.ambient : null);
+    return () => stopAllAudio();
+  }, [c]);
+
+  // Sound for what just happened on the board: pins, hints, right / wrong conclusions.
+  useEffect(() => store.subscribe((s, prev) => {
+    if (s.pins !== prev.pins && s.pins.filter(Boolean).length > prev.pins.filter(Boolean).length) playSfx('pin');
+    if (s.q === prev.q) return;
+    for (const q of c.questions) {
+      const a = s.q[q.id];
+      const b = prev.q[q.id];
+      if (!a || !b) continue;
+      if (a.solved && !b.solved) { playSfx('correct'); break; }
+      if (a.tries > b.tries && !a.solved) { playSfx('wrong'); break; }
+      if (a.hints > b.hints) { playSfx('hint'); break; }
+    }
+  }), [c, store]);
+
   // Newly unsealed papers: announce and fly to them.
   useEffect(() => store.subscribe((s, prev) => {
     if (s.q === prev.q) return;
     // the last round can be solved by a teammate too
-    if (allSolved(c, s) && !allSolved(c, prev)) setTimeout(() => useUi.getState().set({ dialog: 'finale' }), 900);
+    if (allSolved(c, s) && !allSolved(c, prev)) setTimeout(() => { playSfx('finale'); useUi.getState().set({ dialog: 'finale' }); }, 900);
     const open = c.documents.filter((d) => stageOpen(c, s, d.stage ?? 1));
     const before = c.documents.filter((d) => stageOpen(c, prev, d.stage ?? 1));
     if (open.length > before.length) {
       const fresh = open.filter((d) => !before.includes(d));
+      const stage = Math.max(...fresh.map((d) => d.stage ?? 1));
+      const beat = c.beats?.find((b) => b.stage === stage);
+      setTimeout(() => playSfx('unseal'), 700);
+      // the round's opening scene, once the stamp has landed
+      if (beat) setTimeout(() => { if (!useUi.getState().dialog) useUi.getState().set({ dialog: 'beat', beatStage: stage }); }, 1500);
       useUi.getState().showToast(`Mở niêm phong: ${fresh.length} tài liệu mới đã được đặt lên bàn.`);
       setTimeout(() => {
         const rects = fresh.map((d) => surfaceBox({ store, reg }, `doc:${d.id}`)).filter((b): b is NonNullable<typeof b> => Boolean(b)).map(boundsOf);

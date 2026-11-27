@@ -1,0 +1,72 @@
+{
+  "_ghi_chu": "Giọng đọc lấy thẳng chữ từ case.json (intro, beats, finale) nên luôn khớp với chữ hiển thị. Mỗi lời thoại trong ngoặc kép đọc bằng vai kế tiếp trong 'quotes'; còn lại là người dẫn chuyện. Sửa chữ trong case.json rồi chạy: npm run gen-voice -- con-nuoc-ram-thang-gieng",
+  "engine": "vieneu",
+  "voices": {
+    "dan": "Thiện Minh",
+    "danh": "Minh Triết",
+    "thuyen": "Đức Trí",
+    "bacsi": "Adam",
+    "kien": "Thái Sơn"
+  },
+  "temperature": 0.8,
+  "clips": [
+    {
+      "id": "intro",
+      "source": "intro"
+    },
+    {
+      "id": "beat-2",
+      "source": "beat:2",
+      "quotes": [
+        "bacsi"
+      ]
+    },
+    {
+      "id": "beat-3",
+      "source": "beat:3",
+      "quotes": [
+        "thuyen"
+      ]
+    },
+    {
+      "id": "beat-4",
+      "source": "beat:4",
+      "quotes": [
+        "thuyen"
+      ]
+    },
+    {
+      "id": "beat-5",
+      "source": "beat:5"
+    },
+    {
+      "id": "finale",
+      "source": "finale",
+      "quotes": [
+        "thuyen",
+        "dan",
+        "danh",
+        "kien",
+        {
+          "voice": "thuyen",
+          "before": "[thở dài]"
+        },
+        "thuyen"
+      ]
+    }
+  ],
+  "docs": {
+    "narrator": "dan",
+    "asker": "danh",
+    "speakers": {
+      "Trần Văn Thuyền": "thuyen",
+      "Đoàn Văn Lợi": "Thái Sơn",
+      "Nguyễn Thị Lành": "Thục Đoan",
+      "Phan Thị Mến": "Kim Thanh",
+      "Võ Quốc Hưng": "Adam",
+      "Huỳnh Ánh Nguyệt": "Mỹ Duyên",
+      "Lê Văn Sáu": "Adam",
+      "Hai Nhựt": "Thái Sơn"
+    }
+  }
+}
