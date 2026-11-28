@@ -1,0 +1,188 @@
+{
+  "_ghi_chu": "Đáp án báo cáo kết luận trước kiểm sát viên (AI). CHỨA LỜI GIẢI: chỉ nạp lên máy chủ. keywords viết không dấu, chữ thường; probe không lộ đáp án.",
+  "q11": {
+    "examiner": "Kiểm sát viên Trần Quốc Hưng",
+    "persona": "Kiểm sát viên Viện Kiểm sát nhân dân tỉnh Bình Thuận, ngoài năm mươi, nói giọng miền Nam, kỹ tính, đặc biệt nghi ngờ những 'căn phòng kín'.",
+    "intro": "Tôi là kiểm sát viên phụ trách vụ án trên tàu SE3. Vụ này đồng chí đề nghị truy tố hai người, nên tôi hỏi kỹ. Trả lời ngắn gọn, có căn cứ.",
+    "closing": "Báo cáo đủ căn cứ ở mọi điểm. Tôi đồng ý truy tố cả hai.",
+    "points": [
+      {
+        "id": "ai",
+        "ask": "Thứ nhất: những ai đã gây ra cái chết của ông Vinh, và mỗi người giữ vai trò gì?",
+        "facts": [
+          {
+            "id": "thao",
+            "text": "Bùi Bích Thảo, thư ký: chủ mưu, bỏ thuốc ngủ, báo giờ cho người ra tay.",
+            "keywords": [
+              "thao",
+              "thu ky"
+            ],
+            "probe": "Đồng chí nói đủ tên những người gây án."
+          },
+          {
+            "id": "huu",
+            "text": "Trần Văn Hữu, nhân viên toa 6: người ra tay, mở khoang, đâm nạn nhân, giấu cặp.",
+            "keywords": [
+              "huu",
+              "nhan vien toa",
+              "nhan vien"
+            ],
+            "probe": "Còn ai nữa? Ai là người trực tiếp vào khoang?"
+          },
+          {
+            "id": "vai-tro",
+            "text": "Phân rõ vai trò: một người bỏ thuốc và dựng chứng cứ ngoại phạm, một người vào khoang ra tay.",
+            "keywords": [
+              "chu muu",
+              "ra tay",
+              "dam",
+              "bo thuoc",
+              "dong pham",
+              "truc tiep"
+            ],
+            "probe": "Mỗi người đã làm phần việc gì?"
+          }
+        ],
+        "hint": "Gợi ý: chiếc cặp ở đâu, ai mở được chỗ đó; và hai số máy nhắn tin cho nhau lúc 01:26, 01:44."
+      },
+      {
+        "id": "thu-doan",
+        "ask": "Thứ hai: ông Vinh bị giết thế nào, vì sao ông không chống cự?",
+        "facts": [
+          {
+            "id": "thuoc",
+            "text": "Ông bị bỏ thuốc ngủ zolpidem vào cốc trà tối 12/10 nên ngủ say, không chống cự.",
+            "keywords": [
+              "thuoc ngu",
+              "zolpidem",
+              "thuoc"
+            ],
+            "probe": "Vì sao một người bị đâm lại không tỉnh dậy?"
+          },
+          {
+            "id": "dam",
+            "text": "Bị đâm một nhát dưới xương đòn trái bằng chiếc dùi khắc N.H.L (của Long) lúc khoảng 01:35.",
+            "keywords": [
+              "dui",
+              "dam",
+              "1:35",
+              "01:35",
+              "1 gio 35",
+              "xuong don"
+            ],
+            "probe": "Hung khí là gì, và ông bị giết lúc nào?"
+          }
+        ],
+        "hint": "Gợi ý: kết quả xét nghiệm độc chất và giám định chiếc dùi."
+      },
+      {
+        "id": "phong-kin",
+        "ask": "Thứ ba: báo chí nói khoang 4 khoá từ bên trong. Đồng chí giải thích căn phòng kín ra sao?",
+        "facts": [
+          {
+            "id": "khong-chot",
+            "text": "Lẫy bên trong chưa từng được gập: lẫy và móc khớp nguyên vẹn; bẩy lẫy đang gập thì lẫy luôn cong; thủ pháp dây cước không thực hiện được.",
+            "keywords": [
+              "lay",
+              "chua gap",
+              "khong gap",
+              "nguyen ven",
+              "khong cong",
+              "thuc nghiem",
+              "khong khoa",
+              "gia"
+            ],
+            "probe": "Cái lẫy bên trong thực sự ở trạng thái nào?"
+          },
+          {
+            "id": "chia",
+            "text": "Cửa chỉ khoá ổ, mở bằng chìa vạn năng của nhân viên toa (tiếng chìa lúc 01:35); 'phòng kín' chỉ là lời của Thảo và Hữu; lúc 05:10 Hữu mở bằng chìa rồi mới gõ kìm.",
+            "keywords": [
+              "chia",
+              "van nang",
+              "o khoa",
+              "ba sen",
+              "kim",
+              "dung chuyen",
+              "dung len",
+              "loi khai"
+            ],
+            "probe": "Vậy cửa được mở bằng gì, và ai kể chuyện cửa chốt bên trong?"
+          }
+        ],
+        "hint": "Gợi ý: giám định cửa, thực nghiệm và lời bà Sen ở khoang 3."
+      },
+      {
+        "id": "do-toi",
+        "ask": "Thứ tư: hung khí và dây cước đều của ông Long. Vì sao ông Long không phải người gây án?",
+        "facts": [
+          {
+            "id": "ngoai-pham",
+            "text": "Từ 01:15 tới 01:55 Long đứng ở chỗ nối toa 5–6 với anh Đức, gọi vợ 01:28–01:47.",
+            "keywords": [
+              "noi toa",
+              "hut thuoc",
+              "goi dien",
+              "goi vo",
+              "duc",
+              "nha mang"
+            ],
+            "probe": "Lúc 01:35 ông Long ở đâu, ai xác nhận?"
+          },
+          {
+            "id": "bi-lay",
+            "text": "Dùi và cước bị lấy từ ba lô của Long ở khoang 2 (cửa không gập lẫy) để đổ tội; cước chỉ đặt hờ ở khe cửa; sợi vải đồng phục đường sắt ở cán dùi.",
+            "keywords": [
+              "ba lo",
+              "lay trom",
+              "do toi",
+              "dat ho",
+              "soi vai",
+              "dong phuc",
+              "vu khong",
+              "gai"
+            ],
+            "probe": "Vậy đồ của ông Long đến hiện trường bằng cách nào?"
+          }
+        ],
+        "hint": "Gợi ý: biên bản xác minh hành tung của Long và giám định chiếc dùi."
+      },
+      {
+        "id": "dong-co",
+        "ask": "Cuối cùng: vì sao hai người này cùng ra tay, và mối liên hệ giữa họ là gì?",
+        "facts": [
+          {
+            "id": "quan-he",
+            "text": "Hữu là cậu ruột của Thảo; hai người giấu quan hệ; Thảo đặt vé xin vào toa 6.",
+            "keywords": [
+              "cau",
+              "cau ruot",
+              "chau",
+              "ho hang",
+              "ho khau"
+            ],
+            "probe": "Hai người này có quan hệ gì với nhau?"
+          },
+          {
+            "id": "dong-co",
+            "text": "Thảo có thai với ông Vinh, bị ông cắt đứt bằng thư tay ngày 10/10; Hữu nợ lô đề 150 triệu, trong cặp có 200 triệu.",
+            "keywords": [
+              "thai",
+              "co thai",
+              "cat dut",
+              "thu tay",
+              "bo roi",
+              "no",
+              "lo de",
+              "150",
+              "200 trieu",
+              "tien"
+            ],
+            "probe": "Mỗi người có lý do gì?"
+          }
+        ],
+        "hint": "Gợi ý: hồ sơ nhân thân của Hữu và bức thư tay trong túi xách."
+      }
+    ]
+  }
+}

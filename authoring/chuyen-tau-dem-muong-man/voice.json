@@ -1,0 +1,71 @@
+{
+  "_ghi_chu": "Giọng đọc lấy thẳng chữ từ case.json. Người dẫn chuyện và công an giọng Nam; Thảo, Hữu giọng Bắc; Long giọng Nam. Chạy: npm run gen-voice -- chuyen-tau-dem-muong-man và npm run gen-doc-voice -- chuyen-tau-dem-muong-man",
+  "engine": "vieneu",
+  "voices": {
+    "dan": "Thái Sơn",
+    "quan": "Minh Triết",
+    "thao": "Ngọc Linh",
+    "huu": "Phạm Tuyên",
+    "long": "Adam",
+    "tung": "Đức Trí",
+    "sen": "Kim Thanh",
+    "ngoc": "Mỹ Duyên",
+    "giamdinh": "Thiền Tâm Đức"
+  },
+  "temperature": 0.8,
+  "clips": [
+    {
+      "id": "intro",
+      "source": "intro",
+      "quotes": [
+        "dan"
+      ]
+    },
+    {
+      "id": "beat-2",
+      "source": "beat:2"
+    },
+    {
+      "id": "beat-3",
+      "source": "beat:3",
+      "quotes": [
+        "giamdinh"
+      ]
+    },
+    {
+      "id": "beat-4",
+      "source": "beat:4"
+    },
+    {
+      "id": "beat-5",
+      "source": "beat:5",
+      "quotes": [
+        "thao"
+      ]
+    },
+    {
+      "id": "finale",
+      "source": "finale",
+      "quotes": [
+        {
+          "voice": "huu",
+          "before": "[thở dài]"
+        },
+        "dan",
+        "thao"
+      ]
+    }
+  ],
+  "docs": {
+    "narrator": "dan",
+    "asker": "quan",
+    "speakers": {
+      "Trần Văn Hữu": "huu",
+      "Bùi Bích Thảo": "thao",
+      "Nguyễn Hoàng Long": "long",
+      "Hồ Sĩ Tùng": "tung",
+      "Lê Thị Bích Ngọc": "ngoc",
+      "Ngô Thị Sen": "sen"
+    }
+  }
+}

@@ -95,19 +95,19 @@
     {
       "id": "chuyen-tau-dem-muong-man",
       "no": 5,
-      "status": "coming-soon",
+      "status": "available",
       "kind": "fiction",
       "title": "Chuyến tàu đêm Mường Mán",
-      "tagline": "Khoang giường nằm số 4 khoá trái từ bên trong khi đoàn tàu Bắc Nam vượt qua đèo Cà Ná lúc nửa đêm.",
-      "difficulty": 3,
-      "players": "2–5",
-      "duration": "100–120 phút",
-      "setting": "Toa 6 tàu Thống Nhất SE3, cung đường ray Bình Thuận (hư cấu)",
+      "tagline": "Khoang giường nằm số 4 khoá từ bên trong khi đoàn tàu SE3 vượt đèo Cà Ná lúc nửa đêm.",
+      "difficulty": 5,
+      "players": "2–6",
+      "duration": "120–150 phút",
+      "setting": "Toa 6 tàu Thống Nhất SE3, Bình Thuận (hư cấu)",
       "tags": [
         "Án mạng",
         "Phòng kín",
-        "Tàu hỏa",
-        "Cơ học"
+        "Đồng phạm",
+        "Tàu hoả"
       ],
       "cover": "images/cover.webp"
     },

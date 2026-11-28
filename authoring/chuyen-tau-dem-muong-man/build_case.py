@@ -1,0 +1,533 @@
+"""Dựng public/cases/chuyen-tau-dem-muong-man/case.json (bản 2, có đồng phạm). Chạy ở thư mục gốc:
+python3 authoring/chuyen-tau-dem-muong-man/build_case.py"""
+import json
+import os
+
+CID = 'chuyen-tau-dem-muong-man'
+CA = ['Công an tỉnh Bình Thuận', 'Phòng Cảnh sát hình sự']
+DTV = 'Điều tra viên'
+DTV_NAME = 'Thiếu tá Phan Đình Quân'
+
+
+def tl(name, *pairs):
+    """Lời khai: (người nói, câu); None = người khai."""
+    return [{'n': i + 1, 'speaker': s or name, 'text': t} for i, (s, t) in enumerate(pairs)]
+
+
+D = []
+add = D.append
+
+# ───────────── Vòng 1: chiếc khoang khoá kín ─────────────
+add({'id': 'd00', 'stage': 1, 'type': 'people', 'title': 'Nạn nhân và những người liên quan',
+     'paragraphs': ['Ảnh thẻ trích từ hồ sơ nhân khẩu, kèm lý do từng người được đưa vào diện xác minh ngay sáng 13/10/2008.']})
+
+add({'id': 'd01', 'stage': 1, 'type': 'newspaper', 'title': 'Báo Bình Thuận: Án mạng trong khoang tàu khoá kín',
+     'masthead': 'Bình Thuận', 'issue': 'Số 2.841', 'date': 'Thứ Hai, 13/10/2008',
+     'headline': 'Tổng giám đốc mỏ titan chết trong khoang tàu SE3 khoá kín',
+     'deck': 'Cửa khoang chốt từ bên trong, cửa sổ không mở được. Chiếc cặp da đựng 200 triệu đồng biến mất.',
+     'image': 'images/d01-bao-chi.webp', 'imageCaption': 'Đoàn tàu SE3 dừng khẩn cấp tại ga Mường Mán sáng 13/10.',
+     'paragraphs': [
+         'Rạng sáng 13/10, tàu Thống Nhất SE3 phải dừng khẩn cấp tại ga Mường Mán (huyện Hàm Thuận Nam) sau khi nhân viên toa 6 phát hiện một hành khách tử vong trong khoang giường nằm số 4.',
+         'Nạn nhân là ông Đặng Quốc Vinh (58 tuổi), tổng giám đốc Công ty Khoáng sản Rạng Đông, đang trên đường vào Phan Thiết dự phiên mở thầu mỏ titan.',
+         'Theo nhân viên toa, cửa khoang được chốt từ bên trong; anh phải dùng kìm bẩy chốt mới vào được. Chiếc cặp da của nạn nhân, nghe nói đựng 200 triệu đồng và hồ sơ dự thầu, không còn trong khoang.',
+         'Hành khách bàn tán về "căn phòng kín trên đường ray". Công an tỉnh Bình Thuận đã giữ toàn bộ hành khách toa 6 lại ga để làm việc.']})
+
+add({'id': 'd02', 'stage': 1, 'type': 'report', 'title': 'Biên bản khám nghiệm hiện trường khoang 4 toa 6',
+     'header': CA, 'heading': 'Biên bản khám nghiệm hiện trường', 'code': '112/KNHT', 'date': '06 giờ 15 ngày 13/10/2008',
+     'fields': [{'label': 'Địa điểm', 'value': 'Khoang giường nằm số 4, toa 6, tàu SE3, đỗ tại ga Mường Mán'},
+                {'label': 'Người chết', 'value': 'Đặng Quốc Vinh, 58 tuổi'}],
+     'image': 'images/d02-hien-truong-khoang-4.webp', 'imageCaption': 'Giường 01 khoang 4 lúc khám nghiệm.',
+     'sections': [
+         {'heading': '1. Tư thế nạn nhân', 'paragraphs': [
+             'Nạn nhân nằm ngửa trên giường 01 (tầng dưới), chăn đắp ngang ngực, hai tay xuôi theo người. Kính lão gấp gọn trên bàn nhỏ.',
+             '**Khoang không có dấu hiệu xô xát**: gối, chăn, đồ trên bàn không xê dịch, không vật gì rơi.']},
+         {'heading': '2. Đồ vật', 'paragraphs': [
+             'Trên bàn có một phích nước nóng của toa, hai cốc sứ: cốc gần giường 01 còn cặn trà; cốc kia đã tráng sạch, úp ngược.',
+             'Chiếc cặp da của nạn nhân (theo thư ký Bùi Bích Thảo: đựng 200 triệu đồng và hồ sơ dự thầu) không có trong khoang. Giường 02 có hành lý của bà Thảo; giường 03, 04 trống.']},
+         {'heading': '3. Cửa khoang', 'paragraphs': [
+             'Cửa trượt có ổ khoá (mở bằng chìa từ phía hành lang) và lẫy chốt gập ở mặt trong. Theo nhân viên toa Trần Văn Hữu, lúc 05 giờ 10 lẫy đang gập, anh dùng kìm bẩy mới mở được.',
+             'Một đoạn dây cước nylon trong suốt dài khoảng 3 m mắc ở khe gioăng cao su phía trên cửa. Cửa sổ là loại kính cố định, không mở được.']},
+         {'heading': '4. Hành trình', 'paragraphs': ['Theo trưởng tàu: từ khi rời ga Tháp Chàm (00 giờ 41) tới khi dừng khẩn cấp ở ga Mường Mán (05 giờ 30), tàu không dừng ở ga nào; cửa lên xuống các toa khoá suốt hành trình.']}],
+     'signers': [{'role': DTV, 'name': DTV_NAME}]})
+
+add({'id': 'd03', 'stage': 1, 'type': 'scan', 'title': 'Sơ đồ toa 6 tàu SE3',
+     'image': 'images/d03-so-do-toa-tau.webp', 'caption': 'Sơ đồ toa 6 lập lúc khám nghiệm: buồng nhân viên ở đầu toa, khoang 1–7, nhà vệ sinh và ngăn kỹ thuật điều hoà ở cuối toa.'})
+
+add({'id': 'd04', 'stage': 1, 'type': 'report', 'title': 'Kết quả giám định pháp y sơ bộ',
+     'header': ['Bệnh viện Đa khoa tỉnh Bình Thuận', 'Khoa Pháp y'], 'heading': 'Kết quả giám định sơ bộ', 'code': '86/PY', 'date': 'Ngày 13 tháng 10 năm 2008',
+     'image': 'images/d04-giam-dinh-phap-y.webp', 'imageCaption': 'Sơ đồ vết thương.',
+     'fields': [{'label': 'Người chết', 'value': 'Đặng Quốc Vinh, 58 tuổi'}],
+     'sections': [
+         {'heading': '1. Vết thương', 'paragraphs': ['Một vết đâm duy nhất dưới xương đòn trái, sâu 9 cm, làm đứt tĩnh mạch dưới đòn. Hung khí là vật nhọn hình trụ, đường kính khoảng 0,7 cm.']},
+         {'heading': '2. Dấu hiệu khác', 'paragraphs': ['**Không có vết thương chống đỡ** ở tay, cánh tay; móng tay sạch. Không có dấu vết giằng co trên cơ thể.']},
+         {'heading': '3. Thời gian tử vong', 'paragraphs': ['Khoảng **01 giờ 30 đến 02 giờ 00** ngày 13/10/2008. Đã lấy mẫu máu, dịch dạ dày gửi xét nghiệm độc chất.']}],
+     'signature': 'Giám định viên: BS. Lê Hoàng Phúc'})
+
+add({'id': 'd05', 'stage': 1, 'type': 'photo', 'title': 'Ảnh cận cảnh lẫy chốt và nẹp cửa khoang 4',
+     'image': 'images/d05-cua-truot.webp', 'label': 'Tang vật ảnh số 5 · 13/10/2008',
+     'caption': 'Lẫy chốt gập ở mặt trong cửa khoang 4 sau khi nhân viên toa "bẩy" lúc 05:10. Vòng đỏ: vệt xước trên ray trượt phía trên, gửi giám định.'})
+
+add({'id': 'd06', 'stage': 1, 'type': 'testimony', 'title': 'Lời khai của Trần Văn Hữu (nhân viên toa 6)',
+     'header': CA, 'heading': 'Biên bản ghi lời khai', 'date': '07 giờ 00 ngày 13/10/2008',
+     'fields': [{'label': 'Người khai', 'value': 'Trần Văn Hữu, 48 tuổi'}, {'label': 'Nghề nghiệp', 'value': 'Nhân viên phục vụ toa 6, Xí nghiệp Vận dụng toa xe khách Hà Nội'}],
+     'lines': tl('Trần Văn Hữu',
+         (DTV, 'Anh kể lại việc phát hiện nạn nhân.'),
+         (None, 'Khoảng hai giờ kém năm, chị Thảo ở khoang 4 đi đâu về, gõ cửa mãi không ai mở, chị bảo cửa chốt bên trong. Tôi nghĩ ông khách ngủ say nên xếp chị sang khoang 6 đang trống.'),
+         (None, 'Năm giờ chị Thảo nhờ tôi mở cửa lấy đồ. Tôi gõ, gọi mãi không thấy thưa.'),
+         (DTV, 'Anh mở cửa bằng cách nào?'),
+         (None, 'Lẫy chốt bên trong gập chặt, tôi phải lấy kìm luồn vào khe bẩy mấy cái mới bật ra. Kéo cửa ra thì thấy ông ấy nằm im, máu thấm cả chăn.'),
+         (DTV, 'Trong đêm anh có thấy ai lại gần khoang 4?'),
+         (None, 'Khoảng một rưỡi tôi thấy anh khách khoang 2, anh Long, đi dọc hành lang về phía khoang 4. Tối hôm trước anh ta còn sang đấy cãi nhau to tiếng.'),
+         (DTV, 'Ai giữ chìa khoá các khoang?'),
+         (None, 'Mỗi khoang có chìa riêng đưa khách. Tôi có một chìa vạn năng để mở ổ khoá khi khách để quên, nhưng lẫy gập bên trong thì chìa nào cũng chịu.'),
+         (None, 'Tôi làm toa này mười một năm, chưa gặp chuyện như thế bao giờ.')),
+     'signature': 'Người khai: Trần Văn Hữu'})
+
+add({'id': 'd07', 'stage': 1, 'type': 'testimony', 'title': 'Lời khai của Bùi Bích Thảo (thư ký)',
+     'header': CA, 'heading': 'Biên bản ghi lời khai', 'date': '07 giờ 45 ngày 13/10/2008',
+     'fields': [{'label': 'Người khai', 'value': 'Bùi Bích Thảo, 31 tuổi'}, {'label': 'Quan hệ', 'value': 'Thư ký riêng của ông Vinh 4 năm'}],
+     'lines': tl('Bùi Bích Thảo',
+         (DTV, 'Chị kể lại tối 12/10.'),
+         (None, 'Khoảng mười rưỡi, ông Long ở khoang 2 sang xin nói chuyện với anh Vinh về vụ kiện. Hai người cãi to, ông Long đập tay xuống bàn rồi bỏ về.'),
+         (None, 'Mười một giờ hai mươi anh Hữu nhân viên toa mang phích nước nóng vào. Mười một rưỡi tôi pha trà, anh Vinh uống một cốc rồi đi ngủ.'),
+         (DTV, 'Sau đó chị làm gì?'),
+         (None, 'Tôi khó ngủ trên tàu, khoảng một giờ hai mươi tôi ra toa căng-tin ngồi. Lúc đi anh Vinh đang ngủ, tôi kéo cửa lại.'),
+         (None, 'Hai giờ hơn tôi về, cửa chốt bên trong, gõ không ai mở. Anh Hữu xếp cho tôi sang khoang 6.'),
+         (DTV, 'Trong cặp của ông Vinh có gì?'),
+         (None, 'Hai trăm triệu tiền mặt và bộ hồ sơ dự thầu mỏ titan. Chỉ tôi với anh ấy biết.'),
+         (None, 'Ông Long căm anh Vinh lắm. Phiên phúc thẩm sáng nay mà thua thì ông ấy mất trắng.')),
+     'signature': 'Người khai: Bùi Bích Thảo'})
+
+add({'id': 'd08', 'stage': 1, 'type': 'receipt', 'title': 'Bảng phân bổ hành khách và hành trình toa 6',
+     'shop': 'Đường sắt Việt Nam · Tàu SE3', 'address': 'Trích sổ soát vé toa 6 và nhật ký chạy tàu đêm 12–13/10/2008',
+     'image': 'images/d09-ve-tau-se3.webp',
+     'fields': [{'label': 'Khoang 1', 'value': 'Gia đình ông Lương Văn Toàn (4 người)'},
+                {'label': 'Khoang 2', 'value': 'Nguyễn Hoàng Long, 3 công nhân đi Phan Thiết'},
+                {'label': 'Khoang 3', 'value': 'Bà Ngô Thị Sen và cháu nội'},
+                {'label': 'Khoang 4', 'value': 'Đặng Quốc Vinh (G01), Bùi Bích Thảo (G02); G03, G04 ông Vinh mua để trống'},
+                {'label': 'Khoang 5', 'value': '4 sinh viên'}, {'label': 'Khoang 6', 'value': 'Trống'},
+                {'label': 'Khoang 7', 'value': '2 cán bộ ngân hàng'},
+                {'label': 'Toa 7 (kế bên)', 'value': 'Hồ Sĩ Tùng và 2 nhân viên Công ty Khoáng sản Hải Hà'}],
+     'items': [{'name': 'Rời ga Tháp Chàm', 'qty': '', 'price': '00:41'},
+               {'name': 'Không dừng ga nào (cửa lên xuống khoá)', 'qty': '', 'price': '00:41–05:30'},
+               {'name': 'Dừng khẩn cấp ga Mường Mán', 'qty': '', 'price': '05:30'}],
+     'total': 'Toa 6: 22 hành khách, 1 nhân viên', 'footer': ['Trưởng tàu: Nguyễn Đức Thọ']})
+
+# ───────────── Vòng 2: kẻ thù, đối thủ và chén trà ─────────────
+add({'id': 'd09', 'stage': 2, 'type': 'testimony', 'title': 'Lời khai của Nguyễn Hoàng Long (khoang 2)',
+     'header': CA, 'heading': 'Biên bản ghi lời khai', 'date': '09 giờ 00 ngày 13/10/2008',
+     'fields': [{'label': 'Người khai', 'value': 'Nguyễn Hoàng Long, 42 tuổi, quê Phan Thiết'}, {'label': 'Nghề nghiệp', 'value': 'Nguyên giám đốc chi nhánh Rạng Đông; nay bán đồ câu cá'}],
+     'lines': tl('Nguyễn Hoàng Long',
+         (DTV, 'Quan hệ của anh với ông Vinh?'),
+         (None, 'Ông ấy kiện tôi chiếm dụng vốn chi nhánh, sơ thẩm tôi thua, mất nhà. Sáng nay là phiên phúc thẩm ở Phan Thiết.'),
+         (DTV, 'Tối 12/10 anh có sang khoang 4 không?'),
+         (None, 'Có, mười rưỡi tôi sang xin hoà giải, ông ấy không nghe, tôi bực quá đập bàn rồi về. Từ mười một giờ tôi lên giường ngủ một mạch tới lúc ồn ào sáng ra.'),
+         (DTV, 'Trong hành lý anh có gì đặc biệt?'),
+         (None, 'Đồ nghề câu cá: cuộn cước, cái dùi sửa lưới. Tôi về quê đi câu với mấy anh em, chuyện bình thường.'),
+         (None, 'Tôi ghét ông ấy thật, nhưng tôi cần ông ấy sống để thắng ở toà, chứ giết ông ấy thì tôi được gì?')),
+     'signature': 'Người khai: Nguyễn Hoàng Long'})
+
+add({'id': 'd10', 'stage': 2, 'type': 'testimony', 'title': 'Lời khai của Hồ Sĩ Tùng (toa 7)',
+     'header': CA, 'heading': 'Biên bản ghi lời khai', 'date': '10 giờ 00 ngày 13/10/2008',
+     'fields': [{'label': 'Người khai', 'value': 'Hồ Sĩ Tùng, 45 tuổi'}, {'label': 'Nghề nghiệp', 'value': 'Giám đốc Công ty Khoáng sản Hải Hà (TP Hồ Chí Minh)'}],
+     'lines': tl('Hồ Sĩ Tùng',
+         (DTV, 'Ông có biết ông Vinh không?'),
+         (None, 'Biết chứ, đối thủ của tôi ở gói thầu titan Hàm Tân. Hồ sơ của ông ấy mà lọt ra thì tôi chả phải đoán giá nữa.'),
+         (DTV, 'Đêm qua ông ở đâu?'),
+         (None, 'Tôi với hai cậu nhân viên ngồi toa căng-tin từ khoảng một giờ kém mười tới gần hai giờ kém hai mươi, uống bia, rồi về toa 7 ngủ.'),
+         (None, 'Tôi không bước sang toa 6 lần nào. Cửa thông hai toa ban đêm có khoá đâu, nhưng tôi sang đấy làm gì.')),
+     'signature': 'Người khai: Hồ Sĩ Tùng'})
+
+add({'id': 'd11', 'stage': 2, 'type': 'report', 'title': 'Kết quả xét nghiệm độc chất',
+     'header': ['Viện Khoa học hình sự', 'Phân viện tại TP Hồ Chí Minh'], 'heading': 'Kết quả xét nghiệm', 'code': '1207/XN', 'date': 'Ngày 14 tháng 10 năm 2008',
+     'fields': [{'label': 'Mẫu', 'value': 'Máu, dịch dạ dày nạn nhân; cặn trà trong hai cốc sứ thu tại khoang 4'}],
+     'sections': [
+         {'heading': '1. Kết quả', 'paragraphs': ['Phát hiện **zolpidem** (thuốc ngủ) trong máu và dịch dạ dày nạn nhân, nồng độ tương đương 2–3 viên 10 mg: đủ gây ngủ sâu, khó đánh thức.',
+                                                  'Cặn trà trong cốc gần giường 01 có zolpidem. Cốc thứ hai đã tráng sạch, không còn mẫu.']},
+         {'heading': '2. Bệnh án', 'paragraphs': ['Theo hồ sơ khám sức khoẻ định kỳ và lời bà Nguyễn Thị Hồng (vợ nạn nhân), ông Vinh không dùng thuốc ngủ, không có đơn thuốc nhóm này.']},
+         {'heading': '3. Nhận xét', 'paragraphs': ['Thuốc được đưa vào qua đồ uống trước khi nạn nhân ngủ, khoảng 1–2 giờ trước khi chết.']}],
+     'signature': 'Giám định viên: TS. Đoàn Thị Mai'})
+
+add({'id': 'd12', 'stage': 2, 'type': 'testimony', 'title': 'Lời khai của nhân viên toa căng-tin (toa 9)',
+     'header': CA, 'heading': 'Biên bản ghi lời khai', 'date': '11 giờ 00 ngày 13/10/2008',
+     'fields': [{'label': 'Người khai', 'value': 'Lê Thị Bích Ngọc, 26 tuổi, phục vụ toa căng-tin'}],
+     'lines': tl('Lê Thị Bích Ngọc',
+         (DTV, 'Đêm qua toa căng-tin có những ai?'),
+         (None, 'Từ một giờ kém mười có ba người đàn ông ngồi bàn 2 uống bia, ông lớn tuổi nhất là ông Tùng. Họ ngồi tới hai giờ kém hai mươi rồi về toa 7, lúc đi còn hỏi mượn bật lửa.'),
+         (None, 'Khoảng một giờ hai mươi có một chị trẻ vào ngồi một mình bàn 5, ngay dưới cái đồng hồ.'),
+         (DTV, 'Chị ấy làm gì?'),
+         (None, 'Gọi cốc cà phê nhưng không uống mấy. Chị ấy hỏi em mấy giờ rồi những hai lần, dù ngồi ngay dưới đồng hồ. Có lúc nhắn tin điện thoại.'),
+         (None, 'Hai giờ năm phút chị ấy đi về phía toa 6.')),
+     'signature': 'Người khai: Lê Thị Bích Ngọc'})
+
+add({'id': 'd13', 'stage': 2, 'type': 'evidence', 'title': 'Tang vật: chiếc dùi và cuộn cước',
+     'code': 'TV-07', 'image': 'images/d12-cuon-cuoc.webp', 'imageCaption': 'Cuộn cước Pioneer 0,45 mm và chiếc dùi sửa lưới cán gỗ.',
+     'fields': [{'label': 'Chiếc dùi', 'value': 'Dùi thép cán gỗ, thân tròn Ø 0,7 cm, khắc N.H.L ở cán. Thu trong thùng rác nhà vệ sinh cuối toa 6, 08 giờ 30 ngày 13/10'},
+                {'label': 'Cuộn cước', 'value': 'Cước nylon Pioneer 0,45 mm, thu trong ba lô của Nguyễn Hoàng Long ở khoang 2. Đầu cuộn có vết cắt mới, ước thiếu khoảng 3 m'}],
+     'paragraphs': ['Nguyễn Hoàng Long xác nhận chiếc dùi và cuộn cước là của mình. Dùi có vết máu khô, đã được lau; đã gửi giám định.']})
+
+add({'id': 'd14', 'stage': 2, 'type': 'report', 'title': 'Giám định đoạn cước ở khe cửa khoang 4',
+     'header': ['Viện Khoa học hình sự', 'Bộ Công an'], 'heading': 'Kết luận giám định', 'code': '1209/GĐ', 'date': 'Ngày 14 tháng 10 năm 2008',
+     'image': 'images/d10-giam-dinh-co-hoc.webp', 'imageCaption': 'Phổ hồng ngoại: mẫu hiện trường và mẫu cuộn Pioneer.',
+     'fields': [{'label': 'Mẫu', 'value': 'Đoạn cước 3 m ở khe gioăng cửa khoang 4; cuộn cước Pioneer thu của Nguyễn Hoàng Long'}],
+     'sections': [{'heading': 'Kết luận', 'paragraphs': ['Hai mẫu cùng loại nylon Pioneer 0,45 mm. Vết cắt ở đầu đoạn cước khớp với vết cắt ở đầu cuộn: **đoạn cước được cắt ra từ chính cuộn của Nguyễn Hoàng Long.**']}],
+     'signature': 'Giám định viên: Đại uý Vũ Thành Nam'})
+
+add({'id': 'd15', 'stage': 2, 'type': 'note', 'title': 'Trích sổ nhật ký phục vụ toa 6 đêm 12–13/10',
+     'paragraphs': ['Sổ ghi tay của nhân viên toa Trần Văn Hữu:',
+                    '— 22:00 Soát vé, nhắc khách giữ tư trang.',
+                    '— 23:20 Phát nước nóng khoang 1–7 (khoang 4 thêm một phích).',
+                    '— 01:00 Kiểm tra cửa đầu toa, cửa cuối toa: khoá.',
+                    '— 01:30 Thấy khách khoang 2 (Long) đi về phía khoang 4.',
+                    '— 01:55 Khách nữ khoang 4 báo cửa chốt trong, khách nam ngủ say. Xếp khách nữ sang khoang 6.',
+                    '__— 05:10 Mở cửa khoang 4 bằng kìm. Khách nam bất tỉnh, báo trưởng tàu.__'],
+     'signature': 'Nhân viên toa: Hữu'})
+
+# ───────────── Vòng 3: căn phòng chưa từng khoá ─────────────
+add({'id': 'd16', 'stage': 3, 'type': 'report', 'title': 'Giám định dấu vết trên cửa khoang 4',
+     'header': ['Viện Khoa học hình sự', 'Bộ Công an'], 'heading': 'Kết luận giám định', 'code': '1215/GĐ', 'date': 'Ngày 15 tháng 10 năm 2008',
+     'fields': [{'label': 'Đối tượng', 'value': 'Lẫy chốt gập, móc khớp, ổ khoá và gioăng cao su cửa khoang 4 toa 6'}],
+     'sections': [
+         {'heading': '1. Lẫy chốt và móc khớp', 'paragraphs': ['Lẫy và móc khớp **nguyên vẹn, không cong, không có vết bẩy hay vết kẹp**. Lò xo lẫy bình thường.']},
+         {'heading': '2. Vết kìm', 'paragraphs': ['Vết kẹp kìm mới duy nhất nằm ở **ốp mặt ngoài ổ khoá**, phía hành lang, không chạm tới lẫy.']},
+         {'heading': '3. Ổ khoá', 'paragraphs': ['Chốt ổ khoá có vết mài mới của chìa: ổ khoá đã được mở bằng chìa trong thời gian gần.']},
+         {'heading': '4. Gioăng cao su phía trên cửa', 'paragraphs': ['Gioăng ép kín khung (khe < 0,2 mm). **Không có vết ma sát của dây cước.** Đoạn cước nằm hờ trong khe, không bị kẹp, không có vết miết. Vệt xước trên ray trượt (ảnh số 5) là vết cũ, đã bám bụi.']}],
+     'signature': 'Giám định viên: Đại uý Vũ Thành Nam'})
+
+add({'id': 'd17', 'stage': 3, 'type': 'report', 'title': 'Biên bản thực nghiệm điều tra trên cửa khoang 4',
+     'header': CA, 'heading': 'Biên bản thực nghiệm điều tra', 'code': '19/TN', 'date': '14 giờ 00 ngày 15/10/2008',
+     'image': 'images/d16-thuc-nghiem-hien-truong.webp', 'imageCaption': 'Các bước thử thủ pháp "giật chốt bằng dây cước" mà báo chí nêu.',
+     'sections': [
+         {'heading': '1. Thủ pháp dây cước', 'paragraphs': ['Luồn cước 0,45 mm qua khe gioăng, buộc vào lẫy, đóng cửa rồi giật từ hành lang: **thử 20 lần, không lần nào gập được lẫy**. Gioăng ép kín làm dây kẹt cứng; khi cố giật, dây đứt hoặc để lại vết miết rõ trên cao su.']},
+         {'heading': '2. Bẩy lẫy đang gập bằng kìm', 'paragraphs': ['Gập lẫy từ bên trong, rồi từ hành lang luồn kìm qua khe để bẩy như lời nhân viên toa: **10/10 lần lẫy bị cong và móc khớp bị toác**, để lại vết kẹp sâu trên lẫy.']},
+         {'heading': '3. Mở bằng chìa vạn năng', 'paragraphs': ['Khi lẫy không gập, chìa vạn năng mở ổ khoá trong 2 giây, phát ra tiếng "tách" nghe rõ ở khoang bên.']}],
+     'signers': [{'role': DTV, 'name': DTV_NAME}]})
+
+add({'id': 'd18', 'stage': 3, 'type': 'testimony', 'title': 'Lời khai của bà Ngô Thị Sen (khoang 3)',
+     'header': CA, 'heading': 'Biên bản ghi lời khai', 'date': '08 giờ 30 ngày 15/10/2008',
+     'fields': [{'label': 'Người khai', 'value': 'Ngô Thị Sen, 67 tuổi, khoang 3 toa 6'}],
+     'lines': tl('Ngô Thị Sen',
+         (DTV, 'Đêm 12/10 bà có nghe thấy gì ở khoang 4?'),
+         (None, 'Mười rưỡi có hai ông cãi nhau to lắm, một ông đập bàn rồi bỏ đi.'),
+         (None, 'Tôi già khó ngủ. Khoảng một rưỡi hơn, tôi xem điện thoại thì một giờ ba mươi lăm, nghe bên khoang 4 có tiếng chìa xoay "tách" một cái, rồi tiếng cửa trượt mở ra, một lúc sau đóng lại.'),
+         (DTV, 'Có ai gõ cửa trước đó không?'),
+         (None, 'Không, không gõ gì cả. Cứ thế mở thôi.'),
+         (DTV, 'Sáng ra bà thấy gì?'),
+         (None, 'Năm giờ mười tôi đi rửa mặt về, thấy anh nhân viên tra chìa vào ổ, xoay một cái, kéo cửa ra được một nửa rồi mới lấy cái kìm gõ gõ vào cái lẫy phía trong.'),
+         (None, 'Lúc ấy tôi tưởng anh ấy sửa cửa, nên không để ý.')),
+     'signature': 'Người khai: Ngô Thị Sen'})
+
+add({'id': 'd19', 'stage': 3, 'type': 'report', 'title': 'Biên bản xác minh hành tung của Nguyễn Hoàng Long',
+     'header': CA, 'heading': 'Biên bản xác minh', 'code': '24/XM', 'date': 'Ngày 15 tháng 10 năm 2008',
+     'sections': [
+         {'heading': '1. Cuộc gọi', 'paragraphs': ['Theo nhà mạng, số máy của Long gọi số của vợ (bà Trịnh Thị Lan) lúc **01:28**, kéo dài **19 phút**, qua trạm phát sóng đèo Cà Ná.']},
+         {'heading': '2. Người làm chứng', 'paragraphs': ['Anh Phạm Văn Đức (khoang 5 toa 5) khai: khoảng 01:15 anh ra chỗ nối toa 5–6 hút thuốc, gặp Long đã đứng đó. Hai người đứng cùng nhau tới khoảng 01:55, Long gọi điện cho vợ rất lâu, có lúc khóc. Đầu lọc thuốc lá hai loại thu ở gạt tàn chỗ nối toa khớp với lời khai.']},
+         {'heading': '3. Kết luận', 'paragraphs': ['Từ khoảng 01:15 đến 01:55 ngày 13/10, Nguyễn Hoàng Long ở chỗ nối toa 5–6, không đi về phía khoang 4.']}],
+     'signers': [{'role': DTV, 'name': DTV_NAME}]})
+
+add({'id': 'd20', 'stage': 3, 'type': 'testimony', 'title': 'Lời khai lần hai của Nguyễn Hoàng Long',
+     'header': CA, 'heading': 'Biên bản ghi lời khai', 'date': '16 giờ 00 ngày 15/10/2008',
+     'fields': [{'label': 'Người khai', 'value': 'Nguyễn Hoàng Long, 42 tuổi'}],
+     'lines': tl('Nguyễn Hoàng Long',
+         (DTV, 'Tại sao anh khai ngủ một mạch tới sáng?'),
+         (None, 'Tôi sợ. Tối trước tôi vừa cãi nhau với ông ấy, sáng ra ông ấy chết, ai mà chẳng nghĩ là tôi.'),
+         (None, 'Một giờ hơn tôi ra chỗ nối toa hút thuốc, gọi về cho vợ. Phiên toà sáng nay tôi sợ thua lắm.'),
+         (DTV, 'Lúc anh đi, ba lô để đâu?'),
+         (None, 'Trên giường tôi ở khoang 2. Cửa tôi chỉ kéo vào, không gập lẫy, mấy anh công nhân ngủ say cả.'),
+         (None, 'Sáng ra tôi thấy đầu cuộn cước bị cắt, cái dùi thì mất. Tôi không dám nói.')),
+     'signature': 'Người khai: Nguyễn Hoàng Long'})
+
+add({'id': 'd21', 'stage': 3, 'type': 'report', 'title': 'Giám định chiếc dùi khắc N.H.L',
+     'header': ['Viện Khoa học hình sự', 'Bộ Công an'], 'heading': 'Kết luận giám định', 'code': '1218/GĐ', 'date': 'Ngày 15 tháng 10 năm 2008',
+     'fields': [{'label': 'Đối tượng', 'value': 'Chiếc dùi thép cán gỗ thu tại thùng rác nhà vệ sinh cuối toa 6'}],
+     'sections': [
+         {'heading': '1. Vết máu', 'paragraphs': ['Máu trên thân dùi là máu của Đặng Quốc Vinh. Thân dùi khớp với vết thương (Ø 0,7 cm).']},
+         {'heading': '2. Dấu vân tay', 'paragraphs': ['Cán dùi đã bị lau, không thu được dấu vân tay rõ.']},
+         {'heading': '3. Sợi vải', 'paragraphs': ['Trong khe nứt ở cán gỗ có **3 sợi vải pha polyester màu xanh tím than**, cùng loại vải may đồng phục nhân viên phục vụ ngành đường sắt năm 2008. Không cùng loại với quần áo của Nguyễn Hoàng Long.']}],
+     'signature': 'Giám định viên: Đại uý Vũ Thành Nam'})
+
+# ───────────── Vòng 4: chiếc cặp da ─────────────
+add({'id': 'd22', 'stage': 4, 'type': 'evidence', 'title': 'Biên bản thu giữ chiếc cặp da trong ngăn kỹ thuật điều hoà',
+     'code': 'TV-11', 'image': 'images/d15-tien-va-cap-da.webp', 'imageCaption': 'Cặp da, tiền và hồ sơ dự thầu thu trong ngăn kỹ thuật cuối toa 6.',
+     'fields': [{'label': 'Nơi thu', 'value': 'Ngăn kỹ thuật điều hoà cuối toa 6, sau nắp lưới thông gió'},
+                {'label': 'Thời gian', 'value': '10 giờ 00 ngày 16/10/2008'},
+                {'label': 'Tài sản', 'value': 'Cặp da của ông Vinh; 180.000.000đ (tờ 500.000đ); hồ sơ dự thầu mỏ titan còn nguyên niêm phong'}],
+     'paragraphs': ['Nắp ngăn kỹ thuật khoá bằng **chìa vuông chuyên dụng**, chỉ cấp cho nhân viên toa và thợ điều hoà; không có dấu cạy. Cặp được bọc trong một tấm chăn in chữ **"SE3-T6"** (chăn dự phòng của nhân viên toa 6).',
+                    'So với 200 triệu theo lời bà Thảo, thiếu 20 triệu đồng.']})
+
+add({'id': 'd23', 'stage': 4, 'type': 'report', 'title': 'Biên bản khám xét tủ đồ và giày của nhân viên toa 6',
+     'header': CA, 'heading': 'Biên bản khám xét', 'code': '31/KX', 'date': '14 giờ 00 ngày 16/10/2008',
+     'image': 'images/d14-giam-dinh-vet-mau.webp', 'imageCaption': 'Đối chiếu ADN: máu nạn nhân, máu trên dùi, máu trên giày.',
+     'fields': [{'label': 'Người bị khám xét', 'value': 'Trần Văn Hữu, nhân viên toa 6'}],
+     'sections': [
+         {'heading': '1. Tủ đồ nhân viên', 'paragraphs': ['Trong túi áo khoác có phong bì đựng **20.000.000đ** (40 tờ 500.000đ). Số seri nối tiếp với các tờ tiền trong cặp da của ông Vinh.']},
+         {'heading': '2. Giày đồng phục', 'paragraphs': ['Đôi giày da đen của Hữu có **các giọt máu li ti** ở mũi và đường chỉ, đã được lau. Giám định ADN: máu của Đặng Quốc Vinh.']},
+         {'heading': '3. Lời người bị khám xét', 'paragraphs': ['Hữu nói tiền là tiền "chơi hụi", máu ở giày là do "lúc mở cửa giẫm phải".']}],
+     'signers': [{'role': DTV, 'name': DTV_NAME}]})
+
+add({'id': 'd24', 'stage': 4, 'type': 'report', 'title': 'Trích kê tin nhắn và cuộc gọi của hai số máy',
+     'header': ['Công ty Viễn thông quân đội', 'Chi nhánh Bình Thuận'], 'heading': 'Trích kê theo yêu cầu cơ quan điều tra', 'code': '0478/VT', 'date': 'Ngày 16 tháng 10 năm 2008',
+     'fields': [{'label': 'Số máy A', 'value': '0983 xxx 612 (Bùi Bích Thảo)'}, {'label': 'Số máy B', 'value': '0912 xxx 347 (Trần Văn Hữu)'}],
+     'sections': [
+         {'heading': 'Liên lạc giữa A và B, 10–13/10/2008', 'paragraphs': [
+             '— 10/10, 21:14: A gọi B, 12 phút.',
+             '— 12/10, 18:02: B gọi A, 3 phút.',
+             '— 13/10, 01:26: A nhắn B: "Em ngoi can tin roi".',
+             '— 13/10, 01:44: B nhắn A: "Xong".',
+             '— 13/10, 05:02: A nhắn B: "Cau mo cua di".',
+             'Trước ngày 10/10, hai số máy liên lạc với nhau trung bình 4–5 lần mỗi tháng trong hai năm.']}],
+     'signature': 'Trưởng phòng kỹ thuật: Võ Minh Trí'})
+
+add({'id': 'd25', 'stage': 4, 'type': 'testimony', 'title': 'Lời khai lần hai của Bùi Bích Thảo',
+     'header': CA, 'heading': 'Biên bản ghi lời khai', 'date': '09 giờ 00 ngày 17/10/2008',
+     'fields': [{'label': 'Người khai', 'value': 'Bùi Bích Thảo, 31 tuổi'}],
+     'lines': tl('Bùi Bích Thảo',
+         (DTV, 'Chị quen anh Trần Văn Hữu từ bao giờ?'),
+         (None, 'Tôi gặp anh ấy lần đầu trên tàu, lúc anh ấy soát vé.'),
+         (DTV, 'Chị chắc chứ?'),
+         (None, 'Chắc chắn. Trước chuyến tàu này tôi không quen biết gì anh Hữu.'),
+         (DTV, 'Một giờ hai mươi sáu chị nhắn tin cho ai?'),
+         (None, 'Tôi nhắn cho bạn ở Hà Nội. Tôi không nhớ số.'),
+         (DTV, 'Chị có dùng thuốc ngủ không?'),
+         (None, 'Không. Tôi chỉ uống cà phê cho tỉnh.'),
+         (None, '(Im lặng một lúc) Anh Vinh chết rồi, các anh còn muốn tôi nói gì nữa.')),
+     'signature': 'Người khai: Bùi Bích Thảo'})
+
+# ───────────── Vòng 5: hai người, một kế hoạch ─────────────
+add({'id': 'd26', 'stage': 5, 'type': 'report', 'title': 'Biên bản xác minh nhân thân Trần Văn Hữu',
+     'header': CA, 'heading': 'Biên bản xác minh', 'code': '33/XM', 'date': 'Ngày 17 tháng 10 năm 2008',
+     'sections': [
+         {'heading': '1. Gia đình', 'paragraphs': ['Theo sổ hộ khẩu gốc tại xã Hải Hậu, Nam Định: Trần Văn Hữu là con út; chị gái là bà **Trần Thị Mận**, lấy chồng là ông Bùi Văn Thắng. Con gái ông Thắng, bà Mận là **Bùi Bích Thảo**, sinh năm 1977.']},
+         {'heading': '2. Nợ nần', 'paragraphs': ['Ông Đỗ Văn Khang (Gia Lâm, Hà Nội) trình giấy vay do Hữu ký: 150.000.000đ, "hạn trả trước ngày 15/10/2008". Hàng xóm cho biết Hữu chơi lô đề nhiều năm, chủ nợ đã đến nhà đòi.']},
+         {'heading': '3. Vé tàu', 'paragraphs': ['Phòng vé ga Hà Nội: bốn vé khoang 4 toa 6 tàu SE3 ngày 12/10 do Bùi Bích Thảo đặt ngày 8/10, có ghi chú "xin toa 6".']}],
+     'signers': [{'role': DTV, 'name': DTV_NAME}]})
+
+add({'id': 'd27', 'stage': 5, 'type': 'letter', 'title': 'Thư tay thu trong túi xách của Bùi Bích Thảo',
+     'date': 'Hà Nội, 10/10/2008', 'greeting': 'Thảo,',
+     'paragraphs': ['Anh nghĩ kỹ rồi. Chuyến Phan Thiết này là chuyến cuối em đi cùng anh. Về Hà Nội em nộp đơn nghỉ việc, anh đưa em năm mươi triệu, coi như hết.',
+                    'Chị Hồng biết chuyện rồi. Anh không bỏ nhà được. Còn chuyện cái thai, em tự lo, anh không muốn nghe thêm.',
+                    'Đừng làm ầm lên. Em biết anh có cách làm cho em không xin được việc ở đâu nữa.',
+                    '(Kèm trong phong bì: giấy khám thai của Bệnh viện Phụ sản Hà Nội ngày 3/10/2008, sản phụ Bùi Bích Thảo, thai 10 tuần.)'],
+     'signature': 'V.'})
+
+add({'id': 'd28', 'stage': 5, 'type': 'report', 'title': 'Đơn thuốc và vỉ thuốc thu trong túi xách của Bùi Bích Thảo',
+     'header': CA, 'heading': 'Biên bản thu giữ đồ vật', 'code': '35/TG', 'date': 'Ngày 17 tháng 10 năm 2008',
+     'sections': [
+         {'heading': '1. Đơn thuốc', 'paragraphs': ['Đơn của Bệnh viện Bạch Mai ngày 20/9/2008, người bệnh Bùi Bích Thảo, chẩn đoán mất ngủ: **zolpidem 10 mg**, 30 viên, mỗi tối 1 viên.']},
+         {'heading': '2. Vỉ thuốc', 'paragraphs': ['Ba vỉ zolpidem 10 mg trong ngăn kín túi xách, còn 21 viên. Theo đơn, tới ngày 12/10 người bệnh dùng tối đa 22 viên, lẽ ra còn ít nhất 8 viên; số còn lại **thừa 13 viên**: thuốc gần như không được dùng để ngủ.',
+                                                 'Một vỉ bị bóc **3 viên liền nhau**, mép bóc còn mới.']}],
+     'signers': [{'role': DTV, 'name': DTV_NAME}]})
+
+CARDS = ['thao', 'huu', 'long', 'tung']
+Q = [
+    {'id': 'q1', 'stage': 1, 'type': 'choice', 'title': 'Kẻ gây án đang ở đâu?',
+     'prompt': 'Báo chí nói về "căn phòng kín trên đường ray". Trước khi giải căn phòng, hãy xác định: lúc tàu dừng ở Mường Mán, người đã giết ông Vinh ở đâu?',
+     'options': ['Đã rời tàu: lên ở một ga dọc đường, ra tay rồi xuống ở ga kế tiếp trước khi thi thể được phát hiện.',
+                 'Vẫn còn trên tàu: từ lúc ông Vinh chết tới khi tàu dừng ở Mường Mán, không ai có thể lên hay xuống tàu.'],
+     'answer': [1],
+     'nudges': {'0': {'message': 'Tàu dừng ở ga nào trong khoảng ông Vinh chết? Xem biên bản khám nghiệm và bảng hành trình.'}},
+     'hints': ['Đối chiếu giờ chết với hành trình của tàu.', 'Tàu rời ga cuối cùng lúc mấy giờ, và dừng lại lúc mấy giờ?',
+               'd04: chết 01:30–02:00. d02, d08: từ 00:41 (Tháp Chàm) tới 05:30 (Mường Mán) tàu không dừng, cửa lên xuống khoá.'],
+     'solved': 'Kẻ gây án vẫn ở trên tàu, rất có thể ngay trong toa 6.',
+     'explanation': [{'title': 'Giờ chết', 'body': ['d04: khoảng 01:30–02:00 ngày 13/10.']},
+                     {'title': 'Hành trình', 'body': ['d02, d08: rời Tháp Chàm 00:41, không dừng ga nào, cửa lên xuống khoá, dừng khẩn cấp ở Mường Mán 05:30.']},
+                     {'title': 'Hệ quả', 'body': ['Người gây án là một trong 22 hành khách và nhân viên toa 6, hoặc từ các toa bên cạnh.']}]},
+    {'id': 'q2', 'stage': 1, 'type': 'evidence', 'need': 2, 'title': 'Một người không hề chống cự',
+     'prompt': 'Một người đàn ông bị đâm sâu 9 cm mà khoang không xê dịch một món đồ. Ghim 2 tài liệu cho thấy ông Vinh không chống cự khi bị đâm.',
+     'answer': ['d02', 'd04'],
+     'nudges': [{'any': ['d05'], 'message': 'Ảnh lẫy cửa nói về căn phòng, không nói về nạn nhân.'},
+                {'any': ['d07'], 'near': True, 'message': 'Bà Thảo nói ông Vinh đã ngủ. Cần tài liệu khách quan về hiện trường và về cơ thể nạn nhân.'}],
+     'hints': ['Một tài liệu tả căn khoang, một tài liệu tả cơ thể.', 'Khoang có xô xát không? Trên tay nạn nhân có vết chống đỡ không?',
+               'd02: nằm ngửa, chăn ngang ngực, kính gấp trên bàn, không xô xát. d04: không vết thương chống đỡ, móng tay sạch.'],
+     'solved': 'Ông Vinh bị đâm trong lúc ngủ say. Vì sao ông không tỉnh dậy?',
+     'explanation': [{'title': 'Hiện trường', 'body': ['d02: nằm ngửa, chăn đắp ngang ngực, kính gấp gọn, không món đồ nào xê dịch.']},
+                     {'title': 'Cơ thể', 'body': ['d04: một nhát đâm duy nhất, không có vết thương chống đỡ.']},
+                     {'title': 'Câu hỏi treo', 'body': ['Trên bàn có hai cốc trà, một cốc đã tráng sạch (d02).']}]},
+    {'id': 'q3', 'stage': 2, 'type': 'line', 'title': 'Đêm ngủ một mạch',
+     'prompt': 'Một người khai đã ngủ suốt đêm, nhưng lời khai đó bị hai tài liệu khác bác bỏ. Chỉ ra dòng khai đó.',
+     'answer': ['d09:004'],
+     'nudges': {'d09:002': {'message': 'Câu này nói về vụ kiện, không phải giờ giấc.'},
+                'd07:005': {'message': 'Bà Thảo nói mình ra căng-tin, nhân viên căng-tin xác nhận điều đó.'}},
+     'hints': ['Tìm người nói đã ngủ từ 11 giờ tới sáng.', 'Có ai thấy người đó ngoài hành lang trong đêm không?',
+               'd09 dòng 4: Long ngủ một mạch từ 23 giờ. d06 dòng 7 và d15: nhân viên toa thấy Long đi về phía khoang 4 lúc 01:30.'],
+     'solved': 'Long đã rời giường trong đêm, và giấu chuyện đó.',
+     'explanation': [{'title': 'Câu khai', 'body': ['d09 dòng 4: từ 23 giờ ngủ một mạch tới sáng.']},
+                     {'title': 'Bị bác', 'body': ['d06 dòng 7, d15: nhân viên toa ghi thấy Long đi về phía khoang 4 lúc 01:30.']},
+                     {'title': 'Nhưng', 'body': ['Hai tài liệu này đều do cùng một người lập. Long nói dối, nhưng ông đã đi đâu?']}]},
+    {'id': 'q4', 'stage': 2, 'type': 'evidence', 'need': 1, 'title': 'Đối thủ dự thầu',
+     'prompt': 'Ông Tùng muốn có hồ sơ thầu của ông Vinh, và cửa thông toa 7 sang toa 6 không khoá. Ghim **một** tài liệu do người khác lập cho thấy ông Tùng không ở toa 6 trong khung giờ ông Vinh chết.',
+     'answer': ['d12'],
+     'nudges': [{'any': ['d10'], 'message': 'Đó là lời ông Tùng tự khai. Ai khác thấy ông?'}],
+     'hints': ['Ông Tùng nói đã ngồi ở đâu?', 'Ai làm việc ở đó đêm hôm ấy?', 'd12: nhân viên căng-tin thấy nhóm ông Tùng ngồi bàn 2 từ 00:50 tới 01:40, rồi về toa 7.'],
+     'solved': 'Ông Tùng ngồi ở toa căng-tin tới 01:40, rồi về toa 7, phía ngược với toa 6.',
+     'explanation': [{'title': 'Nhân chứng', 'body': ['d12: nhóm ba người, người lớn tuổi nhất là ông Tùng, ngồi bàn 2 toa căng-tin từ khoảng 00:50 tới 01:40.']},
+                     {'title': 'Khớp lời khai', 'body': ['d10: ông Tùng khai cùng giờ, cùng nơi.']},
+                     {'title': 'Còn lại', 'body': ['Cùng toa căng-tin đêm đó còn một người khác ngồi bàn 5 (d12).']}]},
+    {'id': 'q5', 'stage': 2, 'type': 'choice', 'multiple': True, 'cards': CARDS, 'title': 'Ai đã chạm vào chén trà?',
+     'prompt': 'Ông Vinh bị bỏ thuốc ngủ qua cốc trà tối 12/10. Theo hồ sơ, chọn **tất cả** những người đã ở trong khoang 4 hoặc chạm vào ấm, phích, cốc trước khi ông Vinh đi ngủ.',
+     'options': ['Bùi Bích Thảo', 'Trần Văn Hữu', 'Nguyễn Hoàng Long', 'Hồ Sĩ Tùng'], 'answer': [0, 1, 2],
+     'nudges': {'3': {'message': 'Có tài liệu nào cho thấy ông Tùng sang khoang 4 tối hôm đó không?'}},
+     'hints': ['Ai mô tả buổi tối ở khoang 4?', 'Đọc lại lời khai bà Thảo: ai vào khoang, mang gì vào, ai pha trà?',
+               'd07: Long sang cãi nhau lúc 22:30; Hữu mang phích nước 23:20; Thảo pha trà 23:30. d11: thuốc nằm trong cốc gần giường 01.'],
+     'solved': 'Ba người đã ở bên cái bàn có ấm trà tối hôm ấy.',
+     'explanation': [{'title': 'Thuốc ngủ', 'body': ['d11: zolpidem trong máu và trong cặn trà cốc gần giường 01; ông Vinh không dùng thuốc ngủ.']},
+                     {'title': 'Ai ở bên bàn trà', 'body': ['d07: Long (22:30–22:50), Hữu (23:20, mang phích), Thảo (23:30, pha trà).']},
+                     {'title': 'Cốc thứ hai', 'body': ['d02: cốc còn lại đã được tráng sạch, úp ngược.']}]},
+    {'id': 'q6', 'stage': 3, 'type': 'evidence', 'need': 2, 'title': 'Căn phòng chưa từng khoá',
+     'prompt': 'Ghim 2 tài liệu khách quan chứng minh lẫy chốt bên trong khoang 4 **chưa từng được gập** đêm đó, nghĩa là "phòng kín" không có thật.',
+     'answer': ['d16', 'd17'],
+     'nudges': [{'any': ['d18'], 'near': True, 'message': 'Lời bà Sen rất quan trọng, nhưng là lời khai. Tìm tài liệu giám định và thực nghiệm.'},
+                {'any': ['d14'], 'message': 'Giám định này chỉ nói đoạn cước là của ai, không nói lẫy có gập hay không.'}],
+     'hints': ['Nếu lẫy đang gập và bị bẩy bằng kìm, nó sẽ ra sao?', 'Một tài liệu xem chính cái lẫy, một tài liệu làm thử.',
+               'd16: lẫy, móc khớp nguyên vẹn, vết kìm chỉ ở ốp ổ khoá, gioăng không vết cước. d17: bẩy lẫy đang gập 10/10 lần làm cong lẫy; thủ pháp cước 0/20.'],
+     'solved': 'Không có căn phòng kín nào. Cửa khoang 4 chỉ khoá ổ, và ổ khoá được mở bằng chìa.',
+     'explanation': [{'title': 'Lẫy nguyên vẹn', 'body': ['d16: lẫy, móc khớp không cong, không vết bẩy; vết kìm duy nhất ở ốp mặt ngoài ổ khoá; ổ khoá có vết mở bằng chìa.']},
+                     {'title': 'Thực nghiệm', 'body': ['d17: bẩy lẫy đang gập thì 10/10 lần lẫy cong, móc toác. Thủ pháp dây cước 0/20 lần; gioăng không có vết ma sát (d16).']},
+                     {'title': 'Ai nói có phòng kín', 'body': ['Chỉ có lời bà Thảo (d07) và anh Hữu (d06, d15).']}]},
+    {'id': 'q7', 'stage': 3, 'type': 'line', 'title': 'Cái kìm lúc năm giờ mười',
+     'prompt': 'Một người đã mô tả sai cách mình mở cửa khoang 4 lúc 05:10. Chỉ ra dòng khai đó.',
+     'answer': ['d06:005'],
+     'nudges': {'d06:002': {'near': True, 'message': 'Câu này về lúc 01:55. Tìm câu tả việc mở cửa lúc 05:10.'},
+                'd06:009': {'near': True, 'message': 'Câu về chìa vạn năng đáng chú ý, nhưng hãy tìm câu tả việc dùng kìm.'},
+                'd07:006': {'message': 'Bà Thảo chỉ kể lại điều bà nói đã thấy lúc 02:05.'}},
+     'hints': ['Người mở cửa nói đã làm gì với lẫy?', 'Giám định lẫy và lời bà Sen nói gì về lúc 05:10?',
+               'd06 dòng 5: "lẫy gập chặt, phải lấy kìm bẩy". d16: lẫy không có vết bẩy. d18: Hữu tra chìa, kéo cửa ra rồi mới gõ kìm vào lẫy.'],
+     'solved': 'Anh Hữu mở cửa bằng chìa, rồi mới dựng màn "bẩy lẫy".',
+     'explanation': [{'title': 'Câu khai', 'body': ['d06 dòng 5: lẫy gập chặt, phải dùng kìm bẩy mấy cái mới bật.']},
+                     {'title': 'Bị bác', 'body': ['d16: lẫy nguyên vẹn. d17: bẩy lẫy đang gập luôn làm cong lẫy. d18: bà Sen thấy anh Hữu tra chìa, xoay, kéo cửa ra rồi mới gõ kìm vào lẫy.']},
+                     {'title': '01:35', 'body': ['d18: bà Sen nghe tiếng chìa "tách" và tiếng cửa trượt lúc 01:35, không có tiếng gõ cửa. d17: đó là tiếng chìa vạn năng.']}]},
+    {'id': 'q8', 'stage': 3, 'type': 'evidence', 'need': 1, 'title': 'Người hút thuốc ở chỗ nối toa',
+     'prompt': 'Hung khí và đoạn cước đều là của Long, và Long đã nói dối. Ghim **một** tài liệu khách quan cho thấy Long không thể có mặt ở khoang 4 lúc 01:35.',
+     'answer': ['d19'],
+     'nudges': [{'any': ['d20'], 'message': 'Đó là lời Long tự khai. Ai khác xác nhận?'},
+                {'any': ['d15', 'd06'], 'message': 'Chính tài liệu này nói Long đi về phía khoang 4. Ai đã lập nó?'}],
+     'hints': ['Long nói mình ở đâu trong lời khai lần hai?', 'Có nhà mạng và có người đứng cùng ông.',
+               'd19: Long gọi vợ 01:28–01:47; anh Đức đứng cùng ở chỗ nối toa 5–6 từ 01:15 tới 01:55.'],
+     'solved': 'Long đứng ở chỗ nối toa với một người lạ suốt 40 phút. Ai đó đã lấy đồ của ông để đổ tội.',
+     'explanation': [{'title': 'Nhà mạng', 'body': ['d19: cuộc gọi 01:28–01:47 qua trạm đèo Cà Ná.']},
+                     {'title': 'Người làm chứng', 'body': ['d19: anh Phạm Văn Đức đứng cùng Long 01:15–01:55; đầu lọc thuốc khớp.']},
+                     {'title': 'Vậy ai lấy dùi', 'body': ['d20: ba lô để ở khoang 2, cửa không gập lẫy. d21: sợi vải đồng phục đường sắt trong cán dùi.']}]},
+    {'id': 'q9', 'stage': 4, 'type': 'evidence', 'need': 2, 'title': 'Chiếc cặp da',
+     'prompt': 'Ghim 2 tài liệu chỉ ra người đã cất giấu chiếc cặp da và giữ phần tiền bị thiếu.',
+     'answer': ['d22', 'd23'],
+     'nudges': [{'any': ['d24'], 'near': True, 'message': 'Tin nhắn cho thấy hai người liên lạc. Câu này hỏi về chiếc cặp và tiền.'},
+                {'any': ['d21'], 'message': 'Sợi vải là manh mối tốt, nhưng câu này hỏi về chiếc cặp.'}],
+     'hints': ['Cặp được tìm thấy ở đâu, ai mở được chỗ đó?', 'Thiếu 20 triệu. Số tiền đó ở đâu?',
+               'd22: ngăn kỹ thuật chỉ mở bằng chìa vuông của nhân viên, bọc chăn "SE3-T6". d23: 20 triệu số seri nối tiếp trong tủ của Hữu, máu ông Vinh trên giày Hữu.'],
+     'solved': 'Trần Văn Hữu là người ra tay và cất giấu chiếc cặp.',
+     'explanation': [{'title': 'Nơi giấu', 'body': ['d22: ngăn kỹ thuật khoá bằng chìa vuông nhân viên, không dấu cạy; cặp bọc chăn dự phòng của nhân viên toa 6.']},
+                     {'title': 'Tiền và máu', 'body': ['d23: 20 triệu số seri nối tiếp tiền trong cặp; máu ông Vinh ở giày đồng phục của Hữu.']},
+                     {'title': 'Câu hỏi còn lại', 'body': ['Ai bỏ thuốc ngủ? Ai báo cho Hữu khi nào khoang 4 chỉ còn một người?']}]},
+    {'id': 'q10', 'stage': 4, 'type': 'line', 'title': 'Người lạ trên tàu',
+     'prompt': 'Một người khai không hề quen biết người đã ra tay. Chỉ ra dòng khai bị một tài liệu ở vòng này bác bỏ.',
+     'answer': ['d25:004'],
+     'nudges': {'d25:002': {'near': True, 'message': 'Câu này cũng sai, nhưng hãy tìm câu khẳng định dứt khoát nhất.'},
+                'd25:006': {'near': True, 'message': 'Câu về tin nhắn cũng sai. Câu hỏi này là về việc quen biết.'}},
+     'hints': ['Đọc lời khai lần hai của bà Thảo.', 'Hai số máy đã liên lạc với nhau từ bao giờ?',
+               'd25 dòng 4: "Trước chuyến tàu này tôi không quen biết gì anh Hữu". d24: hai số liên lạc 4–5 lần mỗi tháng trong hai năm; tin nhắn 01:26, 01:44, 05:02.'],
+     'solved': 'Hai năm liên lạc, ba tin nhắn trong đêm, và một chữ "Cau". Bà Thảo không phải người lạ với Hữu.',
+     'explanation': [{'title': 'Câu khai', 'body': ['d25 dòng 4: trước chuyến tàu không quen biết Hữu.']},
+                     {'title': 'Bị bác', 'body': ['d24: 10/10 gọi 12 phút; 01:26 "Em ngoi can tin roi"; 01:44 "Xong"; 05:02 "Cau mo cua di"; hai năm liên lạc đều đặn.']},
+                     {'title': 'Nhịp phối hợp', 'body': ['01:26 Thảo báo đã ở căng-tin (d12); 01:35 cửa khoang 4 mở bằng chìa (d18); 01:44 "Xong".']}]},
+    {'id': 'q-accuse', 'stage': 5, 'type': 'choice', 'multiple': True, 'cards': CARDS, 'title': 'Chỉ mặt hung thủ và đồng phạm',
+     'prompt': 'Cái chết của ông Vinh là việc của hơn một người. Chọn **đúng hai** người đã cùng gây án.',
+     'options': ['Bùi Bích Thảo', 'Trần Văn Hữu', 'Nguyễn Hoàng Long', 'Hồ Sĩ Tùng'], 'answer': [0, 1],
+     'nudges': {'2': {'message': 'Long đứng ở chỗ nối toa với anh Đức lúc 01:35 (d19); dùi và cước của ông bị lấy đi (d20, d21).'},
+                '3': {'message': 'Ông Tùng ở toa căng-tin tới 01:40 rồi về toa 7 (d12).'}},
+     'hints': ['Một người cần có chìa mở khoang 4 và chỗ giấu cặp; một người cần bỏ được thuốc ngủ và báo giờ.',
+               'Ai có thuốc ngủ zolpidem? Hai người nào nhắn tin cho nhau lúc 01:26 và 01:44?',
+               'Thảo: zolpidem của chính mình (d28), tin nhắn (d24), động cơ (d27). Hữu: chìa, cặp, tiền, máu ở giày (d22, d23), cậu ruột của Thảo (d26).'],
+     'solved': 'Bùi Bích Thảo và Trần Văn Hữu. Người cháu bỏ thuốc, người cậu cầm dùi.',
+     'explanation': [{'title': 'Thảo', 'body': ['Thuốc ngủ zolpidem kê cho chính bà, vỉ bóc 3 viên liền (d28, d11); nhắn tin điều phối (d24); bị ông Vinh cắt đứt khi đang có thai (d27).']},
+                     {'title': 'Hữu', 'body': ['Mở khoang bằng chìa lúc 01:35 (d16–d18); sợi vải đồng phục ở cán dùi (d21); cặp, tiền, máu ở giày (d22, d23).']},
+                     {'title': 'Sợi dây giữa hai người', 'body': ['d26: Hữu là cậu ruột Thảo; Thảo tự đặt vé và "xin toa 6". Hữu nợ 150 triệu, hạn trước 15/10.']}]},
+    {'id': 'q11', 'stage': 5, 'type': 'choice', 'title': 'Kết luận điều tra',
+     'prompt': 'Chọn bản kết luận đúng với hồ sơ ở mọi chi tiết: ai, bằng cách nào, "phòng kín" từ đâu ra, đổ tội cho ai và vì sao.',
+     'options': [
+         'Bà Thảo bỏ thuốc ngủ của mình vào trà rồi ra toa căng-tin làm chứng cứ ngoại phạm; lúc 01:35 cậu ruột là Hữu mở khoang bằng chìa vạn năng, đâm ông Vinh đang ngủ bằng chiếc dùi lấy trộm của Long, cài đoạn cước của Long vào khe cửa, giấu cặp ở ngăn kỹ thuật; "phòng kín" chỉ là lời hai người dựng lên.',
+         'Long bỏ thuốc ngủ vào trà lúc sang xin hoà giải, 01:35 quay lại đâm ông Vinh bằng dùi của mình, ra ngoài dùng dây cước giật lẫy gập từ hành lang để khoá cửa từ bên trong, rồi đưa cặp cho Hữu cất giấu để chia tiền.',
+         'Hữu một mình bỏ thuốc vào phích nước nóng, 01:35 mở khoang bằng chìa vạn năng để lấy cặp tiền; ông Vinh tỉnh dậy giằng co nên bị đâm; Hữu gập lẫy từ bên trong rồi chui ra qua khe cửa sổ, sáng ra mới bẩy lẫy để làm như phòng khoá kín.',
+         'Ông Tùng thuê Hữu lấy hồ sơ thầu: Hữu bỏ thuốc vào trà, 01:35 mở khoang lấy cặp; bà Thảo bất ngờ quay về bắt gặp nên Hữu đâm ông Vinh để bịt đầu mối, rồi đe doạ bà Thảo phải nói cửa chốt bên trong.'],
+     'answer': [0],
+     'exam': {'examiner': 'Kiểm sát viên Trần Quốc Hưng',
+              'intro': 'Trình bày kết luận trước kiểm sát viên: trả lời lần lượt từng câu hỏi bằng lời của mình. Không dùng được AI thì bấm “Trả lời bằng trắc nghiệm” để chọn bản kết luận đúng.'},
+     'nudges': {'1': {'message': 'Thủ pháp dây cước không thể gập lẫy (d17), và Long đứng ở chỗ nối toa lúc 01:35 (d19).'},
+                '2': {'message': 'Thuốc nằm trong cốc trà, không phải phích (d11); không có giằng co (d02, d04); cửa sổ cố định (d02).'},
+                '3': {'message': 'Ông Tùng ở toa căng-tin (d12); bà Thảo nhắn tin điều phối với Hữu và có thuốc ngủ (d24, d28).'}},
+     'hints': ['Đối chiếu từng phương án với: thuốc ở đâu (d11), lẫy có gập không (d16, d17), ai nhắn tin cho ai (d24).',
+               'Chỉ một phương án có hai người cùng hành động, và không cần lẫy gập.',
+               'Phương án A.'],
+     'solved': 'Hồ sơ khép lại với hai cái tên: Bùi Bích Thảo và Trần Văn Hữu.',
+     'explanation': [{'title': 'Thuốc và giờ', 'body': ['Zolpidem của Thảo vào cốc trà (d11, d28); 01:26 Thảo báo đã ở căng-tin, 01:44 Hữu báo "Xong" (d24).']},
+                     {'title': 'Phòng kín giả', 'body': ['Cửa chỉ khoá ổ, mở bằng chìa lúc 01:35 (d16–d18); lẫy chưa từng gập; "bẩy lẫy" lúc 05:10 là dàn cảnh (d06, d18).']},
+                     {'title': 'Đổ tội và động cơ', 'body': ['Dùi và cước lấy từ ba lô Long (d20, d14); Long có nhân chứng (d19). Thảo bị cắt đứt khi có thai (d27); Hữu nợ 150 triệu (d26).']}]},
+]
+
+case = {
+    'id': CID, 'no': 5, 'status': 'available',
+    'title': 'Chuyến tàu đêm Mường Mán',
+    'subtitle': 'Một khoang tàu khoá kín, hai người giữ chung một bí mật',
+    'tagline': 'Khoang giường nằm số 4 khoá từ bên trong khi đoàn tàu SE3 vượt đèo Cà Ná lúc nửa đêm.',
+    'difficulty': 5, 'players': '2–6', 'duration': '120–150 phút',
+    'setting': 'Toa 6 tàu Thống Nhất SE3, Bình Thuận (hư cấu)', 'era': 'Tháng 10/2008',
+    'tags': ['Án mạng', 'Phòng kín', 'Đồng phạm', 'Tàu hoả'], 'cover': 'images/cover.webp',
+    'contentWarning': 'Hồ sơ có mô tả một vụ án mạng bằng vật nhọn và chuyện mang thai ngoài hôn nhân. Mọi nhân vật và tình tiết đều hư cấu.',
+    'synopsis': ['Đêm 12/10/2008, tàu Thống Nhất SE3 xuôi Nam qua đèo Cà Ná. Rạng sáng, nhân viên toa 6 phải bẩy chốt mới mở được khoang giường nằm số 4: ông Đặng Quốc Vinh, tổng giám đốc một công ty khai thác titan, nằm chết trên giường.',
+                 'Cửa chốt từ bên trong, cửa sổ không mở được, tàu không dừng ga nào suốt bốn tiếng. Chiếc cặp da đựng 200 triệu đồng và hồ sơ dự thầu đã biến mất.'],
+    'intro': {'title': 'Chuyến tàu đêm Mường Mán',
+              'paragraphs': ['05 giờ 30 sáng 13/10/2008, tàu Thống Nhất SE3 dừng khẩn cấp tại ga Mường Mán, Bình Thuận. Trong khoang giường nằm số 4 toa 6, ông Đặng Quốc Vinh (58 tuổi), tổng giám đốc Công ty Khoáng sản Rạng Đông, đã chết với một vết đâm dưới xương đòn.',
+                             'Nhân viên toa nói cửa khoang chốt từ bên trong, anh phải dùng kìm bẩy chốt mới vào được. Cửa sổ là kính cố định. Từ nửa đêm, tàu không dừng ở ga nào. Chiếc cặp da đựng 200 triệu đồng và hồ sơ dự thầu mỏ titan không còn trong khoang.',
+                             'Bạn là điều tra viên Phòng Cảnh sát hình sự Công an tỉnh Bình Thuận. Trên toa 6 có kẻ thù của nạn nhân, một đối thủ làm ăn, người thư ký và anh nhân viên toa. Đừng vội tin vào căn phòng kín.'],
+              'objective': 'Tìm ra ai đã giết ông Vinh, bằng cách nào khoang tàu "khoá từ bên trong", chiếc cặp da ở đâu, và vì sao.'},
+    'victim': {'id': 'vinh', 'name': 'Đặng Quốc Vinh', 'age': 58, 'role': 'Tổng giám đốc Công ty Khoáng sản Rạng Đông', 'image': 'images/id-vinh.webp',
+               'note': 'Đi Phan Thiết dự mở thầu mỏ titan và phiên phúc thẩm vụ kiện. Chết trong khoang 4 toa 6 tàu SE3 đêm 12–13/10/2008; cặp da đựng 200 triệu đồng biến mất.'},
+    'suspects': [
+        {'id': 'thao', 'name': 'Bùi Bích Thảo', 'age': 31, 'role': 'Thư ký riêng của nạn nhân', 'image': 'images/id-thao.webp', 'voice': 'F1',
+         'suspicion': 'Nằm cùng khoang, biết trong cặp có 200 triệu tiền mặt. Rời khoang lúc nửa đêm.'},
+        {'id': 'huu', 'name': 'Trần Văn Hữu', 'age': 48, 'role': 'Nhân viên phụ trách toa 6', 'image': 'images/id-huu.webp', 'voice': 'M3',
+         'suspicion': 'Giữ chìa khoá vạn năng mở ổ khoá mọi khoang. Người phát hiện thi thể.'},
+        {'id': 'long', 'name': 'Nguyễn Hoàng Long', 'age': 42, 'role': 'Cựu giám đốc chi nhánh, khoang 2', 'image': 'images/id-long.webp', 'voice': 'M1',
+         'suspicion': 'Bị ông Vinh kiện tới mất nhà; phiên phúc thẩm mở sáng 13/10. Tối 12/10 sang khoang 4 cãi nhau to.'},
+        {'id': 'tung', 'name': 'Hồ Sĩ Tùng', 'age': 45, 'role': 'Giám đốc công ty khoáng sản đối thủ', 'image': 'images/id-tung.webp', 'voice': 'M4',
+         'suspicion': 'Cùng dự thầu mỏ titan với ông Vinh; hồ sơ thầu của ông Vinh biến mất cùng chiếc cặp.'}],
+    'aiInterrogation': True,
+    'audio': {'intro': 'audio/intro.mp3', 'finale': 'audio/finale.mp3'},
+    'documents': D,
+    'questions': Q,
+    'beats': [
+        {'stage': 2, 'kicker': 'Trưa 13/10/2008 · Ga Mường Mán', 'title': 'Chén trà cuối cùng', 'voice': 'audio/beat-2.mp3',
+         'paragraphs': ['Kẻ gây án chưa hề rời con tàu. Và ông Vinh đã không chống cự.',
+                        'Thiếu tá Quân cho niêm phong hai cốc sứ gửi đi xét nghiệm, rồi lần lượt mời từng người lên phòng trực ban ga. Trong thùng rác nhà vệ sinh cuối toa, một trinh sát nhặt được chiếc dùi khắc ba chữ cái.',
+                        'Vì sao một người đàn ông không tỉnh dậy khi bị đâm? Và chiếc dùi kia là của ai?']},
+        {'stage': 3, 'kicker': 'Ngày 15/10/2008 · Viện Khoa học hình sự', 'title': 'Căn phòng chưa từng khoá', 'voice': 'audio/beat-3.mp3',
+         'paragraphs': ['Mọi thứ đều chỉ về Long: chiếc dùi, đoạn cước, lời khai dối, mối thù với nạn nhân.',
+                        'Nhưng giám định viên Vũ Thành Nam cầm cái lẫy cửa lên soi rất lâu. "Cái lẫy này chưa ai bẩy bao giờ."',
+                        'Nếu cửa chưa từng chốt bên trong, thì ai đã kể cho chúng ta về căn phòng kín?']},
+        {'stage': 4, 'kicker': 'Ngày 16/10/2008 · Toa 6, tàu SE3 đỗ ở ga Mường Mán', 'title': 'Chiếc chăn in chữ SE3-T6', 'voice': 'audio/beat-4.mp3',
+         'paragraphs': ['Thợ điều hoà tháo nắp lưới ngăn kỹ thuật cuối toa 6. Bên trong là một tấm chăn dự phòng cuộn tròn, và chiếc cặp da của ông Vinh.',
+                        'Cùng lúc, nhà mạng gửi về bản kê tin nhắn của hai số máy.',
+                        'Một người không thể vừa ngồi dưới đồng hồ ở toa căng-tin, vừa mở cửa khoang 4. Nhưng hai người thì có thể.']},
+        {'stage': 5, 'kicker': 'Ngày 17/10/2008 · Phòng làm việc Công an tỉnh Bình Thuận', 'title': 'Hai người, một kế hoạch', 'voice': 'audio/beat-5.mp3',
+         'paragraphs': ['Bùi Bích Thảo ngồi thẳng lưng, hai tay đặt lên chiếc túi xách. "Tôi không quen anh ta."',
+                        'Thiếu tá Quân đặt lên bàn một bản sao sổ hộ khẩu gốc ở Hải Hậu, Nam Định.',
+                        'Chỉ mặt cả hai người. Và giải thích vì sao.']}],
+    'finale': {'title': 'Chuyến tàu đêm Mường Mán',
+               'paragraphs': ['Ngày 18/10/2008, Trần Văn Hữu là người khai trước. Ông ngồi cúi đầu, tay xoay xoay chiếc mũ đồng phục. "Nó gọi tôi bằng cậu từ lúc biết nói."',
+                              'Tối 10/10, Thảo gọi cho cậu, khóc suốt mười hai phút. Ông Vinh vừa đưa cho cô bức thư: chuyến Phan Thiết là chuyến cuối, cầm năm mươi triệu, cái thai thì tự lo. Hữu đang nợ một trăm năm mươi triệu tiền lô đề, chủ nợ hẹn trước ngày 15. Trong cặp ông Vinh có hai trăm triệu.',
+                              'Thảo tự đặt vé vào đúng toa của cậu mình. Biết Long cũng đi chuyến này, hai người quyết định để mọi thứ chỉ về ông. Mười một rưỡi đêm 12/10, Thảo bỏ ba viên thuốc ngủ của chính mình vào cốc trà, rồi ra toa căng-tin ngồi dưới cái đồng hồ.',
+                              'Một giờ ba mươi lăm, Hữu mở ổ khoá khoang 4 bằng chìa vạn năng. Ông Vinh không mở mắt. Hữu cài đoạn cước của Long vào khe cửa, khoá ổ lại, giấu cặp trong ngăn kỹ thuật, nhắn cho cháu một chữ: "Xong".',
+                              'Không ai gập cái lẫy cả. Căn phòng kín chỉ tồn tại trong lời kể của hai người duy nhất đứng ở cửa. Bà Sen ở khoang bên nghe tiếng chìa lúc nửa đêm, và nhìn thấy cái kìm gõ vào lẫy khi cửa đã mở sẵn.',
+                              'Thảo nghe kết luận không khóc. Cô chỉ hỏi một câu: "Anh Long thắng kiện chưa?"']},
+    'epilogue': [
+        {'title': 'Bùi Bích Thảo', 'text': 'Bị truy tố về tội giết người với vai trò chủ mưu. Con gái cô sinh trong trại tạm giam, được bà ngoại đón về Hải Hậu.'},
+        {'title': 'Trần Văn Hữu', 'text': 'Bị truy tố về tội giết người và cướp tài sản. Xí nghiệp toa xe thu lại toàn bộ chìa vạn năng của nhân viên phục vụ.'},
+        {'title': 'Nguyễn Hoàng Long', 'text': 'Phiên phúc thẩm hoãn một tháng. Toà tuyên huỷ bản án sơ thẩm. Ông mở lại cửa hàng đồ câu ở Phan Thiết.'},
+        {'title': 'Hồ Sĩ Tùng', 'text': 'Thắng gói thầu titan Hàm Tân. Năm sau, Hải Hà bị thanh tra vì mua chuộc nhân viên đối thủ.'}],
+}
+
+for person in [case['victim'], *case['suspects']]:  # ảnh thẻ chưa có thì để khung trống
+    if person.get('image') and not os.path.exists(f'public/cases/{CID}/' + person['image']):
+        print('chưa có ảnh:', person['image']); del person['image']
+json.dump(case, open(f'public/cases/{CID}/case.json', 'w'), ensure_ascii=False, indent=2)
+open(f'public/cases/{CID}/case.json', 'a').write('\n')
+print(len(D), 'docs', len(Q), 'questions')

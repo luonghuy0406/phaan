@@ -1,3 +1,35 @@
+# Ảnh còn thiếu cho bản 2 (tháng 11/2026)
+
+Hồ sơ đã viết lại: nạn nhân Đặng Quốc Vinh, nghi phạm Bùi Bích Thảo, Trần Văn Hữu, Nguyễn Hoàng Long, Hồ Sĩ Tùng.
+Sơ đồ toa (d03) đã vẽ lại bằng code: `authoring/chuyen-tau-dem-muong-man/draw_so_do.py`.
+
+## Ảnh thẻ (một ảnh ghép 3 cột × 2 hàng)
+
+Tạo một ảnh ghép, rồi cắt bằng:
+`python3 tools/crop-portraits.py <ảnh-ghép> public/cases/chuyen-tau-dem-muong-man/images 2 3 vinh thao huu long tung -`
+sau đó `python3 authoring/chuyen-tau-dem-muong-man/build_case.py`.
+
+```text
+A 3-column by 2-row grid of six Vietnamese ID card portrait photos from 2008, separated by thin white lines, each cell a head-and-shoulders front-facing shot, neutral expression, plain pale blue background, flat studio lighting, slightly faded analog film color, realistic skin texture, no text.
+Top row, left to right:
+(1) a 58-year-old wealthy mining company director, heavy square face, slicked-back black hair greying at the temples, thick eyebrows, white shirt and dark suit jacket;
+(2) a 31-year-old elegant Hanoi secretary, oval face, shoulder-length straight black hair tucked behind the ears, thin eyebrows, composed cold expression, cream silk blouse;
+(3) a 48-year-old Vietnamese railway car attendant, round tanned face, short thinning hair, small moustache, navy-blue railway staff uniform shirt with collar.
+Bottom row, left to right:
+(4) a 42-year-old man from Phan Thiet, gaunt sun-burnt face, messy short hair, stubble, bitter tired eyes, faded checked shirt;
+(5) a 45-year-old Saigon businessman, confident face, side-parted neat hair, rimless glasses, light blue shirt and dark tie;
+(6) an empty plain pale blue cell.
+```
+
+## Bìa (4:5, 1200×1500, dưới 400 KB, không chữ, một phần ba dưới tối và trống)
+
+```text
+Cinematic night photograph, Vietnam, October 2008: the inside corridor of an old Thong Nhat sleeper train car, narrow, dim yellow ceiling lights, a row of wooden sliding compartment doors on one side, windows on the other showing a black coastal mountain pass and faint moonlit sea. One compartment door in the middle is slightly ajar, a thin warm light leaking through the gap; on its brass inner latch a glint of light. The far end of the corridor is empty and dark. Motion blur outside the windows, the train is moving. Moody, claustrophobic, 35mm film grain, realistic, no text, no blood. Vertical 4:5, door and corridor in the upper two thirds, dark carpet floor in the lower third.
+```
+Negative: `text, letters, logo, watermark, poster, box mockup, blood, gore, corpse, cartoon, 3D render, CGI, oversaturated`
+
+---
+
 # Bảng Prompt Tạo Hình Chi Tiết: Chuyến tàu đêm Mường Mán (Hồ sơ 05)
 ## (MASTER ART DIRECTION & IMAGE PROMPT GUIDE - CASE 05)
 
