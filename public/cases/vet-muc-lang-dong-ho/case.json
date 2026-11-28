@@ -1,292 +1,1346 @@
 {
   "id": "vet-muc-lang-dong-ho",
   "no": 12,
-  "status": "coming-soon",
+  "status": "available",
   "title": "Vết mực làng Đông Hồ",
-  "tagline": "Khuôn gỗ bản khắc quý giá nhất của nghệ nhân tranh Tết bị đập gãy, nhưng dấu vết để lại chỉ là giọt phẩm điệp đỏ son.",
-  "difficulty": 1,
-  "players": "1–4",
-  "duration": "30–45 phút",
-  "setting": "Làng tranh dân gian Đông Hồ, Thuận Thành, Bắc Ninh (hư cấu)",
+  "subtitle": "Một bản khắc gãy đôi đêm 28 Tết, và câu hỏi: đó có thật là bản khắc cổ?",
+  "tagline": "Đêm 28 Tết, bản khắc \"Đám cưới chuột\" trăm rưởi năm tuổi bị đập gãy đôi trong lúc cả làng xem phim ở sân đình.",
+  "difficulty": 3,
+  "players": "1–5",
+  "duration": "60–75 phút",
+  "setting": "Làng tranh Đông Hồ, Bắc Ninh (nhân vật hư cấu)",
+  "era": "Tết Tân Tỵ, tháng 1/2001",
   "tags": [
     "Phá hoại tài sản",
     "Tranh dân gian",
-    "Bắc Ninh",
-    "Nhẹ nhàng"
+    "Tết"
   ],
   "cover": "images/cover.webp",
-  "synopsis": "Đêm 28 tháng Chạp năm Canh Thìn (2000), trong khi cả làng Đông Hồ đang rộn rã đón Tết, xưởng tranh của nghệ nhân lão thành Nguyễn Đăng Thao bị kẻ gian đột nhập. Bản khắc gỗ thị cổ hơn 150 năm vẽ bức 'Đám cưới chuột' gia truyền bị đập gãy đôi ngay trước đợt in tranh phục vụ hội xuân Kinh Bắc. Dấu vết kẻ thủ ác để lại là giọt phẩm điệp đỏ son và vệt bùn phù sa ven đê sông Đuống.",
+  "synopsis": [
+    "Đêm 28 tháng Chạp năm Canh Thìn, trong lúc cả làng Đông Hồ tụ ở sân đình xem phim, bản khắc gỗ thị \"Đám cưới chuột\" hơn 150 năm tuổi của nghệ nhân Vũ Đình Thao bị đập gãy đôi.",
+    "Sáng hôm sau là mẻ in tranh Tết đầu tiên. Ai đã cần tấm ván ấy biến mất, đúng vào đêm ấy?"
+  ],
   "intro": {
     "title": "Vết mực làng Đông Hồ",
     "paragraphs": [
-      "Công an xã Song Hồ phối hợp người dân khám nghiệm xưởng tranh cổ truyền. Kẻ gian không lấy đi một đồng tiền hay tài sản nào, chỉ nhắm vào độc bản khuôn gỗ truyền đời của gia đình.",
-      "Một nghi phạm chìa ra lời khai xem chiếu bóng cả buổi tối ở sân đình, nhưng liệu màu phẩm đỏ son gia truyền có để kẻ phá hoại dễ dàng chối cãi?",
-      "Bạn là điều tra viên thụ lý hồ sơ. Hãy đọc kỹ các tài liệu trên bàn, đối chiếu lời khai và trả lời từng trọng điểm để mở niêm phong phần hồ sơ tiếp theo."
+      "Sáng 29 tháng Chạp (23/1/2001), nghệ nhân Vũ Đình Thao (60 tuổi) ra xưởng chuẩn bị in mẻ tranh Tết đầu tiên. Bản khắc gỗ thị \"Đám cưới chuột\" gia đình giữ hơn 150 năm đã nằm gãy đôi ở sân phơi giấy điệp.",
+      "Đêm trước, cả làng ở sân đình xem phim. Hộp tiền bán tranh trên bàn còn nguyên. Người gây án chỉ muốn đúng tấm ván ấy.",
+      "Bạn là điều tra viên Công an huyện Thuận Thành. Bốn người có lý do để bị nghi. Đọc kỹ từng tờ giấy, kể cả chính tấm ván gãy."
     ],
-    "objective": "Xem xét bản khắc bị phá hoại và vết phẩm son, kiểm chứng lời khai xem chiếu bóng ở sân đình, và chỉ ra kẻ phá hoại."
+    "objective": "Tìm ra ai đã đập bản khắc, bằng cách nào, và vì sao lại là đêm 28 Tết."
+  },
+  "victim": {
+    "id": "thao",
+    "name": "Vũ Đình Thao",
+    "age": 60,
+    "role": "Người bị hại, nghệ nhân tranh Đông Hồ",
+    "image": "images/id-thao.webp",
+    "note": "Chủ xưởng tranh xóm Đông. Bản khắc \"Đám cưới chuột\" của gia đình bị đập gãy đôi đêm 28 tháng Chạp năm Canh Thìn."
+  },
+  "suspects": [
+    {
+      "id": "khiem",
+      "name": "Vũ Đình Khiêm",
+      "age": 24,
+      "role": "Con trai cụ Thao",
+      "image": "images/id-khiem.webp",
+      "voice": "M1",
+      "suspicion": "Đòi bố cho vốn lên Hà Nội buôn xe máy, bị từ chối; nói nghề tranh \"chết rồi\"."
+    },
+    {
+      "id": "vinh",
+      "name": "Trần Khắc Vĩnh",
+      "age": 38,
+      "role": "Chủ xưởng in lịch lụa làng bên",
+      "image": "images/id-vinh.webp",
+      "voice": "M4",
+      "suspicion": "Bị cụ Thao báo lên huyện vì in nhái tranh nhà cụ."
+    },
+    {
+      "id": "hung",
+      "name": "Lê Văn Hùng",
+      "age": 19,
+      "role": "Thợ phụ trong xưởng",
+      "image": "images/id-hung.webp",
+      "voice": "M2",
+      "suspicion": "Làm hỏng mẻ giấy dó, bị cụ Thao trừ thưởng Tết; ngày nào cũng làm trong xưởng."
+    },
+    {
+      "id": "luc",
+      "name": "Phùng Văn Lực",
+      "age": 52,
+      "role": "Thợ khắc ván, thôn Đông Khê",
+      "image": "images/id-luc.webp",
+      "voice": "M5",
+      "suspicion": "Từng giữ bản khắc ba tuần để dán góc nứt; ở ngay bên kia cầu."
+    }
+  ],
+  "aiInterrogation": true,
+  "audio": {
+    "intro": "audio/intro.mp3",
+    "finale": "audio/finale.mp3"
   },
   "documents": [
+    {
+      "id": "d00",
+      "stage": 1,
+      "type": "people",
+      "title": "Người bị hại và những người liên quan",
+      "paragraphs": [
+        "Ảnh thẻ trích từ hồ sơ nhân khẩu, kèm lý do từng người được đưa vào diện xác minh sáng 29 tháng Chạp (23/1/2001)."
+      ]
+    },
     {
       "id": "d01",
       "stage": 1,
       "type": "newspaper",
-      "title": "Bản tin Văn hóa Bắc Ninh - Bản khắc tranh cổ Đông Hồ bị hủy hoại",
-      "date": "29 tháng Chạp năm Canh Thìn (23/01/2001)",
-      "content": "**HỦY HOẠI BẢO VẬT TRANH DÂN GIAN NGAY TRƯỚC THỀM NĂM MỚI**\n\nĐêm qua 28 Tết, xưởng tranh dân gian của nghệ nhân Nguyễn Đăng Thao tại làng Đông Hồ (Thuận Thành) đã xảy ra một vụ việc đau lòng. Bản khắc gỗ thị cổ 'Đám cưới chuột' có niên đại từ thời Tự Đức - báu vật gia truyền 4 đời của dòng họ Nguyễn Đăng - đã bị đập gãy làm đôi.\n\nĐây là bản khắc chính dùng để in mảng nét đen và nét son cho hội chợ Tết Kinh Bắc. Sự việc đang được công an địa phương khẩn trương thụ lý để tìm lại công bằng cho nghệ nhân làng nghề.",
+      "title": "Báo Văn hoá Kinh Bắc: Bản khắc tranh cổ bị đập gãy đêm 28 Tết",
+      "masthead": "Văn hoá Kinh Bắc",
+      "issue": "Số 312",
+      "date": "Thứ Ba, 23/1/2001",
+      "headline": "Bản khắc \"Đám cưới chuột\" trăm rưởi năm tuổi bị đập gãy đôi",
+      "deck": "Đêm 28 Tết, trong lúc cả làng xem phim ở sân đình, xưởng tranh của nghệ nhân Vũ Đình Thao bị kẻ lạ đột nhập.",
       "image": "images/d01-bao-chi.webp",
-      "imageCaption": "Ảnh tư liệu Văn hóa Bắc Ninh: Sân phơi giấy điệp làng tranh Đông Hồ"
+      "imageCaption": "Sân phơi giấy điệp ở làng Đông Hồ những ngày giáp Tết.",
+      "paragraphs": [
+        "Sáng 29 tháng Chạp, nghệ nhân Vũ Đình Thao (60 tuổi) định in mẻ tranh Tết đầu tiên từ bản khắc gỗ thị \"Đám cưới chuột\" mà gia đình giữ hơn 150 năm. Nhưng bản khắc đã nằm gãy đôi ở sân phơi giấy từ đêm hôm trước.",
+        "Theo người dân, khoảng tám giờ rưỡi tối 28 Tết, một nhà gần xưởng nghe tiếng đập mạnh. Lúc ấy đội chiếu bóng lưu động đang nghỉ giữa hai cuộn phim, cả làng tụ ở sân đình.",
+        "\"Ván ấy là hồn của nhà tôi,\" cụ Thao nói. Hội xuân Kinh Bắc năm nay sẽ thiếu bức tranh nổi tiếng nhất của gia đình.",
+        "Công an huyện Thuận Thành đã lập hồ sơ, thu giữ hai nửa bản khắc để giám định."
+      ]
     },
     {
       "id": "d02",
       "stage": 1,
       "type": "report",
-      "title": "Biên bản hiện trường xưởng tranh cụ Thao",
-      "date": "22h30 ngày 22/01/2001",
-      "content": "**BIÊN BẢN KHÁM NGHIỆM HIỆN TRƯỜNG**\n\n- **Địa điểm**: Gian xới mực và in tranh của cụ Nguyễn Đăng Thao, xóm Đông, làng Đông Hồ.\n- **Hiện trạng vật chứng**: Tấm bản khắc gỗ thị kích thước 30x40cm bị đập gãy làm hai khúc trên mặt bàn in. Cạnh đó là chiếc chày đá giã điệp dính phẩm màu đỏ tươi và vài mẩu dăm gỗ thị vụn vương vãi trên sàn gạch.\n- **Dấu vết tại chỗ**: Trên nền gạch và bậu cửa sổ gian xưởng có dấu vết bùn đất đỏ phù sa ướt và một giọt phẩm màu son đỏ rơi rớt còn mới."
+      "title": "Biên bản khám nghiệm xưởng tranh nhà cụ Thao",
+      "header": [
+        "Công an huyện Thuận Thành",
+        "Đội Cảnh sát điều tra"
+      ],
+      "heading": "Biên bản khám nghiệm hiện trường",
+      "code": "07/KNHT",
+      "date": "07 giờ 30 ngày 23/1/2001 (29 tháng Chạp)",
+      "fields": [
+        {
+          "label": "Địa điểm",
+          "value": "Xưởng tranh hộ ông Vũ Đình Thao, xóm Đông, làng Đông Hồ"
+        },
+        {
+          "label": "Tài sản bị hại",
+          "value": "Bản khắc gỗ thị \"Đám cưới chuột\" (theo chủ nhà: khắc khoảng năm 1850)"
+        }
+      ],
+      "sections": [
+        {
+          "heading": "1. Cửa xưởng",
+          "paragraphs": [
+            "Xưởng là nhà ngang tách khỏi nhà ở, cửa gỗ chỉ cài then phía ngoài, không khoá; ai đứng ngoài cũng mở được. Không có dấu cạy phá."
+          ]
+        },
+        {
+          "heading": "2. Gian xưởng",
+          "paragraphs": [
+            "Giá gỗ cao để bản khắc quý đặt ở góc trong, phủ vải điều. Vải điều rơi dưới đất, giá trống. Các bản khắc khác trên giá thấp còn nguyên.",
+            "Chiếc chày đá giã điệp của xưởng nằm cạnh cối, đầu chày dính vụn gỗ thị. Trên bàn, hộp sắt đựng tiền bán tranh (khoảng 1,2 triệu đồng) **còn nguyên**."
+          ]
+        },
+        {
+          "heading": "3. Sân phơi",
+          "paragraphs": [
+            "Hai nửa bản khắc nằm ở góc sân phơi giấy điệp, vết gãy chéo qua hình đoàn rước. Không tìm thấy dấu chân rõ do sân lát gạch."
+          ]
+        },
+        {
+          "heading": "4. Thời gian",
+          "paragraphs": [
+            "Bà Đỗ Thị Hoa (nhà sát xưởng) nghe hai tiếng đập mạnh lúc khoảng **20 giờ 30**. Theo đội chiếu bóng lưu động, tối 28 Tết phim nghỉ giữa hai cuộn từ **20:15 đến 20:45**."
+          ]
+        }
+      ],
+      "signers": [
+        {
+          "role": "Điều tra viên",
+          "name": "Thượng uý Nguyễn Văn Kiên"
+        }
+      ]
     },
     {
       "id": "d03",
       "stage": 1,
       "type": "photo",
-      "title": "Ảnh chụp bản khắc gỗ thị bị đập gãy đôi",
-      "date": "23h00 ngày 22/01/2001",
+      "title": "Ảnh hai nửa bản khắc thu ở sân phơi",
       "image": "images/d03-ban-khac.webp",
-      "content": "Ảnh chụp cận cảnh bản khắc cổ 'Đám cưới chuột': Ván gỗ thị vàng sẫm bị gãy toác chính giữa. Nét khắc chuột rước dâu tinh xảo bị mẻ một góc lọng che. Trên mép gãy của thớ gỗ dính giọt phẩm màu đỏ son tươi rói pha từ sỏi son tự nhiên."
+      "label": "Tang vật số 03 · 23/1/2001",
+      "caption": "Bản khắc \"Đám cưới chuột\" gãy đôi. Mặt khắc còn bám mực đen, mép gãy lộ thớ gỗ."
     },
     {
       "id": "d04",
       "stage": 1,
-      "type": "report",
-      "title": "Sơ đồ làng tranh Đông Hồ và lối đi bờ sông Đuống",
-      "date": "23h30 ngày 22/01/2001",
-      "content": "**SƠ ĐỒ KHU VỰC LÀNG ĐÔNG HỒ**\n\n- **Sân đình làng**: Nơi tổ chức chiếu bóng lưu động cho bà con trong xã tối 28 Tết, cách xưởng tranh cụ Thao khoảng 800 mét đường chim bay.\n- **Đường cái lớn**: Rải đá dăm khô ráo, đi mất khoảng 15 phút.\n- **Lối ngõ tắt ven đê sông Đuống**: Lối mòn đất thịt bùn đỏ phù sa trơn trượt nối thẳng từ sau đình làng về cổng sau xưởng tranh cụ Thao, chỉ mất 5 phút đi bộ nhanh.",
+      "type": "scan",
+      "title": "Sơ đồ làng Đông Hồ và các lối đi",
       "image": "images/d04-so-do-lang-tranh.webp",
-      "imageCaption": "Sơ đồ đường làng Đông Hồ, xưởng tranh và lối ra bến sông Đuống"
+      "caption": "Sơ đồ đình làng, xưởng tranh, đê sông Đuống và cầu sang thôn Đông Khê, lập lúc khám nghiệm."
     },
     {
       "id": "d05",
-      "stage": 2,
+      "stage": 1,
       "type": "testimony",
-      "title": "Lời khai của con trai thứ Nguyễn Đăng Khiêm",
-      "date": "08h00 ngày 23/01/2001",
+      "title": "Lời khai của nghệ nhân Vũ Đình Thao",
+      "header": [
+        "Công an huyện Thuận Thành",
+        "Đội Cảnh sát điều tra"
+      ],
+      "heading": "Biên bản ghi lời khai",
+      "date": "09 giờ 00 ngày 23/1/2001",
+      "fields": [
+        {
+          "label": "Người khai",
+          "value": "Vũ Đình Thao, 60 tuổi, nghệ nhân tranh dân gian"
+        }
+      ],
       "lines": [
         {
           "n": 1,
-          "text": "Tôi không thích theo nghề làm tranh vì thu nhập bấp bênh, bụi vỏ sò làm đau phổi."
+          "speaker": "Điều tra viên",
+          "text": "Tối 28 Tết cụ ở đâu?"
         },
         {
           "n": 2,
-          "text": "Tôi xin bố tiền vốn lên phố buôn xe máy Dream nhưng bố mắng tôi là đứa bất hiếu."
+          "speaker": "Vũ Đình Thao",
+          "text": "Tôi họp ban tổ chức hội xuân ở nhà văn hoá thôn từ bảy rưỡi tới chín rưỡi. Bà nhà tôi về quê ngoại từ hôm 26."
         },
         {
           "n": 3,
-          "text": "Tối qua từ đúng 19h30 đến 22h00 tôi ngồi ở sân đình làng xem đội chiếu bóng chiếu bộ phim ca nhạc Tết, có cả làng làm chứng, không hề rời sân đình nửa bước."
+          "speaker": "Điều tra viên",
+          "text": "Ai biết bản khắc cất ở đâu?"
         },
         {
           "n": 4,
-          "text": "Bản khắc gỗ của bố bị đập tôi cũng xót xa chứ làm sao tôi nỡ phá hoại gia tài tổ tiên?"
+          "speaker": "Vũ Đình Thao",
+          "text": "Thằng Khiêm con tôi, thằng Hùng thợ phụ thì ngày nào chẳng thấy. Ngoài ra chỉ có ông Lực bên Đông Khê, tháng Mười Một tôi gửi ông ấy dán lại góc nứt ba tuần."
+        },
+        {
+          "n": 5,
+          "speaker": "Điều tra viên",
+          "text": "Gần đây cụ có va chạm với ai?"
+        },
+        {
+          "n": 6,
+          "speaker": "Vũ Đình Thao",
+          "text": "Thằng Khiêm đòi tôi cho hai chục triệu lên Hà Nội buôn xe máy, tôi không cho, nó bảo \"nghề này chết rồi\". Thằng Hùng làm hỏng mẻ giấy, tôi trừ thưởng Tết."
+        },
+        {
+          "n": 7,
+          "speaker": "Vũ Đình Thao",
+          "text": "Anh Vĩnh xưởng in lịch lụa làng bên in nhái tranh nhà tôi, tôi báo lên phòng văn hoá huyện. Còn ông Tường buôn đồ cổ Hà Nội, năm ngoái trả năm chục triệu mua ván ấy, tôi đuổi về."
+        },
+        {
+          "n": 8,
+          "speaker": "Điều tra viên",
+          "text": "Sáng 29 cụ định làm gì?"
+        },
+        {
+          "n": 9,
+          "speaker": "Vũ Đình Thao",
+          "text": "In mẻ đầu năm. Năm nào cũng thế, tôi đem tranh in mới so với tờ lưu năm ngoái rồi mới bán. Ai làm việc với ván ấy cũng biết."
         }
-      ]
+      ],
+      "signature": "Người khai: Vũ Đình Thao"
     },
     {
       "id": "d06",
-      "stage": 2,
+      "stage": 1,
       "type": "testimony",
-      "title": "Lời khai của chủ xưởng in Trần Khắc Vĩnh",
-      "date": "08h45 ngày 23/01/2001",
+      "title": "Lời khai của Vũ Đình Khiêm (con trai cụ Thao)",
+      "header": [
+        "Công an huyện Thuận Thành",
+        "Đội Cảnh sát điều tra"
+      ],
+      "heading": "Biên bản ghi lời khai",
+      "date": "10 giờ 00 ngày 23/1/2001",
+      "fields": [
+        {
+          "label": "Người khai",
+          "value": "Vũ Đình Khiêm, 24 tuổi"
+        }
+      ],
       "lines": [
         {
           "n": 1,
-          "text": "Xưởng tôi in tranh lịch lụa bằng máy công nghiệp, khách đặt hàng ầm ầm cần gì phải ghen tị với mấy bức tranh khắc tay của cụ Thao."
+          "speaker": "Điều tra viên",
+          "text": "Tối 28 anh ở đâu?"
         },
         {
           "n": 2,
-          "text": "Tối qua tôi ngồi uống rượu tất niên với các lái buôn Hà Nội ở quán thịt chó đầu cầu Hồ từ 18h đến 23h đêm."
+          "speaker": "Vũ Đình Khiêm",
+          "text": "Tôi xem phim ở sân đình với tụi bạn từ tám giờ."
+        },
+        {
+          "n": 3,
+          "speaker": "Điều tra viên",
+          "text": "Giờ nghỉ giữa phim anh làm gì?"
+        },
+        {
+          "n": 4,
+          "speaker": "Vũ Đình Khiêm",
+          "text": "Tôi ngồi nguyên ở sân đình suốt, không đi đâu cả."
+        },
+        {
+          "n": 5,
+          "speaker": "Điều tra viên",
+          "text": "Anh có muốn bố bỏ nghề làm tranh không?"
+        },
+        {
+          "n": 6,
+          "speaker": "Vũ Đình Khiêm",
+          "text": "Tôi nói thẳng là nghề này không nuôi nổi ai. Nhưng tôi không bao giờ đụng vào ván của ông nội để lại."
+        },
+        {
+          "n": 7,
+          "speaker": "Điều tra viên",
+          "text": "Dép anh dính bùn đỏ. Ở đâu ra?"
+        },
+        {
+          "n": 8,
+          "speaker": "Vũ Đình Khiêm",
+          "text": "Đường làng ngày Tết ai chẳng dính bùn."
         }
-      ]
+      ],
+      "signature": "Người khai: Vũ Đình Khiêm"
     },
     {
       "id": "d07",
       "stage": 2,
       "type": "testimony",
-      "title": "Lời khai của thợ phụ Lê Văn Hùng",
-      "date": "09h15 ngày 23/01/2001",
+      "title": "Lời khai của Trần Khắc Vĩnh (xưởng in lịch lụa)",
+      "header": [
+        "Công an huyện Thuận Thành",
+        "Đội Cảnh sát điều tra"
+      ],
+      "heading": "Biên bản ghi lời khai",
+      "date": "14 giờ 00 ngày 23/1/2001",
+      "fields": [
+        {
+          "label": "Người khai",
+          "value": "Trần Khắc Vĩnh, 38 tuổi, chủ xưởng in lịch lụa làng bên"
+        }
+      ],
       "lines": [
         {
           "n": 1,
-          "text": "Hôm trước cụ Thao mắng em vì làm đổ chậu hồ nếp quét giấy điệp, nhưng cụ cho em tiền về quê ăn Tết rồi."
+          "speaker": "Điều tra viên",
+          "text": "Anh có mâu thuẫn với cụ Thao?"
         },
         {
           "n": 2,
-          "text": "Tối qua em đã đón xe khách về quê ở Tiên Du từ lúc 16h chiều, có vé xe đò chứng minh."
+          "speaker": "Trần Khắc Vĩnh",
+          "text": "Cụ báo lên huyện là tôi in nhái tranh nhà cụ. Mẫu tranh dân gian của cả làng chứ của riêng ai."
+        },
+        {
+          "n": 3,
+          "speaker": "Điều tra viên",
+          "text": "Tối 28 anh ở đâu?"
+        },
+        {
+          "n": 4,
+          "speaker": "Trần Khắc Vĩnh",
+          "text": "Tôi chở hai trăm cuốn lịch lụa lên Hà Nội giao cho nhà sách phố Hàng Gai, tám rưỡi tối mới giao xong, ngủ lại nhà em gái ở Hà Nội."
+        },
+        {
+          "n": 5,
+          "speaker": "Trần Khắc Vĩnh",
+          "text": "Tôi ghét ông ấy thật, nhưng đập ván cổ thì tôi được gì. Tranh của tôi in máy cả."
         }
       ],
-      "image": "images/d07-tranh-dong-ho.webp",
-      "imageCaption": "Bản dập thử tranh khắc gỗ Đám cưới chuột trên giấy điệp"
+      "signature": "Người khai: Trần Khắc Vĩnh"
     },
     {
       "id": "d08",
       "stage": 2,
-      "type": "testimony",
-      "title": "Lời khai của anh cán bộ đội chiếu bóng lưu động",
-      "date": "09h45 ngày 23/01/2001",
-      "lines": [
+      "type": "receipt",
+      "title": "Phiếu nhập hàng nhà sách Hàng Gai, tối 28 Tết",
+      "shop": "Nhà sách Hồng Hà",
+      "address": "Số 40 phố Hàng Gai, Hà Nội",
+      "fields": [
         {
-          "n": 1,
-          "text": "Đội chiếu bóng của huyện chiếu phục vụ bà con ở sân đình tối 28 Tết."
+          "label": "Ngày",
+          "value": "22/01/2001"
         },
         {
-          "n": 2,
-          "text": "Khoảng 20h15 máy chiếu bị đứt dây curoa và hết cuộn phim thứ nhất, chúng tôi phải tạm dừng chiếu mất 30 phút để sửa chữa và lắp cuộn phim mới."
+          "label": "Giờ nhập kho",
+          "value": "20:35"
         },
         {
-          "n": 3,
-          "text": "Trong lúc chờ đợi đèn sân đình tắt ngắt, thanh niên trong làng chạy đi vệ sinh và tản mát ra ngoài rất nhiều, đến 20h45 mới tập trung lại đông đủ."
+          "label": "Người giao",
+          "value": "Trần Khắc Vĩnh (ký tên)"
         }
+      ],
+      "items": [
+        {
+          "name": "Lịch lụa treo tường \"Tân Tỵ 2001\"",
+          "qty": "200",
+          "price": "3.000.000"
+        }
+      ],
+      "total": "3.000.000đ",
+      "footer": [
+        "Thủ kho: Nguyễn Văn Bình (ký nhận).",
+        "Ghi chú thủ kho: \"Anh Vĩnh tới từ 19 giờ, chờ kiểm đếm tới 20 giờ 35.\"",
+        "Hà Nội cách làng Đông Hồ khoảng 35 km."
       ]
     },
     {
       "id": "d09",
-      "stage": 3,
-      "type": "report",
-      "title": "Bản đối chiếu vết màu phẩm son và bùn đỏ sông Đuống",
-      "date": "10h30 ngày 23/01/2001",
-      "content": "**KẾT QUẢ PHÂN TÍCH HÓA CHẤT PHẨM MÀU VÀ MẪU ĐẤT**\n\n1. **Phẩm màu đỏ son trên cổ tay áo len của Khiêm**: Trùng khớp 100% với mẫu phẩm son tại xưởng cụ Thao (pha chế từ sỏi son núi Thần Đinh nghiền mịn dầm nước tro nếp bí truyền). Không có xưởng tranh nào khác trong vùng sử dụng loại màu son này.\n2. **Bùn đất trên đế dép tổ ong của Khiêm**: Là bùn đỏ phù sa mịn bão hòa nước đặc trưng của mép đê sông Đuống (lối đi tắt từ sân đình về xưởng tranh), hoàn toàn khác với đá dăm khô ráo của đường làng."
+      "stage": 2,
+      "type": "testimony",
+      "title": "Lời khai của Lê Văn Hùng (thợ phụ)",
+      "header": [
+        "Công an huyện Thuận Thành",
+        "Đội Cảnh sát điều tra"
+      ],
+      "heading": "Biên bản ghi lời khai",
+      "date": "15 giờ 00 ngày 23/1/2001",
+      "fields": [
+        {
+          "label": "Người khai",
+          "value": "Lê Văn Hùng, 19 tuổi, thợ phụ quét hồ điệp"
+        }
+      ],
+      "lines": [
+        {
+          "n": 1,
+          "speaker": "Điều tra viên",
+          "text": "Cụ Thao trừ thưởng Tết của em?"
+        },
+        {
+          "n": 2,
+          "speaker": "Lê Văn Hùng",
+          "text": "Vâng, em làm hỏng mẻ giấy dó, cụ trừ là đúng. Em buồn thì có, chứ cụ dạy nghề cho em ba năm nay."
+        },
+        {
+          "n": 3,
+          "speaker": "Điều tra viên",
+          "text": "Tối 28 em ở đâu?"
+        },
+        {
+          "n": 4,
+          "speaker": "Lê Văn Hùng",
+          "text": "Em ở đám cưới anh họ bên xóm Ngoài, ăn cỗ xong hát karaoke tới mười giờ đêm. Cả họ thấy em."
+        }
+      ],
+      "signature": "Người khai: Lê Văn Hùng"
     },
     {
       "id": "d10",
-      "stage": 3,
-      "type": "photo",
-      "title": "Ảnh dăm gỗ thị hình chóp lọng thu trong túi áo của Khiêm",
-      "date": "11h00 ngày 23/01/2001",
-      "image": "images/d10-dam-go.webp",
-      "content": "Ảnh chụp vật chứng: Mảnh dăm gỗ thị nhỏ hình chóp lọng rước dâu dài 2cm dính phẩm đỏ son thu trong túi áo khoác của Nguyễn Đăng Khiêm. Khi ghép thử vào vết vỡ của bản khắc gỗ cổ (d03) thì khớp hoàn hảo từng đường vân thớ gỗ."
+      "stage": 2,
+      "type": "report",
+      "title": "Biên bản xác minh tại đám cưới xóm Ngoài",
+      "header": [
+        "Công an huyện Thuận Thành",
+        "Đội Cảnh sát điều tra"
+      ],
+      "heading": "Biên bản xác minh",
+      "code": "11/XM",
+      "date": "Ngày 24/1/2001",
+      "sections": [
+        {
+          "heading": "Kết quả",
+          "paragraphs": [
+            "Gia đình chú rể Lê Văn Tuấn và 6 người khách xác nhận: Lê Văn Hùng có mặt từ 18 giờ, bưng cỗ, rồi hát karaoke cùng nhóm thanh niên tới khoảng 22 giờ.",
+            "Thợ ảnh cưới cung cấp cuộn phim: ảnh số 14 và 15 chụp Hùng cầm micro, đồng hồ treo tường trong ảnh chỉ khoảng 20 giờ 25 và 20 giờ 40.",
+            "Xóm Ngoài cách xưởng tranh nhà cụ Thao khoảng 1,5 km."
+          ]
+        }
+      ],
+      "signers": [
+        {
+          "role": "Điều tra viên",
+          "name": "Thượng uý Nguyễn Văn Kiên"
+        }
+      ]
     },
     {
       "id": "d11",
-      "stage": 3,
-      "type": "note",
-      "title": "Bản tường trình của mẹ Khiêm về chuyện vốn liếng buôn xe",
-      "date": "11h30 ngày 23/01/2001",
-      "content": "**LỜI KỂ CỦA GIA ĐÌNH**\n\n'Mấy tuần nay thằng Khiêm cứ nằng nặc đòi bố nó bán bớt gỗ thị tích trữ hoặc dẹp xưởng tranh để chia cho nó 10 triệu lên Hà Nội chung vốn với bạn buôn xe máy Dream. Bố nó không chịu, bảo nghề tổ tiên không bỏ được chừng nào ông còn cầm bản khắc gỗ này...'"
+      "stage": 2,
+      "type": "testimony",
+      "title": "Lời khai của bà Nguyễn Thị Tý (quán nước chè chân đê)",
+      "header": [
+        "Công an huyện Thuận Thành",
+        "Đội Cảnh sát điều tra"
+      ],
+      "heading": "Biên bản ghi lời khai",
+      "date": "16 giờ 00 ngày 24/1/2001",
+      "fields": [
+        {
+          "label": "Người khai",
+          "value": "Nguyễn Thị Tý, 66 tuổi, bán nước chè ở chân đê sông Đuống"
+        }
+      ],
+      "lines": [
+        {
+          "n": 1,
+          "speaker": "Điều tra viên",
+          "text": "Tối 28 bà có thấy anh Khiêm con cụ Thao không?"
+        },
+        {
+          "n": 2,
+          "speaker": "Nguyễn Thị Tý",
+          "text": "Có. Lúc phim nghỉ, nó dắt con bé Lan nhà ông Tám ra quán tôi ngồi, uống hai cốc chè, đến lúc nghe loa gọi chiếu tiếp mới về."
+        },
+        {
+          "n": 3,
+          "speaker": "Điều tra viên",
+          "text": "Chúng có rời quán lúc nào không?"
+        },
+        {
+          "n": 4,
+          "speaker": "Nguyễn Thị Tý",
+          "text": "Không, ngồi rủ rỉ suốt. Cụ Thao cấm hai đứa nên chúng trốn ra đây."
+        },
+        {
+          "n": 5,
+          "speaker": "Điều tra viên",
+          "text": "Bà có thấy ai khác qua lại?"
+        },
+        {
+          "n": 6,
+          "speaker": "Nguyễn Thị Tý",
+          "text": "Khoảng tám rưỡi hơn, có một người đàn ông dắt xe đạp thồ đi từ phía xóm Đông lên đê, rẽ về phía cầu Đông Khê. Trời tối, đội mũ cối, tôi không nhìn rõ mặt."
+        }
+      ],
+      "signature": "Người khai: Nguyễn Thị Tý (điểm chỉ)"
     },
     {
       "id": "d12",
+      "stage": 2,
+      "type": "testimony",
+      "title": "Lời khai của Phùng Văn Lực (thợ khắc ván, thôn Đông Khê)",
+      "header": [
+        "Công an huyện Thuận Thành",
+        "Đội Cảnh sát điều tra"
+      ],
+      "heading": "Biên bản ghi lời khai",
+      "date": "09 giờ 00 ngày 25/1/2001",
+      "fields": [
+        {
+          "label": "Người khai",
+          "value": "Phùng Văn Lực, 52 tuổi, thợ khắc ván tranh"
+        }
+      ],
+      "lines": [
+        {
+          "n": 1,
+          "speaker": "Điều tra viên",
+          "text": "Tháng Mười Một ông có sửa bản khắc \"Đám cưới chuột\" cho cụ Thao?"
+        },
+        {
+          "n": 2,
+          "speaker": "Phùng Văn Lực",
+          "text": "Có. Góc dưới bị nứt, tôi bóc ra dán lại bằng keo da trâu, mất ba tuần vì phải chờ keo khô."
+        },
+        {
+          "n": 3,
+          "speaker": "Điều tra viên",
+          "text": "Ông trả lại cho cụ thế nào?"
+        },
+        {
+          "n": 4,
+          "speaker": "Phùng Văn Lực",
+          "text": "Tôi trả đúng tấm ván cụ gửi, tận tay cụ ngày 25/11, còn rửa sạch mực cũ cho cụ dễ in."
+        },
+        {
+          "n": 5,
+          "speaker": "Điều tra viên",
+          "text": "Tối 28 Tết ông ở đâu?"
+        },
+        {
+          "n": 6,
+          "speaker": "Phùng Văn Lực",
+          "text": "Ở nhà gói bánh chưng với vợ con, không sang bên kia cầu."
+        },
+        {
+          "n": 7,
+          "speaker": "Phùng Văn Lực",
+          "text": "Ván ấy tôi quý như của nhà. Đứa nào đập nó thì đúng là phá của tổ tiên."
+        }
+      ],
+      "signature": "Người khai: Phùng Văn Lực"
+    },
+    {
+      "id": "d13",
       "stage": 3,
       "type": "report",
-      "title": "Bản tự thú của Nguyễn Đăng Khiêm",
-      "date": "14h00 ngày 23/01/2001",
-      "content": "**LỜI THÚ NHẬN CỦA NGUYỄN ĐĂNG KHIÊM**\n\n'Tôi nghĩ bố tôi bảo thủ quá, cứ khư khư ôm lấy mấy tờ tranh giấy điệp kiếm bạc cắc trong khi bạn bè buôn xe máy kiếm tiền triệu mỗi ngày. Tôi nghĩ nếu bản khắc gỗ quý nhất bị phá hủy thì bố tôi sẽ nản lòng đóng xưởng tranh và cho tôi tiền làm ăn. Tối qua lúc bãi chiếu bóng tạm ngừng đổi cuộn phim, tôi chạy tắt lối bờ sông Đuống về nhà lấy chày đá nện gãy bản khắc rồi chạy vội lại sân đình...'"
+      "title": "Kết luận giám định hai nửa bản khắc",
+      "header": [
+        "Viện Bảo tàng Lịch sử",
+        "Phòng Bảo quản hiện vật gỗ"
+      ],
+      "heading": "Kết luận giám định",
+      "code": "03/GĐ-BQ",
+      "date": "Ngày 26/1/2001",
+      "fields": [
+        {
+          "label": "Vật giám định",
+          "value": "Hai nửa bản khắc gỗ thị \"Đám cưới chuột\" thu ở xưởng cụ Thao"
+        }
+      ],
+      "sections": [
+        {
+          "heading": "1. Gỗ",
+          "paragraphs": [
+            "Gỗ thị, nhưng thớ ở mép gãy còn sáng màu, độ ẩm cao: gỗ được xẻ **khoảng 3–4 tháng**, không phải gỗ trăm năm."
+          ]
+        },
+        {
+          "heading": "2. Mực",
+          "paragraphs": [
+            "Mực đen chỉ thấm sâu **0,2–0,4 mm**. Một bản khắc in liên tục hơn trăm năm phải thấm mực 3–5 mm. Mặt ván phủ lớp dầu trẩu mới pha muội để giả màu cũ."
+          ]
+        },
+        {
+          "heading": "3. Vết khắc",
+          "paragraphs": [
+            "Vết đục sắc, không mòn, không có lớp mực tích tụ trong các khe nét. **Bản khắc bị đập là một bản mới khắc, làm giả theo bản cổ.**"
+          ]
+        }
+      ],
+      "signature": "Chuyên viên giám định: Hoàng Thị Mai"
+    },
+    {
+      "id": "d14",
+      "stage": 3,
+      "type": "evidence",
+      "title": "Đối chiếu tranh in bản lưu năm 1999 với bản khắc gãy",
+      "code": "TV-07",
+      "image": "images/d07-tranh-dong-ho.webp",
+      "imageCaption": "Tờ tranh \"Đám cưới chuột\" in năm 1999, cụ Thao lưu trong tủ.",
+      "fields": [
+        {
+          "label": "Mẫu so sánh",
+          "value": "Tờ tranh lưu in tháng 12/1999 và bản in thử từ hai nửa bản khắc gãy (ghép lại)"
+        }
+      ],
+      "paragraphs": [
+        "1. Chú chuột đánh trống đi đầu: tranh lưu **7 sợi râu**; bản khắc gãy **6 sợi**.",
+        "2. Lá cờ đuôi nheo trên kiệu: tranh lưu đuôi cờ có 3 khía; bản khắc gãy 2 khía, ngắn hơn khoảng 4 mm.",
+        "3. Góc dưới bên trái (chỗ cụ Thao nói bị nứt): tranh lưu có vết nứt mảnh in thành đường trắng; bản khắc gãy **không có vết nứt hay vết dán keo** nào.",
+        "Kết luận: tờ tranh lưu và bản khắc gãy không được in từ cùng một bản khắc."
+      ]
+    },
+    {
+      "id": "d15",
+      "stage": 3,
+      "type": "testimony",
+      "title": "Biên bản ghi lời khai lần hai của Vũ Đình Khiêm",
+      "header": [
+        "Công an huyện Thuận Thành",
+        "Đội Cảnh sát điều tra"
+      ],
+      "heading": "Biên bản ghi lời khai",
+      "date": "10 giờ 00 ngày 26/1/2001",
+      "fields": [
+        {
+          "label": "Người khai",
+          "value": "Vũ Đình Khiêm, 24 tuổi"
+        }
+      ],
+      "lines": [
+        {
+          "n": 1,
+          "speaker": "Điều tra viên",
+          "text": "Sao anh khai ngồi ở sân đình suốt?"
+        },
+        {
+          "n": 2,
+          "speaker": "Vũ Đình Khiêm",
+          "text": "Tôi sợ bố biết chuyện tôi với Lan. Bố cấm vì nhà Lan không làm tranh. Giờ nghỉ phim chúng tôi ra quán bà Tý ở chân đê, bùn đỏ ở dép là từ đấy."
+        },
+        {
+          "n": 3,
+          "speaker": "Điều tra viên",
+          "text": "Anh có thấy gì không?"
+        },
+        {
+          "n": 4,
+          "speaker": "Vũ Đình Khiêm",
+          "text": "Có một người dắt xe thồ đi từ ngõ xóm Đông lên đê, xe nặng nhưng không chở gì, đi rất vội về phía cầu. Dáng người ấy tôi thấy quen quen mà không nhớ ra."
+        },
+        {
+          "n": 5,
+          "speaker": "Điều tra viên",
+          "text": "Anh có biết khắc ván không?"
+        },
+        {
+          "n": 6,
+          "speaker": "Vũ Đình Khiêm",
+          "text": "Không. Tôi bỏ học khắc từ năm mười lăm tuổi, bố còn mắng tôi cầm đục như cầm dao phay."
+        }
+      ],
+      "signature": "Người khai: Vũ Đình Khiêm"
+    },
+    {
+      "id": "d16",
+      "stage": 3,
+      "type": "note",
+      "title": "Trích sổ ghi chép của cụ Thao, tháng 11–12/2000",
+      "paragraphs": [
+        "Sổ bìa giấy dó, chữ viết tay của cụ Vũ Đình Thao:",
+        "— 2/11: Gửi ông Lực Đông Khê dán góc nứt ván \"Đám cưới chuột\". Ông ấy hẹn hai tuần.",
+        "— 18/11: Lực bảo keo chưa khô, xin thêm một tuần.",
+        "__— 25/11: Nhận lại ván. Ván sạch mực, sáng màu hẳn, Lực bảo rửa mực cũ cho dễ in. Tôi kể Lực nghe sáng 29 Tết in mẻ đầu.__",
+        "— 10/12: Ông Tường Hà Nội lại nhắn hỏi mua ván, tôi không trả lời."
+      ],
+      "signature": "Thao"
+    },
+    {
+      "id": "d17",
+      "stage": 4,
+      "type": "report",
+      "title": "Biên bản thu giữ tại cửa hàng đồ cổ của ông Đỗ Mạnh Tường",
+      "header": [
+        "Công an quận Hoàn Kiếm",
+        "Đội Cảnh sát hình sự"
+      ],
+      "heading": "Biên bản thu giữ đồ vật",
+      "code": "19/TG",
+      "date": "Ngày 27/1/2001",
+      "fields": [
+        {
+          "label": "Nơi thu giữ",
+          "value": "Cửa hàng đồ cổ Mạnh Tường, phố Hàng Bông, Hà Nội"
+        }
+      ],
+      "sections": [
+        {
+          "heading": "1. Đồ vật",
+          "paragraphs": [
+            "Một bản khắc gỗ thị \"Đám cưới chuột\", mặt khắc đen bóng, **góc dưới trái có vết nứt đã dán keo da trâu**. Đối chiếu tờ tranh lưu năm 1999: chuột đánh trống 7 râu, cờ đuôi nheo 3 khía."
+          ]
+        },
+        {
+          "heading": "2. Sổ mua bán của cửa hàng",
+          "paragraphs": [
+            "\"10/12/2000. Mua 1 ván Đám cưới chuột cổ của ông L. thợ khắc Đông Khê, 45.000.000đ tiền mặt. Ông L. nói ván của nhà, bố để lại.\""
+          ]
+        },
+        {
+          "heading": "3. Giám định sơ bộ",
+          "paragraphs": [
+            "Mực thấm sâu khoảng 4 mm, gỗ khô, vết khắc mòn: phù hợp bản khắc in liên tục trên trăm năm. Cụ Vũ Đình Thao xác nhận đây là ván của gia đình."
+          ]
+        }
+      ],
+      "signature": "Điều tra viên: Đại uý Phạm Quốc Hưng"
+    },
+    {
+      "id": "d18",
+      "stage": 4,
+      "type": "report",
+      "title": "Biên bản khám xét nhà và xưởng của Phùng Văn Lực",
+      "header": [
+        "Công an huyện Thuận Thành",
+        "Đội Cảnh sát điều tra"
+      ],
+      "heading": "Biên bản khám xét",
+      "code": "14/KX",
+      "date": "08 giờ 00 ngày 28/1/2001",
+      "sections": [
+        {
+          "heading": "Thu giữ",
+          "paragraphs": [
+            "— Hai tấm phôi gỗ thị cùng khổ với bản khắc, một tấm đã bào phẳng.",
+            "— Một tờ giấy can vẽ lại hình \"Đám cưới chuột\", mép có vết mực đen in thử.",
+            "— Một lọ dầu trẩu pha muội đèn.",
+            "— Một xe đạp thồ, vành bánh và chắn bùn còn bám **bùn đỏ** giống bùn chân đê sông Đuống phía làng Đông Hồ.",
+            "— Một xe máy Dream mới, giấy mua bán ngày 12/12/2000, trả **28 triệu đồng tiền mặt**."
+          ]
+        },
+        {
+          "heading": "Lời người bị khám xét",
+          "paragraphs": [
+            "Lực nói phôi gỗ \"để khắc ván mới cho khách\", tiền mua xe \"vay họ hàng\". Không giải thích được giấy can."
+          ]
+        }
+      ],
+      "signers": [
+        {
+          "role": "Điều tra viên",
+          "name": "Thượng uý Nguyễn Văn Kiên"
+        }
+      ]
+    },
+    {
+      "id": "d19",
+      "stage": 4,
+      "type": "testimony",
+      "title": "Lời khai của Đỗ Mạnh Tường (buôn đồ cổ)",
+      "header": [
+        "Công an quận Hoàn Kiếm",
+        "Đội Cảnh sát hình sự"
+      ],
+      "heading": "Biên bản ghi lời khai",
+      "date": "14 giờ 00 ngày 27/1/2001",
+      "fields": [
+        {
+          "label": "Người khai",
+          "value": "Đỗ Mạnh Tường, 55 tuổi, chủ cửa hàng đồ cổ phố Hàng Bông"
+        }
+      ],
+      "lines": [
+        {
+          "n": 1,
+          "speaker": "Điều tra viên",
+          "text": "Ông mua bản khắc này của ai?"
+        },
+        {
+          "n": 2,
+          "speaker": "Đỗ Mạnh Tường",
+          "text": "Của ông Lực thợ khắc Đông Khê, ngày 10/12. Ông ấy bảo ván của nhà, bố để lại, cần tiền trả nợ."
+        },
+        {
+          "n": 3,
+          "speaker": "Điều tra viên",
+          "text": "Ông có biết đây là ván của nhà cụ Thao?"
+        },
+        {
+          "n": 4,
+          "speaker": "Đỗ Mạnh Tường",
+          "text": "Tôi từng hỏi mua ván của cụ Thao, nhìn cũng thấy giống. Ông Lực thề là của nhà ông ấy, tôi tưởng làng tranh thì nhà nào cũng có một bản."
+        },
+        {
+          "n": 5,
+          "speaker": "Điều tra viên",
+          "text": "Từ 10/12 đến nay ông có gặp ông Lực không?"
+        },
+        {
+          "n": 6,
+          "speaker": "Đỗ Mạnh Tường",
+          "text": "Hôm 20/12 ông ấy lên hỏi tôi đã bán ván chưa, dặn đừng bày ra tủ kính trước Tết. Tôi thấy lạ."
+        }
+      ],
+      "signature": "Người khai: Đỗ Mạnh Tường"
     }
   ],
   "questions": [
     {
       "id": "q1",
       "stage": 1,
-      "type": "evidence",
-      "title": "Bản khắc gỗ thị bị đập phá và vệt phẩm son gia truyền",
-      "intro": "Bản khắc gỗ thị cổ 'Đám cưới chuột' độc bản nghìn năm của làng tranh Đông Hồ bị kẻ gian đập gãy tan tành trong đêm. Hãy phân tích các dấu vết ban đầu.",
-      "prompt": "Ghim 2 tài liệu chỉ ra tình trạng bản khắc gỗ thị cổ bị đập gãy bằng chày đá và dấu vết phẩm màu son đỏ tươi gia truyền rơi vãi tại hiện trường.",
-      "need": 2,
+      "type": "choice",
+      "title": "Kẻ lạ hay người quen?",
+      "prompt": "Báo chí nói \"kẻ lạ đột nhập\". Dựa vào hồ sơ đang mở, nhận định nào đứng vững?",
+      "options": [
+        "Một kẻ trộm lạ vào xưởng tìm đồ đáng tiền, không lấy được gì nên đập phá cho hả giận rồi bỏ đi.",
+        "Người gây án biết rõ xưởng: tìm đúng chiếc giá cao phủ vải điều, dùng chày của xưởng, bỏ qua hộp tiền và các ván khác, chỉ nhắm vào bản khắc ấy."
+      ],
       "answer": [
-        "d02",
-        "d03"
+        1
       ],
+      "nudges": {
+        "0": {
+          "message": "Hộp tiền bán tranh ở đâu, có bị lấy không? Các bản khắc khác ra sao?"
+        }
+      },
       "hints": [
-        "Biên bản khám nghiệm hiện trường mô tả những nhát đập phá nát phiến gỗ thị cổ.",
-        "Ảnh chụp bản khắc gỗ thị bị vỡ đôi và vệt phẩm màu đỏ son gia truyền rơi rớt trên thềm gạch."
+        "Xem biên bản khám nghiệm: cái gì bị động vào, cái gì còn nguyên.",
+        "Một tên trộm lạ có bỏ qua hộp tiền trên bàn không?",
+        "d02: giá cao phủ vải điều bị lấy đúng ván; chày đá của xưởng; hộp tiền 1,2 triệu còn nguyên; các ván khác không bị động."
       ],
+      "solved": "Người đập bản khắc chỉ muốn đúng tấm ván ấy biến mất.",
       "explanation": [
-        "Tài liệu d02 ghi nhận bản khắc gỗ thị quý bị chày đá đập vỡ vụn có chủ đích phá hủy hoa văn.",
-        "Tài liệu d03 chụp cận cảnh bản khắc cổ bị gãy đôi, xung quanh vương vãi vệt phẩm son đỏ tươi."
+        {
+          "title": "Nhắm đúng một thứ",
+          "body": [
+            "d02: chỉ bản khắc trên giá cao phủ vải điều bị lấy xuống; các ván khác còn nguyên."
+          ]
+        },
+        {
+          "title": "Không lấy tiền",
+          "body": [
+            "d02: hộp tiền bán tranh khoảng 1,2 triệu trên bàn còn nguyên."
+          ]
+        },
+        {
+          "title": "Giờ",
+          "body": [
+            "d02: tiếng đập lúc khoảng 20:30, đúng giờ phim nghỉ 20:15–20:45."
+          ]
+        }
       ]
     },
     {
       "id": "q2",
-      "stage": 2,
-      "type": "line",
-      "title": "Lời khai ngoại phạm xem chiếu phim sân đình",
-      "intro": "Những người thợ khắc gỗ và con cháu trong phường tranh đều phải tường trình hoạt động buổi tối xảy ra vụ việc.",
-      "prompt": "Đối chiếu lời khai của các nghệ nhân và người làng Đông Hồ, hãy chỉ ra dòng lời khai khẳng định ngồi xem chiếu phim liên tục tại sân đình từ 19h30 đến 22h00 không rời nửa bước?",
+      "stage": 1,
+      "type": "choice",
+      "multiple": true,
+      "cards": [
+        "khiem",
+        "vinh",
+        "hung",
+        "luc"
+      ],
+      "title": "Ai đã từng cầm tấm ván ấy?",
+      "prompt": "Theo lời cụ Thao, chọn **tất cả** những người biết chỗ cất bản khắc hoặc từng giữ nó trong tay.",
+      "options": [
+        "Vũ Đình Khiêm",
+        "Trần Khắc Vĩnh",
+        "Lê Văn Hùng",
+        "Phùng Văn Lực"
+      ],
       "answer": [
-        "d05:003"
+        0,
+        2,
+        3
       ],
+      "nudges": {
+        "1": {
+          "message": "Cụ Thao có nói anh Vĩnh từng vào xưởng hay cầm tấm ván không?"
+        }
+      },
       "hints": [
-        "Rà soát lời khai của người cháu thợ cả.",
-        "Tìm câu quả quyết ngồi xem phim bãi ở sân đình suốt buổi tối không về xưởng."
+        "Đọc lời khai cụ Thao về việc ai biết chỗ cất ván.",
+        "Có người ngày nào cũng thấy, có người từng mang nó về nhà.",
+        "d05 dòng 4: Khiêm, Hùng ngày nào cũng thấy; ông Lực giữ ván ba tuần tháng Mười Một để dán góc nứt."
       ],
+      "solved": "Ba người biết tấm ván ở đâu. Một trong số đó đã mang nó ra khỏi làng.",
       "explanation": [
-        "Tại d05 dòng 003, Nguyễn Đăng Khiêm khai: 'Từ 19h30 tối đến tận 22h00 đêm tôi ngồi xem đội chiếu phim lưu động chiếu phim nhựa ở sân đình làng cùng thanh niên trong xóm, tuyệt đối không hề rời sân đình nửa bước'."
+        {
+          "title": "Trong nhà",
+          "body": [
+            "d05: Khiêm (con trai), Hùng (thợ phụ) ngày nào cũng làm việc trong xưởng."
+          ]
+        },
+        {
+          "title": "Ngoài nhà",
+          "body": [
+            "d05: ông Lực bên Đông Khê giữ ván ba tuần để dán góc nứt."
+          ]
+        },
+        {
+          "title": "Không phải",
+          "body": [
+            "Anh Vĩnh và ông Tường có lý do ghét hoặc thèm tấm ván, nhưng hồ sơ không cho thấy họ biết chỗ cất."
+          ]
+        }
       ]
     },
     {
       "id": "q3",
       "stage": 2,
-      "type": "evidence",
-      "title": "Dấu vết chày đá và thói quen pha chế phẩm son",
-      "intro": "Cơ quan điều tra tìm kiếm hung khí đã dùng để đập phá bản khắc gỗ thị.",
-      "prompt": "Ghim 2 tài liệu liên kết vết đập dăm gỗ trên bản khắc với lời khai của thợ phụ Lê Văn Hùng nhìn thấy chiếc chày đá giã thuốc bắc bị mượn lén.",
-      "need": 2,
+      "type": "line",
+      "title": "Giờ nghỉ giữa phim",
+      "prompt": "Một người khai đã ngồi ở sân đình suốt giờ nghỉ phim, nhưng một nhân chứng ở vòng này nói khác. Chỉ ra dòng khai đó.",
       "answer": [
-        "d06",
-        "d07"
+        "d06:004"
       ],
+      "nudges": {
+        "d06:002": {
+          "near": true,
+          "message": "Câu này nói giờ đến xem phim. Tìm câu nói về giờ nghỉ giữa phim."
+        },
+        "d12:006": {
+          "near": true,
+          "message": "Lời ông Lực cũng đáng ngờ, nhưng chưa có ai ở vòng này bác nó."
+        }
+      },
       "hints": [
-        "Lời khai của thợ cả khẳng định chiếc chày đá giã thuốc bắc ở chái bếp bị xê dịch.",
-        "Lời khai của thợ phụ Hùng xác nhận thấy bóng người mang chày đá lẻn vào xưởng tranh lúc chập tối."
+        "Ai nói về giờ nghỉ phim?",
+        "Bà bán nước chè chân đê thấy ai lúc phim nghỉ?",
+        "d06 dòng 4: Khiêm \"ngồi nguyên ở sân đình suốt\". d11: bà Tý thấy Khiêm và Lan ngồi ở quán chân đê suốt giờ nghỉ phim."
       ],
+      "solved": "Khiêm đã rời sân đình. Nhưng anh ngồi ở quán bà Tý, không ở xưởng.",
       "explanation": [
-        "Tài liệu d06 và d07 xác định kẻ phá hoại đã dùng chiếc chày đá giã thuốc bắc của gia đình để đập vỡ bản khắc gỗ thị."
+        {
+          "title": "Câu khai",
+          "body": [
+            "d06 dòng 4: ngồi nguyên ở sân đình suốt giờ nghỉ."
+          ]
+        },
+        {
+          "title": "Bị bác",
+          "body": [
+            "d11: bà Tý thấy Khiêm dắt Lan ra quán chân đê lúc phim nghỉ, ngồi tới khi loa gọi chiếu tiếp."
+          ]
+        },
+        {
+          "title": "Nhưng",
+          "body": [
+            "d11: chính lời bà Tý cũng cho thấy Khiêm không rời quán. Và bà thấy một người khác."
+          ]
+        }
       ]
     },
     {
       "id": "q4",
-      "stage": 3,
+      "stage": 2,
       "type": "evidence",
-      "title": "Hợp đồng bán tranh giả và dăm gỗ thị dính mực son",
-      "intro": "Khám xét tư trang nghi phạm đã làm sáng tỏ động cơ phá hủy di sản độc bản của dòng họ.",
-      "prompt": "Ghim 2 tài liệu chứng minh việc khám xét thu giữ những mảnh dăm gỗ thị dính phẩm son trong túi quần nghi phạm và bản hợp đồng giao dịch tranh giả thu lời bất chính.",
       "need": 2,
+      "title": "Hai người ở xa",
+      "prompt": "Ghim 2 tài liệu do người khác lập, loại trừ anh Vĩnh và cậu Hùng khỏi khung giờ 20:15–20:45.",
       "answer": [
-        "d10",
-        "d11"
+        "d08",
+        "d10"
+      ],
+      "nudges": [
+        {
+          "any": [
+            "d07",
+            "d09"
+          ],
+          "message": "Đó là lời tự khai. Tìm giấy tờ của người khác."
+        }
       ],
       "hints": [
-        "Ảnh chụp những mảnh dăm gỗ thị hình chóp lọng dính mực son đỏ thu trong túi áo nghi phạm.",
-        "Biên bản xác minh bản hợp đồng bán 500 bức tranh in lưới giả mạo bản khắc cổ cho thương lái phố Hàng Trống."
+        "Một giấy tờ ở Hà Nội, một biên bản ở xóm Ngoài.",
+        "Ai ký nhận hàng của anh Vĩnh, lúc mấy giờ? Ảnh cưới chụp Hùng lúc nào?",
+        "d08: nhà sách Hàng Gai nhận lịch 20:35, anh Vĩnh chờ từ 19 giờ. d10: ảnh cưới chụp Hùng cầm micro lúc khoảng 20:25 và 20:40."
       ],
+      "solved": "Anh Vĩnh ở Hà Nội, cậu Hùng cầm micro ở đám cưới.",
       "explanation": [
-        "Tài liệu d10 phát hiện các mảnh dăm gỗ thị văng vào túi áo của Khiêm khi dùng chày đập bản khắc.",
-        "Tài liệu d11 vạch trần Khiêm đã ký hợp đồng bán tranh in lậu công nghiệp giả tranh Đông Hồ, nếu bản khắc gốc còn tồn tại thì tranh giả của y sẽ bị phát hiện ngay lập tức."
+        {
+          "title": "Anh Vĩnh",
+          "body": [
+            "d08: chờ kiểm đếm ở Hàng Gai từ 19 giờ, ký giao 20:35; Hà Nội cách làng 35 km."
+          ]
+        },
+        {
+          "title": "Cậu Hùng",
+          "body": [
+            "d10: 7 người làm chứng; ảnh số 14, 15 có đồng hồ 20:25 và 20:40."
+          ]
+        },
+        {
+          "title": "Còn lại",
+          "body": [
+            "Bà Tý thấy một người dắt xe đạp thồ đi về phía cầu Đông Khê lúc tám rưỡi hơn (d11)."
+          ]
+        }
       ]
     },
     {
       "id": "q5",
       "stage": 3,
+      "type": "evidence",
+      "need": 2,
+      "title": "Tấm ván nào đã bị đập?",
+      "prompt": "Ghim 2 tài liệu chứng minh hai nửa ván ở sân phơi **không phải** bản khắc cổ của nhà cụ Thao.",
+      "answer": [
+        "d13",
+        "d14"
+      ],
+      "nudges": [
+        {
+          "any": [
+            "d16"
+          ],
+          "near": true,
+          "message": "Sổ của cụ Thao cho biết tấm ván từng rời khỏi nhà. Cần tài liệu xét chính tấm ván gãy."
+        },
+        {
+          "any": [
+            "d03"
+          ],
+          "message": "Ảnh chỉ cho thấy ván gãy, chưa nói nó cũ hay mới."
+        }
+      ],
+      "hints": [
+        "Một tài liệu xét gỗ và mực, một tài liệu so hình in.",
+        "Ván in trăm năm thì mực thấm sâu bao nhiêu? Con chuột đi đầu có mấy sợi râu?",
+        "d13: gỗ xẻ 3–4 tháng, mực thấm 0,2–0,4 mm, dầu trẩu mới. d14: 6 râu thay vì 7, cờ 2 khía thay vì 3, không có vết nứt dán keo."
+      ],
+      "solved": "Thứ bị đập chỉ là một bản sao mới khắc. Bản cổ đã biến mất từ trước Tết.",
+      "explanation": [
+        {
+          "title": "Gỗ và mực",
+          "body": [
+            "d13: gỗ thị mới 3–4 tháng; mực thấm 0,2–0,4 mm thay vì 3–5 mm; dầu trẩu pha muội giả cũ."
+          ]
+        },
+        {
+          "title": "Hình in",
+          "body": [
+            "d14: chuột đánh trống 6 râu (bản lưu 7), cờ 2 khía (bản lưu 3), không có vết nứt dán keo ở góc."
+          ]
+        },
+        {
+          "title": "Vậy bản cổ ở đâu",
+          "body": [
+            "d16: tấm ván từng rời nhà ba tuần, về lại \"sạch mực, sáng màu\"."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q6",
+      "stage": 3,
+      "type": "line",
+      "title": "Tấm ván trả về ngày 25/11",
+      "prompt": "Chỉ ra dòng khai bị các tài liệu ở vòng này bác bỏ về tấm ván được trả lại cho cụ Thao.",
+      "answer": [
+        "d12:004"
+      ],
+      "nudges": {
+        "d12:002": {
+          "near": true,
+          "message": "Câu này nói về việc sửa. Tìm câu nói về tấm ván đã trả lại."
+        },
+        "d12:006": {
+          "near": true,
+          "message": "Câu về tối 28 Tết sẽ còn bị bác sau. Câu hỏi này về tấm ván trả ngày 25/11."
+        }
+      },
+      "hints": [
+        "Ai trả lại tấm ván cho cụ Thao?",
+        "Tấm ván trả về có vết dán keo ở góc nứt không? Gỗ cũ hay mới?",
+        "d12 dòng 4: \"trả đúng tấm ván cụ gửi\". d13, d14: tấm ván ở nhà cụ là bản mới khắc, không có vết keo. d16: ván về \"sạch mực, sáng màu\"."
+      ],
+      "solved": "Ông Lực đã trả cụ Thao một tấm ván khác.",
+      "explanation": [
+        {
+          "title": "Câu khai",
+          "body": [
+            "d12 dòng 4: trả đúng tấm ván cụ gửi, đã rửa sạch mực."
+          ]
+        },
+        {
+          "title": "Bị bác",
+          "body": [
+            "d13, d14: tấm ván ở nhà cụ là bản mới khắc, không có vết keo dán góc nứt mà chính ông Lực nói đã dán (d12 dòng 2)."
+          ]
+        },
+        {
+          "title": "\"Rửa mực\"",
+          "body": [
+            "d16: ván về \"sạch mực, sáng màu\". Một tấm ván in trăm năm không thể rửa sạch mực."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q7",
+      "stage": 4,
+      "type": "evidence",
+      "need": 2,
+      "title": "Bản khắc thật",
+      "prompt": "Ghim 2 tài liệu nối ông Lực với bản khắc thật và với tấm ván giả.",
+      "answer": [
+        "d17",
+        "d18"
+      ],
+      "nudges": [
+        {
+          "any": [
+            "d19"
+          ],
+          "near": true,
+          "message": "Lời ông Tường rất có ích, nhưng cần tài liệu thu giữ được vật chứng."
+        }
+      ],
+      "hints": [
+        "Bản thật đang ở đâu? Ai bán nó?",
+        "Ở nhà ông Lực có gì để làm ra một tấm ván giả?",
+        "d17: bản thật ở cửa hàng ông Tường, sổ ghi mua của \"ông L. thợ khắc Đông Khê\" 45 triệu. d18: phôi gỗ thị, giấy can, dầu trẩu, xe thồ dính bùn đỏ đê, xe Dream 28 triệu tiền mặt."
+      ],
+      "solved": "Bản khắc cổ nằm ở phố Hàng Bông. Tấm ván giả ra đời từ xưởng của ông Lực.",
+      "explanation": [
+        {
+          "title": "Bản thật",
+          "body": [
+            "d17: ván có vết nứt dán keo, 7 râu, 3 khía, mực thấm 4 mm; sổ mua của \"ông L. thợ khắc Đông Khê\" ngày 10/12."
+          ]
+        },
+        {
+          "title": "Bản giả",
+          "body": [
+            "d18: phôi gỗ thị, giấy can vẽ lại tranh, dầu trẩu pha muội."
+          ]
+        },
+        {
+          "title": "Đêm 28 Tết",
+          "body": [
+            "d18: xe đạp thồ bám bùn đỏ đê; d11, d15: người dắt xe thồ đi về phía cầu Đông Khê lúc tám rưỡi hơn."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q-accuse",
+      "stage": 4,
       "type": "choice",
-      "title": "Bản kết luận điều tra toàn diện vụ án làng tranh Đông Hồ",
-      "intro": "Vết mực son, chày đá giã thuốc và bản hợp đồng tranh giả đã phơi bày toàn bộ sự thật.",
-      "prompt": "Dựa vào toàn bộ tài liệu hồ sơ, ai là người đã đập gãy bản khắc cổ 'Đám cưới chuột'?",
+      "cards": [
+        "khiem",
+        "vinh",
+        "hung",
+        "luc"
+      ],
+      "title": "Chỉ mặt người đập bản khắc",
+      "prompt": "Ai đã đập gãy tấm ván ở xưởng cụ Thao đêm 28 Tết? Chọn một người.",
       "options": [
-        "Nguyễn Đăng Khiêm do câu kết với thương lái phố cổ in hàng nghìn bản tranh giả mạo bản gốc để trục lợi, sợ bị ông nội dùng bản khắc cổ đối chiếu vạch trần hành vi lừa đảo, đã lén lấy chày đá đập nát bản khắc độc bản hòng triệt tiêu bằng chứng so sánh, rồi ra sân đình xem phim tạo bằng chứng ngoại phạm.",
-        "Thợ phụ Lê Văn Hùng do bất cẩn làm rơi tảng đá nghiền mực đè gãy bản khắc, sợ bị đuổi việc nên đã bỏ trốn.",
-        "Một thương lái tranh dân gian từ Hà Nội đột nhập xưởng tranh lấy cắp bản khắc không thành nên đập gãy phi tang.",
-        "Nghệ nhân Nguyễn Đăng Thao trong lúc say rượu đã lỡ tay làm gãy bản khắc gia truyền rồi đổ tội cho con cháu."
+        "Vũ Đình Khiêm",
+        "Trần Khắc Vĩnh",
+        "Lê Văn Hùng",
+        "Phùng Văn Lực"
+      ],
+      "answer": [
+        3
+      ],
+      "nudges": {
+        "0": {
+          "message": "Khiêm ngồi ở quán bà Tý suốt giờ nghỉ phim (d11), và không biết khắc ván (d15)."
+        },
+        "1": {
+          "message": "Anh Vĩnh ở Hà Nội tới 20:35 (d08)."
+        },
+        "2": {
+          "message": "Cậu Hùng cầm micro ở đám cưới (d10)."
+        }
+      },
+      "hints": [
+        "Ai cần tấm ván giả biến mất trước sáng 29 Tết?",
+        "Ai biết cụ Thao sẽ so tranh mới với tờ lưu?",
+        "Ông Lực: đổi ván (d13, d14, d16), bán bản thật (d17), biết lịch in (d16), xe thồ bùn đỏ (d18)."
+      ],
+      "solved": "Phùng Văn Lực.",
+      "explanation": [
+        {
+          "title": "Vì sao phải đập",
+          "body": [
+            "d05, d16: sáng 29 Tết cụ Thao in mẻ đầu và so với tờ lưu; d14: tranh in từ ván giả sẽ lộ ngay."
+          ]
+        },
+        {
+          "title": "Đêm 28",
+          "body": [
+            "d11, d15, d18: người dắt xe thồ ra từ xóm Đông về phía cầu Đông Khê; xe thồ của Lực bám bùn đỏ đê."
+          ]
+        },
+        {
+          "title": "Lời nói dối",
+          "body": [
+            "d12: \"trả đúng tấm ván\", \"không sang bên kia cầu\"."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q8",
+      "stage": 4,
+      "type": "choice",
+      "title": "Kết luận điều tra",
+      "prompt": "Chọn bản kết luận đúng với hồ sơ ở mọi chi tiết.",
+      "options": [
+        "Ông Lực nhận sửa ván tháng Mười Một, lén khắc bản sao, trả cụ Thao bản sao và bán bản thật cho ông Tường 45 triệu; biết sáng 29 Tết cụ in mẻ đầu và so với tờ lưu, đêm 28 ông đạp xe thồ sang, nhân giờ nghỉ phim đập gãy bản sao để mọi người tin bản cổ đã bị huỷ.",
+        "Khiêm muốn bố bỏ nghề để chia vốn buôn xe máy, nhân giờ nghỉ phim lẻn từ quán chè về xưởng đập gãy bản khắc cổ của gia đình, rồi nhờ cô Lan và bà Tý khai là cậu ngồi ở quán suốt; ông Lực chỉ bị nghi oan vì tháng Mười Một từng giữ ván.",
+        "Anh Vĩnh thuê ông Lực khắc một bản sao để in nhái tranh nhà cụ Thao, rồi nhờ người đập gãy bản cổ đêm 28 Tết cho cụ hết đường kiện; bản ở cửa hàng ông Tường là bản sao thứ hai mà anh Vĩnh định bán sang Hà Nội.",
+        "Ông Tường mua chuộc cậu Hùng lấy trộm bản cổ khỏi xưởng trước Tết rồi thay bằng một bản sao, đêm 28 cậu Hùng bỏ đám cưới về đập gãy bản sao cho phi tang; ông Lực chỉ là người dán góc nứt và không biết gì."
       ],
       "answer": [
         0
       ],
+      "exam": {
+        "examiner": "Kiểm sát viên Nguyễn Thị Thu",
+        "intro": "Trình bày kết luận trước kiểm sát viên: trả lời lần lượt từng câu hỏi bằng lời của mình. Không dùng được AI thì bấm “Trả lời bằng trắc nghiệm” để chọn bản kết luận đúng."
+      },
+      "nudges": {
+        "1": {
+          "message": "Tấm ván bị đập là bản mới khắc (d13); Khiêm không biết khắc và ngồi ở quán bà Tý (d11, d15)."
+        },
+        "2": {
+          "message": "Anh Vĩnh ở Hà Nội (d08); bản ở cửa hàng ông Tường là bản cổ thật (d17)."
+        },
+        "3": {
+          "message": "Cậu Hùng ở đám cưới (d10); sổ ông Tường ghi mua của \"ông L. thợ khắc Đông Khê\" (d17)."
+        }
+      },
       "hints": [
-        "Ai là người ký hợp đồng bán tranh in lậu công nghiệp, có dăm gỗ thị dính son trong túi quần và khai man giờ xem phim sân đình?",
-        "Đối chiếu sự cố cúp điện sân đình lúc 20h15 vạch trần lời khai xem phim liên tục của Khiêm."
+        "Bản bị đập là bản gì (d13)? Bản thật ở đâu và ai bán (d17)?",
+        "Chỉ một phương án nói đúng: bản bị đập là bản sao, người bán là thợ khắc Đông Khê.",
+        "Phương án A."
       ],
+      "solved": "Hồ sơ khép lại với tên Phùng Văn Lực.",
       "explanation": [
-        "Nguyễn Đăng Khiêm là thủ phạm duy nhất. Lòng tham trục lợi làm hàng giả và tâm địa phá hủy bảo vật nghìn năm của cha ông đã bị chứng cứ khoa học lật tẩy."
+        {
+          "title": "Đổi ván",
+          "body": [
+            "d16: ván rời nhà 2/11–25/11; d13, d14: ván trả về là bản mới khắc; d18: phôi gỗ, giấy can, dầu trẩu ở nhà Lực."
+          ]
+        },
+        {
+          "title": "Bán bản thật",
+          "body": [
+            "d17, d19: ông Tường mua của Lực ngày 10/12 giá 45 triệu; d18: 12/12 Lực mua xe Dream 28 triệu tiền mặt."
+          ]
+        },
+        {
+          "title": "Đêm 28 Tết",
+          "body": [
+            "d05, d16: Lực biết lịch in sáng 29; d02: tiếng đập 20:30 giờ nghỉ phim; d11, d15, d18: xe thồ bùn đỏ đi về phía cầu Đông Khê."
+          ]
+        }
+      ]
+    }
+  ],
+  "beats": [
+    {
+      "stage": 2,
+      "kicker": "Ngày 23–24/1/2001 · Làng Đông Hồ",
+      "title": "Những người có lý do",
+      "voice": "audio/beat-2.mp3",
+      "paragraphs": [
+        "Người đập tấm ván biết rõ chỗ cất nó. Và chỉ cần nửa tiếng phim nghỉ.",
+        "Thượng uý Kiên đi hỏi từng nhà: xưởng in lịch lụa làng bên, đám cưới ở xóm Ngoài, quán nước chè dưới chân đê, rồi qua cầu sang thôn Đông Khê.",
+        "Ai đã rời sân đình trong giờ nghỉ phim?"
+      ]
+    },
+    {
+      "stage": 3,
+      "kicker": "Ngày 26/1/2001 · Viện Bảo tàng Lịch sử, Hà Nội",
+      "title": "Tấm ván không có tuổi",
+      "voice": "audio/beat-3.mp3",
+      "paragraphs": [
+        "Chuyên viên bảo quản đưa mép gãy lên dưới đèn soi, rồi gọi Thượng uý Kiên lại. \"Anh xem này. Mực chỉ ngấm có một lớp mỏng.\"",
+        "Cụ Thao mở tủ lấy ra tờ tranh \"Đám cưới chuột\" in năm ngoái, đặt cạnh bản in thử từ tấm ván gãy.",
+        "Nếu tấm ván bị đập không phải bản khắc cổ, thì bản khắc cổ đang ở đâu?"
+      ]
+    },
+    {
+      "stage": 4,
+      "kicker": "Ngày 27/1/2001 · Phố Hàng Bông, Hà Nội",
+      "title": "Tủ kính sau Tết",
+      "voice": "audio/beat-4.mp3",
+      "paragraphs": [
+        "Công an quận Hoàn Kiếm gõ cửa một cửa hàng đồ cổ. Ông chủ lặng lẽ mở ngăn kéo dưới quầy, lấy ra một tấm ván gói trong vải bông.",
+        "Cùng lúc, một tổ công tác qua cầu Đông Khê, mang theo lệnh khám xét.",
+        "Chỉ mặt người đã đập tấm ván. Và giải thích vì sao."
       ]
     }
   ],
   "finale": {
-    "culprit": "Nguyễn Đăng Khiêm",
-    "text": "Trước mảnh dăm gỗ thị hình chóp lọng khớp khít vào vết vỡ của bản khắc cổ và vết phẩm son đỏ trên tay áo, Nguyễn Đăng Khiêm đã phải cúi đầu hối hận thú nhận hành vi nông nổi của mình. Dù bản khắc cổ bị thương tổn, nghệ nhân Nguyễn Đăng Thao đã tha thứ cho đứa con trai lầm lạc và kiên trì dùng sáp ong gắn gắn lại từng thớ gỗ thị. Tết năm ấy, những bức tranh 'Đám cưới chuột' vẫn kịp ra đời trên nền giấy điệp óng ánh, giữ trọn hồn quê Kinh Bắc ngàn năm."
-  }
+    "title": "Vết mực làng Đông Hồ",
+    "paragraphs": [
+      "Phùng Văn Lực khai nhận ngày 28/1/2001, khi tấm ván cổ được đặt lên bàn trước mặt ông. Ông nhìn vết keo da trâu ở góc dưới rất lâu. \"Tôi dán vết nứt ấy cẩn thận lắm.\"",
+      "Ông nợ lô bốn chục triệu. Ba tuần giữ tấm ván, ông đêm nào cũng ngồi đục một bản sao bằng gỗ thị mới, quét dầu trẩu pha muội cho cũ màu. Ngày 25/11 ông trả cụ Thao bản sao, nói đã rửa mực cho dễ in. Mười lăm ngày sau, bản thật nằm trong ngăn kéo một cửa hàng ở phố Hàng Bông.",
+      "Cụ Thao kể với ông: sáng 29 Tết in mẻ đầu, năm nào cũng đem so với tờ lưu. Ông biết con chuột đánh trống của mình thiếu một sợi râu.",
+      "Đêm 28, lúc phim nghỉ, ông đạp xe thồ qua cầu, mở then cửa xưởng, lấy chính chày giã điệp của cụ đập gãy tấm ván mình đã khắc. Rồi dắt xe lên đê, đi ngang quán bà Tý.",
+      "Ngày mồng Một Tết, cụ Thao in lại mẻ tranh \"Đám cưới chuột\" từ tấm ván cổ vừa được trả về. Chú chuột đánh trống vẫn đủ bảy sợi râu."
+    ]
+  },
+  "epilogue": [
+    {
+      "title": "Phùng Văn Lực",
+      "text": "Bị truy tố về tội lừa đảo chiếm đoạt tài sản. Ông xin được khắc lại cho cụ Thao một góc ván đã mòn, cụ không trả lời."
+    },
+    {
+      "title": "Đỗ Mạnh Tường",
+      "text": "Bị xử phạt vì mua bán tài sản không rõ nguồn gốc, phải trả lại bản khắc và mất số tiền đã trả."
+    },
+    {
+      "title": "Vũ Đình Khiêm",
+      "text": "Không lên Hà Nội buôn xe. Sau Tết anh xin bố dạy lại nghề khắc, và đưa Lan về ra mắt."
+    },
+    {
+      "title": "Trần Khắc Vĩnh, Lê Văn Hùng",
+      "text": "Anh Vĩnh và cụ Thao vẫn chưa nói chuyện với nhau. Cậu Hùng được cụ trả lại thưởng Tết."
+    }
+  ]
 }

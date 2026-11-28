@@ -1,0 +1,152 @@
+{
+  "_ghi_chu": "Đáp án báo cáo kết luận trước kiểm sát viên (AI). CHỨA LỜI GIẢI. keywords không dấu.",
+  "q8": {
+    "examiner": "Kiểm sát viên Nguyễn Thị Thu",
+    "persona": "Kiểm sát viên Viện Kiểm sát nhân dân huyện Thuận Thành, ngoài năm mươi, giọng Bắc, nhẹ nhàng nhưng hỏi kỹ.",
+    "intro": "Tôi là kiểm sát viên phụ trách vụ bản khắc ở làng Đông Hồ. Đồng chí trình bày kết luận, ngắn gọn, có căn cứ.",
+    "closing": "Báo cáo đủ căn cứ ở mọi điểm. Tôi đồng ý với kết luận điều tra.",
+    "points": [
+      {
+        "id": "ai",
+        "ask": "Thứ nhất: ai đã đập gãy tấm ván ở xưởng cụ Thao đêm 28 Tết?",
+        "facts": [
+          {
+            "id": "luc",
+            "text": "Phùng Văn Lực, thợ khắc ván ở thôn Đông Khê.",
+            "keywords": [
+              "luc",
+              "tho khac",
+              "dong khe"
+            ],
+            "probe": "Đồng chí nói rõ người đó là ai."
+          },
+          {
+            "id": "can-cu",
+            "text": "Nêu ít nhất một căn cứ: xe thồ dính bùn đỏ đê, người dắt xe thồ đi về phía cầu Đông Khê lúc tám rưỡi, ông nói dối là ở nhà, biết lịch in sáng 29.",
+            "keywords": [
+              "xe tho",
+              "bun",
+              "de",
+              "cau",
+              "noi doi",
+              "lich in",
+              "ba ty",
+              "sang 29"
+            ],
+            "probe": "Căn cứ nào cho thấy người này có mặt đêm đó?"
+          }
+        ],
+        "hint": "Gợi ý: lời bà Tý, lời khai lần hai của Khiêm và biên bản khám xét xưởng ông Lực."
+      },
+      {
+        "id": "ban-sao",
+        "ask": "Thứ hai: tấm ván bị đập có phải bản khắc cổ không? Đồng chí căn cứ vào đâu?",
+        "facts": [
+          {
+            "id": "gia",
+            "text": "Không, đó là một bản sao mới khắc.",
+            "keywords": [
+              "ban sao",
+              "gia",
+              "moi khac",
+              "khong phai",
+              "ban moi"
+            ],
+            "probe": "Tấm ván gãy là ván gì?"
+          },
+          {
+            "id": "bang-chung",
+            "text": "Gỗ thị mới 3–4 tháng, mực chỉ thấm 0,2–0,4 mm, dầu trẩu mới; tranh in khác tờ lưu (6 râu thay vì 7, cờ 2 khía), không có vết dán keo.",
+            "keywords": [
+              "muc",
+              "tham",
+              "go moi",
+              "dau trau",
+              "rau",
+              "co",
+              "tranh luu",
+              "vet keo",
+              "giam dinh"
+            ],
+            "probe": "Giám định và đối chiếu tranh in cho thấy gì?"
+          }
+        ],
+        "hint": "Gợi ý: kết luận giám định mảnh vỡ và bản đối chiếu tranh in năm 1999."
+      },
+      {
+        "id": "doi-van",
+        "ask": "Thứ ba: bản khắc cổ đã rời nhà cụ Thao lúc nào, bằng cách nào, và giờ ở đâu?",
+        "facts": [
+          {
+            "id": "luc-giu",
+            "text": "Tháng Mười Một cụ Thao gửi Lực dán góc nứt; Lực khắc bản sao, trả cụ bản sao ngày 25/11.",
+            "keywords": [
+              "thang muoi mot",
+              "25/11",
+              "sua",
+              "dan goc",
+              "gui",
+              "tra lai"
+            ],
+            "probe": "Ai giữ tấm ván, khi nào?"
+          },
+          {
+            "id": "tuong",
+            "text": "Bản thật bán cho ông Tường (cửa hàng đồ cổ phố Hàng Bông) ngày 10/12 giá 45 triệu, đã thu giữ.",
+            "keywords": [
+              "tuong",
+              "do co",
+              "hang bong",
+              "45",
+              "ban cho"
+            ],
+            "probe": "Bản thật đang ở đâu?"
+          }
+        ],
+        "hint": "Gợi ý: sổ ghi chép của cụ Thao và biên bản thu giữ ở Hà Nội."
+      },
+      {
+        "id": "vi-sao-dem-28",
+        "ask": "Thứ tư: đã có tiền rồi, vì sao người đó còn phải sang đập tấm ván đúng đêm 28 Tết?",
+        "facts": [
+          {
+            "id": "so-tranh",
+            "text": "Sáng 29 Tết cụ Thao in mẻ đầu và so với tờ lưu năm trước; tranh in từ bản sao sẽ lộ ngay. Đập gãy để mọi người tin bản cổ đã bị huỷ.",
+            "keywords": [
+              "so",
+              "to luu",
+              "in me",
+              "sang 29",
+              "lo",
+              "phat hien",
+              "bi huy",
+              "tin rang"
+            ],
+            "probe": "Điều gì sẽ xảy ra nếu sáng 29 cụ Thao in từ tấm ván ấy?"
+          }
+        ],
+        "hint": "Gợi ý: lời khai cụ Thao về thói quen in mẻ đầu năm."
+      },
+      {
+        "id": "loai-tru",
+        "ask": "Cuối cùng: vì sao không phải anh Khiêm, người có động cơ và nói dối về giờ nghỉ phim?",
+        "facts": [
+          {
+            "id": "khiem",
+            "text": "Khiêm ngồi ở quán bà Tý suốt giờ nghỉ phim; anh không biết khắc, không có lý do phá một bản sao; anh nói dối vì giấu chuyện yêu Lan.",
+            "keywords": [
+              "ba ty",
+              "quan che",
+              "lan",
+              "khong biet khac",
+              "hen ho",
+              "nguoi yeu"
+            ],
+            "probe": "Trong giờ nghỉ phim Khiêm ở đâu, ai xác nhận?"
+          }
+        ],
+        "hint": "Gợi ý: lời bà Tý ở quán chè chân đê."
+      }
+    ]
+  }
+}

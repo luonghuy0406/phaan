@@ -256,22 +256,27 @@
     {
       "id": "vet-muc-lang-dong-ho",
       "no": 12,
-      "status": "coming-soon",
+      "status": "available",
       "kind": "fiction",
-      "draft": true,
       "title": "Vết mực làng Đông Hồ",
-      "tagline": "Khuôn gỗ bản khắc quý giá nhất của nghệ nhân tranh Tết bị đập gãy, nhưng dấu vết để lại chỉ là giọt phẩm điệp đỏ son.",
-      "difficulty": 1,
-      "players": "1–4",
-      "duration": "30–45 phút",
-      "setting": "Làng tranh dân gian Đông Hồ, Thuận Thành, Bắc Ninh (hư cấu)",
+      "tagline": "Đêm 28 Tết, bản khắc \"Đám cưới chuột\" trăm rưởi năm tuổi bị đập gãy đôi trong lúc cả làng xem phim ở sân đình.",
+      "difficulty": 3,
+      "players": "1–5",
+      "duration": "60–75 phút",
+      "setting": "Làng tranh Đông Hồ, Bắc Ninh (nhân vật hư cấu)",
       "tags": [
         "Phá hoại tài sản",
         "Tranh dân gian",
-        "Bắc Ninh",
-        "Nhẹ nhàng"
+        "Tết"
       ],
-      "cover": "images/cover.webp"
+      "cover": "images/cover.webp",
+      "features": [
+        "ai",
+        "exam",
+        "voice"
+      ],
+      "art": "images/art.webp",
+      "artPos": "50% 50%"
     },
     {
       "id": "ly-tra-trao-doc",

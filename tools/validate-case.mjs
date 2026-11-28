@@ -151,9 +151,12 @@ function validate(id) {
   for (let s = 1; s < maxDocStage; s++) if (!qs.some((q) => (q.stage ?? 1) === s)) err(`Trọng điểm ${s} không có câu hỏi nào, nên trọng điểm ${s + 1} sẽ tự mở`);
 
   // catalog consistency
+  let catArt; // the catalog card's scene image (index.json "art") is used too
   try {
     const cat = JSON.parse(readFileSync(join(ROOT, 'public', 'cases', 'index.json'), 'utf8')).cases || [];
     const entry = cat.find((e) => e.id === id);
+    catArt = entry?.art;
+    if (entry?.art && !existsSync(join(dir, entry.art))) err(`index.json: art "${entry.art}" không có file`);
     if (!entry) err('Chưa có trong cases/index.json');
     else for (const k of ['title', 'status', 'no']) if (entry[k] !== c[k]) warn(`index.json: "${k}" khác case.json (${JSON.stringify(entry[k])} ≠ ${JSON.stringify(c[k])})`);
   } catch { err('cases/index.json lỗi'); }
@@ -259,7 +262,7 @@ function validate(id) {
   }
 
   // images in the case folder that nothing points to: they still ship to the website
-  const used = new Set([c.cover, c.victim?.image, ...(c.suspects || []).map((p) => p?.image), ...docs.flatMap((d) => [d && d.image, d && d.imageHi, d && d.file])].filter((x) => typeof x === 'string'));
+  const used = new Set([c.cover, catArt, c.victim?.image, ...(c.suspects || []).map((p) => p?.image), ...docs.flatMap((d) => [d && d.image, d && d.imageHi, d && d.file])].filter((x) => typeof x === 'string'));
   const walk = (rel) => readdirSync(join(dir, rel), { withFileTypes: true }).flatMap((e) => (e.isDirectory() ? walk(`${rel}/${e.name}`) : [`${rel}/${e.name}`]));
   if (existsSync(join(dir, 'images'))) {
     for (const f of walk('images')) if (!used.has(f) && !f.endsWith('.DS_Store')) warn(`${f}: không tài liệu nào dùng ảnh này (vẫn bị đưa lên web, ${(statSync(join(dir, f)).size / 1024).toFixed(0)} KB)`);

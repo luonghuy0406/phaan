@@ -1,30 +1,50 @@
-# Hồ sơ 12: Vết mực làng Đông Hồ (Bible)
+# Kịch bản gốc: Vết mực làng Đông Hồ (Hồ sơ 12, bản 2)
 
-## 1. Thông tin chung
-- **Mã hồ sơ**: `vet-muc-lang-dong-ho`
-- **Số thứ tự**: Hồ sơ 12
-- **Tên hồ sơ**: Vết mực làng Đông Hồ
-- **Tagline**: Khuôn gỗ bản khắc quý giá nhất của nghệ nhân tranh Tết bị đập gãy, nhưng dấu vết để lại chỉ là giọt phẩm điệp đỏ son.
-- **Bối cảnh**: Làng tranh Đông Hồ, huyện Thuận Thành, Bắc Ninh (hư cấu), đêm 28 tháng Chạp năm 2000.
-- **Thời lượng**: 30–45 phút
-- **Độ khó**: 1/5 (Dễ - Vụ án ngắn nhập môn phá hoại tài sản truyền thống)
-- **Số tài liệu**: 12 tài liệu chia làm 3 trọng điểm (Stage).
+Hư cấu. Làng tranh Đông Hồ là địa danh thật, nhưng mọi nhân vật, xưởng tranh, sự việc đều hư cấu. Bản 1 dùng họ "Nguyễn Đăng" trùng
+một dòng họ nghệ nhân có thật của làng: bản 2 đổi toàn bộ tên.
 
-## 2. Nạn nhân & Nghi phạm
-- **Nạn nhân / Người báo án**: Nghệ nhân Nguyễn Đăng Thao (60 tuổi), nghệ nhân tranh khắc gỗ dân gian Đông Hồ đời thứ tư. Bản khắc gỗ thị cổ "Đám cưới chuột" lưu truyền hơn 150 năm của gia đình bị đập gãy đôi.
-- **Nghi phạm 1**: Nguyễn Đăng Khiêm (24 tuổi), con trai thứ của cụ Thao. Chán nghề làm tranh thu nhập bấp bênh, nung nấu ý định lên Hà Nội mở cửa hàng buôn xe máy Dream Thái nhưng bị bố từ chối cho vay vốn.
-- **Nghi phạm 2**: Trần Khắc Vĩnh (38 tuổi), chủ xưởng in tranh lịch lụa hiện đại ở làng bên. Bị cụ Thao tố cáo in tranh nhái không bản quyền.
-- **Nghi phạm 3**: Lê Văn Hùng (19 tuổi), thợ phụ mới học việc quét hồ điệp. Bị cụ Thao phạt không cho thưởng Tết vì làm hỏng mẻ giấy dó hôm trước.
+4 vòng, 20 tài liệu, 9 câu hỏi, 60–75 phút, **độ khó 3 (vừa)**. Không có đồng phạm. Thẻ nghi phạm, thẩm vấn AI, báo cáo kiểm sát viên.
+**Chứa lời giải.**
 
-## 3. Sự thật & Thủ pháp phạm tội
-- **Kẻ phá hoại**: Nguyễn Đăng Khiêm.
-- **Động cơ**: Khiêm nghĩ bản khắc gỗ cổ là linh hồn của xưởng tranh. Nếu bản khắc bị phá hủy, bố sẽ nản lòng dẹp xưởng tranh cổ truyền và chịu chia số tiền tích cóp 20 triệu cho Khiêm làm vốn buôn xe máy.
-- **Thủ pháp**:
-  - 20h15 tối 28 Tết: Khiêm đến bãi chiếu bóng lưu động ở sân đình làng xem phim cùng đám bạn. Khi máy chiếu nghỉ giữa hiệp để đổi cuộn phim (khoảng 20h15 - 20h45), Khiêm lẻn theo lối bờ sông Đuống về xưởng tranh của bố.
-  - Y vào gian xới mực, lấy chiếc chày đá giã điệp nện mạnh làm gãy đôi bản khắc gỗ thị rồi ném vào góc sân phơi giấy điệp, sau đó vội vã quay lại bãi chiếu bóng lúc 20h50 trước khi phim chiếu hiệp hai.
-- **Chi tiết vạch trần**:
-  - Vết màu phẩm son đỏ tự nhiên (pha chế từ sỏi son núi Thần Đinh nghiền mịn dầm nước tro nếp - công thức bí truyền của cụ Thao) dính trên cổ tay áo len của Khiêm.
-  - Bùn đỏ phù sa bờ sông Đuống bám trên đôi dép tổ ong của Khiêm (lối đi tắt từ đình làng về xưởng chỉ có đoạn bờ sông là đất bùn đỏ trơn trượt).
-  - Khám túi áo khoác của Khiêm phát hiện một dăm gỗ thị nhỏ hình chóp lọng rước dâu vỡ ra từ bản khắc cổ.
+## 1. Sự thật
 
-## 4. Cấu trúc câu hỏi & Trọng điểm (Đã nâng cấp độ khó x5)
+Đêm 28 tháng Chạp năm Canh Thìn (thứ Hai 22/1/2001), bản khắc gỗ thị "Đám cưới chuột" hơn 150 năm tuổi của nghệ nhân **Vũ Đình Thao**
+(60 tuổi) bị đập gãy đôi trong xưởng tranh, đúng đêm trước mẻ in tranh Tết đầu tiên (sáng 29 Tết).
+
+**Người gây án: Phùng Văn Lực** (52 tuổi), thợ khắc ván ở thôn Đông Khê bên kia cầu.
+- 2/11/2000 cụ Thao gửi bản khắc nhờ Lực dán lại một góc nứt. Lực giữ ván ba tuần, lén khắc một **bản sao** bằng gỗ thị mới, quét dầu
+  trẩu và mực cho giống ván cũ, rồi 25/11 trả **bản sao** cho cụ Thao. Bản thật Lực bán cho ông Đỗ Mạnh Tường, buôn đồ cổ ở Hà Nội,
+  ngày 10/12, giá 45 triệu đồng. 12/12 Lực mua xe Dream 28 triệu tiền mặt, trả nợ lô.
+- Lực biết sáng 29 Tết cụ Thao in mẻ đầu (cụ kể lúc nhận ván). Tranh in từ bản sao sẽ khác bản lưu năm ngoái (chú chuột đánh trống
+  chỉ có 6 sợi râu thay vì 7; lá cờ đuôi nheo ngắn hơn), cụ Thao nhìn là biết. Lực phải phá bản sao trước khi in để mọi người tin bản
+  cổ đã bị huỷ.
+- 20:15–20:45, đội chiếu bóng lưu động nghỉ giữa hai cuộn phim ở sân đình, cả làng ồn ào. Cụ Thao họp ban hội xuân ở nhà văn hoá thôn
+  (19:30–21:30). Lực đạp xe thồ qua cầu Đông Khê, vào xưởng (cửa chỉ cài then gỗ), dùng chày đá giã điệp của xưởng đập bản sao gãy đôi,
+  quăng ra sân phơi, 20:40 đi ra. Không lấy hộp tiền bán tranh trên bàn.
+
+**Nghi phạm giả:**
+- **Vũ Đình Khiêm** (24 tuổi), con trai cụ Thao, xin vốn buôn xe máy bị từ chối. Nói dối "xem phim suốt" vì giờ nghỉ lẻn ra bờ đê gặp
+  người yêu (cụ Thao cấm). Dép dính bùn đỏ đê. Từ bờ đê thấy một người dắt xe đạp thồ ra từ ngõ xưởng lúc khoảng 20:25.
+- **Trần Khắc Vĩnh** (38 tuổi), chủ xưởng in lịch lụa làng bên, bị cụ Thao tố in tranh nhái. Tối 28 đi giao lịch ở Hà Nội.
+- **Lê Văn Hùng** (19 tuổi), thợ phụ bị cụ phạt không thưởng Tết. Tối 28 ở đám cưới anh họ, hát karaoke tới 22 giờ.
+
+## 2. Chuỗi suy luận
+
+- **Vòng 1 (7 tài liệu):** d00 nhân thân, d01 báo, d02 biên bản xưởng, d03 ảnh bản khắc gãy, d04 sơ đồ làng, d05 lời khai cụ Thao,
+  d06 lời khai Khiêm. q1: kẻ phá là người quen biết xưởng (không lấy tiền, dùng chày của xưởng, biết chỗ cất ván). q2 (thẻ, nhiều):
+  ai từng cầm bản khắc khỏi giá hoặc biết chỗ cất → Khiêm, Hùng, Lực.
+- **Vòng 2 (6):** d07 lời khai Vĩnh, d08 biên nhận giao lịch ở Hà Nội, d09 lời khai Hùng, d10 xác minh đám cưới, d11 lời khai trưởng đội
+  chiếu bóng, d12 lời khai Lực. q3 line: Khiêm dối "xem phim suốt" (d06:004 ↔ d11). q4 evidence 2: loại Vĩnh và Hùng (d08, d10).
+- **Vòng 3 (4):** d13 giám định mảnh vỡ (gỗ mới ~3 tháng, mực chỉ thấm 0,3 mm, dầu trẩu mới), d14 đối chiếu tranh in bản lưu 1999 với
+  bản khắc gãy (6/7 râu, cờ đuôi nheo), d15 Khiêm khai lần 2 (gặp người yêu ở đê; thấy người dắt xe thồ 20:25), d16 sổ ghi chép cụ Thao
+  (gửi Lực 2/11, nhận lại 25/11, "ván sạch mực, Lực bảo rửa cho dễ in"). q5 evidence 2: bản bị đập là bản sao (d13, d14).
+  q6 line: Lực dối "trả đúng tấm ván cụ gửi" (d12:004 ↔ d13/d14/d16).
+- **Vòng 4 (3):** d17 sổ mua bán và biên bản thu giữ ở cửa hàng ông Tường (bản thật), d18 khám xét xưởng Lực (phôi gỗ thị, giấy can,
+  dầu trẩu, xe đạp thồ dính bùn đỏ đê; xe Dream mua 12/12), d19 lời khai ông Tường. q7 evidence 2: nối Lực với bản thật (d17, d18).
+  q-accuse (thẻ, một người): Lực. q8 kết luận (choice 4 + kiểm sát viên AI).
+
+## 3. Tự kiểm tra
+1. 20:15 nghỉ phim, 20:25 người dắt xe thồ ra ngõ xưởng, 20:30 hàng xóm nghe tiếng đập (d02), 20:45 phim tiếp: khớp.
+2. Khiêm bị nghi mạnh ở vòng 1–2 (động cơ, dối giờ, bùn) nhưng vòng 3 có lời giải thích và manh mối chỉ sang người khác.
+3. Vĩnh: d08; Hùng: d10; Khiêm: d15 + d13 (bản bị đập là bản sao, Khiêm không có lý do phá bản sao và không biết khắc).
+4. Lực xuất hiện từ vòng 1 (d05, d00).

@@ -1,3 +1,34 @@
+# Ảnh cho bản 2 (tháng 11/2026)
+
+Nhân vật đổi tên (bản 1 dùng họ "Nguyễn Đăng" trùng một dòng họ nghệ nhân có thật). Bìa cũ (mockup ghép mặt người) và ảnh d10 đã gỡ.
+Sơ đồ làng (d04) vẽ lại: `authoring/vet-muc-lang-dong-ho/draw_so_do.py`. Dùng lại: d01-bao-chi, d03-ban-khac, d07-tranh-dong-ho.
+
+## Ảnh thẻ (một ảnh ghép 3 cột × 2 hàng)
+
+Cắt bằng: `python3 tools/crop-portraits.py <ảnh-ghép> public/cases/vet-muc-lang-dong-ho/images 2 3 thao khiem vinh hung luc -`
+rồi `python3 authoring/vet-muc-lang-dong-ho/build_case.py`.
+
+```text
+A 3-column by 2-row grid of six Vietnamese ID card portrait photos from 2001, separated by thin white lines, each cell a head-and-shoulders front-facing shot, neutral expression, plain pale blue background, flat studio lighting, slightly faded film colour, realistic skin texture, no text.
+Top row, left to right:
+(1) a 60-year-old Vietnamese village folk-print artisan, thin face, short white hair, wispy white goatee, kind deep-set eyes, dark brown traditional collarless shirt;
+(2) a 24-year-old Vietnamese village young man, defiant expression, short spiky black hair, faded denim jacket over a white t-shirt;
+(3) a 38-year-old Vietnamese small-business owner, round face, neat side-parted hair, short-sleeved light grey shirt with a pen in the pocket.
+Bottom row, left to right:
+(4) a 19-year-old shy Vietnamese apprentice, boyish face, short cropped hair, plain brown work shirt;
+(5) a 52-year-old Vietnamese woodcarver, weathered face, greying crew cut, thick calloused look, small scar on the eyebrow, faded olive army-style shirt;
+(6) an empty plain pale blue cell.
+```
+
+## Bìa (4:5, 1200×1500, dưới 400 KB; có chữ ở 1/3 dưới cũng được, thẻ trang chủ chỉ lấy phần trên)
+
+```text
+Cinematic night photograph inside a traditional Vietnamese folk woodblock print workshop, Đông Hồ village, the night before Tết 2001: an old carved woodblock of a mouse wedding procession lies broken in two on a brick floor scattered with sheets of shimmering seashell-coated paper; a heavy stone pestle beside it; a single oil lamp casting warm amber light; behind, wooden racks of woodblocks and red and yellow folk prints drying on strings; through the open wooden door, faint blue light of a village film screening far away. Quiet, melancholic, rich warm and cold tones, 35mm film grain, realistic, no people.
+```
+Negative: `cartoon, 3D render, CGI, oversaturated, people, blood, modern objects`
+
+---
+
 # Bảng Prompt Tạo Hình Chi Tiết: Vết mực làng Đông Hồ (Hồ sơ 12)
 
 Toàn bộ prompt được viết bằng tiếng Việt chi tiết, hướng dẫn cụ thể về làng tranh Đông Hồ Bắc Ninh giáp Tết năm 2000, bản khắc gỗ thị cổ, giấy điệp óng ánh và kỹ thuật hình sự. Tuyệt đối không chứa chữ trên ảnh.

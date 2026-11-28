@@ -1,0 +1,66 @@
+{
+  "_ghi_chu": "Giọng đọc lấy thẳng chữ từ case.json. Bắc Ninh nên dùng giọng Bắc. Chạy: npm run gen-voice -- vet-muc-lang-dong-ho và npm run gen-doc-voice -- vet-muc-lang-dong-ho",
+  "engine": "vieneu",
+  "voices": {
+    "dan": "Thiện Minh",
+    "kien": "Minh Đức",
+    "thao": "Thiền Tâm Đức",
+    "khiem": "Hải Đăng",
+    "vinh": "Quốc Tuấn",
+    "hung": "Adam bựa",
+    "luc": "Phạm Tuyên",
+    "ty": "Ngọc Linh",
+    "tuong": "Xuân Vĩnh",
+    "chuyenvien": "Mai Anh"
+  },
+  "temperature": 0.8,
+  "clips": [
+    {
+      "id": "intro",
+      "source": "intro",
+      "quotes": [
+        "dan"
+      ]
+    },
+    {
+      "id": "beat-2",
+      "source": "beat:2"
+    },
+    {
+      "id": "beat-3",
+      "source": "beat:3",
+      "quotes": [
+        "chuyenvien",
+        "dan"
+      ]
+    },
+    {
+      "id": "beat-4",
+      "source": "beat:4"
+    },
+    {
+      "id": "finale",
+      "source": "finale",
+      "quotes": [
+        {
+          "voice": "luc",
+          "before": "[thở dài]"
+        },
+        "dan"
+      ]
+    }
+  ],
+  "docs": {
+    "narrator": "dan",
+    "asker": "kien",
+    "speakers": {
+      "Vũ Đình Thao": "thao",
+      "Vũ Đình Khiêm": "khiem",
+      "Trần Khắc Vĩnh": "vinh",
+      "Lê Văn Hùng": "hung",
+      "Phùng Văn Lực": "luc",
+      "Nguyễn Thị Tý": "ty",
+      "Đỗ Mạnh Tường": "tuong"
+    }
+  }
+}
