@@ -1,0 +1,141 @@
+{
+  "_ghi_chu": "Đáp án báo cáo kết luận trước kiểm sát viên (AI). CHỨA LỜI GIẢI. keywords không dấu.",
+  "q11": {
+    "examiner": "Kiểm sát viên Phạm Thị Thu Hà",
+    "persona": "Kiểm sát viên Viện Kiểm sát nhân dân thành phố Hà Nội, ngoài bốn mươi, giọng Hà Nội, sắc sảo.",
+    "intro": "Tôi là kiểm sát viên phụ trách vụ tiệm vàng Phúc Hưng. Đồng chí trình bày kết luận, ngắn gọn, có căn cứ.",
+    "closing": "Báo cáo đủ căn cứ ở mọi điểm. Tôi đồng ý với kết luận điều tra.",
+    "points": [
+      {
+        "id": "ai",
+        "ask": "Thứ nhất: ai nổ súng, ai là đồng phạm?",
+        "facts": [
+          {
+            "id": "cuong",
+            "text": "Tạ Văn Cường (Cường sẹo) nổ súng.",
+            "keywords": [
+              "cuong",
+              "seo"
+            ],
+            "probe": "Ai cầm súng?"
+          },
+          {
+            "id": "tuan",
+            "text": "Đặng Quốc Tuấn, lái xe, báo tin.",
+            "keywords": [
+              "tuan",
+              "lai xe"
+            ],
+            "probe": "Ai báo tin cho tay súng?"
+          }
+        ],
+        "hint": "Gợi ý: giám định đạn đạo và tin nhắn lúc 22:16."
+      },
+      {
+        "id": "bao-tin",
+        "ask": "Thứ hai: tay súng biết giờ, cửa, chiếc cặp bằng cách nào?",
+        "facts": [
+          {
+            "id": "tin-nhan",
+            "text": "22:16 Tuấn gọi từ bốt điện thoại thẻ đầu phố Hàng Bạc, nhắn vào máy nhắn tin của Cường '22H40 CAP DEN CUA NGACH'.",
+            "keywords": [
+              "nhan tin",
+              "may nhan tin",
+              "bot dien thoai",
+              "hang bac",
+              "22h40",
+              "cap den",
+              "cua ngach",
+              "22:16",
+              "tong dai"
+            ],
+            "probe": "Tin gì, gửi từ đâu, tới máy của ai?"
+          },
+          {
+            "id": "the",
+            "text": "Thẻ điện thoại sê-ri 0812774 trong ví Tuấn có vân tay Tuấn; bà bán chè thấy anh đọc tin; cùng thẻ gọi ba tối thứ Tư trước.",
+            "keywords": [
+              "the",
+              "0812774",
+              "van tay",
+              "ba van",
+              "ban che",
+              "vinataba",
+              "thu tu truoc"
+            ],
+            "probe": "Lấy gì chứng minh người gọi là Tuấn?"
+          }
+        ],
+        "hint": "Gợi ý: sổ tổng đài nhắn tin, văn bản bưu điện, lời bà Vân, khám xét chỗ ở của Tuấn."
+      },
+      {
+        "id": "sung",
+        "ask": "Thứ ba: chứng cứ nào cho thấy Cường là người nổ súng?",
+        "facts": [
+          {
+            "id": "k54",
+            "text": "Khẩu K54 trùng vụ Bắc Giang, thu dưới gối Cường; áo mưa quân dụng, Simson đỏ trùng vệt lốp; máy nhắn tin còn tin cuối.",
+            "keywords": [
+              "k54",
+              "bac giang",
+              "dan dao",
+              "kim hoa",
+              "ao mua",
+              "simson",
+              "vet lop",
+              "may nhan tin",
+              "dang gioi",
+              "duoi goi"
+            ],
+            "probe": "Khẩu súng, chiếc xe, máy nhắn tin cho thấy gì?"
+          }
+        ],
+        "hint": "Gợi ý: giám định đạn đạo, biên bản bắt Cường, giám định tổng hợp."
+      },
+      {
+        "id": "vi-sao",
+        "ask": "Thứ tư: vì sao người lái xe ba năm lại bán lịch của ông chủ?",
+        "facts": [
+          {
+            "id": "no",
+            "text": "Tuấn nợ cá độ World Cup 60 triệu, Cường được giao đòi; 20/8 xoá nợ 'việc thứ Tư'; 30/8 Tuấn mua Dream II 25 triệu tiền mặt.",
+            "keywords": [
+              "ca do",
+              "world cup",
+              "bong da",
+              "60",
+              "xoa no",
+              "dream",
+              "25 trieu",
+              "no"
+            ],
+            "probe": "Tuấn nợ ai, món nợ được trả bằng gì?"
+          }
+        ],
+        "hint": "Gợi ý: sổ ghi nợ ổ cá độ và biên bản chi tiêu của Tuấn."
+      },
+      {
+        "id": "loai-tru",
+        "ask": "Cuối cùng: anh Đông nói dối chuyện biết lịch, ông Hùng giữ 20 lượng vàng. Vì sao họ không phải đồng phạm?",
+        "facts": [
+          {
+            "id": "dong-hung",
+            "text": "Đông ở Bạch Mai trực đêm cho mẹ, có sổ trực và y tá; Hùng ở Giáp Bát đánh bài, chỉ mua lại vàng nung của Cường ngày 28/8.",
+            "keywords": [
+              "bach mai",
+              "truc dem",
+              "y ta",
+              "giap bat",
+              "danh bai",
+              "28/8",
+              "mua lai",
+              "tieu thu"
+            ],
+            "probe": "Tối 26/8 Đông và Hùng ở đâu? Hùng dính vào lúc nào?"
+          }
+        ],
+        "hint": "Gợi ý: biên bản xác minh nơi ở của Đông và Hùng, khám xét tiệm cầm đồ."
+      }
+    ]
+  }
+}

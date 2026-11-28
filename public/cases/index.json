@@ -352,22 +352,29 @@
     {
       "id": "dem-sung-no-tay-son",
       "no": 15,
-      "status": "coming-soon",
-      "kind": "true-crime",
-      "draft": true,
-      "title": "Đêm súng nổ phố Tây Sơn",
-      "tagline": "Đêm mưa giông súng nổ chấn động phố Tây Sơn, kẻ sát nhân cướp tiệm vàng biến mất trong bóng tối cùng hàng trăm lượng vàng.",
-      "difficulty": 3,
-      "players": "2–5",
-      "duration": "100–120 phút",
-      "setting": "Tiệm vàng Kim Sinh, phố Tây Sơn, Đống Đa, Hà Nội (07/1999)",
+      "status": "available",
+      "kind": "fiction",
+      "title": "Chiếc cặp da đêm thứ Tư",
+      "tagline": "Giữa đêm mưa giông, chủ tiệm vàng bị bắn ngay cửa ngách nhà mình. Kẻ cướp chỉ lấy đúng một chiếc cặp da.",
+      "difficulty": 4,
+      "players": "2–6",
+      "duration": "90–120 phút",
+      "setting": "Tiệm vàng Phúc Hưng (hư cấu), phố Chùa Bộc, Đống Đa, Hà Nội",
       "tags": [
-        "Vụ án có thật",
-        "Dễ gây ám ảnh",
-        "Trọng án có vũ trang",
-        "Hà Nội 1999"
+        "Án mạng",
+        "Cướp có vũ trang",
+        "Hà Nội 1998",
+        "Có đồng phạm"
       ],
-      "cover": "images/cover.webp"
+      "cover": "images/cover.webp",
+      "features": [
+        "ai",
+        "exam",
+        "voice",
+        "accomplice"
+      ],
+      "art": "images/art.webp",
+      "artPos": "70% 50%"
     },
     {
       "id": "quai-vat-21-khuon-mat",

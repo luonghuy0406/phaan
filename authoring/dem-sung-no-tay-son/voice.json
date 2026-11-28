@@ -1,0 +1,67 @@
+{
+  "_ghi_chu": "Giọng đọc lấy thẳng chữ từ case.json. Hà Nội: giọng Bắc. Chạy: npm run gen-voice -- dem-sung-no-tay-son và npm run gen-doc-voice -- dem-sung-no-tay-son",
+  "engine": "vieneu",
+  "voices": {
+    "dan": "Thiện Minh",
+    "duc": "Minh Đức",
+    "hanh": "Ngọc Linh",
+    "tuan": "Hải Đăng",
+    "dong": "Adam bựa",
+    "hung": "Xuân Vĩnh",
+    "bay": "Thiền Tâm Đức",
+    "lan": "Đoan Trang",
+    "van": "Ngọc Huyền",
+    "toan": "Thanh Bình",
+    "cuong": "Phạm Tuyên"
+  },
+  "temperature": 0.8,
+  "clips": [
+    {
+      "id": "intro",
+      "source": "intro"
+    },
+    {
+      "id": "beat-2",
+      "source": "beat:2"
+    },
+    {
+      "id": "beat-3",
+      "source": "beat:3"
+    },
+    {
+      "id": "beat-4",
+      "source": "beat:4"
+    },
+    {
+      "id": "beat-5",
+      "source": "beat:5"
+    },
+    {
+      "id": "finale",
+      "source": "finale",
+      "quotes": [
+        {
+          "voice": "cuong"
+        },
+        {
+          "voice": "hanh",
+          "before": "[thở dài]"
+        }
+      ]
+    }
+  ],
+  "docs": {
+    "narrator": "dan",
+    "asker": "duc",
+    "speakers": {
+      "Trần Thị Hạnh": "hanh",
+      "Đặng Quốc Tuấn": "tuan",
+      "Nguyễn Văn Đông": "dong",
+      "Trần Khắc Hùng": "hung",
+      "Vũ Văn Bảy": "bay",
+      "Phí Thị Lan": "lan",
+      "Nguyễn Thị Vân": "van",
+      "Lê Văn Toàn": "toan"
+    }
+  }
+}

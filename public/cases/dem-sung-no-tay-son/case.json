@@ -1,339 +1,1590 @@
 {
   "id": "dem-sung-no-tay-son",
   "no": 15,
-  "status": "coming-soon",
-  "title": "Đêm súng nổ phố Tây Sơn",
-  "tagline": "Đêm mưa giông súng nổ chấn động phố Tây Sơn, kẻ sát nhân cướp tiệm vàng biến mất trong bóng tối cùng hàng trăm lượng vàng.",
-  "difficulty": 3,
-  "players": "2–5",
-  "duration": "100–120 phút",
-  "setting": "Tiệm vàng Kim Sinh, phố Tây Sơn, Đống Đa, Hà Nội (07/1999)",
+  "status": "available",
+  "title": "Chiếc cặp da đêm thứ Tư",
+  "subtitle": "Một đêm mưa giông, hai tiếng súng và người duy nhất biết giờ ông chủ về",
+  "tagline": "Giữa đêm mưa giông, chủ tiệm vàng bị bắn ngay cửa ngách nhà mình. Kẻ cướp chỉ lấy đúng một chiếc cặp da.",
+  "difficulty": 4,
+  "players": "2–6",
+  "duration": "90–120 phút",
+  "setting": "Tiệm vàng Phúc Hưng (hư cấu), phố Chùa Bộc, Đống Đa, Hà Nội",
+  "era": "Tháng 8/1998",
   "tags": [
-    "Vụ án có thật",
-    "Dễ gây ám ảnh",
-    "Trọng án có vũ trang",
-    "Hà Nội 1999"
+    "Án mạng",
+    "Cướp có vũ trang",
+    "Hà Nội 1998",
+    "Có đồng phạm"
   ],
   "cover": "images/cover.webp",
-  "synopsis": "⚠️ HỒ SƠ DỰA TRÊN TRỌNG ÁN CÓ THẬT CHẤN ĐỘNG THỦ ĐÔ HÀ NỘI NĂM 1999: Đêm 18/07/1999, giữa cơn mưa giông mù mịt sấm sét, tiếng súng nổ kinh hoàng đã xé toạc màn đêm tại tiệm vàng Kim Sinh (số 38 phố Tây Sơn, quận Đống Đa). Kẻ thủ ác mang súng ngắn K54 và súng hoa cải tàn bạo bắn gục gia đình chủ tiệm, đập vỡ tủ kính cướp đi hơn 100 lượng vàng rồi phóng xe máy tẩu thoát vào màn mưa. Vụ án gây chấn động dư luận cả nước, buộc lực lượng công an phải tung những điều tra viên kỳ cựu nhất lần theo từng vỏ đạn dập năm 1968 và vệt lốp xe máy trong đêm.",
+  "contentWarning": "Hồ sơ có mô tả một vụ nổ súng cướp tài sản. Tiệm vàng, nhân vật và sự việc đều hư cấu.",
+  "synopsis": [
+    "Đêm thứ Tư 26/8/1998, giữa cơn mưa giông, ông Lương Văn Phúc, chủ tiệm vàng Phúc Hưng trên phố Chùa Bộc, bị bắn ngay bậc cửa ngách nhà mình.",
+    "Kẻ cướp không đụng tới tủ kính đầy vàng. Hắn chỉ giật đúng chiếc cặp da đen ông Phúc vừa mang về."
+  ],
   "intro": {
-    "title": "Đêm súng nổ phố Tây Sơn",
+    "title": "Chiếc cặp da đêm thứ Tư",
     "paragraphs": [
-      "Phòng Cảnh sát Hình sự Công an thành phố Hà Nội xác lập chuyên án đặc biệt. Hiện trường ngổn ngang mảnh kính tủ vỡ và vỏ đạn quân dụng nồng nặc mùi thuốc súng.",
-      "Một cuộc rượt đuổi nghẹt thở xuyên qua các ngõ ngách Hà thành bắt đầu từ một mẩu vỏ bao thuốc lá rơi lại trong đêm giông.",
-      "Bạn là điều tra viên thụ lý hồ sơ. Hãy đọc kỹ các tài liệu trên bàn, đối chiếu lời khai và trả lời từng trọng điểm để mở niêm phong phần hồ sơ tiếp theo."
+      "Đêm thứ Tư 26/8/1998, Hà Nội mưa giông suốt từ chiều. Khoảng 22 giờ 40, chiếc Toyota đen dừng trước cửa ngách tiệm vàng Phúc Hưng trên phố Chùa Bộc. Ông chủ Lương Văn Phúc bước xuống, tay xách một chiếc cặp da đen.",
+      "Một người mặc áo mưa quân dụng từ trong ngõ lao ra. Hai tiếng súng lẫn trong tiếng sấm. Ông Phúc gục xuống, chiếc cặp biến mất cùng tiếng xe máy.",
+      "Bạn là điều tra viên Phòng Cảnh sát hình sự Công an thành phố Hà Nội. Tay súng không nói một câu nào, như thể đã biết trước tất cả. Hãy bắt đầu từ câu hỏi: ai đã cho hắn biết?"
     ],
-    "objective": "Lần theo hung khí và dấu vết đạn, kiểm chứng bằng chứng ngoại phạm của các nghi phạm, và xác định kẻ đã gây ra vụ cướp tiệm vàng."
+    "objective": "Tìm ra ai cầm súng, ai đã báo tin giờ về, cửa ngách và chiếc cặp, và vì sao."
+  },
+  "victim": {
+    "id": "phuc",
+    "name": "Lương Văn Phúc",
+    "age": 58,
+    "role": "Chủ tiệm vàng Phúc Hưng",
+    "image": "images/id-phuc.webp",
+    "note": "Bị bắn chết trước cửa ngách nhà mình khoảng 22:40 đêm 26/8/1998; mất chiếc cặp đựng khoảng 60 lượng vàng."
+  },
+  "suspects": [
+    {
+      "id": "cuong",
+      "name": "Tạ Văn Cường (\"Cường sẹo\")",
+      "age": 34,
+      "role": "Đối tượng bị truy nã",
+      "image": "images/id-cuong.webp",
+      "voice": "M3",
+      "suspicion": "Có tiền án cướp tài sản, đang bị truy nã vì một vụ cướp tiệm vàng có súng ở Bắc Giang."
+    },
+    {
+      "id": "dong",
+      "name": "Nguyễn Văn Đông",
+      "age": 30,
+      "role": "Thợ kim hoàn cũ của tiệm",
+      "image": "images/id-dong.webp",
+      "voice": "M1",
+      "suspicion": "Bị ông Phúc cho nghỉ tháng 7 vì nghi pha tuổi vàng; từng chửi ông Phúc ngoài phố."
+    },
+    {
+      "id": "tuan",
+      "name": "Đặng Quốc Tuấn",
+      "age": 29,
+      "role": "Lái xe riêng của ông Phúc",
+      "image": "images/id-tuan.webp",
+      "voice": "M2",
+      "suspicion": "Người chở ông Phúc về đến cửa ngách, rồi đưa xe đi gửi đúng lúc súng nổ."
+    },
+    {
+      "id": "hung",
+      "name": "Trần Khắc Hùng",
+      "age": 45,
+      "role": "Chủ tiệm cầm đồ bến xe Giáp Bát",
+      "image": "images/id-hung.webp",
+      "voice": "M4",
+      "suspicion": "Bị nghi chuyên tiêu thụ vàng không giấy tờ cho các nhóm trộm cướp."
+    }
+  ],
+  "aiInterrogation": true,
+  "audio": {
+    "intro": "audio/intro.mp3",
+    "finale": "audio/finale.mp3"
   },
   "documents": [
+    {
+      "id": "d00",
+      "stage": 1,
+      "type": "people",
+      "title": "Nạn nhân và những người liên quan",
+      "paragraphs": [
+        "Ảnh thẻ trích từ hồ sơ hộ khẩu và hồ sơ đối tượng, kèm lý do từng người được đưa vào diện xác minh sáng 27/8/1998."
+      ]
+    },
     {
       "id": "d01",
       "stage": 1,
       "type": "newspaper",
-      "title": "Báo An ninh Thủ đô - Trọng án cướp tiệm vàng chấn động phố Tây Sơn",
-      "date": "19/07/1999",
-      "content": "**TIẾNG SÚNG TRONG ĐÊM MƯA: CƯỚP TIỆM VÀNG KIM SINH, HÀNG TRĂM LƯỢNG VÀNG BIẾN MẤT**\n\nKhoảng 23h00 đêm qua 18/07, tại tiệm vàng Kim Sinh (số 38 phố Tây Sơn, phường Quang Trung, quận Đống Đa), kẻ cướp có vũ trang đã liều lĩnh nổ súng tấn công gia đình chủ tiệm vàng trong cơn mưa lớn.\n\nNhiều phát đạn súng ngắn quân dụng đã vang lên cướp đi sinh mạng của chủ tiệm và làm người thân bị thương nặng. Toàn bộ vàng miếng, vàng trang sức trong tủ kính bị khoắng sạch. Ban Giám đốc Công an TP. Hà Nội đã trực tiếp có mặt tại hiện trường chỉ đạo phá án khẩn cấp.",
+      "title": "Báo Thủ đô Chiều: Nổ súng cướp vàng trong đêm mưa",
+      "masthead": "Thủ đô Chiều",
+      "issue": "Số 2.906",
+      "date": "Thứ Năm, 27/8/1998",
+      "headline": "Nổ súng cướp vàng giữa đêm mưa giông ở phố Chùa Bộc",
+      "deck": "Chủ tiệm vàng Phúc Hưng tử vong ngay trước cửa nhà, kẻ cướp phóng xe máy biến mất.",
       "image": "images/d01-bao-chi.webp",
-      "imageCaption": "Ảnh tư liệu Báo An ninh Thủ đô: Hiện trường tiệm vàng phố Tây Sơn sáng sớm"
+      "imageCaption": "Ngõ bên hông tiệm vàng Phúc Hưng sáng 27/8.",
+      "paragraphs": [
+        "Khoảng 22 giờ 40 tối 26/8, giữa cơn mưa giông lớn, ông Lương Văn Phúc (58 tuổi), chủ tiệm vàng Phúc Hưng trên phố Chùa Bộc (quận Đống Đa), bị một đối tượng mặc áo mưa, đội mũ bảo hiểm nổ súng bắn trước cửa ngách nhà mình.",
+        "Kẻ cướp giật một chiếc cặp da rồi phóng xe máy vào ngõ. Ông Phúc tử vong tại chỗ. Theo người nhà, trong cặp có khoảng 60 lượng vàng.",
+        "Tiếng sấm át cả tiếng súng, nhiều nhà hàng xóm không hay biết. Công an thành phố Hà Nội đã lập chuyên án."
+      ]
     },
     {
       "id": "d02",
       "stage": 1,
       "type": "report",
-      "title": "Biên bản khám nghiệm hiện trường tiệm vàng Kim Sinh",
-      "date": "00h30 ngày 19/07/1999",
-      "content": "**BIÊN BẢN KHÁM NGHIỆM HIỆN TRƯỜNG**\n\n- **Địa điểm**: Gian ngoài tầng 1 tiệm vàng Kim Sinh, số 38 phố Tây Sơn, Đống Đa.\n- **Hiện trạng đổ vỡ**: Hai tủ kính cường lực trưng bày vàng ta bị búa tạ đập vỡ toang, các khay nhung đỏ trống rỗng. Trên mặt sàn gỗ vương vãi các mảnh kính vỡ vụn dính máu.\n- **Dấu vết đạn đạo**: Trên tường vôi có 2 vết đạn xuyên phá làm bung vữa, trên khung cửa gỗ lim có vết bắn của đạn ghém hoa cải chì li ti. Thu giữ được 3 vỏ đạn súng ngắn bằng đồng dưới gầm quầy thu ngân."
+      "title": "Biên bản khám nghiệm hiện trường cửa ngách tiệm vàng Phúc Hưng",
+      "header": [
+        "Công an thành phố Hà Nội",
+        "Phòng Cảnh sát hình sự"
+      ],
+      "heading": "Biên bản khám nghiệm hiện trường",
+      "code": "233/KNHT",
+      "date": "23 giờ 30 ngày 26/8/1998",
+      "fields": [
+        {
+          "label": "Địa điểm",
+          "value": "Cửa ngách (ngõ bên hông) tiệm vàng Phúc Hưng, phố Chùa Bộc, quận Đống Đa"
+        },
+        {
+          "label": "Người chết",
+          "value": "Lương Văn Phúc, 58 tuổi, chủ tiệm"
+        }
+      ],
+      "sections": [
+        {
+          "heading": "1. Hiện trường",
+          "paragraphs": [
+            "Tử thi nằm ngay bậc cửa ngách. Cửa ngách mở vào trong, then đã mở. Mặt tiền tiệm (cửa sắt kéo) khoá nguyên; tủ kính bày vàng trong tiệm **nguyên vẹn, không bị đụng tới**."
+          ]
+        },
+        {
+          "heading": "2. Dấu vết",
+          "paragraphs": [
+            "Thu **2 vỏ đạn** súng ngắn cỡ 7,62 mm cách tử thi 2–3 m về phía trong ngõ.",
+            "Trên nền đất trong ngõ có vệt lốp xe máy bánh nhỏ, vết trượt hướng ra ngõ sau. Mưa xoá phần lớn dấu giày."
+          ]
+        },
+        {
+          "heading": "3. Ghi nhận",
+          "paragraphs": [
+            "Cửa ngách chỉ mở vào tối thứ Tư hằng tuần, theo lời gia đình. Ngày thường đóng then trong."
+          ]
+        }
+      ],
+      "signers": [
+        {
+          "role": "Điều tra viên",
+          "name": "Thiếu tá Hoàng Minh Đức"
+        }
+      ]
     },
     {
       "id": "d03",
       "stage": 1,
       "type": "report",
-      "title": "Kết quả giám định tử thi nạn nhân chủ tiệm vàng",
-      "date": "03h00 ngày 19/07/1999",
-      "content": "**KẾT QUẢ KHÁM NGHIỆM TỬ THI VÀ ĐẠN ĐẠO**\n\n1. **Nguyên nhân tử vong**: Mất máu cấp do trúng 2 phát đạn xuyên ngực từ cự ly gần dưới 2 mét làm thủng tâm thất trái và dập nát phổi.\n2. **Đặc điểm đầu đạn**: Thu được 2 đầu đạn kim loại bọc đồng cỡ 7.62mm còn nguyên rãnh xoắn nòng súng. Đặc điểm rãnh xoắn 4 rãnh nghiêng phải, phù hợp 100% với súng ngắn quân dụng K54 (K-54 Tokarev).\n3. **Thời điểm tử vong**: Khoảng 22h45 đến 23h00 đêm 18/07/1999."
+      "title": "Kết quả giám định pháp y sơ bộ",
+      "header": [
+        "Viện Pháp y",
+        "Công an thành phố Hà Nội"
+      ],
+      "heading": "Kết quả giám định sơ bộ",
+      "code": "418/PY",
+      "date": "Ngày 27 tháng 8 năm 1998",
+      "sections": [
+        {
+          "heading": "Kết luận",
+          "paragraphs": [
+            "Nạn nhân trúng hai phát đạn súng ngắn ở vùng ngực, bắn ở cự ly gần (dưới 2 m). Tử vong gần như ngay lập tức, khoảng 22:40–22:45 ngày 26/8/1998.",
+            "Không có dấu hiệu vật lộn. Đầu đạn đã thu gửi giám định đạn đạo."
+          ]
+        }
+      ],
+      "signature": "Giám định viên: BS. Ngô Văn Thịnh"
     },
     {
       "id": "d04",
       "stage": 1,
-      "type": "report",
-      "title": "Sơ đồ hiện trường tiệm vàng và ngõ thoát hiểm",
-      "date": "04h00 ngày 19/07/1999",
-      "content": "**SƠ ĐỒ HIỆN TRƯỜNG VÀ ĐƯỜNG TẨU THOÁT**\n\n- Tiệm vàng nằm mặt phố Tây Sơn, sát cạnh ngõ chùa Đồng Quang.\n- Lối thoát hiểm: Cửa ngách sau tiệm vàng thông ra ngõ chùa Đồng Quang dẫn ngoằn ngoèo ra đường Đặng Tiến Đông và gò Đống Đa. Đây là lối đi tối tăm, vắng người vào đêm mưa bão.",
+      "type": "scan",
+      "title": "Sơ đồ hiện trường tiệm vàng Phúc Hưng",
       "image": "images/d04-so-do-hien-truong.webp",
-      "imageCaption": "Sơ đồ hiện trường tiệm vàng, ngõ số 12 và lối thoát ra bến phà"
+      "caption": "Sơ đồ lập khi khám nghiệm: mặt tiền, cửa ngách, ngõ bên hông, ngõ sau và nhà gửi xe."
     },
     {
       "id": "d05",
       "stage": 1,
-      "type": "photo",
-      "title": "Ảnh chụp 3 vỏ đạn K54 dập năm 1968 và đầu đạn thu tại hiện trường",
-      "date": "02h30 ngày 19/07/1999",
-      "image": "images/d05-vo-dan.webp",
-      "content": "Ảnh chụp cận cảnh kỹ thuật hình sự: Ba chiếc vỏ đạn súng ngắn quân dụng bằng đồng thau dập chìm con số '1968 - K54' ở đuôi vỏ. Cạnh đó là đầu đạn kim loại cỡ 7.62mm bị biến dạng đầu nhưng còn nguyên 4 đường rãnh xoắn nòng súng sắc nét."
-    },
-    {
-      "id": "d06",
-      "stage": 2,
       "type": "testimony",
-      "title": "Lời khai của thợ kim hoàn cũ Nguyễn Văn Đông",
-      "date": "08h30 ngày 19/07/1999",
+      "title": "Lời khai của bà Trần Thị Hạnh (vợ nạn nhân)",
+      "header": [
+        "Công an thành phố Hà Nội",
+        "Phòng Cảnh sát hình sự"
+      ],
+      "heading": "Biên bản ghi lời khai",
+      "date": "08 giờ 00 ngày 27/8/1998",
+      "fields": [
+        {
+          "label": "Người khai",
+          "value": "Trần Thị Hạnh, 54 tuổi, vợ ông Phúc, đồng chủ tiệm"
+        }
+      ],
       "lines": [
         {
           "n": 1,
-          "text": "Tôi từng làm thợ bạc cho ông Sinh được 3 năm, mới nghỉ việc hồi tháng trước."
+          "speaker": "Điều tra viên",
+          "text": "Những ai biết tối thứ Tư ông Phúc mang vàng về?"
         },
         {
           "n": 2,
-          "text": "Đúng là tôi có bức xúc vì ông Sinh trừ tiền công của tôi, nhưng tôi không dám làm chuyện tày đình như thế."
+          "speaker": "Trần Thị Hạnh",
+          "text": "Thứ Tư nào ông nhà tôi cũng lên chi nhánh Hàng Bạc lấy vàng về cất két nhà, đi cửa ngách cho kín. Biết chuyện ấy chỉ có tôi, cậu Tuấn lái xe, cô Lan kế toán chi nhánh, và thằng Đông, thợ cũ, làm ở đây ba năm."
         },
         {
           "n": 3,
-          "text": "Tối qua từ 20h00 đến sáng hôm sau tôi ở lì tại nhà bố mẹ đẻ bên Gia Lâm ăn cơm và ngủ với vợ con, không hề bước chân sang nội thành."
+          "speaker": "Điều tra viên",
+          "text": "Bà kể lại lúc 22:40."
         },
         {
           "n": 4,
-          "text": "Cả gia đình bố mẹ và hàng xóm đều có thể làm chứng cho tôi."
+          "speaker": "Trần Thị Hạnh",
+          "text": "Nghe tiếng xe đỗ ở miệng ngõ, tôi xuống mở then cửa ngách. Ông nhà tôi đi vào ngõ, vừa bước lên bậc thì xe đã chạy đi gửi như mọi khi. Một người mặc áo mưa quân dụng, đội mũ bảo hiểm kín mặt từ trong ngõ lao ra."
         },
         {
           "n": 5,
-          "text": "Tôi biết ông Sinh hay cất vàng miếng trong két sắt sau quầy, người ngoài không thể biết được."
+          "speaker": "Trần Thị Hạnh",
+          "text": "Hắn bắn hai phát, giật ngay cái cặp da đen trên tay ông nhà tôi rồi chạy vào ngõ. Hắn không nhìn vào tiệm, tủ kính đầy vàng ngay sau lưng tôi hắn không đụng."
+        },
+        {
+          "n": 6,
+          "speaker": "Điều tra viên",
+          "text": "Hắn có nói gì không?"
+        },
+        {
+          "n": 7,
+          "speaker": "Trần Thị Hạnh",
+          "text": "Không một câu. Như thể hắn biết trước cái cặp ấy có gì."
         }
-      ]
+      ],
+      "signature": "Người khai: Trần Thị Hạnh"
     },
     {
-      "id": "d07",
-      "stage": 2,
+      "id": "d06",
+      "stage": 1,
       "type": "testimony",
-      "title": "Lời khai của chủ tiệm cầm đồ bến xe Giáp Bát Trần Khắc Tuấn",
-      "date": "09h15 ngày 19/07/1999",
+      "title": "Lời khai của anh Đặng Quốc Tuấn (lái xe của ông Phúc)",
+      "header": [
+        "Công an thành phố Hà Nội",
+        "Phòng Cảnh sát hình sự"
+      ],
+      "heading": "Biên bản ghi lời khai",
+      "date": "09 giờ 30 ngày 27/8/1998",
+      "fields": [
+        {
+          "label": "Người khai",
+          "value": "Đặng Quốc Tuấn, 29 tuổi, lái xe riêng cho ông Phúc ba năm"
+        }
+      ],
       "lines": [
         {
           "n": 1,
-          "text": "Tôi mở tiệm cầm đồ xe máy gần bến xe Giáp Bát."
+          "speaker": "Điều tra viên",
+          "text": "Tối 26/8 anh làm gì?"
         },
         {
           "n": 2,
-          "text": "Mấy hôm trước có thằng Thắng 'quạ' đến hỏi tôi có chỗ nào mua gom vàng thỏi không hóa đơn không."
+          "speaker": "Đặng Quốc Tuấn",
+          "text": "Chín rưỡi tôi chở ông chủ lên chi nhánh Hàng Bạc. Ông đếm vàng với cô Lan, tôi ngồi cạnh ông suốt, không rời đi đâu."
         },
         {
           "n": 3,
-          "text": "Thằng Thắng là dân giang hồ có lệnh nã trốn ở bãi sông Hồng, người nó lúc nào cũng găm khẩu súng ngắn trong bụng."
+          "speaker": "Điều tra viên",
+          "text": "Lúc 22:40 thì sao?"
         },
         {
           "n": 4,
-          "text": "Tôi sợ rước họa vào thân nên xua tay từ chối không dám nhận."
+          "speaker": "Đặng Quốc Tuấn",
+          "text": "Tôi thả ông ở cửa ngách rồi đưa xe đi gửi như mọi lần. Mưa to, sấm nổ liên tục, tôi không nghe gì. Gửi xe xong chạy về thì thấy ông nằm đó."
+        },
+        {
+          "n": 5,
+          "speaker": "Điều tra viên",
+          "text": "Anh có nợ nần ai không?"
+        },
+        {
+          "n": 6,
+          "speaker": "Đặng Quốc Tuấn",
+          "text": "Không. Ông chủ trả lương đủ, tôi không nợ ai."
         }
+      ],
+      "signature": "Người khai: Đặng Quốc Tuấn"
+    },
+    {
+      "id": "d07",
+      "stage": 1,
+      "type": "evidence",
+      "title": "Vỏ đạn và đầu đạn thu tại hiện trường",
+      "code": "TV-01",
+      "image": "images/d07-vo-dan.webp",
+      "imageCaption": "Hai vỏ đạn và hai đầu đạn thu tại hiện trường (thước tỷ lệ cm).",
+      "fields": [
+        {
+          "label": "Loại",
+          "value": "Đạn súng ngắn 7,62 × 25 mm (dùng cho súng K54)"
+        },
+        {
+          "label": "Đáy vỏ đạn",
+          "value": "Dập số lô sản xuất cũ, năm 1968"
+        }
+      ],
+      "paragraphs": [
+        "Súng K54 không được bán cho dân thường. Đạn lô cũ thường là vũ khí trôi nổi.",
+        "Đã gửi giám định dấu kim hoả, dấu móc đạn và rãnh xoắn để đối chiếu với các vụ án trước."
       ]
     },
     {
       "id": "d08",
       "stage": 2,
       "type": "testimony",
-      "title": "Lời khai của bảo vệ chùa Đồng Quang",
-      "date": "09h45 ngày 19/07/1999",
+      "title": "Lời khai của Nguyễn Văn Đông (thợ kim hoàn cũ)",
+      "header": [
+        "Công an thành phố Hà Nội",
+        "Phòng Cảnh sát hình sự"
+      ],
+      "heading": "Biên bản ghi lời khai",
+      "date": "14 giờ 00 ngày 27/8/1998",
+      "fields": [
+        {
+          "label": "Người khai",
+          "value": "Nguyễn Văn Đông, 30 tuổi, thợ kim hoàn tiệm Phúc Hưng 1995–7/1998"
+        }
+      ],
       "lines": [
         {
           "n": 1,
-          "text": "Đêm qua mưa to gió lớn như trút nước, tôi đang ngồi trực trong gian tam bảo."
+          "speaker": "Điều tra viên",
+          "text": "Vì sao anh nghỉ việc ở tiệm Phúc Hưng?"
         },
         {
           "n": 2,
-          "text": "Khoảng gần 23h00, tôi nghe thấy mấy tiếng nổ 'đoàng, đoàng' chát chúa át cả tiếng sấm."
+          "speaker": "Nguyễn Văn Đông",
+          "text": "Tháng Bảy ông Phúc cho tôi nghỉ vì nghi tôi pha tuổi vàng. Tôi oan, tôi có chửi ông ấy mấy câu ngoài phố."
         },
         {
           "n": 3,
-          "text": "Chừng 2 phút sau, tôi hé cửa ngó ra thì thấy một bóng người cao gầy khoác áo mưa rách, phóng vọt một chiếc xe máy Simson màu đỏ mận từ trong ngõ ngách tiệm vàng phi thẳng ra đường Đặng Tiến Đông."
+          "speaker": "Điều tra viên",
+          "text": "Anh có biết lịch ông Phúc đi lấy vàng?"
+        },
+        {
+          "n": 4,
+          "speaker": "Nguyễn Văn Đông",
+          "text": "Tôi không biết ông ấy đi lấy vàng ngày nào. Thợ chỉ ngồi bàn chế tác, chuyện két bạc là việc nhà ông ấy."
+        },
+        {
+          "n": 5,
+          "speaker": "Điều tra viên",
+          "text": "Tối 26/8 anh ở đâu?"
+        },
+        {
+          "n": 6,
+          "speaker": "Nguyễn Văn Đông",
+          "text": "Tôi trực đêm cho mẹ ở bệnh viện Bạch Mai, mẹ tôi mổ sỏi mật hôm 25."
         }
-      ]
+      ],
+      "signature": "Người khai: Nguyễn Văn Đông"
     },
     {
       "id": "d09",
       "stage": 2,
-      "type": "report",
-      "title": "Biên bản thu giữ vỏ bao thuốc lá Du Lịch tại ngõ thoát hiểm",
-      "date": "10h30 ngày 19/07/1999",
-      "content": "**VẬT CHỨNG THU TẠI NGÕ CHÙA ĐỒNG QUANG**\n\nKhám nghiệm kỹ mặt đất ngõ ngách phía sau tiệm vàng, công an phát hiện:\n1. Một vỏ bao thuốc lá Du Lịch màu xanh bị xé rách góc nắp, rơi cạnh vũng nước mưa dưới chân bờ tường.\n2. Kẹp bên trong nắp bao thuốc là một cuống vé qua phà Đen (chuyến phà 19h30 tối 18/07).\n3. Một vệt lốp xe máy in trên bùn đất ngõ hẹp có hoa văn gai lốp quả trám đặc trưng của dòng xe Simson S51 của Đức."
+      "type": "testimony",
+      "title": "Lời khai của Trần Khắc Hùng (chủ tiệm cầm đồ bến xe Giáp Bát)",
+      "header": [
+        "Công an thành phố Hà Nội",
+        "Phòng Cảnh sát hình sự"
+      ],
+      "heading": "Biên bản ghi lời khai",
+      "date": "16 giờ 00 ngày 27/8/1998",
+      "fields": [
+        {
+          "label": "Người khai",
+          "value": "Trần Khắc Hùng, 45 tuổi, chủ tiệm cầm đồ cạnh bến xe Giáp Bát"
+        }
+      ],
+      "lines": [
+        {
+          "n": 1,
+          "speaker": "Điều tra viên",
+          "text": "Anh có mua bán vàng không giấy tờ không?"
+        },
+        {
+          "n": 2,
+          "speaker": "Trần Khắc Hùng",
+          "text": "Tôi cầm đồ, mua bán vàng có giấy tờ đàng hoàng, đăng ký kinh doanh treo trên tường."
+        },
+        {
+          "n": 3,
+          "speaker": "Điều tra viên",
+          "text": "Từ 26/8 có ai mang vàng tới bán không?"
+        },
+        {
+          "n": 4,
+          "speaker": "Trần Khắc Hùng",
+          "text": "Không. Từ hôm ấy đến giờ tôi không mua lượng vàng nào không giấy tờ, không ai mang vàng Phúc Hưng tới."
+        },
+        {
+          "n": 5,
+          "speaker": "Điều tra viên",
+          "text": "Tối 26/8 anh ở đâu?"
+        },
+        {
+          "n": 6,
+          "speaker": "Trần Khắc Hùng",
+          "text": "Tôi đánh tá lả ở tiệm với mấy ông bạn đến gần nửa đêm."
+        }
+      ],
+      "signature": "Người khai: Trần Khắc Hùng"
     },
     {
       "id": "d10",
-      "stage": 3,
+      "stage": 2,
       "type": "report",
-      "title": "Báo cáo giám định đạn đạo rãnh xoắn súng K54",
-      "date": "14h00 ngày 19/07/1999",
-      "content": "**KẾT QUẢ GIÁM ĐỊNH ĐẠN ĐẠO VI THỂ**\n\n1. Ba vỏ đạn thu tại tiệm vàng (d05) được bắn ra từ cùng một khẩu súng ngắn quân dụng K54. Vết kim hỏa hình bán nguyệt lõm sâu đặc thù và vết móc đạn trên gờ vỏ hoàn toàn đồng nhất.\n2. Khẩu súng gây án có nòng súng bị xước một vết xước dọc ở rãnh xoắn số 2, để lại đường gờ vi thể đặc biệt trên thân các đầu đạn bọc đồng thu được trong tử thi nạn nhân."
+      "title": "Kết luận giám định đạn đạo",
+      "header": [
+        "Phân viện Khoa học hình sự",
+        "Bộ Công an"
+      ],
+      "heading": "Kết luận giám định",
+      "code": "1127/GĐ",
+      "date": "Ngày 29/8/1998",
+      "sections": [
+        {
+          "heading": "1. Đối chiếu",
+          "paragraphs": [
+            "Dấu kim hoả và dấu móc đạn trên 2 vỏ đạn thu tại phố Chùa Bộc **trùng khớp** với vỏ đạn thu trong vụ cướp tiệm vàng ở thị xã Bắc Giang ngày 14/12/1997.",
+            "Hai vụ do **cùng một khẩu súng K54** bắn ra."
+          ]
+        },
+        {
+          "heading": "2. Vụ Bắc Giang",
+          "paragraphs": [
+            "Đối tượng bị xác định trong vụ Bắc Giang: **Tạ Văn Cường** (\"Cường sẹo\"), hiện đang bị truy nã (xem hồ sơ đối tượng)."
+          ]
+        }
+      ],
+      "signature": "Giám định viên: Thượng tá Lê Hữu Nghĩa"
     },
     {
       "id": "d11",
-      "stage": 3,
-      "type": "photo",
-      "title": "Ảnh dấu vân tay trên vỏ bao thuốc lá Du Lịch",
-      "date": "15h00 ngày 19/07/1999",
-      "image": "images/d11-bao-thuoc.webp",
-      "content": "Ảnh chụp giám định đường vân: Dấu vân tay ngón trỏ phải thu được trên lớp màng bóng kính của vỏ bao thuốc lá Du Lịch qua tra cứu tàng thư căn cước trùng khớp 100% với dấu vân tay của đối tượng truy nã đặc biệt nguy hiểm **Phạm Đức Thắng** (tự Thắng 'quạ', SN 1963)."
+      "stage": 2,
+      "type": "testimony",
+      "title": "Lời khai của ông Vũ Văn Bảy (trông nhà gửi xe đầu ngõ)",
+      "header": [
+        "Công an thành phố Hà Nội",
+        "Phòng Cảnh sát hình sự"
+      ],
+      "heading": "Biên bản ghi lời khai",
+      "date": "10 giờ 00 ngày 28/8/1998",
+      "fields": [
+        {
+          "label": "Người khai",
+          "value": "Vũ Văn Bảy, 63 tuổi, trông nhà gửi xe cách tiệm vàng khoảng 150 m"
+        }
+      ],
+      "lines": [
+        {
+          "n": 1,
+          "speaker": "Điều tra viên",
+          "text": "Tối 26/8 xe ông Phúc gửi lúc mấy giờ?"
+        },
+        {
+          "n": 2,
+          "speaker": "Vũ Văn Bảy",
+          "text": "Sổ tôi ghi 22 giờ 44, xe Toyota đen của ông Phúc, cậu Tuấn lái. Thứ Tư nào cũng vậy."
+        },
+        {
+          "n": 3,
+          "speaker": "Điều tra viên",
+          "text": "Gửi xong cậu Tuấn làm gì?"
+        },
+        {
+          "n": 4,
+          "speaker": "Vũ Văn Bảy",
+          "text": "Lạ cái là hôm ấy cậu ấy không chạy về ngay như mọi khi. Cậu đứng dưới mái hiên nhà xe, nhìn đồng hồ, châm điếu thuốc, phải đến 22 giờ 47 mới chạy về phía tiệm."
+        },
+        {
+          "n": 5,
+          "speaker": "Điều tra viên",
+          "text": "Ông có nghe tiếng súng không?"
+        },
+        {
+          "n": 6,
+          "speaker": "Vũ Văn Bảy",
+          "text": "Sấm to quá, tôi không phân biệt được."
+        }
+      ],
+      "signature": "Người khai: Vũ Văn Bảy"
     },
     {
       "id": "d12",
-      "stage": 3,
+      "stage": 2,
       "type": "report",
-      "title": "Biên bản xác minh bến phà Đen",
-      "date": "16h00 ngày 19/07/1999",
-      "content": "**XÁC MINH LỊCH TRÌNH DI CHUYỂN**\n\nNhân viên soát vé bến phà Đen xác nhận: Chiều tối 18/07, có một người đàn ông đi xe máy Simson màu đỏ mận, dáng người gầy có vết sẹo ngang mắt qua phà từ phía Gia Lâm sang nội thành lúc 19h30, người này mua bao thuốc lá Du Lịch và kẹp cuống vé vào bao.",
-      "image": "images/d12-ve-pha-den.webp",
-      "imageCaption": "Bản chụp cuống vé phà Đen đêm giông bão"
+      "title": "Biên bản xác minh nơi ở tối 26/8 của Đông và Hùng",
+      "header": [
+        "Công an thành phố Hà Nội",
+        "Phòng Cảnh sát hình sự"
+      ],
+      "heading": "Biên bản xác minh",
+      "code": "88/XM",
+      "date": "Ngày 28/8/1998",
+      "sections": [
+        {
+          "heading": "1. Nguyễn Văn Đông",
+          "paragraphs": [
+            "Sổ trực khoa Ngoại bệnh viện Bạch Mai ghi người nhà bệnh nhân Nguyễn Thị Mơ là Đông, có mặt từ 19:00 ngày 26/8 đến 6:00 ngày 27/8. Y tá trực xác nhận Đông giúp đẩy giường bệnh nhân lúc khoảng 22:30 và 23:00."
+          ]
+        },
+        {
+          "heading": "2. Trần Khắc Hùng",
+          "paragraphs": [
+            "Ba người cùng chơi bài xác nhận Hùng ngồi ở tiệm cầm đồ Giáp Bát từ 20:00 đến gần 24:00. Giáp Bát cách phố Chùa Bộc khoảng 7 km."
+          ]
+        }
+      ],
+      "signers": [
+        {
+          "role": "Điều tra viên",
+          "name": "Thiếu tá Hoàng Minh Đức"
+        }
+      ]
     },
     {
       "id": "d13",
-      "stage": 3,
+      "stage": 2,
       "type": "report",
-      "title": "Biên bản xác minh ngoại phạm của thợ bạc Đông",
-      "date": "16h30 ngày 19/07/1999",
-      "content": "**XÁC MINH NGOẠI PHẠM**\n\nCông an huyện Gia Lâm kiểm tra đột xuất và xác nhận: Nguyễn Văn Đông có mặt liên tục tại nhà bố mẹ đẻ ở thị trấn Yên Viên từ 19h tối 18/07 đến sáng hôm sau, có biên bản sinh hoạt tổ dân phố và lời khai hàng xóm chứng thực."
+      "title": "Trích hồ sơ đối tượng truy nã Tạ Văn Cường",
+      "header": [
+        "Công an thành phố Hà Nội",
+        "Phòng Cảnh sát hình sự"
+      ],
+      "heading": "Trích hồ sơ đối tượng",
+      "code": "TN-97/341",
+      "date": "Ngày 29/8/1998",
+      "fields": [
+        {
+          "label": "Họ tên",
+          "value": "Tạ Văn Cường (\"Cường sẹo\"), 34 tuổi"
+        },
+        {
+          "label": "Đặc điểm",
+          "value": "Sẹo dài ở cằm trái, cao khoảng 1,70 m"
+        }
+      ],
+      "sections": [
+        {
+          "heading": "Tiền án, truy nã",
+          "paragraphs": [
+            "Năm 1990: cướp tài sản, 6 năm tù. Tháng 12/1997: nghi phạm vụ cướp tiệm vàng Bắc Giang có dùng súng K54; bị truy nã từ tháng 1/1998.",
+            "Theo trinh sát, Cường hay đi một xe máy Simson màu đỏ mận đứng tên người tình; thời gian gần đây làm \"đòi nợ thuê\" cho một ổ cá độ bóng đá ở Hà Nội mùa World Cup 1998."
+          ]
+        },
+        {
+          "heading": "Ghi chú",
+          "paragraphs": [
+            "Chưa rõ Cường lấy thông tin về tiệm Phúc Hưng từ đâu. Cường không quen ai trong gia đình ông Phúc."
+          ]
+        }
+      ],
+      "signers": [
+        {
+          "role": "Điều tra viên",
+          "name": "Thiếu tá Hoàng Minh Đức"
+        }
+      ]
     },
     {
       "id": "d14",
-      "stage": 4,
-      "type": "report",
-      "title": "Biên bản vây bắt khẩn cấp Phạm Đức Thắng tại bãi sông Hồng",
-      "date": "05h00 ngày 20/07/1999",
-      "content": "**KẾT QUẢ VÂY BẮT ĐỐI TƯỢNG VŨ TRANG NGUY HIỂM**\n\nRạng sáng 20/07, hơn 30 cán bộ chiến sĩ cảnh sát hình sự đặc nhiệm đã đột kích căn lều hoang tại bãi cát ven sông Hồng (khu vực Tứ Liên, Tây Hồ):\n- Bắt giữ gọn đối tượng Phạm Đức Thắng khi y đang chuẩn bị vượt biên.\n- Khống chế thu giữ ngay dưới gối ngủ của y: 1 khẩu súng ngắn K54 nạp sẵn 6 viên đạn, 1 viên đã lên nòng; 1 khẩu súng tự chế bắn đạn hoa cải và 1 chiếc búa tạ cán gỗ dính mạt kính."
+      "stage": 3,
+      "type": "testimony",
+      "title": "Lời khai của chị Phí Thị Lan (kế toán chi nhánh Hàng Bạc)",
+      "header": [
+        "Công an thành phố Hà Nội",
+        "Phòng Cảnh sát hình sự"
+      ],
+      "heading": "Biên bản ghi lời khai",
+      "date": "09 giờ 00 ngày 30/8/1998",
+      "fields": [
+        {
+          "label": "Người khai",
+          "value": "Phí Thị Lan, 33 tuổi, kế toán chi nhánh tiệm Phúc Hưng ở phố Hàng Bạc"
+        }
+      ],
+      "lines": [
+        {
+          "n": 1,
+          "speaker": "Điều tra viên",
+          "text": "Tối 26/8 ở chi nhánh có những ai?"
+        },
+        {
+          "n": 2,
+          "speaker": "Phí Thị Lan",
+          "text": "Ông Phúc, tôi và cậu Tuấn. Ông với tôi đếm vàng từ chín rưỡi, cho vào cặp da đen sáu mươi lượng."
+        },
+        {
+          "n": 3,
+          "speaker": "Điều tra viên",
+          "text": "Cậu Tuấn ngồi đâu?"
+        },
+        {
+          "n": 4,
+          "speaker": "Phí Thị Lan",
+          "text": "Mười giờ mười lăm cậu ấy nói ra đầu phố mua bao thuốc lá. Mười phút sau mới vào, bảo hết Vinataba phải đi xa. Lúc đó ông Phúc vừa khoá cặp."
+        },
+        {
+          "n": 5,
+          "speaker": "Điều tra viên",
+          "text": "Mấy giờ hai người về?"
+        },
+        {
+          "n": 6,
+          "speaker": "Phí Thị Lan",
+          "text": "Mười giờ hai lăm. Ông Phúc gọi về nhà dặn bà Hạnh: \"Khoảng mười một giờ kém hai mươi tôi về đến, mở cửa ngách.\""
+        }
+      ],
+      "signature": "Người khai: Phí Thị Lan"
     },
     {
       "id": "d15",
-      "stage": 4,
+      "stage": 3,
       "type": "report",
-      "title": "Biên bản đào bới thu giữ hơn 100 lượng vàng cướp được",
-      "date": "08h30 ngày 20/07/1999",
-      "content": "**THU HỒI TÀI SẢN TANG VẬT VỤ CƯỚP**\n\nDưới hố cát sau căn lều của Thắng, công an đào lên một chiếc túi dù bạt màu xanh rêu chứa:\n- 102 lượng vàng ta được nung chảy vội vã thành các thỏi thô còn dính tro than.\n- 5 chiếc nhẫn kim hoàn còn nguyên nhãn dán khắc chìm thương hiệu 'Kim Sinh - 38 Tây Sơn'.\n- 42 triệu đồng tiền mặt mệnh giá 50.000 đồng."
+      "title": "Trích sổ tổng đài dịch vụ nhắn tin đêm 26/8/1998",
+      "header": [
+        "Công ty dịch vụ nhắn tin (bưu điện Hà Nội)",
+        "Tổng đài trung tâm"
+      ],
+      "heading": "Trích sổ tổng đài",
+      "code": "17/NT",
+      "date": "Ngày 30/8/1998",
+      "sections": [
+        {
+          "heading": "1. Cuộc gọi",
+          "paragraphs": [
+            "22:16, số gọi đến: **bốt điện thoại thẻ ở đầu phố Hàng Bạc**. Người gọi (giọng nam) nhờ nhắn vào máy nhắn tin số 107-5523.",
+            "Nội dung tổng đài viên nhập: **\"22H40 CAP DEN CUA NGACH\"**."
+          ]
+        },
+        {
+          "heading": "2. Thuê bao 107-5523",
+          "paragraphs": [
+            "Đăng ký ngày 2/8/1998, tên \"Nguyễn Văn Ba\", số chứng minh không có thật. Nhân viên đăng ký nhận diện ảnh: người đến làm thủ tục có **sẹo dài ở cằm trái**."
+          ]
+        }
+      ],
+      "signature": "Trưởng tổng đài: Đỗ Thị Hoà"
     },
     {
       "id": "d16",
-      "stage": 4,
-      "type": "report",
-      "title": "Bản thú tội của Phạm Đức Thắng",
-      "date": "11h00 ngày 20/07/1999",
-      "content": "**LỜI THÚ NHẬN CỦA PHẠM ĐỨC THẮNG**\n\n'Tôi đang trốn lệnh truy nã, không có tiền tiêu xài và chuẩn bị trốn sang Campuchia. Tôi theo dõi tiệm vàng Kim Sinh mấy ngày, thấy trời mưa bão sấm chớp nên quyết định ra tay lúc đêm tối. Tôi nấp ở ngõ chùa Đồng Quang, khi chủ tiệm mở cửa sau dắt xe tôi xông vào nổ súng bắn gục những người cản trở rồi lấy búa đập tủ cướp vàng. Tôi không ngờ chiếc vỏ bao thuốc lá rơi lại trong ngõ mưa đã tố cáo tôi...'"
+      "stage": 3,
+      "type": "evidence",
+      "title": "Xác minh của bưu điện về bốt điện thoại thẻ phố Hàng Bạc",
+      "code": "231/ĐT",
+      "image": "images/d16-bot-dien-thoai.webp",
+      "imageCaption": "Bốt điện thoại thẻ HB-04 và hàng nước chè bên cạnh, đầu phố Hàng Bạc (ảnh chụp lại đêm 31/8).",
+      "paragraphs": [
+        "**Kết quả.** Bốt điện thoại thẻ số HB-04 (đầu phố Hàng Bạc) ghi nhận cuộc gọi 22:15:52 đến tổng đài nhắn tin, dài 1 phút 40 giây.",
+        "Thẻ sử dụng: thẻ 30 đơn vị, **số sê-ri 0812774**. Trước đó, cùng thẻ này đã gọi tới tổng đài nhắn tin vào các ngày 5/8, 12/8, 19/8 (đều là thứ Tư), khoảng 22 giờ."
+      ]
     },
     {
       "id": "d17",
+      "stage": 3,
+      "type": "testimony",
+      "title": "Biên bản ghi lời khai lần hai của anh Đặng Quốc Tuấn",
+      "header": [
+        "Công an thành phố Hà Nội",
+        "Phòng Cảnh sát hình sự"
+      ],
+      "heading": "Biên bản ghi lời khai",
+      "date": "15 giờ 00 ngày 31/8/1998",
+      "fields": [
+        {
+          "label": "Người khai",
+          "value": "Đặng Quốc Tuấn, 29 tuổi"
+        }
+      ],
+      "lines": [
+        {
+          "n": 1,
+          "speaker": "Điều tra viên",
+          "text": "Chị Lan nói 22:15 anh rời chi nhánh mười phút."
+        },
+        {
+          "n": 2,
+          "speaker": "Đặng Quốc Tuấn",
+          "text": "À, tôi ra mua bao thuốc lá, quên không kể. Có mười phút thôi."
+        },
+        {
+          "n": 3,
+          "speaker": "Điều tra viên",
+          "text": "Anh có gọi điện cho ai không?"
+        },
+        {
+          "n": 4,
+          "speaker": "Đặng Quốc Tuấn",
+          "text": "Không. Tôi mua bao thuốc rồi quay lại, không gọi điện cho ai."
+        },
+        {
+          "n": 5,
+          "speaker": "Điều tra viên",
+          "text": "Anh có biết ai tên Cường sẹo?"
+        },
+        {
+          "n": 6,
+          "speaker": "Đặng Quốc Tuấn",
+          "text": "Tôi không quen ai như thế."
+        }
+      ],
+      "signature": "Người khai: Đặng Quốc Tuấn"
+    },
+    {
+      "id": "d18",
+      "stage": 3,
+      "type": "testimony",
+      "title": "Lời khai của bà Nguyễn Thị Vân (bán nước chè cạnh bốt điện thoại Hàng Bạc)",
+      "header": [
+        "Công an thành phố Hà Nội",
+        "Phòng Cảnh sát hình sự"
+      ],
+      "heading": "Biên bản ghi lời khai",
+      "date": "09 giờ 00 ngày 1/9/1998",
+      "fields": [
+        {
+          "label": "Người khai",
+          "value": "Nguyễn Thị Vân, 60 tuổi, bán nước chè, thuốc lá cạnh bốt điện thoại đầu phố Hàng Bạc"
+        }
+      ],
+      "lines": [
+        {
+          "n": 1,
+          "speaker": "Điều tra viên",
+          "text": "Tối thứ Tư 26/8 bà có thấy ai gọi điện ở bốt không?"
+        },
+        {
+          "n": 2,
+          "speaker": "Nguyễn Thị Vân",
+          "text": "Có cậu lái xe ô tô đen hay đỗ ở cửa tiệm vàng trong phố. Mười giờ hơn, cậu ấy vào bốt, đọc chậm từng chữ như đọc cho ai chép."
+        },
+        {
+          "n": 3,
+          "speaker": "Điều tra viên",
+          "text": "Bà nghe được gì?"
+        },
+        {
+          "n": 4,
+          "speaker": "Nguyễn Thị Vân",
+          "text": "Tôi nghe được \"cửa ngách\". Gọi xong cậu ấy mua của tôi bao Vinataba. Thứ Tư nào cậu ấy cũng gọi vào giờ ấy, tháng này rồi."
+        }
+      ],
+      "signature": "Người khai: Nguyễn Thị Vân"
+    },
+    {
+      "id": "d19",
+      "stage": 4,
+      "type": "note",
+      "title": "Trích sổ ghi nợ thu giữ ở ổ cá độ bóng đá phố Khâm Thiên",
+      "paragraphs": [
+        "Sổ ghi tay, thu giữ ngày 1/9/1998 khi triệt phá ổ cá độ World Cup 1998:",
+        "— Pháp – Brazil (12/7): Tuấn \"lái xe\" thua 22 tr.",
+        "— Cộng dồn nợ của Tuấn \"lái xe\" đến 20/7: **60 tr**. Hạn trả 15/8. Giao \"C. sẹo\" đòi.",
+        "__— 20/8: Tuấn \"lái xe\" – xoá nợ. Ghi chú: \"C. sẹo nhận trừ, việc thứ Tư\".__"
+      ],
+      "signature": "Sổ của chủ ổ cá độ"
+    },
+    {
+      "id": "d20",
+      "stage": 4,
+      "type": "evidence",
+      "title": "Biên bản khám xét tiệm cầm đồ của Trần Khắc Hùng",
+      "code": "41/KX",
+      "image": "images/d20-vang-nung.webp",
+      "imageCaption": "Vàng nung thỏi thô trong két tiệm cầm đồ của Trần Khắc Hùng.",
+      "paragraphs": [
+        "**Thu giữ.** Trong két: 20 lượng vàng đã nung chảy thành thỏi thô, chưa dập dấu.",
+        "Sổ mua bán (chữ Hùng): \"28/8 – mua 20 lượng vàng nung của anh Sẹo, 70 tr, không giấy.\"",
+        "**Ghi nhận.** Giám định thành phần cho thấy vàng 9999, phù hợp với loại vàng miếng tiệm Phúc Hưng nhập về chi nhánh tháng 8."
+      ]
+    },
+    {
+      "id": "d21",
       "stage": 4,
       "type": "report",
-      "title": "Kết luận chuyên án cướp tiệm vàng Kim Sinh",
-      "date": "14h00 ngày 20/07/1999",
-      "content": "**KẾT LUẬN ĐIỀU TRA**\n\nChuyên án phá thành công sau chưa đầy 36 giờ truy kích thần tốc. Tên cướp đặc biệt nguy hiểm Phạm Đức Thắng bị bắt giữ cùng toàn bộ vũ khí nóng và tang vật, trả lại sự bình yên cho thủ đô."
+      "title": "Biên bản xác minh chi tiêu của Đặng Quốc Tuấn sau ngày 26/8",
+      "header": [
+        "Công an thành phố Hà Nội",
+        "Phòng Cảnh sát hình sự"
+      ],
+      "heading": "Biên bản xác minh",
+      "code": "93/XM",
+      "date": "Ngày 2/9/1998",
+      "sections": [
+        {
+          "heading": "Kết quả",
+          "paragraphs": [
+            "Ngày 30/8: Tuấn mua một xe máy Honda Dream II tại cửa hàng phố Bà Triệu, trả **25 triệu đồng tiền mặt**.",
+            "Lương lái xe của Tuấn là 900.000 đồng/tháng. Gia đình Tuấn ở Hà Đông không có thu nhập lớn."
+          ]
+        }
+      ],
+      "signers": [
+        {
+          "role": "Điều tra viên",
+          "name": "Thiếu tá Hoàng Minh Đức"
+        }
+      ]
+    },
+    {
+      "id": "d22",
+      "stage": 4,
+      "type": "testimony",
+      "title": "Lời khai của chủ quán bia hơi ngõ chợ Khâm Thiên",
+      "header": [
+        "Công an thành phố Hà Nội",
+        "Phòng Cảnh sát hình sự"
+      ],
+      "heading": "Biên bản ghi lời khai",
+      "date": "14 giờ 00 ngày 2/9/1998",
+      "fields": [
+        {
+          "label": "Người khai",
+          "value": "Lê Văn Toàn, 47 tuổi, chủ quán bia hơi"
+        }
+      ],
+      "lines": [
+        {
+          "n": 1,
+          "speaker": "Điều tra viên",
+          "text": "Ông có nhận ra hai người trong ảnh không?"
+        },
+        {
+          "n": 2,
+          "speaker": "Lê Văn Toàn",
+          "text": "Thằng có sẹo ở cằm là khách quen, đi con Simson đỏ. Còn cậu kia là lái xe, hay đỗ ô tô đen ngoài đầu ngõ."
+        },
+        {
+          "n": 3,
+          "speaker": "Điều tra viên",
+          "text": "Họ ngồi với nhau lúc nào?"
+        },
+        {
+          "n": 4,
+          "speaker": "Lê Văn Toàn",
+          "text": "Mấy tối tháng Tám, xem bóng đá xong. Hôm hai mươi, cậu lái xe vẽ cái gì lên vỏ bao thuốc, đưa thằng sẹo xem, thằng sẹo gật gù rồi đốt luôn."
+        }
+      ],
+      "signature": "Người khai: Lê Văn Toàn"
+    },
+    {
+      "id": "d23",
+      "stage": 5,
+      "type": "evidence",
+      "title": "Biên bản bắt và khám xét Tạ Văn Cường tại nhà trọ bãi sông Hồng",
+      "code": "12/BTN",
+      "image": "images/d23-tang-vat.webp",
+      "imageCaption": "Một phần tang vật thu ở nhà trọ bãi sông Hồng: cặp da đen bị rạch khoá, áo mưa quân dụng, máy nhắn tin 107-5523 còn hiện tin cuối.",
+      "paragraphs": [
+        "**Thu giữ.** — Một súng ngắn K54 và 5 viên đạn lô 1968.",
+        "— Một áo mưa quân dụng màu xanh, một mũ bảo hiểm kín mặt, một xe Simson màu đỏ mận.",
+        "— 30 lượng vàng nung thỏi, một cặp da đen bị rạch khoá.",
+        "— Một máy nhắn tin số 107-5523; tin cuối còn lưu: \"22H40 CAP DEN CUA NGACH\"."
+      ]
+    },
+    {
+      "id": "d24",
+      "stage": 5,
+      "type": "evidence",
+      "title": "Biên bản khám xét chỗ ở của Đặng Quốc Tuấn",
+      "code": "47/KX",
+      "image": "images/d24-the-dien-thoai.webp",
+      "imageCaption": "Thẻ điện thoại sê-ri 0812774 và mẩu giấy thu trong ví và hộc ô tô của Đặng Quốc Tuấn.",
+      "paragraphs": [
+        "**Thu giữ.** — Trong ví: một thẻ điện thoại 30 đơn vị đã gần hết, **số sê-ri 0812774**.",
+        "— Trong hộc ô tô: một mẩu giấy ghi \"107-5523\".",
+        "— Trong tủ: 8 triệu đồng tiền mặt, hoá đơn mua xe Dream II ngày 30/8."
+      ]
+    },
+    {
+      "id": "d25",
+      "stage": 5,
+      "type": "report",
+      "title": "Kết luận giám định tổng hợp",
+      "header": [
+        "Phân viện Khoa học hình sự",
+        "Bộ Công an"
+      ],
+      "heading": "Kết luận giám định",
+      "code": "1188/GĐ",
+      "date": "Ngày 5/9/1998",
+      "sections": [
+        {
+          "heading": "1. Súng",
+          "paragraphs": [
+            "Khẩu K54 thu của Tạ Văn Cường là khẩu súng đã bắn 2 vỏ đạn ở phố Chùa Bộc và vụ Bắc Giang."
+          ]
+        },
+        {
+          "heading": "2. Thẻ điện thoại",
+          "paragraphs": [
+            "Vân tay trên thẻ sê-ri 0812774 là của Đặng Quốc Tuấn. Chữ viết \"107-5523\" trên mẩu giấy trùng chữ Tuấn."
+          ]
+        },
+        {
+          "heading": "3. Xe",
+          "paragraphs": [
+            "Hoa văn lốp xe Simson của Cường trùng vệt lốp trong ngõ bên hông tiệm Phúc Hưng."
+          ]
+        }
+      ],
+      "signature": "Giám định viên: Thượng tá Lê Hữu Nghĩa"
     }
   ],
   "questions": [
     {
       "id": "q1",
       "stage": 1,
-      "type": "evidence",
-      "title": "Hung khí quân dụng và dấu vết đạn đạo",
-      "intro": "Vụ cướp tiệm vàng Kim Sinh đêm giao thừa gây chấn động dư luận Thủ đô. Cơ quan điều tra cần xác định vũ khí gây án.",
-      "prompt": "Ghim 2 tài liệu chứng minh hung khí gây án là súng ngắn quân dụng K54 cỡ 7.62mm thông qua thương tích tử thi và dấu vết vỏ đạn thu tại hiện trường.",
-      "need": 2,
+      "type": "choice",
+      "title": "Cướp ngẫu nhiên hay biết trước?",
+      "prompt": "Báo chí gọi đây là một vụ cướp giữa đêm mưa. Theo hồ sơ đang mở, nhận định nào đứng vững?",
+      "options": [
+        "Một kẻ cướp liều lĩnh lảng vảng quanh các tiệm vàng, tình cờ gặp ông Phúc mở cửa, bắn hoảng rồi giật được chiếc cặp.",
+        "Kẻ cướp đã biết trước giờ, cửa và chiếc cặp: hắn chờ ở ngõ bên hông đúng tối thứ Tư, chỉ lấy chiếc cặp và bỏ qua tủ kính đầy vàng.",
+        "Kẻ cướp nhắm vào tủ kính trong tiệm, nhưng bị ông Phúc phát hiện ở cửa ngách nên bắn rồi bỏ chạy, tiện tay giật chiếc cặp."
+      ],
       "answer": [
-        "d03",
-        "d05"
+        1
       ],
+      "nudges": {
+        "0": {
+          "message": "Cửa ngách mở vào hôm nào? Kẻ cướp lấy gì, bỏ qua gì?"
+        },
+        "2": {
+          "message": "Bà Hạnh nói hắn không nhìn vào tiệm. Tủ kính có bị đụng tới không?"
+        }
+      },
       "hints": [
-        "Kết quả giám định tử thi nạn nhân chủ tiệm vàng về đường đạn xuyên phá.",
-        "Ảnh chụp 3 vỏ đạn dập năm 1968 và đầu đạn thu gom tại quầy vàng."
+        "Đọc biên bản khám nghiệm và lời bà Hạnh.",
+        "Cửa ngách mở khi nào? Hắn lấy gì?",
+        "d02: cửa ngách chỉ mở tối thứ Tư, tủ kính nguyên vẹn. d05: hắn chờ trong ngõ, giật ngay chiếc cặp, không nhìn vào tiệm."
       ],
+      "solved": "Kẻ cướp biết trước. Có người đã cho hắn biết giờ, cửa và chiếc cặp.",
       "explanation": [
-        "Tài liệu d03 xác nhận nạn nhân bị bắn bởi đạn súng ngắn quân dụng cỡ 7.62x25mm Tokarev xuyên phá tim phổi.",
-        "Tài liệu d05 chụp 3 vỏ đạn đồng dập số hiệu 71-68 (nhà máy 71 sản xuất năm 1968) đặc trưng của súng K54."
+        {
+          "title": "Cửa ngách",
+          "body": [
+            "d02: chỉ mở tối thứ Tư. d05: ông Phúc mang vàng từ Hàng Bạc về cất két nhà."
+          ]
+        },
+        {
+          "title": "Chiếc cặp",
+          "body": [
+            "d05: hắn giật ngay cặp da đen, không nói một câu."
+          ]
+        },
+        {
+          "title": "Tủ kính",
+          "body": [
+            "d02, d05: tủ kính đầy vàng ngay sau lưng bà Hạnh không bị đụng tới."
+          ]
+        }
       ]
     },
     {
       "id": "q2",
-      "stage": 2,
-      "type": "line",
-      "title": "Bằng chứng ngoại phạm của người làm cũ",
-      "intro": "Các thợ kim hoàn và người quen biết quy luật hoạt động của tiệm vàng đều nằm trong diện rà soát.",
-      "prompt": "Trong các biên bản hỏi cung người có liên quan tại khu vực phố Tây Sơn, hãy chỉ ra dòng lời khai nại ra lý do ở lì bên Gia Lâm suốt đêm giao thừa nhưng thực chất đã bị bác bỏ?",
+      "stage": 1,
+      "type": "choice",
+      "multiple": true,
+      "cards": [
+        "cuong",
+        "dong",
+        "tuan",
+        "hung"
+      ],
+      "title": "Ai biết lịch tối thứ Tư?",
+      "prompt": "Chọn **tất cả** những người trong danh sách được hồ sơ cho thấy biết chuyện ông Phúc mang vàng về qua cửa ngách tối thứ Tư.",
+      "options": [
+        "Tạ Văn Cường",
+        "Nguyễn Văn Đông",
+        "Đặng Quốc Tuấn",
+        "Trần Khắc Hùng"
+      ],
       "answer": [
-        "d06:003"
+        1,
+        2
       ],
+      "nudges": {
+        "0": {
+          "message": "Ở vòng này chưa có tài liệu nào nói Cường biết gì về gia đình ông Phúc."
+        },
+        "3": {
+          "message": "Có tài liệu nào ở vòng này nói chủ tiệm cầm đồ biết lịch của ông Phúc không?"
+        }
+      },
       "hints": [
-        "Rà soát lời khai của thợ kim hoàn cũ để tìm người khẳng định ở nhà bố mẹ đẻ không sang nội thành.",
-        "Tìm câu quả quyết ở trong nhà nghe pháo giao thừa từ 20h00 đến sáng hôm sau."
+        "Bà Hạnh kể những ai biết.",
+        "Trong danh sách thẻ, ai có tên trong lời bà Hạnh?",
+        "d05 dòng 2: biết lịch có bà Hạnh, cậu Tuấn lái xe, cô Lan kế toán và Đông thợ cũ."
       ],
+      "solved": "Trong bốn người bị nghi, hai người biết lịch: anh Tuấn và anh Đông.",
       "explanation": [
-        "Tại d06 dòng 003, Nguyễn Văn Đông khai: 'Từ 20h00 đêm 30 Tết tôi ở lì tại nhà bố mẹ đẻ bên Bồ Đề, Gia Lâm ăn tất niên và đón giao thừa, không hề bước chân qua cầu Long Biên sang nội thành nửa bước cho tới tận trưa mùng 1 Tết'."
+        {
+          "title": "Tuấn",
+          "body": [
+            "d05, d06: lái xe chở ông Phúc mỗi tối thứ Tư."
+          ]
+        },
+        {
+          "title": "Đông",
+          "body": [
+            "d05: làm ở tiệm ba năm, biết lịch; bị cho nghỉ tháng 7."
+          ]
+        },
+        {
+          "title": "Chưa đủ",
+          "body": [
+            "Biết lịch chưa phải là cầm súng. Ai là người bóp cò?"
+          ]
+        }
       ]
     },
     {
       "id": "q3",
-      "stage": 3,
-      "type": "evidence",
-      "title": "Vỏ đạn K54, rãnh xoắn nòng súng và dấu vân tay then chốt",
-      "intro": "Ban chuyên án đối chiếu hồ sơ tàng thư căn cước và kỹ thuật đạn đạo hình sự.",
-      "prompt": "Ghim 3 tài liệu liên kết 3 vỏ đạn K54 thu tại hiện trường (Vòng 1) với báo cáo giám định rãnh xoắn nòng súng của đối tượng truy nã (Vòng 3) và dấu vân tay trên vỏ bao thuốc lá rơi lại ngõ thoát hiểm (Vòng 3).",
-      "need": 3,
+      "stage": 2,
+      "type": "line",
+      "title": "Người thợ cũ",
+      "prompt": "Một người mới được hỏi chối biết chuyện mà tài liệu ở vòng trước khẳng định. Chỉ ra dòng khai đó.",
       "answer": [
-        "d05",
-        "d10",
-        "d11"
+        "d08:004"
       ],
+      "nudges": {
+        "d08:006": {
+          "message": "Câu về bệnh viện Bạch Mai cần kiểm tra bằng giấy tờ khác. Tìm câu bị lời bà Hạnh bác."
+        }
+      },
       "hints": [
-        "Ảnh chụp 3 vỏ đạn K54 dập năm 1968 thu tại quầy vàng (ở Vòng 1).",
-        "Báo cáo đạn đạo xác định 4 rãnh xoắn nghiêng phải có vết xước khuyết tật của khẩu K54 số hiệu 140228.",
-        "Ảnh dấu vân tay ngón trỏ phải trên vỏ bao thuốc lá Du Lịch trùng khớp với tàng thư chỉ bản của Phạm Đức Thắng."
+        "Bà Hạnh nói ai biết lịch?",
+        "Đông nói gì về lịch lấy vàng?",
+        "d08 dòng 4: không biết ông Phúc lấy vàng ngày nào. d05 dòng 2: Đông làm ba năm, biết chuyện thứ Tư."
       ],
+      "solved": "Đông nói dối là không biết lịch. Nhưng tối hôm ấy anh ở đâu?",
       "explanation": [
-        "Tài liệu d05 là vật chứng vỏ đạn ban đầu tại hiện trường.",
-        "Tài liệu d10 khẳng định cả 3 viên đạn đều bắn ra từ khẩu súng K54 số hiệu 140228 do đối tượng đặc biệt nguy hiểm Phạm Đức Thắng cướp khi trốn trại giam.",
-        "Tài liệu d11 chứng minh dấu vân tay trên bao thuốc lá d09 vứt lại ở ngõ thoát hiểm chính là của Phạm Đức Thắng."
+        {
+          "title": "Câu khai",
+          "body": [
+            "d08 dòng 4: không biết ông Phúc đi lấy vàng ngày nào."
+          ]
+        },
+        {
+          "title": "Bị bác",
+          "body": [
+            "d05 dòng 2: bà Hạnh kể Đông là một trong bốn người biết."
+          ]
+        },
+        {
+          "title": "Còn phải xét",
+          "body": [
+            "d08 dòng 6: Đông nói trực đêm cho mẹ ở Bạch Mai."
+          ]
+        }
       ]
     },
     {
       "id": "q4",
-      "stage": 4,
+      "stage": 2,
       "type": "evidence",
-      "title": "Lộ trình đào tẩu qua bến phà và tang vật vàng cướp được",
-      "intro": "Lần theo dấu vết vượt sông Hồng và tiến hành vây bắt khẩn cấp hang ổ của kẻ thủ ác.",
-      "prompt": "Ghim 2 tài liệu chứng minh lộ trình tẩu thoát qua sông Hồng trong đêm giao thừa và biên bản khai quật thu hồi hơn 100 lượng vàng chôn giấu tại bãi bồi ven sông.",
       "need": 2,
+      "title": "Khẩu K54 từ Bắc Giang",
+      "prompt": "Ghim 2 tài liệu cho thấy ai là người cầm súng đêm 26/8.",
       "answer": [
-        "d12",
-        "d15"
+        "d10",
+        "d13"
+      ],
+      "nudges": [
+        {
+          "any": [
+            "d07"
+          ],
+          "near": true,
+          "message": "Vỏ đạn cho biết loại súng. Cần kết quả đối chiếu và hồ sơ người dùng khẩu súng đó."
+        }
       ],
       "hints": [
-        "Biên bản xác minh bến phà Đen ghi nhận đối tượng đi xe máy qua phà lúc 01h15 sáng mùng 1 Tết.",
-        "Biên bản đào bới thu hồi các bọc vàng miếng SJC và vàng trang sức chôn giấu dưới bãi ngô sông Hồng."
+        "Một kết luận giám định, một hồ sơ đối tượng.",
+        "Vỏ đạn khớp với vụ án nào? Ai là nghi phạm vụ đó?",
+        "d10: cùng một khẩu K54 với vụ Bắc Giang 12/1997, nghi phạm Tạ Văn Cường. d13: Cường truy nã, sẹo cằm, Simson đỏ, đòi nợ cá độ."
       ],
+      "solved": "Tay súng là Cường sẹo. Nhưng hồ sơ ghi rõ: Cường không quen ai trong nhà ông Phúc.",
       "explanation": [
-        "Tài liệu d12 ghi nhận lời khai người lái phà Đen chở một đối tượng có nhân dạng giống Thắng mang túi nặng qua sông trong đêm.",
-        "Tài liệu d15 thể hiện lực lượng công an đã đào bới thu hồi 108 lượng vàng ta và vàng tây cùng số tiền mặt cướp được chôn dưới bãi cát ven sông Hồng."
+        {
+          "title": "Đạn đạo",
+          "body": [
+            "d10: dấu kim hoả, móc đạn trùng vụ Bắc Giang; cùng một khẩu K54."
+          ]
+        },
+        {
+          "title": "Đối tượng",
+          "body": [
+            "d13: Tạ Văn Cường, truy nã vì vụ Bắc Giang; đi Simson đỏ; đòi nợ cho ổ cá độ."
+          ]
+        },
+        {
+          "title": "Câu hỏi",
+          "body": [
+            "d13: Cường không quen ai trong gia đình ông Phúc. Ai đã báo tin?"
+          ]
+        }
       ]
     },
     {
       "id": "q5",
-      "stage": 4,
+      "stage": 2,
       "type": "choice",
-      "title": "Bản kết luận điều tra toàn diện chuyên án phố Tây Sơn",
-      "intro": "Khẩu súng ngắn K54, dấu vân tay trên bao thuốc lá và kho vàng chôn giấu đã vạch trần toàn bộ sự thật.",
-      "prompt": "Dựa vào toàn bộ tài liệu hồ sơ, ai là kẻ đã mang vũ khí nóng bắn gục gia đình chủ tiệm vàng Kim Sinh cướp tài sản?",
+      "multiple": true,
+      "cards": [
+        "cuong",
+        "dong",
+        "tuan",
+        "hung"
+      ],
+      "title": "Ai không thể cầm súng?",
+      "prompt": "Chọn **tất cả** những người mà hồ sơ đang mở cho thấy không thể là người nổ súng ở cửa ngách lúc 22:40.",
       "options": [
-        "Phạm Đức Thắng (đối tượng trốn trại đang bị truy nã đặc biệt) đã mang theo súng K54 cướp được, rình rập thời khắc giao thừa tiếng pháo nổ rộ để nổ súng sát hại vợ chồng chủ tiệm vàng, cướp hơn 100 lượng vàng rồi qua bến phà Đen tẩu thoát sang bãi sông Hồng chôn giấu.",
-        "Nguyễn Văn Đông do bị đuổi việc uất ức, đã mua súng K54 bắn chết chủ tiệm vàng rồi đem vàng sang Gia Lâm chôn giấu trong vườn nhà bố mẹ đẻ.",
-        "Trần Khắc Tuấn (chủ tiệm cầm đồ Giáp Bát) đã thuê một nhóm giang hồ cộm cán mang súng quân dụng cướp tiệm vàng Kim Sinh để trừ nợ lô đề.",
-        "Nhân viên bảo vệ chùa Đồng Quang thông đồng với kẻ cướp mở cửa ngõ chùa cho đối tượng tẩu thoát sau khi nổ súng cướp tiệm vàng."
+        "Tạ Văn Cường",
+        "Nguyễn Văn Đông",
+        "Đặng Quốc Tuấn",
+        "Trần Khắc Hùng"
+      ],
+      "answer": [
+        1,
+        2,
+        3
+      ],
+      "nudges": {
+        "0": {
+          "message": "Khẩu súng nổ ở phố Chùa Bộc là khẩu của vụ Bắc Giang (d10)."
+        }
+      },
+      "hints": [
+        "Đọc biên bản xác minh, lời bà Hạnh và lời ông trông xe.",
+        "Lúc súng nổ, chiếc xe ở đâu? Đông và Hùng ở đâu?",
+        "d12: Đông ở Bạch Mai, Hùng ở Giáp Bát. d05: xe đã chạy đi gửi khi tay súng lao ra; d11: Tuấn gửi xe 22:44 ở nhà xe 150 m."
+      ],
+      "solved": "Ba người đều không cầm súng. Nhưng không cầm súng chưa có nghĩa là vô can.",
+      "explanation": [
+        {
+          "title": "Đông, Hùng",
+          "body": [
+            "d12: Đông ở bệnh viện Bạch Mai, Hùng ở tiệm cầm đồ Giáp Bát, đều có người xác nhận."
+          ]
+        },
+        {
+          "title": "Tuấn",
+          "body": [
+            "d05: xe chạy đi trước khi tay súng lao ra; d11: Tuấn gửi xe lúc 22:44."
+          ]
+        },
+        {
+          "title": "Nhưng",
+          "body": [
+            "d11: Tuấn đứng dưới mái hiên nhìn đồng hồ, 22:47 mới chạy về."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q6",
+      "stage": 3,
+      "type": "line",
+      "title": "Mười phút ở Hàng Bạc",
+      "prompt": "Chỉ ra dòng khai bị lời chị kế toán chi nhánh bác bỏ.",
+      "answer": [
+        "d06:002"
+      ],
+      "nudges": {
+        "d06:004": {
+          "near": true,
+          "message": "Câu về lúc 22:40 bị ông trông xe làm lung lay, nhưng chị Lan nói về chuyện ở Hàng Bạc."
+        }
+      },
+      "hints": [
+        "Chị Lan nói gì về lúc 22:15?",
+        "Ai khai ngồi cạnh ông Phúc suốt?",
+        "d06 dòng 2: ngồi cạnh ông suốt, không rời đi đâu. d14: 22:15 Tuấn ra ngoài mười phút \"mua thuốc lá\"."
+      ],
+      "solved": "Tuấn đã rời chi nhánh đúng lúc ông Phúc khoá chiếc cặp.",
+      "explanation": [
+        {
+          "title": "Câu khai",
+          "body": [
+            "d06 dòng 2: ngồi cạnh ông chủ suốt, không rời đi đâu."
+          ]
+        },
+        {
+          "title": "Bị bác",
+          "body": [
+            "d14: 22:15 Tuấn ra đầu phố mười phút, lúc ông Phúc vừa khoá cặp."
+          ]
+        },
+        {
+          "title": "Giờ về",
+          "body": [
+            "d14: ông Phúc gọi về dặn \"khoảng mười một giờ kém hai mươi\" mở cửa ngách."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q7",
+      "stage": 3,
+      "type": "evidence",
+      "need": 2,
+      "title": "Tin nhắn lúc 22:16",
+      "prompt": "Ghim 2 tài liệu cho thấy tay súng nhận được tin báo giờ, cửa và chiếc cặp từ đâu.",
+      "answer": [
+        "d15",
+        "d16"
+      ],
+      "nudges": [
+        {
+          "any": [
+            "d18"
+          ],
+          "near": true,
+          "message": "Bà bán chè thấy ai gọi. Cần giấy tờ của tổng đài và bưu điện."
+        }
+      ],
+      "hints": [
+        "Một sổ tổng đài nhắn tin, một văn bản bưu điện.",
+        "Tin nhắn nội dung gì, gửi tới máy của ai, từ bốt nào, bằng thẻ nào?",
+        "d15: 22:16 từ bốt thẻ đầu phố Hàng Bạc, \"22H40 CAP DEN CUA NGACH\", máy nhắn tin do người có sẹo cằm đăng ký. d16: thẻ sê-ri 0812774, đã gọi tổng đài nhắn tin các tối thứ Tư 5/8, 12/8, 19/8."
+      ],
+      "solved": "Từ Hàng Bạc, có người nhắn cho Cường giờ ông Phúc về. Người đó đã nhắn như thế suốt ba tối thứ Tư trước.",
+      "explanation": [
+        {
+          "title": "Tin nhắn",
+          "body": [
+            "d15: 22:16 \"22H40 CAP DEN CUA NGACH\" vào máy nhắn tin của người có sẹo cằm."
+          ]
+        },
+        {
+          "title": "Bốt và thẻ",
+          "body": [
+            "d16: bốt thẻ đầu phố Hàng Bạc, thẻ sê-ri 0812774; cùng thẻ gọi tổng đài nhắn tin ba tối thứ Tư trước."
+          ]
+        },
+        {
+          "title": "Ai ở đó",
+          "body": [
+            "d14: 22:15 Tuấn ra đầu phố Hàng Bạc mười phút."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q8",
+      "stage": 3,
+      "type": "line",
+      "title": "Bao Vinataba",
+      "prompt": "Chỉ ra dòng khai bị lời bà bán nước chè bác bỏ.",
+      "answer": [
+        "d17:004"
+      ],
+      "nudges": {
+        "d17:002": {
+          "near": true,
+          "message": "Câu này Tuấn đã nhận có ra ngoài. Tìm câu về cuộc gọi."
+        }
+      },
+      "hints": [
+        "Bà Vân thấy cậu lái xe làm gì trong bốt?",
+        "Tuấn nói gì về việc gọi điện?",
+        "d17 dòng 4: không gọi điện cho ai. d18: cậu lái xe ô tô đen vào bốt, đọc chậm từng chữ, có chữ \"cửa ngách\", rồi mua bao Vinataba."
+      ],
+      "solved": "Người đọc tin nhắn ở bốt Hàng Bạc là Tuấn.",
+      "explanation": [
+        {
+          "title": "Câu khai",
+          "body": [
+            "d17 dòng 4: chỉ mua bao thuốc, không gọi điện cho ai."
+          ]
+        },
+        {
+          "title": "Bị bác",
+          "body": [
+            "d18: cậu lái xe ô tô đen đọc chậm từng chữ trong bốt, bà nghe được \"cửa ngách\", rồi mua bao Vinataba."
+          ]
+        },
+        {
+          "title": "Lặp lại",
+          "body": [
+            "d18: thứ Tư nào cũng gọi vào giờ ấy; d16: thẻ đã gọi ba tối thứ Tư trước."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q9",
+      "stage": 4,
+      "type": "line",
+      "title": "Vàng nung",
+      "prompt": "Chỉ ra dòng khai bị biên bản khám xét tiệm cầm đồ bác bỏ.",
+      "answer": [
+        "d09:004"
+      ],
+      "nudges": {
+        "d09:002": {
+          "near": true,
+          "message": "Câu về giấy phép kinh doanh chưa bị bác thẳng. Tìm câu về vàng mua sau 26/8."
+        }
+      },
+      "hints": [
+        "Trong két tiệm cầm đồ có gì?",
+        "Hùng nói gì về vàng mua sau 26/8?",
+        "d09 dòng 4: không mua lượng vàng nào không giấy tờ. d20: 28/8 mua 20 lượng vàng nung của \"anh Sẹo\", không giấy."
+      ],
+      "solved": "Hùng không cầm súng, nhưng đã tiêu thụ một phần số vàng cho Cường.",
+      "explanation": [
+        {
+          "title": "Câu khai",
+          "body": [
+            "d09 dòng 4: không mua vàng không giấy tờ, không ai mang vàng Phúc Hưng tới."
+          ]
+        },
+        {
+          "title": "Bị bác",
+          "body": [
+            "d20: két có 20 lượng vàng nung; sổ ghi \"28/8 – mua của anh Sẹo, 70 tr, không giấy\"."
+          ]
+        },
+        {
+          "title": "Vai trò",
+          "body": [
+            "d12: tối 26/8 Hùng ở Giáp Bát. Hùng là người mua lại, không phải người gây án."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q10",
+      "stage": 4,
+      "type": "evidence",
+      "need": 2,
+      "title": "Sáu mươi triệu nợ bóng đá",
+      "prompt": "Ghim 2 tài liệu cho thấy vì sao người lái xe ba năm của ông Phúc lại báo tin cho tay súng.",
+      "answer": [
+        "d19",
+        "d21"
+      ],
+      "nudges": [
+        {
+          "any": [
+            "d22"
+          ],
+          "near": true,
+          "message": "Chủ quán bia cho thấy hai người quen nhau. Cần tài liệu về nợ và về tiền sau vụ án."
+        }
+      ],
+      "hints": [
+        "Một sổ ghi nợ, một biên bản về chi tiêu.",
+        "Tuấn nợ ai bao nhiêu? Món nợ ấy được xoá thế nào? Sau vụ án Tuấn tiêu gì?",
+        "d19: Tuấn nợ cá độ World Cup 60 tr, giao Cường sẹo đòi; 20/8 xoá nợ \"việc thứ Tư\". d21: 30/8 mua Dream II 25 tr tiền mặt, lương 900 nghìn."
+      ],
+      "solved": "Tuấn trả món nợ World Cup bằng lịch tối thứ Tư của ông chủ.",
+      "explanation": [
+        {
+          "title": "Nợ",
+          "body": [
+            "d19: nợ cá độ 60 tr, Cường sẹo được giao đi đòi."
+          ]
+        },
+        {
+          "title": "Xoá nợ",
+          "body": [
+            "d19: 20/8 xoá nợ, ghi chú \"C. sẹo nhận trừ, việc thứ Tư\"."
+          ]
+        },
+        {
+          "title": "Tiền",
+          "body": [
+            "d21: 30/8 mua Dream II 25 tr tiền mặt, trong khi lương 900 nghìn/tháng."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q-accuse",
+      "stage": 5,
+      "type": "choice",
+      "multiple": true,
+      "cards": [
+        "cuong",
+        "dong",
+        "tuan",
+        "hung"
+      ],
+      "title": "Chỉ mặt hung thủ và đồng phạm",
+      "prompt": "Cái chết của ông Phúc là việc của hơn một người. Chọn **đúng hai** người đã cùng chuẩn bị và thực hiện vụ cướp.",
+      "options": [
+        "Tạ Văn Cường",
+        "Nguyễn Văn Đông",
+        "Đặng Quốc Tuấn",
+        "Trần Khắc Hùng"
+      ],
+      "answer": [
+        0,
+        2
+      ],
+      "nudges": {
+        "1": {
+          "message": "Đông nói dối chuyện biết lịch, nhưng ở Bạch Mai suốt đêm (d12)."
+        },
+        "3": {
+          "message": "Hùng chỉ mua lại vàng nung hai ngày sau (d20); tối 26/8 ở Giáp Bát (d12)."
+        }
+      },
+      "hints": [
+        "Một người cầm súng. Một người báo tin giờ, cửa, chiếc cặp.",
+        "Thẻ điện thoại sê-ri 0812774 ở trong ví ai?",
+        "Cường: súng, áo mưa, Simson, máy nhắn tin còn tin cuối (d23, d25). Tuấn: thẻ điện thoại, mẩu giấy số máy nhắn tin, vân tay (d24, d25)."
+      ],
+      "solved": "Tạ Văn Cường và Đặng Quốc Tuấn.",
+      "explanation": [
+        {
+          "title": "Cường",
+          "body": [
+            "Khẩu K54 (d10, d25), áo mưa quân dụng, Simson đỏ, máy nhắn tin còn tin \"22H40 CAP DEN CUA NGACH\" (d23)."
+          ]
+        },
+        {
+          "title": "Tuấn",
+          "body": [
+            "Rời chi nhánh 22:15 (d14), gọi từ bốt Hàng Bạc (d15, d16, d18), thẻ sê-ri 0812774 có vân tay và mẩu giấy số máy nhắn tin (d24, d25)."
+          ]
+        },
+        {
+          "title": "Vì sao",
+          "body": [
+            "Nợ cá độ 60 tr do Cường đòi, xoá nợ \"việc thứ Tư\" (d19); mua xe 25 tr tiền mặt (d21)."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q11",
+      "stage": 5,
+      "type": "choice",
+      "title": "Kết luận điều tra",
+      "prompt": "Chọn bản kết luận đúng với hồ sơ ở mọi chi tiết: ai, bằng cách nào, và vì sao.",
+      "options": [
+        "Tuấn nợ cá độ World Cup 60 triệu, được Cường sẹo xoá nợ để đổi lấy lịch tối thứ Tư của ông Phúc. Tối 26/8, khi ông Phúc khoá cặp vàng ở Hàng Bạc, Tuấn ra bốt điện thoại thẻ nhắn vào máy nhắn tin của Cường \"22H40 CAP DEN CUA NGACH\". Cường mặc áo mưa quân dụng chờ trong ngõ, bắn ông Phúc bằng khẩu K54 của vụ Bắc Giang, giật cặp, chạy xe Simson; Tuấn đưa xe đi gửi để có mặt ở nơi khác lúc súng nổ.",
+        "Đông bị đuổi việc vì nghi pha tuổi vàng nên thù ông Phúc, bán lịch tối thứ Tư cho Cường sẹo qua một người quen ở quán bia hơi; tối 26/8 Đông nhờ người gọi điện báo giờ từ Hàng Bạc trong khi mình trực ở bệnh viện để có ngoại phạm, còn Tuấn chỉ là lái xe tình cờ đưa xe đi gửi đúng lúc, và chiếc xe Dream mua bằng tiền vay của gia đình ở Hà Đông.",
+        "Hùng đặt hàng vàng với Cường sẹo, cử người theo dõi tiệm Phúc Hưng nhiều tuần để nắm lịch tối thứ Tư, rồi cho Cường mượn khẩu K54 và tiền thuê máy nhắn tin; sau vụ cướp Hùng nhận nung chảy vàng, chia cho Cường một nửa, còn Tuấn mua xe bằng tiền thưởng cuối năm và chỉ tình cờ quen Cường ở quán bia hơi xem bóng đá.",
+        "Cường sẹo tự theo dõi tiệm nhiều tuần, đoán được lịch tối thứ Tư, nằm chờ trong ngõ suốt mấy tiếng giữa mưa, bắn ông Phúc rồi giật cặp; tin nhắn trong máy nhắn tin là của ổ cá độ gửi Cường đòi nợ một người khác, còn Tuấn chỉ nói dối chuyện ra ngoài vì sợ lộ việc đánh bóng đá, và tấm thẻ điện thoại trong ví là do nhặt được."
       ],
       "answer": [
         0
       ],
+      "exam": {
+        "examiner": "Kiểm sát viên Phạm Thị Thu Hà",
+        "intro": "Trình bày kết luận trước kiểm sát viên: trả lời lần lượt từng câu hỏi bằng lời của mình. Không dùng được AI thì bấm “Trả lời bằng trắc nghiệm” để chọn bản kết luận đúng."
+      },
+      "nudges": {
+        "1": {
+          "message": "Người đọc tin nhắn ở bốt là cậu lái xe ô tô đen (d18), thẻ trong ví Tuấn (d24)."
+        },
+        "2": {
+          "message": "Hùng ở Giáp Bát tối 26/8 (d12) và chỉ mua lại vàng nung hai ngày sau (d20)."
+        },
+        "3": {
+          "message": "Tin nhắn ghi đúng \"CUA NGACH\" và gửi từ thẻ trong ví Tuấn (d15, d16, d24)."
+        }
+      },
       "hints": [
-        "Ai là đối tượng sở hữu khẩu súng K54 có vân tay trên bao thuốc lá Du Lịch và có lộ trình qua bến phà Đen?",
-        "Đối chiếu kết quả khai quật thu hồi 108 lượng vàng tại bãi ngô sông Hồng với nơi ẩn náu của đối tượng truy nã."
+        "Đối chiếu: ai gửi tin nhắn (d15, d16, d18, d24), ai cầm súng (d10, d23).",
+        "Chỉ một phương án có tin nhắn 22:16, thẻ điện thoại và nợ World Cup.",
+        "Phương án A."
       ],
+      "solved": "Hồ sơ khép lại với tên Tạ Văn Cường và Đặng Quốc Tuấn.",
       "explanation": [
-        "Phạm Đức Thắng là thủ phạm duy nhất. Bản chất tàn bạo của tên tội phạm trốn trại đã lên kế hoạch dùng tiếng pháo giao thừa át tiếng súng để cướp vàng và bị bắt cùng toàn bộ tang vật."
+        {
+          "title": "Báo tin",
+          "body": [
+            "d14, d15, d16, d18, d24: 22:15 Tuấn ra bốt Hàng Bạc, nhắn \"22H40 CAP DEN CUA NGACH\" bằng thẻ sê-ri 0812774."
+          ]
+        },
+        {
+          "title": "Nổ súng",
+          "body": [
+            "d10, d23, d25: Cường dùng khẩu K54 của vụ Bắc Giang, áo mưa quân dụng, Simson đỏ."
+          ]
+        },
+        {
+          "title": "Vì sao",
+          "body": [
+            "d19, d21: nợ cá độ 60 tr xoá vì \"việc thứ Tư\"; mua xe 25 tr tiền mặt."
+          ]
+        }
+      ]
+    }
+  ],
+  "beats": [
+    {
+      "stage": 2,
+      "kicker": "Ngày 27–29/8/1998 · Hà Nội",
+      "title": "Khẩu súng có lý lịch",
+      "voice": "audio/beat-2.mp3",
+      "paragraphs": [
+        "Kẻ cướp biết giờ, biết cửa, biết chiếc cặp. Hắn chỉ cần đứng chờ.",
+        "Hai vỏ đạn lô 1968 được gửi lên Phân viện Khoa học hình sự. Trong lúc chờ, Thiếu tá Đức hỏi chuyện người thợ cũ, ông chủ tiệm cầm đồ và ông cụ trông xe đầu ngõ.",
+        "Khẩu súng ấy đã từng nổ ở đâu?"
+      ]
+    },
+    {
+      "stage": 3,
+      "kicker": "Ngày 30–31/8/1998 · Phố Hàng Bạc",
+      "title": "Mười phút mua bao thuốc lá",
+      "voice": "audio/beat-3.mp3",
+      "paragraphs": [
+        "Tay súng có tên, có ảnh, nhưng không quen ai trong nhà ông Phúc. Vậy ai đã báo tin cho hắn?",
+        "Ở chi nhánh Hàng Bạc, chị kế toán nhớ lại một chi tiết nhỏ. Ở đầu phố, có một bốt điện thoại thẻ và một hàng nước chè.",
+        "Lúc 22:16, ai đã nhấc máy?"
+      ]
+    },
+    {
+      "stage": 4,
+      "kicker": "Ngày 1–2/9/1998 · Phố Khâm Thiên",
+      "title": "Mùa World Cup",
+      "voice": "audio/beat-4.mp3",
+      "paragraphs": [
+        "Một ổ cá độ bóng đá bị triệt phá. Trong cuốn sổ ghi nợ có một cái tên quen.",
+        "Ở bến xe Giáp Bát, chiếc két của tiệm cầm đồ mở ra.",
+        "Vì sao một người lái xe ba năm lại bán lịch tối thứ Tư của ông chủ?"
+      ]
+    },
+    {
+      "stage": 5,
+      "kicker": "Ngày 3/9/1998 · Rạng sáng",
+      "title": "Bãi sông Hồng",
+      "voice": "audio/beat-5.mp3",
+      "paragraphs": [
+        "Bốn giờ sáng, một tổ trinh sát áp sát căn nhà trọ ở bãi sông Hồng. Cùng lúc, một tổ khác gõ cửa một căn hộ ở Hà Đông.",
+        "Chỉ mặt những người đã gây ra đêm súng nổ. Và giải thích vì sao."
       ]
     }
   ],
   "finale": {
-    "culprit": "Phạm Đức Thắng",
-    "text": "Bản án tử hình đã được thi hành nghiêm minh đối với tên cướp máu lạnh Phạm Đức Thắng. Chuyên án cướp tiệm vàng Kim Sinh phố Tây Sơn năm 1999 đã đi vào lịch sử ngành điều tra hình sự Việt Nam như một mốc son chói lọi về tinh thần quả cảm, sự mưu trí và sức mạnh của khoa học kỹ thuật hình sự trong cuộc đấu tranh không khoan nhượng với tội phạm có vũ trang."
-  }
+    "title": "Chiếc cặp da đêm thứ Tư",
+    "paragraphs": [
+      "Đặng Quốc Tuấn khai nhận khi chiếc thẻ điện thoại sê-ri 0812774 được đặt lên bàn, cạnh máy nhắn tin còn lưu dòng chữ cuối cùng.",
+      "Mùa World Cup năm ấy, Tuấn thua sáu mươi triệu. Người đến đòi là Cường sẹo. Cường không cần tiền ngay. Cường chỉ cần biết tối thứ Tư ông chủ đi đâu, về lúc nào, xách cái gì.",
+      "Ba tối thứ Tư liền, Tuấn ra bốt điện thoại đầu phố Hàng Bạc, đọc chậm từng chữ cho tổng đài viên. Đến tối thứ Tư thứ tư, cơn mưa giông kéo về.",
+      "Tuấn thả ông chủ ở cửa ngách như mọi lần, rồi đưa xe đi gửi. Anh đứng dưới mái hiên nhà xe, nhìn đồng hồ, châm một điếu Vinataba, đợi đủ ba phút mới chạy về.",
+      "Tạ Văn Cường bị bắt ở bãi sông Hồng, khẩu K54 vẫn nằm dưới gối. Hắn chỉ nói: \"Thằng lái xe bảo ông ấy không bao giờ chống cự.\"",
+      "Bà Hạnh không dự phiên toà. Bà chỉ nhờ người nhắn lại một câu: \"Ba năm, ông nhà tôi chưa từng đi đâu mà không có cậu ấy.\""
+    ]
+  },
+  "epilogue": [
+    {
+      "title": "Tạ Văn Cường",
+      "text": "Bị truy tố về tội giết người và cướp tài sản trong cả hai vụ Chùa Bộc và Bắc Giang."
+    },
+    {
+      "title": "Đặng Quốc Tuấn",
+      "text": "Bị truy tố với vai trò đồng phạm giúp sức. Chiếc Dream II và tám triệu đồng bị thu làm tang vật."
+    },
+    {
+      "title": "Trần Khắc Hùng",
+      "text": "Bị truy tố về tội tiêu thụ tài sản do người khác phạm tội mà có. 20 lượng vàng được trả lại gia đình ông Phúc."
+    },
+    {
+      "title": "Nguyễn Văn Đông",
+      "text": "Bà Hạnh mời anh về làm thợ chính. Ở phiên toà, anh ngồi hàng ghế đầu, cạnh bà."
+    }
+  ]
 }
