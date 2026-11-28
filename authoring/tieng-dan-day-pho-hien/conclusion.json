@@ -1,0 +1,125 @@
+{
+  "_ghi_chu": "Đáp án báo cáo kết luận trước kiểm sát viên (AI). CHỨA LỜI GIẢI. keywords không dấu.",
+  "q8": {
+    "examiner": "Kiểm sát viên Đỗ Thị Hằng",
+    "persona": "Kiểm sát viên Viện Kiểm sát nhân dân thị xã Hưng Yên, ngoài bốn mươi, giọng Bắc, điềm tĩnh, hỏi kỹ.",
+    "intro": "Tôi là kiểm sát viên phụ trách vụ đình Hoa Nguyệt. Đồng chí trình bày kết luận, ngắn gọn, có căn cứ.",
+    "closing": "Báo cáo đủ căn cứ ở mọi điểm. Tôi đồng ý với kết luận điều tra.",
+    "points": [
+      {
+        "id": "ai",
+        "ask": "Thứ nhất: ai đã đầu độc cụ Phan Bá Cửu?",
+        "facts": [
+          {
+            "id": "toan",
+            "text": "Đỗ Trọng Toàn, quản lý tài chính phường.",
+            "keywords": [
+              "toan",
+              "quan ly"
+            ],
+            "probe": "Đồng chí nói rõ người đó là ai."
+          }
+        ],
+        "hint": "Gợi ý: lời ông thủ từ, lời bà Mùi và sổ hiệu thuốc bắc."
+      },
+      {
+        "id": "cach",
+        "ask": "Thứ hai: chất độc gì, vào người cụ bằng đường nào? Vì sao không phải chén trà?",
+        "facts": [
+          {
+            "id": "phim",
+            "text": "Mã tiền (strychnin) trộn mật ong phết lên phím sừng; cụ có thói quen ngậm phím trước khi dạo đàn.",
+            "keywords": [
+              "ma tien",
+              "strychnin",
+              "mat ong",
+              "phim",
+              "ngam",
+              "sung"
+            ],
+            "probe": "Chất độc nằm ở đâu, và vì sao cụ đưa nó vào miệng?"
+          },
+          {
+            "id": "tra",
+            "text": "Dạ dày không có trà, cụ chưa nhấp; hoá nghiệm chén trà sạch.",
+            "keywords": [
+              "chua nhap",
+              "da day",
+              "khong co tra",
+              "tra sach",
+              "khong uong"
+            ],
+            "probe": "Căn cứ nào loại trừ chén trà?"
+          }
+        ],
+        "hint": "Gợi ý: pháp y, sổ tay của đào nương, kết quả hoá nghiệm."
+      },
+      {
+        "id": "luc-nao",
+        "ask": "Thứ ba: chiếc phím bị tẩm độc lúc nào, và vì sao không phải anh Bình người đã lén vào buồng?",
+        "facts": [
+          {
+            "id": "thoi-diem",
+            "text": "Bình vào 19:35–19:40, phím còn khô xỉn; 19:42–19:47 người đeo kính cầm cặp da (Toàn) vào buồng, ông Toàn rời tiền đình 19:40–19:50.",
+            "keywords": [
+              "19:40",
+              "19:42",
+              "19:47",
+              "kho",
+              "xin",
+              "deo kinh",
+              "cap da",
+              "thu tu",
+              "ba mui"
+            ],
+            "probe": "Phím thế nào lúc Bình rời buồng? Ai vào sau?"
+          }
+        ],
+        "hint": "Gợi ý: lời bà Mùi, ông thủ từ và lời khai lần hai của Bình."
+      },
+      {
+        "id": "dong-co",
+        "ask": "Thứ tư: vì sao ông Toàn ra tay đúng đêm rằm?",
+        "facts": [
+          {
+            "id": "hoa-don",
+            "text": "Hoá đơn nhạc cụ khống (900 nghìn ghi gần 3 triệu); cụ Cửu viết thư sẽ mang lên Sở Văn hoá sau đêm tế tổ.",
+            "keywords": [
+              "hoa don",
+              "khong",
+              "3 trieu",
+              "ba trieu",
+              "900",
+              "so van hoa",
+              "thu",
+              "nhac cu"
+            ],
+            "probe": "Cụ Cửu định làm gì sau đêm tế tổ?"
+          }
+        ],
+        "hint": "Gợi ý: lá thư trong ngăn đáy tráp đàn."
+      },
+      {
+        "id": "tang-vat",
+        "ask": "Cuối cùng: tang vật nào nối ông Toàn với chất độc?",
+        "facts": [
+          {
+            "id": "tui",
+            "text": "Sổ Nam Hoà Đường ghi Toàn mua 20 g mã tiền chế ngày 22/9; túi gấm còn 12 g mã tiền và khăn lụa dính mật ong có strychnin trong cặp da của ông.",
+            "keywords": [
+              "nam hoa duong",
+              "22/9",
+              "20 g",
+              "tui gam",
+              "khan lua",
+              "cap da",
+              "12 g"
+            ],
+            "probe": "Mã tiền mua ở đâu? Trong cặp da có gì?"
+          }
+        ],
+        "hint": "Gợi ý: biên bản xác minh hiệu thuốc và khám xét cặp da."
+      }
+    ]
+  }
+}

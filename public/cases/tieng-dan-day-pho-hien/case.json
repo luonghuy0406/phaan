@@ -1,373 +1,1229 @@
 {
   "id": "tieng-dan-day-pho-hien",
   "no": 3,
-  "status": "coming-soon",
+  "status": "available",
   "title": "Tiếng đàn đáy Phố Hiến",
-  "tagline": "Đêm rằm tế tổ phường chèo, tiếng đàn đáy bỗng đứt ngang giữa lúc mưa giông quất rát mặt đầm sen.",
-  "difficulty": 2,
-  "players": "1–4",
-  "duration": "45–60 phút",
-  "setting": "Đình cổ ven hồ Bán Nguyệt, thị xã Phố Hiến (hư cấu)",
+  "subtitle": "Một khúc \"Lạc Nhạn\" dở dang, một chén trà đổ và chiếc phím sừng",
+  "tagline": "Đêm rằm tháng Tám, nghệ nhân đàn đáy gục ngã giữa khúc dạo đầu. Cả phường nhìn vào chén trà sen. Không ai nhìn chiếc phím.",
+  "difficulty": 3,
+  "players": "1–5",
+  "duration": "60–75 phút",
+  "setting": "Đình Hoa Nguyệt (hư cấu) ven hồ Bán Nguyệt, thị xã Hưng Yên",
+  "era": "Tháng 9/1993",
   "tags": [
     "Án mạng",
     "Đầu độc",
-    "Phường chèo",
-    "Thập niên 90"
+    "Ca trù",
+    "Phố Hiến"
   ],
   "cover": "images/cover.webp",
-  "synopsis": "Đêm rằm tháng Tám năm 1993, tại buổi tế tổ và hội diễn cổ nhạc Kim Nguyệt Phường ven hồ Bán Nguyệt, cụ Phan Bá Cửu - nghệ nhân đàn đáy bậc thầy - ngã gục ngay khi vừa dứt khúc dạo đầu 'Lạc Nhạn'. Chén trà sen đào nương vừa dâng bị đổ sóng xoài trên chiếu hoa, toàn bộ phường hát náo loạn giữa cơn dông đầu thu.",
+  "contentWarning": "Hồ sơ có mô tả một vụ đầu độc. Phường hát, nhân vật và sự việc đều hư cấu.",
+  "synopsis": [
+    "Đêm rằm tháng Tám năm 1993, phường ca trù Kim Nguyệt tế tổ ở đình Hoa Nguyệt ven hồ Bán Nguyệt. Cụ Phan Bá Cửu, nghệ nhân đàn đáy, gục ngã khi vừa dạo khúc \"Lạc Nhạn\".",
+    "Chén trà sen đào nương vừa dâng đổ loang trên chiếu. Cả phường tin chén trà có độc. Pháp y nói: cụ chưa uống một ngụm nào."
+  ],
   "intro": {
     "title": "Tiếng đàn đáy Phố Hiến",
     "paragraphs": [
-      "Bạn nhận được tập hồ sơ kỹ thuật hình sự từ Công an thị xã Phố Hiến. Nạn nhân qua đời do nhiễm độc cấp tính chất asen (thạch tín).",
-      "Mọi nghi vấn ban đầu dồn vào đào nương Ánh Tuyết - người trực tiếp dâng chén trà sen cho cụ Cửu. Tuy nhiên, những chi tiết nhỏ nơi tráp nhạc cụ và thói quen ngón đàn của người nghệ nhân già mở ra một bức màn kịch độc ác hơn thế.",
-      "Bạn là điều tra viên thụ lý hồ sơ. Hãy đọc kỹ các tài liệu trên bàn, đối chiếu lời khai và trả lời từng trọng điểm để mở niêm phong phần hồ sơ tiếp theo."
+      "Thị xã Hưng Yên, đất Phố Hiến xưa, đêm rằm tháng Tám năm 1993. Phường ca trù Kim Nguyệt tế tổ ở đình Hoa Nguyệt bên hồ Bán Nguyệt.",
+      "Tám giờ, cụ Phan Bá Cửu ngồi lên chiếu hoa, ôm cây đàn đáy khảm xà cừ, dạo khúc \"Lạc Nhạn\". Đào nương dâng chén trà sen. Mười phút sau, tay cụ cứng lại, người giật lên, chén trà đổ.",
+      "Bạn là điều tra viên Đội Cảnh sát hình sự Công an thị xã Hưng Yên. Bốn người có lý do bị nghi. Hãy bắt đầu từ kết luận pháp y."
     ],
-    "objective": "Xác định chất độc đã vào cơ thể cụ Cửu bằng con đường nào, đối chiếu lời khai của những người trong phường, và chỉ ra hung thủ."
+    "objective": "Tìm ra chất độc vào người cụ Cửu bằng đường nào, ai đã đặt nó, lúc nào và vì sao."
+  },
+  "victim": {
+    "id": "cuu",
+    "name": "Phan Bá Cửu",
+    "age": 68,
+    "role": "Nghệ nhân đàn đáy, trưởng phường Kim Nguyệt",
+    "image": "images/id-cuu.webp",
+    "note": "Gục ngã khi dạo đàn tối 30/9/1993 (rằm tháng Tám), mất lúc 21:10 tại trạm xá."
+  },
+  "suspects": [
+    {
+      "id": "binh",
+      "name": "Chu Văn Bình",
+      "age": 40,
+      "role": "Kép đàn, học trò 15 năm",
+      "image": "images/id-binh.webp",
+      "voice": "M1",
+      "suspicion": "Tuần trước bị cụ Cửu truất khỏi đội đi hội diễn tỉnh vì tiếng đàn \"còn vướng bụi trần\"."
+    },
+    {
+      "id": "tuyet",
+      "name": "Nguyễn Thị Ánh Tuyết",
+      "age": 28,
+      "role": "Đào nương",
+      "image": "images/id-tuyet.webp",
+      "voice": "F1",
+      "suspicion": "Bị cụ mắng trước cả phường sáng hôm ấy; người dâng chén trà sen."
+    },
+    {
+      "id": "toan",
+      "name": "Đỗ Trọng Toàn",
+      "age": 52,
+      "role": "Quản lý tài chính phường",
+      "image": "images/id-toan.webp",
+      "voice": "M3",
+      "suspicion": "Giữ tiền tài trợ mua nhạc cụ của Sở Văn hoá; có lời ra tiếng vào về khoản ấy."
+    },
+    {
+      "id": "loc",
+      "name": "Phan Bá Lộc",
+      "age": 42,
+      "role": "Con trai nạn nhân, buôn đồ cổ",
+      "image": "images/id-loc.webp",
+      "voice": "M2",
+      "suspicion": "Muốn bán cây đàn gia bảo cho người Hồng Kông, bị bố đuổi khỏi nhà."
+    }
+  ],
+  "aiInterrogation": true,
+  "audio": {
+    "intro": "audio/intro.mp3",
+    "finale": "audio/finale.mp3"
   },
   "documents": [
+    {
+      "id": "d00",
+      "stage": 1,
+      "type": "people",
+      "title": "Nạn nhân và những người liên quan",
+      "paragraphs": [
+        "Ảnh thẻ trích từ hồ sơ hộ khẩu, kèm lý do từng người được đưa vào diện xác minh sáng 1/10/1993."
+      ]
+    },
     {
       "id": "d01",
       "stage": 1,
       "type": "newspaper",
-      "title": "Báo Hải Hưng - Tin buồn trong đêm hội rằm Phố Hiến",
-      "date": "16/08/1993 Âm lịch (30/09/1993)",
-      "content": "**ĐÊM RẰM HỒ BÁN NGUYỆT: NGHỆ NHÂN PHAN BÁ CỬU ĐỘT NGỘT TỪ TRẦN**\n\nHôm qua, trong đêm tế tổ thường niên của Kim Nguyệt Phường tổ chức tại đình cổ bên hồ Bán Nguyệt, nghệ nhân đàn đáy cự phách Phan Bá Cửu (68 tuổi) đã đột ngột ngã gục ngay trên chiếu biểu diễn trước sự chứng kiến của đông đảo bà con yêu văn nghệ cổ truyền.\n\nTheo người nhà và các thành viên phường hát, cụ Cửu vốn có sức khỏe dẻo dai, sáng cùng ngày vẫn cầm trịch buổi tổng duyệt. Cơ quan điều tra đã phong tỏa đình làng để làm rõ nguyên nhân cái chết bất thường.",
+      "title": "Báo Hải Hưng: Nghệ nhân đàn đáy gục ngã giữa đêm hội",
+      "masthead": "Hải Hưng",
+      "issue": "Số 2.310",
+      "date": "Thứ Bảy, 2/10/1993",
+      "headline": "Đêm rằm tháng Tám: nghệ nhân đàn đáy gục ngã giữa khúc \"Lạc Nhạn\"",
+      "deck": "Chén trà sen đổ trên chiếu hoa, cả phường hát nghi có người bỏ độc.",
       "image": "images/d01-bao-chi.webp",
-      "imageCaption": "Ảnh tư liệu Báo Hải Hưng: Đình Hoa Nguyệt trong đêm hội rằm"
+      "imageCaption": "Đình Hoa Nguyệt bên hồ Bán Nguyệt sáng 1/10.",
+      "paragraphs": [
+        "Tối 30/9 (rằm tháng Tám Quý Dậu), phường ca trù Kim Nguyệt (hư cấu) tế tổ và diễn ở đình Hoa Nguyệt ven hồ Bán Nguyệt, thị xã Hưng Yên. Đang dạo khúc \"Lạc Nhạn\", cụ Phan Bá Cửu (68 tuổi), nghệ nhân đàn đáy, trưởng phường, co giật rồi ngã gục.",
+        "Cụ được đưa đến trạm xá phường Hiến Nam nhưng mất lúc 21 giờ 10. Ngay trước khi cụ ngã, đào nương Ánh Tuyết vừa dâng chén trà sen; chén trà đổ trên chiếu.",
+        "Nhiều người trong phường cho rằng chén trà có độc. Công an thị xã đã niêm phong buồng hoá trang của đình."
+      ]
     },
     {
       "id": "d02",
       "stage": 1,
       "type": "report",
-      "title": "Biên bản khám nghiệm hiện trường",
-      "date": "21h30 ngày 29/09/1993",
-      "content": "**BIÊN BẢN KHÁM NGHIỆM HIỆN TRƯỜNG**\n\n- **Địa điểm**: Gian tiền tế đình Hoa Nguyệt, phường An Tảo, thị xã Phố Hiến.\n- **Vị trí tử thi**: Nằm nghiêng bên phải trên chiếc chiếu cói hoa dệt đỏ trải giữa tiền tế. Nạn nhân mặc áo the đen, quần lụa trắng. Miệng có bọt mép màu xám nhạt, môi và móng tay thâm tím tái.\n- **Đồ vật thu giữ quanh tử thi**:\n  1. Một cây đàn đáy thân gỗ mun khảm ốc ba dây tơ, dây đàn còn nguyên vẹn, đặt sát mép chiếu.\n  2. Một chén sứ viền hoa lam bị đổ nghiêng, nước trà sen đã ngấm gần hết vào chiếu cói.\n  3. Một tráp gỗ hương nhỏ (kích thước 15x25cm) đặt cạnh đầu chiếu, nắp mở, bên trong lót nhung đỏ cũ."
+      "title": "Biên bản khám nghiệm hiện trường đình Hoa Nguyệt",
+      "header": [
+        "Công an thị xã Hưng Yên",
+        "Đội Cảnh sát hình sự"
+      ],
+      "heading": "Biên bản khám nghiệm hiện trường",
+      "code": "91/KNHT",
+      "date": "22 giờ 00 ngày 30/9/1993",
+      "fields": [
+        {
+          "label": "Địa điểm",
+          "value": "Đình Hoa Nguyệt, ven hồ Bán Nguyệt, thị xã Hưng Yên"
+        },
+        {
+          "label": "Nạn nhân",
+          "value": "Phan Bá Cửu, 68 tuổi, nghệ nhân đàn đáy, trưởng phường Kim Nguyệt"
+        }
+      ],
+      "sections": [
+        {
+          "heading": "1. Chiếu diễn (đại bái)",
+          "paragraphs": [
+            "Cây đàn đáy khảm xà cừ của nạn nhân đặt nghiêng trên chiếu hoa. Chén trà sen úp, nước trà loang ra chiếu; ấm trà còn gần đầy.",
+            "**Phím gảy bằng sừng trâu** (hình lá, dài 6 cm) rơi cạnh đàn; mặt phím bóng, hơi dính tay."
+          ]
+        },
+        {
+          "heading": "2. Buồng hoá trang",
+          "paragraphs": [
+            "Ở góc tây nam đình, một cửa vào từ đại bái, một cửa sổ nhỏ trông ra cổng đình. Tráp gỗ đựng nhạc cụ của nạn nhân để trên án, không khoá."
+          ]
+        },
+        {
+          "heading": "3. Thu giữ",
+          "paragraphs": [
+            "Phím gảy, chén trà, ấm trà, cây đàn, tráp gỗ. Đã gửi hoá nghiệm."
+          ]
+        }
+      ],
+      "signers": [
+        {
+          "role": "Điều tra viên",
+          "name": "Đại uý Trần Văn Kiên"
+        }
+      ]
     },
     {
       "id": "d03",
       "stage": 1,
-      "type": "report",
-      "title": "Sơ đồ mặt bằng đình Hoa Nguyệt",
-      "date": "22h00 ngày 29/09/1993",
-      "content": "**SƠ ĐỒ BỐ TRÍ HIỆN TRƯỜNG**\n\n- **Tiền đình (Chiếu diễn chính)**: Nơi cụ Cửu ngã gục. Xung quanh là vị trí ngồi của đào nương Ánh Tuyết (phía bên phải), kép đàn Chu Văn Bình (phía sau cánh gà dự bị) và người đánh trống chầu.\n- **Hậu cung**: Nơi đặt bàn thờ tổ nghề ca trù và các cụ tiền bối. Nạn nhân có mặt tại đây lúc 19h30 để dâng hương tế tổ trước buổi diễn.\n- **Buồng hóa trang (Hành lang đông)**: Căn phòng nhỏ phía sau hậu cung, nơi để nhạc cụ, phục trang và tráp gỗ của cụ Cửu từ chiều cùng ngày.",
+      "type": "scan",
+      "title": "Sơ đồ đình Hoa Nguyệt đêm 30/9",
       "image": "images/d03-so-do-dinh.webp",
-      "imageCaption": "Sơ đồ kiến trúc mặt bằng đình cổ Hoa Nguyệt"
+      "caption": "Sơ đồ lập khi khám nghiệm: đại bái (chiếu diễn), tiền đình (hương án), buồng hoá trang ở góc tây nam có cửa sổ nhỏ trông ra phía cổng, quán nước bà Mùi ngay góc cổng đình."
     },
     {
       "id": "d04",
       "stage": 1,
       "type": "photo",
-      "title": "Ảnh chụp cây đàn đáy và tráp gỗ nhạc cụ",
-      "date": "21h45 ngày 29/09/1993",
+      "title": "Ảnh cây đàn đáy, tráp gỗ và phím gảy",
       "image": "images/d04-dan-day.webp",
-      "content": "Ảnh chụp hiện trường tiền tế: Cây đàn đáy gỗ mun nằm nghiêng trên chiếu cói. Cạnh đó là tráp gỗ hương mở nắp. Đáng chú ý, chiếc phím gảy đàn đáy bằng sừng trâu mỏng hình lá vông đặt cạnh nắp tráp có vệt màng nhờn mờ đục khác thường ở phần chuôi cầm."
+      "label": "Tang vật ảnh số 2 · 1/10/1993",
+      "caption": "Cây đàn đáy khảm xà cừ của cụ Cửu, tráp gỗ lót nhung đỏ và chiếc phím gảy bằng sừng trâu."
     },
     {
       "id": "d05",
       "stage": 1,
       "type": "report",
       "title": "Kết quả giám định pháp y sơ bộ",
-      "date": "02h30 ngày 30/09/1993",
-      "content": "**KẾT LUẬN KHÁM NGHIỆM TỬ THI CỤ PHAN BÁ CỬU**\n\n1. **Nguyên nhân tử vong**: Suy tuần hoàn cấp do ngộ độc asen (thạch tín) nồng độ cực cao.\n2. **Đường hấp thụ độc chất**: Không tìm thấy dấu vết lượng lớn thạch tín trong dịch dạ dày. Dạ dày nạn nhân gần như rỗng, chỉ có khoảng 10ml dịch nhầy mỏng không chứa độc tố nguy hiểm.\n3. **Điểm bất thường**: Niêm mạc lưỡi, vòm họng và đáy môi dưới của nạn nhân bị sung huyết trợt loét nặng nề, tập trung nồng độ asen nguyên chất rất cao. Thời gian từ lúc chất độc tiếp xúc niêm mạc miệng đến lúc ngưng tim ước tính chỉ từ 10 đến 15 phút."
+      "header": [
+        "Trung tâm Pháp y tỉnh Hải Hưng"
+      ],
+      "heading": "Kết quả giám định sơ bộ",
+      "code": "177/PY",
+      "date": "Ngày 1 tháng 10 năm 1993",
+      "sections": [
+        {
+          "heading": "1. Triệu chứng (theo trạm xá)",
+          "paragraphs": [
+            "Co giật từng cơn, người uốn cong, cứng hàm, nạn nhân tỉnh táo đến gần cuối. Tử vong lúc 21:10 do ngạt vì co cứng cơ hô hấp.",
+            "Triệu chứng điển hình của ngộ độc **strychnin** (hoạt chất của hạt **mã tiền**), khởi phát khoảng 15–30 phút sau khi chất độc vào cơ thể."
+          ]
+        },
+        {
+          "heading": "2. Khám trong",
+          "paragraphs": [
+            "Niêm mạc lưỡi và vòm miệng có nồng độ strychnin cao nhất. **Dạ dày không có nước trà**, chỉ có cơm và chút rượu từ bữa chiều."
+          ]
+        }
+      ],
+      "signature": "Giám định viên: BS. Vũ Thị Lan"
     },
     {
       "id": "d06",
       "stage": 1,
-      "type": "testimony",
-      "title": "Lời khai sơ bộ của đào nương Nguyễn Thị Ánh Tuyết",
-      "date": "22h30 ngày 29/09/1993",
-      "lines": [
-        {
-          "n": 1,
-          "text": "Tôi là người pha ấm trà sen và dâng chén trà lên cho cụ Cửu lúc 19h45."
-        },
-        {
-          "n": 2,
-          "text": "Trà sen là loại trà ướp hoa sen hồ Bán Nguyệt do anh Chu Văn Bình mang đến từ chiều."
-        },
-        {
-          "n": 3,
-          "text": "Khi tôi dâng trà, cụ Cửu đang kiểm tra dây đàn đáy, cụ chỉ nhấp môi một tí xíu cho thơm giọng rồi đặt chén xuống góc chiếu."
-        },
-        {
-          "n": 4,
-          "text": "Cụ mắng tôi hát khúc 'Hồng Hồng Tuyết Tuyết' sáng nay còn non, nhưng cụ dặn tối nay cứ tự tin mà gõ phách."
-        },
-        {
-          "n": 5,
-          "text": "Lúc cụ Cửu so dây xong khúc dạo đầu, cụ bỗng ôm ngực quằn quại, tay quờ trúng chén trà làm đổ lênh láng."
-        },
-        {
-          "n": 6,
-          "text": "Tôi hoàn toàn không bỏ thứ gì vào chén trà của cụ cả, trời đất chứng giám!"
-        }
-      ],
+      "type": "photo",
+      "title": "Ảnh lưu niệm phường Kim Nguyệt năm 1991",
       "image": "images/d06-anh-chan-dung.webp",
-      "imageCaption": "Ảnh kỷ niệm nghệ nhân phường chèo và kép đàn Chu Văn Bình"
+      "label": "Ảnh do gia đình nạn nhân cung cấp",
+      "caption": "Từ trái sang: đào nương Nguyễn Thị Ánh Tuyết, cụ Phan Bá Cửu ôm đàn đáy, kép đàn Chu Văn Bình."
     },
     {
       "id": "d07",
-      "stage": 2,
+      "stage": 1,
       "type": "testimony",
-      "title": "Lời khai của kép đàn Chu Văn Bình",
-      "date": "23h15 ngày 29/09/1993",
+      "title": "Lời khai của đào nương Nguyễn Thị Ánh Tuyết",
+      "header": [
+        "Công an thị xã Hưng Yên",
+        "Đội Cảnh sát hình sự"
+      ],
+      "heading": "Biên bản ghi lời khai",
+      "date": "23 giờ 00 ngày 30/9/1993",
+      "fields": [
+        {
+          "label": "Người khai",
+          "value": "Nguyễn Thị Ánh Tuyết, 28 tuổi, đào nương phường Kim Nguyệt"
+        }
+      ],
       "lines": [
         {
           "n": 1,
-          "text": "Tôi theo học đàn đáy với thầy Cửu đã hơn mười hai năm nay, tình như cha con."
+          "speaker": "Điều tra viên",
+          "text": "Chị dâng trà cho cụ Cửu lúc nào?"
         },
         {
           "n": 2,
-          "text": "Đúng là sáng nay thầy có bảo ngón đàn của tôi còn non, chưa đủ tầm đệm cho hội diễn tỉnh."
+          "speaker": "Nguyễn Thị Ánh Tuyết",
+          "text": "Tám giờ mười, cụ đang dạo đàn thì em dâng chén trà sen như lệ. Cụ gật đầu nhưng chưa nhấp, vì đang gảy."
         },
         {
           "n": 3,
-          "text": "Nhưng tôi chỉ biết cúi đầu nghe lời thầy dạy chứ đâu dám có nửa lời oán trách."
+          "speaker": "Điều tra viên",
+          "text": "Sau đó?"
         },
         {
           "n": 4,
-          "text": "Gói trà sen ướp sớm là do chính tay mẹ tôi làm ở nhà, mang biếu thầy bồi dưỡng."
+          "speaker": "Nguyễn Thị Ánh Tuyết",
+          "text": "Chừng mười phút sau tay cụ cứng lại, người giật lên, gạt đổ chén trà. Cụ vẫn nhìn em, nói không ra tiếng."
         },
         {
           "n": 5,
-          "text": "Buổi tối từ 19h đến 19h40 tôi ngồi uống nước chè xanh ngoài quán bà Mùi trước cổng đình."
+          "speaker": "Điều tra viên",
+          "text": "Sáng nay cụ phê bình chị?"
         },
         {
           "n": 6,
-          "text": "Mọi người đều nhìn thấy tôi ở quán nước, tôi không hề rời đi nửa bước."
-        },
-        {
-          "n": 7,
-          "text": "Tôi chỉ vào gian tiền tế khi sắp tới giờ khai mạc lúc 19h45."
-        },
-        {
-          "n": 8,
-          "text": "Tôi tuyệt đối không hề bước chân vào buồng hóa trang phía sau và cũng không bao giờ chạm tay vào tráp đồ nghề của thầy."
-        },
-        {
-          "n": 9,
-          "text": "Đồ nghề của thầy Cửu thiêng liêng lắm, phím gảy bằng sừng trâu thầy coi như tính mạng, ai dám đụng vào!"
+          "speaker": "Nguyễn Thị Ánh Tuyết",
+          "text": "Vâng, tổng duyệt cụ mắng em hát lạc phách trước cả phường. Em khóc, nhưng cụ dạy em mười năm nay, em không bao giờ hại cụ."
         }
-      ]
+      ],
+      "signature": "Người khai: Nguyễn Thị Ánh Tuyết"
     },
     {
       "id": "d08",
       "stage": 2,
       "type": "testimony",
-      "title": "Lời khai của quản lý phường Đỗ Trọng Toàn",
-      "date": "00h15 ngày 30/09/1993",
+      "title": "Lời khai của kép đàn Chu Văn Bình",
+      "header": [
+        "Công an thị xã Hưng Yên",
+        "Đội Cảnh sát hình sự"
+      ],
+      "heading": "Biên bản ghi lời khai",
+      "date": "08 giờ 30 ngày 1/10/1993",
+      "fields": [
+        {
+          "label": "Người khai",
+          "value": "Chu Văn Bình, 40 tuổi, học trò đàn đáy của cụ Cửu 15 năm"
+        }
+      ],
       "lines": [
         {
           "n": 1,
-          "text": "Tôi phụ trách quản lý sổ sách và tiền thù lao cho Kim Nguyệt Phường."
+          "speaker": "Điều tra viên",
+          "text": "Tuần trước cụ Cửu truất anh khỏi đội đi hội diễn tỉnh?"
         },
         {
           "n": 2,
-          "text": "Khoản tiền tài trợ tu sửa đàn cổ 3 triệu đồng vẫn nằm trong két sắt của hội quán, không thiếu một xu."
+          "speaker": "Chu Văn Bình",
+          "text": "Vâng. Cụ bảo tiếng đàn của tôi \"còn vướng bụi trần\". Tôi buồn, nhưng thầy nói thì trò nghe."
         },
         {
           "n": 3,
-          "text": "Cụ Cửu tính tình cổ hủ, hay xét nét người khác, nhưng chuyện tiền nong chúng tôi đã giải thích rõ ràng chiều qua."
+          "speaker": "Điều tra viên",
+          "text": "Từ 19:30 đến 20:00 anh ở đâu?"
         },
         {
           "n": 4,
-          "text": "Khoảng 19h20, tôi vào buồng hóa trang lấy danh sách tiết mục thì thấy buồng vắng tanh, chỉ có tráp gỗ của cụ Cửu đặt trên bàn phấn."
+          "speaker": "Chu Văn Bình",
+          "text": "Tôi đứng ở tiền đình hầu hương với thầy, rồi ra sân hút thuốc."
         },
         {
           "n": 5,
-          "text": "Tôi lấy giấy tờ rồi đi ra tiền sảnh tiếp khách, không gặp ai trong hành lang."
+          "speaker": "Điều tra viên",
+          "text": "Anh có vào buồng hoá trang không?"
+        },
+        {
+          "n": 6,
+          "speaker": "Chu Văn Bình",
+          "text": "Không. Tráp đàn của thầy, không ai được đụng vào. Tôi không vào buồng ấy lần nào."
         }
-      ]
+      ],
+      "signature": "Người khai: Chu Văn Bình"
     },
     {
       "id": "d09",
       "stage": 2,
       "type": "testimony",
-      "title": "Lời khai của bà Lê Thị Mùi (bán nước chè cổng đình)",
-      "date": "08h00 ngày 30/09/1993",
+      "title": "Lời khai của quản lý phường Đỗ Trọng Toàn",
+      "header": [
+        "Công an thị xã Hưng Yên",
+        "Đội Cảnh sát hình sự"
+      ],
+      "heading": "Biên bản ghi lời khai",
+      "date": "10 giờ 00 ngày 1/10/1993",
+      "fields": [
+        {
+          "label": "Người khai",
+          "value": "Đỗ Trọng Toàn, 52 tuổi, quản lý tài chính phường Kim Nguyệt"
+        }
+      ],
       "lines": [
         {
           "n": 1,
-          "text": "Tôi bán nước chè tươi và kẹo lạc ở gốc đa cổng đình này hơn hai chục năm rồi."
+          "speaker": "Điều tra viên",
+          "text": "Tối 30/9 ông làm gì?"
         },
         {
           "n": 2,
-          "text": "Tối qua chú kép Bình có ra ngồi uống bát nước chè tươi từ chập tối."
+          "speaker": "Đỗ Trọng Toàn",
+          "text": "Tôi lo lễ vật, đón khách. Từ bảy rưỡi đến tám giờ tôi đứng ở tiền đình thắp hương cùng cụ Cửu, không rời đi đâu."
         },
         {
           "n": 3,
-          "text": "Nhưng chú ấy bảo ngồi suốt là nói xạo đấy! Khoảng 19h25 chú ấy bảo đau bụng rồi lén đi vòng qua lối ngách phía sau đình."
+          "speaker": "Điều tra viên",
+          "text": "Ông có vào buồng hoá trang không?"
         },
         {
           "n": 4,
-          "text": "Cái ngách đó dẫn thẳng vào cửa buồng hóa trang, lối ấy tối om ít ai để ý."
+          "speaker": "Đỗ Trọng Toàn",
+          "text": "Không, buồng ấy của nghệ nhân."
         },
         {
           "n": 5,
-          "text": "Mãi đến gần 19h40 chú Bình mới quay lại quán, tay còn đang lau mồ hôi bằng cái khăn lụa màu vàng mỡ gà."
+          "speaker": "Điều tra viên",
+          "text": "Tiền tài trợ mua nhạc cụ năm nay thế nào?"
+        },
+        {
+          "n": 6,
+          "speaker": "Đỗ Trọng Toàn",
+          "text": "Sở Văn hoá cấp ba triệu, tôi mua đủ một bộ nhạc cụ mới, hoá đơn đầy đủ. Cụ Cửu đã xem và hài lòng."
         }
-      ]
+      ],
+      "signature": "Người khai: Đỗ Trọng Toàn"
     },
     {
       "id": "d10",
       "stage": 2,
-      "type": "report",
-      "title": "Bản kết quả hóa nghiệm tang vật hiện trường",
-      "date": "09h30 ngày 30/09/1993",
-      "content": "**KẾT QUẢ PHÂN TÍCH HÓA HỌC PHÒNG KỸ THUẬT HÌNH SỰ**\n\n1. **Chén trà sứ và bã trà đổ trên chiếu**: Âm tính với asen và các loại độc chất bảng A. Nước trà hoàn toàn tinh khiết, là trà sen tự nhiên.\n2. **Ấm trà gốm trong hậu trường**: Âm tính với độc chất.\n3. **Phím gảy đàn đáy bằng sừng trâu (thu trong tráp gỗ của cụ Cửu)**: Dương tính cực mạnh với asen trioxit (thạch tín tinh chế). Độc chất được trộn lẫn với một dung môi hữu cơ có độ sánh quánh là mật ong rừng nguyên chất, phết một lớp rất mỏng dọc theo phần chuôi cầm phím sừng."
+      "type": "testimony",
+      "title": "Lời khai của ông Phan Bá Lộc (con trai nạn nhân)",
+      "header": [
+        "Công an thị xã Hưng Yên",
+        "Đội Cảnh sát hình sự"
+      ],
+      "heading": "Biên bản ghi lời khai",
+      "date": "14 giờ 00 ngày 1/10/1993",
+      "fields": [
+        {
+          "label": "Người khai",
+          "value": "Phan Bá Lộc, 42 tuổi, buôn đồ cổ ở phố Hàng Bạc, Hà Nội"
+        }
+      ],
+      "lines": [
+        {
+          "n": 1,
+          "speaker": "Điều tra viên",
+          "text": "Ông muốn bán cây đàn gia bảo của cụ Cửu?"
+        },
+        {
+          "n": 2,
+          "speaker": "Phan Bá Lộc",
+          "text": "Có người Hồng Kông trả hai mươi lượng vàng. Tôi nói với bố, bố đuổi tôi ra khỏi nhà. Bố bảo đàn này chết theo bố."
+        },
+        {
+          "n": 3,
+          "speaker": "Điều tra viên",
+          "text": "Tối 30/9 ông ở đâu?"
+        },
+        {
+          "n": 4,
+          "speaker": "Phan Bá Lộc",
+          "text": "Tôi về dự lễ tế tổ, ngồi chiếu khách ở tiền đình cạnh ông thủ từ từ bảy giờ đến lúc bố ngã."
+        }
+      ],
+      "signature": "Người khai: Phan Bá Lộc"
     },
     {
       "id": "d11",
       "stage": 2,
       "type": "note",
-      "title": "Trích bút ký thói quen diễn tấu của nghệ nhân",
-      "date": "Tài liệu lưu trữ Kim Nguyệt Phường",
-      "content": "**GHI CHÉP VỀ NGÓN ĐÀN CỤ PHAN BÁ CỬU**\n\n'...Cụ Cửu chơi đàn đáy theo lối cổ truyền thất truyền. Trước mỗi bài hát, cụ có thói quen đặc trưng không ai lẫn được: cụ ngậm phím đàn bằng sừng trâu vào môi dưới ngâm nước bọt chừng nửa phút để làm mềm tơ tằm và giúp chuôi sừng dính khít ngón tay, đồng thời khử tĩnh điện trên dây tơ. Đây là bí quyết gia truyền mà chỉ những người đệ tử thân cận kề cận cụ nhiều năm mới tường tận...'"
+      "title": "Trích sổ tay ghi chép của đào nương Ánh Tuyết",
+      "paragraphs": [
+        "Sổ tay học đàn hát của Ánh Tuyết, chép lời thầy dạy (1983–1993):",
+        "— \"Phím sừng phải ấm, phải ẩm. Trước khi dạo, thầy ngậm phím vào miệng một lúc cho sừng mềm, tiếng mới ngọt.\" Cả phường đều biết thói quen này.",
+        "— Phím của thầy để trong tráp, nằm trên mặt nhung, thầy không cho ai chạm.",
+        "— Rằm tháng Tám: thầy thắp hương tổ ở tiền đình từ bảy rưỡi, tám giờ ra chiếu, dạo \"Lạc Nhạn\" mở hội."
+      ],
+      "signature": "Nguyễn Thị Ánh Tuyết"
     },
     {
       "id": "d12",
-      "stage": 3,
+      "stage": 2,
       "type": "report",
-      "title": "Biên bản khám xét khẩn cấp người và tư trang Chu Văn Bình",
-      "date": "11h00 ngày 30/09/1993",
-      "content": "**BIÊN BẢN KHÁM XÉT**\n\nKhám xét người nghi phạm Chu Văn Bình tại trụ sở Công an thị xã:\n- Trong túi áo cánh ngực thu giữ: Một khăn lụa tơ tằm màu mỡ gà có mùi thơm mật ong rừng ngai ngái, mép khăn có dính bột trắng mịn.\n- Trong túi gấm màu tím cài bên hông thu giữ: Một lọ thủy tinh nhỏ không nhãn mác, bên trong còn sót lại khoảng 1 gram bột trắng dạng kết tinh."
+      "title": "Kết quả hoá nghiệm tang vật",
+      "header": [
+        "Phân viện Khoa học hình sự",
+        "Bộ Nội vụ"
+      ],
+      "heading": "Kết quả hoá nghiệm",
+      "code": "603/HN",
+      "date": "Ngày 2/10/1993",
+      "sections": [
+        {
+          "heading": "1. Phím gảy sừng trâu",
+          "paragraphs": [
+            "Mặt phím có một lớp **mật ong** trộn **bột hạt mã tiền** (strychnin). Lượng còn lại đủ gây ngộ độc nặng cho một người già."
+          ]
+        },
+        {
+          "heading": "2. Chén trà, ấm trà sen",
+          "paragraphs": [
+            "**Không phát hiện chất độc.**"
+          ]
+        },
+        {
+          "heading": "3. Tráp gỗ",
+          "paragraphs": [
+            "Mặt nhung chỗ đặt phím có vệt mật ong. Không phát hiện bột độc ở chỗ khác trong tráp."
+          ]
+        }
+      ],
+      "signature": "Giám định viên: Thượng uý Nguyễn Văn Hải"
     },
     {
       "id": "d13",
-      "stage": 3,
-      "type": "photo",
-      "title": "Ảnh chụp tang vật: Khăn lụa và lọ bột độc thu giữ",
-      "date": "11h30 ngày 30/09/1993",
-      "image": "images/d13-khan-lua.webp",
-      "content": "Ảnh chụp tang vật thu giữ từ Chu Văn Bình: Chiếc khăn lụa màu mỡ gà có vệt ố quánh màu mật ong khô cứng và lọ thủy tinh nhỏ đựng bột asen trioxit (thạch tín)."
+      "stage": 2,
+      "type": "testimony",
+      "title": "Lời khai của bà Lê Thị Mùi (bán nước chè ở cổng đình)",
+      "header": [
+        "Công an thị xã Hưng Yên",
+        "Đội Cảnh sát hình sự"
+      ],
+      "heading": "Biên bản ghi lời khai",
+      "date": "16 giờ 00 ngày 1/10/1993",
+      "fields": [
+        {
+          "label": "Người khai",
+          "value": "Lê Thị Mùi, 61 tuổi, bán nước chè ngay ngoài cổng đình"
+        }
+      ],
+      "lines": [
+        {
+          "n": 1,
+          "speaker": "Điều tra viên",
+          "text": "Từ quán bà có nhìn thấy buồng hoá trang không?"
+        },
+        {
+          "n": 2,
+          "speaker": "Lê Thị Mùi",
+          "text": "Thấy cái cửa sổ nhỏ, có đèn. Bảy giờ ba lăm, trong buồng có người mặc áo the, đội khăn xếp ngồi gảy đàn đáy. Tôi lạ, vì cụ Cửu đang thắp hương ngoài tiền đình kia mà."
+        },
+        {
+          "n": 3,
+          "speaker": "Điều tra viên",
+          "text": "Người ấy ngồi bao lâu?"
+        },
+        {
+          "n": 4,
+          "speaker": "Lê Thị Mùi",
+          "text": "Năm phút. Tiếng đàn vụng, lạc phím mấy lần. Rồi đèn tắt một lúc."
+        },
+        {
+          "n": 5,
+          "speaker": "Điều tra viên",
+          "text": "Sau đó?"
+        },
+        {
+          "n": 6,
+          "speaker": "Lê Thị Mùi",
+          "text": "Tám giờ kém mười tám, có một người đeo kính, mặc sơ mi trắng, cầm cặp da vào buồng, cúi xuống cái án. Tám giờ kém mười ba thì ra, lấy khăn lau tay mãi."
+        }
+      ],
+      "signature": "Người khai: Lê Thị Mùi"
     },
     {
       "id": "d14",
       "stage": 3,
-      "type": "report",
-      "title": "Biên bản xác minh tại hiệu thuốc bắc Nam Hòa Đường",
-      "date": "14h00 ngày 30/09/1993",
-      "content": "**XÁC MINH NGUỒN GỐC THẠCH TÍN**\n\nChủ hiệu thuốc bắc Nam Hòa Đường (phố Hiến Nam) xác nhận: Ngày 27/09/1993 (hai ngày trước vụ án), kép đàn Chu Văn Bình có đến mua 1 lạng thạch tín sống lấy cớ để hòa vôi quét chân cột nhà gỗ chống mối mọt xông. Hiệu thuốc còn lưu hóa đơn và chữ ký nhận của Chu Văn Bình."
+      "type": "testimony",
+      "title": "Lời khai của ông Nguyễn Văn Thắm (thủ từ đình Hoa Nguyệt)",
+      "header": [
+        "Công an thị xã Hưng Yên",
+        "Đội Cảnh sát hình sự"
+      ],
+      "heading": "Biên bản ghi lời khai",
+      "date": "09 giờ 00 ngày 2/10/1993",
+      "fields": [
+        {
+          "label": "Người khai",
+          "value": "Nguyễn Văn Thắm, 70 tuổi, thủ từ đình Hoa Nguyệt"
+        }
+      ],
+      "lines": [
+        {
+          "n": 1,
+          "speaker": "Điều tra viên",
+          "text": "Từ 19:30 đến 20:00 ở tiền đình có những ai?"
+        },
+        {
+          "n": 2,
+          "speaker": "Nguyễn Văn Thắm",
+          "text": "Cụ Cửu khấn tổ, tôi đứng hầu. Anh Lộc con cụ ngồi chiếu khách cạnh tôi suốt, không đứng dậy lần nào."
+        },
+        {
+          "n": 3,
+          "speaker": "Điều tra viên",
+          "text": "Ông Toàn quản lý thì sao?"
+        },
+        {
+          "n": 4,
+          "speaker": "Nguyễn Văn Thắm",
+          "text": "Anh Toàn đứng được mười phút. Bảy giờ bốn mươi thì bảo đi lấy sổ công đức, tám giờ kém mười mới quay ra, tay còn cầm cái cặp da."
+        },
+        {
+          "n": 5,
+          "speaker": "Điều tra viên",
+          "text": "Anh Bình?"
+        },
+        {
+          "n": 6,
+          "speaker": "Nguyễn Văn Thắm",
+          "text": "Bình đứng ở cửa tiền đình lúc đầu, rồi lẩn đâu mất chừng bảy giờ ba mươi lăm, tám giờ mới thấy lại."
+        }
+      ],
+      "signature": "Người khai: Nguyễn Văn Thắm"
     },
     {
       "id": "d15",
       "stage": 3,
+      "type": "testimony",
+      "title": "Biên bản ghi lời khai lần hai của Chu Văn Bình",
+      "header": [
+        "Công an thị xã Hưng Yên",
+        "Đội Cảnh sát hình sự"
+      ],
+      "heading": "Biên bản ghi lời khai",
+      "date": "14 giờ 00 ngày 2/10/1993",
+      "fields": [
+        {
+          "label": "Người khai",
+          "value": "Chu Văn Bình, 40 tuổi"
+        }
+      ],
+      "lines": [
+        {
+          "n": 1,
+          "speaker": "Điều tra viên",
+          "text": "Bà Mùi thấy người mặc áo the gảy đàn trong buồng hoá trang lúc 19:35."
+        },
+        {
+          "n": 2,
+          "speaker": "Chu Văn Bình",
+          "text": "(Cúi đầu) Là tôi. Mười lăm năm tôi chưa từng được chạm vào cây đàn của thầy. Tôi chỉ muốn gảy thử một lần trước khi bị loại khỏi hội diễn."
+        },
+        {
+          "n": 3,
+          "speaker": "Điều tra viên",
+          "text": "Anh gảy bằng gì?"
+        },
+        {
+          "n": 4,
+          "speaker": "Chu Văn Bình",
+          "text": "Bằng ngón tay. Tôi không dám đụng vào phím của thầy. Lúc tôi mở tráp, cái phím nằm trên nhung, khô, xỉn như mọi ngày."
+        },
+        {
+          "n": 5,
+          "speaker": "Điều tra viên",
+          "text": "Anh ra lúc nào?"
+        },
+        {
+          "n": 6,
+          "speaker": "Chu Văn Bình",
+          "text": "Bảy giờ bốn mươi. Tôi đậy tráp, tắt đèn, ra sân đứng một mình đến tám giờ. Lúc thầy ngã, tôi thấy cái phím rơi trên chiếu bóng lên, tôi đã thấy lạ."
+        }
+      ],
+      "signature": "Người khai: Chu Văn Bình"
+    },
+    {
+      "id": "d16",
+      "stage": 3,
       "type": "report",
-      "title": "Bản tự thú của Chu Văn Bình",
-      "date": "16h30 ngày 30/09/1993",
-      "content": "**LỜI THÚ NHẬN TỘI LỖI**\n\n'Tôi đã theo thầy Cửu 12 năm, cung phụng thầy như cha đẻ. Vậy mà hội diễn tỉnh lần này thầy tuyên bố trước mặt các quan khách là tay đàn tôi còn non, không xứng đứng tên đệ tử chân truyền, thầy định truyền lại cây đàn đáy cổ cho đứa khác. Tôi căm thù đến mù quáng. Tôi biết rõ thầy luôn ngậm phím đàn sừng trâu vào miệng trước khi dạo nhạc, nên tôi trộn thạch tín với mật ong bôi vào chuôi phím rồi cố ý làm đổ chén trà sen của Ánh Tuyết để đổ vạ cho cô ta...'"
+      "title": "Biên bản xác minh tại hiệu thuốc bắc Nam Hoà Đường",
+      "header": [
+        "Công an thị xã Hưng Yên",
+        "Đội Cảnh sát hình sự"
+      ],
+      "heading": "Biên bản xác minh",
+      "code": "34/XM",
+      "date": "Ngày 3/10/1993",
+      "sections": [
+        {
+          "heading": "Kết quả",
+          "paragraphs": [
+            "Sổ bán hàng của hiệu Nam Hoà Đường (phố Bắc Hoà, thị xã Hưng Yên) ngày 22/9/1993: \"Mã tiền chế, 20 g, ngâm rượu xoa bóp. Người mua: Toàn, phường hát Kim Nguyệt.\"",
+            "Ông lang Hoàng Văn Quý nhớ người mua đeo kính, cầm cặp da, hỏi kỹ \"uống nhầm thì bao lâu mới phát\".",
+            "Mã tiền là vị thuốc độc bảng A, chỉ bán theo yêu cầu, ghi sổ."
+          ]
+        }
+      ],
+      "signers": [
+        {
+          "role": "Điều tra viên",
+          "name": "Đại uý Trần Văn Kiên"
+        }
+      ]
+    },
+    {
+      "id": "d17",
+      "stage": 3,
+      "type": "testimony",
+      "title": "Biên bản ghi lời khai lần hai của Đỗ Trọng Toàn",
+      "header": [
+        "Công an thị xã Hưng Yên",
+        "Đội Cảnh sát hình sự"
+      ],
+      "heading": "Biên bản ghi lời khai",
+      "date": "16 giờ 00 ngày 3/10/1993",
+      "fields": [
+        {
+          "label": "Người khai",
+          "value": "Đỗ Trọng Toàn, 52 tuổi"
+        }
+      ],
+      "lines": [
+        {
+          "n": 1,
+          "speaker": "Điều tra viên",
+          "text": "Ông thủ từ nói ông rời tiền đình từ 19:40 đến 19:50."
+        },
+        {
+          "n": 2,
+          "speaker": "Đỗ Trọng Toàn",
+          "text": "À, tôi đi lấy sổ công đức để ghi tiền khách cúng. Quên không kể."
+        },
+        {
+          "n": 3,
+          "speaker": "Điều tra viên",
+          "text": "Sổ công đức để ở đâu?"
+        },
+        {
+          "n": 4,
+          "speaker": "Đỗ Trọng Toàn",
+          "text": "Ở phòng thủ từ, sau tiền đình. Tôi không vào buồng hoá trang."
+        },
+        {
+          "n": 5,
+          "speaker": "Điều tra viên",
+          "text": "Ông mua mã tiền ở Nam Hoà Đường làm gì?"
+        },
+        {
+          "n": 6,
+          "speaker": "Đỗ Trọng Toàn",
+          "text": "Ngâm rượu xoa bóp chữa đau lưng. Ai chẳng ngâm."
+        }
+      ],
+      "signature": "Người khai: Đỗ Trọng Toàn"
+    },
+    {
+      "id": "d18",
+      "stage": 4,
+      "type": "letter",
+      "title": "Thư cụ Phan Bá Cửu gửi Sở Văn hoá Thông tin Hải Hưng (bản nháp)",
+      "date": "Phố Hiến, ngày 27 tháng 9 năm 1993",
+      "greeting": "Kính gửi: Sở Văn hoá Thông tin tỉnh Hải Hưng",
+      "paragraphs": [
+        "Tôi là Phan Bá Cửu, trưởng phường Kim Nguyệt. Năm nay phường nhận ba triệu đồng tiền tài trợ mua nhạc cụ. Bộ nhạc cụ quản lý Đỗ Trọng Toàn mua về là đàn đáy dây nilon, phách gỗ tạp, hoá đơn ghi giá gấp ba giá chợ.",
+        "Tôi đã hỏi hiệu nhạc cụ Hàng Gai: bộ ấy chỉ đáng chừng chín trăm nghìn. Anh Toàn xin tôi thư thả đến sau hội diễn tỉnh. Tôi không thể.",
+        "Sau đêm tế tổ rằm tháng Tám, tôi sẽ tự mang thư và hoá đơn lên Sở. Kính mong Sở cử người kiểm tra."
+      ],
+      "signature": "Phan Bá Cửu (thư tìm thấy trong ngăn đáy tráp đàn, dưới lớp nhung)"
+    },
+    {
+      "id": "d19",
+      "stage": 4,
+      "type": "evidence",
+      "title": "Biên bản khám xét cặp da của Đỗ Trọng Toàn",
+      "code": "TV-13",
+      "image": "images/d13-khan-lua.webp",
+      "imageCaption": "Khăn lụa vàng dính vết mật ong và túi gấm thêu chữ Thọ thu trong cặp da của Đỗ Trọng Toàn.",
+      "paragraphs": [
+        "1. Một khăn tay lụa vàng có vết mật ong khô; hoá nghiệm có strychnin.",
+        "2. Một túi gấm thêu chữ Thọ, bên trong còn khoảng 12 g bột mã tiền chế, bọc giấy của hiệu Nam Hoà Đường.",
+        "3. Hoá đơn mua bộ nhạc cụ ghi 2.950.000 đồng; hiệu Hàng Gai xác nhận chỉ bán 900.000 đồng, hoá đơn do người mua tự ghi.",
+        "4. Không có chai rượu thuốc ngâm mã tiền nào ở nhà Toàn."
+      ]
     }
   ],
   "questions": [
     {
       "id": "q1",
       "stage": 1,
-      "type": "evidence",
-      "title": "Phương thức trúng độc niêm mạc miệng",
-      "intro": "Nghệ nhân Phan Bá Cửu gục chết ngay trong lúc biểu diễn đêm hội rằm Phố Hiến. Cơ quan điều tra cần xác định đường xâm nhập của độc chất.",
-      "prompt": "Ghim 2 tài liệu chứng minh chất độc gây tử vong không nằm trong dịch dạ dày mà tiếp xúc trực tiếp qua niêm mạc miệng và liên quan đến vật dụng nhạc cụ của cụ Cửu.",
-      "need": 2,
+      "type": "choice",
+      "title": "Chén trà sen hay thứ khác?",
+      "prompt": "Cả phường nghi chén trà sen có độc. Theo hồ sơ đang mở, nhận định nào đứng vững?",
+      "options": [
+        "Cụ Cửu uống chén trà sen có độc do đào nương dâng, rồi co giật và gục ngã.",
+        "Cụ Cửu không uống trà; chất độc vào qua miệng bằng một đường khác, và triệu chứng là của mã tiền.",
+        "Cụ Cửu tuổi cao, xúc động khi diễn nên lên cơn đột quỵ; không có chất độc nào."
+      ],
       "answer": [
-        "d04",
-        "d05"
+        1
       ],
+      "nudges": {
+        "0": {
+          "message": "Pháp y nói gì về nước trà trong dạ dày?"
+        },
+        "2": {
+          "message": "Pháp y mô tả triệu chứng của chất gì?"
+        }
+      },
       "hints": [
-        "Ảnh chụp cây đàn đáy và hộp tráp gỗ đựng móng gảy của nghệ nhân.",
-        "Biên bản giám định pháp y sơ bộ về niêm mạc lưỡi và khoang miệng."
+        "Đọc kết luận pháp y.",
+        "Dạ dày có trà không? Chất độc tập trung ở đâu?",
+        "d05: strychnin (mã tiền), cao nhất ở lưỡi và vòm miệng, dạ dày không có trà."
       ],
+      "solved": "Không phải chén trà. Chất độc vào qua miệng, nhưng không phải bằng đường uống.",
       "explanation": [
-        "Tài liệu d04 chụp cây đàn đáy và các phím đàn nơi nghệ nhân tiếp xúc ngón tay và móng gảy.",
-        "Tài liệu d05 xác nhận dịch dạ dày không có độc nhưng niêm mạc môi và đầu lưỡi phù nề hoại tử do tiếp xúc chất kịch độc alcaloid."
+        {
+          "title": "Chất độc",
+          "body": [
+            "d05: co giật, cứng hàm, tỉnh táo: ngộ độc strychnin từ hạt mã tiền."
+          ]
+        },
+        {
+          "title": "Không phải trà",
+          "body": [
+            "d05: dạ dày không có nước trà."
+          ]
+        },
+        {
+          "title": "Ở miệng",
+          "body": [
+            "d05: nồng độ cao nhất ở niêm mạc lưỡi và vòm miệng."
+          ]
+        }
       ]
     },
     {
       "id": "q2",
-      "stage": 2,
-      "type": "line",
-      "title": "Lời khai dối trá về buồng hóa trang",
-      "intro": "Các đào nương và kép đàn tại đình Hoa Nguyệt đều được lấy lời khai về hành tung trước giờ biểu diễn.",
-      "prompt": "Đối chiếu lời khai của các nghệ nhân với nhân chứng bán nước chè cổng đình, hãy chỉ ra dòng lời khai của nghi phạm chối bỏ việc bước chân vào buồng hóa trang trước giờ diễn xướng nhưng thực tế đã bị nhìn thấy?",
+      "stage": 1,
+      "type": "evidence",
+      "need": 2,
+      "title": "Chén trà chưa nhấp",
+      "prompt": "Ghim 2 tài liệu cho thấy chén trà sen không phải nguồn chất độc.",
       "answer": [
-        "d07:008"
+        "d05",
+        "d07"
+      ],
+      "nudges": [
+        {
+          "any": [
+            "d02"
+          ],
+          "near": true,
+          "message": "Biên bản tả chén trà đổ. Cần tài liệu nói cụ có uống trà hay không."
+        }
       ],
       "hints": [
-        "Rà soát lời khai của kép đàn phụ để tìm câu khẳng định ngồi ở sân đình xem hát chứ không vào hậu trường.",
-        "Đối chiếu với lời khai của bà bán nước chè nhìn thấy bóng người bước vào buồng hóa trang lúc chạng vạng."
+        "Một kết luận pháp y, một lời khai.",
+        "Cụ đã nhấp trà chưa? Dạ dày có trà không?",
+        "d05: dạ dày không có trà. d07: cụ gật đầu nhưng chưa nhấp vì đang gảy; chén đổ khi cụ co giật."
       ],
+      "solved": "Cụ Cửu chưa từng nhấp chén trà. Nó đổ vì cụ co giật, không phải ngược lại.",
       "explanation": [
-        "Tại d07 dòng 008, Chu Văn Bình khai: 'Suốt từ 18h30 đến khi cụ Cửu lên sân khấu, tôi ngồi uống nước chè ở gốc đa ngoài cổng đình nghe hát, tuyệt đối không hề bước chân vào buồng hóa trang của cụ Cửu'. Lời này bị bà Mùi d09 vạch trần khi thấy Bình lẻn vào buồng hóa trang lúc 18h45."
+        {
+          "title": "Pháp y",
+          "body": [
+            "d05: dạ dày không có trà."
+          ]
+        },
+        {
+          "title": "Lời đào nương",
+          "body": [
+            "d07: cụ chưa nhấp vì đang gảy; mười phút sau co giật, gạt đổ chén."
+          ]
+        },
+        {
+          "title": "Còn lại",
+          "body": [
+            "d02: phím gảy sừng trâu bóng, hơi dính tay."
+          ]
+        }
       ]
     },
     {
       "id": "q3",
       "stage": 2,
       "type": "evidence",
-      "title": "Cơ chế tẩm độc phím đàn và thói quen diễn tấu",
-      "intro": "Ban chuyên án kiểm tra kỹ lưỡng các nhạc cụ và thói quen của nghệ nhân trước khi so dây.",
-      "prompt": "Ghim 2 tài liệu chứng minh chất độc lá ngón được bôi tinh vi lên phím đàn đáy số 3 và thói quen liếm ngón tay vuốt phím của cụ Phan Bá Cửu.",
       "need": 2,
+      "title": "Chiếc phím sừng",
+      "prompt": "Ghim 2 tài liệu cho thấy chất độc đã vào miệng cụ Cửu bằng đường nào.",
       "answer": [
-        "d10",
-        "d11"
+        "d11",
+        "d12"
+      ],
+      "nudges": [
+        {
+          "any": [
+            "d04"
+          ],
+          "near": true,
+          "message": "Ảnh cho thấy chiếc phím. Cần tài liệu về thói quen của cụ và kết quả hoá nghiệm."
+        }
       ],
       "hints": [
-        "Bản kết quả hóa nghiệm tang vật xác định dư lượng nhựa độc lá ngón trên phím đàn.",
-        "Trích bút ký về thói quen ngậm móng gảy và liếm đầu ngón tay làm ẩm phím khi so dây của cụ Cửu."
+        "Một ghi chép về thói quen, một kết quả hoá nghiệm.",
+        "Cụ làm gì với phím trước khi dạo đàn? Trên phím có gì?",
+        "d11: cụ ngậm phím vào miệng trước khi dạo, cả phường biết. d12: mặt phím có mật ong trộn bột mã tiền; trà sạch."
       ],
+      "solved": "Ai đó đã tẩm mật ong trộn mã tiền lên chiếc phím mà cụ luôn ngậm trước khi dạo đàn.",
       "explanation": [
-        "Tài liệu d10 phát hiện alcaloid độc tố lá ngón bám trên bề mặt phím đàn số 3.",
-        "Tài liệu d11 ghi chép thói quen nghề nghiệp của cụ Cửu là luôn liếm đầu ngón tay trỏ miết qua phím số 3 trước khi đệm bài hát chầu văn, khiến chất độc ngấm thẳng qua niêm mạc lưỡi."
+        {
+          "title": "Thói quen",
+          "body": [
+            "d11: cụ ngậm phím cho sừng mềm, cả phường biết; phím để trong tráp."
+          ]
+        },
+        {
+          "title": "Hoá nghiệm",
+          "body": [
+            "d12: mật ong trộn bột mã tiền trên phím; vệt mật ong trên nhung tráp."
+          ]
+        },
+        {
+          "title": "Khi nào",
+          "body": [
+            "d11: cụ thắp hương ở tiền đình từ 19:30, tráp để trong buồng hoá trang."
+          ]
+        }
       ]
     },
     {
       "id": "q4",
-      "stage": 3,
-      "type": "evidence",
-      "title": "Tang vật bột độc và đơn thuốc bắc",
-      "intro": "Khám xét tư trang nghi phạm và xác minh các hiệu thuốc bắc trên địa bàn Phố Hiến.",
-      "prompt": "Ghim 2 tài liệu chứng minh nguồn gốc chất độc lá ngón thu giữ trong tư trang nghi phạm và chứng cứ xác minh việc bí mật mua độc dược tại hiệu thuốc bắc Nam Hòa Đường.",
-      "need": 2,
+      "stage": 2,
+      "type": "line",
+      "title": "Tiếng đàn vụng trong buồng hoá trang",
+      "prompt": "Chỉ ra dòng khai bị lời bà bán nước ở cổng đình bác bỏ.",
       "answer": [
-        "d13",
-        "d14"
+        "d08:006"
       ],
+      "nudges": {
+        "d08:004": {
+          "near": true,
+          "message": "Câu này mơ hồ. Tìm câu khẳng định thẳng về buồng hoá trang."
+        },
+        "d09:004": {
+          "message": "Bà Mùi có nhắc tới người đeo kính, nhưng chưa nói rõ là ai. Người mặc áo the đội khăn xếp thì sao?"
+        }
+      },
       "hints": [
-        "Ảnh tang vật chiếc khăn lụa tẩm nhựa độc và lọ bột lá ngón thu trong hòm đồ diễn của nghi phạm.",
-        "Biên bản xác minh tại hiệu thuốc bắc Nam Hòa Đường về người mua vị thuốc lá ngón sấy khô."
+        "Bà Mùi thấy ai gảy đàn lúc 19:35?",
+        "Trong phường, ngoài cụ Cửu, ai mặc áo the đội khăn xếp gảy đàn đáy?",
+        "d08 dòng 6: không vào buồng lần nào. d13: 19:35 người mặc áo the, khăn xếp gảy đàn vụng trong buồng. d06: Bình là kép đàn mặc áo the, khăn xếp."
       ],
+      "solved": "Bình đã vào buồng hoá trang lúc 19:35. Nhưng bà Mùi còn thấy một người khác vào sau.",
       "explanation": [
-        "Tài liệu d13 chụp chiếc khăn lụa lau đàn dính nhựa độc và lọ bột lá ngón thu trong túi áo của Chu Văn Bình.",
-        "Tài liệu d14 xác nhận Bình đã bí mật đến hiệu thuốc Nam Hòa Đường mua lá ngón khô lấy cớ để bẫy chuột phá kho thóc."
+        {
+          "title": "Câu khai",
+          "body": [
+            "d08 dòng 6: không vào buồng hoá trang lần nào."
+          ]
+        },
+        {
+          "title": "Bị bác",
+          "body": [
+            "d13: 19:35 người mặc áo the, khăn xếp gảy đàn vụng; cụ Cửu đang ở tiền đình. d06: Bình là kép đàn mặc áo the."
+          ]
+        },
+        {
+          "title": "Người thứ hai",
+          "body": [
+            "d13: 19:42 người đeo kính, sơ mi trắng, cầm cặp da vào, 19:47 ra, lau tay mãi."
+          ]
+        }
       ]
     },
     {
       "id": "q5",
       "stage": 3,
+      "type": "line",
+      "title": "Mười phút đi lấy sổ",
+      "prompt": "Chỉ ra dòng khai bị lời ông thủ từ bác bỏ.",
+      "answer": [
+        "d09:002"
+      ],
+      "nudges": {
+        "d10:004": {
+          "message": "Ông thủ từ xác nhận ông Lộc ngồi cạnh suốt."
+        },
+        "d08:004": {
+          "near": true,
+          "message": "Lời Bình cũng bị bác, nhưng đã bị bác ở vòng trước. Tìm người khác."
+        }
+      },
+      "hints": [
+        "Ông thủ từ nói ai rời tiền đình lúc 19:40?",
+        "Ai khai đứng ở tiền đình suốt?",
+        "d09 dòng 2: đứng ở tiền đình 19:30–20:00 không rời đi. d14: 19:40 ông Toàn đi \"lấy sổ công đức\", 19:50 mới quay ra, tay cầm cặp da."
+      ],
+      "solved": "Ông Toàn rời tiền đình mười phút, đúng lúc bà Mùi thấy người đeo kính cầm cặp da vào buồng hoá trang.",
+      "explanation": [
+        {
+          "title": "Câu khai",
+          "body": [
+            "d09 dòng 2: không rời tiền đình."
+          ]
+        },
+        {
+          "title": "Bị bác",
+          "body": [
+            "d14: 19:40–19:50 ông Toàn rời tiền đình, quay ra tay cầm cặp da."
+          ]
+        },
+        {
+          "title": "Khớp",
+          "body": [
+            "d13: 19:42–19:47 người đeo kính, sơ mi trắng, cầm cặp da vào buồng hoá trang."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q6",
+      "stage": 3,
+      "type": "evidence",
+      "need": 2,
+      "title": "Phím còn khô lúc 19:40",
+      "prompt": "Ghim 2 tài liệu cho thấy chiếc phím bị tẩm độc sau khi Bình rời buồng, và ai vào buồng sau đó.",
+      "answer": [
+        "d13",
+        "d15"
+      ],
+      "nudges": [
+        {
+          "any": [
+            "d14"
+          ],
+          "near": true,
+          "message": "Ông thủ từ cho biết ai rời tiền đình. Cần tài liệu cho thấy ai vào buồng và chiếc phím lúc ấy thế nào."
+        }
+      ],
+      "hints": [
+        "Một lời khai của người ngồi ngoài cổng, một lời khai của người gảy đàn.",
+        "Lúc Bình mở tráp, phím thế nào? Ai vào buồng sau Bình?",
+        "d15: 19:35–19:40 phím trên nhung khô, xỉn. d13: 19:42–19:47 người đeo kính cầm cặp da vào buồng, ra lau tay mãi."
+      ],
+      "solved": "Chiếc phím còn khô lúc 19:40. Năm phút sau, người đeo kính cầm cặp da đã ở trong buồng.",
+      "explanation": [
+        {
+          "title": "Khô lúc 19:40",
+          "body": [
+            "d15: Bình gảy bằng ngón tay, thấy phím khô, xỉn như mọi ngày."
+          ]
+        },
+        {
+          "title": "Người vào sau",
+          "body": [
+            "d13: 19:42–19:47 người đeo kính, sơ mi trắng, cầm cặp da; ra lau tay bằng khăn."
+          ]
+        },
+        {
+          "title": "Lúc cụ ngã",
+          "body": [
+            "d15: phím trên chiếu bóng lên. d12: mật ong trộn mã tiền."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q7",
+      "stage": 4,
+      "type": "evidence",
+      "need": 2,
+      "title": "Ba triệu tiền nhạc cụ",
+      "prompt": "Ghim 2 tài liệu cho thấy vì sao ông Toàn cần cụ Cửu im lặng trước khi lên Sở, và tang vật nối ông với chiếc phím.",
+      "answer": [
+        "d18",
+        "d19"
+      ],
+      "nudges": [
+        {
+          "any": [
+            "d16"
+          ],
+          "near": true,
+          "message": "Sổ hiệu thuốc cho biết ai mua mã tiền. Cần tài liệu về động cơ và tang vật tìm thấy."
+        }
+      ],
+      "hints": [
+        "Một lá thư, một biên bản khám xét.",
+        "Cụ Cửu định làm gì sau đêm tế tổ? Trong cặp da ông Toàn có gì?",
+        "d18: hoá đơn nhạc cụ gấp ba, cụ định mang lên Sở sau đêm rằm. d19: khăn lụa dính mật ong có strychnin, túi gấm còn bột mã tiền, hoá đơn khống."
+      ],
+      "solved": "Cụ Cửu sắp mang hoá đơn khống lên Sở. Ông Toàn chọn đêm rằm, lúc cả phường đổ dồn mắt vào chén trà.",
+      "explanation": [
+        {
+          "title": "Động cơ",
+          "body": [
+            "d18: bộ nhạc cụ chỉ đáng 900 nghìn, hoá đơn ghi gần 3 triệu; cụ sẽ lên Sở sau đêm tế tổ."
+          ]
+        },
+        {
+          "title": "Tang vật",
+          "body": [
+            "d19: khăn lụa dính mật ong có strychnin, túi gấm còn mã tiền chế của Nam Hoà Đường."
+          ]
+        },
+        {
+          "title": "Lời nói dối",
+          "body": [
+            "d17: \"ngâm rượu xoa bóp\"; d19: không có chai rượu thuốc nào ở nhà."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q-accuse",
+      "stage": 4,
       "type": "choice",
-      "title": "Bản kết luận điều tra toàn diện vụ án tiếng đàn đáy Phố Hiến",
-      "intro": "Toàn bộ chứng cứ về chất độc trên phím đàn, lời khai dối trá và tang vật hiệu thuốc bắc đã phơi bày chân tướng kẻ thủ ác.",
-      "prompt": "Dựa vào toàn bộ hồ sơ, ai là thủ phạm đã đầu độc sát hại cụ Phan Bá Cửu, bằng thủ đoạn nào và vì động cơ gì?",
+      "cards": [
+        "binh",
+        "tuyet",
+        "toan",
+        "loc"
+      ],
+      "title": "Chỉ mặt thủ phạm",
+      "prompt": "Ai đã đầu độc cụ Phan Bá Cửu? Chọn một người.",
       "options": [
-        "Chu Văn Bình do ghen ghét tài năng và đố kỵ danh tiếng nghệ nhân nhân dân của cụ Cửu, sợ bị tước vai kép chính trong chuyến lưu diễn nước ngoài, đã mua lá ngón bôi lên phím đàn số 3 lợi dụng thói quen liếm ngón tay của cụ để đầu độc sát hại.",
-        "Đào nương Nguyễn Thị Ánh Tuyết do mâu thuẫn tình cảm bị từ chối, đã tẩm độc vào chén trà gừng mời cụ Cửu uống trước giờ diễn xướng.",
-        "Quản lý phường Đỗ Trọng Toàn do nợ nần tiền thù lao biểu diễn, đã lén tẩm độc vào micro trên sân khấu nhằm chiếm đoạt quỹ đoàn.",
-        "Một kẻ buôn cổ vật lạ mặt đột nhập đình Hoa Nguyệt định trộm cây đàn đáy cổ nhưng bị phát hiện nên đã hạ độc cụ Cửu."
+        "Chu Văn Bình",
+        "Nguyễn Thị Ánh Tuyết",
+        "Đỗ Trọng Toàn",
+        "Phan Bá Lộc"
+      ],
+      "answer": [
+        2
+      ],
+      "nudges": {
+        "0": {
+          "message": "Bình vào buồng trước, lúc phím còn khô (d15). Người vào sau là ai (d13, d14)?"
+        },
+        "1": {
+          "message": "Chén trà sạch, cụ chưa nhấp (d05, d07, d12)."
+        },
+        "3": {
+          "message": "Ông Lộc ngồi cạnh ông thủ từ suốt từ 19:00 (d14)."
+        }
+      },
+      "hints": [
+        "Người làm cần: biết thói quen ngậm phím, vào buồng sau 19:40, có mã tiền và mật ong.",
+        "Ai đeo kính, cầm cặp da, rời tiền đình 19:40–19:50?",
+        "Ông Toàn: rời tiền đình (d14), vào buồng (d13), mua mã tiền (d16), khăn và túi gấm (d19), hoá đơn khống (d18)."
+      ],
+      "solved": "Đỗ Trọng Toàn.",
+      "explanation": [
+        {
+          "title": "Thời điểm",
+          "body": [
+            "d13, d14, d15: phím khô lúc 19:40; 19:42–19:47 ông Toàn ở trong buồng."
+          ]
+        },
+        {
+          "title": "Chất độc",
+          "body": [
+            "d16, d19: mua mã tiền chế ngày 22/9; còn 12 g trong túi gấm; khăn dính mật ong có strychnin."
+          ]
+        },
+        {
+          "title": "Động cơ",
+          "body": [
+            "d18: hoá đơn nhạc cụ khống, cụ Cửu sắp lên Sở."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q8",
+      "stage": 4,
+      "type": "choice",
+      "title": "Kết luận điều tra",
+      "prompt": "Chọn bản kết luận đúng với hồ sơ ở mọi chi tiết.",
+      "options": [
+        "Ông Toàn ghi hoá đơn khống gấp ba tiền mua nhạc cụ, biết cụ Cửu sẽ mang hoá đơn lên Sở sau đêm rằm. Ông mua mã tiền chế ở Nam Hoà Đường, trộn với mật ong; lúc cụ thắp hương ở tiền đình, 19:42 ông vào buồng hoá trang phết lên chiếc phím sừng mà cụ luôn ngậm trước khi dạo đàn. 20:05 cụ ngậm phím, dạo \"Lạc Nhạn\" rồi co giật; chén trà đổ chỉ khiến mọi người nghi oan đào nương.",
+        "Bình hận vì bị truất khỏi hội diễn tỉnh, lẻn vào buồng hoá trang lúc 19:35 tẩm mã tiền lên phím đàn của thầy rồi gảy thử để che tiếng động, sau đó làm đổ chén trà sen của Ánh Tuyết lúc cụ ngã để đổ tội cho đào nương; ông Toàn chỉ vào buồng lấy sổ công đức, còn túi mã tiền trong cặp da là Bình nhét vào để đổ tội.",
+        "Ánh Tuyết giận vì bị cụ mắng trước cả phường trong buổi tổng duyệt, bỏ mã tiền vào chén trà sen dâng lên lúc 20:10; cụ nhấp một ngụm rồi co giật, chén trà đổ để xoá dấu vết, còn mật ong trên phím là do cụ tự bôi cho sừng mềm, và người đeo kính bà Mùi thấy chỉ vào buồng tìm khăn lau.",
+        "Ông Lộc muốn bán cây đàn gia bảo cho người Hồng Kông, nhờ ông Toàn mua mã tiền rồi tự tay tẩm lên phím đàn của bố trước buổi lễ, định nhân lúc lộn xộn mang cây đàn đi; ông Toàn chỉ mua thuốc giúp mà không biết dùng làm gì, rồi sợ liên luỵ nên giấu túi thuốc và khăn lau trong cặp."
       ],
       "answer": [
         0
       ],
+      "exam": {
+        "examiner": "Kiểm sát viên Đỗ Thị Hằng",
+        "intro": "Trình bày kết luận trước kiểm sát viên: trả lời lần lượt từng câu hỏi bằng lời của mình. Không dùng được AI thì bấm “Trả lời bằng trắc nghiệm” để chọn bản kết luận đúng."
+      },
+      "nudges": {
+        "1": {
+          "message": "Lúc Bình ra khỏi buồng, phím vẫn khô (d15). Người vào sau là ông Toàn (d13, d14)."
+        },
+        "2": {
+          "message": "Chén trà sạch, cụ chưa nhấp (d05, d07, d12)."
+        },
+        "3": {
+          "message": "Ông Lộc ngồi cạnh thủ từ suốt (d14). Khăn và túi mã tiền nằm trong cặp ông Toàn (d19)."
+        }
+      },
       "hints": [
-        "Ai là người biết rõ thói quen vuốt phím số 3 của cụ Cửu và có mặt ở buồng hóa trang trước giờ diễn?",
-        "Đối chiếu tang vật khăn lụa tẩm độc và chứng cứ mua lá ngón tại hiệu thuốc bắc Nam Hòa Đường."
+        "Đối chiếu: phím khô lúc 19:40 (d15), ai vào buồng sau đó (d13, d14), ai mua mã tiền (d16).",
+        "Chỉ một phương án có hoá đơn khống, phím sừng và thời điểm 19:42.",
+        "Phương án A."
       ],
+      "solved": "Hồ sơ khép lại với tên Đỗ Trọng Toàn.",
       "explanation": [
-        "Chu Văn Bình là thủ phạm duy nhất. Động cơ đố kỵ nghệ thuật tàn nhẫn kết hợp thủ đoạn tẩm độc phím đàn tinh vi đã bị vạch trần bởi tang vật khăn lụa và lời chứng của hiệu thuốc bắc."
+        {
+          "title": "Cách làm",
+          "body": [
+            "d11, d12, d13: mật ong trộn mã tiền trên phím; cụ ngậm phím trước khi dạo."
+          ]
+        },
+        {
+          "title": "Thời điểm",
+          "body": [
+            "d14, d15: phím khô lúc 19:40; ông Toàn rời tiền đình 19:40–19:50."
+          ]
+        },
+        {
+          "title": "Vì sao",
+          "body": [
+            "d18, d19: hoá đơn nhạc cụ khống; cụ sắp lên Sở."
+          ]
+        }
+      ]
+    }
+  ],
+  "beats": [
+    {
+      "stage": 2,
+      "kicker": "Ngày 1–2/10/1993 · Đình Hoa Nguyệt",
+      "title": "Chiếc phím sừng",
+      "voice": "audio/beat-2.mp3",
+      "paragraphs": [
+        "Chén trà sen vô tội. Chất độc đã vào miệng cụ Cửu bằng một đường khác.",
+        "Đại uý Kiên mở cuốn sổ tay học đàn của đào nương, gửi chiếc phím sừng đi hoá nghiệm, và ngồi xuống quán nước của bà Mùi ở cổng đình.",
+        "Ai đã vào buồng hoá trang khi cụ Cửu đang thắp hương?"
+      ]
+    },
+    {
+      "stage": 3,
+      "kicker": "Ngày 2–3/10/1993 · Phố Bắc Hoà",
+      "title": "Năm phút trong buồng hoá trang",
+      "voice": "audio/beat-3.mp3",
+      "paragraphs": [
+        "Ông thủ từ nhớ rõ ai đứng ở tiền đình, ai rời đi. Người học trò mười lăm năm xin được khai lại.",
+        "Ở phố Bắc Hoà, một hiệu thuốc bắc còn giữ sổ bán hàng.",
+        "Chiếc phím còn khô lúc nào, và ai cầm nó sau đó?"
+      ]
+    },
+    {
+      "stage": 4,
+      "kicker": "Ngày 4/10/1993",
+      "title": "Ngăn đáy chiếc tráp",
+      "voice": "audio/beat-4.mp3",
+      "paragraphs": [
+        "Dưới lớp nhung đỏ của chiếc tráp đàn, có một lá thư chưa kịp gửi.",
+        "Chỉ mặt thủ phạm. Và giải thích vì sao."
       ]
     }
   ],
   "finale": {
-    "culprit": "Chu Văn Bình",
-    "text": "Chu Văn Bình cúi đầu nhận tội trước những chứng cứ đanh thép của cơ quan điều tra. Lòng đố kỵ và sự tham lam trước cây đàn đáy gia bảo cùng danh tiếng đã đẩy người học trò 12 năm vào con đường sát nhân phản thầy. Sự thật được phơi bày, giải oan cho đào nương Ánh Tuyết giữa tiếng thở dài xót xa của phường chèo Phố Hiến."
-  }
+    "title": "Tiếng đàn đáy Phố Hiến",
+    "paragraphs": [
+      "Đỗ Trọng Toàn khai nhận ngày 5/10/1993, khi túi gấm thêu chữ Thọ được đặt cạnh lá thư nháp của cụ Cửu.",
+      "Ba triệu đồng tiền tài trợ, ông mua một bộ nhạc cụ chín trăm nghìn, ghi hoá đơn gần ba triệu. Cụ Cửu chỉ cần chạm vào sợi dây nilon là biết.",
+      "Cả phường biết thói quen của cụ: ngậm phím cho sừng ấm trước khi dạo đàn. Ông Toàn mua hai mươi gam mã tiền, trộn với mật ong cho dính, cho bớt đắng.",
+      "Bảy giờ bốn mươi hai, ông nói đi lấy sổ công đức. Ông không biết, năm phút trước đó, một người học trò vừa đặt chiếc phím xuống, khô và xỉn như mọi ngày.",
+      "Ông chỉ nói một câu: \"Tôi tưởng ai cũng sẽ nhìn vào chén trà.\"",
+      "Đêm rằm năm sau, Chu Văn Bình ngồi lên chiếu hoa ở đình Hoa Nguyệt, gảy trọn khúc \"Lạc Nhạn\" bằng cây đàn của thầy."
+    ]
+  },
+  "epilogue": [
+    {
+      "title": "Đỗ Trọng Toàn",
+      "text": "Bị truy tố về tội giết người và tham ô tài sản. Bộ nhạc cụ khống được trả lại hiệu Hàng Gai."
+    },
+    {
+      "title": "Chu Văn Bình",
+      "text": "Được phường bầu thay thầy cầm đàn chính ở hội diễn tỉnh năm 1994."
+    },
+    {
+      "title": "Nguyễn Thị Ánh Tuyết",
+      "text": "Vẫn hát ở phường Kim Nguyệt. Mỗi rằm tháng Tám, chị dâng một chén trà sen trước bàn thờ thầy."
+    },
+    {
+      "title": "Phan Bá Lộc",
+      "text": "Không bán cây đàn. Ông gửi nó lại cho phường, theo lời bố."
+    }
+  ]
 }

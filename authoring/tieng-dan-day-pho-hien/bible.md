@@ -1,3 +1,32 @@
+# Kịch bản gốc: Tiếng đàn đáy Phố Hiến (Hồ sơ 03, bản 2)
+
+Hư cấu. 4 vòng, 20 tài liệu, 9 câu hỏi, 60–75 phút, **độ khó 3 (vừa)**. Không có đồng phạm. Nội dung dựng bằng `build_case.py`.
+**Chứa lời giải.**
+
+Sửa so với bản 1 (bên dưới):
+- **Chất độc:** thạch tín qua niêm mạc miệng không gây tử vong trong 15 phút → đổi sang **mã tiền** (strychnin), vị thuốc bắc độc bảng A:
+  co giật, cứng hàm, tỉnh táo, khởi phát 15–30 phút, chết do co cứng cơ hô hấp.
+- **Thủ phạm:** đổi từ Bình (nghi phạm lộ nhất) sang **quản lý tài chính Đỗ Trọng Toàn** (hoá đơn nhạc cụ khống). Bình thành nghi phạm giả
+  và là nhân chứng then chốt (phím còn khô lúc 19:40). Thêm nghi phạm thứ tư: con trai Phan Bá Lộc.
+- Sơ đồ cũ ghi thẳng "hướng di chuyển của Chu Văn Bình" → vẽ lại bằng `draw_so_do.py`. Bìa hộp game chữ tiếng Anh → cắt từ ảnh đàn (d04).
+- Phường "chèo" → **ca trù** (đàn đáy là nhạc cụ của ca trù). Rằm tháng Tám 1993 = 30/9/1993.
+
+## Dòng thời gian
+22/9 Toàn mua 20 g mã tiền chế ở Nam Hoà Đường. 27/9 cụ Cửu viết thư nháp cho Sở. 30/9: 19:30 cụ thắp hương ở tiền đình; 19:35–19:40
+Bình lẻn vào buồng hoá trang gảy thử đàn bằng tay (phím khô); 19:40 Toàn rời tiền đình "lấy sổ công đức"; 19:42–19:47 Toàn trong buồng
+phết mật ong + mã tiền lên phím; 19:50 về tiền đình; 20:05 cụ ngậm phím, dạo "Lạc Nhạn"; 20:10 Ánh Tuyết dâng trà; ~20:20 co giật,
+chén đổ; 21:10 mất.
+
+## Chuỗi suy luận
+- **Vòng 1 (8):** d00–d07. q1 không phải trà, là mã tiền qua miệng (d05). q2 evidence (d05, d07).
+- **Vòng 2 (6):** d08 Bình, d09 Toàn, d10 Lộc, d11 sổ tay (thói quen ngậm phím), d12 hoá nghiệm, d13 bà Mùi. q3 evidence (d11, d12). q4 line d08:006.
+- **Vòng 3 (4):** d14 thủ từ, d15 Bình lần 2, d16 Nam Hoà Đường, d17 Toàn lần 2. q5 line d09:002. q6 evidence (d13, d15).
+- **Vòng 4 (2):** d18 thư cụ Cửu, d19 cặp da Toàn. q7 evidence (d18, d19). q-accuse Toàn. q8 + KSV.
+
+---
+
+# Bản 1 (tham khảo; chất độc và thủ phạm đã đổi)
+
 # Hồ sơ 03: Tiếng đàn đáy Phố Hiến (Bible)
 
 ## 1. Thông tin chung

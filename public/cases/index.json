@@ -80,21 +80,28 @@
     {
       "id": "tieng-dan-day-pho-hien",
       "no": 3,
-      "status": "coming-soon",
+      "status": "available",
       "kind": "fiction",
       "title": "Tiếng đàn đáy Phố Hiến",
-      "tagline": "Đêm rằm tế tổ phường chèo, tiếng đàn đáy bỗng đứt ngang giữa lúc mưa giông quất rát mặt đầm sen.",
-      "difficulty": 2,
-      "players": "1–4",
-      "duration": "45–60 phút",
-      "setting": "Đình cổ ven hồ Bán Nguyệt, thị xã Phố Hiến (hư cấu)",
+      "tagline": "Đêm rằm tháng Tám, nghệ nhân đàn đáy gục ngã giữa khúc dạo đầu. Cả phường nhìn vào chén trà sen. Không ai nhìn chiếc phím.",
+      "difficulty": 3,
+      "players": "1–5",
+      "duration": "60–75 phút",
+      "setting": "Đình Hoa Nguyệt (hư cấu) ven hồ Bán Nguyệt, thị xã Hưng Yên",
       "tags": [
         "Án mạng",
         "Đầu độc",
-        "Phường chèo",
-        "Thập niên 90"
+        "Ca trù",
+        "Phố Hiến"
       ],
-      "cover": "images/cover.webp"
+      "cover": "images/cover.webp",
+      "art": "images/art.webp",
+      "artPos": "50% 50%",
+      "features": [
+        "ai",
+        "exam",
+        "voice"
+      ]
     },
     {
       "id": "suong-mu-trai-trai",

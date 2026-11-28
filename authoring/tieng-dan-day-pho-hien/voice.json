@@ -1,0 +1,59 @@
+{
+  "_ghi_chu": "Giọng đọc lấy thẳng chữ từ case.json. Hưng Yên: giọng Bắc. Chạy: npm run gen-voice -- tieng-dan-day-pho-hien và npm run gen-doc-voice -- tieng-dan-day-pho-hien",
+  "engine": "vieneu",
+  "voices": {
+    "dan": "Thiện Minh",
+    "kien": "Minh Đức",
+    "tuyet": "Ngọc Huyền",
+    "binh": "Phạm Tuyên",
+    "toan": "Quốc Tuấn",
+    "loc": "Xuân Vĩnh",
+    "mui": "Ngọc Linh",
+    "tham": "Thiền Tâm Đức"
+  },
+  "temperature": 0.8,
+  "clips": [
+    {
+      "id": "intro",
+      "source": "intro",
+      "quotes": [
+        "dan"
+      ]
+    },
+    {
+      "id": "beat-2",
+      "source": "beat:2"
+    },
+    {
+      "id": "beat-3",
+      "source": "beat:3"
+    },
+    {
+      "id": "beat-4",
+      "source": "beat:4"
+    },
+    {
+      "id": "finale",
+      "source": "finale",
+      "quotes": [
+        {
+          "voice": "toan",
+          "before": "[thở dài]"
+        },
+        "dan"
+      ]
+    }
+  ],
+  "docs": {
+    "narrator": "dan",
+    "asker": "kien",
+    "speakers": {
+      "Nguyễn Thị Ánh Tuyết": "tuyet",
+      "Chu Văn Bình": "binh",
+      "Đỗ Trọng Toàn": "toan",
+      "Phan Bá Lộc": "loc",
+      "Lê Thị Mùi": "mui",
+      "Nguyễn Văn Thắm": "tham"
+    }
+  }
+}

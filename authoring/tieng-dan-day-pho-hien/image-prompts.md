@@ -1,3 +1,24 @@
+# Ảnh cho bản 2 (tháng 11/2026)
+
+Ảnh tư liệu cũ (d01, d04, d06, d13) giữ lại nhưng chỉ ~489 px. Sơ đồ d03 vẽ lại bằng code. Bìa tạm cắt từ d04.
+
+## Ảnh thẻ (ghép 3 cột × 2 hàng)
+Cắt: `python3 tools/crop-portraits.py <ảnh> public/cases/tieng-dan-day-pho-hien/images 2 3 cuu binh tuyet toan loc -`
+
+```text
+A 3-column by 2-row grid of six Vietnamese ID card portrait photos from 1993, northern Vietnam, separated by thin white lines, each cell a head-and-shoulders front-facing shot, neutral expression, plain pale blue background, flat studio lighting, slightly faded film colour, realistic skin texture, no text.
+Top row, left to right:
+(1) a 68-year-old Vietnamese master musician, thin dignified face, wispy white goatee, black traditional turban (khan xep), black silk ao the robe;
+(2) a 40-year-old Vietnamese musician, lean serious face, short black hair, black ao the robe with a black turban;
+(3) a 28-year-old Vietnamese female traditional singer, gentle oval face, hair in a neat bun, pale brown ao tu than;
+Bottom row, left to right:
+(4) a 52-year-old Vietnamese office manager, square face, thick-rimmed glasses, neatly combed greying hair, white short-sleeved shirt;
+(5) a 42-year-old Vietnamese antique dealer, sharp face, slicked-back hair, dark jacket over a polo shirt;
+(6) an empty plain pale blue cell.
+```
+
+---
+
 # Bảng Prompt Tạo Hình Chi Tiết: Tiếng đàn đáy Phố Hiến (Hồ sơ 03)
 ## (MASTER ART DIRECTION & IMAGE PROMPT GUIDE - CASE 03)
 
