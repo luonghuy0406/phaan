@@ -190,7 +190,7 @@ add({'id': 'd19', 'stage': 4, 'type': 'report', 'title': 'Biên bản khám xét
      'sections': [
          {'heading': 'Thu giữ', 'paragraphs': ['— Chìa kho lạnh số 2 và chìa cổng phụ.',
                                                 '— Ba bao thuốc Bastos xanh cùng lô với bao thu dưới pallet kho lạnh.',
-                                                '— Một thanh sắt kẹp vỉ sấy đã rửa, kẽ ren còn dấu vết sinh học (gửi giám định).',
+                                                '— Một kẹp sắt gắp vỉ sấy đã rửa, kẽ răng còn dấu vết sinh học (gửi giám định).',
                                                 '— Năm cuốn sổ lai tạo giống hồng 1998–2003, chữ của Duẩn; trang cuối ghi ngày 12/12: "Năm năm. Tên tôi không có."',
                                                 '— Một thư sa thải đánh máy, chữ ký Lâm Khải, ghi ngày hiệu lực 1/2/2004, gửi Hoàng Văn Duẩn.']}],
      'signers': [{'role': DTV, 'name': DTV_NAME}]})
@@ -361,6 +361,21 @@ case = {
         {'title': 'Trần Đại', 'text': 'Trả dần món nợ cho Mai, vẫn chở hoa Lâm Viên xuống Sài Gòn mỗi tuần.'},
         {'title': 'Vũ Đức Toàn', 'text': 'Trả lại chiếc ví, bị cho nghỉ việc. Mai giữ anh lại làm vườn.'}],
 }
+
+# biên bản kèm ảnh tang vật: chuyển sang kiểu "evidence" (ảnh + các đoạn), giữ nguyên id
+PHOTOS = {
+    'd02': ('images/d02-vat-bam.webp', 'Vật thu trên người nạn nhân: dép xốp còn đá vảy chưa tan, tay áo len dính phấn vàng, đèn pin ở vị trí tắt.'),
+    'd19': ('images/d19-tang-vat.webp', 'Tang vật thu ở nhà Hoàng Văn Duẩn: năm cuốn sổ lai tạo, chìa kho lạnh số 2 và cổng phụ, bao Bastos xanh, kẹp sắt gắp vỉ sấy.'),
+}
+for doc in D:
+    if doc['id'] in PHOTOS and os.path.exists(f'public/cases/{CID}/' + PHOTOS[doc['id']][0]):
+        paras = []
+        for sec in doc.pop('sections', []):
+            for k, p in enumerate(sec['paragraphs']):
+                paras.append((f"**{sec['heading']}.** " if k == 0 else '') + p)
+        for k in ('header', 'heading', 'date', 'signers', 'signature'):
+            doc.pop(k, None)
+        doc.update({'type': 'evidence', 'image': PHOTOS[doc['id']][0], 'imageCaption': PHOTOS[doc['id']][1], 'paragraphs': paras})
 
 for person in [case['victim'], *case['suspects']]:
     if person.get('image') and not os.path.exists(f'public/cases/{CID}/' + person['image']):

@@ -113,15 +113,9 @@
     {
       "id": "d02",
       "stage": 1,
-      "type": "report",
+      "type": "evidence",
       "title": "Biên bản khám nghiệm hiện trường dốc rừng thông",
-      "header": [
-        "Công an tỉnh Lâm Đồng",
-        "Phòng Cảnh sát hình sự"
-      ],
-      "heading": "Biên bản khám nghiệm hiện trường",
       "code": "204/KNHT",
-      "date": "07 giờ 30 ngày 15/12/2003",
       "fields": [
         {
           "label": "Địa điểm",
@@ -132,32 +126,13 @@
           "value": "Lâm Khải, 54 tuổi, chủ trang trại"
         }
       ],
-      "sections": [
-        {
-          "heading": "1. Tử thi",
-          "paragraphs": [
-            "Nằm sấp trên lớp lá thông. Mặc áo len, đi dép xốp trong nhà. Bên cạnh có một đèn pin tắt, công tắc ở vị trí tắt, pin còn tốt.",
-            "**Lớp lá thông ngay dưới tử thi ướt sương, đóng muối trắng như xung quanh.**"
-          ]
-        },
-        {
-          "heading": "2. Vật bám",
-          "paragraphs": [
-            "Kẽ dép xốp có vài mảnh nước đá vảy nhỏ chưa tan hết. Áo len dính nhiều hạt phấn màu vàng."
-          ]
-        },
-        {
-          "heading": "3. Dấu vết",
-          "paragraphs": [
-            "Trên đất đỏ có một vệt bánh xe đơn (loại xe rùa) chạy từ hướng trang trại xuống, dừng cách tử thi 2 m, rồi quay ngược lên."
-          ]
-        }
-      ],
-      "signers": [
-        {
-          "role": "Điều tra viên",
-          "name": "Thiếu tá Trịnh Quốc Bảo"
-        }
+      "image": "images/d02-vat-bam.webp",
+      "imageCaption": "Vật thu trên người nạn nhân: dép xốp còn đá vảy chưa tan, tay áo len dính phấn vàng, đèn pin ở vị trí tắt.",
+      "paragraphs": [
+        "**1. Tử thi.** Nằm sấp trên lớp lá thông. Mặc áo len, đi dép xốp trong nhà. Bên cạnh có một đèn pin tắt, công tắc ở vị trí tắt, pin còn tốt.",
+        "**Lớp lá thông ngay dưới tử thi ướt sương, đóng muối trắng như xung quanh.**",
+        "**2. Vật bám.** Kẽ dép xốp có vài mảnh nước đá vảy nhỏ chưa tan hết. Áo len dính nhiều hạt phấn màu vàng.",
+        "**3. Dấu vết.** Trên đất đỏ có một vệt bánh xe đơn (loại xe rùa) chạy từ hướng trang trại xuống, dừng cách tử thi 2 m, rồi quay ngược lên."
       ]
     },
     {
@@ -660,32 +635,17 @@
     {
       "id": "d19",
       "stage": 4,
-      "type": "report",
+      "type": "evidence",
       "title": "Biên bản khám xét nhà Hoàng Văn Duẩn",
-      "header": [
-        "Công an tỉnh Lâm Đồng",
-        "Phòng Cảnh sát hình sự"
-      ],
-      "heading": "Biên bản khám xét",
       "code": "27/KX",
-      "date": "06 giờ 00 ngày 19/12/2003",
-      "sections": [
-        {
-          "heading": "Thu giữ",
-          "paragraphs": [
-            "— Chìa kho lạnh số 2 và chìa cổng phụ.",
-            "— Ba bao thuốc Bastos xanh cùng lô với bao thu dưới pallet kho lạnh.",
-            "— Một thanh sắt kẹp vỉ sấy đã rửa, kẽ ren còn dấu vết sinh học (gửi giám định).",
-            "— Năm cuốn sổ lai tạo giống hồng 1998–2003, chữ của Duẩn; trang cuối ghi ngày 12/12: \"Năm năm. Tên tôi không có.\"",
-            "— Một thư sa thải đánh máy, chữ ký Lâm Khải, ghi ngày hiệu lực 1/2/2004, gửi Hoàng Văn Duẩn."
-          ]
-        }
-      ],
-      "signers": [
-        {
-          "role": "Điều tra viên",
-          "name": "Thiếu tá Trịnh Quốc Bảo"
-        }
+      "image": "images/d19-tang-vat.webp",
+      "imageCaption": "Tang vật thu ở nhà Hoàng Văn Duẩn: năm cuốn sổ lai tạo, chìa kho lạnh số 2 và cổng phụ, bao Bastos xanh, kẹp sắt gắp vỉ sấy.",
+      "paragraphs": [
+        "**Thu giữ.** — Chìa kho lạnh số 2 và chìa cổng phụ.",
+        "— Ba bao thuốc Bastos xanh cùng lô với bao thu dưới pallet kho lạnh.",
+        "— Một kẹp sắt gắp vỉ sấy đã rửa, kẽ răng còn dấu vết sinh học (gửi giám định).",
+        "— Năm cuốn sổ lai tạo giống hồng 1998–2003, chữ của Duẩn; trang cuối ghi ngày 12/12: \"Năm năm. Tên tôi không có.\"",
+        "— Một thư sa thải đánh máy, chữ ký Lâm Khải, ghi ngày hiệu lực 1/2/2004, gửi Hoàng Văn Duẩn."
       ]
     }
   ],
