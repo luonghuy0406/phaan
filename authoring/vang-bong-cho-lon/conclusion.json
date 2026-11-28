@@ -1,0 +1,149 @@
+{
+  "_ghi_chu": "Đáp án báo cáo kết luận trước kiểm sát viên (AI). CHỨA LỜI GIẢI. keywords không dấu.",
+  "q8": {
+    "examiner": "Kiểm sát viên Huỳnh Thị Ngọc Lan",
+    "persona": "Kiểm sát viên Viện Kiểm sát nhân dân Quận 5, ngoài bốn mươi, giọng Sài Gòn, nhỏ nhẹ nhưng hỏi kỹ từng căn cứ.",
+    "intro": "Tôi là kiểm sát viên phụ trách vụ tiệm vàng Vạn Thành. Anh chị trình bày kết luận, ngắn gọn, có căn cứ.",
+    "closing": "Báo cáo đủ căn cứ ở mọi điểm. Tôi đồng ý với kết luận điều tra.",
+    "points": [
+      {
+        "id": "ai",
+        "ask": "Thứ nhất: ai đã lấy vàng trong két và bỏ thuốc vào ly cà phê của ông Thành?",
+        "facts": [
+          {
+            "id": "nghi",
+            "text": "Tạ Thục Nghi, kế toán kiêm thủ quỹ của tiệm.",
+            "keywords": [
+              "nghi",
+              "ke toan",
+              "thu quy"
+            ],
+            "probe": "Anh chị nói rõ người đó là ai."
+          }
+        ],
+        "hint": "Gợi ý: lời chủ quán Ba Lẹ và biên bản khám xét nhà ở Quận 11."
+      },
+      {
+        "id": "ma-ket",
+        "ask": "Thứ hai: ông Thành không bao giờ ghi mã ra giấy. Người đó lấy được mã két bằng cách nào?",
+        "facts": [
+          {
+            "id": "phan",
+            "text": "Thoa phấn lên núm xoay trước khi ông Thành mở két lúc 18:30; ngón tay ông xoá phấn ở 4 số 18, 42, 65, 89.",
+            "keywords": [
+              "phan",
+              "num xoay",
+              "lau",
+              "xoa",
+              "18",
+              "42",
+              "65",
+              "89",
+              "bon so",
+              "4 so"
+            ],
+            "probe": "Trên núm xoay có dấu vết gì?"
+          },
+          {
+            "id": "thu-tu",
+            "text": "Viết các thứ tự của 4 số lên mẩu giấy phiếu thu rồi thử lần lượt tới 42-18-65-89; chữ số trùng chữ trong sổ quỹ của Nghi.",
+            "keywords": [
+              "giay",
+              "thu tu",
+              "hoan vi",
+              "thu lan luot",
+              "42-18-65-89",
+              "chu so",
+              "so quy",
+              "chu viet",
+              "phieu thu"
+            ],
+            "probe": "Biết bốn số rồi, làm sao biết thứ tự? Mảnh giấy dưới bàn trà là của ai?"
+          }
+        ],
+        "hint": "Gợi ý: giám định lớp phấn và mảnh giấy dưới bàn trà."
+      },
+      {
+        "id": "thuoc",
+        "ask": "Thứ ba: thuốc ở đâu ra, và đưa vào ly cà phê bằng cách nào?",
+        "facts": [
+          {
+            "id": "ba-le",
+            "text": "20:45 Nghi mua cà phê vợt và trà đá ở quán Ba Lẹ, mang vào bằng cửa hông (chị có chìa).",
+            "keywords": [
+              "ba le",
+              "quan ca phe",
+              "20:45",
+              "8 gio 45",
+              "chin gio kem",
+              "cua hong",
+              "tra da",
+              "mua ca phe"
+            ],
+            "probe": "Ai mang hai ly đồ uống vào tiệm, lúc mấy giờ?"
+          },
+          {
+            "id": "cloral",
+            "text": "Thuốc là siro cloral hydrat kê đơn cho mẹ Nghi, chai vơi gần hết.",
+            "keywords": [
+              "cloral",
+              "sieu",
+              "siro",
+              "thuoc ngu",
+              "cua me",
+              "me nghi",
+              "don thuoc"
+            ],
+            "probe": "Thuốc ngủ lấy từ đâu?"
+          }
+        ],
+        "hint": "Gợi ý: lời ông Ba Lẹ, kết quả xét nghiệm và tủ thuốc nhà Nghi."
+      },
+      {
+        "id": "dong-co",
+        "ask": "Thứ tư: vì sao lại là đêm 18/5?",
+        "facts": [
+          {
+            "id": "kiem-so",
+            "text": "Con trai ông Thành báo về kiểm sổ ngày 20/5; sổ quỹ do Nghi ghi thiếu khoảng 310 triệu; két trống thì không còn tiền mặt để đối chiếu.",
+            "keywords": [
+              "kiem so",
+              "so quy",
+              "20/5",
+              "con trai",
+              "dien tin",
+              "310",
+              "tham o",
+              "thieu",
+              "doi chieu",
+              "hong kong"
+            ],
+            "probe": "Ngày 20/5 có chuyện gì sắp xảy ra?"
+          }
+        ],
+        "hint": "Gợi ý: điện tín từ Hồng Kông và kết quả kiểm tra sổ quỹ."
+      },
+      {
+        "id": "loai-tru",
+        "ask": "Cuối cùng: vì sao không phải anh Hào, người nợ cá độ, có chìa cửa hông và nói dối đã ngồi hết buổi ca nhạc?",
+        "facts": [
+          {
+            "id": "hao",
+            "text": "Hào ở quán Hưng Ký Quận 6 từ 21:35 tới 23:30, có chủ quán và sổ nợ làm chứng; chữ trên mảnh giấy không phải của Hào; anh nói dối để giấu chuyện cá độ.",
+            "keywords": [
+              "hung ky",
+              "quan 6",
+              "ca do",
+              "khat no",
+              "chu viet",
+              "khong phai chu",
+              "so no"
+            ],
+            "probe": "Sau giờ giải lao Hào ở đâu, ai xác nhận?"
+          }
+        ],
+        "hint": "Gợi ý: biên bản xác minh hành tung của Hào sau giờ giải lao."
+      }
+    ]
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "_ghi_chu": "Giọng đọc lấy thẳng chữ từ case.json. Chợ Lớn nên dùng giọng Nam (Bửu quê Quảng Ngãi: giọng Trung). Chạy: npm run gen-voice -- vang-bong-cho-lon và npm run gen-doc-voice -- vang-bong-cho-lon",
+  "engine": "vieneu",
+  "voices": {
+    "dan": "Thái Sơn",
+    "cuong": "Minh Triết",
+    "hao": "Adam",
+    "my": "Kim Thanh",
+    "buu": "Quang Sơn",
+    "nghi": "Thục Đoan",
+    "le": "Đức Trí",
+    "giamdinh": "Thùy Dung"
+  },
+  "temperature": 0.8,
+  "clips": [
+    {
+      "id": "intro",
+      "source": "intro"
+    },
+    {
+      "id": "beat-2",
+      "source": "beat:2"
+    },
+    {
+      "id": "beat-3",
+      "source": "beat:3"
+    },
+    {
+      "id": "beat-4",
+      "source": "beat:4"
+    },
+    {
+      "id": "finale",
+      "source": "finale",
+      "quotes": [
+        "nghi",
+        {
+          "voice": "nghi",
+          "before": "[thở dài]"
+        }
+      ]
+    }
+  ],
+  "docs": {
+    "narrator": "dan",
+    "asker": "cuong",
+    "speakers": {
+      "Tạ Thục Nghi": "nghi",
+      "Trương Chấn Hào": "hao",
+      "Lý Diễm My": "my",
+      "Quách Bửu": "buu",
+      "Lê Văn Lẹ": "le"
+    }
+  }
+}

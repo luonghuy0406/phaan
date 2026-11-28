@@ -111,7 +111,7 @@ def d04():
     d.text((60, 50), 'CÔNG AN QUẬN 5', font=font(BOLD, 22), fill=INK, anchor='lm')
     d.text((60, 78), 'Đội Cảnh sát hình sự', font=font(SANS, 20), fill=INK, anchor='lm')
     d.text((W / 2 + 80, 56), 'SƠ ĐỒ MẶT BẰNG TẦNG TRỆT TIỆM VÀNG VẠN THÀNH', font=font(BOLD, 28), fill=INK, anchor='mm')
-    d.text((W / 2 + 80, 92), 'Số 62 Hải Thượng Lãn Ông, Phường 10, Quận 5 · lập 09h30 ngày 18/05/1995', font=font(ITAL, 20), fill=INK, anchor='mm')
+    d.text((W / 2 + 80, 92), 'Số 62 Hải Thượng Lãn Ông, Phường 10, Quận 5 · lập 07h30 ngày 19/05/1995', font=font(ITAL, 20), fill=INK, anchor='mm')
     # building shell: narrow deep shophouse, front at the bottom (street), back at the top (alley)
     X0, X1, Y0, Y1 = 380, 1020, 170, 900
     d.rectangle([X0, Y0, X1, Y1], outline=INK, width=8)
@@ -134,12 +134,16 @@ def d04():
     d.line([(X1 - 130, PY + 92), (X1 - 72, PY + 140)], fill=INK, width=3)  # door ajar 45°
     d.text((X1 - 180, PY + 112), 'KÉT SẮT CHUBB', font=font(BOLD, 18), fill=INK, anchor='mm')
     d.text((X1 - 180, PY + 134), '(cửa mở hé 45°)', font=font(ITAL, 16), fill=SOFT, anchor='mm')
-    d.text((X0 + 250, 650), 'GIAN TRƯNG BÀY', font=font(BOLD, 22), fill=SOFT, anchor='mm')
+    d.rectangle([X0 + 130, 680, X0 + 260, 730], outline=INK, width=3)
+    d.text((X0 + 195, 705), 'QUẦY BẢO VỆ', font=font(BOLD, 15), fill=INK, anchor='mm')
+    d.ellipse([X0 + 268, 693, X0 + 292, 717], outline=RED, width=3); d.text((X0 + 280, 705), '4', font=font(BOLD, 16), fill=RED, anchor='mm')
+    d.ellipse([X0 + 206, 300, X0 + 230, 324], outline=RED, width=3); d.text((X0 + 218, 312), '3', font=font(BOLD, 16), fill=RED, anchor='mm')
+    d.text((X0 + 200, 600), 'GIAN TRƯNG BÀY', font=font(BOLD, 22), fill=SOFT, anchor='mm')
     # BACK: owner's desk with the coffee cup, tea table, workshop, stairs, back door
     d.rectangle([X0 + 60, 380, X0 + 260, 460], outline=INK, width=3)
     d.text((X0 + 160, 420), 'BÀN LÀM VIỆC', font=font(BOLD, 17), fill=INK, anchor='mm')
     d.text((X0 + 160, 476), '(gỗ cẩm lai)', font=font(ITAL, 15), fill=SOFT, anchor='mm')
-    d.ellipse([X0 + 214, 392, X0 + 238, 416], outline=RED, width=3)  # the cup
+    d.ellipse([X0 + 232, 392, X0 + 252, 412], outline=RED, width=3)  # the cup
     d.ellipse([X0 + 120, 280, X0 + 200, 340], outline=INK, width=3)
     d.text((X0 + 160, 310), 'BÀN TRÀ', font=font(BOLD, 15), fill=INK, anchor='mm')
     d.rectangle([X0 + 330, 230, X1 - 40, 470], outline=INK, width=3)
@@ -152,20 +156,24 @@ def d04():
     d.text((X0 + 22, Y0 + 182), 'Cầu thang lên lầu 1, 2', font=font(SANS, 15), fill=INK, anchor='lm')
     d.rectangle([X1 - 220, Y0 - 4, X1 - 130, Y0 + 4], fill=(243, 240, 230))  # back door
     d.arc([X1 - 220, Y0 - 90, X1 - 40, Y0 + 90], 0, 90, fill=SOFT, width=2)
-    d.text((X1 - 175, Y0 + 26), 'CỬA SAU', font=font(BOLD, 18), fill=INK, anchor='mm')
-    d.text(((X0 + X1) / 2, 140), '↑ Hẻm thông ra đường Triệu Quang Phục', font=font(BOLD, 20), fill=INK, anchor='mm')
+    d.text((X1 - 175, Y0 + 26), 'CỬA HÔNG', font=font(BOLD, 18), fill=INK, anchor='mm')
+    d.text(((X0 + X1) / 2, 140), '↑ Hẻm sau (đầu hẻm: quán cà phê Ba Lẹ)', font=font(BOLD, 20), fill=INK, anchor='mm')
     # legend + markers
     d.ellipse([X1 - 270, PY + 40, X1 - 246, PY + 64], outline=RED, width=3); d.text((X1 - 258, PY + 52), '2', font=font(BOLD, 16), fill=RED, anchor='mm')
     d.ellipse([X0 + 272, 400, X0 + 296, 424], outline=RED, width=3); d.text((X0 + 284, 412), '1', font=font(BOLD, 16), fill=RED, anchor='mm')
     LX, LY = 1060, 200
-    d.rectangle([LX, LY, LX + 300, LY + 190], outline=INK, width=2)
+    d.rectangle([LX, LY, LX + 310, LY + 270], outline=INK, width=2)
     d.text((LX + 16, LY + 24), 'GHI CHÚ', font=font(BOLD, 20), fill=INK, anchor='lm')
     d.ellipse([LX + 16, LY + 50, LX + 40, LY + 74], outline=RED, width=3); d.text((LX + 28, LY + 62), '1', font=font(BOLD, 15), fill=RED, anchor='mm')
-    d.text((LX + 52, LY + 62), 'Vị trí nạn nhân, tách cà phê', font=font(SANS, 17), fill=INK, anchor='lm')
+    d.text((LX + 52, LY + 62), 'Nạn nhân, ly cà phê Ba Lẹ', font=font(SANS, 17), fill=INK, anchor='lm')
     d.ellipse([LX + 16, LY + 90, LX + 40, LY + 114], outline=RED, width=3); d.text((LX + 28, LY + 102), '2', font=font(BOLD, 15), fill=RED, anchor='mm')
     d.text((LX + 52, LY + 102), 'Két sắt mở hé', font=font(SANS, 17), fill=INK, anchor='lm')
-    d.text((LX + 16, LY + 142), 'Cửa sau: chốt trong ở', font=font(SANS, 17), fill=INK, anchor='lm')
-    d.text((LX + 16, LY + 166), 'chế độ tự do khi phát hiện', font=font(SANS, 17), fill=INK, anchor='lm')
+    d.ellipse([LX + 16, LY + 130, LX + 40, LY + 154], outline=RED, width=3); d.text((LX + 28, LY + 142), '3', font=font(BOLD, 15), fill=RED, anchor='mm')
+    d.text((LX + 52, LY + 142), 'Mảnh giấy dưới bàn trà', font=font(SANS, 17), fill=INK, anchor='lm')
+    d.ellipse([LX + 16, LY + 170, LX + 40, LY + 194], outline=RED, width=3); d.text((LX + 28, LY + 182), '4', font=font(BOLD, 15), fill=RED, anchor='mm')
+    d.text((LX + 52, LY + 182), 'Ly trà đá Ba Lẹ', font=font(SANS, 17), fill=INK, anchor='lm')
+    d.text((LX + 16, LY + 222), 'Cửa hông ra hẻm: khoá', font=font(SANS, 17), fill=INK, anchor='lm')
+    d.text((LX + 16, LY + 246), 'bằng chìa, không dấu cạy', font=font(SANS, 17), fill=INK, anchor='lm')
     nx, ny = 1300, 820
     d.polygon([(nx, ny - 50), (nx - 16, ny + 10), (nx, ny), (nx + 16, ny + 10)], fill=INK); d.text((nx, ny - 70), 'N', font=font(BOLD, 24), fill=INK, anchor='mm')
     d.line([(80, 900), (280, 900)], fill=INK, width=3)

@@ -1,3 +1,34 @@
+# Ảnh cho bản 2 (tháng 11/2026)
+
+Hung thủ đổi thành kế toán Tạ Thục Nghi. Bìa cũ (hộp game có chữ tiếng Anh) đã gỡ. Sơ đồ d04 vẽ lại bằng `draw_images.py d04`.
+Dùng lại: d01-bao-chi, d05-num-ket, d09-cuong-ve, d10-manh-giay.
+
+## Ảnh thẻ (một ảnh ghép 3 cột × 2 hàng)
+
+Cắt bằng: `python3 tools/crop-portraits.py <ảnh-ghép> public/cases/vang-bong-cho-lon/images 2 3 thanh hao my buu nghi -`
+rồi `python3 authoring/vang-bong-cho-lon/build_case.py`.
+
+```text
+A 3-column by 2-row grid of six Vietnamese ID card portrait photos from 1995, Saigon Chinatown, separated by thin white lines, each cell a head-and-shoulders front-facing shot, neutral expression, plain pale blue background, flat studio lighting, slightly faded film colour, realistic skin texture, no text.
+Top row, left to right:
+(1) a 60-year-old Vietnamese-Chinese gold shop owner, stern face, slicked-back grey hair, thin gold-rimmed glasses, white short-sleeved shirt;
+(2) a 32-year-old Vietnamese-Chinese goldsmith, lean face, slightly long side-parted hair, floral print shirt open at the collar, thin gold chain;
+(3) a 26-year-old Vietnamese woman, pretty, sharp eyes, permed shoulder-length hair, light pink blouse, small earrings.
+Bottom row, left to right:
+(4) a 48-year-old Vietnamese night security guard, tanned weathered face, short hair, plain khaki uniform shirt;
+(5) a 40-year-old Vietnamese female bookkeeper, composed and neat, hair tied in a low bun, thin face, light blue traditional áo bà ba top;
+(6) an empty plain pale blue cell.
+```
+
+## Bìa (4:5 hoặc ngang; có chữ tên hồ sơ cũng được, tôi sẽ cắt phần không có chữ làm ảnh nền thẻ)
+
+```text
+Cinematic night photograph inside a 1990s Saigon Chinatown gold shop office: a heavy old green steel safe stands open and empty, its combination dial dusted with fine white powder, four clean spots on the dial; in front, a wooden desk with a plastic cup of Vietnamese drip coffee half drunk beside an abacus and a ledger book; a carved armchair with a man's jacket draped over it (no person); warm tungsten desk lamp, red Chinese calligraphy scrolls and a gold shop altar softly out of focus; through a half-open side door, a dark narrow alley with a street coffee stall light far away. Moody, warm gold and deep green tones, 35mm film grain, realistic, no people.
+```
+Negative: `cartoon, 3D render, CGI, oversaturated, people, blood, modern objects, English text`
+
+---
+
 # Bảng Prompt Tạo Hình Chi Tiết: Vàng bóng Chợ Lớn (Hồ sơ 09)
 
 Toàn bộ prompt được viết bằng tiếng Việt chi tiết, hướng dẫn cụ thể về ánh sáng phố người Hoa Chợ Lớn năm 1995, tiệm kim hoàn cổ, két sắt và kỹ thuật hình sự. Tuyệt đối không chứa chữ trên ảnh.

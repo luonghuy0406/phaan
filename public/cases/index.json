@@ -196,22 +196,27 @@
     {
       "id": "vang-bong-cho-lon",
       "no": 9,
-      "status": "coming-soon",
+      "status": "available",
       "kind": "fiction",
-      "draft": true,
       "title": "Vàng bóng Chợ Lớn",
-      "tagline": "Két sắt tiệm vàng Vạn Thành mở toang không một vết cạy, nhưng chủ tiệm lại gục chết bên tách cà phê vợt.",
+      "tagline": "Két sắt tiệm vàng Vạn Thành mở toang không một vết cạy, ông chủ gục chết bên ly cà phê vợt.",
       "difficulty": 3,
-      "players": "2–5",
-      "duration": "75–90 phút",
-      "setting": "Tiệm vàng Vạn Thành, Quận 5, Chợ Lớn, TP. Hồ Chí Minh (hư cấu)",
+      "players": "1–5",
+      "duration": "60–75 phút",
+      "setting": "Tiệm vàng Vạn Thành, Chợ Lớn, TP Hồ Chí Minh (hư cấu)",
       "tags": [
         "Án mạng",
         "Trộm két sắt",
-        "Chợ Lớn",
-        "Mật mã số"
+        "Chợ Lớn"
       ],
-      "cover": "images/cover.webp"
+      "cover": "images/cover.webp",
+      "features": [
+        "ai",
+        "exam",
+        "voice"
+      ],
+      "art": "images/art.webp",
+      "artPos": "25% 30%"
     },
     {
       "id": "tieng-huan-van-don",

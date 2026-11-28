@@ -1,0 +1,388 @@
+"""Dựng public/cases/vang-bong-cho-lon/case.json (bản 2, độ khó vừa). Chạy ở thư mục gốc:
+python3 authoring/vang-bong-cho-lon/build_case.py
+
+Sự thật (lời giải): kế toán kiêm thủ quỹ Tạ Thục Nghi rút ruột quỹ tiệm ~300 triệu trong 3 năm. Con trai ông Thành từ Hồng Kông báo về
+kiểm sổ ngày 20/5/1995. Chiều 18/5 Nghi thoa phấn nụ lên núm két; 18:30 ông Thành mở két, ngón tay xoá phấn ở 4 vạch 18, 42, 65, 89.
+Nghi viết sẵn các hoán vị. 19:30 Nghi chào về; 20:45 quay lại quán Ba Lẹ mua cà phê vợt cho ông Thành và trà đá cho bảo vệ, pha
+cloral hydrat (thuốc của mẹ Nghi) rồi mang vào bằng cửa hông (Nghi giữ chìa). Ông Thành (bệnh tim) uống, ngủ sâu, tử vong khoảng 22:00–23:00.
+23:00 Nghi vào lại, bọc khăn nhung núm xoay, thử tới dòng thứ tư (42-18-65-89) thì két mở; lấy 50 lượng vàng và 100 triệu, khoá cửa hông.
+Nghi phạm giả: Hào (nợ cá độ, rời rạp lúc giải lao đi xin khất nợ ở quán cá độ Q.6), Diễm My (mạt chược ở Q.10 tới 1 giờ sáng),
+Quách Bửu (bảo vệ, chính anh cũng bị đánh thuốc).
+"""
+import json
+import os
+
+CID = 'vang-bong-cho-lon'
+CA = ['Công an Quận 5', 'Đội Cảnh sát hình sự']
+DTV = 'Điều tra viên'
+DTV_NAME = 'Đại uý Lưu Chí Cường'
+
+
+def tl(name, *pairs):
+    return [{'n': i + 1, 'speaker': s or name, 'text': t} for i, (s, t) in enumerate(pairs)]
+
+
+D = []
+add = D.append
+
+# ───────────── Vòng 1: két sắt mở đúng mã ─────────────
+add({'id': 'd00', 'stage': 1, 'type': 'people', 'title': 'Nạn nhân và những người liên quan',
+     'paragraphs': ['Ảnh thẻ trích từ hồ sơ hộ khẩu, kèm lý do từng người được đưa vào diện xác minh sáng 19/5/1995.']})
+
+add({'id': 'd01', 'stage': 1, 'type': 'newspaper', 'title': 'Báo Sài Gòn chiều: Chủ tiệm vàng chết, két sắt mở toang',
+     'masthead': 'Sài Gòn Chiều', 'issue': 'Số 4.102', 'date': 'Thứ Sáu, 19/5/1995',
+     'headline': 'Chủ tiệm vàng Chợ Lớn chết bên tách cà phê, két sắt trống trơn',
+     'deck': '50 lượng vàng và 100 triệu đồng biến mất khỏi chiếc két không một vết cạy.',
+     'image': 'images/d01-bao-chi.webp', 'imageCaption': 'Tiệm vàng Vạn Thành trên đường Hải Thượng Lãn Ông, Quận 5.',
+     'paragraphs': [
+         'Sáng 19/5, người làm công tiệm vàng Vạn Thành (đường Hải Thượng Lãn Ông, Quận 5) phát hiện ông chủ Lâm Vạn Thành (60 tuổi) đã chết trên ghế bành trong phòng làm việc, cạnh một ly cà phê vợt uống dở.',
+         'Chiếc két sắt Chubb nặng gần nửa tấn mở toang, không có dấu cạy, khoan. Theo người nhà, trong két có khoảng 50 lượng vàng 24K và 100 triệu đồng tiền mặt.',
+         'Bảo vệ trực đêm của tiệm cho biết anh ngủ say từ tối, không nghe thấy gì. Cửa cuốn mặt tiền khoá nguyên.',
+         'Công an Quận 5 đang điều tra. Ông Thành nổi tiếng kỹ tính, chưa bao giờ ghi mã két ra giấy.']})
+
+add({'id': 'd02', 'stage': 1, 'type': 'report', 'title': 'Biên bản khám nghiệm hiện trường tiệm vàng Vạn Thành',
+     'header': CA, 'heading': 'Biên bản khám nghiệm hiện trường', 'code': '58/KNHT', 'date': '07 giờ 30 ngày 19/5/1995',
+     'fields': [{'label': 'Địa điểm', 'value': 'Tiệm vàng Vạn Thành, đường Hải Thượng Lãn Ông, Quận 5'},
+                {'label': 'Người chết', 'value': 'Lâm Vạn Thành, 60 tuổi, chủ tiệm'}],
+     'sections': [
+         {'heading': '1. Cửa', 'paragraphs': ['Cửa cuốn mặt tiền khoá trong, nguyên vẹn. Cửa hông ra hẻm sau khoá bằng chìa, không dấu cạy. Theo người nhà, chìa cửa hông có ba chiếc: ông Thành, kế toán Tạ Thục Nghi và thợ Trương Chấn Hào.']},
+         {'heading': '2. Két sắt', 'paragraphs': ['Két Chubb đặt sau quầy, sát vách phòng làm việc, khoá xoay bốn số, cửa két mở. **Không có dấu khoan, cạy, đục.** Két mở bằng đúng mã.',
+                                                    'Trên núm xoay có một lớp bột phấn mịn màu trắng ngà, mùi thơm nhẹ; **bốn chỗ trên vành số bị lau sạch**. Đã thu mẫu.']},
+         {'heading': '3. Nạn nhân và đồ uống', 'paragraphs': ['Ông Thành ngồi ngả trên ghế bành, không thương tích, không xô xát. Trên bàn có một ly nhựa cà phê vợt in chữ "Ba Lẹ" còn khoảng một phần ba.',
+                                                              'Ở quầy bảo vệ có một ly trà đá cùng loại ly "Ba Lẹ", đã uống gần hết.']},
+         {'heading': '4. Ghi nhận khác', 'paragraphs': ['Dưới chân bàn trà phòng làm việc có một mảnh giấy nhỏ ghi các dãy số, đã thu giữ để giám định.']}],
+     'signers': [{'role': DTV, 'name': DTV_NAME}]})
+
+add({'id': 'd03', 'stage': 1, 'type': 'report', 'title': 'Kết quả giám định pháp y sơ bộ ông Lâm Vạn Thành',
+     'header': ['Trung tâm Pháp y TP Hồ Chí Minh', 'Phòng Giám định'], 'heading': 'Kết quả giám định sơ bộ', 'code': '211/PY', 'date': 'Ngày 19 tháng 5 năm 1995',
+     'sections': [
+         {'heading': '1. Khám ngoài', 'paragraphs': ['Không có thương tích, không dấu hiệu giằng co. Nạn nhân có tiền sử bệnh tim, đang dùng thuốc điều trị.']},
+         {'heading': '2. Nhận định', 'paragraphs': ['Tử vong khoảng **22 giờ đến 23 giờ** ngày 18/5. Dấu hiệu ức chế hô hấp, suy tim cấp; nghi ngộ độc một chất **an thần liều cao** qua đường uống. Dịch dạ dày có mùi cà phê.',
+                                                    'Đã gửi mẫu máu, dịch dạ dày và hai ly đồ uống để xét nghiệm độc chất.']}],
+     'signature': 'Giám định viên: BS. Trần Kim Phụng'})
+
+add({'id': 'd04', 'stage': 1, 'type': 'scan', 'title': 'Sơ đồ tiệm vàng Vạn Thành',
+     'image': 'images/d04-so-do-tiem-vang.webp', 'caption': 'Sơ đồ tầng trệt tiệm vàng Vạn Thành và hẻm sau, lập lúc khám nghiệm.'})
+
+add({'id': 'd05', 'stage': 1, 'type': 'photo', 'title': 'Ảnh cận cảnh núm xoay két sắt',
+     'image': 'images/d05-num-ket.webp', 'label': 'Tang vật ảnh số 5 · 19/5/1995',
+     'caption': 'Núm xoay két Chubb phủ một lớp phấn mịn. Bốn chỗ trên vành số bị lau sạch, như vừa có ngón tay chạm vào.'})
+
+add({'id': 'd06', 'stage': 1, 'type': 'testimony', 'title': 'Lời khai của Tạ Thục Nghi (kế toán, thủ quỹ)',
+     'header': CA, 'heading': 'Biên bản ghi lời khai', 'date': '10 giờ 00 ngày 19/5/1995',
+     'fields': [{'label': 'Người khai', 'value': 'Tạ Thục Nghi, 40 tuổi, kế toán kiêm thủ quỹ tiệm Vạn Thành 12 năm'}],
+     'lines': tl('Tạ Thục Nghi',
+         (DTV, 'Chiều 18/5 chị làm gì?'),
+         (None, 'Như mọi ngày, sáu giờ rưỡi ông Thành mở két cất tiền bán hàng, tôi đứng ở bàn bên cạnh đếm tiền đưa ông. Ông mở két thì xoay lưng che, không ai thấy mã.'),
+         (DTV, 'Sau đó chị đi đâu?'),
+         (None, 'Bảy rưỡi tôi chào ông rồi đón xích lô về nhà ở Quận 11, ở nhà cả tối với mẹ tôi, không ra ngoài nữa.'),
+         (DTV, 'Ai biết mã két?'),
+         (None, 'Không ai. Ông Thành không tin ai, kể cả vợ con. Cậu Hào thợ vàng nợ cờ bạc nhiều lắm, mấy bữa nay cứ lảng vảng quanh phòng làm việc.'),
+         (DTV, 'Chị có chìa cửa hông?'),
+         (None, 'Có, tôi giữ một chìa để sáng sớm vào làm sổ. Cậu Hào cũng có một chìa.')),
+     'signature': 'Người khai: Tạ Thục Nghi'})
+
+# ───────────── Vòng 2: những người có lý do ─────────────
+add({'id': 'd07', 'stage': 2, 'type': 'testimony', 'title': 'Lời khai của Trương Chấn Hào (cháu họ, thợ kim hoàn)',
+     'header': CA, 'heading': 'Biên bản ghi lời khai', 'date': '14 giờ 00 ngày 19/5/1995',
+     'fields': [{'label': 'Người khai', 'value': 'Trương Chấn Hào, 32 tuổi, thợ chế tác kim hoàn, cháu họ ông Thành'}],
+     'lines': tl('Trương Chấn Hào',
+         (DTV, 'Tối 18/5 anh ở đâu?'),
+         (None, 'Tôi đi coi ca nhạc ở rạp Hào Huê, suất bảy giờ rưỡi, cuống vé còn đây.'),
+         (DTV, 'Anh ở rạp tới mấy giờ?'),
+         (None, 'Tôi coi tới hết chương trình, gần mười giờ rưỡi mới về nhà ngủ.'),
+         (DTV, 'Anh có nợ nần ai không?'),
+         (None, 'Nợ cá độ đá banh tám chục triệu, ai trong tiệm cũng biết. Nhưng tôi không biết mã két, chú tôi chưa bao giờ cho tôi lại gần.')),
+     'signature': 'Người khai: Trương Chấn Hào'})
+
+add({'id': 'd08', 'stage': 2, 'type': 'receipt', 'title': 'Cuống vé và xác nhận của rạp Hào Huê',
+     'shop': 'Rạp Hào Huê', 'address': 'Đường Trần Hưng Đạo, Quận 5', 'image': 'images/d09-cuong-ve.webp',
+     'fields': [{'label': 'Ngày', 'value': '18/05/1995'}, {'label': 'Suất', 'value': '19:30'}, {'label': 'Ghế', 'value': 'H08 (vé của Trương Chấn Hào)'}],
+     'items': [{'name': 'Vé ca nhạc', 'qty': '1', 'price': '12.000'}],
+     'total': '12.000đ',
+     'footer': ['Xác nhận của nhân viên soát vé Phan Văn Lộc: giải lao lúc 21:15, khán giả ghế H08 (mặc sơ mi hoa, đeo dây chuyền vàng) đi ra cửa hông, **không quay vào**; ghế H08 trống suốt phần hai.',
+                'Chương trình kết thúc 22:30.']})
+
+add({'id': 'd09', 'stage': 2, 'type': 'testimony', 'title': 'Lời khai của Lý Diễm My (vợ bé ông Thành)',
+     'header': CA, 'heading': 'Biên bản ghi lời khai', 'date': '15 giờ 30 ngày 19/5/1995',
+     'fields': [{'label': 'Người khai', 'value': 'Lý Diễm My, 26 tuổi'}],
+     'lines': tl('Lý Diễm My',
+         (DTV, 'Quan hệ của chị với ông Thành dạo này thế nào?'),
+         (None, 'Ông giữ tiền chặt lắm, tháng trước tôi đem cầm đôi bông tai cho đủ tiền nhà, ông biết thì chửi tôi giữa tiệm.'),
+         (DTV, 'Tối 18/5 chị ở đâu?'),
+         (None, 'Tôi đánh mạt chược ở nhà chị Hồng bên Quận 10 từ tám giờ tới một giờ sáng, bốn người một bàn.'),
+         (DTV, 'Chị có biết mã két không?'),
+         (None, 'Ông còn không cho tôi bước vô phòng làm việc, nói chi biết mã.')),
+     'signature': 'Người khai: Lý Diễm My'})
+
+add({'id': 'd10', 'stage': 2, 'type': 'report', 'title': 'Biên bản xác minh bàn mạt chược ở Quận 10',
+     'header': CA, 'heading': 'Biên bản xác minh', 'code': '27/XM', 'date': 'Ngày 20/5/1995',
+     'sections': [{'heading': 'Kết quả', 'paragraphs': [
+         'Ba người cùng bàn (bà Lưu Thị Hồng, bà Mạch Ngọc Lan, ông Tô Hữu Phát) xác nhận Lý Diễm My ngồi chơi từ khoảng 20:00 tới 01:00, chỉ đứng dậy đi vệ sinh trong nhà.',
+         'Người giúp việc nhà bà Hồng xác nhận dọn chè lúc 22:30 cho cả bàn, có mặt My.',
+         'Nhà bà Hồng cách tiệm Vạn Thành khoảng 3 km.']}],
+     'signers': [{'role': DTV, 'name': DTV_NAME}]})
+
+add({'id': 'd11', 'stage': 2, 'type': 'testimony', 'title': 'Lời khai của Quách Bửu (bảo vệ đêm)',
+     'header': CA, 'heading': 'Biên bản ghi lời khai', 'date': '09 giờ 00 ngày 19/5/1995',
+     'fields': [{'label': 'Người khai', 'value': 'Quách Bửu, 48 tuổi, bảo vệ trực đêm'}],
+     'lines': tl('Quách Bửu',
+         (DTV, 'Tối 18/5 anh trực thế nào?'),
+         (None, 'Tôi vô ca lúc tám giờ. Khoảng chín giờ có ly trà đá quán Ba Lẹ để sẵn trên quầy, tôi tưởng ông chủ sai mua như mọi bữa nên uống.'),
+         (None, 'Uống xong một lát là buồn ngủ ríu mắt, gục trên quầy luôn, sáng ra người ta lay mới dậy. Đầu nặng như đeo đá.'),
+         (DTV, 'Anh có thấy ai vào tiệm không?'),
+         (None, 'Trước khi ngủ tôi nghe tiếng cửa hông lách cách, tưởng ông chủ ra hẻm hút thuốc. Tôi không biết mã két, tôi chỉ giữ chìa cửa cuốn.')),
+     'signature': 'Người khai: Quách Bửu'})
+
+add({'id': 'd12', 'stage': 2, 'type': 'report', 'title': 'Kết quả xét nghiệm độc chất',
+     'header': ['Phân viện Khoa học hình sự', 'TP Hồ Chí Minh'], 'heading': 'Kết quả xét nghiệm', 'code': '488/XN', 'date': 'Ngày 20/5/1995',
+     'sections': [
+         {'heading': '1. Kết quả', 'paragraphs': ['Phát hiện **cloral hydrat** (thuốc an thần, gây ngủ) liều cao trong máu, dịch dạ dày ông Lâm Vạn Thành và trong cặn ly cà phê "Ba Lẹ".',
+                                                  'Ly trà đá ở quầy bảo vệ có cloral hydrat. Mẫu máu lấy của Quách Bửu lúc 9 giờ sáng 19/5 **vẫn còn** cloral hydrat ở nồng độ gây ngủ sâu.']},
+         {'heading': '2. Nhận xét', 'paragraphs': ['Với người bệnh tim, liều này gây ức chế hô hấp và suy tim. Cloral hydrat là thuốc kê đơn, dạng siro hoặc dung dịch, có vị đắng, dễ lẫn trong cà phê đậm.']}],
+     'signature': 'Giám định viên: TS. Võ Thị Hạnh'})
+
+# ───────────── Vòng 3: lớp phấn và mảnh giấy ─────────────
+add({'id': 'd13', 'stage': 3, 'type': 'report', 'title': 'Giám định bột phấn trên núm xoay két sắt',
+     'header': ['Phân viện Khoa học hình sự', 'TP Hồ Chí Minh'], 'heading': 'Kết luận giám định', 'code': '491/GĐ', 'date': 'Ngày 21/5/1995',
+     'sections': [
+         {'heading': '1. Thành phần', 'paragraphs': ['Bột gạo xay rất mịn, bột hoàng thổ và tinh dầu hoa nhài: loại **phấn nụ** làm thủ công, phụ nữ lớn tuổi hay dùng. Không phải phấn công nghiệp.']},
+         {'heading': '2. Vết lau', 'paragraphs': ['Phấn bị lau mất ở bốn vạch **18, 42, 65, 89**, các vạch khác còn nguyên lớp phấn. Lớp phấn được thoa **sau lần lau dọn cuối** (người làm công lau két lúc 17:00) và **trước lần mở két 18:30**.']},
+         {'heading': '3. Nhận xét', 'paragraphs': ['Khi người mở két xoay núm, đầu ngón tay sẽ xoá phấn ở đúng các số dừng lại. Ai thoa phấn và nhìn lại núm sau 18:30 sẽ biết bốn chữ số của mã, nhưng chưa biết thứ tự.']}],
+     'signature': 'Giám định viên: Thượng uý Nguyễn Thanh Hà'})
+
+add({'id': 'd14', 'stage': 3, 'type': 'evidence', 'title': 'Mảnh giấy ghi các dãy số và giám định chữ viết',
+     'code': 'TV-10', 'image': 'images/d10-manh-giay.webp', 'imageCaption': 'Mảnh giấy thu dưới chân bàn trà phòng làm việc.',
+     'fields': [{'label': 'Nội dung', 'value': 'Các cách xếp thứ tự của bốn số 18, 42, 65, 89; ba dòng đầu gạch bỏ, dòng thứ tư 42-18-65-89 khoanh tròn'},
+                {'label': 'Mẫu so sánh', 'value': 'Chữ viết của Trương Chấn Hào, Lý Diễm My, Quách Bửu, Tạ Thục Nghi'}],
+     'paragraphs': ['1. Giấy là một mẩu xé từ **tập giấy pơ-luya dùng làm phiếu thu của tiệm**, loại để trên bàn kế toán.',
+                    '2. Chữ số: số 1 viết có móc đầu, số 4 viết kín đầu, số 8 viết hai vòng tách rời. Đặc điểm này **trùng khớp với chữ số trong sổ quỹ của tiệm do Tạ Thục Nghi ghi**; không trùng với chữ của ba người còn lại.',
+                    '3. Dòng khoanh tròn 42-18-65-89 chính là mã két (con trai ông Thành xác nhận sau khi mở lại két).']})
+
+add({'id': 'd15', 'stage': 3, 'type': 'testimony', 'title': 'Lời khai của ông Lê Văn Lẹ (chủ quán cà phê Ba Lẹ)',
+     'header': CA, 'heading': 'Biên bản ghi lời khai', 'date': '08 giờ 00 ngày 21/5/1995',
+     'fields': [{'label': 'Người khai', 'value': 'Lê Văn Lẹ (Ba Lẹ), 58 tuổi, chủ quán cà phê vợt ở đầu hẻm sau tiệm Vạn Thành'}],
+     'lines': tl('Lê Văn Lẹ',
+         (DTV, 'Tối 18/5 ai mua cà phê cho ông Thành?'),
+         (None, 'Khoảng chín giờ kém mười lăm, cô Nghi kế toán tiệm vàng ra mua một ly cà phê vợt với một ly trà đá. Cô dặn "pha đậm cho chú Thành nghen".'),
+         (DTV, 'Ông chắc là cô Nghi?'),
+         (None, 'Chắc chớ. Cô mua ở quán tôi mười mấy năm, mấy bữa ông Thành làm khuya cô hay mua. Bữa đó cô mặc áo bà ba lam, xách cái giỏ đệm.'),
+         (DTV, 'Cô ấy đi về hướng nào?'),
+         (None, 'Đi vô hẻm sau, phía cửa hông tiệm vàng. Lát sau tôi dọn quán thì không thấy cô ra đầu hẻm nữa.')),
+     'signature': 'Người khai: Lê Văn Lẹ'})
+
+add({'id': 'd16', 'stage': 3, 'type': 'report', 'title': 'Biên bản xác minh hành tung của Trương Chấn Hào sau giờ giải lao',
+     'header': CA, 'heading': 'Biên bản xác minh', 'code': '31/XM', 'date': 'Ngày 21/5/1995',
+     'sections': [
+         {'heading': '1. Lời Hào khai lại', 'paragraphs': ['Hào thừa nhận rời rạp lúc giải lao, chạy xe tới quán cà phê cá độ "Hưng Ký" ở Quận 6 để xin khất nợ, nói dối vì sợ lộ chuyện cá độ.']},
+         {'heading': '2. Xác minh', 'paragraphs': ['Chủ quán và hai người làm công quán Hưng Ký xác nhận Hào có mặt từ khoảng 21:35 tới 23:30, ngồi chờ người cho vay nặng lãi rồi cãi nhau to. Sổ ghi nợ của quán có dòng "A Hào xin khất 18/5", chữ Hào ký.',
+                                                 'Quận 6 cách tiệm Vạn Thành khoảng 4 km.']}],
+     'signers': [{'role': DTV, 'name': DTV_NAME}]})
+
+# ───────────── Vòng 4: sổ quỹ ─────────────
+add({'id': 'd17', 'stage': 4, 'type': 'report', 'title': 'Điện tín từ Hồng Kông và kết quả kiểm tra sổ quỹ',
+     'header': CA, 'heading': 'Biên bản làm việc', 'code': '35/LV', 'date': 'Ngày 22/5/1995',
+     'sections': [
+         {'heading': '1. Điện tín', 'paragraphs': ['Điện tín gửi ông Lâm Vạn Thành ngày 10/5/1995, người gửi Lâm Gia Minh (con trai, Hồng Kông): "Con về ngày 20/5. Đem theo kế toán kiểm lại sổ ba năm như ba dặn."',
+                                                    'Theo nhân viên tiệm, ông Thành đọc điện tín trước mặt cả tiệm ngày 11/5.']},
+         {'heading': '2. Sổ quỹ', 'paragraphs': ['Kế toán do ông Lâm Gia Minh mời đối chiếu sổ quỹ (do Tạ Thục Nghi ghi) với hoá đơn bán hàng: từ 1992 đến nay **thiếu khoảng 310 triệu đồng**, chủ yếu qua các phiếu chi ghi khống và phiếu thu ghi thấp.',
+                                                 'Nếu két bị trộm sạch, số tiền mặt cuối kỳ không còn để đối chiếu.']}],
+     'signers': [{'role': DTV, 'name': DTV_NAME}]})
+
+add({'id': 'd18', 'stage': 4, 'type': 'report', 'title': 'Biên bản khám xét nhà Tạ Thục Nghi ở Quận 11',
+     'header': CA, 'heading': 'Biên bản khám xét', 'code': '19/KX', 'date': '06 giờ 00 ngày 23/5/1995',
+     'sections': [
+         {'heading': 'Thu giữ', 'paragraphs': [
+             '— Trong hũ trà sứ lớn có đáy giả: **38 lượng vàng lá** dập chữ "Vạn Thành" và 72 triệu đồng.',
+             '— Trên bàn trang điểm: một hộp **phấn nụ** làm thủ công, mùi hoa nhài; bông phấn có vết bột bị bấm khuyết như vừa dùng.',
+             '— Trong tủ thuốc của mẹ Nghi: một chai siro **cloral hydrat** theo đơn bệnh viện Chợ Rẫy, còn chưa tới một phần ba, đơn kê ngày 2/5.',
+             '— Một áo bà ba lam, một giỏ đệm, một chìa khoá cửa hông tiệm Vạn Thành.']},
+         {'heading': 'Lời bà Tạ mẹ Nghi', 'paragraphs': ['"Chai thuốc ngủ đó tôi mới uống có mấy muỗng. Tối 18, khoảng tám giờ rưỡi con Nghi nói đi công chuyện, gần nửa đêm mới về."']}],
+     'signers': [{'role': DTV, 'name': DTV_NAME}]})
+
+add({'id': 'd19', 'stage': 4, 'type': 'testimony', 'title': 'Biên bản ghi lời khai lần hai của Tạ Thục Nghi',
+     'header': CA, 'heading': 'Biên bản ghi lời khai', 'date': '14 giờ 00 ngày 23/5/1995',
+     'fields': [{'label': 'Người khai', 'value': 'Tạ Thục Nghi, 40 tuổi'}],
+     'lines': tl('Tạ Thục Nghi',
+         (DTV, 'Số vàng trong hũ trà nhà chị ở đâu ra?'),
+         (None, 'Vàng tôi tích góp mười mấy năm làm công.'),
+         (DTV, 'Vàng dập chữ Vạn Thành.'),
+         (None, 'Thì tôi mua của tiệm, nhân viên được mua giá gốc.'),
+         (DTV, 'Chị có bao giờ đụng vào két sắt không?'),
+         (None, 'Không bao giờ. Tôi chỉ đếm tiền đưa ông, ông tự cất.'),
+         (DTV, 'Sổ quỹ thiếu ba trăm mười triệu.'),
+         (None, '(Im lặng rất lâu) Ông Thành chưa bao giờ tăng lương cho tôi mười hai năm.')),
+     'signature': 'Người khai: Tạ Thục Nghi'})
+
+CARDS = ['hao', 'my', 'buu', 'nghi']
+Q = [
+    {'id': 'q1', 'stage': 1, 'type': 'choice', 'title': 'Cướp đột nhập, hay người biết mã?',
+     'prompt': 'Báo chí gọi đây là "vụ cướp tiệm vàng". Dựa vào hồ sơ đang mở, nhận định nào đứng vững?',
+     'options': ['Băng cướp chuyên nghiệp phá cửa hông, khống chế ông Thành rồi dùng dụng cụ nghe tiếng chốt để mở két, bảo vệ bị đánh ngất.',
+                 'Người lấy vàng đã biết được mã két nhờ lớp phấn trên núm xoay, vào bằng chìa cửa hông, và ông Thành không chống cự vì đã uống thứ gì đó.'],
+     'answer': [1],
+     'nudges': {'0': {'message': 'Cửa hông có dấu cạy không? Ông Thành có thương tích không? Két có dấu khoan không?'}},
+     'hints': ['Đọc biên bản khám nghiệm: cửa, két, nạn nhân.', 'Két mở bằng đúng mã. Trên núm xoay có gì lạ?',
+               'd02: cửa hông mở bằng chìa, két không cạy, núm phủ phấn bị lau ở bốn chỗ; d03, d05: không thương tích, nghi ngộ độc thuốc an thần.'],
+     'solved': 'Không có băng cướp nào. Ai đó đã lấy được mã bằng một lớp phấn, và có chìa cửa hông.',
+     'explanation': [{'title': 'Két', 'body': ['d02, d05: két mở đúng mã; lớp phấn trên núm bị lau ở bốn vạch.']},
+                     {'title': 'Cửa', 'body': ['d02: cửa hông khoá bằng chìa, không dấu cạy; ba người giữ chìa.']},
+                     {'title': 'Nạn nhân', 'body': ['d03: không thương tích, không giằng co; nghi ngộ độc an thần qua cà phê.']}]},
+    {'id': 'q2', 'stage': 1, 'type': 'evidence', 'need': 2, 'title': 'Ly cà phê cuối cùng',
+     'prompt': 'Ghim 2 tài liệu cho thấy ông Thành bị làm cho mất khả năng chống cự qua đồ uống.',
+     'answer': ['d02', 'd03'],
+     'nudges': [{'any': ['d05'], 'message': 'Ảnh núm két nói về mã két, không nói về nạn nhân.'},
+                {'any': ['d01'], 'near': True, 'message': 'Báo chí chỉ kể lại. Cần biên bản và giám định.'}],
+     'hints': ['Một tài liệu tả đồ uống trên bàn, một tài liệu tả cơ thể nạn nhân.', 'Ly gì trên bàn? Pháp y nghi điều gì?',
+               'd02: ly cà phê vợt "Ba Lẹ" uống dở, ly trà đá cùng loại ở quầy bảo vệ. d03: không thương tích, ức chế hô hấp, nghi an thần liều cao, dạ dày có mùi cà phê.'],
+     'solved': 'Cà phê của ông Thành và trà của bảo vệ đều từ quán Ba Lẹ. Ai đã mang chúng vào?',
+     'explanation': [{'title': 'Đồ uống', 'body': ['d02: ly cà phê "Ba Lẹ" trên bàn ông Thành, ly trà "Ba Lẹ" ở quầy bảo vệ.']},
+                     {'title': 'Cơ thể', 'body': ['d03: không thương tích; ức chế hô hấp, suy tim; nghi an thần liều cao qua đường uống.']},
+                     {'title': 'Hai người cùng ngủ', 'body': ['d01: bảo vệ "ngủ say từ tối, không nghe gì".']}]},
+    {'id': 'q3', 'stage': 2, 'type': 'line', 'title': 'Phần hai của buổi diễn',
+     'prompt': 'Một người khai đã ở rạp tới hết chương trình. Chỉ ra dòng khai bị tài liệu ở vòng này bác bỏ.',
+     'answer': ['d07:004'],
+     'nudges': {'d07:002': {'near': True, 'message': 'Câu này nói giờ vào rạp, khớp với cuống vé. Tìm câu nói giờ ra.'}},
+     'hints': ['Đọc cuống vé và lời nhân viên soát vé.', 'Ghế H08 có ai ngồi phần hai không?',
+               'd07 dòng 4: coi tới hết chương trình. d08: giải lao 21:15, khán giả ghế H08 đi ra không quay vào.'],
+     'solved': 'Hào đã rời rạp lúc 21:15. Anh đi đâu?',
+     'explanation': [{'title': 'Câu khai', 'body': ['d07 dòng 4: coi tới hết, gần 22:30 mới về.']},
+                     {'title': 'Bị bác', 'body': ['d08: giải lao 21:15, khán giả ghế H08 đi ra cửa hông, ghế trống suốt phần hai.']},
+                     {'title': 'Chưa đủ', 'body': ['Hào có chìa cửa hông và nợ 80 triệu (d02, d07). Nhưng anh có biết mã két không?']}]},
+    {'id': 'q4', 'stage': 2, 'type': 'evidence', 'need': 2, 'title': 'Hai người đêm ấy không thể ra tay',
+     'prompt': 'Ghim 2 tài liệu khách quan loại trừ bà Diễm My và anh bảo vệ Quách Bửu.',
+     'answer': ['d10', 'd12'],
+     'nudges': [{'any': ['d09', 'd11'], 'message': 'Đó là lời tự khai. Tìm giấy tờ do người khác lập.'}],
+     'hints': ['Một tài liệu về bàn mạt chược, một tài liệu về máu của anh bảo vệ.', 'Anh Bửu có thật sự bị đánh thuốc không?',
+               'd10: ba người cùng bàn và người giúp việc xác nhận My ở Quận 10 từ 20:00 tới 01:00. d12: máu anh Bửu sáng 19/5 vẫn còn cloral hydrat ở nồng độ gây ngủ sâu.'],
+     'solved': 'My ngồi mạt chược cả đêm. Anh Bửu chính là nạn nhân thứ hai của ly đồ uống.',
+     'explanation': [{'title': 'Diễm My', 'body': ['d10: ba người cùng bàn và người giúp việc xác nhận; cách tiệm 3 km.']},
+                     {'title': 'Quách Bửu', 'body': ['d12: máu anh sáng 19/5 vẫn còn cloral hydrat nồng độ gây ngủ sâu; ly trà của anh có thuốc.']},
+                     {'title': 'Còn lại', 'body': ['Hai người giữ chìa cửa hông: Hào và chị Nghi (d02, d06).']}]},
+    {'id': 'q5', 'stage': 3, 'type': 'evidence', 'need': 2, 'title': 'Ai đọc được mã két?',
+     'prompt': 'Ghim 2 tài liệu cho thấy người lấy được mã két là người viết mảnh giấy dưới bàn trà, và đó là ai.',
+     'answer': ['d13', 'd14'],
+     'nudges': [{'any': ['d05'], 'near': True, 'message': 'Ảnh núm két cho thấy vết lau. Cần tài liệu giám định lớp phấn và chữ viết.'},
+                {'any': ['d06'], 'near': True, 'message': 'Lời khai cho biết ai đứng gần két lúc 18:30. Cần giám định.'}],
+     'hints': ['Một tài liệu về lớp phấn, một tài liệu về mảnh giấy.', 'Phấn thoa khi nào, lau ở những số nào? Chữ trên giấy giống chữ ai?',
+               'd13: phấn nụ thoa sau 17:00, trước 18:30, lau ở 18, 42, 65, 89. d14: giấy xé từ tập phiếu thu bàn kế toán, chữ số trùng sổ quỹ do Nghi ghi.'],
+     'solved': 'Người thoa phấn và viết các dãy số là người ngồi ngay cạnh két mỗi chiều: chị Nghi.',
+     'explanation': [{'title': 'Lớp phấn', 'body': ['d13: phấn nụ thủ công, thoa trong khoảng 17:00–18:30; lau ở bốn vạch của mã.']},
+                     {'title': 'Mảnh giấy', 'body': ['d14: giấy phiếu thu bàn kế toán; chữ số trùng sổ quỹ do Nghi ghi; dòng khoanh tròn là mã két.']},
+                     {'title': 'Ai ở gần', 'body': ['d06: 18:30 chị Nghi đứng bên cạnh đếm tiền khi ông Thành mở két.']}]},
+    {'id': 'q6', 'stage': 3, 'type': 'line', 'title': 'Buổi tối ở Quận 11',
+     'prompt': 'Chỉ ra dòng khai bị lời chủ quán cà phê bác bỏ.',
+     'answer': ['d06:004'],
+     'nudges': {'d06:002': {'near': True, 'message': 'Câu này về lúc 18:30. Tìm câu về buổi tối.'},
+                'd06:008': {'message': 'Câu về chìa cửa hông là đúng. Tìm câu nói về việc ra ngoài.'}},
+     'hints': ['Ai khai ở nhà cả tối?', 'Ông Ba Lẹ thấy ai lúc 20:45?', 'd06 dòng 4: ở nhà cả tối, không ra ngoài. d15: 20:45 chị Nghi mua cà phê và trà đá ở quán Ba Lẹ, đi vào hẻm sau.'],
+     'solved': 'Chị Nghi đã quay lại hẻm sau tiệm vàng lúc 20:45 với hai ly đồ uống.',
+     'explanation': [{'title': 'Câu khai', 'body': ['d06 dòng 4: 19:30 về nhà, ở nhà cả tối.']},
+                     {'title': 'Bị bác', 'body': ['d15: 20:45 chị mua một cà phê vợt "pha đậm cho chú Thành" và một trà đá, đi về phía cửa hông.']},
+                     {'title': 'Khớp', 'body': ['d11: khoảng 21:00 anh Bửu thấy ly trà "Ba Lẹ" trên quầy và nghe cửa hông lách cách.']}]},
+    {'id': 'q7', 'stage': 4, 'type': 'evidence', 'need': 2, 'title': 'Vì sao lại là đêm 18/5',
+     'prompt': 'Ghim 2 tài liệu cho thấy chị Nghi lấy vàng, và vì sao phải làm trước ngày 20/5.',
+     'answer': ['d17', 'd18'],
+     'nudges': [{'any': ['d19'], 'message': 'Lời khai của chính chị Nghi. Cần tài liệu khách quan.'}],
+     'hints': ['Ngày 20/5 ai về, để làm gì?', 'Trong nhà chị Nghi có gì?',
+               'd17: con trai ông Thành báo về 20/5 kiểm sổ ba năm; sổ quỹ do Nghi ghi thiếu 310 triệu. d18: vàng dập "Vạn Thành", phấn nụ, siro cloral hydrat của mẹ, chìa cửa hông.'],
+     'solved': 'Két trống thì không còn tiền mặt cuối kỳ để đối chiếu. Vụ trộm là để che sổ quỹ.',
+     'explanation': [{'title': 'Hạn chót', 'body': ['d17: điện tín "Con về ngày 20/5... kiểm lại sổ ba năm"; ông Thành đọc trước cả tiệm ngày 11/5.']},
+                     {'title': 'Thâm hụt', 'body': ['d17: sổ quỹ do Nghi ghi thiếu khoảng 310 triệu.']},
+                     {'title': 'Tang vật', 'body': ['d18: 38 lượng vàng "Vạn Thành", 72 triệu, phấn nụ, siro cloral hydrat, áo bà ba lam, giỏ đệm, chìa cửa hông.']}]},
+    {'id': 'q-accuse', 'stage': 4, 'type': 'choice', 'cards': CARDS, 'title': 'Chỉ mặt thủ phạm',
+     'prompt': 'Ai đã đánh thuốc ông Thành và lấy vàng trong két? Chọn một người.',
+     'options': ['Trương Chấn Hào', 'Lý Diễm My', 'Quách Bửu', 'Tạ Thục Nghi'], 'answer': [3],
+     'nudges': {'0': {'message': 'Hào ở quán cá độ Quận 6 từ 21:35 tới 23:30 (d16), và chữ trên mảnh giấy không phải của anh (d14).'},
+                '1': {'message': 'My ngồi mạt chược ở Quận 10 suốt đêm (d10).'},
+                '2': {'message': 'Anh Bửu cũng bị đánh thuốc (d12) và không biết mã két.'}},
+     'hints': ['Người lấy vàng cần: đứng gần két lúc 18:30, có chìa cửa hông, mang được đồ uống vào.', 'Ai mua cà phê ở quán Ba Lẹ lúc 20:45?',
+               'Chị Nghi: phấn nụ và chữ số (d13, d14, d18), quán Ba Lẹ (d15), sổ quỹ thiếu (d17), vàng trong hũ trà (d18).'],
+     'solved': 'Tạ Thục Nghi. Người kế toán mười hai năm của tiệm Vạn Thành.',
+     'explanation': [{'title': 'Lấy mã', 'body': ['d13, d14: phấn nụ trên núm và chữ số trên mảnh giấy dẫn về chị Nghi.']},
+                     {'title': 'Đồ uống', 'body': ['d15, d18: chị mua cà phê và trà ở quán Ba Lẹ; siro cloral hydrat của mẹ chị vơi gần hết.']},
+                     {'title': 'Động cơ', 'body': ['d17: con trai ông Thành sắp về kiểm sổ; sổ quỹ chị ghi thiếu 310 triệu.']}]},
+    {'id': 'q8', 'stage': 4, 'type': 'choice', 'title': 'Kết luận điều tra',
+     'prompt': 'Chọn bản kết luận đúng với hồ sơ ở mọi chi tiết.',
+     'options': [
+         'Chị Nghi thoa phấn nụ lên núm két chiều 18/5, đọc bốn chữ số sau khi ông Thành mở két lúc 18:30; tối đó mua cà phê và trà ở quán Ba Lẹ, pha thuốc ngủ của mẹ rồi mang vào bằng cửa hông; khuya quay lại thử từng thứ tự số tới khi két mở, lấy vàng để két trống trước ngày con trai ông Thành về kiểm sổ quỹ.',
+         'Hào rời rạp lúc giải lao, dùng chìa cửa hông vào tiệm, bỏ thuốc ngủ vào cà phê của chú mình và trà của bảo vệ, rồi dùng mảnh giấy ghi sẵn các dãy số mà anh dò được từ lớp phấn để mở két, lấy vàng trả nợ cá độ tám chục triệu.',
+         'Anh bảo vệ Bửu tự uống một ít thuốc ngủ để làm như bị đánh thuốc, nhân lúc ông Thành ngủ gục thì dùng chìa cửa cuốn vào phòng làm việc, đọc mã từ mảnh giấy chị Nghi để quên trên bàn trà rồi mở két lấy vàng đem giấu ở nhà người quen.',
+         'Bà Diễm My nhờ một người trong bàn mạt chược mua thuốc ngủ, sai người đem cà phê có thuốc tới tiệm, rồi nhờ Hào mở két bằng mã dò từ lớp phấn; hai người chia nhau số vàng để bà bỏ trốn sang Hồng Kông.'],
+     'answer': [0],
+     'exam': {'examiner': 'Kiểm sát viên Huỳnh Thị Ngọc Lan',
+              'intro': 'Trình bày kết luận trước kiểm sát viên: trả lời lần lượt từng câu hỏi bằng lời của mình. Không dùng được AI thì bấm “Trả lời bằng trắc nghiệm” để chọn bản kết luận đúng.'},
+     'nudges': {'1': {'message': 'Hào ở quán cá độ Quận 6 (d16), chữ trên mảnh giấy không phải của anh (d14).'},
+                '2': {'message': 'Máu anh Bửu vẫn còn thuốc ở nồng độ gây ngủ sâu (d12); mảnh giấy rơi dưới bàn trà sau khi két mở (d02).'},
+                '3': {'message': 'My ngồi mạt chược cả đêm (d10); người mua cà phê là chị Nghi (d15).'}},
+     'hints': ['Đối chiếu: ai mua cà phê (d15), chữ ai trên giấy (d14), thuốc của ai (d18).', 'Chỉ một phương án có cả phấn nụ, quán Ba Lẹ và sổ quỹ.', 'Phương án A.'],
+     'solved': 'Hồ sơ khép lại với tên Tạ Thục Nghi.',
+     'explanation': [{'title': 'Mã két', 'body': ['d13, d14: phấn nụ bị lau ở 18, 42, 65, 89; giấy ghi các thứ tự, dòng 42-18-65-89 khoanh tròn, chữ của Nghi.']},
+                     {'title': 'Thuốc', 'body': ['d15, d12, d18: cà phê và trà mua ở Ba Lẹ lúc 20:45; cloral hydrat; chai siro của mẹ Nghi vơi gần hết.']},
+                     {'title': 'Vì sao', 'body': ['d17: con trai ông Thành về 20/5 kiểm sổ; sổ quỹ thiếu 310 triệu; két trống thì không còn tiền mặt để đối chiếu.']}]},
+]
+
+case = {
+    'id': CID, 'no': 9, 'status': 'available',
+    'title': 'Vàng bóng Chợ Lớn',
+    'subtitle': 'Một chiếc két mở đúng mã, một lớp phấn mỏng và ly cà phê cuối cùng',
+    'tagline': 'Két sắt tiệm vàng Vạn Thành mở toang không một vết cạy, ông chủ gục chết bên ly cà phê vợt.',
+    'difficulty': 3, 'players': '1–5', 'duration': '60–75 phút',
+    'setting': 'Tiệm vàng Vạn Thành, Chợ Lớn, TP Hồ Chí Minh (hư cấu)', 'era': 'Tháng 5/1995',
+    'tags': ['Án mạng', 'Trộm két sắt', 'Chợ Lớn'], 'cover': 'images/cover.webp',
+    'contentWarning': 'Hồ sơ có mô tả một cái chết do thuốc an thần. Mọi nhân vật và tình tiết đều hư cấu.',
+    'synopsis': ['Sáng 19/5/1995, người làm công tiệm vàng Vạn Thành ở Chợ Lớn phát hiện ông chủ Lâm Vạn Thành chết trên ghế bành, cạnh ly cà phê vợt uống dở.',
+                 'Chiếc két sắt nặng nửa tấn mở toang không một vết cạy. Ông Thành chưa bao giờ ghi mã két ra giấy. Vậy ai đã biết mã?'],
+    'intro': {'title': 'Vàng bóng Chợ Lớn',
+              'paragraphs': ['Sáng 19/5/1995, tiệm vàng Vạn Thành trên đường Hải Thượng Lãn Ông, Quận 5, không mở cửa như thường lệ. Người làm công vào bằng cửa hông, thấy ông chủ Lâm Vạn Thành (60 tuổi) chết trên ghế bành, cạnh một ly cà phê vợt.',
+                             'Két sắt Chubb mở toang, không dấu cạy. Khoảng 50 lượng vàng và 100 triệu đồng đã biến mất. Anh bảo vệ trực đêm ngủ say tới sáng.',
+                             'Bạn là điều tra viên Đội Cảnh sát hình sự Công an Quận 5. Bốn người có lý do để bị nghi. Hãy bắt đầu từ chiếc núm xoay két sắt.'],
+              'objective': 'Tìm ra ai đã lấy được mã két, ai bỏ thuốc vào ly cà phê, và vì sao lại là đêm 18/5.'},
+    'victim': {'id': 'thanh', 'name': 'Lâm Vạn Thành', 'age': 60, 'role': 'Chủ tiệm vàng Vạn Thành', 'image': 'images/id-thanh.webp',
+               'note': 'Chết đêm 18/5/1995 trong phòng làm việc của tiệm. Két sắt mở đúng mã, mất khoảng 50 lượng vàng và 100 triệu đồng.'},
+    'suspects': [
+        {'id': 'hao', 'name': 'Trương Chấn Hào', 'age': 32, 'role': 'Cháu họ, thợ kim hoàn', 'image': 'images/id-hao.webp', 'voice': 'M1',
+         'suspicion': 'Nợ cá độ 80 triệu; giữ một chìa cửa hông tiệm.'},
+        {'id': 'my', 'name': 'Lý Diễm My', 'age': 26, 'role': 'Vợ bé ông Thành', 'image': 'images/id-my.webp', 'voice': 'F1',
+         'suspicion': 'Bị ông Thành giữ tiền chặt, tháng trước phải cầm đồ trang sức; hai người cãi nhau giữa tiệm.'},
+        {'id': 'buu', 'name': 'Quách Bửu', 'age': 48, 'role': 'Bảo vệ trực đêm', 'image': 'images/id-buu.webp', 'voice': 'M3',
+         'suspicion': 'Ở trong tiệm suốt đêm, nói ngủ say không nghe thấy gì.'},
+        {'id': 'nghi', 'name': 'Tạ Thục Nghi', 'age': 40, 'role': 'Kế toán kiêm thủ quỹ', 'image': 'images/id-nghi.webp', 'voice': 'F3',
+         'suspicion': 'Người duy nhất đứng cạnh ông Thành mỗi chiều khi ông mở két; giữ một chìa cửa hông.'}],
+    'aiInterrogation': True,
+    'audio': {'intro': 'audio/intro.mp3', 'finale': 'audio/finale.mp3'},
+    'documents': D,
+    'questions': Q,
+    'beats': [
+        {'stage': 2, 'kicker': 'Ngày 19–20/5/1995 · Công an Quận 5', 'title': 'Những người có chìa', 'voice': 'audio/beat-2.mp3',
+         'paragraphs': ['Không có băng cướp nào. Ai đó biết mã két, và ông Thành đã uống một thứ không phải cà phê thường.',
+                        'Đại uý Cường cho người tới rạp Hào Huê, tới một bàn mạt chược ở Quận 10, và gửi hai ly đồ uống đi xét nghiệm.',
+                        'Ai có mặt quanh tiệm vàng khi ly cà phê được mang vào?']},
+        {'stage': 3, 'kicker': 'Ngày 21/5/1995 · Phân viện Khoa học hình sự', 'title': 'Lớp phấn mỏng', 'voice': 'audio/beat-3.mp3',
+         'paragraphs': ['Giám định viên đưa chiếc núm xoay lên dưới kính lúp. Bốn vạch số sạch bong giữa một lớp phấn thơm mùi hoa nhài.',
+                        'Ở đầu hẻm sau tiệm vàng, ông chủ quán cà phê Ba Lẹ vừa nhớ ra một chuyện.',
+                        'Ai đã thoa phấn lên núm xoay, và ai đã mua ly cà phê cuối cùng?']},
+        {'stage': 4, 'kicker': 'Ngày 22/5/1995 · Tiệm vàng Vạn Thành', 'title': 'Cuốn sổ quỹ', 'voice': 'audio/beat-4.mp3',
+         'paragraphs': ['Con trai ông Thành về tới Sài Gòn sớm hai ngày, mang theo một bức điện tín và một người kế toán.',
+                        'Họ ngồi suốt đêm với ba năm sổ sách. Sáng ra, Đại uý Cường xin lệnh khám xét một căn nhà ở Quận 11.',
+                        'Chỉ mặt thủ phạm. Và giải thích vì sao.']}],
+    'finale': {'title': 'Vàng bóng Chợ Lớn',
+               'paragraphs': ['Tạ Thục Nghi khai nhận ngày 24/5/1995, khi hộp phấn nụ của chị được đặt lên bàn, cạnh chiếc núm xoay két sắt.',
+                              'Ba năm chị ghi phiếu chi khống, ghi phiếu thu thấp đi một chút. Ba trăm mười triệu. Ngày 11/5, ông Thành đọc to bức điện tín của con trai trước cả tiệm: ngày 20/5 sẽ có người về kiểm sổ.',
+                              'Chiều 18/5, sau khi người làm công lau két, chị thoa một lớp phấn mỏng lên núm xoay. Sáu giờ rưỡi, ông Thành mở két như mọi ngày, chị đứng bên đếm tiền. Bốn vạch số sạch phấn là đủ.',
+                              'Tám giờ bốn mươi lăm, chị mua cà phê ở quán Ba Lẹ, "pha đậm cho chú Thành nghen", rót vào đó mấy muỗng siro ngủ của mẹ. Chị không biết tim ông Thành không chịu nổi.',
+                              'Gần mười một giờ, chị quay lại bằng cửa hông, bọc khăn nhung quanh núm xoay, thử tới dòng thứ tư thì két mở. Két trống, ba năm sổ sách không còn gì để đối chiếu.',
+                              'Chị chỉ nói một câu với Đại uý Cường: "Mười hai năm, ông ấy chưa từng hỏi tôi có mệt không."']},
+    'epilogue': [
+        {'title': 'Tạ Thục Nghi', 'text': 'Bị truy tố về tội giết người, cướp tài sản và tham ô. Số vàng thu hồi được trả lại gia đình ông Thành.'},
+        {'title': 'Trương Chấn Hào', 'text': 'Bị phạt vì tham gia cá độ. Con trai ông Thành trả giúp khoản nợ, giữ anh lại làm thợ chính của tiệm.'},
+        {'title': 'Lý Diễm My', 'text': 'Nhận lại đôi bông tai đã cầm. Bà rời Chợ Lớn sau đám tang.'},
+        {'title': 'Quách Bửu', 'text': 'Nằm viện ba ngày vì thuốc an thần. Anh vẫn trực đêm ở tiệm Vạn Thành, và không bao giờ uống thứ gì người khác để sẵn trên quầy.'}],
+}
+
+for person in [case['victim'], *case['suspects']]:
+    if person.get('image') and not os.path.exists(f'public/cases/{CID}/' + person['image']):
+        print('chưa có ảnh:', person['image']); del person['image']
+json.dump(case, open(f'public/cases/{CID}/case.json', 'w'), ensure_ascii=False, indent=2)
+open(f'public/cases/{CID}/case.json', 'a').write('\n')
+print(len(D), 'docs', len(Q), 'questions')
