@@ -61,7 +61,7 @@ export default function CasePage() {
                 <div>
                   <p className="eyebrow">{caseNo(c)} · {KIND_LABEL[caseKind(c)]} · {open ? (c.draft ? 'Chưa hoàn thiện' : 'Đang mở') : 'Sắp ra mắt'}</p>
                   <h1>{c.title}</h1>
-                  {c.draft && (
+                  {open && c.draft && (
                     <p className="draft-notice">
                       <b>Chưa hoàn thiện.</b> Hồ sơ đã chơi được trọn vẹn, nhưng hình ảnh tư liệu vẫn đang được bổ sung: một số tài liệu tạm hiện khung ảnh trống.
                     </p>
