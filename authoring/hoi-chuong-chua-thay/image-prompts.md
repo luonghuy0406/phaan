@@ -1,3 +1,27 @@
+# Ảnh cho bản 2 (tháng 11/2026)
+
+Thủ phạm đổi thành nhà thầu Huy + thợ mộc Khải. Bìa giữ ảnh gác chuông (cover.webp) bạn đã tạo. d08 (phác hoạ của bà Nga theo cốt truyện
+cũ) đã gỡ. Sơ đồ d03 đổi ngày (`draw_images.py d03`). Dùng lại: d01, d03, d05, d11.
+
+## Ảnh thẻ (một ảnh ghép 3 cột × 2 hàng)
+
+Cắt bằng: `python3 tools/crop-portraits.py <ảnh-ghép> public/cases/hoi-chuong-chua-thay/images 2 3 vien chan nga huy khai -`
+rồi `python3 authoring/hoi-chuong-chua-thay/build_case.py`.
+
+```text
+A 3-column by 2-row grid of six Vietnamese ID card portrait photos from 2004, northern Vietnam, separated by thin white lines, each cell a head-and-shoulders front-facing shot, neutral calm expression, plain pale blue background, flat studio lighting, slightly faded colour, realistic skin texture, no text.
+Top row, left to right:
+(1) a 72-year-old Vietnamese Buddhist abbot, shaved head, thin serene face, gentle wrinkles, brown monk robe;
+(2) a 45-year-old Vietnamese Buddhist monk, shaved head, round gentle face, sad eyes, brown monk robe;
+(3) a 50-year-old Vietnamese village woman, kind tired face, hair tied in a low bun, plain grey Buddhist lay devotee robe (ao lam);
+Bottom row, left to right:
+(4) a 52-year-old Vietnamese construction company director, square face, neatly combed hair with grey temples, gold-rimmed glasses, white shirt with a dark tie;
+(5) a 38-year-old Vietnamese master carpenter, lean face, short hair, quiet eyes, faded khaki work shirt with wood dust;
+(6) an empty plain pale blue cell.
+```
+
+---
+
 # Bảng Prompt Tạo Hình Chi Tiết: Hồi chuông núi Sài Sơn (Hồ sơ 11)
 
 Toàn bộ prompt được viết bằng tiếng Việt chi tiết, hướng dẫn cụ thể về chùa cổ Bắc Bộ năm 2004, gác chuông đại hồng chung, ống bương tre cơ học và kỹ thuật hình sự. Tuyệt đối không chứa chữ trên ảnh.

@@ -1,36 +1,29 @@
-# Hồ sơ 11: Hồi chuông núi Sài Sơn (Bible)
+# Kịch bản gốc: Hồi chuông núi Sài Sơn (Hồ sơ 11, bản 2)
 
-## 1. Thông tin chung
-- **Mã hồ sơ**: `hoi-chuong-chua-thay`
-- **Số thứ tự**: Hồ sơ 11
-- **Tên hồ sơ**: Hồi chuông núi Sài Sơn
-- **Tagline**: Tiếng chuông u minh điểm đúng 12 giờ trưa, nhưng sư trụ trì đã viên tịch trong am thất đóng kín tự bao giờ.
-- **Bối cảnh**: Chùa Cổ Sơn, núi Sài Sơn, Quốc Oai, Hà Tây cũ (hư cấu), mùng một tháng Tư năm 2004.
-- **Thời lượng**: 100–120 phút
-- **Độ khó**: 4/5 (Khó - Bẫy cơ học nước chảy gõ chuông và giả mạo giờ sinh hoạt)
-- **Số tài liệu**: 17 tài liệu chia làm 4 trọng điểm (Stage).
+Hư cấu. Núi Sài Sơn là địa danh thật; chùa Cổ Sơn, nhân vật và sự việc đều hư cấu. 5 vòng, 27 tài liệu, 12 câu hỏi, 90–120 phút,
+**độ khó 4, có đồng phạm**. Thẻ nghi phạm, thẩm vấn AI, báo cáo kiểm sát viên. Nội dung dựng bằng `build_case.py`. **Chứa lời giải.**
 
-## 2. Nạn nhân & Nghi phạm
-- **Nạn nhân**: Đại đức Thích Tâm Viên (72 tuổi), sư trụ trì Chùa Cổ Sơn trên đỉnh núi Sài Sơn. Bậc cao tăng nghiêm cẩn, sống thanh tịnh trong am thất riêng, có thói quen đích thân thỉnh 3 tiếng chuông ngọ đúng 12h00 trưa mỗi ngày.
-- **Nghi phạm 1**: Thích Quảng Chân (45 tuổi), đệ tử trưởng quản lý hòm công đức và dự án tu bổ chùa. Bị sư trụ trì phát hiện biển thủ 60 triệu đồng tiền trùng tu tượng Phật Tam Thế.
-- **Nghi phạm 2**: Bùi Văn Lực (35 tuổi), thợ đúc đồng làng Ngũ Xã đang trùng tu khánh đồng và quai đại hồng chung. Từng bị sư trụ trì từ chối nghiệm thu do đồng pha tạp chất.
-- **Nghi phạm 3**: Hoàng Thị Nga (50 tuổi), phật tử công quả phụ trách nhà bếp chay dưới chân núi.
+Bản 1 cho đệ tử trưởng (một nhà sư) là hung thủ, có bản thú tội. Bản 2 giữ bẫy nước gõ chuông, thêm then cửa tự rơi; thủ phạm là
+nhà thầu trùng tu và thợ mộc cả. Thầy Quảng Chân thành nghi phạm giả.
 
-## 3. Sự thật & Thủ pháp phạm tội
-- **Hung thủ**: Thích Quảng Chân.
-- **Động cơ**: Sợ bị sư trụ trì tuyên bố trục xuất khỏi tăng đoàn và chuyển giao chứng cứ biển thủ cho chính quyền trong buổi họp tăng chúng chiều cùng ngày.
-- **Thủ pháp**:
-  - 09h45 sáng: Quảng Chân lên tịnh thất am thiền của sư trụ trì giả vờ sám hối. Lợi dụng lúc sư trụ trì quay lưng rót trà, y dùng sợi dây thừng gai siết cổ nạn nhân đến chết.
-  - Khóa chốt trong tịnh thất: Dùng sợi cước luồn qua khe then gỗ cửa liếp kéo chốt cài từ bên ngoài rồi rút dây ra ngoài.
-  - Tạo tiếng chuông ngọ lúc 12h00 để ngụy tạo việc sư trụ trì vẫn còn sống:
-    - Quảng Chân leo lên gác chuông cổ cạnh tịnh thất lúc 10h15.
-    - Y thiết lập một bẫy thủy lực cơ học tích nước: Đặt một xô nước có dùi lỗ nhỏ gắn que trúc rỉ giọt trên xà nhà gác chuông, cho nước nhỏ giọt vào một chiếc ống bương tre buộc ở đầu đòn bẩy đối trọng chày gỗ gõ chuông.
-    - Điều chỉnh lưu lượng rỉ giọt chính xác 1 tiếng 45 phút. Đúng 12h00 trưa, ống bương tre chứa đủ nước nặng làm chìm đòn bẩy, thả lỏng chốt hãm lò xo khiến chày gỗ giộng mạnh 3 nhịp liên tiếp vào vành đại hồng chung, rồi ống bương nghiêng lật trút sạch nước xuống máng xối ngầm gác chuông!
-    - Trong khi đó, từ 11h15 đến 12h30 trưa, Quảng Chân có mặt liên tục tại nhà khách chùa dưới chân núi cùng hơn 20 phật tử ăn cơm chay thụ lộc, tất cả đều nghe rõ tiếng chuông ngọ 12h00 và đinh ninh sư trụ trì vẫn khỏe mạnh trên núi.
-- **Chi tiết vạch trần**:
-  - Pháp y chỉ ra nạn nhân chết ngạt từ khoảng 09h45 - 10h15 sáng, dạ dày rỗng không, không thể tự gõ chuông lúc 12h00.
-  - Trên xà gác chuông phát hiện dấu vết ẩm ướt hình đáy xô và vết cọ xát của dây dù buộc đòn bẩy.
-  - Ống bương tre tự chế có trục xoay lật úp bị giấu sau tượng Hộ Pháp trên gác chuông dính nhựa mủ tre tươi mới cắt sáng cùng ngày.
-  - Trong túi áo nâu sồng của Quảng Chân có chiếc cưa tay mini dính mùn tre và một mẩu dây dù cùng loại với bẫy gõ chuông.
+## 1. Sự thật
+**Ra tay: Đỗ Quang Huy** (52), giám đốc công ty xây dựng Huy Phát. **Đồng phạm: Trịnh Văn Khải** (38), thợ mộc cả.
+- Huy thay gỗ lim bằng gỗ keo, xoan sơn màu (chênh ~380 triệu), giả chữ ký sư trên nghiệm thu 26/4, nhận 400 triệu. Sư tự cưa mẫu gỗ
+  gửi Sở (10/5), viết thư mời Ban quản lý di tích lên 14:00 ngày 19/5 (mùng 1 tháng Tư) để trao hồ sơ. 17/5 Huy gọi điện dò hỏi.
+- 12/5 Khải thay cửa, lắp then tự rơi (đầu nặng, ngàm vát) theo lời Huy. 18/5 Huy chi Khải 50 triệu "việc riêng".
+- 19/5: 9:20 thầy Chân lên tịnh thất sám hối (15 triệu công đức giúp người mổ tim, không ghi sổ); 9:40 đi, sư còn rót trà. 9:30 Huy rời
+  tam quan, gặp thầy Chân ở khúc ngoặt trên chính điện, gần 10:00 vào tịnh thất, sư không rút thư, Huy sát hại sư, lấy tập hồ sơ bìa
+  xanh, đóng mạnh cửa → then tự cài. 10:30 về tam quan.
+- 9:30 Khải mượn xô nhựa xanh ở bếp chay, khoan lỗ 1,5 mm; gần 10:00 xách xô và cước lên gác chuông; móc sắt, ống bương, cước giữ chày;
+  lắp xong ~10:30 (90 phút); gần 11:00 xuống. 11:15–12:35 Huy và thầy Chân ở nhà khách với đoàn Hà Nội. 12:00 chày thả: một tiếng mạnh,
+  hai tiếng nhỏ dần. 12:15 bà Nga gọi cửa; 12:30 phá cửa; Khải chạy sang gác chuông gỡ ống và xô, giấu ống sau tượng Hộ Pháp ở tam quan.
 
-## 4. Cấu trúc câu hỏi & Trọng điểm (Đã nâng cấp độ khó x5)
+## 2. Chuỗi suy luận
+- **Vòng 1 (9):** d00–d07, d27 (hình vẽ tay của bà Nga: bếp ở chân bậc đá). q1 sư chết trước 11:00, chuông không do sư (d03, d07). q2 evidence (d05, d07).
+- **Vòng 2 (6):** d08 Huy, d09 Khải, d10 đoàn Hà Nội, d11 chú tiểu, d12 thực nghiệm then, d13 gác chuông.
+  q3 line d06:004 (↔ d11). q4 evidence (d02, d12). q5 evidence (d03, d13).
+- **Vòng 3 (5):** d14 ảnh ống bương, d15 giám định bẫy, d16 thợ phụ, d17 Nga lần 2, d18 Chân lần 2.
+  q6 line d08:004 (↔ d16, d18). q7 evidence (d15, d17). q8 line d09:004 (↔ d16).
+- **Vòng 4 (5):** d19 giám định gỗ, d20 thư sư, d21 Ban quản lý di tích, d22 sổ thu chi Huy Phát, d23 Khải lần 2.
+  q9 evidence (d20, d21). q10 line d23:004 (↔ d22).
+- **Vòng 5 (3):** d24 khám xét Huy, d25 khám xét lán Khải, d26 giám định. q-accuse (Huy, Khải). q11 kết luận + kiểm sát viên AI.

@@ -106,7 +106,7 @@ def d03():
     d.text((60, 46), 'CÔNG AN TỈNH HÀ TÂY', font=font(BOLD, 22), fill=INK, anchor='lm')
     d.text((60, 74), 'Phòng Kỹ thuật hình sự', font=font(SANS, 20), fill=INK, anchor='lm')
     d.text((W / 2 + 90, 52), 'SƠ ĐỒ QUẦN THỂ CHÙA CỔ SƠN, NÚI SÀI SƠN', font=font(BOLD, 30), fill=INK, anchor='mm')
-    d.text((W / 2 + 90, 88), 'Lập 15h30 ngày 01/04/2004 · không theo tỷ lệ', font=font(ITAL, 20), fill=INK, anchor='mm')
+    d.text((W / 2 + 90, 88), 'Lập 13h30 ngày 19/5/2004 (mùng 1 tháng Tư) · không theo tỷ lệ', font=font(ITAL, 20), fill=INK, anchor='mm')
     # mountain profile (side view) with contour lines
     prof = bezier((80, 980), (300, 760), (520, 330), (760, 210), 40) + bezier((760, 210), (980, 230), (1180, 600), (1340, 980), 40)
     for k in range(6):
@@ -129,6 +129,7 @@ def d03():
     building(180, 960, 150, 50, 'NHÀ KHÁCH', 'phật tử thụ lộc trưa')
     building(380, 980, 130, 40, 'BẾP CHAY')
     building(560, 980, 150, 40, 'TAM QUAN')
+    d.text((560, 1022), '(đang trùng tu, lán thợ Huy Phát)', font=font(ITAL, 15), fill=SOFT, anchor='mm')
     # mid-slope
     building(860, 560, 190, 60, 'CHÍNH ĐIỆN')
     building(1060, 640, 160, 50, 'TĂNG XÁ', 'chỗ ở của đệ tử')

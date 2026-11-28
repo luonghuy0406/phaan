@@ -1,0 +1,60 @@
+{
+  "_ghi_chu": "Giọng đọc lấy thẳng chữ từ case.json. Hà Tây: giọng Bắc. Chạy: npm run gen-voice -- hoi-chuong-chua-thay và npm run gen-doc-voice -- hoi-chuong-chua-thay",
+  "engine": "vieneu",
+  "voices": {
+    "dan": "Thiện Minh",
+    "toan": "Minh Đức",
+    "chan": "Thiền Tâm Đức",
+    "nga": "Ngọc Linh",
+    "huy": "Quốc Tuấn",
+    "khai": "Phạm Tuyên",
+    "tam": "Adam bựa",
+    "dong": "Hải Đăng"
+  },
+  "temperature": 0.8,
+  "clips": [
+    {
+      "id": "intro",
+      "source": "intro"
+    },
+    {
+      "id": "beat-2",
+      "source": "beat:2"
+    },
+    {
+      "id": "beat-3",
+      "source": "beat:3"
+    },
+    {
+      "id": "beat-4",
+      "source": "beat:4"
+    },
+    {
+      "id": "beat-5",
+      "source": "beat:5"
+    },
+    {
+      "id": "finale",
+      "source": "finale",
+      "quotes": [
+        "dan",
+        "dan",
+        {
+          "voice": "huy"
+        }
+      ]
+    }
+  ],
+  "docs": {
+    "narrator": "dan",
+    "asker": "toan",
+    "speakers": {
+      "Thích Quảng Chân": "chan",
+      "Hoàng Thị Nga": "nga",
+      "Đỗ Quang Huy": "huy",
+      "Trịnh Văn Khải": "khai",
+      "Thích Minh Tâm": "tam",
+      "Lâm Văn Đông": "dong"
+    }
+  }
+}

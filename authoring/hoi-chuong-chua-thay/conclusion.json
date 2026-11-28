@@ -1,0 +1,140 @@
+{
+  "_ghi_chu": "Đáp án báo cáo kết luận trước kiểm sát viên (AI). CHỨA LỜI GIẢI. keywords không dấu.",
+  "q11": {
+    "examiner": "Kiểm sát viên Trần Văn Quang",
+    "persona": "Kiểm sát viên Viện Kiểm sát nhân dân tỉnh Hà Tây, ngoài năm mươi, giọng Bắc, điềm đạm, hỏi kỹ.",
+    "intro": "Tôi là kiểm sát viên phụ trách vụ chùa Cổ Sơn. Đồng chí trình bày kết luận, ngắn gọn, có căn cứ.",
+    "closing": "Báo cáo đủ căn cứ ở mọi điểm. Tôi đồng ý với kết luận điều tra.",
+    "points": [
+      {
+        "id": "ai",
+        "ask": "Thứ nhất: những ai phải chịu trách nhiệm, mỗi người đã làm gì?",
+        "facts": [
+          {
+            "id": "huy",
+            "text": "Đỗ Quang Huy sát hại sư trụ trì.",
+            "keywords": [
+              "huy"
+            ],
+            "probe": "Ai trực tiếp ra tay với sư trụ trì?"
+          },
+          {
+            "id": "khai",
+            "text": "Trịnh Văn Khải dựng bẫy chuông và lắp then tự rơi.",
+            "keywords": [
+              "khai",
+              "tho moc"
+            ],
+            "probe": "Còn người dựng hồi chuông giả là ai?"
+          }
+        ],
+        "hint": "Gợi ý: lời khai thợ phụ, lời khai lần hai của thầy Chân và bà Nga."
+      },
+      {
+        "id": "chuong",
+        "ask": "Thứ hai: chuông vang lúc 12 giờ khi sư đã mất. Ai, bằng cách nào?",
+        "facts": [
+          {
+            "id": "bay",
+            "text": "Bẫy nước: xô thủng nhỏ giọt vào ống bương, ống đầy thì lật, giật cước thả chày; một tiếng mạnh rồi hai tiếng nhỏ dần.",
+            "keywords": [
+              "xo",
+              "ong buong",
+              "ong tre",
+              "nho giot",
+              "nuoc",
+              "cuoc",
+              "chay",
+              "lat",
+              "bay"
+            ],
+            "probe": "Chày được thả bằng cơ chế gì?"
+          },
+          {
+            "id": "gio",
+            "text": "Bẫy lắp khoảng 10:25–10:35, hẹn 90 phút; Khải mượn xô bếp chay, mang cước thợ mộc lên, lúc phá cửa gỡ ống giấu sau tượng Hộ Pháp.",
+            "keywords": [
+              "10:30",
+              "10 gio 30",
+              "90 phut",
+              "muon xo",
+              "bep chay",
+              "ho phap",
+              "tay uot",
+              "go ong"
+            ],
+            "probe": "Bẫy được lắp lúc nào, ai mượn xô, ai gỡ ống?"
+          }
+        ],
+        "hint": "Gợi ý: kết luận giám định bẫy chuông và lời khai bà Nga lần hai."
+      },
+      {
+        "id": "cua",
+        "ask": "Thứ ba: cửa tịnh thất cài then bên trong. Người ra tay ra ngoài bằng cách nào?",
+        "facts": [
+          {
+            "id": "then",
+            "text": "Then mới do Khải lắp 12/5, đầu nặng, ngàm vát; đóng mạnh cửa từ ngoài thì then tự rơi vào ngàm.",
+            "keywords": [
+              "then",
+              "tu roi",
+              "dong manh",
+              "ngam",
+              "vat",
+              "12/5"
+            ],
+            "probe": "Then cửa có gì đặc biệt?"
+          }
+        ],
+        "hint": "Gợi ý: biên bản thực nghiệm then cửa."
+      },
+      {
+        "id": "vi-sao",
+        "ask": "Thứ tư: vì sao sư phải chết trước 14 giờ ngày 19/5?",
+        "facts": [
+          {
+            "id": "ho-so",
+            "text": "Huy thay gỗ lim bằng gỗ tạp, giả chữ ký sư trên nghiệm thu nhận 400 triệu; 14:00 sư sẽ trao hồ sơ cho Ban quản lý di tích; tập hồ sơ biến mất và nằm trong két Huy.",
+            "keywords": [
+              "go lim",
+              "go tap",
+              "go keo",
+              "chu ky",
+              "nghiem thu",
+              "400",
+              "14 gio",
+              "14:00",
+              "ban quan ly",
+              "ho so",
+              "ket"
+            ],
+            "probe": "Chiều hôm đó sư định làm gì?"
+          }
+        ],
+        "hint": "Gợi ý: thư của sư, biên bản làm việc với huyện, biên bản khám xét văn phòng."
+      },
+      {
+        "id": "loai-tru",
+        "ask": "Cuối cùng: thầy Quảng Chân đã nói dối và lên tịnh thất sáng đó. Vì sao không phải thầy?",
+        "facts": [
+          {
+            "id": "chan",
+            "text": "9:40 sư còn sống, rót trà cho thầy; ngay sau đó Huy đi lên; bẫy lắp 10:30 khi thầy ở hang; sợi vải, cước, vân tay đều dẫn về Huy và Khải; thầy nói dối vì 15 triệu giúp người mổ tim không ghi sổ.",
+            "keywords": [
+              "9:40",
+              "rot tra",
+              "gap ong huy",
+              "15 trieu",
+              "mo tim",
+              "khong ghi so",
+              "hang",
+              "soi vai"
+            ],
+            "probe": "Lúc thầy Chân rời tịnh thất, sư thế nào? Thầy gặp ai?"
+          }
+        ],
+        "hint": "Gợi ý: lời khai lần hai của thầy Chân."
+      }
+    ]
+  }
+}
