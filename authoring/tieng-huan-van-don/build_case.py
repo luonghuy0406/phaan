@@ -1,0 +1,380 @@
+"""Dựng public/cases/tieng-huan-van-don/case.json (bản 2, độ khó vừa). Chạy ở thư mục gốc:
+python3 authoring/tieng-huan-van-don/build_case.py
+
+Lời giải: máy trưởng Nguyễn Văn Sáu. Xem bible.md.
+"""
+import json
+import os
+
+CID = 'tieng-huan-van-don'
+CA = ['Công an tỉnh Quảng Ninh', 'Phòng Cảnh sát hình sự']
+DTV = 'Điều tra viên'
+DTV_NAME = 'Thiếu tá Vũ Đình Thắng'
+
+
+def tl(name, *pairs):
+    return [{'n': i + 1, 'speaker': s or name, 'text': t} for i, (s, t) in enumerate(pairs)]
+
+
+D = []
+add = D.append
+
+# ───────────── Vòng 1: nắp khoang gài từ bên ngoài ─────────────
+add({'id': 'd00', 'stage': 1, 'type': 'people', 'title': 'Nạn nhân và thuyền viên tàu QN-9288-TS',
+     'paragraphs': ['Ảnh thẻ trích từ sổ danh bạ thuyền viên, kèm lý do từng người được đưa vào diện xác minh sáng 14/11/2006.']})
+
+add({'id': 'd01', 'stage': 1, 'type': 'newspaper', 'title': 'Báo Quảng Ninh: Thuyền trưởng chết trong khoang lạnh tàu cá',
+     'masthead': 'Quảng Ninh', 'issue': 'Số 3.887', 'date': 'Thứ Tư, 15/11/2006',
+     'headline': 'Tàu cá cập cảng Cái Rồng, thuyền trưởng chết trong khoang lạnh bị gài then',
+     'deck': 'Thợ bốc xếp mở khoang lấy mực thì phát hiện chủ tàu đã tử vong.',
+     'image': 'images/d01-bao-chi.webp', 'imageCaption': 'Tàu QN-9288-TS neo ở cảng cá Cái Rồng sáng 14/11.',
+     'paragraphs': [
+         'Khoảng 6 giờ sáng 14/11, tàu cá QN-9288-TS về cảng Cái Rồng (huyện Vân Đồn) sau chuyến đi biển 12 ngày. Khi thợ bốc xếp kéo then mở nắp khoang lạnh số 3, họ thấy thuyền trưởng kiêm chủ tàu Trần Văn Đạt (50 tuổi) nằm bất động giữa các khay mực.',
+         'Nắp khoang được gài then sắt từ bên ngoài. Bốn thuyền viên đều khai không biết ông Đạt xuống khoang lúc nào.',
+         'Một thuyền viên kể đêm qua nghe "tiếng hú" lạ trên boong. Công an tỉnh Quảng Ninh đã niêm phong con tàu.']})
+
+add({'id': 'd02', 'stage': 1, 'type': 'report', 'title': 'Biên bản khám nghiệm hiện trường khoang lạnh số 3',
+     'header': CA, 'heading': 'Biên bản khám nghiệm hiện trường', 'code': '112/KNHT', 'date': '07 giờ 15 ngày 14/11/2006',
+     'fields': [{'label': 'Địa điểm', 'value': 'Tàu cá QN-9288-TS, cầu cảng số 2, cảng cá Cái Rồng'},
+                {'label': 'Người chết', 'value': 'Trần Văn Đạt, 50 tuổi, thuyền trưởng kiêm chủ tàu'}],
+     'sections': [
+         {'heading': '1. Nắp khoang', 'paragraphs': ['Khoang lạnh số 3 sâu 2,2 m, xuống bằng thang sắt. Nắp gỗ bọc tôn, đóng bằng **then sắt chỉ gài được từ phía boong**; bên trong không có tay nắm hay chốt. Thợ bốc xếp khai lúc 6 giờ then đang gài.']},
+         {'heading': '2. Trong khoang', 'paragraphs': ['Nhiệt kế khoang chỉ 0°C. Tử thi nằm nghiêng dưới chân thang, tay phải còn bám một nan thang. Một đèn pin rơi ở đáy, còn sáng yếu.',
+                                                         'Không có vết máu, không dấu vật lộn. Góc khoang có mấy mảnh bao ni lông trắng dày bị xé, đáy khoang đọng một lớp sương trắng.',
+                                                         'Thợ bốc xếp xuống đầu tiên bị chóng mặt, phải lên ngay.']},
+         {'heading': '3. Thu giữ', 'paragraphs': ['Đèn pin, mảnh bao ni lông, mẫu không khí ở đáy khoang.']}],
+     'signers': [{'role': DTV, 'name': DTV_NAME}]})
+
+add({'id': 'd03', 'stage': 1, 'type': 'report', 'title': 'Kết quả giám định pháp y sơ bộ ông Trần Văn Đạt',
+     'header': ['Trung tâm Pháp y tỉnh Quảng Ninh'], 'heading': 'Kết quả giám định sơ bộ', 'code': '274/PY', 'date': 'Ngày 14 tháng 11 năm 2006',
+     'sections': [
+         {'heading': '1. Khám ngoài', 'paragraphs': ['Không có thương tích do vật cứng, không dấu hiệu bị trói hay giằng co. Môi, đầu ngón tay tím tái.',
+                                                     'Ở lòng bàn tay phải và má phải có các mảng da trắng, cứng, phồng rộp: **bỏng lạnh**, do tiếp xúc trực tiếp một vật lạnh sâu hơn nhiều so với nhiệt độ khoang (0°C).']},
+         {'heading': '2. Nhận định', 'paragraphs': ['Tử vong do **ngạt thiếu oxy**. Thi thể nằm ở 0°C nên chỉ ước lượng được giờ chết trong khoảng rộng: **22:00 ngày 13/11 đến 02:00 ngày 14/11**.',
+                                                    'Đã gửi mẫu máu, dịch dạ dày xét nghiệm độc chất.']}],
+     'signature': 'Giám định viên: BS. Hoàng Thị Mai'})
+
+add({'id': 'd04', 'stage': 1, 'type': 'scan', 'title': 'Sơ đồ tàu cá QN-9288-TS',
+     'image': 'images/d04-so-do-tau-ca.webp', 'caption': 'Mặt cắt dọc và mặt boong tàu QN-9288-TS, lập khi khám nghiệm.'})
+
+add({'id': 'd05', 'stage': 1, 'type': 'photo', 'title': 'Ảnh nắp khoang lạnh số 3 và then sắt',
+     'image': 'images/d05-nap-khoang.webp', 'label': 'Tang vật ảnh số 2 · 14/11/2006',
+     'caption': 'Nắp khoang số 3 nhìn từ boong. Then sắt gài ngang; ổ khoá móc treo trên then nhưng không bấm khoá.'})
+
+add({'id': 'd06', 'stage': 1, 'type': 'testimony', 'title': 'Lời khai của Lê Quốc Tuấn (thuyền phó)',
+     'header': CA, 'heading': 'Biên bản ghi lời khai', 'date': '09 giờ 00 ngày 14/11/2006',
+     'fields': [{'label': 'Người khai', 'value': 'Lê Quốc Tuấn, 42 tuổi, thuyền phó, ca lái 20:00–24:00'}],
+     'lines': tl('Lê Quốc Tuấn',
+         (DTV, 'Đêm 13/11 anh làm gì?'),
+         (None, 'Tôi cầm lái ca 20 giờ đến 24 giờ, ngồi buồng lái suốt, cứ mười mấy phút lại gọi đài bờ Cái Rồng báo vị trí vì sương mù.'),
+         (DTV, 'Từ buồng lái anh có thấy ai trên boong không?'),
+         (None, 'Khoảng 22 giờ 15 đến 23 giờ có đốm thuốc lá cháy ở mũi tàu, chắc thằng Hải trốn ra hút. Phía khoang 3 ở sau buồng lái nên tôi không nhìn thấy.'),
+         (DTV, 'Anh và ông Đạt có mâu thuẫn gì?'),
+         (None, 'Chiều 13 cãi nhau mấy câu chuyện chia tiền mực. Tàu chỉ chở mực với cá, không có hàng gì khác.')),
+     'signature': 'Người khai: Lê Quốc Tuấn'})
+
+# ───────────── Vòng 2: ai ở đâu lúc 22:20 ─────────────
+add({'id': 'd07', 'stage': 2, 'type': 'testimony', 'title': 'Lời khai của Nguyễn Văn Sáu (máy trưởng)',
+     'header': CA, 'heading': 'Biên bản ghi lời khai', 'date': '10 giờ 30 ngày 14/11/2006',
+     'fields': [{'label': 'Người khai', 'value': 'Nguyễn Văn Sáu, 46 tuổi, máy trưởng, phụ trách máy chính và máy lạnh'}],
+     'lines': tl('Nguyễn Văn Sáu',
+         (DTV, 'Đêm 13/11 anh ở đâu?'),
+         (None, 'Tôi trực buồng máy từ 20 giờ đến sáng, không lên boong lần nào. Máy chính kêu to, ở dưới đó không nghe được gì trên boong.'),
+         (DTV, 'Khoang lạnh số 3 đêm đó có trục trặc gì không?'),
+         (None, 'Không. Máy lạnh chạy đều. Tôi không báo gì cho anh Đạt.'),
+         (DTV, 'Quạt hút khoang có ai bật không?'),
+         (None, 'Quạt hút chỉ bật khi xả khoang lúc cập bến. Đêm đó không ai bật.'),
+         (DTV, 'Anh Đạt có doạ đuổi việc anh?'),
+         (None, 'Tháng trước máy phát hỏng, anh ấy bắt tôi đền năm chục triệu. Sau đó thôi, anh em làm với nhau tám năm rồi.')),
+     'signature': 'Người khai: Nguyễn Văn Sáu'})
+
+add({'id': 'd08', 'stage': 2, 'type': 'testimony', 'title': 'Lời khai của Bùi Văn Hải (thuỷ thủ, cháu họ ông Đạt)',
+     'header': CA, 'heading': 'Biên bản ghi lời khai', 'date': '13 giờ 00 ngày 14/11/2006',
+     'fields': [{'label': 'Người khai', 'value': 'Bùi Văn Hải, 26 tuổi, thuỷ thủ boong, ca lái 00:00–04:00'}],
+     'lines': tl('Bùi Văn Hải',
+         (DTV, 'Từ 22 giờ đến 24 giờ anh ở đâu?'),
+         (None, 'Mười giờ cháu xuống phòng ngủ thuyền viên, ngủ một mạch đến mười hai giờ dậy nhận ca lái.'),
+         (DTV, 'Trong ca của anh có gì lạ không?'),
+         (None, 'Khoảng mười hai giờ mười lăm cháu nghe tiếng hú từ cái ống trên boong, rít lên mấy phút. Cháu tưởng gió lùa.'),
+         (DTV, 'Anh nợ ông Đạt bao nhiêu?'),
+         (None, 'Ba chục triệu, cháu vay mua xe máy. Chú bảo về bờ trừ dần vào lương.')),
+     'signature': 'Người khai: Bùi Văn Hải'})
+
+add({'id': 'd09', 'stage': 2, 'type': 'report', 'title': 'Trích nhật ký đàm thoại của đài bờ Cái Rồng đêm 13/11',
+     'header': ['Đài thông tin duyên hải Cái Rồng'], 'heading': 'Trích nhật ký đàm thoại', 'code': '08/NK', 'date': 'Ngày 14/11/2006',
+     'sections': [
+         {'heading': 'Tàu QN-9288-TS, kênh 16', 'paragraphs': ['22:05 — Thuyền phó Tuấn báo vị trí, sương mù dày.',
+                                                              '22:18 — Tuấn hỏi tình hình luồng Bái Tử Long.',
+                                                              '22:31 — Tuấn báo vị trí; nói "mũi tàu có đứa đang hút thuốc, tôi để ý rồi".',
+                                                              '22:44 — Tuấn báo vị trí.',
+                                                              '22:57, 23:10, 23:24, 23:38, 23:51 — Tuấn báo vị trí.',
+                                                              '00:06 — Thuỷ thủ Hải báo đã nhận ca lái.']},
+         {'heading': 'Ghi chú của đài', 'paragraphs': ['Các cuộc gọi từ 22:05 đến 23:51 đều cùng một giọng nói, người trực đài quen giọng anh Tuấn. Máy ICOM của tàu đặt cố định trong buồng lái.']}],
+     'signature': 'Trực đài: Đặng Văn Long'})
+
+add({'id': 'd10', 'stage': 2, 'type': 'testimony', 'title': 'Lời khai của Phạm Văn Khương (đầu bếp)',
+     'header': CA, 'heading': 'Biên bản ghi lời khai', 'date': '15 giờ 00 ngày 14/11/2006',
+     'fields': [{'label': 'Người khai', 'value': 'Phạm Văn Khương, 55 tuổi, đầu bếp kiêm thuỷ thủ'}],
+     'lines': tl('Phạm Văn Khương',
+         (DTV, 'Lần cuối anh thấy ông Đạt lúc nào?'),
+         (None, 'Mười giờ tôi pha ấm trà gừng cho anh Đạt ở bếp, anh ngồi uống với tôi.'),
+         (DTV, 'Sau đó?'),
+         (None, 'Mười giờ hai mươi anh Đạt bảo: "Thằng Sáu vừa báo khoang ba lên nhiệt, để anh xuống xem." Anh cầm đèn pin đi ra.'),
+         (DTV, 'Ông ấy có quay lại không?'),
+         (None, 'Không. Tôi tưởng anh về cabin ngủ. Tôi rửa ấm chén rồi đi ngủ.'),
+         (DTV, 'Anh có giận ông Đạt chuyện con trai anh?'),
+         (None, 'Chuyến trước anh ấy cho thằng con tôi nghỉ vì làm đứt lưới. Tôi buồn chứ giận gì, anh em quê với nhau.')),
+     'signature': 'Người khai: Phạm Văn Khương'})
+
+add({'id': 'd11', 'stage': 2, 'type': 'report', 'title': 'Kết quả xét nghiệm độc chất',
+     'header': ['Phân viện Khoa học hình sự', 'Bộ Công an'], 'heading': 'Kết quả xét nghiệm', 'code': '519/XN', 'date': 'Ngày 15/11/2006',
+     'sections': [
+         {'heading': '1. Máu, dịch dạ dày', 'paragraphs': ['Không phát hiện thuốc ngủ, thuốc an thần, thuốc độc. Nồng độ cồn rất thấp. Dạ dày có nước gừng.']},
+         {'heading': '2. Ấm trà gừng ở bếp', 'paragraphs': ['Không phát hiện chất lạ.']},
+         {'heading': '3. Mẫu không khí đáy khoang số 3', 'paragraphs': ['Lấy lúc 7 giờ 20 ngày 14/11: **khí CO2 khoảng 9%**, oxy thấp hơn bình thường. CO2 nặng hơn không khí, đọng ở đáy khoang. Ở nồng độ cao hơn nhiều so với mức này, người vào sẽ ngất sau vài hơi thở.']}],
+     'signature': 'Giám định viên: TS. Trần Quang Vinh'})
+
+add({'id': 'd12', 'stage': 2, 'type': 'report', 'title': 'Biên bản kiểm tra hầm hàng tàu QN-9288-TS',
+     'header': CA, 'heading': 'Biên bản kiểm tra', 'code': '115/KT', 'date': 'Ngày 14/11/2006',
+     'sections': [
+         {'heading': 'Kết quả', 'paragraphs': ['Khoang 1, 2: mực ống đông lạnh và cá. Dưới lớp khay đáy khoang 1 có **10 cây thuốc lá 555** không hoá đơn, bọc ni lông. Thuyền phó Lê Quốc Tuấn nhận là của mình, mua của tàu Trung Quốc ngoài khơi.',
+                                     'Hầm cá ngừ (sau buồng máy) khoá móc, chìa do máy trưởng giữ; chưa mở kiểm tra vì máy trưởng nói chìa để quên ở nhà.']}],
+     'signers': [{'role': DTV, 'name': DTV_NAME}]})
+
+# ───────────── Vòng 3: đá khô và chiếc quạt hút ─────────────
+add({'id': 'd13', 'stage': 3, 'type': 'report', 'title': 'Kết luận giám định khoang lạnh số 3',
+     'header': ['Phân viện Khoa học hình sự', 'Bộ Công an'], 'heading': 'Kết luận giám định', 'code': '522/GĐ', 'date': 'Ngày 16/11/2006',
+     'sections': [
+         {'heading': '1. Nguồn khí', 'paragraphs': ['Mảnh bao ni lông trắng là **bao đựng đá khô** (CO2 rắn, nhiệt độ khoảng −78°C), loại 20 kg/bao. Lớp sương trắng ở đáy là đá khô vụn còn sót. Đá khô thăng hoa thành khí CO2, đọng kín đáy khoang.',
+                                                 'Bỏng lạnh ở tay và má nạn nhân phù hợp với việc ngã chạm đá khô.']},
+         {'heading': '2. Quạt hút và "tiếng hú"', 'paragraphs': ['Quạt hút khoang số 3 xả qua một ống thép nhỏ dựng trên boong. Chạy tốc độ cao, khí phụt qua khe chụp ống rít thành tiếng hú kéo dài. Quạt còn bám sương CO2 bên trong: **đã chạy trong đêm**.',
+                                                                  'Công tắc quạt hút các khoang **chỉ có ở bảng điện trong buồng máy**.']},
+         {'heading': '3. Nhận định', 'paragraphs': ['Có người đổ đá khô xuống khoang số 3 trước khi ông Đạt xuống. Sau đó, khoảng 00:15, có người bật quạt hút để xả bớt CO2.']}],
+     'signature': 'Giám định viên: Thượng tá Nguyễn Hữu Phong'})
+
+add({'id': 'd14', 'stage': 3, 'type': 'photo', 'title': 'Ảnh mẫu đá khô thu giữ',
+     'image': 'images/d11-da-kho.webp', 'label': 'Tang vật ảnh số 9 · 16/11/2006',
+     'caption': 'Đá khô dạng viên nén lấy từ hầm cá ngừ tàu QN-9288-TS để đối chiếu, bốc hơi trắng ở nhiệt độ phòng.'})
+
+add({'id': 'd15', 'stage': 3, 'type': 'report', 'title': 'Biên bản mở hầm cá ngừ và đối chiếu sổ vật tư',
+     'header': CA, 'heading': 'Biên bản kiểm tra', 'code': '118/KT', 'date': 'Ngày 16/11/2006',
+     'sections': [
+         {'heading': '1. Hầm cá ngừ', 'paragraphs': ['Cắt khoá móc (máy trưởng không nộp chìa). Trong hầm có **3 bao đá khô** 20 kg, loại bao giống mảnh thu ở khoang 3.']},
+         {'heading': '2. Sổ vật tư (chữ máy trưởng Sáu)', 'paragraphs': ['"02/11: nhận 8 bao đá khô tại Cái Rồng để giữ cá ngừ." Không có dòng xuất đá khô nào. Tàu không đánh được cá ngừ chuyến này.',
+                                                                         'Kiểm đếm: thiếu **5 bao** (100 kg).']},
+         {'heading': '3. Ghi nhận', 'paragraphs': ['Lối từ buồng máy lên boong là một cửa sập cách nắp khoang số 3 khoảng 3 m (xem sơ đồ).']}],
+     'signers': [{'role': DTV, 'name': DTV_NAME}]})
+
+add({'id': 'd16', 'stage': 3, 'type': 'testimony', 'title': 'Biên bản ghi lời khai lần hai của Bùi Văn Hải',
+     'header': CA, 'heading': 'Biên bản ghi lời khai', 'date': '09 giờ 00 ngày 16/11/2006',
+     'fields': [{'label': 'Người khai', 'value': 'Bùi Văn Hải, 26 tuổi'}],
+     'lines': tl('Bùi Văn Hải',
+         (DTV, 'Thuyền phó và đài bờ đều thấy có người hút thuốc ở mũi tàu.'),
+         (None, '(Cúi đầu) Cháu lấy trộm mấy bao thuốc 555 của chú Tuấn, ra mũi tàu hút. Sợ bị chửi nên cháu nói là ngủ.'),
+         (DTV, 'Từ mũi tàu anh thấy gì?'),
+         (None, 'Khoảng mười giờ hai mươi lăm, có ánh đèn đội đầu ở chỗ nắp khoang ba, nhìn không rõ mặt. Rồi có tiếng then sắt kéo đánh "cạch". Ánh đèn đi về phía cửa sập xuống buồng máy rồi tắt.'),
+         (DTV, 'Ai trên tàu dùng đèn đội đầu?'),
+         (None, 'Chú Sáu. Dưới buồng máy tối, chú đeo suốt.')),
+     'signature': 'Người khai: Bùi Văn Hải'})
+
+# ───────────── Vòng 4: dầu ─────────────
+add({'id': 'd17', 'stage': 4, 'type': 'report', 'title': 'Đối chiếu nhật ký nhiên liệu và lời khai thuyền trưởng tàu QN-7731-TS',
+     'header': CA, 'heading': 'Biên bản làm việc', 'code': '41/LV', 'date': 'Ngày 17/11/2006',
+     'sections': [
+         {'heading': '1. Nhật ký nhiên liệu (chữ máy trưởng Sáu)', 'paragraphs': ['Đổ dầu đầu chuyến 9.000 lít. Theo số giờ máy và vòng tua ghi trong nhật ký, chuyến đi tiêu hao khoảng 6.400 lít. Thực tế két còn 800 lít: **thiếu khoảng 1.800 lít**.']},
+         {'heading': '2. Lời ông Ngô Văn Thịnh, thuyền trưởng tàu QN-7731-TS', 'paragraphs': ['"Đêm 9/11, hai tàu ghé nhau ở bãi Cô Tô. Anh Sáu máy trưởng bên 9288 bơm sang tôi 1.800 lít dầu, giá rẻ hơn ở cảng, tôi trả 21 triệu tiền mặt. Anh Sáu dặn đừng nói với anh Đạt."']}],
+     'signers': [{'role': DTV, 'name': DTV_NAME}]})
+
+add({'id': 'd18', 'stage': 4, 'type': 'note', 'title': 'Trích sổ tay của thuyền trưởng Trần Văn Đạt',
+     'paragraphs': ['Sổ tay bìa nhựa thu trong cabin thuyền trưởng, chữ ông Đạt:',
+                    '— 10/11: Dầu hao nhanh bất thường. Hỏi Sáu, Sáu nói kim phun mòn.',
+                    '— 12/11: Thằng Khoa bên 7731 gọi máy, buột miệng cảm ơn "dầu của anh Sáu". Đúng rồi.',
+                    '__— 13/11: Nói thẳng với Sáu. Về bờ báo đồn biên phòng Cái Rồng, bắt đền đủ tiền dầu và tiền máy phát. Tám năm, không ngờ.__'],
+     'signature': 'Trần Văn Đạt'})
+
+add({'id': 'd19', 'stage': 4, 'type': 'report', 'title': 'Biên bản khám xét tủ cá nhân máy trưởng Sáu và buồng máy',
+     'header': CA, 'heading': 'Biên bản khám xét', 'code': '44/KX', 'date': 'Ngày 17/11/2006',
+     'sections': [
+         {'heading': 'Tủ cá nhân', 'paragraphs': ['— 21 triệu đồng tiền mặt bọc trong túi ni lông, kẹp mẩu giấy ghi "7731 – 1.800".',
+                                                  '— Một đôi găng tay da dày, mặt trong lòng bàn tay có vết trắng cứng như bị bỏng lạnh, dính vụn ni lông trắng cùng loại bao đá khô.',
+                                                  '— Chìa khoá hầm cá ngừ.']},
+         {'heading': 'Nhật ký máy (chữ máy trưởng Sáu)', 'paragraphs': ['Trang 13/11: "22:00 máy chính ổn. **22:30 khoang 3: −18°C, ổn định.** 00:30 máy chính ổn." Không có dòng nào ghi khoang 3 lên nhiệt.']}],
+     'signers': [{'role': DTV, 'name': DTV_NAME}]})
+
+CARDS = ['tuan', 'sau', 'hai', 'khuong']
+NAMES = ['Lê Quốc Tuấn', 'Nguyễn Văn Sáu', 'Bùi Văn Hải', 'Phạm Văn Khương']
+Q = [
+    {'id': 'q1', 'stage': 1, 'type': 'choice', 'title': 'Tai nạn hay án mạng?',
+     'prompt': 'Theo hồ sơ đang mở, nhận định nào đứng vững về cái chết của ông Đạt?',
+     'options': ['Ông Đạt tự xuống khoang kiểm tra, trượt chân ngã đập đầu, nắp khoang tự sập và then tự rơi vào ngàm.',
+                 'Ông Đạt chết ngạt dưới đáy khoang, nơi có thứ gì đó làm hết oxy, và có người đã gài then nắp khoang từ phía boong.',
+                 'Ông Đạt bị đánh thuốc mê bằng ấm trà gừng rồi bị khiêng xuống khoang để chết rét ở 0°C.'],
+     'answer': [1],
+     'nudges': {'0': {'message': 'Pháp y có thấy thương tích do vật cứng không? Then gài từ phía nào?'},
+                '2': {'message': 'Pháp y kết luận chết vì gì? Ở 0°C người ta có chết ngay trong một đêm không, và vết bỏng lạnh từ đâu ra?'}},
+     'hints': ['Đọc biên bản khám nghiệm và kết luận pháp y.', 'Then gài được từ phía nào? Ông Đạt chết vì gì?',
+               'd02: then chỉ gài được từ boong, thợ bốc xếp xuống bị chóng mặt. d03: không thương tích, ngạt thiếu oxy, bỏng lạnh.'],
+     'solved': 'Ông Đạt chết ngạt ở đáy khoang. Ai đó đã gài then sau lưng ông.',
+     'explanation': [{'title': 'Then', 'body': ['d02, d05: then chỉ gài được từ phía boong; bên trong không có chốt.']},
+                     {'title': 'Ngạt', 'body': ['d03: không thương tích, tử vong do ngạt thiếu oxy; d02: thợ bốc xếp xuống bị chóng mặt.']},
+                     {'title': 'Bỏng lạnh', 'body': ['d03: bỏng lạnh ở tay và má, do vật lạnh sâu hơn nhiều so với 0°C.']}]},
+    {'id': 'q2', 'stage': 1, 'type': 'evidence', 'need': 2, 'title': 'Thứ gì lạnh hơn khoang lạnh',
+     'prompt': 'Ghim 2 tài liệu cho thấy trong khoang số 3 có một thứ lạnh sâu bất thường, không phải đồ của khoang mực.',
+     'answer': ['d02', 'd03'],
+     'nudges': [{'any': ['d05'], 'message': 'Ảnh nắp khoang nói về then gài. Cần tài liệu tả đáy khoang và cơ thể nạn nhân.'},
+                {'any': ['d01'], 'near': True, 'message': 'Báo chỉ kể lại. Cần biên bản và giám định.'}],
+     'hints': ['Một tài liệu tả đáy khoang, một tài liệu tả da nạn nhân.', 'Đáy khoang có gì lạ? Vết trên tay và má ông Đạt là gì?',
+               'd02: mảnh bao ni lông trắng dày, lớp sương trắng ở đáy. d03: bỏng lạnh ở tay và má, lạnh sâu hơn nhiều so với 0°C.'],
+     'solved': 'Có thứ gì đó lạnh hơn cả khoang đông, đựng trong bao ni lông dày, đã nằm ở đáy khoang số 3.',
+     'explanation': [{'title': 'Đáy khoang', 'body': ['d02: mảnh bao ni lông trắng dày bị xé, lớp sương trắng đọng ở đáy.']},
+                     {'title': 'Cơ thể', 'body': ['d03: bỏng lạnh ở lòng bàn tay và má, do vật lạnh sâu.']},
+                     {'title': 'Câu hỏi', 'body': ['Ai đã bỏ thứ đó xuống khoang, và vì sao ông Đạt lại xuống đúng lúc ấy?']}]},
+    {'id': 'q3', 'stage': 2, 'type': 'line', 'title': 'Đốm lửa ở mũi tàu',
+     'prompt': 'Một thuyền viên khai đã ngủ suốt từ 22 giờ đến 24 giờ. Chỉ ra dòng khai đó, nó bị lời người khác và nhật ký đài bờ bác bỏ.',
+     'answer': ['d08:002'],
+     'nudges': {'d08:004': {'near': True, 'message': 'Câu về tiếng hú lúc 00:15 thì chưa ai bác. Tìm câu nói về 22–24 giờ.'}},
+     'hints': ['Ai được thấy hút thuốc ở mũi tàu?', 'Đối chiếu lời thuyền phó (d06) và nhật ký đài bờ lúc 22:31 (d09).',
+               'd08 dòng 2: ngủ một mạch. d06 dòng 4 và d09 22:31: có người hút thuốc ở mũi tàu từ 22:15 đến 23 giờ.'],
+     'solved': 'Hải không ngủ. Anh ở mũi tàu, và có thể đã nhìn thấy điều gì đó.',
+     'explanation': [{'title': 'Câu khai', 'body': ['d08 dòng 2: 22 giờ xuống ngủ, 24 giờ mới dậy.']},
+                     {'title': 'Bị bác', 'body': ['d06 dòng 4: đốm thuốc lá ở mũi tàu 22:15–23:00. d09: 22:31 thuyền phó báo đài bờ có người hút thuốc ở mũi.']},
+                     {'title': 'Mở ra', 'body': ['Người ở mũi tàu có thể nhìn thấy boong phía sau, nơi có nắp khoang số 3 (d04).']}]},
+    {'id': 'q4', 'stage': 2, 'type': 'evidence', 'need': 2, 'title': 'Không phải buồng lái, không phải ấm trà',
+     'prompt': 'Ghim 2 tài liệu loại trừ thuyền phó Tuấn và giả thuyết ông Đạt bị đánh thuốc bằng ấm trà gừng.',
+     'answer': ['d09', 'd11'],
+     'nudges': [{'any': ['d06'], 'message': 'Đó là lời tự khai của anh Tuấn. Cần tài liệu do người khác ghi.'},
+                {'any': ['d10'], 'near': True, 'message': 'Lời anh Khương kể chuyện ấm trà. Cần kết quả xét nghiệm.'}],
+     'hints': ['Một tài liệu ghi giờ anh Tuấn nói qua bộ đàm, một kết quả xét nghiệm.', 'Ông Đạt rời bếp lúc 22:20 (d10). Anh Tuấn gọi đài bờ lúc mấy giờ?',
+               'd09: anh Tuấn gọi đài bờ đều đặn 22:05–23:51 bằng máy ICOM cố định trong buồng lái. d11: không có thuốc trong máu, trong ấm trà.'],
+     'solved': 'Anh Tuấn không rời buồng lái. Ông Đạt không bị đánh thuốc: ông tự đi xuống khoang. Vì sao?',
+     'explanation': [{'title': 'Thuyền phó', 'body': ['d09: 22:05, 22:18, 22:31, 22:44… cùng giọng anh Tuấn; máy ICOM đặt cố định trong buồng lái.']},
+                     {'title': 'Ấm trà', 'body': ['d11: không có thuốc ngủ, thuốc an thần, chất độc trong máu và ấm trà.']},
+                     {'title': 'Lời kể', 'body': ['d10: 22:20 ông Đạt nói "Thằng Sáu vừa báo khoang ba lên nhiệt", cầm đèn pin đi xuống.']}]},
+    {'id': 'q5', 'stage': 3, 'type': 'evidence', 'need': 2, 'title': 'Đá khô và chiếc quạt hút',
+     'prompt': 'Ghim 2 tài liệu cho thấy chất gây ngạt ở khoang số 3 lấy từ đâu, và chỉ ai mới bật được quạt hút lúc 00:15.',
+     'answer': ['d13', 'd15'],
+     'nudges': [{'any': ['d14'], 'near': True, 'message': 'Ảnh cho thấy đá khô trông thế nào. Cần tài liệu nói nó lấy từ đâu và ai giữ chìa.'},
+                {'any': ['d11'], 'near': True, 'message': 'Xét nghiệm cho thấy CO2 ở đáy khoang. Cần giám định nói nguồn khí và công tắc quạt.'}],
+     'hints': ['Một kết luận giám định khoang, một biên bản mở hầm cá ngừ.', 'Bao đá khô từ đâu ra? Công tắc quạt hút ở đâu?',
+               'd13: bao đá khô, CO2 đọng đáy khoang, quạt chạy trong đêm, công tắc chỉ ở buồng máy. d15: hầm cá ngừ chìa của máy trưởng, thiếu 5 bao đá khô, không ghi xuất.'],
+     'solved': 'Đá khô từ hầm cá ngừ mà máy trưởng giữ chìa. Quạt hút chỉ bật được trong buồng máy, nơi máy trưởng trực cả đêm.',
+     'explanation': [{'title': 'Đá khô', 'body': ['d13: bao đá khô 20 kg, CO2 đọng đáy khoang; d15: hầm cá ngừ thiếu 5 bao, sổ không ghi xuất.']},
+                     {'title': 'Chìa', 'body': ['d12, d15: chìa hầm cá ngừ do máy trưởng giữ, không chịu nộp.']},
+                     {'title': 'Quạt', 'body': ['d13: quạt hút chạy trong đêm, công tắc chỉ ở buồng máy; d08: tiếng hú lúc 00:15.']}]},
+    {'id': 'q6', 'stage': 3, 'type': 'line', 'title': 'Ánh đèn đội đầu',
+     'prompt': 'Chỉ ra dòng khai bị lời khai lần hai của Hải bác bỏ.',
+     'answer': ['d07:002'],
+     'nudges': {'d07:006': {'near': True, 'message': 'Câu về quạt hút đáng ngờ, nhưng Hải nói về một chuyện khác: ai đi lại trên boong.'},
+                'd07:004': {'near': True, 'message': 'Câu này bị lời anh Khương bác (d10). Tìm câu bị lời Hải bác.'}},
+     'hints': ['Hải thấy gì lúc 22:25?', 'Ai khai không lên boong lần nào?',
+               'd07 dòng 2: trực buồng máy, không lên boong lần nào. d16: 22:25 đèn đội đầu ở nắp khoang 3, tiếng then sắt, rồi đi về cửa sập buồng máy; chỉ máy trưởng đeo đèn đội đầu.'],
+     'solved': 'Người gài then lúc 22:25 đi về phía buồng máy, đeo đèn đội đầu như máy trưởng.',
+     'explanation': [{'title': 'Câu khai', 'body': ['d07 dòng 2: trực buồng máy, không lên boong lần nào.']},
+                     {'title': 'Bị bác', 'body': ['d16: 22:25 ánh đèn đội đầu ở nắp khoang 3, tiếng then sắt kéo, rồi đi về cửa sập buồng máy.']},
+                     {'title': 'Khớp', 'body': ['d15: cửa sập buồng máy cách nắp khoang 3 khoảng 3 m. d10: 22:20 ông Đạt nói "Thằng Sáu vừa báo khoang ba lên nhiệt".']}]},
+    {'id': 'q7', 'stage': 4, 'type': 'evidence', 'need': 2, 'title': 'Một nghìn tám trăm lít dầu',
+     'prompt': 'Ghim 2 tài liệu cho thấy vì sao máy trưởng phải ra tay ngay đêm cuối cùng trước khi tàu về bờ.',
+     'answer': ['d17', 'd18'],
+     'nudges': [{'any': ['d19'], 'near': True, 'message': 'Khám xét cho thấy tiền và găng tay. Cần tài liệu nói ông Đạt đã biết điều gì, và sẽ làm gì khi về bờ.'}],
+     'hints': ['Một biên bản về dầu, một trang sổ tay của ông Đạt.', 'Ông Đạt định làm gì khi về bờ?',
+               'd17: thiếu 1.800 lít dầu, tàu 7731 mua của Sáu 21 triệu. d18: 13/11 ông Đạt nói thẳng với Sáu, về bờ báo đồn biên phòng, bắt đền.'],
+     'solved': 'Ông Đạt định báo biên phòng ngay khi tàu cập cảng. Máy trưởng chỉ còn đúng một đêm.',
+     'explanation': [{'title': 'Dầu', 'body': ['d17: thiếu 1.800 lít; ông Thịnh tàu 7731 trả Sáu 21 triệu.']},
+                     {'title': 'Hạn chót', 'body': ['d18: 13/11 "Nói thẳng với Sáu. Về bờ báo đồn biên phòng, bắt đền".']},
+                     {'title': 'Tiền', 'body': ['d19: 21 triệu kẹp mẩu giấy "7731 – 1.800" trong tủ Sáu.']}]},
+    {'id': 'q-accuse', 'stage': 4, 'type': 'choice', 'cards': CARDS, 'title': 'Chỉ mặt thủ phạm',
+     'prompt': 'Ai đã khiến ông Đạt chết trong khoang lạnh số 3? Chọn một người.',
+     'options': NAMES, 'answer': [1],
+     'nudges': {'0': {'message': 'Anh Tuấn gọi đài bờ đều đặn từ buồng lái 22:05–23:51 (d09). Thuốc lá lậu là chuyện khác.'},
+                '2': {'message': 'Hải ở mũi tàu suốt 22:15–23:00 (d06, d09), và không có chìa hầm cá ngừ hay công tắc quạt.'},
+                '3': {'message': 'Ấm trà gừng không có gì (d11). Anh Khương không giữ chìa hầm đá khô, không vào buồng máy.'}},
+     'hints': ['Người làm cần: chìa hầm đá khô, lý do để ông Đạt xuống khoang, công tắc quạt hút.', 'Ai "báo khoang ba lên nhiệt"?',
+               'Sáu: đá khô (d15), lời báo giả (d10, d19), đèn đội đầu (d16), quạt hút (d13), dầu (d17, d18), găng tay (d19).'],
+     'solved': 'Nguyễn Văn Sáu, máy trưởng tám năm của tàu QN-9288-TS.',
+     'explanation': [{'title': 'Bẫy', 'body': ['d10, d19: Sáu báo khoang 3 "lên nhiệt" trong khi nhật ký máy ghi −18°C ổn định.']},
+                     {'title': 'Đá khô và then', 'body': ['d15, d16, d19: đá khô từ hầm Sáu giữ chìa; đèn đội đầu gài then; găng tay bỏng lạnh.']},
+                     {'title': 'Động cơ', 'body': ['d17, d18: bán trộm 1.800 lít dầu; ông Đạt sắp báo biên phòng.']}]},
+    {'id': 'q8', 'stage': 4, 'type': 'choice', 'title': 'Kết luận điều tra',
+     'prompt': 'Chọn bản kết luận đúng với hồ sơ ở mọi chi tiết.',
+     'options': [
+         'Máy trưởng Sáu đổ 5 bao đá khô từ hầm cá ngừ xuống đáy khoang số 3, rồi báo ông Đạt khoang 3 "lên nhiệt" để ông tự xuống xem lúc 22:20; ông Đạt ngất trong lớp CO2, Sáu gài then rồi về buồng máy; 00:15 Sáu bật quạt hút xả bớt khí cho sáng hôm sau, gây ra tiếng hú. Động cơ là 1.800 lít dầu Sáu bán trộm mà ông Đạt định báo biên phòng khi về bờ.',
+         'Thuyền phó Tuấn cãi nhau với ông Đạt về chia tiền mực và chuyện thuốc lá lậu, lợi dụng sương mù rời buồng lái giữa hai cuộc gọi đài bờ, đẩy ông Đạt xuống khoang số 3 rồi gài then, để ông chết rét trong đêm; bỏng lạnh là do nằm lâu trên khay mực đông, còn tiếng hú là gió lùa qua ống thông hơi khi tàu đổi hướng vào luồng Cái Rồng.',
+         'Đầu bếp Khương bỏ thuốc ngủ vào ấm trà gừng để trả thù việc con trai bị đuổi, rồi cùng Hải khiêng ông Đạt xuống khoang số 3 và đổ đá khô lên người; Hải bật quạt hút lúc nhận ca để phi tang khí CO2 và mảnh bao, sau đó cả hai khai đang ngủ, còn ông Sáu bị nghi oan chỉ vì giữ chìa hầm cá ngừ và chuyện chiếc máy phát hỏng.',
+         'Hải nợ chú 30 triệu, lén lấy chìa hầm cá ngừ khi máy trưởng ngủ, đổ đá khô xuống khoang số 3 rồi gọi chú xuống; sau khi gài then, Hải ra mũi tàu hút thuốc để có người làm chứng, rồi khi nhận ca lúc 00:06 tự bật quạt hút trên buồng lái để xả khí, mong món nợ ba chục triệu được xoá cùng người chú.'],
+     'answer': [0],
+     'exam': {'examiner': 'Kiểm sát viên Đào Thị Hương',
+              'intro': 'Trình bày kết luận trước kiểm sát viên: trả lời lần lượt từng câu hỏi bằng lời của mình. Không dùng được AI thì bấm “Trả lời bằng trắc nghiệm” để chọn bản kết luận đúng.'},
+     'nudges': {'1': {'message': 'Anh Tuấn gọi đài bờ đều đặn 22:05–23:51 bằng máy cố định ở buồng lái (d09). Bỏng lạnh và CO2 không phải "chết rét" (d03, d13).'},
+                '2': {'message': 'Không có thuốc trong máu và ấm trà (d11).'},
+                '3': {'message': 'Công tắc quạt hút chỉ có ở buồng máy (d13). Hải ở mũi tàu, còn người gài then đeo đèn đội đầu đi về buồng máy (d16).'}},
+     'hints': ['Đối chiếu: ai giữ chìa đá khô (d15), ai báo khoang lên nhiệt (d10), quạt bật ở đâu (d13).', 'Chỉ một phương án có đá khô, lời báo giả và 1.800 lít dầu.', 'Phương án A.'],
+     'solved': 'Hồ sơ khép lại với tên Nguyễn Văn Sáu.',
+     'explanation': [{'title': 'Cách làm', 'body': ['d13, d15, d10, d16: đá khô ở đáy khoang, lời báo giả, then gài lúc 22:25.']},
+                     {'title': 'Tiếng hú', 'body': ['d13, d08: quạt hút bật từ buồng máy lúc 00:15, khí rít qua ống xả.']},
+                     {'title': 'Vì sao', 'body': ['d17, d18, d19: 1.800 lít dầu bán trộm, 21 triệu, ông Đạt sắp báo biên phòng.']}]},
+]
+
+case = {
+    'id': CID, 'no': 10, 'status': 'available',
+    'title': 'Tiếng hú cảng Vân Đồn',
+    'subtitle': 'Một khoang lạnh gài then từ bên ngoài, một tiếng hú lúc nửa đêm',
+    'tagline': 'Tàu cá cập cảng Cái Rồng, thuyền trưởng nằm chết dưới đáy khoang lạnh bị gài then từ bên ngoài.',
+    'difficulty': 3, 'players': '1–5', 'duration': '60–75 phút',
+    'setting': 'Tàu cá QN-9288-TS, cảng Cái Rồng, Vân Đồn, Quảng Ninh (hư cấu)', 'era': 'Tháng 11/2006',
+    'tags': ['Án mạng', 'Tàu cá', 'Khoang lạnh'], 'cover': 'images/cover.webp',
+    'contentWarning': 'Hồ sơ có mô tả một cái chết do ngạt khí. Tàu, nhân vật và sự việc đều hư cấu.',
+    'synopsis': ['Sáng 14/11/2006, tàu cá QN-9288-TS về cảng Cái Rồng sau 12 ngày đi biển. Thợ bốc xếp kéo then mở khoang lạnh số 3 thì thấy thuyền trưởng Trần Văn Đạt nằm chết giữa các khay mực.',
+                 'Nắp khoang gài then từ phía boong. Đêm qua, một thuyền viên nghe thấy tiếng hú lạ trên boong.'],
+    'intro': {'title': 'Tiếng hú cảng Vân Đồn',
+              'paragraphs': ['Sáng 14/11/2006, tàu cá QN-9288-TS cập cảng Cái Rồng trong sương mù. Thợ bốc xếp kéo then mở khoang lạnh số 3 thì thấy thuyền trưởng kiêm chủ tàu Trần Văn Đạt nằm chết dưới chân thang.',
+                             'Then sắt chỉ gài được từ phía boong. Trên tàu còn bốn thuyền viên, ai cũng nói không biết ông Đạt xuống khoang lúc nào.',
+                             'Bạn là điều tra viên Phòng Cảnh sát hình sự Công an tỉnh Quảng Ninh. Hãy bắt đầu từ chiếc nắp khoang.'],
+              'objective': 'Tìm ra ông Đạt chết vì gì, ai đã gài then, "tiếng hú" lúc nửa đêm là gì, và vì sao lại là đêm cuối của chuyến biển.'},
+    'victim': {'id': 'dat', 'name': 'Trần Văn Đạt', 'age': 50, 'role': 'Thuyền trưởng kiêm chủ tàu QN-9288-TS', 'image': 'images/id-dat.webp',
+               'note': 'Chết trong khoang lạnh số 3 đêm 13 rạng sáng 14/11/2006, nắp khoang gài then từ bên ngoài.'},
+    'suspects': [
+        {'id': 'tuan', 'name': 'Lê Quốc Tuấn', 'age': 42, 'role': 'Thuyền phó', 'image': 'images/id-tuan.webp', 'voice': 'M2',
+         'suspicion': 'Cãi nhau với ông Đạt chiều 13/11 về chuyện chia tiền mực; cầm lái ca 20:00–24:00.'},
+        {'id': 'sau', 'name': 'Nguyễn Văn Sáu', 'age': 46, 'role': 'Máy trưởng', 'image': 'images/id-sau.webp', 'voice': 'M3',
+         'suspicion': 'Bị ông Đạt bắt đền 50 triệu vì làm hỏng máy phát; phụ trách máy lạnh các khoang.'},
+        {'id': 'hai', 'name': 'Bùi Văn Hải', 'age': 26, 'role': 'Thuỷ thủ, cháu họ ông Đạt', 'image': 'images/id-hai.webp', 'voice': 'M1',
+         'suspicion': 'Nợ ông Đạt 30 triệu; là người kể có "tiếng hú" trong đêm.'},
+        {'id': 'khuong', 'name': 'Phạm Văn Khương', 'age': 55, 'role': 'Đầu bếp', 'image': 'images/id-khuong.webp', 'voice': 'M4',
+         'suspicion': 'Pha ấm trà gừng cuối cùng cho ông Đạt; con trai bị ông Đạt cho nghỉ việc chuyến trước.'}],
+    'aiInterrogation': True,
+    'audio': {'intro': 'audio/intro.mp3', 'finale': 'audio/finale.mp3'},
+    'documents': D,
+    'questions': Q,
+    'beats': [
+        {'stage': 2, 'kicker': 'Ngày 14/11/2006 · Cảng Cái Rồng', 'title': 'Bốn người trên một con tàu', 'voice': 'audio/beat-2.mp3',
+         'paragraphs': ['Ông Đạt không bị đánh, không bị trói. Ông chết ngạt dưới đáy khoang, tay còn bám nan thang.',
+                        'Thiếu tá Thắng lần lượt hỏi từng thuyền viên, và xin đài bờ Cái Rồng bản ghi đàm thoại đêm qua.',
+                        'Lúc ông Đạt rời bếp, mỗi người đang ở đâu?']},
+        {'stage': 3, 'kicker': 'Ngày 16/11/2006 · Phân viện Khoa học hình sự', 'title': 'Thứ lạnh hơn khoang lạnh', 'voice': 'audio/beat-3.mp3',
+         'paragraphs': ['Giám định viên tháo chụp ống xả trên boong, bên trong còn bám một lớp sương trắng.',
+                        'Ở hầm cá ngừ, chiếc khoá móc phải cắt bằng kìm, vì chìa của nó "để quên ở nhà".',
+                        'Đá khô từ đâu tới khoang số 3? Và ai đã bật chiếc quạt hú lên lúc nửa đêm?']},
+        {'stage': 4, 'kicker': 'Ngày 17/11/2006 · Bãi Cô Tô', 'title': 'Một nghìn tám trăm lít', 'voice': 'audio/beat-4.mp3',
+         'paragraphs': ['Một con tàu khác vừa cập bến. Thuyền trưởng của nó nhớ rất rõ đêm 9/11 ở bãi Cô Tô.',
+                        'Trong cabin ông Đạt, cuốn sổ tay bìa nhựa còn một trang viết dở.',
+                        'Chỉ mặt thủ phạm. Và giải thích vì sao.']}],
+    'finale': {'title': 'Tiếng hú cảng Vân Đồn',
+               'paragraphs': ['Nguyễn Văn Sáu khai nhận ngày 18/11/2006, khi đôi găng tay da được đặt cạnh mảnh bao đá khô.',
+                              'Đêm 9/11 ở bãi Cô Tô, Sáu bơm sang tàu 7731 một nghìn tám trăm lít dầu, lấy hai mươi mốt triệu. Ngày 13/11, ông Đạt gọi anh ra mũi tàu, nói thẳng: về bờ là báo biên phòng.',
+                              'Tối đó, Sáu đeo găng, đổ năm bao đá khô từ hầm cá ngừ xuống đáy khoang số 3. Mười giờ hai mươi, anh lên bếp báo ông Đạt khoang ba lên nhiệt. Ông Đạt cầm đèn pin đi xuống, như mọi lần.',
+                              'Năm phút sau, Sáu kéo then. Gần nửa đêm, anh bật quạt hút cho khí thoát bớt, để sáng ra người bốc xếp không chết theo. Ống xả rít lên suốt mấy phút giữa biển.',
+                              'Sáu chỉ nói một câu: "Tám năm tôi giữ cho cái máy ấy chạy. Tôi chỉ định để anh ấy ngất đi một lúc."',
+                              'Giám định viên trả lời trong biên bản: ở đáy một khoang kín với một trăm cân đá khô, không có "một lúc".']},
+    'epilogue': [
+        {'title': 'Nguyễn Văn Sáu', 'text': 'Bị truy tố về tội giết người và trộm cắp tài sản. Hai mươi mốt triệu được trả lại gia đình ông Đạt.'},
+        {'title': 'Lê Quốc Tuấn', 'text': 'Bị xử phạt hành chính vì mua bán thuốc lá nhập lậu. Anh làm thuyền trưởng tạm cho tàu QN-9288-TS theo đề nghị của vợ ông Đạt.'},
+        {'title': 'Bùi Văn Hải', 'text': 'Trả lại chú Tuấn mấy bao thuốc. Vợ ông Đạt xoá khoản nợ ba chục triệu, với điều kiện Hải bỏ thuốc lá.'},
+        {'title': 'Phạm Văn Khương', 'text': 'Vẫn nấu bếp trên tàu. Con trai ông được gọi lại làm thuỷ thủ từ chuyến tháng Mười Hai.'}],
+}
+
+for person in [case['victim'], *case['suspects']]:
+    if person.get('image') and not os.path.exists(f'public/cases/{CID}/' + person['image']):
+        print('chưa có ảnh:', person['image']); del person['image']
+json.dump(case, open(f'public/cases/{CID}/case.json', 'w'), ensure_ascii=False, indent=2)
+open(f'public/cases/{CID}/case.json', 'a').write('\n')
+print(len(D), 'docs', len(Q), 'questions')

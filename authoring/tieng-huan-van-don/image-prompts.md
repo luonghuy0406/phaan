@@ -1,3 +1,27 @@
+# Ảnh cho bản 2 (tháng 11/2026)
+
+Thủ phạm đổi thành máy trưởng Sáu. Bìa cũ (hộp game chữ tiếng Anh) và d03-giai-phau (ghi sai dấu hiệu ngộ độc CO) đã gỡ. Bìa và ảnh
+nền thẻ cắt từ d01-bao-chi. Sơ đồ d04 vẽ lại bằng `draw_so_do.py`. Dùng lại: d01-bao-chi, d05-nap-khoang, d11-da-kho.
+
+## Ảnh thẻ (một ảnh ghép 3 cột × 2 hàng)
+
+Cắt bằng: `python3 tools/crop-portraits.py <ảnh-ghép> public/cases/tieng-huan-van-don/images 2 3 dat tuan sau hai khuong -`
+rồi `python3 authoring/tieng-huan-van-don/build_case.py`.
+
+```text
+A 3-column by 2-row grid of six Vietnamese ID card portrait photos from 2006, northern Vietnamese fishermen from Quang Ninh, separated by thin white lines, each cell a head-and-shoulders front-facing shot, neutral expression, plain pale blue background, flat studio lighting, slightly faded colour, realistic sun-weathered skin, no text.
+Top row, left to right:
+(1) a 50-year-old Vietnamese fishing boat captain, stern square face, short greying hair, deep sun wrinkles, dark navy jacket over a white undershirt;
+(2) a 42-year-old Vietnamese first mate, sharp eyes, short black hair, thin mustache, faded olive green shirt;
+(3) a 46-year-old Vietnamese ship engineer, calm tired face, receding hairline, small scar on the chin, grey work shirt with oil stains on the collar.
+Bottom row, left to right:
+(4) a 26-year-old Vietnamese deckhand, boyish nervous face, spiky short hair, red and black striped polo shirt;
+(5) a 55-year-old Vietnamese ship cook, round kind face, thinning grey hair, white t-shirt under an open brown shirt;
+(6) an empty plain pale blue cell.
+```
+
+---
+
 # Bảng Prompt Tạo Hình Chi Tiết: Tiếng hú cảng Vân Đồn (Hồ sơ 10)
 
 Toàn bộ prompt được viết bằng tiếng Việt chi tiết, hướng dẫn cụ thể về tàu cá xa bờ Quảng Ninh năm 2006, khoang lạnh ướp đá, cảng cá Cái Rồng và kỹ thuật hình sự. Tuyệt đối không chứa chữ trên ảnh.

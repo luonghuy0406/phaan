@@ -1,0 +1,124 @@
+{
+  "_ghi_chu": "Đáp án báo cáo kết luận trước kiểm sát viên (AI). CHỨA LỜI GIẢI. keywords không dấu.",
+  "q8": {
+    "examiner": "Kiểm sát viên Đào Thị Hương",
+    "persona": "Kiểm sát viên Viện Kiểm sát nhân dân tỉnh Quảng Ninh, ngoài bốn mươi, giọng Bắc, nghiêm, hỏi kỹ.",
+    "intro": "Tôi là kiểm sát viên phụ trách vụ tàu QN-9288-TS. Đồng chí trình bày kết luận, ngắn gọn, có căn cứ.",
+    "closing": "Báo cáo đủ căn cứ ở mọi điểm. Tôi đồng ý với kết luận điều tra.",
+    "points": [
+      {
+        "id": "ai",
+        "ask": "Thứ nhất: ai gây ra cái chết của thuyền trưởng Đạt?",
+        "facts": [
+          {
+            "id": "sau",
+            "text": "Nguyễn Văn Sáu, máy trưởng.",
+            "keywords": [
+              "sau",
+              "may truong"
+            ],
+            "probe": "Đồng chí nói rõ người đó là ai."
+          }
+        ],
+        "hint": "Gợi ý: lời khai lần hai của Hải và biên bản mở hầm cá ngừ."
+      },
+      {
+        "id": "cach",
+        "ask": "Thứ hai: ông Đạt không bị đánh, không bị đánh thuốc. Ông chết thế nào?",
+        "facts": [
+          {
+            "id": "da-kho",
+            "text": "Đá khô (CO2) từ hầm cá ngừ đổ xuống đáy khoang 3; CO2 đọng đáy làm ông ngạt.",
+            "keywords": [
+              "da kho",
+              "co2",
+              "cac bon",
+              "carbon",
+              "ham ca ngu",
+              "5 bao",
+              "ngat"
+            ],
+            "probe": "Thứ gì làm hết oxy ở đáy khoang?"
+          },
+          {
+            "id": "bay",
+            "text": "Sáu báo giả khoang 3 lên nhiệt để ông Đạt tự xuống; rồi gài then nắp khoang.",
+            "keywords": [
+              "bao",
+              "len nhiet",
+              "nong",
+              "bao gia",
+              "tu xuong",
+              "gai then",
+              "then"
+            ],
+            "probe": "Vì sao ông Đạt lại xuống khoang lúc 22:20? Ai gài then?"
+          }
+        ],
+        "hint": "Gợi ý: lời khai anh Khương, kết luận giám định khoang 3, nhật ký máy."
+      },
+      {
+        "id": "hu",
+        "ask": "Thứ ba: tiếng hú lúc 00:15 là gì, và vì sao nó chỉ về một người?",
+        "facts": [
+          {
+            "id": "quat",
+            "text": "Quạt hút khoang 3 bật để xả CO2, khí rít qua ống xả; công tắc chỉ ở buồng máy, nơi Sáu trực.",
+            "keywords": [
+              "quat hut",
+              "ong xa",
+              "cong tac",
+              "buong may",
+              "xa khi"
+            ],
+            "probe": "Thứ gì phát ra tiếng hú? Bật ở đâu?"
+          }
+        ],
+        "hint": "Gợi ý: kết luận giám định khoang 3."
+      },
+      {
+        "id": "dong-co",
+        "ask": "Thứ tư: vì sao lại là đêm cuối của chuyến biển?",
+        "facts": [
+          {
+            "id": "dau",
+            "text": "Sáu bán trộm 1.800 lít dầu cho tàu QN-7731 lấy 21 triệu; ông Đạt phát hiện, định báo đồn biên phòng khi về bờ.",
+            "keywords": [
+              "dau",
+              "1.800",
+              "1800",
+              "7731",
+              "21 trieu",
+              "bien phong",
+              "ban trom",
+              "so tay"
+            ],
+            "probe": "Ông Đạt đã phát hiện điều gì về máy trưởng?"
+          }
+        ],
+        "hint": "Gợi ý: đối chiếu nhật ký nhiên liệu và sổ tay ông Đạt."
+      },
+      {
+        "id": "loai-tru",
+        "ask": "Cuối cùng: vì sao không phải thuyền phó Tuấn, người cãi nhau với ông Đạt và giấu thuốc lá lậu?",
+        "facts": [
+          {
+            "id": "tuan",
+            "text": "Tuấn gọi đài bờ đều đặn 22:05–23:51 bằng máy ICOM cố định trong buồng lái; thuốc lá lậu là chuyện riêng.",
+            "keywords": [
+              "dai bo",
+              "icom",
+              "bo dam",
+              "buong lai",
+              "goi",
+              "22:05",
+              "nhat ky dam thoai"
+            ],
+            "probe": "Lúc ông Đạt xuống khoang, anh Tuấn ở đâu, ai xác nhận?"
+          }
+        ],
+        "hint": "Gợi ý: nhật ký đàm thoại của đài bờ Cái Rồng."
+      }
+    ]
+  }
+}

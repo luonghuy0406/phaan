@@ -1,37 +1,24 @@
-# Hồ sơ 10: Tiếng hú cảng Vân Đồn (Bible)
+# Kịch bản gốc: Tiếng hú cảng Vân Đồn (Hồ sơ 10, bản 2)
 
-## 1. Thông tin chung
-- **Mã hồ sơ**: `tieng-huan-van-don`
-- **Số thứ tự**: Hồ sơ 10
-- **Tên hồ sơ**: Tiếng hú cảng Vân Đồn
-- **Tagline**: Thuyền cá cập bến sớm mang theo một thi thể chết ngạt trong khoang lạnh ướp muối, nhiệt kế khoang vẫn chỉ 0 độ.
-- **Bối cảnh**: Cảng cá Cái Rồng, huyện đảo Vân Đồn, Quảng Ninh (hư cấu), rạng sáng mùa đông ngày 14/11/2006.
-- **Thời lượng**: 100–110 phút
-- **Độ khó**: 4/5 (Khó - Ngạt khí CO2 đá khô và giả mạo thời gian đông đá)
-- **Số tài liệu**: 17 tài liệu chia làm 4 trọng điểm (Stage).
+Hư cấu. 4 vòng, 20 tài liệu, 9 câu hỏi, 60–75 phút, **độ khó 3 (vừa)**. Không có đồng phạm. Thẻ nghi phạm, thẩm vấn AI, báo cáo
+kiểm sát viên. Nội dung dựng bằng `build_case.py`. **Chứa lời giải.**
 
-## 2. Nạn nhân & Nghi phạm
-- **Nạn nhân**: Trần Văn Đạt (50 tuổi), Thuyền trưởng kiêm chủ tàu đánh bắt xa bờ QN-9288-TS. Tính tình nghiêm khắc, nóng nảy.
-- **Nghi phạm 1**: Lê Quốc Tuấn (42 tuổi), Thuyền phó phụ trách ca lái đêm kiêm hoa tiêu. Mâu thuẫn gay gắt với ông Đạt về việc ăn chia lợi nhuận lô mực ống và chuyến hàng lậu thuốc lá ngoại trị giá 300 triệu đồng.
-- **Nghi phạm 2**: Nguyễn Văn Sáu (46 tuổi), Máy trưởng phụ trách hệ thống máy lạnh khoang cá. Từng bị ông Đạt dọa sa thải và bồi thường 50 triệu đồng vì làm hỏng máy phát điện lạnh.
-- **Nghi phạm 3**: Bùi Văn Hải (26 tuổi), thủy thủ boong tàu. Cháu họ của thuyền trưởng, có nợ nần tiền bạc với nạn nhân.
+Bản 1 cho thuyền phó Tuấn là hung thủ, có bản tự thú, ảnh giải phẫu ghi "hồng ban màu anh đào" (dấu hiệu ngộ độc CO, sai với ngạt CO2).
+Bản 2 giữ đá khô và "tiếng hú" ống xả, đổi thủ phạm; bỏ ảnh giải phẫu; sơ đồ tàu vẽ lại bằng `draw_so_do.py`; bìa cắt từ d01.
 
-## 3. Sự thật & Thủ pháp phạm tội
-- **Hung thủ**: Lê Quốc Tuấn.
-- **Động cơ**: Tranh đoạt tiền hàng và kiện thuốc lá lậu 555 giấu trên tàu, bịt miệng ông Đạt khi bị đe dọa báo biên phòng.
-- **Thủ pháp**:
-  - 21h30 tối 13/11: Khi tàu đang chạy qua luồng vịnh Bái Tử Long, Tuấn pha thuốc an thần vào ly trà gừng của ông Đạt. Sau khi nạn nhân ngấm thuốc mê man, Tuấn kéo nạn nhân thả vào khoang lạnh số 3 (khoang ướp mực đông lạnh).
-  - Để nạn nhân chết ngạt nhanh mà không để lại vết thương cơ học, đồng thời làm lạnh cực nhanh để đánh lừa thời điểm tử vong vào ca lái đêm của mình:
-    - Tuấn lấy 5 bao đá khô (CO2 rắn dạng viên nén, nhiệt độ -78.5°C) trữ trong hầm bảo quản cá ngừ đổ phủ lên ngực và quanh đầu nạn nhân, sau đó sập nắp khoang lạnh gài then sắt bên ngoài.
-    - Khí CO2 thăng hoa làm nồng độ oxy đáy khoang tụt xuống gần bằng 0, nạn nhân chết ngạt chỉ trong 5-7 phút. Đồng thời nhiệt độ -78.5°C của đá khô gây hạ thân nhiệt và đông đá tinh thể cục bộ cực nhanh.
-    - Từ 00h00 đến 03h30 sáng: Tuấn ngồi trên buồng lái đàm thoại ICOM liên tục với đài bờ kiểm ngư để tạo bằng chứng ngoại phạm không thể rời buồng lái.
-    - Lúc 00h15: Tuấn bật quạt hút khoang lạnh số 3 để hút bớt CO2 thăng hoa xả qua đường ống hẹp trên boong, luồng khí áp lực cao xé qua khe ống tạo ra tiếng rít chói tai ('tiếng hú') trong đêm mà thủy thủ Hải nghe thấy.
-    - Sáng hôm sau 05h30 khi cập cảng Cái Rồng, pháp y khám nghiệm đo nhiệt độ thi thể và độ đông đá ước tính tử vong vào lúc 01h30 sáng (đúng lúc Tuấn đang đàm thoại ICOM).
-- **Chi tiết vạch trần**:
-  - Dấu vết phỏng lạnh (frostbite) hình tròn dạng viên nén đường kính 2cm trên da ngực và cổ nạn nhân, đặc trưng của đá khô CO2 viên nén.
-  - Sổ kiểm kê kho lạnh của tàu ghi nhận thiếu hụt 5 bao đá khô chuyên dụng.
-  - Vết mỡ bôi trơn từ then gài khoang lạnh dính trên găng tay cao su màu cam của Tuấn.
-  - Nhật ký thu phát vô tuyến chứng minh Tuấn cố tình kéo dài cuộc đàm thoại ICOM vô thưởng vô phạt về luồng cá để tạo ngoại phạm.
-  - Kiện thuốc lá lậu 555 và cọc tiền mặt thu giữ dưới hộc ván cabin thuyền phó của Tuấn.
+## 1. Sự thật
+**Thủ phạm: Nguyễn Văn Sáu** (46), máy trưởng.
+- 9/11 ở bãi Cô Tô bán trộm 1.800 lít dầu cho tàu QN-7731-TS, lấy 21 triệu. 12/11 ông Đạt biết qua bộ đàm; 13/11 nói thẳng sẽ báo đồn
+  biên phòng Cái Rồng khi về bờ.
+- Tối 13/11 Sáu đổ 5 bao đá khô (hầm cá ngừ, chìa Sáu giữ) xuống đáy khoang 3. 22:20 báo ông Đạt "khoang ba lên nhiệt" (nhật ký máy
+  ghi 22:30 −18°C ổn định). Ông Đạt cầm đèn pin xuống, ngất trong CO2. ~22:25 Sáu đeo đèn đội đầu lên kéo then. 00:15 bật quạt hút
+  (công tắc chỉ ở buồng máy) xả CO2 → ống xả rít "tiếng hú".
 
-## 4. Cấu trúc câu hỏi & Trọng điểm (Đã nâng cấp độ khó x5)
+**Nghi phạm giả:** Tuấn (cãi nhau, thuốc lá lậu; gọi đài bờ đều 22:05–23:51), Hải (nợ, nói dối là ngủ; thật ra hút trộm thuốc ở mũi
+tàu và là nhân chứng), Khương (pha trà gừng; xét nghiệm sạch).
+
+## 2. Chuỗi suy luận
+- **Vòng 1 (7):** d00–d06. q1 ngạt + then gài ngoài. q2 thứ lạnh sâu (d02, d03).
+- **Vòng 2 (6):** d07 Sáu, d08 Hải, d09 đài bờ, d10 Khương, d11 độc chất + CO2, d12 hầm hàng. q3 line d08:002. q4 evidence (d09, d11).
+- **Vòng 3 (4):** d13 giám định khoang, d14 ảnh đá khô, d15 hầm cá ngừ, d16 Hải lần 2. q5 evidence (d13, d15). q6 line d07:002.
+- **Vòng 4 (3):** d17 dầu, d18 sổ tay ông Đạt, d19 khám xét Sáu. q7 evidence (d17, d18). q-accuse Sáu. q8 kết luận + kiểm sát viên AI.

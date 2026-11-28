@@ -228,22 +228,27 @@
     {
       "id": "tieng-huan-van-don",
       "no": 10,
-      "status": "coming-soon",
+      "status": "available",
       "kind": "fiction",
-      "draft": true,
       "title": "Tiếng hú cảng Vân Đồn",
-      "tagline": "Thuyền cá cập bến sớm mang theo một thi thể chết ngạt trong khoang lạnh ướp muối, nhiệt kế khoang vẫn chỉ 0 độ.",
+      "tagline": "Tàu cá cập cảng Cái Rồng, thuyền trưởng nằm chết dưới đáy khoang lạnh bị gài then từ bên ngoài.",
       "difficulty": 3,
-      "players": "2–5",
-      "duration": "100–110 phút",
-      "setting": "Tàu cá viễn dương QN-9288-TS, Cảng Cái Rồng, Vân Đồn, Quảng Ninh (hư cấu)",
+      "players": "1–5",
+      "duration": "60–75 phút",
+      "setting": "Tàu cá QN-9288-TS, cảng Cái Rồng, Vân Đồn, Quảng Ninh (hư cấu)",
       "tags": [
         "Án mạng",
         "Tàu cá",
-        "Khoang lạnh",
-        "Đá khô CO2"
+        "Khoang lạnh"
       ],
-      "cover": "images/cover.webp"
+      "cover": "images/cover.webp",
+      "art": "images/art.webp",
+      "artPos": "45% 50%",
+      "features": [
+        "ai",
+        "exam",
+        "voice"
+      ]
     },
     {
       "id": "hoi-chuong-chua-thay",
