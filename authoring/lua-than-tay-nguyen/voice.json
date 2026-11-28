@@ -1,0 +1,69 @@
+{
+  "_ghi_chu": "Giọng đọc lấy thẳng chữ từ case.json. Tây Nguyên: dẫn chuyện giọng Bắc, nhân vật Ê Đê và ông Lợi (gốc Quảng Nam) giọng Trung khi có. Chạy: npm run gen-voice -- lua-than-tay-nguyen và npm run gen-doc-voice -- lua-than-tay-nguyen",
+  "engine": "vieneu",
+  "voices": {
+    "dan": "Thiện Minh",
+    "hieu": "Minh Đức",
+    "bang": "Hải Đăng",
+    "nhi": "Ngọc Trân",
+    "ksor": "Phạm Tuyên",
+    "loi": "Quang Sơn",
+    "duon": "Đoan Trang",
+    "ngoan": "Ngọc Linh",
+    "djue": "Thiền Tâm Đức"
+  },
+  "temperature": 0.8,
+  "clips": [
+    {
+      "id": "intro",
+      "source": "intro",
+      "quotes": [
+        "dan"
+      ]
+    },
+    {
+      "id": "beat-2",
+      "source": "beat:2"
+    },
+    {
+      "id": "beat-3",
+      "source": "beat:3"
+    },
+    {
+      "id": "beat-4",
+      "source": "beat:4"
+    },
+    {
+      "id": "beat-5",
+      "source": "beat:5"
+    },
+    {
+      "id": "finale",
+      "source": "finale",
+      "quotes": [
+        "dan",
+        "dan",
+        {
+          "voice": "loi"
+        },
+        {
+          "voice": "ngoan",
+          "before": "[thở dài]"
+        }
+      ]
+    }
+  ],
+  "docs": {
+    "narrator": "dan",
+    "asker": "hieu",
+    "speakers": {
+      "Y Bang Niê": "bang",
+      "H'Nhi Êban": "nhi",
+      "Phan Văn Lợi": "loi",
+      "Y Ksor Mlô": "ksor",
+      "H'Đuôn Byă": "duon",
+      "H'Ngoan Niê": "ngoan",
+      "Y Djuê Adrơng": "djue"
+    }
+  }
+}

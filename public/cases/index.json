@@ -157,22 +157,29 @@
     {
       "id": "lua-than-tay-nguyen",
       "no": 7,
-      "status": "coming-soon",
+      "status": "available",
       "kind": "fiction",
-      "draft": true,
       "title": "Đêm lửa tàn Buôn Ea Kral",
-      "tagline": "Kho thóc nhà rông bốc cháy giữa mùa lễ cúng bến nước, chiếc xà gạc truyền đời vùi trong tro than.",
-      "difficulty": 3,
-      "players": "2–5",
-      "duration": "75–90 phút",
-      "setting": "Buôn Ea Kral, Đắk Lắk (hư cấu)",
+      "tagline": "Kho lúa bốc cháy giữa đêm lễ cúng bến nước. Già làng đã chết trước khi ngọn lửa đầu tiên bùng lên.",
+      "difficulty": 4,
+      "players": "2–6",
+      "duration": "90–120 phút",
+      "setting": "Buôn Ea Kral, huyện Cư M'gar, Đắk Lắk (hư cấu)",
       "tags": [
         "Án mạng",
-        "Phóng hỏa",
+        "Phóng hoả",
         "Tây Nguyên",
-        "Bẫy hẹn giờ"
+        "Có đồng phạm"
       ],
-      "cover": "images/cover.webp"
+      "cover": "images/cover.webp",
+      "features": [
+        "ai",
+        "exam",
+        "voice",
+        "accomplice"
+      ],
+      "art": "images/art.webp",
+      "artPos": "40% 60%"
     },
     {
       "id": "gac-den-hon-dau",

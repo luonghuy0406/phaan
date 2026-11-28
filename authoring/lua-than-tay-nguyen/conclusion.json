@@ -1,0 +1,144 @@
+{
+  "_ghi_chu": "Đáp án báo cáo kết luận trước kiểm sát viên (AI). CHỨA LỜI GIẢI. keywords không dấu.",
+  "q11": {
+    "examiner": "Kiểm sát viên Y Nuê Byă",
+    "persona": "Kiểm sát viên Viện Kiểm sát nhân dân tỉnh Đắk Lắk, người Ê Đê, ngoài năm mươi, nói chậm, chắc, hỏi kỹ từng căn cứ.",
+    "intro": "Tôi là kiểm sát viên phụ trách vụ kho lúa buôn Ea Kral. Đồng chí trình bày kết luận, ngắn gọn, có căn cứ.",
+    "closing": "Báo cáo đủ căn cứ ở mọi điểm. Tôi đồng ý với kết luận điều tra.",
+    "points": [
+      {
+        "id": "ai",
+        "ask": "Thứ nhất: những ai phải chịu trách nhiệm về cái chết của già làng và vụ cháy, mỗi người đã làm gì?",
+        "facts": [
+          {
+            "id": "ksor",
+            "text": "Y Ksor Mlô gọi già làng ra kho và đánh bằng sống xà gạc.",
+            "keywords": [
+              "ksor"
+            ],
+            "probe": "Ai trực tiếp ra tay với già làng?"
+          },
+          {
+            "id": "loi",
+            "text": "Phan Văn Lợi chủ mưu và đặt mồi lửa hẹn giờ.",
+            "keywords": [
+              "loi",
+              "loi phat",
+              "dai ly"
+            ],
+            "probe": "Còn người đặt mồi lửa là ai?"
+          }
+        ],
+        "hint": "Gợi ý: lời thợ rèn, bản tường trình của ông Tuấn và hai biên bản khám xét."
+      },
+      {
+        "id": "lua",
+        "ask": "Thứ hai: vụ cháy xảy ra lúc 20:55 khi cả hai người đều ngồi ở nhà dài. Giải thích.",
+        "facts": [
+          {
+            "id": "hen-gio",
+            "text": "Mồi lửa hẹn giờ: bóng đèn 100 W bọc giẻ tẩm dầu, mạt cưa, rơ-le máy ấp trứng tối đa 60 phút, đặt khoảng 19:50–20:00.",
+            "keywords": [
+              "ro-le",
+              "role",
+              "ro le",
+              "hen gio",
+              "60 phut",
+              "bong den",
+              "may ap trung",
+              "moi lua"
+            ],
+            "probe": "Ngọn lửa được tạo ra bằng gì?"
+          },
+          {
+            "id": "ra-xe",
+            "text": "Ông Lợi rời nhà dài 19:50–20:05 'ra xe lấy rượu', xe đỗ cạnh kho; rơ-le lấy từ máy ấp trứng Y Bang giao trừ nợ; chiều đã hỏi công tắc đèn kho.",
+            "keywords": [
+              "19:50",
+              "ra xe",
+              "lay ruou",
+              "20:05",
+              "cong tac",
+              "tru no",
+              "xe ban tai"
+            ],
+            "probe": "Ông Lợi có lúc nào rời nhà dài không? Rơ-le từ đâu ra?"
+          }
+        ],
+        "hint": "Gợi ý: kết luận giám định cháy, bản tường trình của ông Tuấn, sổ của Y Bang."
+      },
+      {
+        "id": "vi-sao",
+        "ask": "Thứ ba: vì sao phải giết già làng và đốt đúng kho lúa?",
+        "facts": [
+          {
+            "id": "bien-ban",
+            "text": "Ông Lợi nộp biên bản họp buôn giả (điểm chỉ của Lợi, Y Ksor ký thư ký) để thuê 30 ha đất rẫy chung; biên bản thật 41 hộ trong gùi ở kho, già làng sắp mang xuống xã ngày 9/4.",
+            "keywords": [
+              "bien ban",
+              "30 ha",
+              "dat ray",
+              "diem chi",
+              "gia mao",
+              "41",
+              "gui",
+              "xuong xa",
+              "thue dat"
+            ],
+            "probe": "Trong kho lúa có thứ gì mà họ cần xoá đi?"
+          }
+        ],
+        "hint": "Gợi ý: đơn của già làng và biên bản làm việc ở xã."
+      },
+      {
+        "id": "lien-he",
+        "ask": "Thứ tư: lấy gì chứng minh hai người này cấu kết với nhau?",
+        "facts": [
+          {
+            "id": "tien",
+            "text": "Sổ đại lý: 2 triệu 'giấy họp', 8 triệu tiền vạ đưa Ksor; mẩu giấy 'Rằm, 7 rưỡi, gọi già ra kho' chữ của Lợi; máu già làng trên áo Ksor; giẻ bao Lợi Phát.",
+            "keywords": [
+              "so chi",
+              "8 trieu",
+              "tien vac",
+              "tien va",
+              "2 trieu",
+              "mau giay",
+              "7 ruoi",
+              "chu cua loi",
+              "mau",
+              "ao",
+              "bao",
+              "loi phat"
+            ],
+            "probe": "Tiền nộp vạ của Y Ksor từ đâu ra? Mẩu giấy ở nhà Y Ksor do ai viết?"
+          }
+        ],
+        "hint": "Gợi ý: sổ chi tiêu đại lý, khám xét nhà Y Ksor, kết luận giám định dấu vết."
+      },
+      {
+        "id": "loai-tru",
+        "ask": "Cuối cùng: xà gạc khắc chữ B là của Y Bang, rơ-le cũng từng ở xưởng anh. Vì sao không phải Y Bang?",
+        "facts": [
+          {
+            "id": "bang",
+            "text": "19:20–19:50 Y Bang ở tiệm cầm đồ Kim Phát, thị trấn cách 12 km; xà gạc do Y Ksor mượn từ chiều; máy ấp trứng đã giao ông Lợi từ 24/3.",
+            "keywords": [
+              "cam do",
+              "kim phat",
+              "thi tran",
+              "12 km",
+              "che",
+              "y ksor muon",
+              "giao",
+              "24/3",
+              "tru no"
+            ],
+            "probe": "Lúc già làng ra kho, Y Bang ở đâu?"
+          }
+        ],
+        "hint": "Gợi ý: phiếu cầm đồ, lời thợ rèn, sổ của Y Bang."
+      }
+    ]
+  }
+}

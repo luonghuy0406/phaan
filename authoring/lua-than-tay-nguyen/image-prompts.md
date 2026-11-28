@@ -1,3 +1,34 @@
+# Ảnh cho bản 2 (tháng 11/2026)
+
+Hung thủ đổi thành Y Ksor + Phan Văn Lợi (đồng phạm). Bìa cũ (hộp game có chữ tiếng Anh) và ảnh d06-anh-the đã gỡ. Sơ đồ vẽ lại bằng
+`draw_so_do.py`. Dùng lại: d01-bao-chi, d05-xa-gac, d11-rui-dien.
+
+## Ảnh thẻ (một ảnh ghép 3 cột × 2 hàng)
+
+Cắt bằng: `python3 tools/crop-portraits.py <ảnh-ghép> public/cases/lua-than-tay-nguyen/images 2 3 krak bang nhi ksor loi -`
+rồi `python3 authoring/lua-than-tay-nguyen/build_case.py`.
+
+```text
+A 3-column by 2-row grid of six Vietnamese ID card portrait photos from 2001, Central Highlands of Vietnam, separated by thin white lines, each cell a head-and-shoulders front-facing shot, neutral dignified expression, plain pale blue background, flat studio lighting, slightly faded film colour, realistic skin texture, no text.
+Top row, left to right:
+(1) a 63-year-old Ede ethnic minority village elder from Dak Lak, deeply lined dark tan face, short grey hair, calm wise eyes, traditional dark indigo Ede jacket with red and white woven trim;
+(2) a 34-year-old Ede man, strong jaw, short black hair, tired eyes, faded blue work shirt;
+(3) a 29-year-old Ede woman, gentle face, black hair tied back, traditional dark Ede blouse with red woven stripes;
+Bottom row, left to right:
+(4) a 40-year-old Ede man, lean weathered face, short messy hair, wary look, worn dark brown shirt;
+(5) a 46-year-old ethnic Kinh Vietnamese businessman, round face, neatly combed hair, small mustache, light beige short-sleeved shirt with a pen in the pocket, gold wristwatch partly visible;
+(6) an empty plain pale blue cell.
+```
+
+## Bìa (khổ ngang hoặc 4:5; có chữ tên hồ sơ ở một bên cũng được)
+
+```text
+Cinematic night photograph in a Central Highlands Ede village in Vietnam, dry season 2001: in the foreground the smouldering ashes and charred stilts of a small thatched rice granary on stilts, thin smoke rising, a few embers glowing; in the middle distance a long Ede longhouse on stilts lit warm orange from inside, silhouettes of gongs hanging at the entrance, a tall bamboo ceremonial pole with woven decorations; on the right a parked old pickup truck in shadow; red basalt soil, coffee bushes and tall dry trees, full moon in a hazy sky. Quiet, mournful, warm ember orange and deep night blue, 35mm film grain, realistic, no people, no visible faces.
+```
+Negative: `cartoon, 3D render, CGI, oversaturated, people, blood, bodies, modern objects, English text`
+
+---
+
 # Bảng Prompt Tạo Hình Chi Tiết: Đêm lửa tàn Buôn Ea Kral (Hồ sơ 07)
 
 Toàn bộ prompt được viết bằng tiếng Việt chi tiết, hướng dẫn cụ thể về ánh sáng Tây Nguyên mùa khô năm 2001, nhà sàn, tro than kho thóc và kỹ thuật hình sự. Tuyệt đối không chứa chữ trên ảnh.

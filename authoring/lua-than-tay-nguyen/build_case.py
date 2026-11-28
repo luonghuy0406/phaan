@@ -1,0 +1,481 @@
+"""Dựng public/cases/lua-than-tay-nguyen/case.json (bản 2, khó, có đồng phạm). Chạy ở thư mục gốc:
+python3 authoring/lua-than-tay-nguyen/build_case.py
+
+Lời giải: xem bible.md. Y Ksor (giết) + Phan Văn Lợi (chủ mưu, đặt mồi lửa hẹn giờ). Y Bang bị gài tội.
+"""
+import json
+import os
+
+CID = 'lua-than-tay-nguyen'
+CA = ['Công an tỉnh Đắk Lắk', 'Phòng Cảnh sát hình sự']
+DTV = 'Điều tra viên'
+DTV_NAME = 'Thiếu tá Đinh Công Hiếu'
+
+
+def tl(name, *pairs):
+    return [{'n': i + 1, 'speaker': s or name, 'text': t} for i, (s, t) in enumerate(pairs)]
+
+
+D = []
+add = D.append
+
+# ───────────── Vòng 1: chết trước khi cháy ─────────────
+add({'id': 'd00', 'stage': 1, 'type': 'people', 'title': 'Nạn nhân và những người liên quan',
+     'paragraphs': ['Ảnh thẻ trích từ hồ sơ hộ khẩu, kèm lý do từng người được đưa vào diện xác minh sáng 9/4/2001.']})
+
+add({'id': 'd01', 'stage': 1, 'type': 'newspaper', 'title': 'Báo Đắk Lắk: Cháy kho lúa trong đêm lễ, già làng tử vong',
+     'masthead': 'Đắk Lắk', 'issue': 'Số 1.214', 'date': 'Thứ Ba, 10/4/2001',
+     'headline': 'Cháy kho lúa giữa đêm lễ cúng bến nước, già làng buôn Ea Kral tử vong',
+     'deck': 'Ngọn lửa bùng lên lúc cả buôn đang đánh chiêng ở nhà dài. Công an tỉnh vào cuộc.',
+     'image': 'images/d01-bao-chi.webp', 'imageCaption': 'Hiện trường kho lúa buôn Ea Kral sáng 9/4.',
+     'paragraphs': [
+         'Khoảng 20 giờ 55 tối 8/4 (rằm tháng Ba), kho lúa chung của buôn Ea Kral, huyện Cư M\'gar bốc cháy khi bà con đang dự lễ cúng bến nước ở nhà dài của già làng.',
+         'Khi lửa được dập, người dân tìm thấy già làng Y Krăk Niê (63 tuổi) đã tử vong trong đống tro. Ban đầu nhiều người cho rằng do chập điện: đường dây vào kho mới được bà con tự kéo năm 1999.',
+         'Già làng Y Krăk là người có uy tín, nhiều năm giữ luật tục và đất rẫy chung của buôn. Công an tỉnh Đắk Lắk đã khám nghiệm hiện trường và mời một số người làm việc.']})
+
+add({'id': 'd02', 'stage': 1, 'type': 'report', 'title': 'Biên bản khám nghiệm hiện trường kho lúa',
+     'header': CA, 'heading': 'Biên bản khám nghiệm hiện trường', 'code': '41/KNHT', 'date': '07 giờ 00 ngày 9/4/2001',
+     'fields': [{'label': 'Địa điểm', 'value': 'Kho lúa chung buôn Ea Kral, xã Ea Kpam, huyện Cư M\'gar'},
+                {'label': 'Người chết', 'value': 'Y Krăk Niê (Ama H\'Lin), 63 tuổi, già làng'}],
+     'sections': [
+         {'heading': '1. Kho lúa', 'paragraphs': ['Nhà sàn gỗ, vách nứa, mái tranh, cháy gần hết. Cửa kho có ổ khoá treo trên móc, **ổ khoá còn nguyên, không khoá, không dấu phá**.',
+                                                 'Trong kho có một gùi mây đựng giấy tờ của buôn, đã cháy thành tro.']},
+         {'heading': '2. Tử thi', 'paragraphs': ['Nằm sấp ở góc đông nam kho, gần cửa. Bên dưới tử thi có một chiếc xà gạc, lưỡi cháy sém, cán gỗ khắc chữ "B".']},
+         {'heading': '3. Điện', 'paragraphs': ['Đường dây đôi kéo từ cột điện cạnh nhà dài vào kho, có một bóng đèn ở góc tây bắc; công tắc gắn ở cột ngoài cửa kho. Vùng cháy sâu nhất ở **góc tây bắc**, cách tử thi khoảng 5 m.']},
+         {'heading': '4. Thu giữ', 'paragraphs': ['Xà gạc; mảnh thuỷ tinh và các mảnh kim loại ở góc tây bắc (gửi giám định).']}],
+     'signers': [{'role': DTV, 'name': DTV_NAME}]})
+
+add({'id': 'd03', 'stage': 1, 'type': 'report', 'title': 'Kết quả giám định pháp y già làng Y Krăk Niê',
+     'header': ['Trung tâm Pháp y tỉnh Đắk Lắk'], 'heading': 'Kết luận giám định pháp y', 'code': '88/PY', 'date': 'Ngày 9 tháng 4 năm 2001',
+     'sections': [
+         {'heading': '1. Đường thở', 'paragraphs': ['Khí quản, phế quản **sạch, không có muội than**. Máu không có khí CO. Nạn nhân **đã ngừng thở trước khi có khói lửa**.']},
+         {'heading': '2. Thương tích', 'paragraphs': ['Vùng chẩm có một vết lún xương dài khoảng 6 cm, bờ thẳng, do vật tày có cạnh dài, nặng (phù hợp với **sống của một lưỡi dao rựa hoặc xà gạc**). Đây là nguyên nhân tử vong.']},
+         {'heading': '3. Thời gian', 'paragraphs': ['Dạ dày còn cơm và thịt chưa tiêu, phù hợp bữa ăn lúc 18:30. Tử vong khoảng **19:15 đến 20:00** ngày 8/4/2001.']}],
+     'signature': 'Giám định viên: BS. Nguyễn Văn Hoà'})
+
+add({'id': 'd04', 'stage': 1, 'type': 'scan', 'title': 'Sơ đồ trung tâm buôn Ea Kral đêm 8/4',
+     'image': 'images/d03-so-do-buon-lang.webp', 'caption': 'Sơ đồ lập khi khám nghiệm: nhà dài, kho lúa, bến nước, chỗ đỗ xe và đường ra thị trấn.'})
+
+add({'id': 'd05', 'stage': 1, 'type': 'photo', 'title': 'Ảnh chiếc xà gạc dưới tử thi',
+     'image': 'images/d05-xa-gac.webp', 'label': 'Tang vật ảnh số 3 · 9/4/2001',
+     'caption': 'Xà gạc thu dưới tử thi. Cán gỗ khắc chữ "B". Sống lưỡi dày, phẳng.'})
+
+add({'id': 'd06', 'stage': 1, 'type': 'testimony', 'title': 'Lời khai của Y Bang Niê (con nuôi già làng)',
+     'header': CA, 'heading': 'Biên bản ghi lời khai', 'date': '09 giờ 00 ngày 9/4/2001',
+     'fields': [{'label': 'Người khai', 'value': 'Y Bang Niê, 34 tuổi, con nuôi già làng, chủ xưởng sửa máy nông nghiệp và đại lý nhỏ thu mua cà phê'}],
+     'lines': tl('Y Bang Niê',
+         (DTV, 'Chiếc xà gạc khắc chữ B là của ai?'),
+         (None, 'Của tôi. Tôi khắc chữ đầu tên mình. Nó treo ở vách xưởng, mấy bữa nay tôi không thấy, tưởng đứa nào mượn đi rẫy.'),
+         (DTV, 'Tối 8/4 anh ở đâu?'),
+         (None, 'Tôi uống rượu từ chiều, về nhà nằm ngủ say, tám giờ hơn mới dậy lên nhà dài.'),
+         (DTV, 'Anh có cãi nhau với già làng không?'),
+         (None, 'Có. Tôi nợ anh Lợi ở thị trấn một trăm năm mươi triệu, cà phê rớt giá còn một phần ba. Tôi xin ama cho cầm một nửa rẫy chung của buôn, ama không cho, nói đất của buôn không phải của ai.'),
+         (None, 'Tôi giận, nói to trước nhà dài. Nhưng tôi không bao giờ đánh ama. Ama nuôi tôi từ năm tôi lên sáu.')),
+     'signature': 'Người khai: Y Bang Niê'})
+
+add({'id': 'd07', 'stage': 1, 'type': 'testimony', 'title': 'Lời khai của H\'Nhi Êban (thủ kho lúa)',
+     'header': CA, 'heading': 'Biên bản ghi lời khai', 'date': '10 giờ 30 ngày 9/4/2001',
+     'fields': [{'label': 'Người khai', 'value': 'H\'Nhi Êban, 29 tuổi, cháu gái già làng, giữ chìa kho lúa chung'}],
+     'lines': tl('H\'Nhi Êban',
+         (DTV, 'Lần cuối chị mở kho lúc nào?'),
+         (None, 'Năm giờ chiều tôi lấy lúa nấu cơm cúng, xong khoá kho, treo chìa ở cột nhà dài như mọi khi.'),
+         (DTV, 'Tối 8/4 chị ở đâu?'),
+         (None, 'Từ sáu giờ tôi ở bến nước với mấy chị em, dọn ché, dọn mâm cúng, chín giờ nghe la cháy mới chạy lên.'),
+         (DTV, 'Ai biết trong kho có gì?'),
+         (None, 'Cả buôn biết. Lúa giống, lúa ăn, cái gùi giấy tờ của ama. Ama nói giấy tờ để trong kho, có thần lúa giữ.')),
+     'signature': 'Người khai: H\'Nhi Êban'})
+
+add({'id': 'd08', 'stage': 1, 'type': 'testimony', 'title': 'Lời khai của Phan Văn Lợi (chủ đại lý cà phê, khách mời)',
+     'header': CA, 'heading': 'Biên bản ghi lời khai', 'date': '14 giờ 00 ngày 9/4/2001',
+     'fields': [{'label': 'Người khai', 'value': 'Phan Văn Lợi, 46 tuổi, chủ đại lý cà phê Lợi Phát, thị trấn Quảng Phú'}],
+     'lines': tl('Phan Văn Lợi',
+         (DTV, 'Ông đến buôn Ea Kral tối 8/4 làm gì?'),
+         (None, 'Tôi mang một con bò góp lễ cúng bến nước. Mấy năm nay tôi mua cà phê của bà con, có lễ là tôi góp.'),
+         (DTV, 'Từ 19:30 ông ở đâu?'),
+         (None, 'Tôi ngồi ở nhà dài, ngay cạnh anh Tuấn cán bộ huyện, uống rượu cần, không rời chỗ tới lúc người ta la cháy.'),
+         (DTV, 'Quan hệ của ông với Y Bang?'),
+         (None, 'Y Bang nợ tôi tiền phân bón, tiền ứng trước, gần trăm rưỡi triệu. Hôm trước tôi nghe nó cãi to với già làng chuyện cầm rẫy.'),
+         (DTV, 'Ông có đề nghị thuê đất của buôn không?'),
+         (None, 'Tôi có hỏi thuê ba chục héc-ta đất rẫy chung để trồng cà phê, trả tiền cho buôn hằng năm. Già làng chưa đồng ý. Chuyện làm ăn bình thường thôi.')),
+     'signature': 'Người khai: Phan Văn Lợi'})
+
+# ───────────── Vòng 2: mồi lửa hẹn giờ ─────────────
+add({'id': 'd09', 'stage': 2, 'type': 'testimony', 'title': 'Lời khai của Y Ksor Mlô (thợ săn)',
+     'header': CA, 'heading': 'Biên bản ghi lời khai', 'date': '08 giờ 00 ngày 10/4/2001',
+     'fields': [{'label': 'Người khai', 'value': 'Y Ksor Mlô, 40 tuổi, làm rẫy, đi săn'}],
+     'lines': tl('Y Ksor Mlô',
+         (DTV, 'Anh bị buôn phạt vạ vì chuyện gì?'),
+         (None, 'Tháng Hai tôi chặt cây ở rừng đầu nguồn. Già làng xử phạt một con bò, hai con heo. Tôi nộp đủ rồi.'),
+         (DTV, 'Chiều 8/4 anh làm gì?'),
+         (None, 'Tôi chặt tre dựng cây nêu cho lễ, chặt bằng cái rìu của tôi. Tôi không đụng tới cái xà gạc nào.'),
+         (DTV, 'Từ 19 giờ đến 20 giờ anh ở đâu?'),
+         (None, 'Tôi ra suối tắm cho sạch rồi lên nhà dài đánh chiêng.'),
+         (DTV, 'Anh có thù già làng không?'),
+         (None, 'Già làng phạt thì tôi chịu. Luật của buôn mà.')),
+     'signature': 'Người khai: Y Ksor Mlô'})
+
+add({'id': 'd10', 'stage': 2, 'type': 'letter', 'title': 'Bản tường trình của ông Lê Minh Tuấn (cán bộ huyện dự lễ)',
+     'date': 'Cư M\'gar, ngày 10 tháng 4 năm 2001', 'greeting': 'Kính gửi: Phòng Cảnh sát hình sự, Công an tỉnh Đắk Lắk',
+     'paragraphs': [
+         'Tôi là Lê Minh Tuấn, cán bộ Phòng Văn hoá huyện, dự lễ cúng bến nước ở buôn Ea Kral tối 8/4. Tôi ngồi ở chiếu khách trong nhà dài từ 19:30 đến khi có cháy. Tôi ghi lại theo trí nhớ:',
+         '— 19:30: già làng ngồi với chúng tôi được một lúc thì có người ra hiệu gọi, già làng đứng dậy đi ra phía cửa sau.',
+         '— 19:50: ông Phan Văn Lợi ngồi cạnh tôi đứng dậy, nói **"ra xe lấy thêm hai can rượu"**. Khoảng **20:05** ông quay lại, tay không, nói xe khoá rồi để mai.',
+         '— 20:10: anh Y Ksor vào nhà dài, tóc ướt, đánh chiêng ngay. 20:20: anh Y Bang vào, người có mùi xăng, mặt đỏ.',
+         '— 20:55: có người la cháy ở phía kho lúa. Lúc đó ông Lợi, anh Y Ksor, anh Y Bang đều đang ở trong nhà dài.'],
+     'signature': 'Lê Minh Tuấn'})
+
+add({'id': 'd11', 'stage': 2, 'type': 'report', 'title': 'Kết luận giám định nguyên nhân cháy',
+     'header': ['Phòng Cảnh sát PCCC', 'Công an tỉnh Đắk Lắk'], 'heading': 'Kết luận giám định nguyên nhân cháy', 'code': '17/GĐ-PC', 'date': 'Ngày 10/4/2001',
+     'sections': [
+         {'heading': '1. Điểm phát cháy', 'paragraphs': ['Góc tây bắc kho, ngay dưới bóng đèn. Dây dẫn không có dấu hiệu chập ngắn mạch. **Loại trừ chập điện ngẫu nhiên.**']},
+         {'heading': '2. Dấu vết', 'paragraphs': ['Mảnh thuỷ tinh bóng đèn sợi đốt 100 W; tro vải đay, mạt cưa và dầu thực vật (dầu dừa) bám quanh đui đèn. Cạnh đó là một **rơ-le hẹn giờ cơ khí** của máy ấp trứng gia cầm, mắc nối tiếp vào dây đèn.']},
+         {'heading': '3. Cơ chế', 'paragraphs': ['Khi rơ-le đóng mạch, bóng 100 W bọc giẻ tẩm dầu và mạt cưa nóng lên, bén lửa sau vài phút. Rơ-le loại này chỉ đặt tối đa **60 phút**, kim dừng ở vạch 0.',
+                                                 'Đám cháy phát hiện lúc 20:55, nên mồi lửa được lắp và vặn hẹn giờ **trong khoảng 19:50 đến 20:00**. Người đặt mồi không cần có mặt lúc cháy.']}],
+     'signature': 'Giám định viên: Thiếu tá Trương Văn Sáu'})
+
+add({'id': 'd12', 'stage': 2, 'type': 'photo', 'title': 'Ảnh tang vật thu ở góc tây bắc kho lúa',
+     'image': 'images/d11-rui-dien.webp', 'label': 'Tang vật ảnh số 7 · 10/4/2001',
+     'caption': 'Mảnh bóng đèn sợi đốt, đui đèn đồng, dây điện cháy và bộ rơ-le hẹn giờ máy ấp trứng (đã mở vỏ).'})
+
+add({'id': 'd13', 'stage': 2, 'type': 'testimony', 'title': 'Lời khai của H\'Đuôn Byă (phụ nữ dọn lễ ở bến nước)',
+     'header': CA, 'heading': 'Biên bản ghi lời khai', 'date': '10 giờ 00 ngày 10/4/2001',
+     'fields': [{'label': 'Người khai', 'value': 'H\'Đuôn Byă, 45 tuổi'}],
+     'lines': tl('H\'Đuôn Byă',
+         (DTV, 'Tối 8/4 ai ở bến nước với chị?'),
+         (None, 'Sáu chị em, có H\'Nhi. Từ sáu giờ tới lúc la cháy, H\'Nhi rửa ché với tôi, không đi đâu. Bến nước cách kho lúa xa, đi bộ phải mười phút.'),
+         (DTV, 'Chị có thấy ai đi về phía kho không?'),
+         (None, 'Khoảng tám giờ kém mười tôi thấy đèn pin ở chỗ cái xe ô tô to đỗ cạnh kho. Tôi tưởng người ta dỡ đồ lễ.')),
+     'signature': 'Người khai: H\'Đuôn Byă'})
+
+add({'id': 'd14', 'stage': 2, 'type': 'testimony', 'title': 'Lời khai của H\'Ngoan Niê (vợ già làng)',
+     'header': CA, 'heading': 'Biên bản ghi lời khai', 'date': '14 giờ 00 ngày 10/4/2001',
+     'fields': [{'label': 'Người khai', 'value': 'H\'Ngoan Niê (Ami H\'Lin), 60 tuổi'}],
+     'lines': tl('H\'Ngoan Niê',
+         (DTV, 'Lần cuối bà thấy ông lúc nào?'),
+         (None, 'Sáu rưỡi ông ăn cơm với khách. Bảy rưỡi ông nói có người báo heo rừng phá kho lúa giống, ông đi xem. Ông không về nữa.'),
+         (DTV, 'Ai báo?'),
+         (None, 'Tôi không thấy mặt. Ông chỉ nói "nó gọi ở cửa sau".'),
+         (DTV, 'Mấy ngày trước ông có lo chuyện gì không?'),
+         (None, 'Ông nói chuyện đất rẫy chung. Ông nói sau lễ ông xuống xã, mang theo cái giấy của buôn.')),
+     'signature': 'Người khai: H\'Ngoan Niê'})
+
+# ───────────── Vòng 3: ai có rơ-le, ai cầm xà gạc ─────────────
+add({'id': 'd15', 'stage': 3, 'type': 'receipt', 'title': 'Phiếu cầm đồ của tiệm Kim Phát, thị trấn Quảng Phú',
+     'shop': 'Tiệm cầm đồ Kim Phát', 'address': 'Thị trấn Quảng Phú, huyện Cư M\'gar',
+     'fields': [{'label': 'Ngày', 'value': '08/04/2001, 19 giờ 35'}, {'label': 'Người cầm', 'value': 'Y Bang Niê'}],
+     'items': [{'name': 'Ché tuk cổ, men nâu (đồ gia truyền)', 'qty': '1', 'price': '3.000.000'}],
+     'total': '3.000.000đ',
+     'footer': ['Xác nhận của chủ tiệm Trịnh Văn Phát (10/4): Y Bang tới khoảng 19:20 bằng xe máy, ngồi kỳ kèo giá tới gần 19:50 mới đi. Hỏi vì sao cầm buổi tối, anh nói "rằm này phải trả lãi cho anh Lợi".',
+                'Thị trấn Quảng Phú cách buôn Ea Kral khoảng 12 km đường đất.']})
+
+add({'id': 'd16', 'stage': 3, 'type': 'report', 'title': 'Biên bản kiểm tra xưởng sửa máy của Y Bang',
+     'header': CA, 'heading': 'Biên bản kiểm tra', 'code': '22/KT', 'date': 'Ngày 11/4/2001',
+     'sections': [
+         {'heading': '1. Xưởng', 'paragraphs': ['Có dụng cụ sửa máy bơm, máy xay xát. **Không có máy ấp trứng** hay rơ-le hẹn giờ nào. Trên vách có một chiếc móc trống, cạnh đó có vết bụi in hình lưỡi xà gạc.']},
+         {'heading': '2. Sổ ghi chép của Y Bang', 'paragraphs': ['"24/3/2001: giao anh Lợi 1 máy ấp trứng 200 quả (hỏng mô-tơ, rơ-le còn tốt) và 1 máy bơm Honda, trừ nợ 6 triệu." Bên dưới có chữ ký "Lợi".']},
+         {'heading': '3. Ghi nhận', 'paragraphs': ['Xưởng không khoá cửa. Theo người dân, chiều 8/4 nhiều người ra vào xưởng mượn đồ dựng cây nêu.']}],
+     'signers': [{'role': DTV, 'name': DTV_NAME}]})
+
+add({'id': 'd17', 'stage': 3, 'type': 'testimony', 'title': 'Lời khai của Y Djuê Adrơng (thợ rèn của buôn)',
+     'header': CA, 'heading': 'Biên bản ghi lời khai', 'date': '09 giờ 00 ngày 11/4/2001',
+     'fields': [{'label': 'Người khai', 'value': 'Y Djuê Adrơng, 58 tuổi, thợ rèn'}],
+     'lines': tl('Y Djuê Adrơng',
+         (DTV, 'Chiếc xà gạc khắc chữ B, ông có biết không?'),
+         (None, 'Tôi rèn nó cho Y Bang năm ngoái. Lưỡi dày, sống phẳng, tôi nhìn là biết.'),
+         (DTV, 'Chiều 8/4 ông có thấy nó không?'),
+         (None, 'Có. Ba giờ chiều Y Ksor cầm nó chặt tre dựng cây nêu ở sân nhà dài. Tôi còn nói "xà gạc của Y Bang chặt tre ngọt quá". Y Ksor cười, nói lấy ở xưởng, mai trả.'),
+         (DTV, 'Sau đó?'),
+         (None, 'Dựng nêu xong, Y Ksor dắt nó ở thắt lưng đi về phía kho lúa. Tôi không thấy nó treo lại xưởng.')),
+     'signature': 'Người khai: Y Djuê Adrơng'})
+
+add({'id': 'd18', 'stage': 3, 'type': 'testimony', 'title': 'Biên bản ghi lời khai lần hai của H\'Nhi Êban',
+     'header': CA, 'heading': 'Biên bản ghi lời khai', 'date': '15 giờ 00 ngày 11/4/2001',
+     'fields': [{'label': 'Người khai', 'value': 'H\'Nhi Êban, 29 tuổi'}],
+     'lines': tl('H\'Nhi Êban',
+         (DTV, 'Ổ khoá kho tìm thấy còn treo trên móc, không khoá.'),
+         (None, '(Khóc) Tôi vội ra bến nước, quên khoá. Tôi sợ người ta nói tại tôi nên tôi nói dối.'),
+         (DTV, 'Chiều 8/4 có ai hỏi chị về kho lúa không?'),
+         (None, 'Năm rưỡi ông Lợi lái xe ô tô vào, đỗ ngay cạnh kho để dỡ con bò. Ông hỏi tôi công tắc đèn kho ở đâu, nói để soi cho người ta dỡ bò. Tôi chỉ cho ông cái công tắc ở cột ngoài cửa.'),
+         (DTV, 'Ông ấy có bật đèn không?'),
+         (None, 'Không. Ông nói thôi, trời còn sáng.')),
+     'signature': 'Người khai: H\'Nhi Êban'})
+
+add({'id': 'd19', 'stage': 3, 'type': 'report', 'title': 'Trích biên bản xử phạt vạ của hội đồng buôn Ea Kral',
+     'header': ['Hội đồng già làng buôn Ea Kral'], 'heading': 'Biên bản xử phạt vạ theo luật tục', 'date': 'Ngày 26/2/2001',
+     'sections': [
+         {'heading': 'Nội dung', 'paragraphs': ['Y Ksor Mlô chặt 14 cây gỗ ở rừng đầu nguồn. Hội đồng xử phạt **1 con bò, 2 con heo** (quy ra khoảng 8 triệu đồng), nộp trước rằm tháng Ba. Nếu không nộp đủ, Y Ksor mất quyền làm rẫy chung một năm.']},
+         {'heading': 'Ghi bổ sung (5/4/2001)', 'paragraphs': ['Y Ksor đã nộp đủ bằng tiền mặt **8 triệu đồng**, tiền mới, buộc dây thun theo xấp một triệu. Người nhận: Y Krăk Niê.']}],
+     'signature': 'Thư ký hội đồng: Y Djuê Adrơng'})
+
+# ───────────── Vòng 4: cái giấy của buôn ─────────────
+add({'id': 'd20', 'stage': 4, 'type': 'letter', 'title': 'Đơn của già làng Y Krăk Niê gửi Uỷ ban nhân dân xã Ea Kpam',
+     'date': 'Buôn Ea Kral, ngày 3 tháng 4 năm 2001', 'greeting': 'Kính gửi: Uỷ ban nhân dân xã Ea Kpam',
+     'paragraphs': [
+         'Tôi là Y Krăk Niê, già làng buôn Ea Kral. Tôi nghe nói ông Phan Văn Lợi đã nộp lên xã giấy thuê 30 héc-ta đất rẫy chung của buôn, có **biên bản họp buôn đồng ý** và dấu điểm chỉ của tôi.',
+         'Buôn chưa bao giờ đồng ý. Ngày 2/4/2001 buôn họp, 41 hộ không đồng ý cho thuê. Biên bản họp thật có chữ ký 41 chủ hộ, tôi đang giữ.',
+         'Tôi không điểm chỉ giấy nào cho ông Lợi. Sau lễ cúng bến nước, ngày 9/4 tôi sẽ mang biên bản thật xuống xã để các ông xem.'],
+     'signature': 'Y Krăk Niê (điểm chỉ). Người viết hộ: Y Bang Niê'})
+
+add({'id': 'd21', 'stage': 4, 'type': 'report', 'title': 'Biên bản làm việc với cán bộ địa chính xã Ea Kpam',
+     'header': CA, 'heading': 'Biên bản làm việc', 'code': '27/LV', 'date': 'Ngày 12/4/2001',
+     'sections': [
+         {'heading': '1. Hồ sơ thuê đất', 'paragraphs': ['Ngày 28/3/2001 ông Phan Văn Lợi nộp hồ sơ xin thuê 30 ha đất rẫy chung buôn Ea Kral, kèm "Biên bản họp buôn ngày 25/3/2001" ghi buôn đồng ý cho thuê 20 năm.',
+                                                         'Biên bản có dấu điểm chỉ mang tên Y Krăk Niê và **chữ ký thư ký cuộc họp: Y Ksor Mlô**.']},
+         {'heading': '2. Ý kiến cán bộ địa chính', 'paragraphs': ['Ngày 4/4 xã nhận đơn của già làng (d20), đã hẹn ông Lợi và già làng đối chất ngày 10/4. Nếu không có biên bản thật của buôn, xã chỉ có biên bản do ông Lợi nộp.']}],
+     'signers': [{'role': DTV, 'name': DTV_NAME}]})
+
+add({'id': 'd22', 'stage': 4, 'type': 'note', 'title': 'Trích sổ chi tiêu đại lý Lợi Phát (tạm giữ ngày 12/4)',
+     'paragraphs': ['Sổ ghi tay, chữ của Phan Văn Lợi:',
+                    '— 24/3: nhận máy ấp trứng, máy bơm của Y Bang, trừ 6 tr.',
+                    '— 25/3: Ksor, "giấy họp", 2 tr.',
+                    '__— 5/4: rút 8 tr tiền mới, xấp dây thun, đưa Ksor (vạ).__',
+                    '— 5/4: Ksor, xoá nợ phân 3,5 tr.',
+                    '— 8/4: bò lễ 4,2 tr.'],
+     'signature': 'Đại lý Lợi Phát'})
+
+add({'id': 'd23', 'stage': 4, 'type': 'testimony', 'title': 'Biên bản ghi lời khai lần hai của Y Ksor Mlô',
+     'header': CA, 'heading': 'Biên bản ghi lời khai', 'date': '16 giờ 00 ngày 12/4/2001',
+     'fields': [{'label': 'Người khai', 'value': 'Y Ksor Mlô, 40 tuổi'}],
+     'lines': tl('Y Ksor Mlô',
+         (DTV, 'Ông thợ rèn thấy anh cầm xà gạc của Y Bang chiều 8/4.'),
+         (None, '(Im lặng) Tôi mượn chặt tre. Chặt xong tôi treo lại xưởng rồi.'),
+         (DTV, 'Tám triệu nộp vạ anh lấy ở đâu?'),
+         (None, 'Tôi bán mật ong rừng với hai con heo nhà nuôi, gom lại đủ tám triệu.'),
+         (DTV, 'Chữ ký thư ký trên biên bản họp buôn ngày 25/3 là của anh?'),
+         (None, 'Ông Lợi nói chỉ là giấy nháp, ký cho có. Tôi không biết chữ nhiều.')),
+     'signature': 'Người khai: Y Ksor Mlô'})
+
+# ───────────── Vòng 5: khám xét ─────────────
+add({'id': 'd24', 'stage': 5, 'type': 'report', 'title': 'Biên bản khám xét đại lý Lợi Phát và xe bán tải',
+     'header': CA, 'heading': 'Biên bản khám xét', 'code': '31/KX', 'date': '06 giờ 00 ngày 13/4/2001',
+     'sections': [
+         {'heading': 'Kho đại lý', 'paragraphs': ['Một máy ấp trứng 200 quả, vỏ ghi "Xưởng Y Bang"; **hộc rơ-le hẹn giờ trống**, bốn con vít mới tháo, còn sáng.',
+                                                  'Một cuộn dây điện đôi cùng loại với dây nối rơ-le ở hiện trường; hộp bóng đèn sợi đốt 100 W loại 10 chiếc, còn 8.',
+                                                  'Bao đay in chữ "LỢI PHÁT" đã bị cắt mất một mảng.']},
+         {'heading': 'Xe bán tải', 'paragraphs': ['Thùng xe có mạt cưa và vết dầu dừa. Hộc xe có một đèn pin.']},
+         {'heading': 'Tủ giấy tờ', 'paragraphs': ['Bản gốc "Biên bản họp buôn ngày 25/3/2001" và một tờ giấy nháp tập điểm chỉ, có nhiều dấu ngón cái mực tím.']}],
+     'signers': [{'role': DTV, 'name': DTV_NAME}]})
+
+add({'id': 'd25', 'stage': 5, 'type': 'report', 'title': 'Biên bản khám xét nhà Y Ksor Mlô',
+     'header': CA, 'heading': 'Biên bản khám xét', 'code': '32/KX', 'date': '06 giờ 30 ngày 13/4/2001',
+     'sections': [
+         {'heading': 'Thu giữ', 'paragraphs': ['— Một áo thổ cẩm vừa giặt, phơi sau nhà; ở cổ tay áo phải còn vết thẫm nhỏ (gửi giám định).',
+                                                '— Trong ống tre trên gác bếp: 3 triệu đồng tiền mới cùng sê-ri với xấp tiền nộp vạ.',
+                                                '— Một mẩu giấy viết tay: "Rằm, 7 rưỡi, gọi già ra kho. Nói chuyện cho xong. L."']},
+         {'heading': 'Ghi nhận', 'paragraphs': ['Không có mật ong hay sổ bán heo. Hàng xóm cho biết năm nay nhà Y Ksor không nuôi heo.']}],
+     'signers': [{'role': DTV, 'name': DTV_NAME}]})
+
+add({'id': 'd26', 'stage': 5, 'type': 'report', 'title': 'Kết luận giám định dấu vết',
+     'header': ['Phòng Kỹ thuật hình sự', 'Công an tỉnh Đắk Lắk'], 'heading': 'Kết luận giám định', 'code': '64/GĐ', 'date': 'Ngày 15/4/2001',
+     'sections': [
+         {'heading': '1. Vết trên áo Y Ksor', 'paragraphs': ['Là máu người, nhóm O, **trùng nhóm máu của Y Krăk Niê**; Y Ksor nhóm A.']},
+         {'heading': '2. Giẻ ở hiện trường', 'paragraphs': ['Tro vải đay ở đui đèn cùng loại sợi với bao "LỢI PHÁT"; mép cắt khớp mảng bị cắt.']},
+         {'heading': '3. Dấu điểm chỉ', 'paragraphs': ['Dấu điểm chỉ mang tên Y Krăk Niê trên biên bản ngày 25/3 **không phải của Y Krăk Niê** (so với dấu trên đơn ngày 3/4 và chứng minh nhân dân); trùng với các dấu trên tờ giấy nháp thu ở đại lý Lợi Phát, là ngón cái phải của Phan Văn Lợi.']},
+         {'heading': '4. Mẩu giấy', 'paragraphs': ['Chữ viết trên mẩu giấy thu ở nhà Y Ksor trùng chữ của Phan Văn Lợi trong sổ chi tiêu đại lý.']}],
+     'signature': 'Giám định viên: Trung tá Lâm Quốc Bảo'})
+
+CARDS = ['bang', 'nhi', 'ksor', 'loi']
+NAMES = ['Y Bang Niê', 'H\'Nhi Êban', 'Y Ksor Mlô', 'Phan Văn Lợi']
+Q = [
+    {'id': 'q1', 'stage': 1, 'type': 'choice', 'title': 'Tai nạn cháy hay án mạng?',
+     'prompt': 'Báo chí nghi chập điện. Theo hồ sơ đang mở, già làng chết như thế nào?',
+     'options': ['Già làng vào kho kiểm tra đường điện, dây chập gây cháy, ông ngạt khói và chết trong đám cháy.',
+                 'Già làng đã chết trước khi kho cháy, do một cú đánh mạnh vào gáy bằng sống một lưỡi xà gạc.',
+                 'Già làng bị đột quỵ trong kho, đánh rơi đèn dầu làm cháy kho, đầu đập vào sàn khi ngã.'],
+     'answer': [1],
+     'nudges': {'0': {'message': 'Người chết ngạt khói thì đường thở sẽ có muội than. Pháp y nói gì?'},
+                '2': {'message': 'Kho có đèn điện, không có đèn dầu. Và vết thương ở gáy có hình dạng gì?'}},
+     'hints': ['Đọc kết luận pháp y.', 'Đường thở có muội than không? Vết thương ở đâu, hình gì?',
+               'd03: khí quản sạch, không CO, ngừng thở trước khi có khói; vết lún dài ở chẩm do sống xà gạc.'],
+     'solved': 'Già làng đã chết trước khi lửa bùng lên. Ngọn lửa được dùng để che một vụ giết người.',
+     'explanation': [{'title': 'Không ngạt khói', 'body': ['d03: khí quản sạch, máu không có CO.']},
+                     {'title': 'Cú đánh', 'body': ['d03: vết lún xương chẩm bờ thẳng, do sống xà gạc; đây là nguyên nhân tử vong.']},
+                     {'title': 'Thời gian', 'body': ['d03: tử vong 19:15–20:00; đám cháy phát hiện 20:55 (d01).']}]},
+    {'id': 'q2', 'stage': 1, 'type': 'evidence', 'need': 2, 'title': 'Chiếc xà gạc khắc chữ B',
+     'prompt': 'Ghim 2 tài liệu cho thấy chiếc xà gạc dưới tử thi là hung khí, và nó thuộc về ai.',
+     'answer': ['d03', 'd06'],
+     'nudges': [{'any': ['d05'], 'near': True, 'message': 'Ảnh cho thấy chữ B. Ai nhận đó là của mình?'},
+                {'any': ['d02'], 'near': True, 'message': 'Biên bản tả chỗ tìm thấy. Cần tài liệu nói vết thương khớp với gì, và ai là chủ.'}],
+     'hints': ['Một tài liệu về vết thương, một tài liệu về chủ chiếc xà gạc.', 'Pháp y nói hung khí loại gì? Ai khắc chữ B?',
+               'd03: vết lún do sống xà gạc. d06 dòng 2: Y Bang nhận xà gạc khắc chữ B là của mình, mấy bữa nay không thấy.'],
+     'solved': 'Hung khí là xà gạc của Y Bang. Nhưng chính anh nói nó đã mất khỏi vách xưởng.',
+     'explanation': [{'title': 'Hung khí', 'body': ['d03: vết thương do sống xà gạc; d02, d05: xà gạc nằm dưới tử thi.']},
+                     {'title': 'Chủ', 'body': ['d06: xà gạc khắc chữ B của Y Bang.']},
+                     {'title': 'Chưa đủ', 'body': ['Y Bang nói mấy bữa không thấy nó. Ai đã cầm nó?']}]},
+    {'id': 'q3', 'stage': 2, 'type': 'line', 'title': 'Mười lăm phút "ra xe"',
+     'prompt': 'Một người khai không rời nhà dài suốt buổi tối. Chỉ ra dòng khai bị tài liệu ở vòng này bác bỏ.',
+     'answer': ['d08:004'],
+     'nudges': {'d08:002': {'near': True, 'message': 'Câu này nói lý do tới buôn. Tìm câu nói về chỗ ngồi.'},
+                'd06:004': {'message': 'Lời Y Bang đáng ngờ, nhưng ở vòng này chưa có tài liệu nào bác. Tìm người được cán bộ huyện nhắc tới.'}},
+     'hints': ['Ai ngồi cạnh cán bộ huyện?', 'Ông Tuấn ghi gì lúc 19:50?', 'd08 dòng 4: ông Lợi "không rời chỗ". d10: 19:50 ông Lợi ra xe, 20:05 mới quay lại.'],
+     'solved': 'Ông Lợi rời nhà dài khoảng mười lăm phút, đúng lúc không ai để ý.',
+     'explanation': [{'title': 'Câu khai', 'body': ['d08 dòng 4: ngồi cạnh anh Tuấn, không rời chỗ tới lúc cháy.']},
+                     {'title': 'Bị bác', 'body': ['d10: 19:50 ông Lợi ra xe "lấy rượu", 20:05 quay lại tay không.']},
+                     {'title': 'Xe ở đâu', 'body': ['d04, d13: xe ô tô đỗ cạnh kho lúa; 19:50 có đèn pin ở đó.']}]},
+    {'id': 'q4', 'stage': 2, 'type': 'evidence', 'need': 2, 'title': 'Ngọn lửa hẹn giờ',
+     'prompt': 'Ghim 2 tài liệu cho thấy lửa không do chập điện mà do một mồi lửa được hẹn giờ trước, và cho biết mồi lửa được đặt lúc nào.',
+     'answer': ['d11', 'd12'],
+     'nudges': [{'any': ['d02'], 'near': True, 'message': 'Biên bản khám nghiệm chỉ nói vùng cháy sâu nhất. Cần kết luận giám định cháy.'}],
+     'hints': ['Một kết luận giám định cháy, một ảnh tang vật.', 'Rơ-le đặt tối đa bao nhiêu phút? Cháy lúc mấy giờ?',
+               'd11: loại trừ chập điện; bóng 100 W bọc giẻ tẩm dầu, rơ-le máy ấp trứng tối đa 60 phút, mồi đặt 19:50–20:00. d12: ảnh rơ-le và mảnh bóng đèn.'],
+     'solved': 'Ai có mặt trong nhà dài lúc 20:55 cũng chẳng chứng minh được gì. Cần biết ai ở gần kho lúc 19:50–20:00.',
+     'explanation': [{'title': 'Không chập điện', 'body': ['d11: dây dẫn không có dấu chập; điểm phát cháy ở bóng đèn.']},
+                     {'title': 'Mồi lửa', 'body': ['d11, d12: bóng 100 W bọc giẻ đay tẩm dầu dừa, mạt cưa, rơ-le máy ấp trứng.']},
+                     {'title': 'Giờ đặt', 'body': ['d11: rơ-le tối đa 60 phút; cháy 20:55, nên mồi đặt 19:50–20:00.']}]},
+    {'id': 'q5', 'stage': 2, 'type': 'choice', 'multiple': True, 'cards': CARDS, 'title': 'Ai không có người làm chứng?',
+     'prompt': 'Già làng chết khoảng 19:15–20:00, mồi lửa đặt khoảng 19:50–20:00. Chọn **tất cả** những người không có ai xác nhận đang ở nơi khác trong khoảng 19:30–20:00.',
+     'options': NAMES, 'answer': [0, 2, 3],
+     'nudges': {'1': {'message': 'H\'Nhi rửa ché ở bến nước cùng sáu chị em từ 18 giờ (d13).'}},
+     'hints': ['Đối chiếu bản tường trình của ông Tuấn với lời các chị ở bến nước.', 'Ai vào nhà dài sau 20:00? Ai rời đi lúc 19:50?',
+               'd10: ông Lợi ra ngoài 19:50–20:05; Y Ksor vào lúc 20:10; Y Bang vào lúc 20:20. d13: H\'Nhi ở bến nước suốt.'],
+     'solved': 'Ba người không có ai làm chứng: Y Bang, Y Ksor và ông Lợi.',
+     'explanation': [{'title': 'Y Bang', 'body': ['d06: nói ở nhà ngủ; d10: vào nhà dài 20:20, có mùi xăng.']},
+                     {'title': 'Y Ksor', 'body': ['d09: nói đi tắm suối; d10: vào nhà dài 20:10, tóc ướt.']},
+                     {'title': 'Ông Lợi', 'body': ['d10: rời chỗ 19:50–20:05, xe đỗ cạnh kho (d13).']},
+                     {'title': 'H\'Nhi', 'body': ['d13: ở bến nước cùng sáu chị em.']}]},
+    {'id': 'q6', 'stage': 3, 'type': 'line', 'title': 'Mùi xăng',
+     'prompt': 'Một người khai đã ở nhà ngủ say. Chỉ ra dòng khai bị tài liệu ở vòng này bác bỏ.',
+     'answer': ['d06:004'],
+     'nudges': {'d06:002': {'message': 'Câu về chiếc xà gạc. Tìm câu nói anh ở đâu tối đó.'}},
+     'hints': ['Đọc phiếu cầm đồ.', 'Y Bang ở đâu lúc 19:20–19:50?', 'd06 dòng 4: ở nhà ngủ say. d15: 19:20–19:50 Y Bang ở tiệm cầm đồ Kim Phát, thị trấn cách 12 km.'],
+     'solved': 'Y Bang nói dối vì xấu hổ phải cầm chiếc ché gia truyền. Lúc già làng chết, anh ở thị trấn.',
+     'explanation': [{'title': 'Câu khai', 'body': ['d06 dòng 4: ở nhà ngủ say tới tám giờ hơn.']},
+                     {'title': 'Bị bác', 'body': ['d15: 19:20–19:50 Y Bang ở tiệm cầm đồ, cách buôn 12 km.']},
+                     {'title': 'Ngoại phạm', 'body': ['Già làng rời nhà dài 19:30 (d10, d14). Y Bang không thể ở kho lúa lúc đó, cũng không kịp về đặt mồi lửa trước 20:00.']}]},
+    {'id': 'q7', 'stage': 3, 'type': 'evidence', 'need': 2, 'title': 'Chiếc rơ-le từ đâu ra',
+     'prompt': 'Rơ-le là của một máy ấp trứng. Ghim 2 tài liệu cho thấy ai đang giữ máy ấp trứng đó, và người ấy đã chuẩn bị gì ở kho lúa từ chiều.',
+     'answer': ['d16', 'd18'],
+     'nudges': [{'any': ['d10'], 'near': True, 'message': 'Bản tường trình cho thấy ai rời chỗ. Cần tài liệu nối người đó với rơ-le và công tắc kho.'}],
+     'hints': ['Một tài liệu về chiếc máy ấp trứng, một tài liệu về chiều 8/4 ở kho.', 'Sổ của Y Bang ghi gì ngày 24/3? Ai hỏi H\'Nhi về công tắc đèn kho?',
+               'd16: 24/3 Y Bang giao máy ấp trứng (rơ-le còn tốt) cho ông Lợi trừ nợ. d18: 17:30 ông Lợi đỗ xe cạnh kho, hỏi công tắc đèn kho.'],
+     'solved': 'Máy ấp trứng đã ở chỗ ông Lợi hai tuần trước vụ cháy. Và ông đã hỏi công tắc đèn kho từ chiều.',
+     'explanation': [{'title': 'Rơ-le', 'body': ['d16: máy ấp trứng (rơ-le còn tốt) đã giao cho ông Lợi ngày 24/3.']},
+                     {'title': 'Công tắc', 'body': ['d18: 17:30 ông Lợi hỏi H\'Nhi công tắc đèn kho, nhưng không bật.']},
+                     {'title': 'Cửa kho', 'body': ['d18: H\'Nhi quên khoá kho; ổ khoá còn treo trên móc (d02).']}]},
+    {'id': 'q8', 'stage': 3, 'type': 'line', 'title': 'Người cầm xà gạc',
+     'prompt': 'Ông Lợi không thể vừa ngồi nhà dài lúc 19:30 vừa ở kho với già làng. Chỉ ra dòng khai bị lời ông thợ rèn bác bỏ.',
+     'answer': ['d09:004'],
+     'nudges': {'d09:006': {'near': True, 'message': 'Câu về chuyện đi tắm suối chưa bị ai bác. Tìm câu về chiều 8/4.'}},
+     'hints': ['Ai được thợ rèn nhìn thấy cầm xà gạc khắc chữ B?', 'Người đó khai chặt tre bằng gì?', 'd09 dòng 4: chặt bằng rìu, không đụng xà gạc nào. d17: 3 giờ chiều Y Ksor chặt tre bằng xà gạc của Y Bang, rồi dắt nó đi về phía kho.'],
+     'solved': 'Y Ksor là người cầm chiếc xà gạc khắc chữ B chiều hôm đó.',
+     'explanation': [{'title': 'Câu khai', 'body': ['d09 dòng 4: chặt tre bằng rìu, không đụng xà gạc nào.']},
+                     {'title': 'Bị bác', 'body': ['d17: thợ rèn thấy Y Ksor chặt tre bằng xà gạc của Y Bang, rồi dắt nó đi về phía kho lúa.']},
+                     {'title': 'Khớp', 'body': ['d14: 19:30 "có người gọi ở cửa sau"; d10: Y Ksor vào nhà dài 20:10, tóc ướt.']}]},
+    {'id': 'q9', 'stage': 4, 'type': 'evidence', 'need': 2, 'title': 'Vì sao phải đốt kho lúa',
+     'prompt': 'Ghim 2 tài liệu giải thích vì sao kho lúa phải cháy, và vì sao Y Ksor cũng sợ già làng xuống xã.',
+     'answer': ['d20', 'd21'],
+     'nudges': [{'any': ['d14'], 'near': True, 'message': 'Bà H\'Ngoan nói về "cái giấy của buôn". Tài liệu nào nói rõ đó là giấy gì?'}],
+     'hints': ['Một lá đơn của già làng, một biên bản ở xã.', 'Giấy thật của buôn để ở đâu? Ai ký thư ký trên biên bản giả?',
+               'd20: biên bản họp buôn thật (41 hộ không đồng ý) do già làng giữ, sẽ mang xuống xã 9/4. d21: biên bản giả ông Lợi nộp có chữ ký thư ký Y Ksor; nếu không có biên bản thật, xã chỉ có biên bản giả.'],
+     'solved': 'Biên bản thật nằm trong gùi giấy tờ ở kho lúa. Đốt kho là xoá nó.',
+     'explanation': [{'title': 'Biên bản thật', 'body': ['d20: 41 hộ không đồng ý; già làng giữ, hẹn mang xuống xã ngày 9/4. d07: gùi giấy tờ để trong kho.']},
+                     {'title': 'Biên bản giả', 'body': ['d21: biên bản ông Lợi nộp có điểm chỉ mang tên già làng và chữ ký thư ký Y Ksor.']},
+                     {'title': 'Hệ quả', 'body': ['d21: không có biên bản thật, xã chỉ còn biên bản giả. d02: gùi giấy tờ cháy thành tro.']}]},
+    {'id': 'q10', 'stage': 4, 'type': 'line', 'title': 'Tám triệu tiền mới',
+     'prompt': 'Chỉ ra dòng khai bị sổ chi tiêu của đại lý Lợi Phát bác bỏ.',
+     'answer': ['d23:004'],
+     'nudges': {'d23:002': {'near': True, 'message': 'Sổ chi tiêu không nói gì về chiếc xà gạc. Tìm câu về tiền.'},
+                'd23:006': {'message': 'Sổ có ghi "giấy họp", nhưng câu này Y Ksor đã nhận là có ký. Tìm câu bị bác thẳng.'}},
+     'hints': ['Tiền nộp vạ từ đâu ra?', 'Đối chiếu ngày 5/4 trong sổ đại lý với ghi bổ sung của hội đồng buôn.', 'd23 dòng 4: bán mật ong và heo. d22: 5/4 ông Lợi rút 8 triệu tiền mới xấp dây thun đưa Ksor; d19: 5/4 Y Ksor nộp 8 triệu tiền mới, xấp dây thun.'],
+     'solved': 'Ông Lợi trả vạ cho Y Ksor, và trả cả tiền ký "giấy họp".',
+     'explanation': [{'title': 'Câu khai', 'body': ['d23 dòng 4: tiền bán mật ong và hai con heo.']},
+                     {'title': 'Bị bác', 'body': ['d22: 5/4 "rút 8 tr tiền mới, xấp dây thun, đưa Ksor (vạ)". d19: cùng ngày Y Ksor nộp đúng 8 triệu tiền mới xấp dây thun.']},
+                     {'title': 'Trước đó', 'body': ['d22: 25/3 "Ksor, giấy họp, 2 tr", ngay ngày ghi trên biên bản giả (d21).']}]},
+    {'id': 'q-accuse', 'stage': 5, 'type': 'choice', 'multiple': True, 'cards': CARDS, 'title': 'Chỉ mặt hung thủ và đồng phạm',
+     'prompt': 'Cái chết của già làng và ngọn lửa là việc của hơn một người. Chọn **đúng hai** người.',
+     'options': NAMES, 'answer': [2, 3],
+     'nudges': {'0': {'message': 'Lúc già làng rời nhà dài, Y Bang đang ở tiệm cầm đồ cách 12 km (d15). Xà gạc và rơ-le đều đã rời khỏi tay anh (d16, d17).'},
+                '1': {'message': 'H\'Nhi ở bến nước suốt tối (d13); cái sai của chị là quên khoá kho (d18).'}},
+     'hints': ['Một người gọi già làng ra kho và cầm xà gạc. Một người có rơ-le, hỏi công tắc đèn và rời nhà dài lúc 19:50.', 'Ai viết mẩu giấy "Rằm, 7 rưỡi, gọi già ra kho"?',
+               'Y Ksor: xà gạc (d17), máu trên áo (d25, d26). Ông Lợi: rơ-le, dây, bóng đèn, bao đay (d16, d24, d26), mẩu giấy và điểm chỉ giả (d25, d26).'],
+     'solved': 'Y Ksor Mlô và Phan Văn Lợi.',
+     'explanation': [{'title': 'Y Ksor', 'body': ['Cầm xà gạc của Y Bang (d17), gọi già làng ra kho theo mẩu giấy (d25), máu già làng trên áo (d26).']},
+                     {'title': 'Ông Lợi', 'body': ['Rơ-le máy ấp trứng của Y Bang (d16, d24), hỏi công tắc kho (d18), rời nhà dài 19:50–20:05 (d10), giẻ bao "Lợi Phát" (d26).']},
+                     {'title': 'Vì sao', 'body': ['Biên bản giả có điểm chỉ của ông Lợi và chữ ký Y Ksor (d21, d26); biên bản thật nằm trong kho (d20).']}]},
+    {'id': 'q11', 'stage': 5, 'type': 'choice', 'title': 'Kết luận điều tra',
+     'prompt': 'Chọn bản kết luận đúng với hồ sơ ở mọi chi tiết: ai, bằng cách nào, và vì sao.',
+     'options': [
+         'Ông Lợi giả điểm chỉ già làng trên biên bản họp buôn để thuê 30 ha đất rẫy chung, trả tiền cho Y Ksor ký làm thư ký. Khi già làng định mang biên bản thật xuống xã, Y Ksor gọi ông ra kho lúc 19:30 và đánh chết ông bằng xà gạc mượn của Y Bang; 19:50 ông Lợi ra kho lắp bóng đèn bọc giẻ và rơ-le máy ấp trứng hẹn 60 phút, để kho cháy lúc 20:55 khi cả hai đang ngồi ở nhà dài, xoá biên bản thật và gài tội cho Y Bang.',
+         'Y Bang nợ ông Lợi 150 triệu, giận già làng không cho cầm rẫy nên chiều 8/4 lắp sẵn bóng đèn và rơ-le máy ấp trứng của xưởng mình trong kho; 19:30 gọi già làng ra kho, đánh chết bằng xà gạc khắc chữ B, rồi chạy xe ra thị trấn cầm ché để có ngoại phạm và trả lãi cho ông Lợi; Y Ksor chỉ mượn xà gạc chặt tre rồi trả lại xưởng, còn ông Lợi rời nhà dài lúc 19:50 chỉ để lấy rượu trên xe như ông khai.',
+         'H\'Nhi để kho mở cho Y Ksor vào lấy trộm lúa giống bán lấy tiền nộp vạ; già làng bắt gặp, Y Ksor hoảng sợ đánh chết ông rồi tự nghĩ ra mồi lửa hẹn giờ bằng chiếc máy ấp trứng cũ để kho cháy như chập điện, đốt luôn gùi giấy tờ cho mất dấu số lúa đã lấy; ông Lợi không liên quan, chỉ cho Y Ksor vay tiền nộp vạ vì thương người, biên bản họp buôn là do Y Ksor tự làm.',
+         'Ông Lợi một mình gọi già làng ra kho lúc 19:50 khi rời nhà dài, đánh chết ông bằng xà gạc lấy ở xưởng Y Bang, lắp mồi lửa rồi quay lại nhà dài lúc 20:05; Y Ksor vô can, chỉ mượn xà gạc chặt tre và nhận tiền vạ ông Lợi cho vay, vết máu trên áo là máu thú săn; Y Bang bị gài tội vì ông Lợi muốn siết rẫy cà phê của anh, còn kho lúa cháy chỉ để che xác.'],
+     'answer': [0],
+     'exam': {'examiner': 'Kiểm sát viên Y Nuê Byă',
+              'intro': 'Trình bày kết luận trước kiểm sát viên: trả lời lần lượt từng câu hỏi bằng lời của mình. Không dùng được AI thì bấm “Trả lời bằng trắc nghiệm” để chọn bản kết luận đúng.'},
+     'nudges': {'1': {'message': 'Lúc già làng rời nhà dài 19:30, Y Bang đang ở tiệm cầm đồ (d15); rơ-le đã ở chỗ ông Lợi từ 24/3 (d16).'},
+                '2': {'message': 'H\'Nhi ở bến nước (d13). Tiền nộp vạ là của ông Lợi (d22), mẩu giấy gọi già ra kho do ông Lợi viết (d25, d26).'},
+                '3': {'message': 'Già làng rời nhà dài lúc 19:30, khi ông Lợi còn ngồi cạnh ông Tuấn (d10). Máu trên áo Y Ksor là máu người, nhóm của già làng (d26).'}},
+     'hints': ['Đối chiếu giờ: 19:30 già làng ra kho, 19:50 ông Lợi ra xe (d10).', 'Chỉ một phương án có hai người, biên bản giả và rơ-le của ông Lợi.', 'Phương án A.'],
+     'solved': 'Hồ sơ khép lại với tên Y Ksor Mlô và Phan Văn Lợi.',
+     'explanation': [{'title': 'Giết', 'body': ['d14, d17, d25, d26: Y Ksor gọi già làng ra kho 19:30, đánh bằng xà gạc của Y Bang; máu trên áo.']},
+                     {'title': 'Đốt', 'body': ['d10, d11, d16, d18, d24, d26: ông Lợi rời nhà dài 19:50–20:05, lắp bóng đèn bọc giẻ "Lợi Phát" và rơ-le máy ấp trứng hẹn 60 phút.']},
+                     {'title': 'Vì sao', 'body': ['d20, d21, d22, d26: biên bản thật của buôn nằm trong kho; biên bản giả có điểm chỉ của ông Lợi và chữ ký Y Ksor, được trả tiền.']}]},
+]
+
+case = {
+    'id': CID, 'no': 7, 'status': 'available',
+    'title': 'Đêm lửa tàn Buôn Ea Kral',
+    'subtitle': 'Một kho lúa cháy giữa đêm lễ, một chiếc xà gạc khắc chữ B và tờ giấy của buôn',
+    'tagline': 'Kho lúa bốc cháy giữa đêm lễ cúng bến nước. Già làng đã chết trước khi ngọn lửa đầu tiên bùng lên.',
+    'difficulty': 4, 'players': '2–6', 'duration': '90–120 phút',
+    'setting': 'Buôn Ea Kral, huyện Cư M\'gar, Đắk Lắk (hư cấu)', 'era': 'Tháng 4/2001',
+    'tags': ['Án mạng', 'Phóng hoả', 'Tây Nguyên', 'Có đồng phạm'], 'cover': 'images/cover.webp',
+    'contentWarning': 'Hồ sơ có mô tả một vụ giết người và hoả hoạn. Buôn làng, nhân vật và sự việc đều hư cấu.',
+    'synopsis': ['Đêm rằm tháng Ba năm 2001, khi cả buôn Ea Kral đang đánh chiêng mừng lễ cúng bến nước, kho lúa chung của buôn bốc cháy.',
+                 'Trong tro tàn có thi thể già làng Y Krăk Niê và một chiếc xà gạc khắc chữ "B". Pháp y kết luận: già làng đã chết trước khi lửa bùng lên.'],
+    'intro': {'title': 'Đêm lửa tàn Buôn Ea Kral',
+              'paragraphs': ['Đêm 8/4/2001, rằm tháng Ba, buôn Ea Kral ở huyện Cư M\'gar làm lễ cúng bến nước. Cả buôn tụ ở nhà dài của già làng, uống rượu cần, đánh chiêng. Chín giờ kém năm, có người la cháy: kho lúa chung của buôn đang bốc lửa.',
+                             'Khi lửa tắt, người ta tìm thấy già làng Y Krăk Niê trong tro, bên dưới là một chiếc xà gạc khắc chữ "B".',
+                             'Bạn là điều tra viên Phòng Cảnh sát hình sự Công an tỉnh Đắk Lắk. Bốn người có lý do bị nghi. Hãy bắt đầu từ kết luận pháp y.'],
+              'objective': 'Tìm ra già làng chết thế nào, ngọn lửa được đặt ra sao, những ai đã cùng làm, và vì sao kho lúa phải cháy.'},
+    'victim': {'id': 'krak', 'name': 'Y Krăk Niê (Ama H\'Lin)', 'age': 63, 'role': 'Già làng buôn Ea Kral', 'image': 'images/id-krak.webp',
+               'note': 'Chết trong kho lúa chung của buôn đêm 8/4/2001, trước khi kho cháy.'},
+    'suspects': [
+        {'id': 'bang', 'name': 'Y Bang Niê', 'age': 34, 'role': 'Con nuôi già làng, chủ xưởng sửa máy', 'image': 'images/id-bang.webp', 'voice': 'M1',
+         'suspicion': 'Nợ 150 triệu; vừa cãi to với già làng vì bị từ chối cầm rẫy chung. Xà gạc khắc chữ "B" là của anh.'},
+        {'id': 'nhi', 'name': 'H\'Nhi Êban', 'age': 29, 'role': 'Cháu gái già làng, thủ kho lúa', 'image': 'images/id-nhi.webp', 'voice': 'F1',
+         'suspicion': 'Người duy nhất giữ chìa kho lúa; cửa kho không bị phá.'},
+        {'id': 'ksor', 'name': 'Y Ksor Mlô', 'age': 40, 'role': 'Làm rẫy, đi săn', 'image': 'images/id-ksor.webp', 'voice': 'M3',
+         'suspicion': 'Bị già làng phạt vạ một con bò, hai con heo vì chặt rừng đầu nguồn.'},
+        {'id': 'loi', 'name': 'Phan Văn Lợi', 'age': 46, 'role': 'Chủ đại lý cà phê Lợi Phát, khách mời', 'image': 'images/id-loi.webp', 'voice': 'M2',
+         'suspicion': 'Chủ nợ của Y Bang; muốn thuê 30 ha đất rẫy chung mà già làng không đồng ý.'}],
+    'aiInterrogation': True,
+    'audio': {'intro': 'audio/intro.mp3', 'finale': 'audio/finale.mp3'},
+    'documents': D,
+    'questions': Q,
+    'beats': [
+        {'stage': 2, 'kicker': 'Ngày 10/4/2001 · Buôn Ea Kral', 'title': 'Chiếc rơ-le trong tro', 'voice': 'audio/beat-2.mp3',
+         'paragraphs': ['Giám định viên phòng cháy bới tro ở góc tây bắc kho, nhặt lên một bộ bánh răng cháy đen.',
+                        'Ông cán bộ huyện ngồi cả buổi tối ở chiếu khách, tối nay ông viết lại từng giờ mình nhớ được.',
+                        'Ngọn lửa bùng lên lúc 20:55. Nhưng ai đã ở gần kho lúa một giờ trước đó?']},
+        {'stage': 3, 'kicker': 'Ngày 11/4/2001 · Thị trấn Quảng Phú', 'title': 'Chiếc ché gia truyền', 'voice': 'audio/beat-3.mp3',
+         'paragraphs': ['Ở thị trấn, một chủ tiệm cầm đồ nhận ra ảnh Y Bang. Trong buôn, ông thợ rèn nhớ lại người đã cầm chiếc xà gạc khắc chữ B.',
+                        'H\'Nhi xin gặp điều tra viên lần nữa, mắt đỏ hoe.',
+                        'Rơ-le, xà gạc, công tắc đèn kho: mỗi thứ đã qua tay ai?']},
+        {'stage': 4, 'kicker': 'Ngày 12/4/2001 · Uỷ ban nhân dân xã Ea Kpam', 'title': 'Cái giấy của buôn', 'voice': 'audio/beat-4.mp3',
+         'paragraphs': ['Cán bộ địa chính xã mở tủ, lấy ra một bộ hồ sơ thuê đất và một lá đơn viết hộ, có dấu điểm chỉ của già làng.',
+                        'Già làng đã hẹn xuống xã đúng sáng hôm sau đêm lễ.',
+                        'Trong gùi giấy tờ cháy thành tro ở kho lúa, có thứ gì mà người ta không muốn xã nhìn thấy?']},
+        {'stage': 5, 'kicker': 'Ngày 13/4/2001 · Rạng sáng', 'title': 'Hai lệnh khám xét', 'voice': 'audio/beat-5.mp3',
+         'paragraphs': ['Thiếu tá Hiếu chia người làm hai tổ: một tổ xuống thị trấn Quảng Phú, một tổ vào căn nhà sàn cuối buôn.',
+                        'Chỉ mặt những người đã gây ra đêm lửa tàn. Và giải thích vì sao.']}],
+    'finale': {'title': 'Đêm lửa tàn Buôn Ea Kral',
+               'paragraphs': ['Y Ksor Mlô khai trước, khi chiếc áo thổ cẩm có vết máu được đặt lên bàn.',
+                              'Tháng Ba, ông Lợi trả anh hai triệu để ký tên thư ký vào một tờ "biên bản họp buôn" mà buôn chưa từng họp. Tháng Tư, ông trả luôn tám triệu tiền vạ. Rằm tháng Ba, ông đưa anh mẩu giấy: bảy rưỡi gọi già ra kho, nói chuyện cho xong.',
+                              'Già làng không nói chuyện. Ông chỉ nói sáng mai ông sẽ xuống xã, mang theo biên bản thật có chữ ký bốn mươi mốt hộ, và tên Y Ksor sẽ bị đọc to trước hội đồng buôn. Y Ksor đã cầm sẵn chiếc xà gạc của Y Bang trong tay.',
+                              'Bảy giờ năm mươi, ông Lợi ra xe "lấy rượu". Bóng đèn đã có sẵn trong túi, rơ-le đã tháo sẵn từ chiếc máy ấp trứng của Y Bang. Ông vặn kim tới vạch sáu mươi, rồi quay lại ngồi cạnh cán bộ huyện.',
+                              'Phan Văn Lợi chối đến cùng, cho tới khi dấu ngón cái của ông được đặt cạnh dấu điểm chỉ trên tờ biên bản giả. Ông chỉ nói: "Ba chục héc-ta, trồng cà phê thì giàu cả buôn."',
+                              'Bà H\'Ngoan nói với điều tra viên: "Đất của buôn không phải của ai. Ông nhà tôi nói vậy cả đời."']},
+    'epilogue': [
+        {'title': 'Phan Văn Lợi', 'text': 'Bị truy tố về tội giết người, huỷ hoại tài sản và giả mạo giấy tờ. Hồ sơ thuê đất bị huỷ.'},
+        {'title': 'Y Ksor Mlô', 'text': 'Bị truy tố về tội giết người. Hội đồng buôn trả lại tám triệu tiền vạ cho cơ quan điều tra làm tang vật.'},
+        {'title': 'Y Bang Niê', 'text': 'Chuộc lại chiếc ché gia truyền bằng tiền bà con trong buôn góp. Anh xin hoãn nợ ở ngân hàng huyện và trở lại làm rẫy.'},
+        {'title': 'Buôn Ea Kral', 'text': 'Bốn mươi mốt hộ họp lại, viết lại biên bản. 30 ha đất rẫy chung vẫn là đất của buôn. Mùa mưa năm ấy, buôn dựng lại kho lúa ở chỗ cũ.'}],
+}
+
+for person in [case['victim'], *case['suspects']]:
+    if person.get('image') and not os.path.exists(f'public/cases/{CID}/' + person['image']):
+        print('chưa có ảnh:', person['image']); del person['image']
+json.dump(case, open(f'public/cases/{CID}/case.json', 'w'), ensure_ascii=False, indent=2)
+open(f'public/cases/{CID}/case.json', 'a').write('\n')
+print(len(D), 'docs', len(Q), 'questions')
