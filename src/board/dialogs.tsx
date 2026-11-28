@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState, type ReactNode } from 'react';
 import { Link } from 'react-router-dom';
 import { useBoard, useBoardState } from './context';
-import { useUi, saveSettings } from './ui';
+import { useUi, saveSettings, reopenAfterRemount } from './ui';
 import { resetBoard } from './store';
 import { deleteCloud } from '../lib/cloud';
 import { caseNo } from '../lib/data';
@@ -13,17 +13,22 @@ import { useAudio, playVoice, stopVoice } from '../lib/sfx';
 import { caseBase } from '../lib/data';
 import { Icon } from './icons';
 import { SuspectGallery } from './suspects';
+import { Interrogation } from './interrogate';
+import { interrogationEnabled, resetInterrogation } from '../lib/interrogate';
 
 function Modal({ open, onClose, className = '', children }: { open: boolean; onClose: () => void; className?: string; children: ReactNode }) {
   const ref = useRef<HTMLDialogElement>(null);
+  const openRef = useRef(open);
+  openRef.current = open;
   useEffect(() => {
     const d = ref.current;
     if (!d) return;
     if (open && !d.open) d.showModal();
     if (!open && d.open) d.close();
   }, [open]);
+  // the native close event also fires when another dialog takes over (open turned false): only a close by the player counts
   return (
-    <dialog ref={ref} className={`dlg ${className}`} onClose={onClose} onClick={(e) => { if (e.target === ref.current) onClose(); }} data-ui>
+    <dialog ref={ref} className={`dlg ${className}`} onClose={() => { if (openRef.current) onClose(); }} onClick={(e) => { if (e.target === ref.current) onClose(); }} data-ui>
       {open && <div className="dlg__body">{children}</div>}
     </dialog>
   );
@@ -35,6 +40,7 @@ export function Dialogs() {
   const { store } = useBoard();
   const close = () => {
     stopVoice();
+    if (dialog === 'interrogate') reopenAfterRemount(null); // the player closed the room: never bring it back
     const first = dialog === 'intro' && !store.getState().seenIntro;
     if (dialog === 'intro') store.getState().setSeenIntro();
     set({ dialog: null, ...(first ? { tourStep: 0 } : {}) }); // first visit: walk through the board
@@ -45,7 +51,8 @@ export function Dialogs() {
       <Modal open={dialog === 'finale'} onClose={close} className="dlg--finale"><Finale onClose={close} /></Modal>
       <Modal open={dialog === 'settings'} onClose={close}><Settings onClose={close} /></Modal>
       <Modal open={dialog === 'beat'} onClose={close} className="dlg--beat"><Beat onClose={close} /></Modal>
-      <Modal open={dialog === 'suspects'} onClose={close} className="dlg--wide"><Suspects onClose={close} /></Modal>
+      <Modal open={dialog === 'suspects'} onClose={close} className="dlg--wide dlg--dossier"><Suspects onClose={close} /></Modal>
+      <Modal open={dialog === 'interrogate'} onClose={close} className="dlg--itg"><Interrogation onClose={close} /></Modal>
     </>
   );
 }
@@ -159,7 +166,7 @@ function Settings({ onClose }: { onClose: () => void }) {
         <button type="button" className="btn btn--ghost" onClick={() => { store.getState().relayout(reg.defaults); setTimeout(() => fitAll(), 50); onClose(); }}>Xếp lại bàn</button>
         <button type="button" className="btn btn--danger" onClick={async () => {
           if (!armed) { setArmed(true); return; }
-          await Promise.all([resetBoard(c, room?.id), deleteCloud(c, room?.id ?? '').catch(() => {})]);
+          await Promise.all([resetBoard(c, room?.id), deleteCloud(c, room?.id ?? '').catch(() => {}), room ? Promise.resolve() : resetInterrogation(c.id).catch(() => {})]);
           window.location.reload();
         }}>{armed ? 'Bấm lần nữa để xoá' : room ? 'Xoá ghi chép cá nhân' : 'Chơi lại từ đầu'}</button>
         {room && (
@@ -283,12 +290,13 @@ function AudioSetting() {
 
 function Suspects({ onClose }: { onClose: () => void }) {
   const { c } = useBoard();
+  const set = useUi((s) => s.set);
   return (
     <>
       <p className="eyebrow">{caseNo(c)} · Hồ sơ nhân thân</p>
       <h2>Nghi phạm</h2>
       <p className="dlg__lead">Lý do mỗi người bị đưa vào diện nghi vấn lúc mở hồ sơ. Đối chiếu với tài liệu để loại trừ hoặc buộc tội.</p>
-      <SuspectGallery />
+      <SuspectGallery onInterrogate={interrogationEnabled() && !!c.aiInterrogation ? (id) => set({ dialog: 'interrogate', interrogateId: id }) : undefined} />
       <div className="dlg__actions"><button type="button" className="btn btn--primary" onClick={onClose}>Quay lại bàn điều tra</button></div>
     </>
   );

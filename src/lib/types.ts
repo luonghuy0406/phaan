@@ -73,6 +73,8 @@ export interface Question {
   explanation?: ({ title: string; body: string[] } | string)[];
   /** choice shown as suspect ID cards: suspect id for each option, same order as `options` */
   cards?: string[];
+  /** conclusion reported to an AI prosecutor (rubric on the server, authoring/<id>/conclusion.json); the choice stays as the fallback */
+  exam?: { examiner: string; intro?: string };
 }
 
 export interface CaseSummary {
@@ -115,9 +117,11 @@ export interface CaseData extends CaseSummary {
   /** people of the case shown as ID cards (intro, "Nghi phạm" dialog, card questions) */
   suspects?: CasePerson[];
   victim?: CasePerson;
+  /** suspects can be questioned by AI (server profile synced from authoring/<id>/interrogation.json) */
+  aiInterrogation?: boolean;
 }
 
-export interface CasePerson { id: string; name: string; alias?: string; age?: number; role?: string; image?: string; suspicion?: string; note?: string }
+export interface CasePerson { id: string; name: string; alias?: string; age?: number; role?: string; image?: string; suspicion?: string; note?: string; /** on-device voice (Supertonic F1–F5, M1–M5) for interrogation replies */ voice?: string }
 
 export interface CaseBeat { stage: number; kicker?: string; title?: string; paragraphs: string[]; voice?: string }
 

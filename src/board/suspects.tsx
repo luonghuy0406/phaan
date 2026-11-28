@@ -3,6 +3,7 @@ import type { CasePerson } from '../lib/types';
 import { useBoard } from './context';
 import { caseBase } from '../lib/data';
 import { Txt } from '../lib/text';
+import { Icon } from './icons';
 
 export function SuspectCard({ p, no, tag, picked, compact = false }: { p: CasePerson; no?: number; tag?: string; picked?: boolean; compact?: boolean }) {
   const { c } = useBoard();
@@ -18,27 +19,45 @@ export function SuspectCard({ p, no, tag, picked, compact = false }: { p: CasePe
   );
 }
 
-/** Victim + suspects with why each is suspected (surface reasons only, never the solution). */
-export function SuspectGallery({ withReasons = true }: { withReasons?: boolean }) {
+/** Hồ sơ nhân thân: one card per person, the reason for suspicion inside the card, and a clear "Thẩm vấn" action. */
+export function SuspectGallery({ onInterrogate }: { withReasons?: boolean; onInterrogate?: (id: string) => void }) {
   const { c } = useBoard();
   if (!c.suspects?.length) return null;
+  const base = caseBase(c.id);
+  const photo = (p: CasePerson, tag: string, victim = false) => (
+    <div className="dossier__photo">
+      {p.image ? <img src={base + p.image} alt={`Ảnh thẻ ${p.name}`} loading="lazy" draggable={false} /> : <span className="sus__blank" aria-hidden="true" />}
+      <span className={`dossier__tag${victim ? ' dossier__tag--victim' : ''}`}>{tag}</span>
+    </div>
+  );
+  const meta = (p: CasePerson) => [p.alias ? p.name : '', p.age ? `${p.age} tuổi` : '', p.role].filter(Boolean).join(' · ');
   return (
-    <div className="sus-gallery">
-      <div className="sus-grid">
-        {/* the victim sits first, same size as the suspects */}
-        {c.victim && (
-          <div className="sus-item sus-item--victim">
-            <SuspectCard p={c.victim} tag="Nạn nhân" />
-            {withReasons && c.victim.note && <p className="sus-item__why"><Txt>{c.victim.note}</Txt></p>}
+    <div className="dossier-grid">
+      {c.victim && (
+        <article className="dossier dossier--victim">
+          {photo(c.victim, 'Nạn nhân', true)}
+          <div className="dossier__body">
+            <h3>{c.victim.alias || c.victim.name}</h3>
+            <p className="dossier__meta">{meta(c.victim)}</p>
+            {c.victim.note && <div className="dossier__why"><b>Hồ sơ</b><Txt>{c.victim.note}</Txt></div>}
           </div>
-        )}
-        {c.suspects.map((p, i) => (
-          <div key={p.id} className="sus-item">
-            <SuspectCard p={p} no={i + 1} />
-            {withReasons && p.suspicion && <p className="sus-item__why"><Txt>{p.suspicion}</Txt></p>}
+        </article>
+      )}
+      {c.suspects.map((p, i) => (
+        <article key={p.id} className="dossier">
+          {photo(p, `Nghi phạm ${String(i + 1).padStart(2, '0')}`)}
+          <div className="dossier__body">
+            <h3>{p.alias || p.name}</h3>
+            <p className="dossier__meta">{meta(p)}</p>
+            {p.suspicion && <div className="dossier__why"><b>Lý do nghi vấn</b><Txt>{p.suspicion}</Txt></div>}
           </div>
-        ))}
-      </div>
+          {onInterrogate && (
+            <button type="button" className="dossier__ask" onClick={() => onInterrogate(p.id)}>
+              <Icon name="chat" /><span>Thẩm vấn</span>
+            </button>
+          )}
+        </article>
+      ))}
     </div>
   );
 }

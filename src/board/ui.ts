@@ -21,7 +21,9 @@ export interface UiState {
   indexOpen: boolean;
   menu: { target: MenuTarget; x: number; y: number } | null;
   pendingString: End | null;
-  dialog: 'intro' | 'finale' | 'settings' | 'beat' | 'suspects' | null;
+  dialog: 'intro' | 'finale' | 'settings' | 'beat' | 'suspects' | 'interrogate' | null;
+  /** suspect shown in the interrogation room */
+  interrogateId: string | null;
   /** stage whose opening scene the 'beat' dialog shows */
   beatStage: number | null;
   tourStep: number | null;
@@ -57,6 +59,7 @@ export const useUi = create<UiState>((set, get) => ({
   pendingString: null,
   dialog: null,
   beatStage: null,
+  interrogateId: null,
   tourStep: null,
   layoutVersion: 0,
   penSeen: false,
@@ -75,6 +78,12 @@ export const useUi = create<UiState>((set, get) => ({
   },
   showToast: (text) => set({ toast: { text, id: ++toastId } }),
 }));
+
+/** a dialog to reopen after the board remounts (signing in reloads progress from the cloud and rebuilds the board) */
+// the board may be rebuilt more than once while the new account's progress loads: keep the request for a short while
+let reopen: { patch: Partial<UiState>; until: number } | null = null;
+export const reopenAfterRemount = (patch: Partial<UiState> | null) => { reopen = patch ? { patch, until: Date.now() + 15000 } : null; };
+export const takeReopen = () => (reopen && reopen.until > Date.now() ? reopen.patch : null);
 
 export const resetUi = () => useUi.setState({
   tool: 'move', palette: false, panel: null, indexOpen: false, menu: null, pendingString: null, dialog: null, beatStage: null, tourStep: null, toast: null,

@@ -74,6 +74,35 @@ for (const id of ids) {
     method: 'DELETE', headers,
   });
   if (!del.ok) { failed = true; console.error(`✗ ${id}: xoá câu cũ lỗi ${del.status} ${await del.text()}`); continue; }
-  console.log(`✓ ${id}: ${rows.length} câu hỏi`);
+  // AI interrogation profiles (contain the solution): authoring/<id>/interrogation.json → case_ai, service role only
+  const aiPath = join(ROOT, 'authoring', id, 'interrogation.json');
+  const examPath = join(ROOT, 'authoring', id, 'conclusion.json');
+  let aiNote = '';
+  if (existsSync(aiPath) || existsSync(examPath)) {
+    const ai = existsSync(aiPath) ? JSON.parse(readFileSync(aiPath, 'utf8')) : { world: c.setting || '', style: '', suspects: {} };
+    delete ai._ghi_chu;
+    // conclusion report to the AI prosecutor: rubric per question id (the question carries "exam" in case.json)
+    if (existsSync(examPath)) {
+      const exams = JSON.parse(readFileSync(examPath, 'utf8'));
+      delete exams._ghi_chu;
+      const qids = new Set(c.questions.filter((q) => q.exam).map((q) => q.id));
+      const badQ = Object.keys(exams).filter((k) => !qids.has(k));
+      if (badQ.length) { failed = true; console.error(`✗ ${id}: conclusion.json có câu không mang "exam" trong case.json: ${badQ.join(', ')}`); continue; }
+      ai.exams = exams;
+    }
+    ai.docTitles = Object.fromEntries(c.documents.map((d) => [d.id, d.title]));
+    ai.docStages = Object.fromEntries(c.documents.map((d) => [d.id, d.stage ?? 1]));
+    const known = new Set(c.documents.map((d) => d.id));
+    const bad = Object.values(ai.suspects).flatMap((sp) => [...sp.lies.flatMap((l) => l.breaksWith.flat()), ...Object.keys(sp.reactions || {})]).filter((d) => !known.has(d));
+    if (bad.length) { failed = true; console.error(`✗ ${id}: interrogation.json nhắc tài liệu không có: ${[...new Set(bad)].join(', ')}`); continue; }
+    const r = await fetch(`${url}/rest/v1/case_ai?on_conflict=case_id`, {
+      method: 'POST',
+      headers: { ...headers, Prefer: 'resolution=merge-duplicates,return=minimal' },
+      body: JSON.stringify([{ case_id: id, data: ai, updated_at: new Date().toISOString() }]),
+    });
+    if (!r.ok) { failed = true; console.error(`✗ ${id}: case_ai ${r.status} ${await r.text()}`); continue; }
+    aiNote = `, thẩm vấn AI: ${Object.keys(ai.suspects).length} nghi phạm${ai.exams ? `, báo cáo kết luận: ${Object.keys(ai.exams).join(', ')}` : ''}`;
+  }
+  console.log(`✓ ${id}: ${rows.length} câu hỏi${aiNote}`);
 }
 process.exit(failed ? 1 : 0);

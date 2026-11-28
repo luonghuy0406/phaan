@@ -48,7 +48,9 @@ export const ttsEnabled = () => (ttsEngine() === 'server' ? true : onDevice.onDe
 const CONSENT_KEY = 'hsm:tts-consent';
 const hasConsent = () => { try { return localStorage.getItem(CONSENT_KEY) === 'yes'; } catch { return false; } };
 const setConsent = (v: 'yes' | 'no') => { try { localStorage.setItem(CONSENT_KEY, v); } catch { /* private mode */ } };
-export const MODEL_MB = Math.round(onDevice.MODEL_BYTES / 1e6);
+// download size for this device (fp16 on WebGPU, int8 on the CPU, fp32 without optimized files): known after the GPU check
+export let MODEL_MB = 200;
+if (typeof window !== 'undefined') void onDevice.modelBytes().then((b) => { MODEL_MB = Math.round(b / 1e6); }).catch(() => {});
 let deviceReady = false;
 
 /* ── state ── */
@@ -65,7 +67,7 @@ interface TtsState {
   /** download of the on-device voice: bytes so far / total, or model loading steps */
   download: onDevice.Progress | null;
   /** what to read once the player agrees to download the voice */
-  pending: { id: string; text: string } | null;
+  pending: { id: string; text: string; opts?: SpeakOpts } | null;
   backend: string | null;
 }
 
@@ -135,10 +137,12 @@ async function putCache(key: string, blob: Blob) {
   } catch { /* non-critical */ }
 }
 
-function cacheKey(text: string): string {
+export interface SpeakOpts { voice?: string; steps?: number; fastStart?: boolean }
+
+function cacheKey(text: string, o: SpeakOpts = {}): string {
   // Hash: model + voice + lang + text → deterministic key
-  const voice = ttsEngine() === 'device' ? voiceName() : DEFAULT_VOICE();
-  const model = ttsEngine() === 'device' ? `device-supertonic3-s${STEPS()}-x${SPEED()}` : DEFAULT_MODEL();
+  const voice = ttsEngine() === 'device' ? (o.voice || voiceName()) : DEFAULT_VOICE();
+  const model = ttsEngine() === 'device' ? `device-supertonic3-s${o.steps ?? STEPS()}-x${SPEED()}` : DEFAULT_MODEL();
   const lang = DEFAULT_LANG();
   const raw = `${model}|${voice}|${lang}|${text}`;
   let h = 0;
@@ -192,13 +196,13 @@ export function chunkText(text: string, maxChars = MAX_CHUNK_CHARS): string[] {
 }
 
 /* ── synthesize one chunk ── */
-async function synthesizeChunk(text: string, signal: AbortSignal): Promise<Blob> {
-  const key = cacheKey(text);
+async function synthesizeChunk(text: string, signal: AbortSignal, o: SpeakOpts = {}): Promise<Blob> {
+  const key = cacheKey(text, o);
   const cached = await getCached(key);
   if (cached) return cached;
 
   if (ttsEngine() === 'device') {
-    const blob = await onDevice.synthesize(text, { lang: DEFAULT_LANG(), steps: STEPS(), speed: SPEED() });
+    const blob = await onDevice.synthesize(text, { lang: DEFAULT_LANG(), steps: o.steps ?? STEPS(), speed: SPEED(), voice: o.voice || voiceName() });
     if (signal.aborted) throw new DOMException('Aborted', 'AbortError');
     void putCache(key, blob);
     return blob;
@@ -370,7 +374,7 @@ export function extractDocText(doc: {
 }
 
 /** Start reading text aloud. Chunks the text, synthesizes each, plays sequentially. */
-export async function speak(id: string, text: string) {
+export async function speak(id: string, text: string, opts: SpeakOpts = {}) {
   // Stop any current playback
   stop();
   unlockAudio(); // must happen synchronously inside the tap
@@ -384,17 +388,23 @@ export async function speak(id: string, text: string) {
   // what a narrator would say (numbers, dates, units…), cut at sentence boundaries with natural pauses
   const segs = splitSpeech(normalizeVi(text), device ? 180 : MAX_CHUNK_CHARS);
   if (!segs.length) return;
+  // a short first piece starts the voice sooner; the rest is synthesized while it plays
+  if (opts.fastStart && device && segs[0].text.length > 70) {
+    const t = segs[0].text;
+    const cut = (() => { for (let i = 55; i < Math.min(t.length - 15, 110); i++) if (/[,;:]/.test(t[i]) || (i > 70 && t[i] === ' ')) return i + 1; return -1; })();
+    if (cut > 0) segs.splice(0, 1, { ...segs[0], text: t.slice(0, cut).trim(), pause: 0.12 }, { ...segs[0], text: t.slice(cut).trim() });
+  }
 
   abortController = new AbortController();
   const { signal } = abortController;
 
   if (device && !deviceReady) {
-    const voice = voiceName();
+    const voice = opts.voice || voiceName();
     const cached = await onDevice.isModelCached(voice);
     if (signal.aborted) return;
     if (!cached && !hasConsent()) {
       // ask before downloading ~400 MB; acceptTtsDownload() resumes from here
-      useTts.setState({ status: 'consent', activeId: id, pending: { id, text }, error: null });
+      useTts.setState({ status: 'consent', activeId: id, pending: { id, text, opts }, error: null });
       return;
     }
     useTts.setState({ status: cached ? 'loading' : 'downloading', activeId: id, error: null, download: null });
@@ -418,7 +428,7 @@ export async function speak(id: string, text: string) {
   const jobs: Promise<AudioBuffer>[] = [];
   const job = (i: number) => {
     if (i < segs.length && !jobs[i]) {
-      jobs[i] = synthesizeChunk(segs[i].text, signal).then(decode).then(trimSilence);
+      jobs[i] = synthesizeChunk(segs[i].text, signal, opts).then(decode).then(trimSilence);
       jobs[i].catch(() => {}); // handled when awaited
     }
     return jobs[i];
@@ -534,7 +544,7 @@ export function acceptTtsDownload() {
   setConsent('yes');
   const p = useTts.getState().pending;
   useTts.setState({ pending: null });
-  if (p) void speak(p.id, p.text);
+  if (p) void speak(p.id, p.text, p.opts);
 }
 
 /** "Để sau": nothing is downloaded; we ask again next time they tap a read button. */
@@ -550,7 +560,19 @@ export async function removeDeviceVoice() {
   setConsent('no');
   await onDevice.deleteModel();
 }
-export const isDeviceVoiceCached = () => onDevice.isModelCached(voiceName());
+export const isDeviceVoiceCached = (voice?: string) => onDevice.isModelCached(voice || voiceName());
+
+/** Load the on-device voice ahead of time (only when it is already downloaded) and compile its kernels. */
+export async function prepareDeviceVoice(voice?: string) {
+  if (ttsEngine() !== 'device' || !onDevice.onDeviceSupported()) return;
+  if (!deviceReady && !(await onDevice.isModelCached(voice || voiceName()))) return;
+  try {
+    const backend = await onDevice.ensureModel(voice || voiceName(), () => {});
+    deviceReady = true;
+    useTts.setState({ backend });
+    onDevice.warmUp();
+  } catch { /* the next speak() reports it */ }
+}
 
 /** Pause current playback (freezes the audio clock, so scheduled segments wait too). */
 export function pause() {

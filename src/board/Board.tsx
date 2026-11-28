@@ -4,7 +4,7 @@ import { Ctx, surfaceBox, type BoardCtx, type Registry } from './context';
 import { Camera } from './camera';
 import { boundsOf, union, type Rect } from './geometry';
 import { stageOpen, type BoardStore } from './store';
-import { useUi, resetUi, type Tool } from './ui';
+import { useUi, resetUi, takeReopen, type Tool } from './ui';
 import { Viewport } from './Viewport';
 import { Topbar, Toolbar, ActionMenu, PendingBanner, DocIndex, Toast } from './chrome';
 import { SidePanel } from './panels';
@@ -73,6 +73,8 @@ export function Board({ c, store, room }: { c: CaseData; store: BoardStore; room
     resetUi();
     if (window.innerWidth >= 1200) useUi.setState({ panel: 'questions' });
     if (!store.getState().seenIntro) useUi.setState({ dialog: 'intro' });
+    const again = takeReopen();
+    if (again) useUi.setState(again);
   }, [c.id, store]);
 
   // Case ambience: loops quietly under the board, starts at the first tap (iPad needs a gesture).

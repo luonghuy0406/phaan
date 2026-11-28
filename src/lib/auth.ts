@@ -40,6 +40,12 @@ export async function sendLoginCode(email: string, displayName: string, next: st
   if (error) throw error;
 }
 
+/** Play without email (Supabase anonymous sign-in): the account lives in this browser only. */
+export async function signInAnonymous() {
+  const { error } = await supabase.auth.signInAnonymously({ options: { data: { display_name: 'Điều tra viên' } } });
+  if (error) throw new Error(/anonymous/i.test(error.message) ? 'Máy chủ chưa bật đăng nhập ẩn danh (Supabase → Authentication → Allow anonymous sign-ins).' : error.message);
+}
+
 export async function verifyLoginCode(email: string, token: string) {
   const { error } = await supabase.auth.verifyOtp({ email, token, type: 'email' });
   if (error) throw error;

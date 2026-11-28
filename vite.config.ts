@@ -53,6 +53,8 @@ export default defineConfig({
   ],
   worker: { format: 'es' },
   optimizeDeps: { exclude: ['onnxruntime-web'] }, // keeps its .wasm URLs intact and avoids a dev reload on first use // on-device TTS worker (src/lib/supertonic/worker.ts) uses ES module imports
-  server: { port: 5173 },
-  test: { environment: 'node', include: ['src/**/*.test.ts'] },
+  // cross-origin isolation: lets onnxruntime-web use several WebAssembly threads for the on-device voice
+  server: { port: 5173, headers: { 'Cross-Origin-Opener-Policy': 'same-origin', 'Cross-Origin-Embedder-Policy': 'require-corp' } },
+  preview: { headers: { 'Cross-Origin-Opener-Policy': 'same-origin', 'Cross-Origin-Embedder-Policy': 'require-corp' } },
+  test: { environment: 'node', include: ['src/**/*.test.ts', 'supabase/functions/**/*.test.ts'] },
 } as any);

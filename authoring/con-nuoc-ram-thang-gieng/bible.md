@@ -33,7 +33,7 @@ Sau khi gây án, Ba Thuyền lặn trở lại bến đò, lên chòi giấu b�
 | Nhân vật | Vai | Lý do bị nghi | Gỡ tội / buộc tội bằng |
 |---|---|---|---|
 | **Võ Văn Kiên** (Bảy Kiên), 63 | Nạn nhân, chủ xưởng ghe, cho vay | — | — |
-| **Trần Văn Thuyền** (Ba Thuyền), 58 | **Hung thủ**. Lái đò ngang, thợ lặn, bạn chiến đấu cũ | Nợ 45 triệu, thế chấp đất có mộ cha mẹ, hạn đêm Rằm | `d18` (nói dối con nước), `d19`, `d20`, `d21`, `d26`, `d27`, `d28`, `d29`, `d30`, `d31`, `d32`, `d33`; biết van vì từng thay ron tháng Chạp (`d13`) |
+| **Trần Văn Thuyền** (Ba Thuyền), 58 (nghi phạm 03; thẻ nhân thân chỉ ghi "lái đò ngang, đang vay tiền ông Kiên", không lộ nghề lặn hay ve rượu) | **Hung thủ**. Lái đò ngang, thợ lặn, bạn chiến đấu cũ | Nợ 45 triệu, thế chấp đất có mộ cha mẹ, hạn đêm Rằm | `d18` (nói dối con nước), `d19`, `d20`, `d21`, `d26`, `d27`, `d28`, `d29`, `d30`, `d31`, `d32`, `d33`; biết van vì từng thay ron tháng Chạp (`d13`) |
 | **Nguyễn Thị Lành**, 32 | Vợ kế | Thuốc an thần, túi đồ gói sẵn, rút sạch sổ tiết kiệm (`d09`), ngủ một mình | Định bỏ trốn đi Cần Thơ, vé mua 19h30 (`d23`); nạn nhân không có thuốc an thần (`d25`); không lặn được (`d24`) |
 | **Võ Quốc Hưng**, 38 | Con trai trưởng | Nợ đá gà, cãi cha, cạy tủ lúc 19h30 | Ở sới gà cồn Bình Khánh từ 20h40, đò duy nhất nằm ụ, bị bắt 00h30 (`d15`) |
 | **Huỳnh Ánh Nguyệt**, 24 | Kế toán, con người tự tử vì nợ | Căm thù, có mặt trước cổng xưởng lúc ~22h45 | Sư cô: sợ nước từ nhỏ, qua đò phải mặc áo phao (`d22`); chính cô là nhân chứng thấy bóng người lặn từ chòi đò (`d21`) |
@@ -48,7 +48,7 @@ Sau khi gây án, Ba Thuyền lặn trở lại bến đò, lên chòi giấu b�
 * **10/2:** ông Kiên dọa giao đất cho Ba Thầu sáng 16 tháng Giêng (ghi mực đỏ trên giấy vay `d32`). Bà Lành rút 12 triệu tiết kiệm (`d09`).
 * **11/2, 09h15:** Ba Thuyền mua dây curoa B64, keo, cuộn cước xanh 3 ly ở tiệm Hai Nhựt (`d26`). **14h00:** đào rễ mã tiền cuối vườn, nói với bà Năm Thơ là rễ nhàu (`d29`).
 * **12/2 (Rằm):**
-  * 08h30: biếu ông Kiên ve rượu "rễ nhàu" (`d07`, `d18`); nút ve buộc cước xanh (`d28`).
+  * 08h30: biếu ông Kiên ve rượu "rễ nhàu" (chỉ lộ ở `d18`, vòng 3; bà Lành ở `d07` không biết ai mang tới); nút ve buộc cước xanh (`d28`).
   * 16h30: ông Kiên trả cọc 10 triệu cho Ba Thầu, hủy bán đất (`d34`).
   * 18h00: cơm tối; ông Kiên viết gì đó, nói "Mai kêu thằng Ba qua" (`d24`).
   * 19h05: Sáu Cà Na mở bàn ở quán Năm Cua (`d17`). 19h30: Hưng cạy hộc bàn (`d14`); bà Lành mua vé xe 4h sáng, gửi vali (`d23`).

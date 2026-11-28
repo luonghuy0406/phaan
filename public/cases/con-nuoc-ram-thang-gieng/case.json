@@ -5,9 +5,9 @@
   "title": "Con nước Rằm tháng Giêng",
   "subtitle": "Kỳ án án mạng khoang ghe kín trên sông Hàm Luông",
   "tagline": "Cửa khoang then cài từ bên trong, nhưng nước sông Hàm Luông đã dâng ngập mặt người nằm mộng.",
-  "difficulty": 4,
+  "difficulty": 5,
   "players": "2–6",
-  "duration": "100–130 phút",
+  "duration": "150–180 phút",
   "setting": "Xã Tân Mỹ, huyện Tân Trúc, Bến Tre (hư cấu)",
   "era": "Tháng 2/2006",
   "tags": [
@@ -323,7 +323,7 @@
         {
           "n": 6,
           "speaker": "Nguyễn Thị Lành",
-          "text": "Ve rượu đó sáng Rằm tôi thấy bác Ba Thuyền lái đò xách sang biếu ổng, nói là rượu rễ nhàu rừng trị đau nhức xương khớp."
+          "text": "Ve rượu đó ổng mới có hồi sáng Rằm, ai cho thì tôi không để ý. Ổng nói là rượu thuốc trị đau nhức xương khớp."
         },
         {
           "n": 7,
@@ -566,7 +566,7 @@
         {
           "n": 8,
           "speaker": "Đoàn Văn Lợi",
-          "text": "Bác Ba Thuyền bên bến đò. Bác lặn hai buổi, tháo ra thay ron rồi vặn lại. Chú Bảy trả công năm chục ngàn."
+          "text": "Hai bữa đó tôi về Mỏ Cày đám giỗ bên vợ, chú Bảy tự kêu người. Tôi lên lại thì van đã có ron mới, ai lặn thì tôi không hỏi."
         },
         {
           "n": 9,
@@ -576,7 +576,7 @@
         {
           "n": 10,
           "speaker": "Đoàn Văn Lợi",
-          "text": "Hồi trẻ thì có. Năm 98 tôi lặn vớt gỗ bị thủng màng nhĩ, bác sĩ cấm xuống sâu. Giờ tôi xuống nước quá đầu là ù tai, chóng mặt liền."
+          "text": "Hồi trẻ tôi lặn vớt gỗ chìm cho mấy chủ ghe. Giờ lớn tuổi rồi, ít xuống nước."
         },
         {
           "n": 11,
@@ -655,7 +655,7 @@
         {
           "n": 8,
           "speaker": "Võ Quốc Hưng",
-          "text": "Ổng cho vay gắt lắm, ai trễ nợ là ổng đè đầu xiết đất liền. Bác Ba Thuyền lái đò cắm miếng đất hương hỏa sắp tới hạn rằm, mấy bữa trước tôi thấy bác Ba qua năn nỉ quỳ lạy mà ổng không chịu gia hạn."
+          "text": "Ổng cho vay gắt lắm, ai trễ nợ là ổng đè đầu xiết đất liền. Nửa xóm này cắm giấy đất trong két ổng, mấy bữa trước còn có người qua quỳ lạy xin gia hạn mà ổng không chịu."
         },
         {
           "n": 9,
@@ -864,7 +864,7 @@
         },
         {
           "label": "Nghề nghiệp",
-          "value": "Lái đò ngang Tân Mỹ, thợ lặn sông"
+          "value": "Lái đò ngang Tân Mỹ"
         },
         {
           "label": "Địa chỉ",
@@ -905,7 +905,7 @@
         {
           "n": 7,
           "speaker": "Trần Văn Thuyền",
-          "text": "Tầm mười một giờ kém mười lăm, nước sông chảy xiết rác quấn nghẹt chân vịt, tôi phải tắt máy neo lại mé bến đợi nước ròng sát đáy mới lặn xuống gỡ được."
+          "text": "Tầm mười một giờ kém mười lăm, nước sông chảy xiết rác quấn nghẹt chân vịt, tôi phải tắt máy neo lại mé bến đợi nước ròng sát đáy mới gỡ được."
         },
         {
           "n": 8,
@@ -919,16 +919,6 @@
         },
         {
           "n": 10,
-          "speaker": "Cán bộ",
-          "text": "Ve rượu thuốc ông đem biếu ông Kiên sáng Rằm là rượu gì?"
-        },
-        {
-          "n": 11,
-          "speaker": "Trần Văn Thuyền",
-          "text": "Dạ rượu rễ nhàu tôi tự ngâm uống đau lưng, thấy anh Bảy Kiên bạn lính năm xưa than nhức khớp nên tôi chiết nửa ve mang biếu ảnh uống bồi dưỡng thôi, thuốc nam lành tính mà."
-        },
-        {
-          "n": 12,
           "speaker": "Trần Văn Thuyền",
           "text": "Chuyện ảnh mất tôi rụng rời tay chân, bạn bè cùng chiến hào ai nỡ hại nhau bao giờ."
         }
@@ -1419,7 +1409,7 @@
         },
         {
           "label": "Yêu cầu",
-          "value": "Xác định thành phần rượu và dược liệu ngâm"
+          "value": "Xác định thành phần rượu và dược liệu ngâm; truy dấu vết trên ve"
         }
       ],
       "sections": [
@@ -1433,7 +1423,8 @@
         {
           "heading": "2. Dấu vết trên ve",
           "paragraphs": [
-            "Nút lá chuối khô bịt miệng ve được buộc bằng một vòng **sợi cước nilon màu xanh lá mạ, loại 3 ly**."
+            "Nút lá chuối khô bịt miệng ve được buộc bằng một vòng **sợi cước nilon màu xanh lá mạ, loại 3 ly**.",
+            "Trên thân ve thu được 03 dấu vân tay rõ nét: 02 dấu trùng khớp vân tay ông Võ Văn Kiên; 01 dấu ngón cái phải trùng khớp vân tay mẫu của ông **Trần Văn Thuyền** (lấy ngày 14/2/2006)."
           ]
         }
       ],
@@ -1628,6 +1619,65 @@
         }
       ],
       "signature": "Người khai: Trần Văn Thuyền"
+    },
+    {
+      "id": "d36",
+      "stage": 4,
+      "type": "note",
+      "title": "Trích sổ chi xưởng ghe Kiên Phát tháng Chạp",
+      "paragraphs": [
+        "Sổ chi bìa xanh do ông Võ Văn Kiên ghi tay, thu tại bàn làm việc xưởng mộc (trích các dòng từ 15 đến 20 tháng Chạp năm Ất Dậu):",
+        "— 15/12: Mua 2 khối gỗ sao đóng ghe cho Tư Hòa: 9.400.000đ.",
+        "— 16/12: Đà kéo ghe gãy ray, đặt thợ hàn Út Lắm sửa: 1.200.000đ (ứng trước 500.000đ).",
+        "— 17/12: Tư Lợi nghỉ 2 ngày (17 và 18) về Mỏ Cày đám giỗ, ứng lương 200.000đ.",
+        "__18/12: Trả công Ba Thuyền lặn 2 buổi tháo chốt van lù ghe Phước Hải 09, thay ron cao su, vặn lại: 50.000đ.__",
+        "— 20/12: Tiền cơm thợ nửa tháng: 1.350.000đ."
+      ],
+      "signature": "Chủ xưởng: Bảy Kiên"
+    },
+    {
+      "id": "d37",
+      "stage": 4,
+      "type": "report",
+      "title": "Trích lục phiếu khám Tai Mũi Họng của Đoàn Văn Lợi",
+      "header": [
+        "Sở Y tế tỉnh Bến Tre",
+        "Bệnh viện Nguyễn Đình Chiểu"
+      ],
+      "heading": "Trích lục hồ sơ khám bệnh",
+      "code": "TMH-0412",
+      "date": "Ngày 16 tháng 02 năm 2006",
+      "fields": [
+        {
+          "label": "Người bệnh",
+          "value": "Đoàn Văn Lợi, 41 tuổi, ấp Tân Lợi, xã Tân Mỹ"
+        },
+        {
+          "label": "Lý do trích lục",
+          "value": "Theo công văn của Công an huyện Tân Trúc"
+        }
+      ],
+      "sections": [
+        {
+          "heading": "1. Tiền sử",
+          "paragraphs": [
+            "Tháng 7/1998 nhập viện sau khi lặn sâu vớt gỗ: thủng màng nhĩ hai bên do sang chấn áp lực."
+          ]
+        },
+        {
+          "heading": "2. Lần khám gần nhất (09/01/2006)",
+          "paragraphs": [
+            "Màng nhĩ phải thủng lỗ lớn, chưa liền; tai trái sẹo xơ. Rối loạn tiền đình mỗi khi thay đổi áp lực."
+          ]
+        },
+        {
+          "heading": "3. Kết luận",
+          "paragraphs": [
+            "**Chống chỉ định lặn, ngụp đầu dưới nước.** Ngâm đầu dưới nước sâu quá 1 mét gây chóng mặt, mất định hướng, có nguy cơ đuối nước."
+          ]
+        }
+      ],
+      "signature": "Bác sĩ chuyên khoa I: Lâm Thị Hạnh"
     },
     {
       "id": "d32",
@@ -2219,7 +2269,60 @@
         {
           "title": "Chỉ người biết trước",
           "body": [
-            "Không biết vị trí van thì 25 phút vẫn chưa tìm ra (d30). Tháng Chạp, chính Ba Thuyền được thuê lặn tháo van này thay ron (d13); ông cũng tự nhận biết van (d31 dòng 11)."
+            "Không biết vị trí van thì 25 phút vẫn chưa tìm ra (d30). Tháng Chạp, chính Ba Thuyền được thuê lặn tháo van này thay ron (d36); ông cũng tự nhận biết van (d31 dòng 11)."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q-loi",
+      "stage": 4,
+      "type": "evidence",
+      "need": 1,
+      "title": "Người ngủ sát bến",
+      "prompt": "Tư Lợi ngủ một mình trên gác xưởng sát bến ghe, hồi trẻ lặn giỏi và rành chiếc van lù. Ghim **một** tài liệu cho thấy anh không thể là người lặn xuống tháo van.",
+      "answer": [
+        "d37"
+      ],
+      "nudges": [
+        {
+          "any": [
+            "d36"
+          ],
+          "near": true,
+          "message": "Sổ chi cho thấy anh vắng mặt hôm thay ron van, nhưng người trong xưởng vẫn biết van nằm ở đâu (d13). Cần giấy tờ cho biết anh có xuống nước sâu được hay không."
+        },
+        {
+          "any": [
+            "d13",
+            "d14"
+          ],
+          "message": "Đó là lời khai, của chính anh hoặc của người khác. Tìm giấy tờ khách quan."
+        }
+      ],
+      "hints": [
+        "Tháo chốt van dưới đáy ghe nghĩa là phải ngụp đầu sâu dưới nước nhiều phút.",
+        "Có giấy tờ y tế nào nói về Tư Lợi không?",
+        "Phiếu khám Tai Mũi Họng (d37): màng nhĩ thủng chưa liền, chống chỉ định lặn ngụp."
+      ],
+      "solved": "Tư Lợi không thể ngụp đầu xuống nước quá một mét. Người tháo van là người khác.",
+      "explanation": [
+        {
+          "title": "Vì sao nghi",
+          "body": [
+            "Ngủ một mình sát bến, rành van lù ren số 24 (d13); hồi trẻ lặn giỏi (d14)."
+          ]
+        },
+        {
+          "title": "Gỡ nghi",
+          "body": [
+            "Phiếu khám (d37): thủng màng nhĩ từ 1998, khám lại tháng 1/2006 vẫn chưa liền; chống chỉ định lặn ngụp, ngâm đầu sâu quá 1 m là chóng mặt, mất định hướng."
+          ]
+        },
+        {
+          "title": "Người từng tháo van",
+          "body": [
+            "Sổ chi tháng Chạp (d36): người lặn tháo chính chiếc van này để thay ron là Ba Thuyền."
           ]
         }
       ]
@@ -2316,20 +2419,20 @@
           "message": "Sáu Cà Na ngồi quán Năm Cua đến 23 giờ 40 và không lặn được."
         },
         "4": {
-          "message": "Tư Lợi bị thủng màng nhĩ, không xuống sâu được. Ai đã từng tháo chính chiếc van này?"
+          "message": "Tư Lợi thủng màng nhĩ, không ngụp đầu xuống nước được (d37). Ai đã từng tháo chính chiếc van này (d36)?"
         }
       },
       "hints": [
         "Người tháo van phải lặn thạo, biết trước vị trí van, và không có ai xác nhận chỗ ở trong khung 22h40–23h30.",
         "Ai đã từng được thuê lặn tháo chính chiếc van này? Ai có kìm số 24 và cuộn cước xanh?",
-        "Ba Thuyền: tắt máy đò lúc 22h45 (d19), lên từ bờ kè tóc ướt (d20), từng thay ron van tháng Chạp (d13), kìm số 24 trong chòi (d33)."
+        "Ba Thuyền: tắt máy đò lúc 22h45 (d19), lên từ bờ kè tóc ướt (d20), từng thay ron van tháng Chạp (d36), kìm số 24 trong chòi (d33)."
       ],
       "solved": "Ba Thuyền. Người bạn cùng chiến hào năm xưa.",
       "explanation": [
         {
           "title": "Kỹ năng và hiểu biết",
           "body": [
-            "Thao tác van lù dưới nước đòi hỏi lặn thạo và biết trước vị trí van (d30). Tháng Chạp chính Ba Thuyền được thuê lặn tháo van này thay ron (d13)."
+            "Thao tác van lù dưới nước đòi hỏi lặn thạo và biết trước vị trí van (d30). Tháng Chạp chính Ba Thuyền được thuê lặn tháo van này thay ron (d36)."
           ]
         },
         {
@@ -2341,7 +2444,7 @@
         {
           "title": "Những người còn lại",
           "body": [
-            "Hưng và Sáu có ngoại phạm kín (d15, d17); bà Lành và cô Nguyệt không lặn được (d22, d24); Tư Lợi không xuống sâu được (d13)."
+            "Hưng và Sáu có ngoại phạm kín (d15, d17); bà Lành và cô Nguyệt không lặn được (d22, d24); Tư Lợi không được lặn ngụp vì màng nhĩ thủng (d37)."
           ]
         }
       ]
@@ -2382,7 +2485,7 @@
         {
           "title": "Chuẩn bị",
           "body": [
-            "11/2: đào rễ mã tiền (d29), mua dây curoa mới và cước xanh (d26). Sáng 12/2: biếu ve rượu (d07, d28)."
+            "11/2: đào rễ mã tiền (d29), mua dây curoa mới và cước xanh (d26). Sáng 12/2: biếu ve rượu có dấu vân tay của ông (d28)."
           ]
         },
         {
@@ -2397,7 +2500,11 @@
             "Ông Kiên đã liệt cơ do strychnine (d05), nước dâng qua van lù trong 20 phút (d11), then cài bên trong vẫn nguyên (d02, d03)."
           ]
         }
-      ]
+      ],
+      "exam": {
+        "examiner": "Kiểm sát viên Trịnh Minh Đức",
+        "intro": "Trình bày kết luận trước kiểm sát viên: trả lời lần lượt từng câu hỏi bằng lời của mình. Không dùng được AI thì bấm “Trả lời bằng trắc nghiệm” để chọn bản kết luận đúng."
+      }
     },
     {
       "id": "q12",
@@ -2568,21 +2675,13 @@
   },
   "suspects": [
     {
-      "id": "thuyen",
-      "name": "Trần Văn Thuyền",
-      "alias": "Ba Thuyền",
-      "age": 58,
-      "role": "Lái đò ngang, thợ lặn",
-      "image": "images/id-thuyen.webp",
-      "suspicion": "Bạn chiến đấu cũ của ông Kiên, đang nợ ông tiền. Sáng ngày Rằm mang ve rượu thuốc sang biếu ông."
-    },
-    {
       "id": "lanh",
       "name": "Nguyễn Thị Lành",
       "age": 32,
       "role": "Vợ kế",
       "image": "images/id-lanh.webp",
-      "suspicion": "Cưới ông Kiên được hai năm, bị đồn là đào mỏ. Đêm Rằm ở nhà một mình, không ai xác nhận."
+      "suspicion": "Cưới ông Kiên được hai năm, bị đồn là đào mỏ. Đêm Rằm ở nhà một mình, không ai xác nhận.",
+      "voice": "F2"
     },
     {
       "id": "hung",
@@ -2590,7 +2689,18 @@
       "age": 38,
       "role": "Con trai trưởng",
       "image": "images/id-hung.webp",
-      "suspicion": "Nợ cờ bạc. Tối Rằm cự cãi với cha để xin tiền rồi bỏ đi; ngăn kéo bàn làm việc của ông Kiên bị cạy."
+      "suspicion": "Nợ cờ bạc. Tối Rằm cự cãi với cha để xin tiền rồi bỏ đi; ngăn kéo bàn làm việc của ông Kiên bị cạy.",
+      "voice": "M2"
+    },
+    {
+      "id": "thuyen",
+      "name": "Trần Văn Thuyền",
+      "alias": "Ba Thuyền",
+      "age": 58,
+      "role": "Lái đò ngang",
+      "image": "images/id-thuyen.webp",
+      "suspicion": "Bạn chiến đấu cũ của ông Kiên, đang vay tiền của ông.",
+      "voice": "M4"
     },
     {
       "id": "nguyet",
@@ -2598,7 +2708,8 @@
       "age": 24,
       "role": "Kế toán đại lý dừa",
       "image": "images/id-nguyet.webp",
-      "suspicion": "Cha cô tự tử tháng trước vì bị ông Kiên siết nợ. Có người thấy cô quanh xưởng ghe đêm Rằm."
+      "suspicion": "Cha cô tự tử tháng trước vì bị ông Kiên siết nợ. Có người thấy cô quanh xưởng ghe đêm Rằm.",
+      "voice": "F4"
     },
     {
       "id": "sau",
@@ -2607,7 +2718,8 @@
       "age": 46,
       "role": "Thầu buôn gỗ",
       "image": "images/id-sau.webp",
-      "suspicion": "Bị ông Kiên dọa kiện ra công an kinh tế vì lô gỗ mục tháng Chạp; từng chửi ông giữa chợ."
+      "suspicion": "Bị ông Kiên dọa kiện ra công an kinh tế vì lô gỗ mục tháng Chạp; từng chửi ông giữa chợ.",
+      "voice": "M5"
     },
     {
       "id": "loi",
@@ -2616,7 +2728,9 @@
       "age": 41,
       "role": "Thợ phụ xưởng ghe",
       "image": "images/id-loi.webp",
-      "suspicion": "Người phát hiện thi thể. Đêm Rằm ngủ lại một mình trên gác xưởng, sát bến ghe."
+      "suspicion": "Người phát hiện thi thể. Đêm Rằm ngủ lại một mình trên gác xưởng, sát bến ghe.",
+      "voice": "M3"
     }
-  ]
+  ],
+  "aiInterrogation": true
 }

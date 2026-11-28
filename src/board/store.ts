@@ -62,6 +62,8 @@ export interface BoardState extends BoardData {
   setPick: (qid: string, pick: number[]) => void;
   useHint: (qid: string) => void;
   submit: (qid: string) => CheckResult | null;
+  /** the AI prosecutor accepted the report: wrong answers and hints count like tries and hints */
+  solveExam: (qid: string, misses: number, hints: number) => void;
   // notebook
   addEntry: (e: Omit<Entry, 'id' | 'at'>) => string;
   setEntry: (id: string, text: string) => void;
@@ -359,6 +361,14 @@ export function getBoardStore(c: CaseData, scope = ''): BoardStore {
           ...(result.status === 'correct' && q.type === 'evidence' ? { pins: [] } : {}),
         });
         return result;
+      },
+
+      solveExam: (qid, misses, hints) => {
+        const q = qOf(qid);
+        const s = get().q[qid];
+        if (!q || !s || s.solved || q !== currentQ(c, get())) return;
+        const next: QState = { ...s, solved: true, tries: s.tries + 1 + Math.max(0, misses), hints: Math.min((q.hints || []).length, s.hints + Math.max(0, hints)) };
+        set({ q: { ...get().q, [qid]: next }, feedback: { ...get().feedback, [qid]: { status: 'correct', message: q.solved || 'Báo cáo được chấp nhận.' } } });
       },
 
       addEntry: (e) => {

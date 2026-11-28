@@ -1,0 +1,202 @@
+{
+  "_ghi_chu": "Đáp án cho phần báo cáo kết luận trước kiểm sát viên (AI). CHỨA LỜI GIẢI: chỉ nạp lên máy chủ (npm run sync-cases). Khoá ngoài cùng là id câu hỏi trong case.json (câu đó có \"exam\"). keywords viết không dấu, chữ thường: câu trả lời phải chứa ít nhất một từ thì ý mới được tính, dù AI nói là đủ. probe là câu hỏi gặng khi còn thiếu ý: không được lộ đáp án.",
+  "q11": {
+    "examiner": "Kiểm sát viên Trịnh Minh Đức",
+    "persona": "Kiểm sát viên Viện Kiểm sát nhân dân huyện Tân Trúc, phụ trách kiểm sát vụ án. Ngoài năm mươi, khó tính, chỉ tin vào chứng cứ có trong hồ sơ.",
+    "intro": "Tôi là kiểm sát viên phụ trách vụ này. Trước khi phê chuẩn đề nghị truy tố, đồng chí trình bày kết luận điều tra. Trả lời ngắn gọn, nói có căn cứ.",
+    "closing": "Báo cáo đủ căn cứ ở mọi điểm. Tôi phê chuẩn đề nghị truy tố.",
+    "points": [
+      {
+        "id": "hung-thu",
+        "ask": "Thứ nhất: ai là người gây ra cái chết của ông Võ Văn Kiên, và căn cứ chính nào buộc được người đó?",
+        "facts": [
+          {
+            "id": "ten",
+            "text": "Người gây án là Trần Văn Thuyền (Ba Thuyền), lái đò ngang.",
+            "keywords": [
+              "thuyen",
+              "lai do"
+            ],
+            "probe": "Đồng chí nói rõ họ tên người gây án."
+          },
+          {
+            "id": "can-cu",
+            "text": "Nêu ít nhất một chứng cứ buộc Ba Thuyền: kìm mỏ quạ số 24 dính mạt đồng, đồ lặn còn ẩm bùn, cuộn cước xanh ở chòi đò; Út Mến thấy ông đi lên từ bờ kè, tóc ướt; Nguyệt thấy bóng người từ chòi đò lặn xuống rạch; sổ chi ghi ông từng được thuê lặn tháo chính van này; dấu vân tay của ông trên ve rượu; vườn ông có bụi mã tiền bị đào.",
+            "keywords": [
+              "kim",
+              "do lan",
+              "toc uot",
+              "bo ke",
+              "bong nguoi",
+              "thay ron",
+              "van tay",
+              "so chi",
+              "mat dong",
+              "cuoc",
+              "ma tien",
+              "choi"
+            ],
+            "probe": "Căn cứ nào trong hồ sơ buộc được người này? Nêu một vật chứng hoặc một lời nhân chứng."
+          }
+        ],
+        "hint": "Gợi ý: xem lại biên bản khám xét chòi canh đò ở vòng cuối, và lời Út Mến về người đi lên từ bờ kè."
+      },
+      {
+        "id": "khong-thoat",
+        "ask": "Thứ hai: then cài chỉ cần đẩy là bật, sạp ngủ cách nắp hai bậc. Vì sao ông Kiên không tự thoát ra được?",
+        "facts": [
+          {
+            "id": "chat",
+            "text": "Ông bị đầu độc bằng rễ mã tiền (strychnine).",
+            "keywords": [
+              "ma tien",
+              "strychnine",
+              "strychnin",
+              "stricnin"
+            ],
+            "probe": "Chất gì đã vào người ông Kiên?"
+          },
+          {
+            "id": "duong",
+            "text": "Chất độc ngâm trong ve rượu thuốc mà ông uống tối hôm đó (ve rượu do Ba Thuyền biếu).",
+            "keywords": [
+              "ruou"
+            ],
+            "probe": "Chất đó vào người ông qua đường nào?"
+          },
+          {
+            "id": "tac-dung",
+            "text": "Chất độc làm liệt mềm cơ tay chân nên ông không cử động, không đẩy được then.",
+            "keywords": [
+              "liet",
+              "te",
+              "khong cu dong",
+              "khong nhuc nhich",
+              "nam yen",
+              "mat suc",
+              "yeu"
+            ],
+            "probe": "Chất đó làm gì cơ thể ông, để ông không bước nổi hai bậc thang?"
+          }
+        ],
+        "hint": "Gợi ý: so bản giám định pháp y tử thi với kết luận giám định ve rượu thuốc."
+      },
+      {
+        "id": "nuoc-vao",
+        "ask": "Thứ ba: nước sông vào khoang bằng đường nào, và hung thủ đã làm việc đó ra sao?",
+        "facts": [
+          {
+            "id": "van",
+            "text": "Nước vào qua van lù (van xả đáy) dưới đáy ghe do chốt van bị tháo ra.",
+            "keywords": [
+              "van lu",
+              "chot van",
+              "van xa",
+              "lo xa",
+              "van day",
+              "van"
+            ],
+            "probe": "Nước đi vào qua bộ phận nào của chiếc ghe?"
+          },
+          {
+            "id": "lan",
+            "text": "Hung thủ lặn dưới nước (xuôi dòng từ bến đò sang) để tháo chốt van từ phía dưới lườn ghe.",
+            "keywords": [
+              "lan",
+              "duoi nuoc",
+              "boi",
+              "luon"
+            ],
+            "probe": "Bộ phận đó chỉ với tới được từ đâu? Hung thủ tiếp cận nó bằng cách nào?"
+          },
+          {
+            "id": "kim",
+            "text": "Dùng kìm mỏ quạ cỡ số 24.",
+            "keywords": [
+              "kim",
+              "24"
+            ],
+            "required": false,
+            "probe": ""
+          }
+        ],
+        "hint": "Gợi ý: biên bản giám định kỹ thuật phương tiện thủy và phiếu giám định chốt van lù."
+      },
+      {
+        "id": "gio",
+        "ask": "Thứ tư: vì sao việc này phải làm trong khoảng 22 giờ 45 đến 23 giờ 30 đêm Rằm, mà không phải giờ khác?",
+        "facts": [
+          {
+            "id": "trieu",
+            "text": "Đó là lúc đỉnh triều cường, nước đứng ở mức cao nhất (khoảng 1,85 m) nên nước mới dâng đủ ngập khoang; giờ khác nước thấp hơn.",
+            "keywords": [
+              "dinh trieu",
+              "trieu cuong",
+              "trieu",
+              "nuoc lon",
+              "nuoc dung",
+              "nuoc cao",
+              "1,85",
+              "1.85",
+              "1m85",
+              "con nuoc"
+            ],
+            "probe": "Con nước đêm đó ra sao vào đúng giờ ấy?"
+          },
+          {
+            "id": "ho-ngoai-pham",
+            "text": "Ba Thuyền tắt máy đò khoảng 45 phút, viện cớ đứt dây curoa, rác quấn chân vịt, để có thời gian lặn đi về.",
+            "keywords": [
+              "tat may",
+              "dut day",
+              "curoa",
+              "chan vit",
+              "nghi do",
+              "dung do",
+              "dung may",
+              "45 phut",
+              "may do"
+            ],
+            "probe": "Trong khung giờ đó, người này lấy đâu ra thời gian, và đã che giấu ra sao?"
+          }
+        ],
+        "hint": "Gợi ý: đặt bản tin thủy văn cạnh sổ nhật ký đò ngang đêm 12/2."
+      },
+      {
+        "id": "dong-co",
+        "ask": "Cuối cùng: động cơ của hung thủ là gì, và vì sao phải ra tay đúng đêm Rằm?",
+        "facts": [
+          {
+            "id": "dat",
+            "text": "Ba Thuyền thế chấp mảnh vườn dừa, đất hương hỏa có mộ cha mẹ, để vay tiền ông Kiên.",
+            "keywords": [
+              "dat",
+              "vuon",
+              "the chap",
+              "huong hoa",
+              "mo",
+              "no"
+            ],
+            "probe": "Giữa hung thủ và ông Kiên có món nợ hay tài sản gì?"
+          },
+          {
+            "id": "han",
+            "text": "Hạn trả nợ là tối Rằm; ông Kiên ghi mực đỏ sẽ giao đất cho Ba Thầu cát sáng 16 tháng Giêng.",
+            "keywords": [
+              "han",
+              "ram",
+              "ba thau",
+              "muc do",
+              "16",
+              "giao dat",
+              "mat dat",
+              "xiet"
+            ],
+            "probe": "Vì sao lại là đêm Rằm mà không phải hôm khác?"
+          }
+        ],
+        "hint": "Gợi ý: tờ giấy vay thế chấp thu trong két sắt xưởng ghe."
+      }
+    ]
+  }
+}

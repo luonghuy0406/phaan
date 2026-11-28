@@ -52,6 +52,12 @@ Email mặc định của Supabase chỉ gửi được vài thư mỗi giờ.
 - [ ] Authentication → **SMTP Settings** → bật Custom SMTP, điền host, cổng, tài khoản, mật khẩu do dịch vụ đó cấp.
 - [ ] Authentication → **Rate Limits**: nâng giới hạn gửi email cho phù hợp.
 
+### B2b. Đăng nhập ẩn danh (cho thẩm vấn AI, không cần email/SMTP)
+- [ ] Authentication → **Sign In / Providers** → bật **Allow anonymous sign-ins** → Save.
+- Người chơi bấm "Thẩm vấn ngay (không cần email)" trong Phòng thẩm vấn; tài khoản gắn với trình duyệt đó.
+- Supabase tự giới hạn số tài khoản ẩn danh mỗi giờ theo IP (Authentication → Rate Limits).
+- Edge Function `interrogate` cần 3 secrets: `GEMINI_API_KEY`, `GROQ_API_KEY`, `OPENROUTER_API_KEY` (Edge Functions → Secrets).
+
 ### B3. Đăng nhập bằng Google (SSO), tuỳ chọn
 Nút "Tiếp tục với Google" tự hiện trên trang đăng nhập khi Google được bật. Apple, Facebook, Microsoft, GitHub, Discord cũng làm tương tự.
 - [ ] Google Cloud Console → **APIs & Services → OAuth consent screen**: tạo ứng dụng (External), đặt tên "Hồ Sơ Mật", email hỗ trợ, rồi Publish.

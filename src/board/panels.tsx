@@ -10,6 +10,8 @@ import { normalizeLine } from '../lib/checks.js';
 import { pad2 } from '../lib/data';
 import type { Question } from '../lib/types';
 import { typeLabel } from './papers';
+import { ExamPanel } from './exam';
+import { examEnabled } from '../lib/exam';
 import { Avatar } from '../components/auth';
 import { useRoom, memberName, addRoomNote, updateRoomNote, deleteRoomNote, type RoomEvent } from '../multiplayer/room';
 
@@ -140,8 +142,10 @@ function useCountdown(until: number) {
 }
 
 function CurrentQ({ q, head, innerRef }: { q: Question; head: React.ReactNode; innerRef: React.RefObject<HTMLElement> }) {
-  const { c, store, focusDoc } = useBoard();
+  const { c, store, focusDoc, room } = useBoard();
   const label = useDocLabel();
+  // conclusion reported to the AI prosecutor (solo play only; rooms check answers on the server); the choice is the fallback
+  const [useChoice, setUseChoice] = useState(false);
   const qs = useBoardState((s) => s.q[q.id]);
   const pins = useBoardState((s) => s.pins);
   const fb = useBoardState((s) => s.feedback[q.id]);
@@ -163,12 +167,23 @@ function CurrentQ({ q, head, innerRef }: { q: Question; head: React.ReactNode; i
       const until = Date.now() + COOLDOWN(wrongs);
       if (until > Date.now()) { lockedUntil.set(lockKey, until); setLockUntil(until); }
     }
-    if (r?.status === 'correct') {
-      showToast('Chính xác!');
-      const s = store.getState();
-      if (allSolved(c, s)) setTimeout(() => { if (useUi.getState().dialog !== 'finale') set({ dialog: 'finale' }); }, 900);
-    }
+    if (r?.status === 'correct') solved();
   };
+
+  const solved = () => {
+    showToast('Chính xác!');
+    const s = store.getState();
+    if (allSolved(c, s)) setTimeout(() => { if (useUi.getState().dialog !== 'finale') set({ dialog: 'finale' }); }, 900);
+  };
+  if (q.exam && !useChoice && !room && examEnabled()) {
+    return (
+      <article className="q is-current" ref={innerRef}>
+        {head}
+        {q.exam.intro && <div className="q__prompt"><Paras list={q.exam.intro} /></div>}
+        <ExamPanel q={q} onUseChoice={() => setUseChoice(true)} onSolved={(misses, hints) => { api.solveExam(q.id, misses, hints); solved(); }} />
+      </article>
+    );
+  }
 
   let form: React.ReactNode = null;
   if (q.type === 'evidence') {
@@ -301,7 +316,7 @@ function Notebook() {
   );
 }
 
-function MyNotebook({ embedded = false }: { embedded?: boolean }) {
+export function MyNotebook({ embedded = false }: { embedded?: boolean }) {
   const { c, store, focusDoc } = useBoard();
   const entries = useBoardState((s) => s.notebook);
   const label = useDocLabel();

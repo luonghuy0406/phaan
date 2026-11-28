@@ -34,7 +34,7 @@ export default function AccountPage() {
           <div>
             <p className="eyebrow">Tài khoản</p>
             <h1>{profile?.display_name || 'Điều tra viên'}</h1>
-            <p className="auth__muted">{session?.user.email}{providers.length ? ` · đăng nhập bằng ${providers.map((p) => PROVIDER_LABEL[p] || p).join(', ')}` : ''}</p>
+            <p className="auth__muted">{session?.user.is_anonymous ? 'Tài khoản ẩn danh, chỉ có trên trình duyệt này' : session?.user.email}{providers.length ? ` · đăng nhập bằng ${providers.map((p) => PROVIDER_LABEL[p] || p).join(', ')}` : ''}</p>
           </div>
         </section>
 

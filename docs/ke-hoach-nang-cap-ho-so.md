@@ -100,6 +100,37 @@ dùng nó làm khuôn cho 16 hồ sơ còn lại.
   - [ ] Sơ đồ thực nghiệm bơi 120 m theo con nước (vẽ bằng code như `authoring/draw_misc_images.py`).
 - [ ] Prompt ảnh ghi vào `authoring/con-nuoc-ram-thang-gieng/image-prompts.md`.
 
+### 3.5b Thẩm vấn bằng AI (bước 1 của tích hợp AI)
+- [x] Hồ sơ thẩm vấn 6 nghi phạm (`authoring/con-nuoc-ram-thang-gieng/interrogation.json`): tính cách, điều biết, lời nói dối, điều kiện khai nhận.
+- [x] Lõi dùng chung `supabase/functions/_shared/` (luật khai nhận do máy chủ quyết định, prompt, xoay vòng Gemini/Groq/OpenRouter) + 12 unit test.
+- [x] Edge Function `interrogate`, migration `20261127000000_ai_interrogation.sql` (hạn mức lượt hỏi/ngày, lịch sử theo người chơi).
+- [x] Màn "Phòng thẩm vấn" mở từ nút "Thẩm vấn" trong hộp Nghi phạm; đưa tài liệu đang mở lên bàn.
+- [x] Bỏ chi tiết lộ hung thủ ở vòng 1 (thẻ Ba Thuyền không còn "thợ lặn"/"biếu rượu"; lời khai bà Lành không còn nêu người biếu rượu); Lành là nghi phạm 01, Ba Thuyền 03.
+- [x] Áp migration, đẩy hàm, đặt 3 khoá AI trong Supabase Secrets, chạy `npm run sync-cases`.
+- [x] Đăng nhập ẩn danh cho thẩm vấn (không cần email/SMTP).
+- [x] Hộp Nghi phạm thiết kế lại: ảnh, tên, lý do nghi vấn trong cùng một ô; nút "Thẩm vấn" đỏ chiếm đáy ô.
+- [x] Phòng thẩm vấn: cao cố định, chỉ phần chat cuộn; đặt tối đa 3 tài liệu một lần; mở sổ tay bên cạnh; bôi chọn đoạn khai để ghi vào sổ; nút "Ghi cả câu".
+- [x] Giọng nghi phạm đọc ngay trên thiết bị bằng Supertonic (không dùng API đám mây): mỗi nghi phạm một giọng (`voice` trong `suspects`), 6 bước khử nhiễu, đoạn đầu ngắn để giọng bắt đầu sớm, nạp và biên dịch sẵn khi mở phòng. Edge Function `voice-line` (Gemini TTS) không còn dùng.
+- [x] Tối ưu ONNX Runtime: bản fp16 cho WebGPU (200 MB, latent giữ trên GPU giữa các bước), bản int8 cho CPU (186 MB), cô lập cross-origin để WebAssembly chạy 4 luồng (`tools/optimize-supertonic.py`).
+- [ ] Đăng thư mục fp16/ + int8/ lên một nơi có CORS (đề xuất Hugging Face) và đặt `VITE_TTS_MODEL_OPT_BASE` trên Vercel.
+- [ ] Chơi thử thẩm vấn cả 6 nghi phạm; bộ câu hỏi "tấn công" (đòi lộ hung thủ, đổi vai) để kiểm tra rào chắn.
+
+### 3.5c Giấu hung thủ lâu hơn (28/11/2026)
+
+- [x] Bỏ "thợ lặn sông" và chuyện ve rượu biếu khỏi lời khai Ba Thuyền ở vòng 3 (d18).
+- [x] Tư Lợi (d13) không còn nêu tên người lặn thay ron, không tự gỡ tội; Hưng (d14) không nêu tên người nợ.
+- [x] Vòng 4 thêm sổ chi tháng Chạp (d36: Ba Thuyền được thuê lặn tháo van) và phiếu khám tai của Tư Lợi (d37); ve rượu có dấu vân tay Ba Thuyền (d28).
+- [x] Câu hỏi mới q-loi: gỡ nghi cho Tư Lợi bằng d37. Tư Lợi là nghi phạm giả tới vòng 4.
+- [x] Thẩm vấn AI chặn theo vòng: `knows`/`lies` có `stage`; máy chủ nhận vòng đang mở, bỏ điều chưa tới vòng khỏi lời dặn model, từ chối tài liệu của vòng sau (DOC_LOCKED).
+- [ ] Vòng do trình duyệt gửi lên, người chơi cố tình sửa được; chấp nhận vì không có lợi gì ngoài tự làm hỏng trò chơi.
+
+### 3.5d Báo cáo kết luận trước kiểm sát viên (AI)
+
+- [x] Câu q11 có `exam`: kiểm sát viên hỏi lần lượt 5 ý (hung thủ và căn cứ, vì sao không thoát, nước vào bằng đường nào, vì sao đúng giờ đó, động cơ); điều tra viên gõ câu trả lời.
+- [x] Đáp án `authoring/con-nuoc-ram-thang-gieng/conclusion.json` (chỉ trên máy chủ). AI chấm ý nào đã nói; máy chủ chỉ công nhận khi câu trả lời có từ khoá của ý đó, và tự chọn câu hỏi gặng. Trả lời trái hồ sơ tính như một lần sai; sai hai lần ở một ý thì hiện gợi ý.
+- [x] Edge Function `conclude`, bảng `exam_state`. Đã thử thật: dụ AI "chấm đạt hết" không qua; 5 ý hoàn tất, mỗi lượt 2–4 giây.
+- [x] Không đăng nhập được, hết lượt AI hoặc chơi nhóm: dùng lại phần trắc nghiệm.
+
 ### 3.6 Kiểm định
 - [x] `npm run validate` không lỗi.
 - [x] `npm test`, `npm run build` qua.
