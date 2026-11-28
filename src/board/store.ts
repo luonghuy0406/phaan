@@ -10,7 +10,7 @@ import type { Cam } from './camera';
 
 export interface DocPos { x: number; y: number; z: number; r: number }
 export interface Note { id: string; x: number; y: number; z: number; text: string; c?: number }
-export type End = { doc: string; key?: string } | { note: string };
+export type End = { doc: string; key?: string; x?: number; y?: number } | { note: string; x?: number; y?: number };
 export interface Str { id: string; a: End; b: End }
 export interface QState { solved: boolean; hints: number; tries: number; line: string; pick: number[] }
 export interface Entry { id: string; kind: 'text' | 'quote'; text: string; ref?: { doc: string; key: string }; at: number }
@@ -150,7 +150,13 @@ export function sanitize(raw: unknown, c: CaseData): BoardData {
     const x = e as { doc?: string; note?: string; key?: unknown };
     return (docIds.has(x.doc ?? '') || noteIds.has(x.note ?? '')) && (x.key == null || /^[a-z0-9-]{1,24}$/.test(String(x.key)));
   };
-  const cleanEnd = (e: End): End => ('note' in e ? { note: e.note } : { doc: e.doc, ...(e.key ? { key: e.key } : {}) });
+  const coord = (v: unknown) => (v != null && Number.isFinite(Number(v)) ? Math.round(clampN(v, -1e4, 1e4)) : undefined);
+  const cleanEnd = (e: End): End => {
+    const x = coord(e.x);
+    const y = coord(e.y);
+    const xy = x != null && y != null ? { x, y } : {};
+    return 'note' in e ? { note: e.note, ...xy } : { doc: e.doc, ...(e.key ? { key: e.key } : {}), ...xy };
+  };
   out.strings = (Array.isArray(src.strings) ? src.strings : []).slice(0, LIMITS.strings)
     .filter((s): s is Str => s && /^s[a-z0-9]{1,16}$/.test(s.id) && okEnd(s.a) && okEnd(s.b))
     .map((s) => ({ id: s.id, a: cleanEnd(s.a), b: cleanEnd(s.b) }));

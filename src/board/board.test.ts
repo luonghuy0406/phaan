@@ -67,6 +67,11 @@ describe('saved state', () => {
   it('drops unknown ids, bad strokes and out-of-order solves', () => {
     const s = sanitize({
       docs: { d1: { x: 1, y: 2, z: 3, r: 9 }, nope: { x: 0, y: 0, z: 1, r: 0 } },
+      notes: [{ id: 'n1', x: 10, y: 20, z: 2, text: 'hi' }],
+      strings: [
+        { id: 's1', a: { doc: 'd1', key: 'p0', x: 120.4, y: 240.6 }, b: { note: 'n1', x: 45, y: 80 } },
+        { id: 's2', a: { doc: 'd1' }, b: { doc: 'nope' } },
+      ],
       ink: [
         { id: 'kok', t: 'doc:d1', pts: [1, 2, 0.5], c: '#112233', s: 3 },
         { id: 'kbad', t: 'doc:zz', pts: [1, 2, 0.5], c: '#112233', s: 3 },
@@ -76,6 +81,7 @@ describe('saved state', () => {
     }, CASE);
     expect(Object.keys(s.docs)).toEqual(['d1']);
     expect(s.docs.d1.r).toBe(3);
+    expect(s.strings).toEqual([{ id: 's1', a: { doc: 'd1', key: 'p0', x: 120, y: 241 }, b: { note: 'n1', x: 45, y: 80 } }]);
     expect(s.ink.map((k) => k.id)).toEqual(['kok']);
     expect(s.q.q2.solved).toBe(false);
     expect(s.q.q2.line).toBe('d2:004');
