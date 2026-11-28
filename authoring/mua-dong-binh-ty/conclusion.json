@@ -1,0 +1,127 @@
+{
+  "_ghi_chu": "Đáp án báo cáo kết luận trước kiểm sát viên (AI). CHỨA LỜI GIẢI. keywords không dấu.",
+  "q8": {
+    "examiner": "Kiểm sát viên Nguyễn Thị Thanh",
+    "persona": "Kiểm sát viên Viện Kiểm sát nhân dân quận Hai Bà Trưng, ngoài bốn mươi, giọng Hà Nội, nhẹ nhàng nhưng chặt chẽ.",
+    "intro": "Tôi là kiểm sát viên phụ trách vụ phòng 204 nhà A6. Đồng chí trình bày kết luận, ngắn gọn, có căn cứ.",
+    "closing": "Báo cáo đủ căn cứ ở mọi điểm. Tôi đồng ý với kết luận điều tra.",
+    "points": [
+      {
+        "id": "ai",
+        "ask": "Thứ nhất: ai gây ra cái chết của bà Chu Thị Bích?",
+        "facts": [
+          {
+            "id": "toan",
+            "text": "Lê Khắc Toàn, trưởng ban đại diện cư dân.",
+            "keywords": [
+              "toan",
+              "truong ban"
+            ],
+            "probe": "Đồng chí nói rõ người đó là ai."
+          }
+        ],
+        "hint": "Gợi ý: phiếu chia quà Tết và biên bản kiểm tra kho thanh lý."
+      },
+      {
+        "id": "chet",
+        "ask": "Thứ hai: bà Bích chết vì gì, và vì sao bà không tự cứu được?",
+        "facts": [
+          {
+            "id": "hat-dieu",
+            "text": "Sốc phản vệ do mứt gừng ngào hạt điều trong giỏ quà bị đổi từ giỏ B sang giỏ A bằng mực tím.",
+            "keywords": [
+              "hat dieu",
+              "phan ve",
+              "di ung",
+              "gio qua",
+              "muc tim",
+              "gio a",
+              "mut gung"
+            ],
+            "probe": "Bà Bích ăn phải gì, thứ ấy từ đâu ra?"
+          },
+          {
+            "id": "binh-xit",
+            "text": "Bình xịt Ventolin bị tráo bằng vỏ lô 91-04 hết hạn bơm nước cất, lấy từ kho thanh lý mà Toàn giữ chìa.",
+            "keywords": [
+              "binh xit",
+              "ventolin",
+              "nuoc cat",
+              "91-04",
+              "kho thanh ly",
+              "het han",
+              "trao"
+            ],
+            "probe": "Bình xịt trong tay bà có gì bất thường?"
+          }
+        ],
+        "hint": "Gợi ý: pháp y, phiếu giám định bình xịt, phiếu chia quà."
+      },
+      {
+        "id": "dung-canh",
+        "ask": "Thứ ba: vì sao hiện trường trông như trộm đột nhập hạ độc?",
+        "facts": [
+          {
+            "id": "gia",
+            "text": "23:30 Toàn lên lấy vàng, đổ bột sắn dây vào ấm trà nguội và bẻ chốt cửa sổ từ trong (kính văng ra hành lang); dép rọ đế ca-rô trùng vết bùn.",
+            "keywords": [
+              "sat day",
+              "bot",
+              "cua so",
+              "ben trong",
+              "kinh",
+              "hanh lang",
+              "dep",
+              "de ca ro",
+              "23:30"
+            ],
+            "probe": "Ấm trà và cửa sổ cho thấy gì?"
+          }
+        ],
+        "hint": "Gợi ý: biên bản khám nghiệm, lời các hộ luộc bánh chưng, tang vật dép rọ."
+      },
+      {
+        "id": "dong-co",
+        "ask": "Thứ tư: vì sao ông Toàn cần số vàng ấy?",
+        "facts": [
+          {
+            "id": "quy",
+            "text": "Mất 42 triệu quỹ sửa mái vào lô đường lậu bị thu ngày 26 Tết, thanh tra kiểm quỹ mùng 6; 12 cây vàng giấu ở ống thông gió cạnh chòi bảo vệ.",
+            "keywords": [
+              "42",
+              "quy",
+              "sua mai",
+              "duong lau",
+              "thanh tra",
+              "mung 6",
+              "ong thong gio",
+              "choi bao ve"
+            ],
+            "probe": "Quỹ cư dân ra sao? Vàng tìm thấy ở đâu?"
+          }
+        ],
+        "hint": "Gợi ý: biên bản làm việc về quỹ và biên bản thu giữ vàng."
+      },
+      {
+        "id": "loai-tru",
+        "ask": "Cuối cùng: anh Cường cũng nói dối và bỏ trốn đêm đó. Vì sao không phải anh ta?",
+        "facts": [
+          {
+            "id": "cuong",
+            "text": "Cường qua soát vé ga Hàng Cỏ 22:45, tàu qua Phủ Lý 0:40 vẫn có mặt, không thể lên tầng hai lúc 23:30; không có chìa kho thuốc, không chia quà.",
+            "keywords": [
+              "ga",
+              "hang co",
+              "22:45",
+              "tau",
+              "phu ly",
+              "soat ve"
+            ],
+            "probe": "Lúc 23:30 Cường ở đâu?"
+          }
+        ],
+        "hint": "Gợi ý: vé tàu và xác nhận kiểm soát vé."
+      }
+    ]
+  }
+}

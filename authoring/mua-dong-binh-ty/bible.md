@@ -1,3 +1,26 @@
+# Kịch bản gốc: Mùa đông năm Bính Tý (Hồ sơ 02, bản 2)
+
+Hư cấu. 4 vòng, 20 tài liệu, 9 câu hỏi, 60–75 phút, **độ khó 3 (vừa)**. Không có đồng phạm. Nội dung dựng bằng `build_case.py`.
+**Chứa lời giải.** Giữ nguyên cốt truyện bản 1 (bên dưới), sửa các điểm sau:
+
+- **Ngày tháng:** Tết Bính Tý là 19/2/1996, nên 26 Tết = 14/2, 28 Tết = 16/2, 29 Tết = 17/2 (thứ Bảy), 30 Tết = 18/2 (Chủ nhật),
+  mùng 4 = 22/2, mùng 6 = 24/2. Bản 1 ghi lệch (10–14/2).
+- **Pháo:** lệnh cấm có hiệu lực từ 1/1/1995, nên Tết 1996 là Tết **thứ hai** không pháo (bản 1 ghi "đầu tiên").
+- Bình xịt thật bà mua tháng 12/1995 lô 95-11; bình giả lô 91-04. Bình thật được giấu cùng chỗ với vàng.
+- Bìa và ảnh nền thẻ cắt từ ảnh sân nhà A6 (d01). Ảnh: d02-so-do-can-ho → d03, d04-room → d04, d06-so-do-tu-thi → d05,
+  d12-inhaler → d13, d16-shoes → d18, d17-gold → d19.
+
+## Chuỗi suy luận (bản 2)
+- **Vòng 1 (7):** d00–d06. q1 không phải trộm hạ độc (d02, d05). q2 evidence (d02, d05): bình xịt rỗng thuốc.
+- **Vòng 2 (6):** d07 sổ y bạ, d08 Cường, d09 y sĩ Hưng, d10 Toàn, d11 các hộ luộc bánh chưng, d12 vé tàu.
+  q3 line d10:002 (↔ d06, d11). q4 evidence (d11, d12): loại Nga, Cường.
+- **Vòng 3 (4):** d13 giám định bình xịt, d14 kho thanh lý, d15 phiếu quà, d16 thủ quỹ công đoàn. q5 evidence (d13, d14). q6 line d10:006.
+- **Vòng 4 (3):** d17 quỹ 42 triệu + đường lậu, d18 dép và bút mực tím, d19 vàng + bình thật. q7 evidence (d17, d19). q-accuse Toàn. q8 + KSV.
+
+---
+
+# Bản 1 (tham khảo; ngày tháng đã sai, xem trên)
+
 # Kịch bản gốc (Bible): Mùa đông năm Bính Tý
 
 * **Mã hồ sơ:** `mua-dong-binh-ty`

@@ -1,0 +1,59 @@
+{
+  "_ghi_chu": "Giọng đọc lấy thẳng chữ từ case.json. Hà Nội: giọng Bắc. Chạy: npm run gen-voice -- mua-dong-binh-ty và npm run gen-doc-voice -- mua-dong-binh-ty",
+  "engine": "vieneu",
+  "voices": {
+    "dan": "Thiện Minh",
+    "huy": "Minh Đức",
+    "nga": "Ngọc Huyền",
+    "cuong": "Hải Đăng",
+    "hung": "Thiền Tâm Đức",
+    "toan": "Phạm Tuyên",
+    "man": "Ngọc Linh",
+    "loc": "Xuân Vĩnh",
+    "trang": "Trúc Ly",
+    "ha": "Đoan Trang"
+  },
+  "temperature": 0.8,
+  "clips": [
+    {
+      "id": "intro",
+      "source": "intro"
+    },
+    {
+      "id": "beat-2",
+      "source": "beat:2"
+    },
+    {
+      "id": "beat-3",
+      "source": "beat:3"
+    },
+    {
+      "id": "beat-4",
+      "source": "beat:4"
+    },
+    {
+      "id": "finale",
+      "source": "finale",
+      "quotes": [
+        {
+          "voice": "toan",
+          "before": "[thở dài]"
+        }
+      ]
+    }
+  ],
+  "docs": {
+    "narrator": "dan",
+    "asker": "huy",
+    "speakers": {
+      "Đỗ Thị Nga": "nga",
+      "Nguyễn Quốc Cường": "cuong",
+      "Trịnh Văn Hưng": "hung",
+      "Lê Khắc Toàn": "toan",
+      "Bà Lương Thị Mận": "man",
+      "Ông Vũ Văn Lộc": "loc",
+      "Chị Hà Thu Trang": "trang",
+      "Bùi Thị Hà": "ha"
+    }
+  }
+}

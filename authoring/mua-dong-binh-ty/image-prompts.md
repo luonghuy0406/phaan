@@ -1,3 +1,24 @@
+# Ảnh cho bản 2 (tháng 11/2026)
+
+Ảnh tư liệu dùng lại từ "Vietnamese Forensic Evidence Dossier.png" (đã cắt sẵn). Bìa hộp game cũ đã thay bằng ảnh sân nhà A6.
+
+## Ảnh thẻ (ghép 3 cột × 2 hàng)
+Cắt: `python3 tools/crop-portraits.py <ảnh> public/cases/mua-dong-binh-ty/images 2 3 bich toan cuong nga hung -`
+
+```text
+A 3-column by 2-row grid of six Vietnamese ID card portrait photos from 1996, Hanoi, separated by thin white lines, each cell a head-and-shoulders front-facing shot, neutral expression, plain pale blue background, flat studio lighting, slightly faded film colour, realistic skin texture, no text.
+Top row, left to right:
+(1) a 68-year-old Vietnamese retired schoolteacher, small thin face, grey hair in a bun with a hairnet, round tortoiseshell reading glasses, dark knitted cardigan;
+(2) a 56-year-old Vietnamese man, upright stern bearing, hair combed back with a side parting, olive military-style jacket, a purple ballpoint pen clipped in the chest pocket;
+(3) a 27-year-old Vietnamese man, tall and gaunt, hollow cheeks, messy hair, faded grey windbreaker;
+Bottom row, left to right:
+(4) a 36-year-old Vietnamese street food seller, plump round face, an old red wool scarf around her neck, plain brown padded jacket;
+(5) a 49-year-old Vietnamese medical assistant, slim serious face, thin metal-rimmed glasses, white medical coat over a dark sweater;
+(6) an empty plain pale blue cell.
+```
+
+---
+
 # Bảng Prompt Tạo Hình Chi Tiết: Mùa đông năm Bính Tý (Hồ sơ 02)
 ## (MASTER ART DIRECTION & IMAGE PROMPT GUIDE - CASE 02)
 

@@ -54,20 +54,28 @@
     {
       "id": "mua-dong-binh-ty",
       "no": 2,
-      "status": "coming-soon",
+      "status": "available",
       "kind": "fiction",
       "title": "Mùa đông năm Bính Tý",
-      "tagline": "Giao thừa đầu tiên vắng tiếng pháo, căn hộ tầng hai im lìm sau chén trà hoa cúc.",
+      "tagline": "Đêm 29 Tết Bính Tý, bà giáo về hưu chết trên ghế bành, tay còn nắm bình xịt hen. Bình không có một giọt thuốc.",
       "difficulty": 3,
-      "players": "2–6",
-      "duration": "120 phút",
-      "setting": "Khu tập thể Dệt Thống Nhất, Hà Nội (hư cấu)",
+      "players": "1–5",
+      "duration": "60–75 phút",
+      "setting": "Khu tập thể Dệt Thống Nhất (hư cấu), quận Hai Bà Trưng, Hà Nội",
       "tags": [
         "Án mạng",
-        "Đầu độc",
-        "Bao cấp"
+        "Tết",
+        "Khu tập thể",
+        "Hà Nội 1996"
       ],
-      "cover": "images/cover.webp"
+      "cover": "images/cover.webp",
+      "art": "images/art.webp",
+      "artPos": "60% 40%",
+      "features": [
+        "ai",
+        "exam",
+        "voice"
+      ]
     },
     {
       "id": "tieng-dan-day-pho-hien",
