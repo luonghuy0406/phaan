@@ -108,3 +108,70 @@ export function CaseCard({ entry, compact = false }: { entry: CaseSummary; compa
     </Link>
   );
 }
+
+const FEATURE_LABEL: Record<string, string> = {
+  ai: 'Thẩm vấn nghi phạm bằng AI',
+  exam: 'Báo cáo trước kiểm sát viên',
+  voice: 'Giọng đọc tài liệu',
+  accomplice: 'Có đồng phạm',
+  starter: 'Nên chơi đầu tiên',
+};
+const FEATURE_SHORT: Record<string, string> = { ai: 'Thẩm vấn AI', exam: 'Kiểm sát viên AI', voice: 'Giọng đọc', accomplice: 'Đồng phạm', starter: 'Nhập môn' };
+const DIFF_WORD = ['', 'Rất dễ', 'Dễ', 'Vừa', 'Khó', 'Rất khó'];
+
+/** Catalog card for a case that can be played now: a wide scene photo, the case name over it, and what it offers. */
+export function ReleasedCard({ entry, lead = false }: { entry: CaseSummary; lead?: boolean }) {
+  const real = caseKind(entry) === 'true-crime';
+  const img = entry.art || entry.cover;
+  const feats = (entry.features || []).filter((f) => FEATURE_SHORT[f]);
+  const starter = feats.includes('starter');
+  return (
+    <Link className={`cat-card${lead ? ' cat-card--lead' : ''}${real ? ' cat-card--real' : ''}`} to={`/ho-so/${entry.id}`}>
+      <div className="cat-card__art">
+        {img ? <img src={caseBase(entry.id) + img} alt="" loading="lazy" style={entry.artPos ? { objectPosition: entry.artPos } : undefined} /> : <span className="cat-card__blank" />}
+        <span className="cat-card__shade" aria-hidden="true" />
+        <span className="cat-card__flags">
+          <span className="cat-card__no">{caseNo(entry)}</span>
+          {starter && <span className="cat-flag cat-flag--start">Bắt đầu từ đây</span>}
+          {real && <span className="cat-flag cat-flag--real">Vụ án có thật</span>}
+        </span>
+        <span className="cat-card__head">
+          <span className="cat-card__setting">{entry.setting}</span>
+          <span className="cat-card__title">{entry.title}</span>
+        </span>
+      </div>
+      <div className="cat-card__body">
+        {entry.tagline && <p className="cat-card__tag">{entry.tagline}</p>}
+        <dl className="cat-card__meta">
+          <div><dt>Độ khó</dt><dd><Difficulty level={entry.difficulty} /> <span>{DIFF_WORD[entry.difficulty || 0]}</span></dd></div>
+          <div><dt>Người chơi</dt><dd>{entry.players || '1–6'}</dd></div>
+          <div><dt>Thời lượng</dt><dd>{entry.duration || '—'}</dd></div>
+        </dl>
+        {!!feats.length && (
+          <ul className="cat-card__feats">
+            {feats.filter((f) => f !== 'starter').map((f) => <li key={f} title={FEATURE_LABEL[f]} className={`feat feat--${f}`}>{FEATURE_SHORT[f]}</li>)}
+          </ul>
+        )}
+        <span className="cat-card__cta">Mở hồ sơ <span aria-hidden="true">→</span></span>
+      </div>
+    </Link>
+  );
+}
+
+/** Small locked card for a case still being written. */
+export function SoonCard({ entry }: { entry: CaseSummary }) {
+  const real = caseKind(entry) === 'true-crime';
+  return (
+    <Link className={`soon-card${real ? ' soon-card--real' : ''}`} to={`/ho-so/${entry.id}`} aria-label={`${entry.title}: sắp ra mắt`}>
+      <span className="soon-card__art">
+        {entry.cover && <img src={caseBase(entry.id) + entry.cover} alt="" loading="lazy" />}
+        <svg className="soon-card__lock" viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2" /><path d="M8 11V8a4 4 0 0 1 8 0v3" /></svg>
+      </span>
+      <span className="soon-card__body">
+        <span className="soon-card__no">{caseNo(entry)}{real ? ' · Có thật' : ''}</span>
+        <span className="soon-card__title">{entry.title}</span>
+        <span className="soon-card__meta"><Difficulty level={entry.difficulty} />{entry.duration ? <span>{entry.duration}</span> : null}</span>
+      </span>
+    </Link>
+  );
+}

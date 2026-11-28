@@ -3,7 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useGSAP } from '@gsap/react';
-import { CaseCard, Footer, Nav } from '../components/site';
+import { Footer, Nav, ReleasedCard, SoonCard } from '../components/site';
 import { ContinueStrip } from '../components/progress';
 import { loadCatalog, useAsync, caseKind } from '../lib/data';
 import type { CaseKind } from '../lib/types';
@@ -17,10 +17,6 @@ const FILTERS: { id: Filter; label: string }[] = [
   { id: 'all', label: 'Tất cả' },
   { id: 'fiction', label: 'Hư cấu' },
   { id: 'true-crime', label: 'Vụ án có thật' },
-];
-const GROUPS: { kind: CaseKind; title: string; note: string }[] = [
-  { kind: 'fiction', title: 'Hồ sơ hư cấu', note: 'Nhân vật, địa danh và tình tiết đều do chúng tôi dựng nên. Phù hợp để chơi cùng bạn bè, gia đình.' },
-  { kind: 'true-crime', title: 'Dựa trên vụ án có thật', note: 'Tái hiện từ thông tin công khai về những vụ án đã xảy ra. Có chi tiết dễ gây ám ảnh, không dành cho trẻ em.' },
 ];
 
 const TICKER = ['Biên bản khám nghiệm', 'Lời khai nhân chứng', 'Ảnh hiện trường', 'Tang vật', 'Dây đỏ', 'Sổ tay điều tra', 'Hồ sơ niêm phong', 'Apple Pencil'];
@@ -88,9 +84,13 @@ export default function Home() {
   }, [hash, cases]);
 
   const open = (cases || []).filter((c) => c.status === 'available');
-  const featured = open[0];
+  // the hero sends newcomers to the starter case (falls back to the first open case)
+  const featured = open.find((c) => c.features?.includes('starter')) || open[0];
   const ofKind = (k: CaseKind) => (cases || []).filter((c) => caseKind(c) === k);
-  const groups = GROUPS.filter((g) => filter === 'all' || g.kind === filter).map((g) => ({ ...g, list: ofKind(g.kind) })).filter((g) => g.list.length);
+  // released cases first, each list in catalogue order; the kind filter applies to both
+  const shown = (cases || []).filter((c) => filter === 'all' || caseKind(c) === filter).slice().sort((a, b) => (a.no ?? 0) - (b.no ?? 0));
+  const released = shown.filter((c) => c.status === 'available');
+  const soon = shown.filter((c) => c.status !== 'available');
   const featuredTo = featured ? `/ho-so/${featured.id}` : '/#catalog';
 
   /* ── animations: everything degrades to the static layout with prefers-reduced-motion ── */
@@ -104,16 +104,17 @@ export default function Home() {
       const tl = gsap.timeline({ defaults: { ease: 'power3.out' } });
       tl.from('.h-word > span', { yPercent: 115, rotate: 6, duration: 0.9, stagger: 0.06 })
         .from('.h-hero .h-reveal', { y: 24, opacity: 0, duration: 0.7, stagger: 0.08 }, '-=0.5')
-        .from('.h-photo, .h-file, .h-note', {
+        .from('.h-photo, .h-id, .h-chat', {
           y: -80, opacity: 0, scale: 1.12, rotate: (i: number) => [-14, 12, -10, 8, -6][i % 5],
           duration: 0.9, stagger: 0.12, ease: 'back.out(1.4)',
         }, 0.25)
         .fromTo('.h-string path', { strokeDashoffset: 1 }, { strokeDashoffset: 0, duration: 1.4, ease: 'power2.inOut' }, '-=0.3')
-        .from('.h-pin', { scale: 0, duration: 0.35, stagger: 0.12, ease: 'back.out(3)' }, '<0.2');
+        .from('.h-pin', { scale: 0, duration: 0.35, stagger: 0.12, ease: 'back.out(3)' }, '<0.2')
+        .from('.h-chat__mark', { scale: 1.6, opacity: 0, rotate: -20, duration: 0.45, ease: 'back.out(2)' }, '-=0.2');
 
 
       // hero parallax on scroll
-      const depth: [string, number][] = [['.h-photo--a', -90], ['.h-photo--b', -40], ['.h-photo--c', -130], ['.h-file', -20], ['.h-note', -160]];
+      const depth: [string, number][] = [['.h-photo--a', -90], ['.h-photo--b', -40], ['.h-photo--c', -130], ['.h-id', -20], ['.h-chat', -160]];
       depth.forEach(([sel, y]) => {
         gsap.to(sel, { y, ease: 'none', scrollTrigger: { trigger: '.h-hero', start: 'top top', end: 'bottom top', scrub: true } });
       });
@@ -188,7 +189,7 @@ export default function Home() {
   // case cards appear as they enter (re-run when the list first arrives)
   useGSAP(() => {
     if (!cases || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-    const cards = gsap.utils.toArray<HTMLElement>('.catalog .case-card');
+    const cards = gsap.utils.toArray<HTMLElement>('.cat-grid .cat-card, .soon-grid .soon-card');
     gsap.set(cards, { y: 50, opacity: 0 });
     ScrollTrigger.batch(cards, {
       start: 'top 90%',
@@ -224,32 +225,49 @@ export default function Home() {
                 {words.map((w) => <span key={w} className="h-word"><span>{w}</span></span>)}{' '}
                 <span className="h-word"><span><em>dấu vết.</em></span></span>
               </h1>
-              <p className="lead h-reveal">Mở hồ sơ, đọc biên bản, đối chiếu từng lời khai và nối manh mối bằng dây đỏ. Không người dẫn chuyện, không đáp án dọn sẵn: chỉ có bạn và sự thật bị giấu trong giấy tờ.</p>
+              <p className="lead h-reveal">Đọc biên bản, nối manh mối bằng dây đỏ, thẩm vấn nghi phạm tới khi họ hết đường chối. Rồi trình bày kết luận trước kiểm sát viên.</p>
               <div className="hero__cta h-reveal">
-                <Link className="btn btn--primary" to={featuredTo}>Mở hồ sơ đầu tiên</Link>
-                <a className="btn btn--ghost" href="#how">Xem cách chơi</a>
+                <Link className="btn btn--primary" to={featuredTo}>{featured?.features?.includes('starter') ? 'Chơi hồ sơ nhập môn' : 'Mở hồ sơ đầu tiên'}</Link>
+                <a className="btn btn--ghost" href="#catalog">Xem kho hồ sơ</a>
               </div>
-              <dl className="h-stats h-reveal">
-                <div><dt>Hồ sơ đang mở</dt><dd><span ref={countRef}>–</span></dd></div>
-                <div><dt>Người chơi</dt><dd>1–6</dd></div>
-                <div><dt>Tối ưu cho</dt><dd>iPad & Pencil</dd></div>
-              </dl>
+              <ul className="h-feats h-reveal">
+                <li>
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v10H9l-5 4z" /><path d="M8 9h8M8 12h5" /></svg>
+                  <span><b>Thẩm vấn bằng AI</b>Nghi phạm nói dối tới khi bạn đưa đúng giấy tờ.</span>
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v18M5 7h14M7 7l-3 7h6zM17 7l-3 7h6z" /></svg>
+                  <span><b>Kiểm sát viên AI</b>Trình bày bằng lời, bị hỏi gặng từng ý.</span>
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10v4M8 7v10M12 4v16M16 8v8M20 11v2" /></svg>
+                  <span><b>Giọng đọc ba miền</b>Lời khai đọc đúng giọng nhân vật.</span>
+                </li>
+              </ul>
             </div>
 
             <div className="h-board-wrap" aria-hidden="true">
               <div className="h-board">
-                <figure className="h-photo h-photo--a"><img src="/site/photo-watch.webp" alt="" /><figcaption>Tang vật · TV-03</figcaption></figure>
-                <figure className="h-photo h-photo--b"><img src="/site/photo-cctv.webp" alt="" /><figcaption>Camera đầu ngõ · 22:53</figcaption></figure>
-                <figure className="h-photo h-photo--c"><img src="/site/photo-river.webp" alt="" /><figcaption>Bến sông · 06:15</figcaption></figure>
-                <div className="h-file"><span className="h-file__tab" /><span className="stamp">Mật</span><b>Hồ sơ 01</b><small>Lời khai · Biên bản · Tang vật</small></div>
-                <div className="h-note">Ai biết mã két?</div>
+                <figure className="h-photo h-photo--a"><img src="/cases/chuyen-tau-dem-muong-man/images/d01-bao-chi.webp" alt="" /><figcaption>Ga Mường Mán · 05:30</figcaption></figure>
+                <figure className="h-photo h-photo--b"><img src="/cases/con-nuoc-ram-thang-gieng/images/d04-boat.webp" alt="" /><figcaption>Bến ghe · 06:15</figcaption></figure>
+                <figure className="h-photo h-photo--c"><img src="/cases/demo-01/images/d01-window.webp" alt="" /><figcaption>Cửa sổ vỡ · 23:00</figcaption></figure>
+                <div className="h-id">
+                  <img src="/cases/chuyen-tau-dem-muong-man/images/id-long.webp" alt="" />
+                  <span className="h-id__body"><small>Nghi phạm · khoang 2</small><b>Nguyễn Hoàng Long</b><i>Không có ngoại phạm từ 01:00</i></span>
+                </div>
+                <div className="h-chat">
+                  <span className="h-chat__who">Thẩm vấn · lượt 4</span>
+                  <span className="h-chat__q">Lúc một rưỡi anh ở đâu?</span>
+                  <span className="h-chat__a">Tôi ngủ một mạch tới sáng.</span>
+                  <span className="h-chat__mark">Nói dối?</span>
+                </div>
                 <svg className="h-string" viewBox="0 0 100 100" preserveAspectRatio="none">
-                  <path pathLength={1} d="M24 9 Q 52 34 77 26 Q 58 52 36 58 Q 62 84 82 72" />
+                  <path pathLength={1} d="M22 7 Q 50 28 74 14 Q 54 46 25 65 Q 52 90 73 80" />
                 </svg>
-                <span className="h-pin" style={{ left: '24%', top: '9%' }} />
-                <span className="h-pin" style={{ left: '77%', top: '26%' }} />
-                <span className="h-pin" style={{ left: '36%', top: '58%' }} />
-                <span className="h-pin" style={{ left: '82%', top: '72%' }} />
+                <span className="h-pin" style={{ left: '22%', top: '7%' }} />
+                <span className="h-pin" style={{ left: '74%', top: '14%' }} />
+                <span className="h-pin" style={{ left: '25%', top: '65%' }} />
+                <span className="h-pin" style={{ left: '73%', top: '80%' }} />
               </div>
             </div>
           </div>
@@ -281,16 +299,29 @@ export default function Home() {
             </div>
             {error ? <p className="catalog__empty">Không tải được kho hồ sơ.</p>
               : !cases ? <p className="catalog__empty">Đang tải hồ sơ…</p>
-                : groups.length ? groups.map((g) => (
-                  <div key={g.kind} className={`catalog-group catalog-group--${g.kind}`}>
-                    <div className="catalog-group__head">
-                      <h3>{g.title}<span>{g.list.length} hồ sơ</span></h3>
-                      <p>{g.note}</p>
-                    </div>
-                    <div className="catalog">{g.list.map((c) => <CaseCard key={c.id} entry={c} />)}</div>
-                  </div>
-                ))
-                  : <p className="catalog__empty">Chưa có hồ sơ nào trong mục này.</p>}
+                : !shown.length ? <p className="catalog__empty">Chưa có hồ sơ nào trong mục này.</p>
+                  : (
+                    <>
+                      {!!released.length && (
+                        <div className="cat-block">
+                          <div className="cat-block__head">
+                            <h3><span className="cat-dot" aria-hidden="true" />Đang mở<span className="cat-block__n">{released.length} hồ sơ</span></h3>
+                            <p>Chơi ngay trên trình duyệt, một mình hoặc cùng cả nhóm. Mỗi hồ sơ có thẩm vấn nghi phạm bằng AI và báo cáo kết luận trước kiểm sát viên.</p>
+                          </div>
+                          <div className="cat-grid">{released.map((c) => <ReleasedCard key={c.id} entry={c} />)}</div>
+                        </div>
+                      )}
+                      {!!soon.length && (
+                        <div className="cat-block cat-block--soon">
+                          <div className="cat-block__head">
+                            <h3>Sắp ra mắt<span className="cat-block__n">{soon.length} hồ sơ</span></h3>
+                            <p>Đang được viết lại, vẽ ảnh tư liệu và thu giọng đọc. Hồ sơ nào xong sẽ mở ở đây.</p>
+                          </div>
+                          <div className="soon-grid">{soon.map((c) => <SoonCard key={c.id} entry={c} />)}</div>
+                        </div>
+                      )}
+                    </>
+                  )}
           </div>
         </section>
 

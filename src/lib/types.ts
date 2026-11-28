@@ -93,6 +93,12 @@ export interface CaseSummary {
   kind?: CaseKind;
   /** content is playable but images are still being made: shown with a "Chưa hoàn thiện" label */
   draft?: boolean;
+  /** wide scene image (no text) for the catalog card, path inside the case folder; falls back to `cover` */
+  art?: string;
+  /** CSS object-position for `art`, e.g. "50% 30%" */
+  artPos?: string;
+  /** what the case offers, shown as chips: ai (AI interrogation), exam (report to the prosecutor), voice (read aloud), accomplice, starter */
+  features?: string[];
 }
 
 export type CaseKind = 'fiction' | 'true-crime';

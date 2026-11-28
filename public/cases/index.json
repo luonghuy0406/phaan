@@ -16,7 +16,15 @@
         "Nhập môn",
         "Phố cổ"
       ],
-      "cover": "images/cover.webp"
+      "cover": "images/cover.webp",
+      "art": "images/d01-window.webp",
+      "artPos": "50% 40%",
+      "features": [
+        "ai",
+        "exam",
+        "voice",
+        "starter"
+      ]
     },
     {
       "id": "con-nuoc-ram-thang-gieng",
@@ -34,7 +42,14 @@
         "Phòng kín",
         "Sông nước"
       ],
-      "cover": "images/cover.webp"
+      "cover": "images/cover.webp",
+      "art": "images/d04-boat.webp",
+      "artPos": "55% 60%",
+      "features": [
+        "ai",
+        "exam",
+        "voice"
+      ]
     },
     {
       "id": "mua-dong-binh-ty",
@@ -109,7 +124,15 @@
         "Đồng phạm",
         "Tàu hoả"
       ],
-      "cover": "images/cover.webp"
+      "cover": "images/cover.webp",
+      "art": "images/d01-bao-chi.webp",
+      "artPos": "50% 55%",
+      "features": [
+        "ai",
+        "exam",
+        "voice",
+        "accomplice"
+      ]
     },
     {
       "id": "bong-nang-hoi-an",
