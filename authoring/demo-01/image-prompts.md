@@ -1,3 +1,38 @@
+# Ảnh còn thiếu cho bản 2 (tháng 11/2026)
+
+Hồ sơ đã viết lại (18 tài liệu, 4 nghi phạm). Ảnh thẻ: 3:4, lưu 480×640 WebP (~20 KB) ở `public/cases/demo-01/images/id-<id>.webp`.
+Có rồi: `id-hau.webp` (ông Hậu). Tạo xong ảnh thì chạy `python3 authoring/demo-01/build_case.py` để gắn ảnh vào hồ sơ.
+
+Phong cách chung (giống ảnh ông Hậu): ảnh căn cước năm 2024, chính diện, nền xanh nhạt trơn, ánh sáng đều, không chữ.
+
+**id-tu.webp: Phạm Thị Tư, 59 tuổi, giúp việc**
+```text
+Vietnamese citizen ID card portrait photo, 2024, head and shoulders, front facing, neutral tired expression, plain pale blue studio background, even flat lighting. A 59-year-old Vietnamese countryside woman working as a housemaid, sun-tanned skin, gentle weary eyes, black hair with grey strands pulled back into a low bun, simple faded floral cotton blouse. Realistic skin texture, sharp focus, 85mm lens, documentary realism, no text.
+```
+
+**id-minh.webp: Nguyễn Quang Minh, 27 tuổi, cháu ông Hậu**
+```text
+Vietnamese citizen ID card portrait photo, 2024, head and shoulders, front facing, neutral expression, plain pale blue studio background, even flat lighting. A 27-year-old slim Vietnamese young man, short undercut black hair, pale skin, dark circles under restless eyes, slight stubble, plain dark grey crew-neck t-shirt. Realistic skin texture, sharp focus, 85mm lens, documentary realism, no text.
+```
+
+**id-hoa.webp: Lâm Văn Hoà, 61 tuổi, buôn đồ cổ**
+```text
+Vietnamese citizen ID card portrait photo, 2024, head and shoulders, front facing, neutral confident expression, plain pale blue studio background, even flat lighting. A 61-year-old portly Vietnamese businessman and antique dealer, round full face, thinning combed-back hair, gold-rimmed rectangular glasses, navy blue polo shirt. Realistic skin texture, sharp focus, 85mm lens, documentary realism, no text.
+```
+
+**id-loc.webp: Đào Quang Lộc, 52 tuổi, thợ sửa đồng hồ**
+```text
+Vietnamese citizen ID card portrait photo, 2024, head and shoulders, front facing, neutral serious expression, plain pale blue studio background, even flat lighting. A 52-year-old lean Vietnamese watchmaker, short greying hair, thin moustache, hollow cheeks, narrow focused eyes, beige short-sleeve button shirt. Realistic skin texture, sharp focus, 85mm lens, documentary realism, no text.
+```
+
+**cover.webp (thay bìa mockup có chữ, 2,5 MB): 4:5, 1200×1500, dưới 400 KB, một phần ba dưới tối và trống**
+```text
+Cinematic night photograph inside an antique collector's study in a narrow tube house in Hanoi Old Quarter, March 2024, light drizzle outside. A dark wooden desk, below it a small steel combination safe stands open and empty. On the desk an open velvet watch box with an empty round hollow where a pocket watch used to lie, a brass desk lamp casting a warm amber pool of light. Behind, an old wooden casement window with one shattered glass pane, the glass broken outward, cold blue streetlight and rain mist seeping through; tiled rooftops and tangled power lines faintly visible beyond. A few small glass shards glinting on the windowsill. Moody chiaroscuro, warm and cold light, 35mm film grain, realistic, no people, no text. Vertical 4:5, safe and window in the upper two thirds, dark wooden floor in the lower third.
+```
+Negative: `text, letters, logo, watermark, police tape, box mockup, packaging, people, hands, cartoon, 3D render, CGI, oversaturated`
+
+---
+
 # Bảng Prompt Tạo Hình Chi Tiết: Chiếc đồng hồ ở ngõ Gác Chuông (Hồ sơ 00)
 ## (MASTER ART DIRECTION & IMAGE PROMPT GUIDE - CASE 00)
 

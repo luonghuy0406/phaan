@@ -3,18 +3,18 @@
     {
       "id": "demo-01",
       "no": 0,
-      "status": "coming-soon",
+      "status": "available",
       "kind": "fiction",
       "title": "Chiếc đồng hồ ở ngõ Gác Chuông",
-      "tagline": "Một đêm mất trộm, ba người trong nhà, một cánh cửa sổ vỡ.",
-      "difficulty": 1,
+      "tagline": "Cửa sổ vỡ, két sắt mở đúng mã, con chó becgie không sủa một tiếng.",
+      "difficulty": 2,
       "players": "1–4",
-      "duration": "20–30 phút",
+      "duration": "45–60 phút",
       "setting": "Phố cổ, Hà Nội (hư cấu)",
       "tags": [
         "Trộm cắp",
-        "Hồ sơ mẫu",
-        "Ngắn"
+        "Nhập môn",
+        "Phố cổ"
       ],
       "cover": "images/cover.webp"
     },

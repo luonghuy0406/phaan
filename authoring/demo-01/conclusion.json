@@ -1,0 +1,186 @@
+{
+  "_ghi_chu": "Đáp án phần báo cáo kết luận trước kiểm sát viên (AI). CHỨA LỜI GIẢI: chỉ nạp lên máy chủ (npm run sync-cases). keywords viết không dấu, chữ thường; probe không được lộ đáp án.",
+  "q7": {
+    "examiner": "Kiểm sát viên Nguyễn Thanh Bình",
+    "persona": "Kiểm sát viên Viện Kiểm sát nhân dân quận Hoàn Kiếm, gần năm mươi tuổi, điềm đạm nhưng rất kỹ, chỉ tin chứng cứ có trong hồ sơ.",
+    "intro": "Tôi là kiểm sát viên phụ trách vụ mất trộm ở ngõ Gác Chuông. Đồng chí trình bày kết luận, ngắn gọn, có căn cứ.",
+    "closing": "Báo cáo đủ căn cứ ở mọi điểm. Tôi đồng ý với kết luận điều tra.",
+    "points": [
+      {
+        "id": "nguoi-lay",
+        "ask": "Thứ nhất: ai đã lấy chiếc đồng hồ của ông Hậu? Căn cứ chính là gì?",
+        "facts": [
+          {
+            "id": "ten",
+            "text": "Người lấy là bà Phạm Thị Tư, người giúp việc.",
+            "keywords": [
+              "tu",
+              "giup viec",
+              "osin"
+            ],
+            "probe": "Đồng chí nói rõ người đó là ai."
+          },
+          {
+            "id": "can-cu",
+            "text": "Nêu ít nhất một căn cứ: bà biết ngày giỗ bà Lan (mã két); bà nói dối về chiếc áo nỉ; bà nộp 55 triệu tiền mặt viện phí ngay sáng 15/3; bà đi chợ Hàng Bè sát tiệm cầm đồ đúng giờ; bà giữ bản photo căn cước của Minh; người cầm đồ dáng nhỏ.",
+            "keywords": [
+              "ngay gio",
+              "am lich",
+              "ao ni",
+              "vien phi",
+              "55",
+              "hang be",
+              "di cho",
+              "can cuoc",
+              "photo",
+              "cam do",
+              "dang nho",
+              "thap",
+              "noi doi"
+            ],
+            "probe": "Căn cứ nào trong hồ sơ buộc được người này?"
+          }
+        ],
+        "hint": "Gợi ý: so lời ông Hậu về mã két với lời khai bổ sung của bà Tư và phiếu thu viện phí."
+      },
+      {
+        "id": "mo-ket",
+        "ask": "Thứ hai: két sắt được mở thế nào, và vì sao chỉ người đó mở được?",
+        "facts": [
+          {
+            "id": "ma",
+            "text": "Két mở bằng đúng mã, không cạy phá; mã là ngày giỗ bà Lan (vợ ông Hậu) tính theo âm lịch.",
+            "keywords": [
+              "am lich",
+              "ngay gio",
+              "gio ba",
+              "ba lan",
+              "gio vo"
+            ],
+            "probe": "Mã két được đặt theo cái gì?"
+          },
+          {
+            "id": "ai-biet",
+            "text": "Bà Tư nấu cỗ giỗ bà Lan 12 năm nên biết ngày đó; ông Hoà cũng biết nhưng ở Hải Phòng; Minh mới lên từ tháng Giêng chưa dự giỗ.",
+            "keywords": [
+              "nau co",
+              "co gio",
+              "12 nam",
+              "muoi hai nam",
+              "lo gio",
+              "lam gio"
+            ],
+            "probe": "Vì sao người đó biết được điều này?"
+          }
+        ],
+        "hint": "Gợi ý: lời khai của ông Hậu ở vòng 1."
+      },
+      {
+        "id": "dung-canh",
+        "ask": "Thứ ba: chuyện kẻ trộm trèo tường đập cửa sổ là thật hay dựng lên? Đồng chí căn cứ vào đâu?",
+        "facts": [
+          {
+            "id": "tu-trong",
+            "text": "Cửa sổ bị đập từ bên trong: mảnh kính văng ra sân sau, trong phòng chỉ vài mảnh; không có dấu leo, không thang, cửa sổ cao 4,2 m.",
+            "keywords": [
+              "ben trong",
+              "tu trong",
+              "ra ngoai",
+              "san sau",
+              "van ra",
+              "roi ra",
+              "khong co dau leo",
+              "thang"
+            ],
+            "probe": "Mảnh kính rơi về phía nào?"
+          },
+          {
+            "id": "cho",
+            "text": "Chó becgie không sủa, cổng và cửa chính cài từ bên trong.",
+            "keywords": [
+              "cho",
+              "muc",
+              "sua",
+              "cong",
+              "cai then"
+            ],
+            "required": false,
+            "probe": ""
+          }
+        ],
+        "hint": "Gợi ý: biên bản khám nghiệm hiện trường, mục cửa sổ."
+      },
+      {
+        "id": "cam-do",
+        "ask": "Thứ tư: ai đem chiếc đồng hồ đi cầm, và vì sao không phải anh Minh dù phiếu ghi tên anh ấy?",
+        "facts": [
+          {
+            "id": "nguoi-cam",
+            "text": "Bà Tư mặc áo nỉ xám (có vệt sơn) của Minh lấy trong giỏ đồ bẩn, dùng bản photo căn cước của Minh, cầm ở tiệm Phát Đạt phố Hàng Rèn lúc 8h15 sáng 15/3.",
+            "keywords": [
+              "ao ni",
+              "ao",
+              "can cuoc",
+              "photo",
+              "gio do",
+              "hang ren",
+              "phat dat"
+            ],
+            "probe": "Người cầm đồ dùng những thứ gì của anh Minh, và lấy chúng từ đâu?"
+          },
+          {
+            "id": "minh-ngoai-pham",
+            "text": "Lúc 8h15 Minh ở cạnh ông Hậu từ 7h50; chữ ký trên phiếu không phải của Minh; người cầm dáng thấp, Minh cao 1,78 m.",
+            "keywords": [
+              "ong hau",
+              "o canh",
+              "cung ong",
+              "chu ky",
+              "7h50",
+              "7 gio 50",
+              "1,78",
+              "cao",
+              "thap"
+            ],
+            "probe": "Lúc đó anh Minh đang ở đâu, ai xác nhận?"
+          }
+        ],
+        "hint": "Gợi ý: lời ông Hậu về buổi sáng 15/3 và kết luận giám định chữ ký."
+      },
+      {
+        "id": "dong-co",
+        "ask": "Cuối cùng: vì sao bà ấy làm việc này, và vì sao lại là đêm 14/3?",
+        "facts": [
+          {
+            "id": "chau",
+            "text": "Cháu nội bà (bé Bảo) phải mổ tim, cần nộp 55 triệu tạm ứng viện phí; bà xin ông Hậu ứng tiền nhưng ông hẹn để sau.",
+            "keywords": [
+              "chau",
+              "mo tim",
+              "vien phi",
+              "benh vien",
+              "55",
+              "mo"
+            ],
+            "probe": "Bà ấy cần tiền vào việc gì?"
+          },
+          {
+            "id": "han",
+            "text": "Hạn nộp tiền là trưa 15/3, nếu không mất lịch mổ ngày 18/3; đêm 14/3 ông Hậu vắng nhà.",
+            "keywords": [
+              "han",
+              "trua 15",
+              "15/3",
+              "lich mo",
+              "vang nha",
+              "hai phong",
+              "di vang"
+            ],
+            "probe": "Vì sao bà không đợi được thêm vài ngày?"
+          }
+        ],
+        "hint": "Gợi ý: phiếu thu tạm ứng viện phí của Bệnh viện Nhi Trung ương."
+      }
+    ]
+  }
+}

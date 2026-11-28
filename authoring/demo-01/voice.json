@@ -1,0 +1,54 @@
+{
+  "_ghi_chu": "Giọng đọc lấy thẳng chữ từ case.json (intro, beats, finale). Hồ sơ ở Hà Nội nên dùng giọng miền Bắc. Sửa chữ trong case.json rồi chạy: npm run gen-voice -- demo-01 và npm run gen-doc-voice -- demo-01",
+  "engine": "vieneu",
+  "voices": {
+    "dan": "Thiện Minh",
+    "khai": "Minh Đức",
+    "hau": "Thiền Tâm Đức",
+    "tu": "Ngọc Huyền",
+    "minh": "Hải Đăng",
+    "hoa": "Phạm Tuyên",
+    "loc": "Xuân Vĩnh"
+  },
+  "temperature": 0.8,
+  "clips": [
+    {
+      "id": "intro",
+      "source": "intro"
+    },
+    {
+      "id": "beat-2",
+      "source": "beat:2"
+    },
+    {
+      "id": "beat-3",
+      "source": "beat:3",
+      "quotes": [
+        "minh"
+      ]
+    },
+    {
+      "id": "finale",
+      "source": "finale",
+      "quotes": [
+        "dan",
+        {
+          "voice": "tu",
+          "before": "[thở dài]"
+        },
+        "hau"
+      ]
+    }
+  ],
+  "docs": {
+    "narrator": "dan",
+    "asker": "khai",
+    "speakers": {
+      "Trần Đức Hậu": "hau",
+      "Phạm Thị Tư": "tu",
+      "Nguyễn Quang Minh": "minh",
+      "Lâm Văn Hoà": "hoa",
+      "Đào Quang Lộc": "loc"
+    }
+  }
+}
