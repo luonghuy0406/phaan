@@ -54,7 +54,7 @@ add({'id': 'd03', 'stage': 1, 'type': 'report', 'title': 'Kết quả giám đ�
      'signature': 'Giám định viên: BS. Nguyễn Thị Hồng Vân'})
 
 add({'id': 'd04', 'stage': 1, 'type': 'scan', 'title': 'Sơ đồ trang trại hoa Lâm Viên',
-     'image': 'images/d03-so-do-trang-trai.webp', 'caption': 'Sơ đồ lập khi khám nghiệm. Kho lạnh số 2 giữ đá vảy và cành cúc vàng đại đoá xuất khẩu; mũi tên đỏ là vệt xe rùa từ phía kho xuống dốc thông.'})
+     'image': 'images/d03-so-do-trang-trai.webp', 'caption': 'Sơ đồ lập khi khám nghiệm. Kho lạnh số 2 giữ đá vảy và cành cúc vàng đại đoá xuất khẩu; đường đứt nét đỏ là vệt xe rùa từ cổng phụ cạnh kho xuống dốc thông.'})
 
 add({'id': 'd05', 'stage': 1, 'type': 'photo', 'title': 'Ảnh hiện trường dốc rừng thông',
      'image': 'images/d05-hien-truong.webp', 'label': 'Ảnh hiện trường số 1 · 15/12/2003',
