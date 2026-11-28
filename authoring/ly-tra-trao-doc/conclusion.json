@@ -1,0 +1,179 @@
+{
+  "_ghi_chu": "Đáp án báo cáo kết luận trước kiểm sát viên (AI). CHỨA LỜI GIẢI: chỉ nạp lên máy chủ. keywords không dấu, chữ thường.",
+  "q11": {
+    "examiner": "Kiểm sát viên Đỗ Thị Thanh Hương",
+    "persona": "Kiểm sát viên Viện Kiểm sát nhân dân thị xã Hưng Thái, ngoài bốn mươi, giọng Bắc, điềm tĩnh, hỏi rất kỹ về chứng cứ kỹ thuật.",
+    "intro": "Tôi là kiểm sát viên phụ trách vụ án ở khoa Dược. Đồng chí đề nghị truy tố hai người, nên tôi hỏi kỹ. Trả lời ngắn gọn, có căn cứ.",
+    "closing": "Báo cáo đủ căn cứ ở mọi điểm. Tôi đồng ý truy tố cả hai.",
+    "points": [
+      {
+        "id": "ai",
+        "ask": "Thứ nhất: những ai gây ra cái chết của chị Hân, và mỗi người giữ vai trò gì?",
+        "facts": [
+          {
+            "id": "nhung",
+            "text": "Đinh Thị Hồng Nhung, giám đốc Phúc An: chủ mưu, đặt trà, thuê giao hàng.",
+            "keywords": [
+              "nhung",
+              "phuc an",
+              "giam doc"
+            ],
+            "probe": "Đồng chí nói đủ tên những người gây án."
+          },
+          {
+            "id": "bao",
+            "text": "Vũ Quốc Bảo, phó khoa Dược: người lấy chất độc và bơm vào cốc.",
+            "keywords": [
+              "bao",
+              "pho khoa"
+            ],
+            "probe": "Còn ai nữa? Ai trực tiếp đưa chất độc vào cốc?"
+          },
+          {
+            "id": "vai-tro",
+            "text": "Phân rõ vai trò: một người đặt trà, đưa trà, giao hàng; một người tẩm độc.",
+            "keywords": [
+              "chu muu",
+              "dong pham",
+              "bom",
+              "tam doc",
+              "dat tra",
+              "giao hang",
+              "truc tiep"
+            ],
+            "probe": "Mỗi người đã làm phần việc gì?"
+          }
+        ],
+        "hint": "Gợi ý: camera bãi xe chiều 18/11 và trích kê sim 09xx xxx 418."
+      },
+      {
+        "id": "nham-vao",
+        "ask": "Thứ hai: cốc trà nhắm vào ai, và vì sao chị Hân lại uống?",
+        "facts": [
+          {
+            "id": "minh",
+            "text": "Mục tiêu là trưởng khoa Dược Phạm Đức Minh: thiệp gửi ông, ô long kem là món ông uống chiều thứ Sáu.",
+            "keywords": [
+              "minh",
+              "truong khoa"
+            ],
+            "probe": "Người bị nhắm tới là ai?"
+          },
+          {
+            "id": "nham",
+            "text": "Ông Minh họp ở Sở rồi về thẳng nhà, hai cốc để tủ lạnh; sáng thứ Bảy chị Hân trực, uống nhầm.",
+            "keywords": [
+              "hop",
+              "ve thang",
+              "tu lanh",
+              "truc",
+              "nham",
+              "khong ve"
+            ],
+            "probe": "Vì sao cốc trà không tới tay người đó?"
+          }
+        ],
+        "hint": "Gợi ý: tấm thiệp, lời khai của dược sĩ Trang và của ông Minh."
+      },
+      {
+        "id": "cach",
+        "ask": "Thứ ba: chất độc là gì, lấy từ đâu, và được đưa vào cốc thế nào?",
+        "facts": [
+          {
+            "id": "o-dau",
+            "text": "Aconitine, dịch chiết ô đầu chế lấy từ kho đông dược khoa Dược (Bảo xuất 200 g ngày 16/11).",
+            "keywords": [
+              "o dau",
+              "aconitine",
+              "aconitin",
+              "kho dong duoc"
+            ],
+            "probe": "Chất độc là gì, lấy ở đâu?"
+          },
+          {
+            "id": "tem",
+            "text": "Bóc tem decal hai cốc ô long kem, bơm bằng kim ở mép nắp rồi dán lại, trên ô tô của Bảo ở bãi xe; vân tay Bảo dưới tem.",
+            "keywords": [
+              "tem",
+              "decal",
+              "kim",
+              "xi lanh",
+              "o to",
+              "bai xe",
+              "van tay",
+              "mazda"
+            ],
+            "probe": "Chất độc vào cốc ở đâu, bằng cách nào mà nắp vẫn nguyên?"
+          }
+        ],
+        "hint": "Gợi ý: sổ kho đông dược và giám định nắp cốc."
+      },
+      {
+        "id": "loai-tru",
+        "ask": "Thứ tư: vì sao không phải anh Sơn, người từng dọa ông Minh, cũng không phải tài xế Tài?",
+        "facts": [
+          {
+            "id": "son",
+            "text": "Sơn làm ca ở cảng 13:52–22:07, có chấm công và camera.",
+            "keywords": [
+              "cang",
+              "cham cong",
+              "ca lam",
+              "boc xep"
+            ],
+            "probe": "Chiều 18/11 anh Sơn ở đâu?"
+          },
+          {
+            "id": "tai",
+            "text": "Tài chỉ mang túi đã dán kín, đi thẳng không dừng; độc nằm dưới tem quán, trước khi túi được dán.",
+            "keywords": [
+              "dan kin",
+              "bang dinh",
+              "khong dung",
+              "dinh vi",
+              "duoi tem",
+              "truoc khi"
+            ],
+            "probe": "Tài xế có cơ hội đụng vào cốc không?"
+          }
+        ],
+        "hint": "Gợi ý: xác minh ở cảng và nhật ký đơn giao hàng."
+      },
+      {
+        "id": "dong-co",
+        "ask": "Cuối cùng: vì sao hai người này cùng ra tay, và bằng chứng nào nối họ với nhau?",
+        "facts": [
+          {
+            "id": "don",
+            "text": "Ông Minh sắp gửi đơn tố cáo gói thầu khống 3,2 tỷ (hàng giao 54%), đòi làm rõ người ký kiểm đếm là Bảo.",
+            "keywords": [
+              "don",
+              "to cao",
+              "nghiem thu",
+              "3,2",
+              "khong",
+              "kiem dem",
+              "goi thau"
+            ],
+            "probe": "Ông Minh sắp làm gì khiến họ phải ra tay?"
+          },
+          {
+            "id": "lien-he",
+            "text": "Nhung chuyển 400 triệu vào tài khoản vợ Bảo; sim rác 418 trong điện thoại cũ của Nhung gọi Bảo; tin nhắn khôi phục.",
+            "keywords": [
+              "400",
+              "chuyen tien",
+              "sao ke",
+              "hoa hong",
+              "sim",
+              "imei",
+              "tin nhan"
+            ],
+            "probe": "Bằng chứng nào cho thấy hai người là đồng bọn?"
+          }
+        ],
+        "hint": "Gợi ý: hồ sơ nghiệm thu, sao kê ngân hàng và trích kê sim 418."
+      }
+    ]
+  }
+}

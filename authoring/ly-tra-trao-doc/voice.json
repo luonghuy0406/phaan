@@ -1,0 +1,69 @@
+{
+  "_ghi_chu": "Giọng đọc lấy thẳng chữ từ case.json. Hồ sơ ở Bắc Bộ nên dùng giọng Bắc. Chạy: npm run gen-voice -- ly-tra-trao-doc và npm run gen-doc-voice -- ly-tra-trao-doc",
+  "engine": "vieneu",
+  "voices": {
+    "dan": "Thiện Minh",
+    "dang": "Minh Đức",
+    "nhung": "Đoan Trang",
+    "bao": "Quốc Tuấn",
+    "son": "Xuân Vĩnh",
+    "tai": "Hải Đăng",
+    "minh": "Thiền Tâm Đức",
+    "trang": "Ngọc Huyền",
+    "baove": "Phạm Tuyên"
+  },
+  "temperature": 0.8,
+  "clips": [
+    {
+      "id": "intro",
+      "source": "intro"
+    },
+    {
+      "id": "beat-2",
+      "source": "beat:2"
+    },
+    {
+      "id": "beat-3",
+      "source": "beat:3",
+      "quotes": [
+        "baove"
+      ]
+    },
+    {
+      "id": "beat-4",
+      "source": "beat:4"
+    },
+    {
+      "id": "beat-5",
+      "source": "beat:5",
+      "quotes": [
+        "nhung"
+      ]
+    },
+    {
+      "id": "finale",
+      "source": "finale",
+      "quotes": [
+        {
+          "voice": "bao",
+          "before": "[thở dài]"
+        },
+        "dan",
+        "bao",
+        "nhung"
+      ]
+    }
+  ],
+  "docs": {
+    "narrator": "dan",
+    "asker": "dang",
+    "speakers": {
+      "Phạm Thu Trang": "trang",
+      "Phạm Đức Minh": "minh",
+      "Vũ Quốc Bảo": "bao",
+      "Lý Văn Tài": "tai",
+      "Hoàng Văn Sơn": "son",
+      "Đinh Thị Hồng Nhung": "nhung"
+    }
+  }
+}

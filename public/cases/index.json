@@ -276,21 +276,29 @@
     {
       "id": "ly-tra-trao-doc",
       "no": 13,
-      "status": "coming-soon",
-      "kind": "true-crime",
+      "status": "available",
+      "kind": "fiction",
       "title": "Ly trà tráo độc",
-      "tagline": "Nắp cốc dập màng kín không một vết rách, nhưng giọt độc dược natri xyanua đã chực chờ kẻ vô tội xấu số.",
-      "difficulty": 3,
-      "players": "2–5",
-      "duration": "75–90 phút",
-      "setting": "Bệnh viện Đa khoa tỉnh Thái Bình (tháng 12/2019)",
+      "tagline": "Túi trà sữa gửi trưởng khoa Dược chiều thứ Sáu. Sáng thứ Bảy, người uống nó là một cô gái không liên quan.",
+      "difficulty": 5,
+      "players": "2–6",
+      "duration": "120–150 phút",
+      "setting": "Bệnh viện Đa khoa thị xã Hưng Thái (hư cấu)",
       "tags": [
-        "Vụ án có thật",
-        "Dễ gây ám ảnh",
-        "Đầu độc Xyanua",
-        "Thái Bình 2019"
+        "Án mạng",
+        "Đầu độc",
+        "Đồng phạm",
+        "Bệnh viện"
       ],
-      "cover": "images/cover.webp"
+      "cover": "images/cover.webp",
+      "art": "images/cover.webp",
+      "artPos": "50% 22%",
+      "features": [
+        "ai",
+        "exam",
+        "voice",
+        "accomplice"
+      ]
     },
     {
       "id": "buc-thu-dem-tuyet-trang",
