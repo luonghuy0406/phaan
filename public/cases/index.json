@@ -91,21 +91,28 @@
     {
       "id": "suong-mu-trai-trai",
       "no": 4,
-      "status": "coming-soon",
+      "status": "available",
       "kind": "fiction",
       "title": "Sương mù Trại Mát",
-      "tagline": "Lò sấy hoa hồng rực lửa thâu đêm, nhưng sáng sớm người chủ vườn đã đông cứng ngoài bìa thông.",
+      "tagline": "Pháp y nói ông chủ trang trại hoa chết từ chiều. Nhưng lúc sáu giờ hai mươi tối, ông vẫn còn nghe điện thoại.",
       "difficulty": 3,
-      "players": "2–5",
-      "duration": "75–90 phút",
-      "setting": "Trang trại hoa Lâm Viên, Trại Mát, Đà Lạt (hư cấu)",
+      "players": "1–5",
+      "duration": "60–75 phút",
+      "setting": "Trang trại hoa Lâm Viên (hư cấu), Trại Mát, Đà Lạt",
       "tags": [
         "Án mạng",
-        "Bằng chứng ngoại phạm",
+        "Ngoại phạm",
         "Kho lạnh",
-        "Đà Lạt 2003"
+        "Đà Lạt"
       ],
-      "cover": "images/cover.webp"
+      "cover": "images/cover.webp",
+      "art": "images/art.webp",
+      "artPos": "55% 60%",
+      "features": [
+        "ai",
+        "exam",
+        "voice"
+      ]
     },
     {
       "id": "chuyen-tau-dem-muong-man",

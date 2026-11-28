@@ -1,3 +1,31 @@
+# Ảnh cho bản 2 (tháng 11/2026)
+
+Dùng lại d01, d03, d05, d11, d12. Bìa hộp game cũ đã thay bằng bìa tạm cắt từ d05 (độ phân giải thấp).
+
+## Ảnh thẻ (ghép 3 cột × 2 hàng)
+Cắt: `python3 tools/crop-portraits.py <ảnh> public/cases/suong-mu-trai-trai/images 2 3 khai duan mai dai toan -`
+
+```text
+A 3-column by 2-row grid of six Vietnamese ID card portrait photos from 2003, Da Lat, separated by thin white lines, each cell a head-and-shoulders front-facing shot, neutral expression, plain pale blue background, flat studio lighting, slightly faded colour, realistic skin texture, no text.
+Top row, left to right:
+(1) a 54-year-old Vietnamese flower farm owner, stern square face, short grey hair, thick eyebrows, brown wool cardigan over a white shirt;
+(2) a 46-year-old Vietnamese agricultural engineer, calm thin face, rimless glasses, neatly parted hair, dark grey wool sweater;
+(3) a 26-year-old Vietnamese woman, gentle face with red eyes as if from crying, long straight black hair, cream knitted sweater;
+Bottom row, left to right:
+(4) a 35-year-old Vietnamese flower trader, tanned round face, short spiky hair, faded denim jacket;
+(5) a 50-year-old Vietnamese farm security guard, weathered humble face, short grey hair, olive green jacket;
+(6) an empty plain pale blue cell.
+```
+
+## Bìa (khổ ngang hoặc 4:5; có chữ tên hồ sơ cũng được)
+
+```text
+Cinematic early-morning photograph of a hillside pine forest in Da Lat, Vietnam, thick white fog and frost on the pine needles, rows of greenhouse roofs of a flower farm faintly visible below through the mist, a single red rose petal on the frosty ground in the foreground, a wheelbarrow track in the red soil leading down the slope, cold blue and grey tones with a touch of red, 35mm film grain, realistic, no people.
+```
+Negative: `cartoon, 3D render, CGI, people, body, blood, text`
+
+---
+
 # Bảng Prompt Tạo Hình Chi Tiết: Sương mù Trại Mát (Hồ sơ 04)
 ## (MASTER ART DIRECTION & IMAGE PROMPT GUIDE - CASE 04)
 

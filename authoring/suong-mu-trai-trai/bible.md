@@ -1,35 +1,25 @@
-# Hồ sơ 04: Sương mù Trại Mát (Bible)
+# Kịch bản gốc: Sương mù Trại Mát (Hồ sơ 04, bản 2)
 
-## 1. Thông tin chung
-- **Mã hồ sơ**: `suong-mu-trai-trai`
-- **Số thứ tự**: Hồ sơ 04
-- **Tên hồ sơ**: Sương mù Trại Mát
-- **Tagline**: Lò sấy hoa hồng rực lửa thâu đêm, nhưng sáng sớm người chủ vườn đã đông cứng ngoài bìa thông.
-- **Bối cảnh**: Trang trại hoa Lâm Viên, Trại Mát, Đà Lạt, Lâm Đồng (hư cấu), rạng sáng mùa đông năm 2003.
-- **Thời lượng**: 75–90 phút
-- **Độ khó**: 3/5 (Vừa - Suy luận bằng chứng ngoại phạm và giả mạo thời gian tử vong)
-- **Số tài liệu**: 17 tài liệu chia làm 4 trọng điểm (Stage).
+Hư cấu. 4 vòng, 20 tài liệu, 9 câu hỏi, 60–75 phút, **độ khó 3 (vừa)**. Không có đồng phạm. Nội dung dựng bằng `build_case.py`.
+**Chứa lời giải.**
 
-## 2. Nạn nhân & Nghi phạm
-- **Nạn nhân**: Ông Lâm Khải (54 tuổi), chủ trang trại hoa hồng Lâm Viên rộng 5 hecta tại dốc Trại Mát. Tính khí nóng nảy, độc đoán.
-- **Nghi phạm 1**: Hoàng Văn Duẩn (46 tuổi), kỹ sư nông nghiệp kiêm quản lý kỹ thuật lò sấy và kho lạnh. Bị ông Khải ép chuyển giao độc quyền giống hồng nhung lai Pháp mà không trả tiền công sáng chế.
-- **Nghi phạm 2**: Lâm Tuyết Mai (26 tuổi), con gái nạn nhân. Mâu thuẫn gay gắt với cha vì bị cấm kết hôn và dọa xóa tên khỏi di chúc.
-- **Nghi phạm 3**: Trần Đại (35 tuổi), lái buôn hoa đường dài Đà Lạt - TP.HCM. Nợ ông Khải 80 triệu tiền hoa cúc tết, bị ông Khải đe dọa xiết xe tải.
+Bản 1 sai khoa học: cho rằng kho lạnh khiến pháp y ước giờ chết muộn hơn. Thực tế làm lạnh sâu làm thi thể nguội nhanh nên ước tính bị
+đẩy **sớm** hơn. Bản 2 dùng đúng chiều ấy: Duẩn có ngoại phạm buổi chiều, giết người sau đó và làm lạnh thi thể để giờ chết lùi về chiều.
+Giữ các ảnh có sẵn: d01, d03 (sơ đồ → d04), d05, d11 (nhiệt ký → d13), d12 (kho lạnh → d14). Bìa và ảnh nền thẻ cắt từ ảnh rừng thông sương muối.
 
-## 3. Sự thật & Thủ pháp phạm tội
-- **Hung thủ**: Hoàng Văn Duẩn.
-- **Động cơ**: Uất ức vì 5 năm lai tạo giống hồng quý bị chiếm đoạt, đồng thời biết ông Khải chuẩn bị sa thải mình sau vụ hoa Tết.
-- **Thủ pháp**:
-  - 18h30 chiều 14/12/2003: Sau cuộc cãi vã dữ dội tại văn phòng kho kỹ thuật, Duẩn dùng thanh sắt kẹp vỉ sấy đập vào gáy ông Khải rồi siết cổ nạn nhân đến chết.
-  - Ngụy tạo bằng chứng ngoại phạm: Duẩn đưa thi thể ông Khải vào phòng kho bảo quản lạnh sâu số 2 (chuyên dùng giữ hoa cúc xuất khẩu ở nhiệt độ 0°C đến 2°C).
-  - Kho lạnh khiến nhiệt độ tử thi tụt dốc cực nhanh, thúc đẩy co cứng tử thi (rigor mortis) diễn ra với tốc độ gấp 3 lần bình thường.
-  - Từ 20h30 đến 23h45: Duẩn thong thả đến trạm khí tượng Trại Mát cách đó 1km để đánh cờ tướng và uống trà với ông trưởng trạm, có đầy đủ người làm chứng.
-  - 00h30 đêm: Duẩn quay lại kho lạnh, dùng xe rùa đẩy thi thể ông Khải thả xuống bờ dốc ven rừng thông (cách cổng trang trại 300m) dưới làn sương mù dày đặc và nhiệt độ ngoài trời 11°C.
-  - Sáng hôm sau 06h30 khi phát hiện thi thể, bác sĩ pháp y đo nhiệt độ hậu môn và độ cứng khớp, ước tính thời điểm tử vong là 21h00 - 22h00 tối (trùng khớp hoàn hảo với thời điểm Duẩn đang đánh cờ).
-- **Chi tiết vạch trần**:
-  - Dép xốp của nạn nhân dính đá vảy băng nhân tạo (loại đá máy dăm chỉ dùng ướp chân cành hoa cúc trong kho lạnh).
-  - Áo len của nạn nhân dính lượng lớn hạt phấn hoa cúc vàng đại đóa xuất khẩu - loại cúc chỉ được lưu trữ trong kho lạnh số 2, trong khi hiện trường đồi thông chỉ có thông ba lá và cẩm tú cầu.
-  - Biểu đồ công tơ điện tử của kho lạnh số 2 ghi nhận cửa mở lâu và nhiệt độ dao động bất thường lúc 18h40 và 00h25.
-  - Mẩu tàn thuốc lá Bastos đỏ Duẩn hút bị rơi kẹt dưới tấm pallet nhựa trong kho lạnh số 2.
+## 1. Sự thật
+**Thủ phạm: Hoàng Văn Duẩn** (46), kỹ sư, quản lý lò sấy và kho lạnh.
+- 10/12/2003 ông Khải nộp đơn bảo hộ giống hồng "Lâm Viên Đỏ" đứng tên một mình; 12/12 Duẩn gọi Cục Trồng trọt và biết; thư sa thải
+  hiệu lực 1/2/2004.
+- 14/12: 13:30–18:15 Duẩn đánh cờ ở trạm khí tượng (cách 1 km), hỏi giờ liên tục. 18:19–18:23 Mai gọi bố (máy nhà ông Vĩnh). 18:25 Đại
+  ghé xin giãn nợ, ông Khải quát từ cửa sổ; 18:30 Đại đi. ~18:30 Duẩn vào cổng phụ (xe Cub sau kho), sát hại ông Khải ở văn phòng.
+  18:40 đưa vào buồng lạnh sâu kho số 2 (−18°C). 23:00 sương muối bắt đầu đọng. 00:25 lấy ra, xe rùa xuống dốc thông.
+- Pháp y sơ bộ ước 14:00–18:00 (thân nhiệt rất thấp) → trùng ngoại phạm. Bổ sung: tinh thể đá trong mô; chết 18:25–18:40.
 
-## 4. Cấu trúc câu hỏi & Trọng điểm (Đã nâng cấp độ khó x5)
+**Nghi phạm giả:** Mai (nói dối không gọi bố; ở phường 3 cả tối), Đại (nói dối không ghé; Bảo Lộc lúc 00:25), Toàn (lấy ví; không có chìa).
+
+## 2. Chuỗi suy luận
+- **Vòng 1 (7):** d00–d06. q1 thi thể bị chở tới sau khi sương đọng (d02). q2 evidence (d02, d04): từ kho lạnh số 2.
+- **Vòng 2 (6):** d07 Mai, d08 Đại, d09 ông Thao, d10 bưu điện, d11 sổ cổng, d12 Toàn. q3 line d07:004. q4 evidence (d10, d11).
+- **Vòng 3 (4):** d13 nhiệt ký + sổ kho, d14 ảnh kho (Bastos), d15 Toàn lần 2, d16 xác minh Đại, Mai. q5 evidence (d13, d15). q6 line d06:004.
+- **Vòng 4 (3):** d17 pháp y bổ sung, d18 Cục Trồng trọt, d19 khám xét nhà Duẩn. q7 evidence (d18, d19). q-accuse Duẩn. q8 kết luận + KSV AI.

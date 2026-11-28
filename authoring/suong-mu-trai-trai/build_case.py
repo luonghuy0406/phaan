@@ -1,0 +1,372 @@
+"""Dựng public/cases/suong-mu-trai-trai/case.json (bản 2, độ khó vừa). Chạy ở thư mục gốc:
+python3 authoring/suong-mu-trai-trai/build_case.py
+
+Lời giải: kỹ sư Hoàng Văn Duẩn. Thi thể bị giữ trong kho lạnh sâu để pháp y ước giờ chết sớm hơn, rơi vào ngoại phạm buổi chiều
+của Duẩn. Xem bible.md.
+"""
+import json
+import os
+
+CID = 'suong-mu-trai-trai'
+CA = ['Công an tỉnh Lâm Đồng', 'Phòng Cảnh sát hình sự']
+DTV = 'Điều tra viên'
+DTV_NAME = 'Thiếu tá Trịnh Quốc Bảo'
+
+
+def tl(name, *pairs):
+    return [{'n': i + 1, 'speaker': s or name, 'text': t} for i, (s, t) in enumerate(pairs)]
+
+
+D = []
+add = D.append
+
+# ───────────── Vòng 1: thi thể đã được dời tới ─────────────
+add({'id': 'd00', 'stage': 1, 'type': 'people', 'title': 'Nạn nhân và những người liên quan',
+     'paragraphs': ['Ảnh thẻ trích từ hồ sơ hộ khẩu, kèm lý do từng người được đưa vào diện xác minh sáng 15/12/2003.']})
+
+add({'id': 'd01', 'stage': 1, 'type': 'newspaper', 'title': 'Báo Lâm Đồng: Chủ trang trại hoa chết bên bìa rừng thông',
+     'masthead': 'Lâm Đồng', 'issue': 'Số 1.877', 'date': 'Thứ Ba, 16/12/2003',
+     'headline': 'Chủ trang trại hoa Lâm Viên tử vong dưới dốc thông Trại Mát',
+     'deck': 'Pháp y sơ bộ nhận định nạn nhân mất từ chiều hôm trước.',
+     'image': 'images/d01-bao-chi.webp', 'imageCaption': 'Cổng trang trại hoa Lâm Viên sáng 15/12.',
+     'paragraphs': [
+         'Sáng 15/12, công nhân trang trại hoa Lâm Viên (khu Trại Mát, Đà Lạt) phát hiện ông Lâm Khải (54 tuổi), chủ trang trại, nằm bất động dưới dốc rừng thông cách cổng khoảng 300 m.',
+         'Đêm qua Trại Mát có sương muối, nhiệt độ ngoài trời xuống 5°C. Theo nhận định ban đầu, ông Khải đi dạo bìa rừng từ chiều, bị tấn công và tử vong.',
+         'Ông Khải là người có tiếng trong nghề hoa, nổi tiếng nóng tính. Công an tỉnh Lâm Đồng đã vào cuộc.']})
+
+add({'id': 'd02', 'stage': 1, 'type': 'report', 'title': 'Biên bản khám nghiệm hiện trường dốc rừng thông',
+     'header': CA, 'heading': 'Biên bản khám nghiệm hiện trường', 'code': '204/KNHT', 'date': '07 giờ 30 ngày 15/12/2003',
+     'fields': [{'label': 'Địa điểm', 'value': 'Dốc rừng thông phía đông nam trang trại hoa Lâm Viên, Trại Mát, Đà Lạt'},
+                {'label': 'Người chết', 'value': 'Lâm Khải, 54 tuổi, chủ trang trại'}],
+     'sections': [
+         {'heading': '1. Tử thi', 'paragraphs': ['Nằm sấp trên lớp lá thông. Mặc áo len, đi dép xốp trong nhà. Bên cạnh có một đèn pin tắt, công tắc ở vị trí tắt, pin còn tốt.',
+                                                  '**Lớp lá thông ngay dưới tử thi ướt sương, đóng muối trắng như xung quanh.**']},
+         {'heading': '2. Vật bám', 'paragraphs': ['Kẽ dép xốp có vài mảnh nước đá vảy nhỏ chưa tan hết. Áo len dính nhiều hạt phấn màu vàng.']},
+         {'heading': '3. Dấu vết', 'paragraphs': ['Trên đất đỏ có một vệt bánh xe đơn (loại xe rùa) chạy từ hướng trang trại xuống, dừng cách tử thi 2 m, rồi quay ngược lên.']}],
+     'signers': [{'role': DTV, 'name': DTV_NAME}]})
+
+add({'id': 'd03', 'stage': 1, 'type': 'report', 'title': 'Kết quả giám định pháp y sơ bộ',
+     'header': ['Trung tâm Pháp y tỉnh Lâm Đồng'], 'heading': 'Kết quả giám định sơ bộ', 'code': '96/PY', 'date': 'Ngày 15 tháng 12 năm 2003',
+     'sections': [
+         {'heading': '1. Nguyên nhân', 'paragraphs': ['Vùng gáy có vết thương do vật cứng, dài; có dấu hiệu bị chèn ép vùng cổ. Tử vong do ngạt cơ học.']},
+         {'heading': '2. Thời gian', 'paragraphs': ['Lúc 7:45, thân nhiệt đo được rất thấp, gần bằng nhiệt độ môi trường. Căn cứ tốc độ nguội thông thường, tử vong ước tính **khoảng 14:00 đến 18:00 chiều 14/12**.',
+                                                    'Các ngón tay, vành tai cứng lạnh rõ rệt. Đã lấy mẫu mô để xét nghiệm bổ sung.']}],
+     'signature': 'Giám định viên: BS. Nguyễn Thị Hồng Vân'})
+
+add({'id': 'd04', 'stage': 1, 'type': 'scan', 'title': 'Sơ đồ trang trại hoa Lâm Viên',
+     'image': 'images/d03-so-do-trang-trai.webp', 'caption': 'Sơ đồ lập khi khám nghiệm. Kho lạnh số 2 giữ đá vảy và cành cúc vàng đại đoá xuất khẩu; mũi tên đỏ là vệt xe rùa từ phía kho xuống dốc thông.'})
+
+add({'id': 'd05', 'stage': 1, 'type': 'photo', 'title': 'Ảnh hiện trường dốc rừng thông',
+     'image': 'images/d05-hien-truong.webp', 'label': 'Ảnh hiện trường số 1 · 15/12/2003',
+     'caption': 'Vị trí tử thi (vạch phấn) và vệt bánh xe đơn trên đất đỏ, hướng từ trang trại xuống.'})
+
+add({'id': 'd06', 'stage': 1, 'type': 'testimony', 'title': 'Lời khai của kỹ sư Hoàng Văn Duẩn (quản lý kỹ thuật)',
+     'header': CA, 'heading': 'Biên bản ghi lời khai', 'date': '10 giờ 00 ngày 15/12/2003',
+     'fields': [{'label': 'Người khai', 'value': 'Hoàng Văn Duẩn, 46 tuổi, kỹ sư nông nghiệp, quản lý lò sấy và kho lạnh'}],
+     'lines': tl('Hoàng Văn Duẩn',
+         (DTV, 'Chiều 14/12 anh ở đâu?'),
+         (None, 'Từ một rưỡi đến sáu giờ mười lăm tôi ở trạm khí tượng Trại Mát đánh cờ với anh Thao, có cả hai cậu nhân viên trạm.'),
+         (DTV, 'Sau đó?'),
+         (None, 'Tôi về thẳng nhà ở dốc Trại Mát, không quay lại trang trại. Vợ con tôi đi Sài Gòn, tôi ăn mì rồi ngủ sớm.'),
+         (DTV, 'Quan hệ của anh với ông Khải?'),
+         (None, 'Giống hồng nhung lai tôi làm năm năm, anh Khải hứa đứng tên chung. Tôi tin anh ấy. Chúng tôi không có gì phải cãi nhau.')),
+     'signature': 'Người khai: Hoàng Văn Duẩn'})
+
+# ───────────── Vòng 2: ông Khải còn sống lúc 18:20 ─────────────
+add({'id': 'd07', 'stage': 2, 'type': 'testimony', 'title': 'Lời khai của Lâm Tuyết Mai (con gái nạn nhân)',
+     'header': CA, 'heading': 'Biên bản ghi lời khai', 'date': '14 giờ 00 ngày 15/12/2003',
+     'fields': [{'label': 'Người khai', 'value': 'Lâm Tuyết Mai, 26 tuổi'}],
+     'lines': tl('Lâm Tuyết Mai',
+         (DTV, 'Tối 14/12 chị ở đâu?'),
+         (None, 'Em ăn cơm ở nhà anh Vĩnh, người yêu em, ở phường 3, đến gần mười một giờ rồi ngủ lại nhà bạn gái gần đó.'),
+         (DTV, 'Hôm ấy chị có liên lạc với bố không?'),
+         (None, 'Không. Hôm ấy em không gọi điện cho bố. Từ tuần trước bố con em không nói chuyện với nhau.'),
+         (DTV, 'Vì sao?'),
+         (None, 'Bố cấm em cưới anh Vĩnh, nói sẽ gạch tên em khỏi di chúc. Em giận, nhưng em không bao giờ làm hại bố.')),
+     'signature': 'Người khai: Lâm Tuyết Mai'})
+
+add({'id': 'd08', 'stage': 2, 'type': 'testimony', 'title': 'Lời khai của Trần Đại (lái buôn hoa)',
+     'header': CA, 'heading': 'Biên bản ghi lời khai', 'date': '09 giờ 00 ngày 16/12/2003',
+     'fields': [{'label': 'Người khai', 'value': 'Trần Đại, 35 tuổi, lái buôn hoa tuyến Đà Lạt – TP Hồ Chí Minh'}],
+     'lines': tl('Trần Đại',
+         (DTV, 'Anh nợ ông Khải bao nhiêu?'),
+         (None, 'Tám chục triệu tiền cúc Tết năm ngoái. Ông Khải doạ xiết xe tải của tôi.'),
+         (DTV, 'Chiều tối 14/12 anh ở đâu?'),
+         (None, 'Tôi bốc hàng ở chợ đầu mối, năm giờ chiều chạy luôn xuống Sài Gòn, không ghé trang trại.'),
+         (DTV, 'Anh có thù ông Khải?'),
+         (None, 'Nợ thì trả, thù gì. Ông ấy chửi tôi trước mặt mấy chủ vựa, tôi tức thôi.')),
+     'signature': 'Người khai: Trần Đại'})
+
+add({'id': 'd09', 'stage': 2, 'type': 'testimony', 'title': 'Lời khai của ông Bùi Văn Thao (trưởng trạm khí tượng Trại Mát)',
+     'header': CA, 'heading': 'Biên bản ghi lời khai', 'date': '15 giờ 00 ngày 15/12/2003',
+     'fields': [{'label': 'Người khai', 'value': 'Bùi Văn Thao, 58 tuổi, trưởng trạm khí tượng Trại Mát'}],
+     'lines': tl('Bùi Văn Thao',
+         (DTV, 'Chiều 14/12 anh Duẩn ở trạm bao lâu?'),
+         (None, 'Từ một rưỡi đến sáu giờ mười lăm. Đánh bảy ván cờ, uống hết hai ấm trà. Hai cậu nhân viên đi quan trắc lúc năm giờ cũng thấy.'),
+         (DTV, 'Anh ấy có gì lạ không?'),
+         (None, 'Cứ hỏi giờ mãi, mấy lần nhìn đồng hồ. Sáu giờ mười lăm đứng dậy về ngay, ván cờ đang dở.'),
+         (DTV, 'Thời tiết đêm ấy thế nào?'),
+         (None, 'Sổ quan trắc ghi: sương mù từ tám giờ tối, **sương muối bắt đầu đọng khoảng mười một giờ đêm**, nhiệt độ thấp nhất năm độ lúc năm giờ sáng.')),
+     'signature': 'Người khai: Bùi Văn Thao'})
+
+add({'id': 'd10', 'stage': 2, 'type': 'report', 'title': 'Xác minh của bưu điện về cuộc gọi tới văn phòng trang trại',
+     'header': ['Bưu điện tỉnh Lâm Đồng', 'Trung tâm viễn thông Đà Lạt'], 'heading': 'Văn bản xác minh', 'code': '311/VT', 'date': 'Ngày 16/12/2003',
+     'sections': [
+         {'heading': 'Kết quả', 'paragraphs': ['Ngày 14/12/2003, máy văn phòng trang trại Lâm Viên nhận một cuộc gọi **từ 18:19 đến 18:23** (4 phút 10 giây), gọi từ máy cố định nhà ông Phạm Quang Vĩnh, phường 3, Đà Lạt.',
+                                                'Trước và sau đó, máy văn phòng không có cuộc gọi nào khác trong ngày.']}],
+     'signature': 'Giám đốc trung tâm: Lê Văn Hoà'})
+
+add({'id': 'd11', 'stage': 2, 'type': 'note', 'title': 'Trích sổ trực cổng chính trang trại Lâm Viên ngày 14/12',
+     'paragraphs': ['Sổ ghi tay của bảo vệ Vũ Đức Toàn:',
+                    '— 16:10: Xe tải hoa của công ty Hoa Sơn ra.',
+                    '__— 18:25: Xe tải 49K của anh Đại vào cổng. Anh Đại đứng dưới sân gọi lên văn phòng, ông chủ mở cửa sổ quát xuống. 18:30 xe ra.__',
+                    '— 19:00: Đóng cổng chính.',
+                    '(Cổng phụ phía kho lạnh không có người trực, chìa do anh Duẩn và ông chủ giữ.)'],
+     'signature': 'Vũ Đức Toàn'})
+
+add({'id': 'd12', 'stage': 2, 'type': 'testimony', 'title': 'Lời khai của Vũ Đức Toàn (bảo vệ trang trại)',
+     'header': CA, 'heading': 'Biên bản ghi lời khai', 'date': '11 giờ 00 ngày 15/12/2003',
+     'fields': [{'label': 'Người khai', 'value': 'Vũ Đức Toàn, 50 tuổi, bảo vệ, trực đêm ở chòi cổng chính'}],
+     'lines': tl('Vũ Đức Toàn',
+         (DTV, 'Đêm 14/12 anh trực thế nào?'),
+         (None, 'Tôi trực ở chòi cổng chính, mười giờ đóng đèn nằm, có gì động mới dậy.'),
+         (DTV, 'Sáng ra thì sao?'),
+         (None, 'Năm giờ năm mươi tôi đi tuần, thấy ông chủ nằm dưới dốc thông. Tôi chạy về gọi anh em công nhân.'),
+         (DTV, 'Anh có lấy gì trên người ông Khải không?'),
+         (None, 'Không. Tôi sợ quá, không dám đụng vào ông ấy.')),
+     'signature': 'Người khai: Vũ Đức Toàn'})
+
+# ───────────── Vòng 3: kho lạnh số 2 ─────────────
+add({'id': 'd13', 'stage': 3, 'type': 'evidence', 'title': 'Băng nhiệt ký kho lạnh số 2 và sổ ra vào kho',
+     'code': 'TV-07', 'image': 'images/d11-dong-ho-nhiet-do.webp', 'imageCaption': 'Băng nhiệt ký 24 giờ của kho lạnh số 2, ngày 14–15/12/2003 (ghi chú đỏ của Phòng Kỹ thuật hình sự).',
+     'fields': [{'label': 'Kho lạnh số 2', 'value': 'Buồng lạnh sâu khoảng −18°C giữ đá vảy; buồng đệm phía trước để thùng cúc vàng đại đoá'},
+                {'label': 'Chìa', 'value': 'Chỉ ông Lâm Khải và kỹ sư Hoàng Văn Duẩn giữ'}],
+     'paragraphs': ['Mỗi lần mở cửa buồng lạnh, nhiệt độ vọt lên, kim nhiệt ký vẽ một đỉnh nhọn. Ngày 14–15/12 có **hai lần mở cửa: 18:40 và 00:25**.',
+                    'Sổ ra vào kho (chữ anh Duẩn) chỉ ghi hai lần lấy đá cố định mỗi ngày: 6:00 và 16:00. **Không có dòng nào ghi 18:40 hay 00:25.**',
+                    'Phấn hoa cúc vàng đại đoá chỉ có ở buồng đệm kho lạnh số 2; trang trại không trồng loại cúc này ngoài vườn.']})
+
+add({'id': 'd14', 'stage': 3, 'type': 'photo', 'title': 'Ảnh khám nghiệm kho lạnh số 2',
+     'image': 'images/d12-kho-lanh.webp', 'label': 'Ảnh khám nghiệm số 3 · 16/12/2003',
+     'caption': 'Buồng lạnh sâu với máy làm đá vảy và kệ cúc vàng. Dưới pallet nhựa (số 3) có một bao thuốc Bastos xanh đã bóc. Ông Khải không hút thuốc.'})
+
+add({'id': 'd15', 'stage': 3, 'type': 'testimony', 'title': 'Biên bản ghi lời khai lần hai của Vũ Đức Toàn',
+     'header': CA, 'heading': 'Biên bản ghi lời khai', 'date': '09 giờ 00 ngày 17/12/2003',
+     'fields': [{'label': 'Người khai', 'value': 'Vũ Đức Toàn, 50 tuổi'}],
+     'lines': tl('Vũ Đức Toàn',
+         (DTV, 'Khám chòi bảo vệ thấy ví của ông Khải.'),
+         (None, '(Cúi đầu) Sáng ấy tôi thấy cái ví rơi cạnh ông chủ, có hai triệu. Tôi dại, nhét vào túi. Tôi không làm gì ông ấy cả.'),
+         (DTV, 'Tối 14/12 anh có thấy gì khác không?'),
+         (None, 'Sáu rưỡi tối tôi đi một vòng sau nhà kính thì thấy xe máy Cub của anh Duẩn dựng sau kho lạnh, cạnh cổng phụ. Tôi tưởng anh ấy ở lại kiểm tra máy đá.'),
+         (DTV, 'Đêm thì sao?'),
+         (None, 'Khoảng nửa đêm tôi dậy đi tiểu, thấy đèn kho lạnh sáng, rồi có tiếng xe rùa kẽo kẹt đi về phía dốc thông. Tôi nghĩ anh Duẩn đổ đá hỏng, nằm ngủ tiếp.')),
+     'signature': 'Người khai: Vũ Đức Toàn'})
+
+add({'id': 'd16', 'stage': 3, 'type': 'report', 'title': 'Biên bản xác minh nơi ở đêm 14/12 của Trần Đại và Lâm Tuyết Mai',
+     'header': CA, 'heading': 'Biên bản xác minh', 'code': '61/XM', 'date': 'Ngày 17/12/2003',
+     'sections': [
+         {'heading': '1. Trần Đại', 'paragraphs': ['Trạm thu phí Đức Trọng ghi xe tải 49K của Đại qua trạm lúc 19:08. Nhà nghỉ Hoa Mai (thị xã Bảo Lộc, cách Đà Lạt khoảng 110 km) ghi Đại nhận phòng 21:50, trả phòng 5:40 sáng 15/12; chủ nhà nghỉ uống bia với Đại đến 23:30.']},
+         {'heading': '2. Lâm Tuyết Mai', 'paragraphs': ['Gia đình ông Phạm Quang Vĩnh (phường 3) xác nhận Mai ăn tối ở nhà từ 18:00 đến 22:50; 18:19 Mai mượn máy bàn gọi về trang trại, "cãi nhau với bố, khóc". Bạn gái của Mai xác nhận Mai ngủ ở nhà mình từ 23:00.']}],
+     'signers': [{'role': DTV, 'name': DTV_NAME}]})
+
+# ───────────── Vòng 4: năm năm lai giống ─────────────
+add({'id': 'd17', 'stage': 4, 'type': 'report', 'title': 'Kết luận giám định pháp y bổ sung',
+     'header': ['Viện Pháp y Quốc gia', 'Phân viện TP Hồ Chí Minh'], 'heading': 'Kết luận giám định bổ sung', 'code': '1412/PY', 'date': 'Ngày 19/12/2003',
+     'sections': [
+         {'heading': '1. Mẫu mô', 'paragraphs': ['Mô ngón tay, vành tai có **tinh thể nước đá vi thể**: thi thể đã từng nằm ở nhiệt độ dưới 0°C trong nhiều giờ. Nhiệt độ ngoài trời đêm 14/12 thấp nhất 5°C.']},
+         {'heading': '2. Hệ quả', 'paragraphs': ['Thi thể bị làm lạnh sâu nguội nhanh hơn nhiều so với bình thường, khiến ước tính giờ chết dựa vào thân nhiệt bị **đẩy sớm lên nhiều giờ**.',
+                                                  'Kết hợp các dữ kiện khác, tử vong nhiều khả năng xảy ra **sau 18:25 và trước 18:40** ngày 14/12.']}],
+     'signature': 'Giám định viên: PGS. Trần Văn Lực'})
+
+add({'id': 'd18', 'stage': 4, 'type': 'letter', 'title': 'Văn bản của Cục Trồng trọt về đơn bảo hộ giống hồng "Lâm Viên Đỏ"',
+     'date': 'Hà Nội, ngày 18 tháng 12 năm 2003', 'greeting': 'Kính gửi: Phòng Cảnh sát hình sự, Công an tỉnh Lâm Đồng',
+     'paragraphs': [
+         'Ngày 10/12/2003, Cục nhận đơn đăng ký bảo hộ giống hồng nhung lai "Lâm Viên Đỏ", **tác giả và chủ sở hữu: Lâm Khải**. Đơn không ghi tên đồng tác giả.',
+         'Ngày 12/12, Cục nhận điện thoại của ông Hoàng Văn Duẩn hỏi về đơn này; cán bộ tiếp nhận đã đọc cho ông nghe tên người đứng đơn.',
+         'Theo hồ sơ kèm đơn, giống được lai tạo từ năm 1998 tại trang trại Lâm Viên.'],
+     'signature': 'Phó Cục trưởng: Nguyễn Văn Tuất'})
+
+add({'id': 'd19', 'stage': 4, 'type': 'report', 'title': 'Biên bản khám xét nhà Hoàng Văn Duẩn',
+     'header': CA, 'heading': 'Biên bản khám xét', 'code': '27/KX', 'date': '06 giờ 00 ngày 19/12/2003',
+     'sections': [
+         {'heading': 'Thu giữ', 'paragraphs': ['— Chìa kho lạnh số 2 và chìa cổng phụ.',
+                                                '— Ba bao thuốc Bastos xanh cùng lô với bao thu dưới pallet kho lạnh.',
+                                                '— Một thanh sắt kẹp vỉ sấy đã rửa, kẽ ren còn dấu vết sinh học (gửi giám định).',
+                                                '— Năm cuốn sổ lai tạo giống hồng 1998–2003, chữ của Duẩn; trang cuối ghi ngày 12/12: "Năm năm. Tên tôi không có."',
+                                                '— Một thư sa thải đánh máy, chữ ký Lâm Khải, ghi ngày hiệu lực 1/2/2004, gửi Hoàng Văn Duẩn.']}],
+     'signers': [{'role': DTV, 'name': DTV_NAME}]})
+
+CARDS = ['duan', 'mai', 'dai', 'toan']
+NAMES = ['Hoàng Văn Duẩn', 'Lâm Tuyết Mai', 'Trần Đại', 'Vũ Đức Toàn']
+Q = [
+    {'id': 'q1', 'stage': 1, 'type': 'choice', 'title': 'Ông Khải nằm ở dốc thông từ khi nào?',
+     'prompt': 'Báo chí nói ông Khải đi dạo bìa rừng từ chiều rồi bị tấn công. Theo hồ sơ đang mở, nhận định nào đứng vững?',
+     'options': ['Ông Khải bị tấn công ngay tại dốc thông lúc chiều, nằm đó suốt đêm trong sương muối.',
+                 'Ông Khải không chết ở dốc thông: thi thể được chở tới bằng xe rùa, và được đặt xuống sau khi sương đã đọng.',
+                 'Ông Khải tự đi bộ xuống dốc ban đêm bằng đèn pin, trượt ngã đập gáy rồi ngạt thở.'],
+     'answer': [1],
+     'nudges': {'0': {'message': 'Nếu nằm đó từ chiều, lớp lá thông ngay dưới thi thể có ướt sương như xung quanh không?'},
+                '2': {'message': 'Pháp y nói có dấu hiệu bị chèn ép cổ. Và người đi bộ đêm có đi dép xốp trong nhà, đèn pin tắt không?'}},
+     'hints': ['Đọc kỹ biên bản khám nghiệm.', 'Lớp lá dưới thi thể thế nào? Vệt bánh xe đi đâu?',
+               'd02: lá thông ngay dưới tử thi ướt sương như xung quanh; vệt xe rùa từ trang trại xuống rồi quay lên; dép xốp trong nhà, đèn pin tắt.'],
+     'solved': 'Thi thể được chở xuống dốc bằng xe rùa, sau khi sương đã phủ mặt đất.',
+     'explanation': [{'title': 'Lá dưới thi thể', 'body': ['d02: ướt sương, đóng muối như xung quanh. Thi thể đã được đặt xuống sau khi sương đọng.']},
+                     {'title': 'Xe rùa', 'body': ['d02, d05: vệt bánh xe đơn từ hướng trang trại xuống, dừng cạnh thi thể rồi quay lên.']},
+                     {'title': 'Trang phục', 'body': ['d02: dép xốp trong nhà, đèn pin tắt: không giống người đi dạo bìa rừng.']}]},
+    {'id': 'q2', 'stage': 1, 'type': 'evidence', 'need': 2, 'title': 'Đá vảy và phấn vàng',
+     'prompt': 'Ghim 2 tài liệu cho thấy trước khi tới dốc thông, ông Khải đã ở đâu.',
+     'answer': ['d02', 'd04'],
+     'nudges': [{'any': ['d05'], 'near': True, 'message': 'Ảnh cho thấy vệt xe. Cần tài liệu tả thứ bám trên người ông Khải và nơi có những thứ ấy.'}],
+     'hints': ['Một biên bản khám nghiệm, một sơ đồ.', 'Đá vảy và phấn vàng trên người ông Khải đến từ đâu trong trang trại?',
+               'd02: đá vảy trong kẽ dép, phấn vàng trên áo len. d04: kho lạnh số 2 giữ đá vảy và cúc vàng đại đoá; vệt xe rùa từ phía kho xuống dốc.'],
+     'solved': 'Ông Khải đã ở trong kho lạnh số 2 trước khi bị chở xuống dốc.',
+     'explanation': [{'title': 'Vật bám', 'body': ['d02: đá vảy chưa tan trong kẽ dép; phấn vàng trên áo len.']},
+                     {'title': 'Nguồn', 'body': ['d04: kho lạnh số 2 giữ đá vảy và cúc vàng đại đoá.']},
+                     {'title': 'Đường đi', 'body': ['d04, d05: vệt xe rùa từ phía kho xuống dốc thông.']}]},
+    {'id': 'q3', 'stage': 2, 'type': 'line', 'title': 'Bốn phút điện thoại',
+     'prompt': 'Một người khai không liên lạc với ông Khải ngày 14/12. Chỉ ra dòng khai bị tài liệu ở vòng này bác bỏ.',
+     'answer': ['d07:004'],
+     'nudges': {'d07:002': {'near': True, 'message': 'Câu này nói chị ăn cơm ở đâu. Tìm câu về liên lạc với bố.'},
+                'd08:004': {'message': 'Lời anh Đại cũng bị bác, nhưng bằng sổ cổng chứ không phải bưu điện. Câu hỏi này nói về liên lạc.'}},
+     'hints': ['Đọc văn bản của bưu điện.', 'Cuộc gọi lúc 18:19 gọi từ nhà ai?', 'd07 dòng 4: không gọi điện cho bố. d10: 18:19–18:23 có cuộc gọi từ máy nhà ông Vĩnh, người yêu Mai, tới văn phòng trang trại.'],
+     'solved': 'Mai đã gọi cho bố lúc 18:19. Ai đã nhấc máy ở văn phòng?',
+     'explanation': [{'title': 'Câu khai', 'body': ['d07 dòng 4: hôm ấy không gọi điện cho bố.']},
+                     {'title': 'Bị bác', 'body': ['d10: 18:19–18:23, máy nhà ông Vĩnh gọi văn phòng trang trại 4 phút.']},
+                     {'title': 'Điều quan trọng hơn', 'body': ['Cuộc gọi kéo dài bốn phút. Ở đầu kia có người nói chuyện.']}]},
+    {'id': 'q4', 'stage': 2, 'type': 'evidence', 'need': 2, 'title': 'Còn sống lúc sáu giờ hai mươi lăm',
+     'prompt': 'Pháp y ước ông Khải chết 14:00–18:00. Ghim 2 tài liệu cho thấy ông còn sống sau 18:15, nên ước tính ấy sai.',
+     'answer': ['d10', 'd11'],
+     'nudges': [{'any': ['d09'], 'near': True, 'message': 'Ông Thao xác nhận Duẩn ở trạm tới 18:15. Cần tài liệu cho thấy ông Khải còn sống sau đó.'}],
+     'hints': ['Một văn bản bưu điện, một sổ trực cổng.', 'Ai nói chuyện với ông Khải lúc 18:19? Ai nghe ông quát lúc 18:25?',
+               'd10: cuộc gọi 18:19–18:23 dài 4 phút tới văn phòng. d11: 18:25 ông chủ mở cửa sổ văn phòng quát anh Đại.'],
+     'solved': 'Ông Khải còn sống lúc 18:25. Thi thể đã bị làm lạnh cho nguội nhanh, để giờ chết lùi về buổi chiều.',
+     'explanation': [{'title': 'Cuộc gọi', 'body': ['d10: 18:19–18:23, máy văn phòng nói chuyện 4 phút.']},
+                     {'title': 'Sổ cổng', 'body': ['d11: 18:25 ông chủ mở cửa sổ quát xuống sân.']},
+                     {'title': 'Hệ quả', 'body': ['d03: ước tính 14:00–18:00 dựa vào thân nhiệt; nếu thi thể bị làm lạnh, ước tính sẽ sớm hơn giờ chết thật. Ngoại phạm buổi chiều mất giá trị.']}]},
+    {'id': 'q5', 'stage': 3, 'type': 'evidence', 'need': 2, 'title': '18:40 và 00:25',
+     'prompt': 'Ghim 2 tài liệu cho thấy thi thể nằm trong kho lạnh số 2 lúc nào, và ai đã đưa ra dốc.',
+     'answer': ['d13', 'd15'],
+     'nudges': [{'any': ['d14'], 'near': True, 'message': 'Ảnh kho cho thấy bao thuốc. Cần tài liệu ghi giờ mở kho và người thấy xe rùa.'}],
+     'hints': ['Một băng nhiệt ký, một lời khai.', 'Kho mở lúc nào ngoài lịch? Ai thấy xe máy và xe rùa?',
+               'd13: kho mở 18:40 và 00:25, không có trong sổ; chìa chỉ ông Khải và Duẩn. d15: 18:30 xe máy Duẩn dựng sau kho; nửa đêm đèn kho sáng, xe rùa đi về phía dốc.'],
+     'solved': 'Thi thể vào kho lúc 18:40, ra kho lúc 00:25. Người mở kho có chìa, và xe của anh ta dựng sau kho từ chiều.',
+     'explanation': [{'title': 'Nhiệt ký', 'body': ['d13: hai lần mở cửa 18:40 và 00:25, sổ kho không ghi.']},
+                     {'title': 'Chìa', 'body': ['d13: chỉ ông Khải và Duẩn giữ chìa kho số 2; d11: chìa cổng phụ cũng vậy.']},
+                     {'title': 'Nhân chứng', 'body': ['d15: 18:30 xe Cub của Duẩn sau kho; nửa đêm đèn kho sáng, xe rùa đi về phía dốc thông. d09: sương đọng từ 23:00.']}]},
+    {'id': 'q6', 'stage': 3, 'type': 'line', 'title': 'Chiếc Cub sau kho lạnh',
+     'prompt': 'Chỉ ra dòng khai bị lời khai lần hai của bảo vệ Toàn bác bỏ.',
+     'answer': ['d06:004'],
+     'nudges': {'d06:002': {'near': True, 'message': 'Ngoại phạm buổi chiều là thật (d09). Tìm câu nói về sau 18:15.'},
+                'd12:006': {'message': 'Câu ấy của chính Toàn và anh đã tự nhận. Câu hỏi nói về người khác.'}},
+     'hints': ['Toàn thấy xe của ai lúc 18:30?', 'Ai khai sau 18:15 về thẳng nhà?', 'd06 dòng 4: về thẳng nhà, không quay lại trang trại. d15: 18:30 xe Cub của Duẩn dựng sau kho lạnh; nửa đêm đèn kho sáng.'],
+     'solved': 'Duẩn đã quay lại trang trại ngay sau khi rời trạm khí tượng.',
+     'explanation': [{'title': 'Câu khai', 'body': ['d06 dòng 4: về thẳng nhà, không quay lại trang trại.']},
+                     {'title': 'Bị bác', 'body': ['d15: 18:30 xe Cub của Duẩn dựng sau kho lạnh, cạnh cổng phụ.']},
+                     {'title': 'Khớp', 'body': ['d09: 18:15 Duẩn bỏ dở ván cờ, đứng dậy về ngay; trạm cách trang trại khoảng 1 km.']}]},
+    {'id': 'q7', 'stage': 4, 'type': 'evidence', 'need': 2, 'title': 'Năm năm, tên tôi không có',
+     'prompt': 'Ghim 2 tài liệu cho thấy vì sao Duẩn ra tay, và tang vật nối anh với kho lạnh.',
+     'answer': ['d18', 'd19'],
+     'nudges': [{'any': ['d17'], 'near': True, 'message': 'Pháp y bổ sung xác nhận cách làm. Cần tài liệu về động cơ và tang vật.'}],
+     'hints': ['Một văn bản của Cục Trồng trọt, một biên bản khám xét.', 'Giống hồng đứng tên ai? Duẩn biết từ khi nào? Nhà Duẩn có gì?',
+               'd18: đơn bảo hộ "Lâm Viên Đỏ" chỉ đứng tên Lâm Khải; 12/12 Duẩn gọi hỏi và biết. d19: chìa kho, Bastos xanh cùng lô, thanh sắt kẹp vỉ sấy, sổ lai tạo "Năm năm. Tên tôi không có.", thư sa thải.'],
+     'solved': 'Hai ngày trước vụ án, Duẩn biết năm năm lai giống của mình đã thành tên người khác.',
+     'explanation': [{'title': 'Động cơ', 'body': ['d18: đơn bảo hộ chỉ đứng tên Lâm Khải; 12/12 Duẩn gọi lên Cục và biết. d19: thư sa thải hiệu lực 1/2/2004.']},
+                     {'title': 'Tang vật', 'body': ['d19: chìa kho số 2, thuốc Bastos xanh cùng lô với bao dưới pallet (d14), thanh sắt kẹp vỉ sấy.']},
+                     {'title': 'Lời nói dối', 'body': ['d06 dòng 6: "hứa đứng tên chung… không có gì phải cãi nhau".']}]},
+    {'id': 'q-accuse', 'stage': 4, 'type': 'choice', 'cards': CARDS, 'title': 'Chỉ mặt thủ phạm',
+     'prompt': 'Ai đã sát hại ông Lâm Khải? Chọn một người.',
+     'options': NAMES, 'answer': [0],
+     'nudges': {'1': {'message': 'Mai ở nhà ông Vĩnh đến 22:50 rồi ngủ nhà bạn (d16). Cuộc gọi của chị là bằng chứng bố chị còn sống lúc 18:23.'},
+                '2': {'message': 'Đại qua trạm thu phí Đức Trọng 19:08, ngủ ở Bảo Lộc từ 21:50 (d16). Ai mở kho lúc 00:25?'},
+                '3': {'message': 'Toàn lấy chiếc ví sáng 15/12 (d15), nhưng không có chìa kho lạnh (d13).'}},
+     'hints': ['Người làm cần: chìa kho lạnh số 2, có mặt ở trang trại 18:30–18:40 và 00:25.', 'Xe của ai dựng sau kho lạnh lúc 18:30?',
+               'Duẩn: rời trạm 18:15 (d09), xe sau kho 18:30 (d15), chìa kho (d13), Bastos (d14, d19), đơn bảo hộ giống (d18).'],
+     'solved': 'Hoàng Văn Duẩn.',
+     'explanation': [{'title': 'Thời gian', 'body': ['d09, d10, d11, d17: ông Khải còn sống 18:25, chết trước 18:40; Duẩn rời trạm 18:15.']},
+                     {'title': 'Kho lạnh', 'body': ['d13, d15: kho mở 18:40 và 00:25; chỉ Duẩn và ông Khải có chìa.']},
+                     {'title': 'Động cơ', 'body': ['d18, d19: giống hồng năm năm đứng tên ông Khải; thư sa thải.']}]},
+    {'id': 'q8', 'stage': 4, 'type': 'choice', 'title': 'Kết luận điều tra',
+     'prompt': 'Chọn bản kết luận đúng với hồ sơ ở mọi chi tiết.',
+     'options': [
+         'Duẩn rời trạm khí tượng lúc 18:15, vào trang trại bằng cổng phụ, sát hại ông Khải trong văn phòng khoảng 18:30 rồi đưa thi thể vào buồng lạnh sâu của kho số 2 lúc 18:40. Thi thể nguội nhanh khiến pháp y ước giờ chết rơi vào buổi chiều, đúng lúc Duẩn đang đánh cờ ở trạm. 00:25 Duẩn lấy thi thể ra, chở bằng xe rùa xuống dốc thông khi sương muối đã đọng. Động cơ là giống hồng năm năm lai tạo bị ông Khải đăng ký đứng tên một mình.',
+         'Trần Đại quay lại trang trại lúc 18:25 đòi giãn nợ, cãi nhau rồi sát hại ông Khải, nhờ bảo vệ Toàn cất thi thể vào kho lạnh lấy chìa trong văn phòng; nửa đêm Toàn chở thi thể ra dốc thông và lấy luôn chiếc ví, còn Đại chạy xe suốt đêm xuống Sài Gòn để có ngoại phạm; băng nhiệt ký mở kho 00:25 là lúc Toàn lấy thi thể ra, và đá vảy, phấn cúc bám vào người ông Khải khi nằm trong kho.',
+         'Lâm Tuyết Mai cãi nhau với bố qua điện thoại rồi bắt xe lên trang trại, sát hại ông Khải vì sợ bị gạch tên khỏi di chúc, rồi nhờ người yêu đưa thi thể vào kho lạnh bằng chìa dự phòng của gia đình; nửa đêm hai người chở thi thể ra dốc thông để làm như bị cướp; cuộc gọi 18:19 là do Mai cố tình gọi để tạo bằng chứng mình đang ở nhà người yêu.',
+         'Ông Khải chết lúc chiều tại dốc thông do bị kẻ lạ tấn công cướp ví khi đi dạo; bảo vệ Toàn phát hiện từ sớm nhưng giấu để lấy ví, còn đá vảy, phấn vàng và băng nhiệt ký chỉ là dấu vết công việc thường ngày của kho lạnh, không liên quan đến cái chết; ước tính giờ chết của pháp y là đúng và mọi người có ngoại phạm buổi chiều đều vô can.'],
+     'answer': [0],
+     'exam': {'examiner': 'Kiểm sát viên Lê Thị Bích Ngọc',
+              'intro': 'Trình bày kết luận trước kiểm sát viên: trả lời lần lượt từng câu hỏi bằng lời của mình. Không dùng được AI thì bấm “Trả lời bằng trắc nghiệm” để chọn bản kết luận đúng.'},
+     'nudges': {'1': {'message': 'Đại đã ở Bảo Lộc lúc 00:25 (d16), Toàn không có chìa kho (d13).'},
+                '2': {'message': 'Mai ở nhà ông Vĩnh đến 22:50 (d16), và chìa kho chỉ ông Khải và Duẩn giữ (d13).'},
+                '3': {'message': 'Lá dưới thi thể ướt sương (d02), ông Khải còn sống 18:25 (d10, d11), mô có tinh thể đá (d17).'}},
+     'hints': ['Đối chiếu: ông Khải còn sống 18:25 (d10, d11), kho mở 18:40 và 00:25 (d13), ai có chìa.', 'Chỉ một phương án giải thích được vì sao pháp y ước giờ chết vào buổi chiều.', 'Phương án A.'],
+     'solved': 'Hồ sơ khép lại với tên Hoàng Văn Duẩn.',
+     'explanation': [{'title': 'Ngoại phạm giả', 'body': ['d03, d17: thi thể bị làm lạnh sâu nên ước tính giờ chết bị đẩy sớm vào buổi chiều, đúng lúc Duẩn ở trạm (d09).']},
+                     {'title': 'Kho và xe rùa', 'body': ['d02, d13, d15: kho mở 18:40 và 00:25; xe rùa xuống dốc khi sương đã đọng.']},
+                     {'title': 'Vì sao', 'body': ['d18, d19: giống hồng "Lâm Viên Đỏ" đứng tên ông Khải; thư sa thải.']}]},
+]
+
+case = {
+    'id': CID, 'no': 4, 'status': 'available',
+    'title': 'Sương mù Trại Mát',
+    'subtitle': 'Một ngoại phạm hoàn hảo buổi chiều, và một kho lạnh mở cửa hai lần trong đêm',
+    'tagline': 'Pháp y nói ông chủ trang trại hoa chết từ chiều. Nhưng lúc sáu giờ hai mươi tối, ông vẫn còn nghe điện thoại.',
+    'difficulty': 3, 'players': '1–5', 'duration': '60–75 phút',
+    'setting': 'Trang trại hoa Lâm Viên (hư cấu), Trại Mát, Đà Lạt', 'era': 'Tháng 12/2003',
+    'tags': ['Án mạng', 'Ngoại phạm', 'Kho lạnh', 'Đà Lạt'], 'cover': 'images/cover.webp',
+    'contentWarning': 'Hồ sơ có mô tả một vụ sát hại. Trang trại, nhân vật và sự việc đều hư cấu.',
+    'synopsis': ['Sáng 15/12/2003, giữa sương muối Trại Mát, ông Lâm Khải, chủ trang trại hoa Lâm Viên, được tìm thấy dưới dốc rừng thông.',
+                 'Pháp y ước ông mất từ chiều, giờ mà người bị nghi nhiều nhất đang ngồi đánh cờ trước mặt ba nhân chứng.'],
+    'intro': {'title': 'Sương mù Trại Mát',
+              'paragraphs': ['Sáng 15/12/2003, sương muối phủ trắng vùng đồi Trại Mát. Bảo vệ trang trại hoa Lâm Viên phát hiện ông chủ Lâm Khải nằm sấp dưới dốc rừng thông, cách cổng 300 m.',
+                             'Pháp y sơ bộ: ông mất khoảng 14 đến 18 giờ chiều hôm trước. Đúng khoảng ấy, người quản lý kỹ thuật của ông ngồi đánh cờ ở trạm khí tượng cách đó một cây số.',
+                             'Bạn là điều tra viên Phòng Cảnh sát hình sự Công an tỉnh Lâm Đồng. Bốn người có lý do bị nghi. Hãy bắt đầu từ lớp lá thông dưới thi thể.'],
+              'objective': 'Tìm ra ông Khải chết lúc nào và ở đâu, vì sao pháp y ước sai giờ chết, ai đã làm và vì sao.'},
+    'victim': {'id': 'khai', 'name': 'Lâm Khải', 'age': 54, 'role': 'Chủ trang trại hoa Lâm Viên', 'image': 'images/id-khai.webp',
+               'note': 'Được tìm thấy dưới dốc rừng thông sáng 15/12/2003. Pháp y sơ bộ ước tử vong 14:00–18:00 ngày 14/12.'},
+    'suspects': [
+        {'id': 'duan', 'name': 'Hoàng Văn Duẩn', 'age': 46, 'role': 'Kỹ sư, quản lý lò sấy và kho lạnh', 'image': 'images/id-duan.webp', 'voice': 'M3',
+         'suspicion': 'Năm năm lai tạo giống hồng nhung cho ông Khải; người ngoài đồn hai người bất hoà chuyện đứng tên giống.'},
+        {'id': 'mai', 'name': 'Lâm Tuyết Mai', 'age': 26, 'role': 'Con gái nạn nhân', 'image': 'images/id-mai.webp', 'voice': 'F1',
+         'suspicion': 'Bị bố cấm cưới, doạ gạch tên khỏi di chúc.'},
+        {'id': 'dai', 'name': 'Trần Đại', 'age': 35, 'role': 'Lái buôn hoa', 'image': 'images/id-dai.webp', 'voice': 'M2',
+         'suspicion': 'Nợ ông Khải 80 triệu, bị doạ xiết xe tải.'},
+        {'id': 'toan', 'name': 'Vũ Đức Toàn', 'age': 50, 'role': 'Bảo vệ trang trại', 'image': 'images/id-toan.webp', 'voice': 'M4',
+         'suspicion': 'Người phát hiện thi thể; trực đêm ở chòi cổng chính.'}],
+    'aiInterrogation': True,
+    'audio': {'intro': 'audio/intro.mp3', 'finale': 'audio/finale.mp3'},
+    'documents': D,
+    'questions': Q,
+    'beats': [
+        {'stage': 2, 'kicker': 'Ngày 15–16/12/2003 · Đà Lạt', 'title': 'Ván cờ dang dở', 'voice': 'audio/beat-2.mp3',
+         'paragraphs': ['Ông Khải không chết ở dốc thông. Có người đã chở ông xuống đó khi sương muối đã phủ.',
+                        'Trưởng trạm khí tượng kể về một ván cờ bỏ dở. Bưu điện gửi về bản xác minh một cuộc gọi. Ở chòi cổng, cuốn sổ trực còn mấy dòng chữ nghiêng.',
+                        'Ông Khải còn sống đến lúc nào?']},
+        {'stage': 3, 'kicker': 'Ngày 16–17/12/2003 · Trang trại Lâm Viên', 'title': 'Kim nhiệt ký', 'voice': 'audio/beat-3.mp3',
+         'paragraphs': ['Thiếu tá Bảo cho tháo băng nhiệt ký của kho lạnh số 2. Đường mực đỏ chạy phẳng suốt ngày đêm, trừ hai đỉnh nhọn.',
+                        'Ở chòi bảo vệ, người ta tìm thấy một chiếc ví không phải của chủ chòi.',
+                        'Ai đã mở cửa kho lạnh, và vì sao lại là hai lần?']},
+        {'stage': 4, 'kicker': 'Ngày 18–19/12/2003', 'title': 'Lâm Viên Đỏ', 'voice': 'audio/beat-4.mp3',
+         'paragraphs': ['Một công văn từ Hà Nội gửi về, nói về một giống hồng nhung và một cái tên.',
+                        'Mẫu mô gửi vào Thành phố Hồ Chí Minh có kết quả.',
+                        'Chỉ mặt thủ phạm. Và giải thích vì sao.']}],
+    'finale': {'title': 'Sương mù Trại Mát',
+               'paragraphs': ['Hoàng Văn Duẩn khai nhận ngày 20/12/2003, khi năm cuốn sổ lai tạo của anh được đặt cạnh công văn của Cục Trồng trọt.',
+                              'Ngày 12/12, anh gọi ra Hà Nội và nghe đọc tên người đứng đơn giống hồng "Lâm Viên Đỏ": Lâm Khải, một mình. Hôm sau, trên bàn anh có thư sa thải.',
+                              'Chiều 14/12, anh ngồi đánh cờ ở trạm khí tượng, nhìn đồng hồ suốt. Sáu giờ mười lăm, anh bỏ dở ván cờ, đi cổng phụ vào trang trại. Ông Khải vừa đặt điện thoại xuống sau cuộc cãi nhau với con gái.',
+                              'Mười phút sau, Duẩn đẩy xe rùa vào buồng lạnh sâu, nơi anh vẫn giữ đá vảy cho cúc xuất khẩu. Anh biết rõ hơn ai hết: lạnh đủ lâu, thân nhiệt sẽ nói dối thay anh.',
+                              'Nửa đêm, anh đẩy xe rùa xuống dốc thông. Anh không biết sương muối đã đọng từ một giờ trước, và lớp lá dưới thi thể sẽ ướt như mọi chỗ khác.',
+                              'Anh chỉ nói một câu: "Năm năm. Tôi chỉ muốn tên tôi đứng cạnh tên ông ấy."']},
+    'epilogue': [
+        {'title': 'Hoàng Văn Duẩn', 'text': 'Bị truy tố về tội giết người. Năm cuốn sổ lai tạo được Mai đề nghị đưa vào hồ sơ bảo hộ giống, ghi tên anh là đồng tác giả.'},
+        {'title': 'Lâm Tuyết Mai', 'text': 'Tiếp quản trang trại. Mùa xuân năm sau, chị cưới anh Vĩnh ở nhà kính trồng hồng.'},
+        {'title': 'Trần Đại', 'text': 'Trả dần món nợ cho Mai, vẫn chở hoa Lâm Viên xuống Sài Gòn mỗi tuần.'},
+        {'title': 'Vũ Đức Toàn', 'text': 'Trả lại chiếc ví, bị cho nghỉ việc. Mai giữ anh lại làm vườn.'}],
+}
+
+for person in [case['victim'], *case['suspects']]:
+    if person.get('image') and not os.path.exists(f'public/cases/{CID}/' + person['image']):
+        print('chưa có ảnh:', person['image']); del person['image']
+if case['cover'] and not os.path.exists(f'public/cases/{CID}/' + case['cover']):
+    print('chưa có ảnh:', case['cover']); case['cover'] = None
+json.dump(case, open(f'public/cases/{CID}/case.json', 'w'), ensure_ascii=False, indent=2)
+open(f'public/cases/{CID}/case.json', 'a').write('\n')
+print(len(D), 'docs', len(Q), 'questions')

@@ -1,0 +1,141 @@
+{
+  "_ghi_chu": "Đáp án báo cáo kết luận trước kiểm sát viên (AI). CHỨA LỜI GIẢI. keywords không dấu.",
+  "q8": {
+    "examiner": "Kiểm sát viên Lê Thị Bích Ngọc",
+    "persona": "Kiểm sát viên Viện Kiểm sát nhân dân tỉnh Lâm Đồng, ngoài bốn mươi, điềm tĩnh, hỏi kỹ.",
+    "intro": "Tôi là kiểm sát viên phụ trách vụ trang trại Lâm Viên. Đồng chí trình bày kết luận, ngắn gọn, có căn cứ.",
+    "closing": "Báo cáo đủ căn cứ ở mọi điểm. Tôi đồng ý với kết luận điều tra.",
+    "points": [
+      {
+        "id": "ai",
+        "ask": "Thứ nhất: ai đã sát hại ông Lâm Khải?",
+        "facts": [
+          {
+            "id": "duan",
+            "text": "Hoàng Văn Duẩn, kỹ sư quản lý kho lạnh.",
+            "keywords": [
+              "duan",
+              "ky su"
+            ],
+            "probe": "Đồng chí nói rõ người đó là ai."
+          }
+        ],
+        "hint": "Gợi ý: băng nhiệt ký kho lạnh và lời khai lần hai của bảo vệ Toàn."
+      },
+      {
+        "id": "gio",
+        "ask": "Thứ hai: pháp y ước ông Khải chết 14 đến 18 giờ. Vì sao ước tính ấy sai, và ông chết khi nào?",
+        "facts": [
+          {
+            "id": "song",
+            "text": "Ông Khải còn sống 18:19–18:25 (cuộc gọi của Mai, sổ cổng ghi ông quát Đại).",
+            "keywords": [
+              "18:19",
+              "18:25",
+              "goi dien",
+              "cuoc goi",
+              "so cong",
+              "con song",
+              "quat"
+            ],
+            "probe": "Có bằng chứng nào ông còn sống sau 18:15?"
+          },
+          {
+            "id": "lanh",
+            "text": "Thi thể bị giữ trong buồng lạnh sâu nên thân nhiệt hạ nhanh, ước tính bị đẩy sớm về buổi chiều; mô có tinh thể đá.",
+            "keywords": [
+              "kho lanh",
+              "lanh sau",
+              "than nhiet",
+              "nguoi nhanh",
+              "tinh the",
+              "da",
+              "som hon",
+              "day som"
+            ],
+            "probe": "Điều gì làm ước tính giờ chết sai?"
+          }
+        ],
+        "hint": "Gợi ý: văn bản bưu điện, sổ cổng, pháp y bổ sung."
+      },
+      {
+        "id": "kho",
+        "ask": "Thứ ba: thi thể ở đâu từ lúc chết đến lúc được tìm thấy, và ai đưa đi?",
+        "facts": [
+          {
+            "id": "nhiet-ky",
+            "text": "Trong kho lạnh số 2 từ 18:40 đến 00:25 (băng nhiệt ký), chở bằng xe rùa xuống dốc sau khi sương muối đã đọng; chỉ Duẩn và ông Khải có chìa.",
+            "keywords": [
+              "18:40",
+              "00:25",
+              "nhiet ky",
+              "xe rua",
+              "suong",
+              "chia",
+              "kho so 2"
+            ],
+            "probe": "Băng nhiệt ký cho thấy gì? Ai có chìa?"
+          },
+          {
+            "id": "nhan-chung",
+            "text": "Bảo vệ Toàn thấy xe Cub của Duẩn sau kho lúc 18:30 và đèn kho, xe rùa lúc nửa đêm; đá vảy, phấn cúc trên người nạn nhân.",
+            "keywords": [
+              "cub",
+              "toan",
+              "bao ve",
+              "den kho",
+              "da vay",
+              "phan",
+              "cuc"
+            ],
+            "probe": "Ai nhìn thấy gì đêm đó?"
+          }
+        ],
+        "hint": "Gợi ý: biên bản khám nghiệm, băng nhiệt ký, lời Toàn."
+      },
+      {
+        "id": "dong-co",
+        "ask": "Thứ tư: vì sao Duẩn ra tay?",
+        "facts": [
+          {
+            "id": "giong",
+            "text": "Giống hồng 'Lâm Viên Đỏ' Duẩn lai tạo năm năm bị ông Khải đăng ký bảo hộ đứng tên một mình; Duẩn biết ngày 12/12 và bị sa thải.",
+            "keywords": [
+              "giong",
+              "hong",
+              "lam vien do",
+              "bao ho",
+              "dung ten",
+              "nam nam",
+              "sa thai",
+              "cuc trong trot"
+            ],
+            "probe": "Chuyện gì xảy ra hai ngày trước vụ án?"
+          }
+        ],
+        "hint": "Gợi ý: văn bản của Cục Trồng trọt, biên bản khám xét nhà Duẩn."
+      },
+      {
+        "id": "loai-tru",
+        "ask": "Cuối cùng: anh Đại ghé trang trại lúc 18:25 và nói dối. Vì sao không phải anh ấy?",
+        "facts": [
+          {
+            "id": "dai",
+            "text": "Đại rời trang trại 18:30, qua trạm thu phí Đức Trọng 19:08, ngủ Bảo Lộc từ 21:50 nên không thể mở kho lúc 00:25; không có chìa kho.",
+            "keywords": [
+              "duc trong",
+              "19:08",
+              "bao loc",
+              "nha nghi",
+              "00:25",
+              "khong co chia",
+              "thu phi"
+            ],
+            "probe": "Lúc kho mở lần hai, Đại ở đâu?"
+          }
+        ],
+        "hint": "Gợi ý: biên bản xác minh nơi ở của Đại và Mai."
+      }
+    ]
+  }
+}

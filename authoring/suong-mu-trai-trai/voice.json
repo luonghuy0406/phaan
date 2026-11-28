@@ -1,0 +1,54 @@
+{
+  "_ghi_chu": "Giọng đọc lấy thẳng chữ từ case.json. Đà Lạt: dẫn chuyện giọng Nam, nhân vật pha Bắc/Trung/Nam. Chạy: npm run gen-voice -- suong-mu-trai-trai và npm run gen-doc-voice -- suong-mu-trai-trai",
+  "engine": "vieneu",
+  "voices": {
+    "dan": "Thái Sơn",
+    "bao": "Minh Triết",
+    "duan": "Phạm Tuyên",
+    "mai": "Thục Đoan",
+    "dai": "Đức Trí",
+    "toan": "Quang Sơn",
+    "thao": "Thiền Tâm Đức"
+  },
+  "temperature": 0.8,
+  "clips": [
+    {
+      "id": "intro",
+      "source": "intro"
+    },
+    {
+      "id": "beat-2",
+      "source": "beat:2"
+    },
+    {
+      "id": "beat-3",
+      "source": "beat:3"
+    },
+    {
+      "id": "beat-4",
+      "source": "beat:4"
+    },
+    {
+      "id": "finale",
+      "source": "finale",
+      "quotes": [
+        "dan",
+        {
+          "voice": "duan",
+          "before": "[thở dài]"
+        }
+      ]
+    }
+  ],
+  "docs": {
+    "narrator": "dan",
+    "asker": "bao",
+    "speakers": {
+      "Hoàng Văn Duẩn": "duan",
+      "Lâm Tuyết Mai": "mai",
+      "Trần Đại": "dai",
+      "Bùi Văn Thao": "thao",
+      "Vũ Đức Toàn": "toan"
+    }
+  }
+}
