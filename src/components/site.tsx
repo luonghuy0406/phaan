@@ -1,27 +1,81 @@
-import { Link } from 'react-router-dom';
+import { useEffect, useState } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import { SITE } from '../lib/config';
 import { caseBase, caseNo, caseKind } from '../lib/data';
 import type { CaseSummary } from '../lib/types';
 import { AccountChip } from './auth';
 import { useCanInstall, openInstall } from './install';
 
-export function Brand() {
-  return <Link className="brand" to="/"><span className="brand__mark" aria-hidden="true" /><span>{SITE.name}</span></Link>;
+export function scrollToSection(id: string): boolean {
+  const el = document.getElementById(id);
+  if (!el) return false;
+  const anchor = el.parentElement?.classList.contains('pin-spacer') ? el.parentElement : el;
+  const navH = document.querySelector<HTMLElement>('.nav')?.offsetHeight ?? 65;
+  const isPinnedHow = id === 'how' && anchor !== el;
+  const pad = isPinnedHow ? 0 : navH + 10;
+  const top = Math.max(0, anchor.getBoundingClientRect().top + window.scrollY - pad);
+  const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  window.scrollTo({ top, behavior: reduced ? 'auto' : 'smooth' });
+  return true;
 }
 
-export function Nav({ cta = { to: '/#catalog', label: 'Chơi ngay' } }: { cta?: { to: string; label: string } }) {
+export function Brand() {
   return (
-    <header className="nav">
+    <Link
+      className="brand"
+      to="/#top"
+      onClick={(e) => {
+        if (window.location.pathname === '/') {
+          e.preventDefault();
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+      }}
+    >
+      <span className="brand__mark" aria-hidden="true">
+        <svg viewBox="0 0 20 20" fill="none">
+          <path d="M2.5 4.5h6l1.8 2H17.5v9.5h-15V4.5z" stroke="currentColor" strokeWidth="1.5" />
+          <circle cx="10" cy="11.2" r="2.2" fill="var(--red-2)" />
+        </svg>
+      </span>
+      <span className="brand__text">
+        <b>{SITE.name}</b>
+        <small>Kho lưu trữ vụ án</small>
+      </span>
+    </Link>
+  );
+}
+
+export function Nav({ cta = { to: '/#catalog', label: 'Mở kho hồ sơ' } }: { cta?: { to: string; label: string } }) {
+  const { pathname, hash } = useLocation();
+  const [scrolled, setScrolled] = useState(false);
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 12);
+    onScroll();
+    window.addEventListener('scroll', onScroll, { passive: true });
+    return () => window.removeEventListener('scroll', onScroll);
+  }, []);
+  const handleHashLink = (to: string) => (e: React.MouseEvent) => {
+    const idx = to.indexOf('#');
+    if (idx < 0 || pathname !== '/') return;
+    const targetHash = to.slice(idx);
+    if (hash === targetHash) {
+      e.preventDefault();
+      scrollToSection(targetHash.slice(1));
+    }
+  };
+  return (
+    <header className={`nav${scrolled ? ' is-scrolled' : ''}`}>
       <div className="wrap nav__inner">
         <Brand />
         <nav className="nav__links" aria-label="Điều hướng chính">
-          <Link to="/#catalog">Kho hồ sơ</Link>
-          <Link to="/#how">Cách chơi</Link>
-          <Link to="/#faq">Hỏi đáp</Link>
-          <Link to="/tham-gia">Tham gia phòng</Link>
+          <Link to="/#how" onClick={handleHashLink('/#how')}>Quy trình</Link>
+          <Link to="/#inside" onClick={handleHashLink('/#inside')}>Bàn điều tra</Link>
+          <Link to="/#catalog" onClick={handleHashLink('/#catalog')}>Kho hồ sơ</Link>
+          <Link to="/#faq" onClick={handleHashLink('/#faq')}>Hỏi đáp</Link>
+          <Link to="/tham-gia">Phòng 6 số</Link>
         </nav>
         <AccountChip />
-        <Link className="btn btn--primary btn--small" to={cta.to}>{cta.label}</Link>
+        <Link className="btn btn--primary btn--small" to={cta.to} onClick={handleHashLink(cta.to)}>{cta.label}</Link>
       </div>
     </header>
   );
@@ -29,13 +83,50 @@ export function Nav({ cta = { to: '/#catalog', label: 'Chơi ngay' } }: { cta?: 
 
 export function Footer() {
   const canInstall = useCanInstall();
+  const { pathname, hash } = useLocation();
+  const goHash = (to: string) => (e: React.MouseEvent) => {
+    const idx = to.indexOf('#');
+    if (idx >= 0 && pathname === '/' && hash === to.slice(idx)) {
+      e.preventDefault();
+      scrollToSection(to.slice(idx + 1));
+    }
+  };
   return (
     <footer className="footer">
-      <div className="wrap footer__inner">
-        <Brand />
-        <p>Mọi nhân vật và sự kiện trong các hồ sơ đều là hư cấu.</p>
-        {canInstall && <button type="button" className="link-btn" onClick={openInstall}>Cài ứng dụng lên màn hình chính</button>}
-        <p>© {new Date().getFullYear()} {SITE.name}</p>
+      <div className="wrap">
+        <div className="foot-cols">
+          <div className="foot-brand">
+            <Brand />
+            <p className="foot-note">{SITE.tagline}. Trải nghiệm bàn điều tra trực quan trên trình duyệt, viết tay bằng Apple Pencil và thẩm vấn nghi phạm AI.</p>
+            {canInstall && (
+              <button type="button" className="link-btn" onClick={openInstall}>Cài ứng dụng lên màn hình chính →</button>
+            )}
+          </div>
+          <div>
+            <h4>Điều hướng</h4>
+            <Link to="/#how" onClick={goHash('/#how')}>Quy trình 4 bước</Link>
+            <Link to="/#inside" onClick={goHash('/#inside')}>Bàn điều tra mẫu</Link>
+            <Link to="/#catalog" onClick={goHash('/#catalog')}>Kho hồ sơ</Link>
+            <Link to="/#faq" onClick={goHash('/#faq')}>Câu hỏi thường gặp</Link>
+          </div>
+          <div>
+            <h4>Hồ sơ nổi bật</h4>
+            <Link to="/ho-so/demo-01">00 · Ngõ Gác Chuông</Link>
+            <Link to="/ho-so/con-nuoc-ram-thang-gieng">01 · Con nước Rằm tháng Giêng</Link>
+            <Link to="/ho-so/chuyen-tau-dem-muong-man">05 · Chuyến tàu đêm Mường Mán</Link>
+            <Link to="/ho-so/vet-muc-lang-dong-ho">12 · Vết mực làng Đông Hồ</Link>
+          </div>
+          <div>
+            <h4>Chế độ chơi</h4>
+            <Link to="/#featured" onClick={goHash('/#featured')}>Chơi một mình</Link>
+            <Link to="/tham-gia">Nhập mã phòng 6 số</Link>
+            <Link to="/dang-nhap">Đồng bộ tiến độ cloud</Link>
+          </div>
+        </div>
+        <div className="foot-fine">
+          <span>© {new Date().getFullYear()} {SITE.name} · Phiên bản web &amp; iPad PWA</span>
+          <span>Nhân vật, địa danh và cơ quan trong trò chơi hư cấu đều do tác giả xây dựng.</span>
+        </div>
       </div>
     </footer>
   );
@@ -109,50 +200,45 @@ export function CaseCard({ entry, compact = false }: { entry: CaseSummary; compa
   );
 }
 
-const FEATURE_LABEL: Record<string, string> = {
-  ai: 'Thẩm vấn nghi phạm bằng AI',
-  exam: 'Báo cáo trước kiểm sát viên',
-  voice: 'Giọng đọc tài liệu',
-  accomplice: 'Có đồng phạm',
-  starter: 'Nên chơi đầu tiên',
-};
-const FEATURE_SHORT: Record<string, string> = { ai: 'Thẩm vấn AI', exam: 'Kiểm sát viên AI', voice: 'Giọng đọc', accomplice: 'Đồng phạm', starter: 'Nhập môn' };
+const FEATURE_SHORT: Record<string, string> = { ai: 'Thẩm vấn AI', exam: 'Kiểm sát AI', voice: 'Giọng đọc', accomplice: 'Đồng phạm', starter: 'Nhập môn' };
 const DIFF_WORD = ['', 'Rất dễ', 'Dễ', 'Vừa', 'Khó', 'Rất khó'];
 
-/** Catalog card for a case that can be played now: a wide scene photo, the case name over it, and what it offers. */
+/** Archival folder card for an available case on the home shelf. */
 export function ReleasedCard({ entry, lead = false }: { entry: CaseSummary; lead?: boolean }) {
   const real = caseKind(entry) === 'true-crime';
   const img = entry.art || entry.cover;
   const feats = (entry.features || []).filter((f) => FEATURE_SHORT[f]);
   const starter = feats.includes('starter');
+  const modList = feats.filter((f) => f !== 'starter');
+  const place = entry.setting ? entry.setting.replace(/\s*\(hư cấu\)/gi, '') : '';
   return (
-    <Link className={`cat-card${lead ? ' cat-card--lead' : ''}${real ? ' cat-card--real' : ''}`} to={`/ho-so/${entry.id}`}>
-      <div className="cat-card__art">
-        {img ? <img src={caseBase(entry.id) + img} alt="" loading="lazy" style={entry.artPos ? { objectPosition: entry.artPos } : undefined} /> : <span className="cat-card__blank" />}
-        <span className="cat-card__shade" aria-hidden="true" />
-        <span className="cat-card__flags">
-          <span className="cat-card__no">{caseNo(entry)}</span>
-          {starter && <span className="cat-flag cat-flag--start">Bắt đầu từ đây</span>}
-          {real && <span className="cat-flag cat-flag--real">Vụ án có thật</span>}
-        </span>
-        <span className="cat-card__head">
-          <span className="cat-card__setting">{entry.setting}</span>
-          <span className="cat-card__title">{entry.title}</span>
+    <Link className={`file${lead ? ' file--lead' : ''}${starter ? ' file--starter' : ''}${real ? ' file--real' : ''}`} to={`/ho-so/${entry.id}`}>
+      <div className="file__tab">
+        <span className="file__tab-no">{caseNo(entry)}</span>
+        <span className="file__tab-tag">
+          {starter ? 'Nhập môn' : real ? 'Vụ án có thật' : 'Đang mở'}
         </span>
       </div>
-      <div className="cat-card__body">
-        {entry.tagline && <p className="cat-card__tag">{entry.tagline}</p>}
-        <dl className="cat-card__meta">
+      <div className="file__art">
+        {img ? <img src={caseBase(entry.id) + img} alt="" loading="lazy" style={entry.artPos ? { objectPosition: entry.artPos } : undefined} /> : <span className="file__blank" />}
+        <div className="file__cap">
+          {entry.tagline && <p>{entry.tagline}</p>}
+          <span>Mở tệp hồ sơ →</span>
+        </div>
+      </div>
+      <div className="file__meta">
+        {place && <span className="file__place">{place}</span>}
+        <h3>{entry.title}</h3>
+        {!!modList.length && (
+          <ul className="file__feats" aria-label="Tính năng hồ sơ">
+            {modList.slice(0, 3).map((f) => <li key={f}>{FEATURE_SHORT[f]}</li>)}
+          </ul>
+        )}
+        <dl className="file__specs">
           <div><dt>Độ khó</dt><dd><Difficulty level={entry.difficulty} /> <span>{DIFF_WORD[entry.difficulty || 0]}</span></dd></div>
           <div><dt>Người chơi</dt><dd>{entry.players || '1–6'}</dd></div>
           <div><dt>Thời lượng</dt><dd>{entry.duration || '—'}</dd></div>
         </dl>
-        {!!feats.length && (
-          <ul className="cat-card__feats">
-            {feats.filter((f) => f !== 'starter').map((f) => <li key={f} title={FEATURE_LABEL[f]} className={`feat feat--${f}`}>{FEATURE_SHORT[f]}</li>)}
-          </ul>
-        )}
-        <span className="cat-card__cta">Mở hồ sơ <span aria-hidden="true">→</span></span>
       </div>
     </Link>
   );

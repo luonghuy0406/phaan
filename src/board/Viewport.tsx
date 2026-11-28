@@ -13,9 +13,9 @@ import { useGesture } from '@use-gesture/react';
 import { useBoard, surfaceBox } from './context';
 import { useUi } from './ui';
 import { MIN_Z, MAX_Z } from './camera';
-import { worldToLocal, type Box } from './geometry';
+import { clamp, worldToLocal, type Box } from './geometry';
 import { hitStroke, strokeLength, strokePath } from './ink';
-import { uid } from './store';
+import { uid, type End } from './store';
 import { DocItem, NotesLayer, StageMarks, Strings, SurfaceInk } from './items';
 import { DEFAULT_WIDTH } from './papers';
 
@@ -243,7 +243,7 @@ export function Viewport() {
       e.stopPropagation();
       return;
     }
-    if (ink.current) return;
+    if (ink.current || ui.pendingString) return;
     if (t.closest(UI_SEL)) return; // includes text boxes, so iPadOS Scribble keeps working there
     const tool = ui.tool;
     const inkTool = tool === 'pen' || tool === 'marker' || tool === 'eraser';
@@ -295,19 +295,52 @@ export function Viewport() {
   }
 
   /* ── taps ── */
+  function pointEnd(doc: string | undefined, note: string | undefined, key: string | undefined, clientX: number, clientY: number): End | null {
+    const w = cam.toWorld(clientX, clientY);
+    if (doc) {
+      const box = surfaceBox(ctx, `doc:${doc}`);
+      if (!box) return key ? { doc, key } : { doc };
+      const l = worldToLocal(w.x, w.y, box);
+      return {
+        doc,
+        ...(key ? { key } : {}),
+        x: Math.round(clamp(l.x, 8, Math.max(8, box.w - 8))),
+        y: Math.round(clamp(l.y, 10, Math.max(10, box.h - 8))),
+      };
+    }
+    if (note) {
+      const box = surfaceBox(ctx, `note:${note}`);
+      if (!box) return { note };
+      return {
+        note,
+        x: Math.round(clamp(w.x - box.x, 8, Math.max(8, box.w - 8))),
+        y: Math.round(clamp(w.y - box.y, 10, Math.max(10, box.h - 8))),
+      };
+    }
+    return null;
+  }
+
   function handleTap(target: Element | null, x: number, y: number) {
-    if (!target || target.closest(UI_SEL)) return;
+    if (!target) return;
     const ui = useUi.getState();
     const st = store.getState();
     const blk = target.closest<HTMLElement>('[data-key]');
     const docEl = target.closest<HTMLElement>('[data-doc]');
     const noteEl = target.closest<HTMLElement>('[data-note]');
+    const strEl = target.closest<HTMLElement>('[data-str]');
     const doc = docEl?.dataset.doc;
+    const note = noteEl?.dataset.note;
 
     if (ui.pendingString) {
-      const end = doc ? (blk ? { doc, key: blk.dataset.key! } : { doc }) : noteEl ? { note: noteEl.dataset.note! } : null;
+      if (target.closest('[data-ui]')) return;
+      const end = pointEnd(doc, note, blk?.dataset.key, x, y);
       if (end) ui.showToast(st.addString(ui.pendingString, end) ? 'Đã nối dây đỏ.' : 'Không nối được: chọn một điểm khác.');
       ui.set({ pendingString: null });
+      return;
+    }
+    if (target.closest(UI_SEL)) return;
+    if (strEl && ui.tool === 'move') {
+      ui.set({ menu: { target: { kind: 'string', id: strEl.dataset.str! }, x, y } });
       return;
     }
     if (ui.tool === 'note' && !docEl && !noteEl && !target.closest('[data-seal]')) {

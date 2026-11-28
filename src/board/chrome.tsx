@@ -1,7 +1,8 @@
 import { useEffect, useLayoutEffect, useRef, useState, useSyncExternalStore } from 'react';
 import { Link } from 'react-router-dom';
 import { useShallow } from 'zustand/react/shallow';
-import { useBoard, useBoardState } from './context';
+import { useBoard, useBoardState, surfaceBox } from './context';
+import { clamp, worldToLocal } from './geometry';
 import { useUi, type Tool } from './ui';
 import { Icon } from './icons';
 import { MARKER_COLORS, MARKER_SIZES, PEN_COLORS, PEN_SIZES } from './ink';
@@ -138,10 +139,8 @@ export function Toolbar() {
 }
 
 /* ── action menu (tap on a block / paper / note) ── */
-const sameEnd = (a: End, b: End) => JSON.stringify(a) === JSON.stringify(b);
-
 export function ActionMenu() {
-  const { c, store, focusDoc, room } = useBoard();
+  const { c, store, cam, reg, focusDoc, room } = useBoard();
   const menu = useUi((s) => s.menu);
   const set = useUi((s) => s.set);
   const toast = useUi((s) => s.showToast);
@@ -172,6 +171,28 @@ export function ActionMenu() {
   const s = store.getState();
   const q = currentQ(c, s);
   const close = () => set({ menu: null });
+  const localDocEnd = (doc: string, key?: string): End => {
+    const box = surfaceBox({ store, reg }, `doc:${doc}`);
+    if (!box) return key ? { doc, key } : { doc };
+    const w = cam.toWorld(menu.x, menu.y);
+    const l = worldToLocal(w.x, w.y, box);
+    return {
+      doc,
+      ...(key ? { key } : {}),
+      x: Math.round(clamp(l.x, 8, Math.max(8, box.w - 8))),
+      y: Math.round(clamp(l.y, 10, Math.max(10, box.h - 8))),
+    };
+  };
+  const localNoteEnd = (note: string): End => {
+    const box = surfaceBox({ store, reg }, `note:${note}`);
+    if (!box) return { note };
+    const w = cam.toWorld(menu.x, menu.y);
+    return {
+      note,
+      x: Math.round(clamp(w.x - box.x, 8, Math.max(8, box.w - 8))),
+      y: Math.round(clamp(w.y - box.y, 10, Math.max(10, box.h - 8))),
+    };
+  };
   const items: { icon: string; label: string; run: () => void; primary?: boolean; danger?: boolean }[] = [];
   let title = '';
   let snippet = '';
@@ -211,9 +232,9 @@ export function ActionMenu() {
           .then(() => toast('Đã chia sẻ vào sổ nhóm.'), (e) => toast(String(e.message || e)));
       } });
     }
-    items.push({ icon: 'link', label: 'Nối dây đỏ từ đây', run: () => { set({ pendingString: { doc: t.doc, key: t.key } }); } });
+    items.push({ icon: 'link', label: 'Nối dây đỏ từ đây', run: () => { set({ pendingString: localDocEnd(t.doc, t.key) }); } });
     pinItem(t.doc);
-    unlinkItem((e) => sameEnd(e, { doc: t.doc, key: t.key }), 'Gỡ dây ở đoạn này');
+    unlinkItem((e) => 'doc' in e && e.doc === t.doc && e.key === t.key, 'Gỡ dây ở đoạn này');
   } else if (t.kind === 'doc') {
     const doc = c.documents.find((d) => d.id === t.doc);
     title = doc ? `${pad2(doc.no ?? 0)} · ${doc.title}` : '';
@@ -222,7 +243,7 @@ export function ActionMenu() {
       items.push({ icon: 'speaker', label: 'Đọc toàn bộ tài liệu', run: () => void speakDoc(c.id, doc) });
     }
     items.push({ icon: 'eye', label: 'Xem cận cảnh', run: () => focusDoc(t.doc) });
-    items.push({ icon: 'link', label: 'Nối dây đỏ từ tài liệu', run: () => set({ pendingString: { doc: t.doc } }) });
+    items.push({ icon: 'link', label: 'Nối dây đỏ từ tài liệu', run: () => set({ pendingString: localDocEnd(t.doc) }) });
     items.push({ icon: 'rotate', label: 'Xoay 90°', run: () => s.rotateDoc(t.doc) });
     unlinkItem((e) => 'doc' in e && e.doc === t.doc, 'Gỡ mọi dây của tài liệu');
   } else if (t.kind === 'note') {
@@ -231,10 +252,31 @@ export function ActionMenu() {
     if (note?.text?.trim()) {
       items.push({ icon: 'speaker', label: 'Đọc ghi chú', run: () => void speak(`note:${t.note}`, note.text) });
     }
-    items.push({ icon: 'link', label: 'Nối dây đỏ từ ghi chú', run: () => set({ pendingString: { note: t.note } }) });
+    items.push({ icon: 'link', label: 'Nối dây đỏ từ ghi chú', run: () => set({ pendingString: localNoteEnd(t.note) }) });
     items.push({ icon: 'color', label: 'Đổi màu giấy', run: () => s.setNote(t.note, { c: ((note?.c ?? 0) + 1) % NOTE_COLORS.length }) });
     unlinkItem((e) => 'note' in e && e.note === t.note, 'Gỡ dây');
     items.push({ icon: 'trash', label: 'Xoá ghi chú', danger: true, run: () => s.deleteNote(t.note) });
+  } else if (t.kind === 'string') {
+    const str = st.strings.find((x) => x.id === t.id);
+    if (!str) return null;
+    const endLabel = (e: End) => {
+      if ('note' in e) return 'Giấy ghi chú';
+      const d = c.documents.find((x) => x.id === e.doc);
+      const base = d ? `${pad2(d.no ?? 0)} · ${d.title}` : e.doc;
+      if (e.key && /^l\d+$/.test(e.key)) return `${base} (dòng ${e.key.slice(1)})`;
+      return e.key ? `${base} (đoạn)` : base;
+    };
+    title = 'Dây đỏ liên kết';
+    snippet = `${endLabel(str.a)} ↔ ${endLabel(str.b)}`;
+    if ('doc' in str.a) {
+      const a = str.a;
+      items.push({ icon: 'eye', label: 'Xem điểm đầu', run: () => focusDoc(a.doc, a.key) });
+    }
+    if ('doc' in str.b) {
+      const b = str.b;
+      items.push({ icon: 'eye', label: 'Xem điểm cuối', run: () => focusDoc(b.doc, b.key) });
+    }
+    items.push({ icon: 'unlink', label: 'Gỡ sợi dây đỏ này', danger: true, run: () => { s.removeString(str.id); toast('Đã gỡ dây đỏ.'); } });
   }
 
   return (
